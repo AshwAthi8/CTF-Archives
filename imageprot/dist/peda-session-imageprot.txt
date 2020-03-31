@@ -1,0 +1,8 @@
+break *0x5555555aa352
+break * 0x5555555AA47C
+break * 0x5555555aa1f9
+break * 0x5555555AAF4C
+break * 0x5555555aab3d
+break * 0x5555555aa1f9
+tbreak main
+

@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Jun 30 11:04:17 2019
+Invocation: foremost -v -T output.png 
+Output directory: /home/ashu/Downloads/output_Sun_Jun_30_11_04_17_2019
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: output.png
+Start: Sun Jun 30 11:04:17 2019
+Length: 8 MB (9154571 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sun Jun 30 11:04:17 2019
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Sun Jun 30 11:04:17 2019

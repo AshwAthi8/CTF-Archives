@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Aug 13 16:24:30 2019
+Invocation: foremost lol.png 
+Output directory: /home/ashu/Downloads/redpwn/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: lol.png
+Start: Tue Aug 13 16:24:30 2019
+Length: 999 KB (1022991 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	     999 KB 	          0 	  (1000 x 666)
+Finish: Tue Aug 13 16:24:30 2019
+
+1 FILES EXTRACTED
+	
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Tue Aug 13 16:24:30 2019
