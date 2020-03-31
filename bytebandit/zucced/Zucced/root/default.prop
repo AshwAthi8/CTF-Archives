@@ -1,0 +1,29 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.secure=1
+security.perf_harden=1
+ro.allow.mock.location=0
+ro.debuggable=1
+ro.zygote=zygote32
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.appimageformat=lz4
+pm.dexopt.first-boot=quicken
+pm.dexopt.boot=verify
+pm.dexopt.install=quicken
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.ab-ota=speed-profile
+debug.atrace.tags.enableflags=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Thu Dec 6 05:05:35 UTC 2018
+ro.bootimage.build.date.utc=1544072735
+ro.bootimage.build.fingerprint=Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+persist.sys.usb.config=adb

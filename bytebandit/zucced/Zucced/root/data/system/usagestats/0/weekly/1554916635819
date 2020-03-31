@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<usagestats version="1" endTime="6998326">
+    <packages>
+        <package lastTimeActive="-1554916635819" package="com.android.providers.telephony" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.media" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.downloads" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.defcontainer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.genymotion.systempatcher" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6998302" package="com.android.launcher3" timeActive="6347249" lastEvent="2" />
+        <package lastTimeActive="6629805" package="berserker.android.apps.sshdroid" timeActive="153019" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.printspooler" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.keychain" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.dialer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="android.ext.services" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6831696" package="com.android.packageinstaller" timeActive="31578" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.inputmethod.latin" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.smspush" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6985477" package="com.sonelli.juicessh" timeActive="214452" lastEvent="2" />
+        <package lastTimeActive="6998326" package="com.amaze.filemanager" timeActive="86490" lastEvent="1" />
+        <package lastTimeActive="18267" package="com.android.settings" timeActive="12555" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.phone" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.blockednumber" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.userdictionary" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6971820" package="org.galexander.sshd" timeActive="139773" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.genymotion.genyd" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.systemui" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6485042" package="com.genymotion.superuser" timeActive="4186" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.contacts" timeActive="0" lastEvent="0" />
+    </packages>
+    <configurations>
+        <config lastTimeActive="184" timeActive="102" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="367" timeActive="183" count="1" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="13233" timeActive="12866" count="1" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="13234" timeActive="0" count="1" active="true" fs="1065353216" mcc="310" mnc="270" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="82" timeActive="83" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435810" clrMod="5" width="411" height="731" sw="411" density="420" app_bounds="0 0 1080 1920" />
+    </configurations>
+    <event-log />
+</usagestats>

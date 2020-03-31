@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="camera.startup_module">0</string>
+    <string name="pref_camera_picturesize_front_key">640x480</string>
+    <string name="CachedSupportedPictureSizes_Sizes_Camera0">640,480,352,288,320,240,176,144</string>
+    <string name="pref_video_quality_front_key">large</string>
+    <string name="pref_camera_picturesize_back_key">640x480</string>
+    <string name="pref_has_seen_permissions_dialogs">1</string>
+    <string name="pref_upgrade_version">7</string>
+    <string name="pref_video_quality_back_key">large</string>
+    <string name="CachedSupportedPictureSizes_Sizes_Camera1">640,480,352,288,320,240,176,144</string>
+    <string name="CachedSupportedPictureSizes_Build_Camera1">vbox86p-userdebug</string>
+    <string name="pref_camera_recordlocation_key">1</string>
+    <string name="pref_flash_supported_back_camera">0</string>
+    <string name="pref_camera_grid_lines">0</string>
+    <long name="client_first_use_time_millis" value="1554303086487" />
+    <string name="CachedSupportedPictureSizes_Build_Camera0">vbox86p-userdebug</string>
+    <string name="pref_hdr_support_mode_back_camera">no_hdr</string>
+</map>

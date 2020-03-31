@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <boolean name="includeDeviceRoot" value="true" />
+    <int name="rootViewMode-com.android.externalstorage.documentsprimary" value="1" />
+</map>

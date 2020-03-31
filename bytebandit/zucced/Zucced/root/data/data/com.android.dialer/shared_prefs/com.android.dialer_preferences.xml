@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <int name="phone_account_dependent_legacy_voicemail_count_89014103211118510720" value="0" />
+    <boolean name="checkedAutoMigrate" value="true" />
+    <boolean name="migratedToNewBlocking" value="true" />
+    <int name="com.android.voicemail.impl.scheduling.TaskSchedulerJobService.EXPECTED_JOB_ID" value="13" />
+    <boolean name="visual_voicemail_pre_o_migration_finished_89014103211118510720" value="true" />
+    <int name="persistent_long_next_file_index_plain_text" value="1" />
+    <int name="com.android.voicemail.impl.scheduling.TaskSchedulerJobService.NEXT_JOB_ID" value="14" />
+</map>

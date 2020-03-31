@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="search_base_domain">.google.com</string>
+    <long name="search_base_domain_apply_time" value="1554303202237" />
+</map>

@@ -1,0 +1,5 @@
+break * fread
+break * 0x0005555555547D5
+break * 0x5555555547c8
+break * 0x555555555108
+

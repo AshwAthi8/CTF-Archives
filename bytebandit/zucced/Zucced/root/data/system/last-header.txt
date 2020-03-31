@@ -1,0 +1,7 @@
+Build: Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+Hardware: unknown
+Revision: 0
+Bootloader: unknown
+Radio: unknown
+Kernel: Linux version 4.4.34-genymotion (genymotion-build@genymobile.com) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) ) #4 SMP PREEMPT Mon Oct 1 15:25:53 CEST 2018
+

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<packages>
+    <package name="com.android.providers.telephony" elapsedIdleTime="7612040" screenIdleTime="2763" />
+    <package name="com.android.providers.media" elapsedIdleTime="7632621" screenIdleTime="23344" />
+    <package name="eu.chainfire.flash" elapsedIdleTime="5864539" screenIdleTime="658911" />
+    <package name="com.android.documentsui" elapsedIdleTime="4329778" screenIdleTime="3126742" />
+    <package name="com.android.externalstorage" elapsedIdleTime="4358425" screenIdleTime="3155389" />
+    <package name="com.whatsapp" elapsedIdleTime="4323237" screenIdleTime="3120201" />
+    <package name="com.android.providers.downloads" elapsedIdleTime="7632621" screenIdleTime="23344" />
+    <package name="com.android.defcontainer" elapsedIdleTime="14435850" screenIdleTime="6826573" />
+    <package name="com.genymotion.systempatcher" elapsedIdleTime="7625988" screenIdleTime="16711" />
+    <package name="android" elapsedIdleTime="5533909" screenIdleTime="328281" />
+    <package name="com.android.contacts" elapsedIdleTime="861403" screenIdleTime="858168" />
+    <package name="com.android.launcher3" elapsedIdleTime="14604763" screenIdleTime="6995486" />
+    <package name="com.android.backupconfirm" elapsedIdleTime="5999456" screenIdleTime="793828" />
+    <package name="berserker.android.apps.sshdroid" elapsedIdleTime="14236264" screenIdleTime="6626987" />
+    <package name="com.android.sharedstoragebackup" elapsedIdleTime="5993814" screenIdleTime="788186" />
+    <package name="com.android.printspooler" elapsedIdleTime="7626764" screenIdleTime="17487" />
+    <package name="com.android.keychain" elapsedIdleTime="7648691" screenIdleTime="39414" />
+    <package name="com.android.dialer" elapsedIdleTime="7635729" screenIdleTime="26452" />
+    <package name="android.ext.services" elapsedIdleTime="7636897" screenIdleTime="27620" />
+    <package name="com.android.packageinstaller" elapsedIdleTime="14438164" screenIdleTime="6828887" />
+    <package name="com.android.inputmethod.latin" elapsedIdleTime="14569694" screenIdleTime="6960417" />
+    <package name="com.android.smspush" elapsedIdleTime="7628081" screenIdleTime="18804" />
+    <package name="com.sonelli.juicessh" elapsedIdleTime="14591938" screenIdleTime="6982661" />
+    <package name="com.amaze.filemanager" elapsedIdleTime="14604839" screenIdleTime="6995562" />
+    <package name="com.android.settings" elapsedIdleTime="7626764" screenIdleTime="17487" />
+    <package name="com.android.phone" elapsedIdleTime="7612041" screenIdleTime="2764" />
+    <package name="com.android.providers.blockednumber" elapsedIdleTime="7633411" screenIdleTime="24134" />
+    <package name="com.android.providers.userdictionary" elapsedIdleTime="7633411" screenIdleTime="24134" />
+    <package name="org.galexander.sshd" elapsedIdleTime="14578291" screenIdleTime="6969014" />
+    <package name="com.genymotion.genyd" elapsedIdleTime="7625997" screenIdleTime="16720" />
+    <package name="com.android.systemui" elapsedIdleTime="7610297" screenIdleTime="1020" />
+    <package name="com.genymotion.superuser" elapsedIdleTime="14091501" screenIdleTime="6482224" />
+    <package name="com.android.providers.contacts" elapsedIdleTime="7633411" screenIdleTime="24134" />
+</packages>

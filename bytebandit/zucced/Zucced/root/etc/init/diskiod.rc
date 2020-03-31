@@ -1,0 +1,2 @@
+service diskiod /system/bin/diskiod
+    class core

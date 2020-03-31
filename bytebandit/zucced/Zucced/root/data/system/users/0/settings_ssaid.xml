@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<settings version="-1">
+  <setting id="0" name="userkey" value="E8242C280D013D0F92872F188C11E908E2DB4E9E89E73E0642692CE3EC8E79B4" package="android" defaultValue="E8242C280D013D0F92872F188C11E908E2DB4E9E89E73E0642692CE3EC8E79B4" defaultSysSet="true" tag="null" />
+  <setting id="1" name="10070" value="c290c1ce18af4a85" package="com.sonelli.juicessh" defaultValue="c290c1ce18af4a85" defaultSysSet="false" tag="null" />
+  <setting id="2" name="10071" value="c290c1ce18af4a85" package="berserker.android.apps.sshdroid" defaultValue="c290c1ce18af4a85" defaultSysSet="false" tag="null" />
+</settings>

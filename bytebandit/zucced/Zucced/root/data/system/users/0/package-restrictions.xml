@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<package-restrictions>
+    <pkg name="com.android.cts.priv.ctsshim" ceDataInode="-4294885748" />
+    <pkg name="com.example.android.livecubes" ceDataInode="-4294885745" />
+    <pkg name="com.android.providers.telephony" ceDataInode="-4294885851" />
+    <pkg name="com.android.providers.calendar" ceDataInode="-4294885742" />
+    <pkg name="com.android.providers.media" ceDataInode="-4294885739" />
+    <pkg name="eu.chainfire.flash" ceDataInode="-4294885027" />
+    <pkg name="com.android.wallpapercropper" ceDataInode="-4294885736" />
+    <pkg name="com.android.documentsui" ceDataInode="-4294885733" />
+    <pkg name="com.android.externalstorage" ceDataInode="-4294885730" />
+    <pkg name="com.android.htmlviewer" ceDataInode="-4294885727" />
+    <pkg name="com.whatsapp" ceDataInode="-4294885105" domainVerificationStatus="2" app-link-generation="2" />
+    <pkg name="com.android.companiondevicemanager" ceDataInode="-4294885724" />
+    <pkg name="com.android.quicksearchbox" ceDataInode="-4294885721" />
+    <pkg name="com.android.mms.service" ceDataInode="-4294885848" />
+    <pkg name="com.android.providers.downloads" ceDataInode="-4294885718" />
+    <pkg name="com.android.messaging" ceDataInode="-4294885715">
+        <enabled-components>
+            <item name="com.android.messaging.datamodel.NoConfirmationSmsSendService" />
+        </enabled-components>
+        <disabled-components>
+            <item name="com.android.messaging.receiver.AbortMmsWapPushReceiver" />
+            <item name="com.android.messaging.receiver.AbortSmsReceiver" />
+            <item name="com.android.messaging.receiver.MmsWapPushReceiver" />
+            <item name="com.android.messaging.receiver.SmsReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.defcontainer" ceDataInode="-4294885841" />
+    <pkg name="com.android.providers.downloads.ui" ceDataInode="-4294885712" />
+    <pkg name="com.android.pacprocessor" ceDataInode="-4294885709" />
+    <pkg name="com.android.certinstaller" ceDataInode="-4294885705" />
+    <pkg name="com.android.carrierconfig" ceDataInode="-4294885702" />
+    <pkg name="com.google.android.launcher.layouts.genymotion" ceDataInode="-4294885699" />
+    <pkg name="com.genymotion.systempatcher" ceDataInode="-4294885696" />
+    <pkg name="android" ceDataInode="-4294885834" />
+    <pkg name="com.android.contacts" ceDataInode="-4294885693" />
+    <pkg name="com.android.camera2" ceDataInode="-4294885690">
+        <disabled-components>
+            <item name="com.android.camera.DisableCameraReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.egg" ceDataInode="-4294885686" />
+    <pkg name="com.android.nfc" ceDataInode="-4294885683" />
+    <pkg name="com.android.launcher3" ceDataInode="-4294885679" />
+    <pkg name="com.android.backupconfirm" ceDataInode="-4294885676" />
+    <pkg name="com.android.provision" ceDataInode="-4294885673">
+        <disabled-components>
+            <item name="com.android.provision.DefaultActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.statementservice" ceDataInode="-4294885670" />
+    <pkg name="com.android.calendar" ceDataInode="-4294885667">
+        <disabled-components>
+            <item name="com.android.calendar.UpgradeReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.providers.settings" ceDataInode="-4294885828" />
+    <pkg name="berserker.android.apps.sshdroid" ceDataInode="-4294869510" />
+    <pkg name="com.android.sharedstoragebackup" ceDataInode="-4294885664" />
+    <pkg name="com.android.printspooler" ceDataInode="-4294885661" />
+    <pkg name="com.android.dreams.basic" ceDataInode="-4294885657" />
+    <pkg name="com.android.webview" ceDataInode="-4294885654" />
+    <pkg name="com.android.inputdevices" ceDataInode="-4294885822" />
+    <pkg name="com.android.bips" ceDataInode="-4294885650" />
+    <pkg name="com.android.musicfx" ceDataInode="-4294885646" />
+    <pkg name="com.android.development_settings" ceDataInode="-4294885643" />
+    <pkg name="com.android.cellbroadcastreceiver" ceDataInode="-4294885637" />
+    <pkg name="android.ext.shared" ceDataInode="-4294885816" />
+    <pkg name="com.android.onetimeinitializer" ceDataInode="-4294885634" />
+    <pkg name="com.android.server.telecom" ceDataInode="-4294885810" />
+    <pkg name="com.android.keychain" ceDataInode="-4294885631" />
+    <pkg name="com.android.printservice.recommendation" ceDataInode="-4294885628" />
+    <pkg name="com.android.dialer" ceDataInode="-4294885807" />
+    <pkg name="com.android.gallery3d" ceDataInode="-4294885625">
+        <disabled-components>
+            <item name="com.android.camera.DisableCameraReceiver" />
+        </disabled-components>
+    </pkg>
+    <pkg name="android.ext.services" ceDataInode="-4294885801" />
+    <pkg name="com.android.calllogbackup" ceDataInode="-4294885621" />
+    <pkg name="com.android.packageinstaller" ceDataInode="-4294885795" />
+    <pkg name="com.android.carrierdefaultapp" ceDataInode="-4294885618" />
+    <pkg name="com.svox.pico" ceDataInode="-4294885615" />
+    <pkg name="com.example.android.apis" ceDataInode="-4294885611" stopped="true" nl="true" />
+    <pkg name="com.android.proxyhandler" ceDataInode="-4294885789" />
+    <pkg name="com.android.inputmethod.latin" ceDataInode="-4294885782">
+        <disabled-components>
+            <item name="com.android.inputmethod.latin.setup.SetupActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="org.chromium.webview_shell" ceDataInode="-4294885608" />
+    <pkg name="com.android.managedprovisioning" ceDataInode="-4294885605" />
+    <pkg name="com.android.dreams.phototable" ceDataInode="-4294885602" />
+    <pkg name="com.android.smspush" ceDataInode="-4294885599" />
+    <pkg name="com.sonelli.juicessh" ceDataInode="-4294869566" />
+    <pkg name="com.android.wallpaper.livepicker" ceDataInode="-4294885596" />
+    <pkg name="com.amaze.filemanager" ceDataInode="-4294885593" />
+    <pkg name="com.android.storagemanager" ceDataInode="-4294885590" />
+    <pkg name="jp.co.omronsoft.openwnn" ceDataInode="-4294885587" />
+    <pkg name="com.android.bookmarkprovider" ceDataInode="-4294885581" />
+    <pkg name="com.android.settings" ceDataInode="-4294885775">
+        <enabled-components>
+            <item name="com.android.settings.Settings$DevelopmentSettingsActivity" />
+            <item name="com.android.settings.Settings$ConnectedDeviceDashboardActivity" />
+            <item name="com.android.settings.Settings$PowerUsageSummaryActivity" />
+            <item name="com.android.settings.Settings$PrintSettingsActivity" />
+            <item name="com.android.settings.Settings$NetworkDashboardActivity" />
+            <item name="com.android.settings.Settings$WifiDisplaySettingsActivity" />
+            <item name="com.android.settings.Settings$DateTimeSettingsActivity" />
+            <item name="com.android.settings.backup.BackupSettingsActivity" />
+            <item name="com.android.settings.Settings$WifiSettingsActivity" />
+            <item name="com.android.settings.WebViewImplementation" />
+            <item name="com.android.settings.Settings$UserSettingsActivity" />
+            <item name="com.android.settings.Settings$DataUsageSummaryActivity" />
+        </enabled-components>
+        <disabled-components>
+            <item name="com.android.settings.CryptKeeper" />
+            <item name="com.android.settings.Settings$SimSettingsActivity" />
+            <item name="com.android.settings.Settings$PaymentSettingsActivity" />
+            <item name="com.android.settings.Settings$BluetoothSettingsActivity" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.calculator2" ceDataInode="-4294885578" />
+    <pkg name="com.android.gesture.builder" ceDataInode="-4294885575" stopped="true" nl="true" />
+    <pkg name="com.android.cts.ctsshim" ceDataInode="-4294885572" />
+    <pkg name="com.android.vpndialogs" ceDataInode="-4294885568" />
+    <pkg name="com.android.email" ceDataInode="-4294885565">
+        <disabled-components>
+            <item name="com.android.email.service.EasAuthenticatorServiceAlternate" />
+            <item name="com.android.email.service.EmailUpgradeBroadcastReceiver" />
+            <item name="com.android.email.service.LegacyEmailAuthenticatorService" />
+            <item name="com.android.email.service.LegacyEasAuthenticatorService" />
+            <item name="com.android.email.service.EasAuthenticatorService" />
+            <item name="com.android.email.service.AttachmentService" />
+            <item name="com.android.email.activity.ComposeActivityEmail" />
+        </disabled-components>
+    </pkg>
+    <pkg name="com.android.music" ceDataInode="-4294885562" />
+    <pkg name="com.android.phone" ceDataInode="-4294885769" />
+    <pkg name="com.android.shell" ceDataInode="-4294885763" />
+    <pkg name="com.android.wallpaperbackup" ceDataInode="-4294885559" />
+    <pkg name="com.android.providers.blockednumber" ceDataInode="-4294885553" />
+    <pkg name="com.android.providers.userdictionary" ceDataInode="-4294885550" />
+    <pkg name="org.galexander.sshd" ceDataInode="-4294869479" />
+    <pkg name="com.android.emergency" ceDataInode="-4294885544" />
+    <pkg name="com.genymotion.genyd" ceDataInode="-4294885541" />
+    <pkg name="com.android.location.fused" ceDataInode="-4294885757" />
+    <pkg name="com.android.deskclock" ceDataInode="-4294885538" />
+    <pkg name="com.android.systemui" ceDataInode="-4294885751" />
+    <pkg name="com.android.bluetoothmidiservice" ceDataInode="-4294885535" />
+    <pkg name="com.genymotion.superuser" ceDataInode="-4294885532" />
+    <pkg name="com.android.customlocale2" ceDataInode="-4294885529" />
+    <pkg name="com.android.bluetooth" ceDataInode="-4294885522" />
+    <pkg name="com.android.development" ceDataInode="-4294885518" />
+    <pkg name="com.android.wallpaperpicker" ceDataInode="-4294885515" />
+    <pkg name="com.android.providers.contacts" ceDataInode="-4294885512" />
+    <pkg name="com.android.captiveportallogin" ceDataInode="-4294885509" />
+    <preferred-activities>
+        <item name="com.android.messaging/.ui.conversation.LaunchConversationActivity" match="200000" always="true" set="3">
+            <set name="com.android.messaging/.ui.conversation.LaunchConversationActivity" />
+            <set name="com.example.android.apis/.os.SmsMessagingDemo" />
+            <set name="com.whatsapp/.Conversation" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="sms" />
+            </filter>
+        </item>
+        <item name="com.android.messaging/.ui.conversation.LaunchConversationActivity" match="200000" always="true" set="2">
+            <set name="com.android.messaging/.ui.conversation.LaunchConversationActivity" />
+            <set name="com.example.android.apis/.os.MmsMessagingDemo" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="mms" />
+            </filter>
+        </item>
+        <item name="com.android.messaging/.ui.conversation.LaunchConversationActivity" match="200000" always="true" set="2">
+            <set name="com.android.messaging/.ui.conversation.LaunchConversationActivity" />
+            <set name="com.example.android.apis/.os.MmsMessagingDemo" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="mmsto" />
+            </filter>
+        </item>
+        <item name="com.android.messaging/.ui.conversation.LaunchConversationActivity" match="200000" always="true" set="3">
+            <set name="com.android.messaging/.ui.conversation.LaunchConversationActivity" />
+            <set name="com.example.android.apis/.os.SmsMessagingDemo" />
+            <set name="com.whatsapp/.Conversation" />
+            <filter>
+                <action name="android.intent.action.SENDTO" />
+                <cat name="android.intent.category.DEFAULT" />
+                <scheme name="smsto" />
+            </filter>
+        </item>
+    </preferred-activities>
+    <persistent-preferred-activities />
+    <crossProfile-intent-filters />
+    <default-apps>
+        <default-dialer packageName="com.android.dialer" />
+    </default-apps>
+</package-restrictions>

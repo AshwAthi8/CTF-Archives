@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="timespent_foreground_count" value="4" />
+    <long name="timespent_last_activity_time" value="1554322268" />
+    <boolean name="prefs_migrated" value="true" />
+    <long name="timespent_end_time" value="1554322269" />
+    <long name="timespent_session_total" value="318" />
+    <long name="timespent_start_time" value="1554303780" />
+    <long name="timespent_rollover_time" value="1554361200" />
+</map>

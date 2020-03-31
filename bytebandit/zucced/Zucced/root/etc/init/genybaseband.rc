@@ -1,0 +1,6 @@
+service genybaseband /system/bin/logwrapper /system/bin/genybaseband
+    class core
+    socket baseband_ril stream 660 root radio
+    user radio
+    group radio inet
+    seclabel u:r:genybaseband:s0

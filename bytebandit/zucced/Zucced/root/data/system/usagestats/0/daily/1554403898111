@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<usagestats version="1" endTime="86399999">
+    <packages>
+        <package lastTimeActive="-1554403898111" package="com.android.providers.telephony" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.providers.media" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.providers.downloads" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.genymotion.systempatcher" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="1199889" package="com.android.launcher3" timeActive="1181382" lastEvent="3" />
+        <package lastTimeActive="-1554403898111" package="com.android.printspooler" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.keychain" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.dialer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="android.ext.services" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.smspush" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="16988" package="com.android.settings" timeActive="15022" lastEvent="2" />
+        <package lastTimeActive="-1554403898111" package="com.android.phone" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.providers.blockednumber" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.providers.userdictionary" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.genymotion.genyd" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.systemui" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554403898111" package="com.android.providers.contacts" timeActive="0" lastEvent="0" />
+    </packages>
+    <configurations>
+        <config lastTimeActive="78" timeActive="45" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="200" timeActive="122" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="7035" timeActive="6835" count="1" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="86399998" timeActive="86392964" count="1" active="true" fs="1065353216" mcc="310" mnc="270" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="33" timeActive="34" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435810" clrMod="5" width="411" height="731" sw="411" density="420" app_bounds="0 0 1080 1920" />
+    </configurations>
+    <event-log>
+        <event time="0" package="android" flags="0" type="5" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435810" clrMod="5" width="411" height="731" sw="411" density="420" app_bounds="0 0 1080 1920" />
+        <event time="34" package="android" flags="0" type="5" fs="0" scrLay="16" height="659" />
+        <event time="79" package="android" flags="0" type="5" fs="0" ui="17" />
+        <event time="201" package="android" flags="0" type="5" fs="0" touch="3" key="2" nav="2" navHid="1" />
+        <event time="1966" package="com.android.settings" class="com.android.settings.FallbackHome" flags="0" type="1" />
+        <event time="7036" package="android" flags="0" type="5" fs="0" mcc="310" mnc="270" />
+        <event time="16988" package="com.android.settings" class="com.android.settings.FallbackHome" flags="0" type="2" />
+        <event time="18507" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="1" />
+    </event-log>
+</usagestats>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="migration_src_workspace_size">5,5</string>
+    <string name="pref_extractedColors">1,771751935,0,</string>
+    <int name="pref_wallpaperId" value="1" />
+    <boolean name="launcher.apps_view_shown" value="true" />
+    <int name="qsb_widget_id" value="2" />
+    <boolean name="pref_add_icon_to_home" value="true" />
+    <int name="migration_src_hotseat_count" value="5" />
+    <boolean name="pref_add_icon_to_home_initialized" value="true" />
+</map>

@@ -1,0 +1,68 @@
+Process: com.android.systemui
+PID: 632
+Flags: 0x38c83e0d
+Package: com.android.systemui v26 (8.0.0)
+Build: Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+System-App: true
+Uptime-Millis: 49891
+Loop-Violation-Number: 1
+Duration-Millis: 117
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=23068679 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1438)
+	at android.database.sqlite.SQLiteConnection.applyBlockGuardPolicy(SQLiteConnection.java:1041)
+	at android.database.sqlite.SQLiteConnection.executeForCursorWindow(SQLiteConnection.java:842)
+	at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:836)
+	at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+	at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:143)
+	at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:132)
+	at android.content.ContentResolver.query(ContentResolver.java:773)
+	at android.content.ContentResolver.query(ContentResolver.java:704)
+	at android.content.ContentResolver.query(ContentResolver.java:662)
+	at com.android.internal.telephony.SubscriptionController.getSubInfo(SubscriptionController.java:338)
+	at com.android.internal.telephony.SubscriptionController.getActiveSubscriptionInfoList(SubscriptionController.java:563)
+	at com.android.internal.telephony.ISub$Stub.onTransact(ISub.java:124)
+	at android.os.Binder.execTransact(Binder.java:674)
+# via Binder call with stack:
+android.os.StrictMode$LogStackTrace
+	at android.os.StrictMode.readAndHandleBinderCallViolations(StrictMode.java:2137)
+	at android.os.Parcel.readExceptionCode(Parcel.java:1916)
+	at android.os.Parcel.readException(Parcel.java:1885)
+	at com.android.internal.telephony.ISub$Stub$Proxy.getActiveSubscriptionInfoList(ISub.java:559)
+	at android.telephony.SubscriptionManager.getActiveSubscriptionInfoList(SubscriptionManager.java:626)
+	at com.android.keyguard.KeyguardUpdateMonitor.getSubscriptionInfo(KeyguardUpdateMonitor.java:386)
+	at com.android.keyguard.KeyguardUpdateMonitor.handleSimSubscriptionInfoChanged(KeyguardUpdateMonitor.java:343)
+	at com.android.keyguard.KeyguardUpdateMonitor$1.handleMessage(KeyguardUpdateMonitor.java:268)
+	at android.os.Handler.dispatchMessage(Handler.java:105)
+	at android.os.Looper.loop(Looper.java:164)
+	at android.app.ActivityThread.main(ActivityThread.java:6541)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+
+Process: com.android.phone
+PID: 700
+Flags: 0x38c83e4d
+Package: com.android.providers.telephony v26 (8.0.0)
+Package: com.android.phone v26 (8.0.0)
+Build: Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+System-App: true
+Uptime-Millis: 50941
+Loop-Violation-Number: 1
+Duration-Millis: 13
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=18874375 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1438)
+	at java.io.FileInputStream.<init>(FileInputStream.java:149)
+	at java.io.FileInputStream.<init>(FileInputStream.java:103)
+	at com.android.internal.telephony.cdma.EriManager.loadEriFileFromXml(EriManager.java:163)
+	at com.android.internal.telephony.cdma.EriManager.loadEriFile(EriManager.java:127)
+	at com.android.internal.telephony.GsmCdmaPhone.prepareEri(GsmCdmaPhone.java:2631)
+	at com.android.internal.telephony.GsmCdmaPhone.handleMessage(GsmCdmaPhone.java:2233)
+	at android.os.Handler.dispatchMessage(Handler.java:105)
+	at android.os.Looper.loop(Looper.java:164)
+	at android.app.ActivityThread.main(ActivityThread.java:6541)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+

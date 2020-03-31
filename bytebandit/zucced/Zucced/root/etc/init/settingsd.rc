@@ -1,0 +1,4 @@
+# Init file for starting settingsd on Android
+
+service settingsd /system/bin/settingsd
+    class core

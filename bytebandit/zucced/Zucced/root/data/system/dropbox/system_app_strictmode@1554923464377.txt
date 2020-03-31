@@ -1,0 +1,61 @@
+Process: com.amaze.filemanager
+PID: 2418
+Flags: 0x3888be45
+Package: com.amaze.filemanager v29 (3.0.1)
+Build: Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+System-App: true
+Uptime-Millis: 6852115
+Loop-Violation-Number: 1
+Duration-Millis: 224
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=18874375 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1438)
+	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:241)
+	at java.io.File.isDirectory(File.java:837)
+	at com.amaze.filemanager.ui.icons.MimeTypes.getMimeType(MimeTypes.java:140)
+	at com.amaze.filemanager.utils.Futils.isSelfDefault(Futils.java:255)
+	at com.amaze.filemanager.utils.Futils.openFile(Futils.java:569)
+	at com.amaze.filemanager.fragments.Main.onListItemClicked(Main.java:524)
+	at com.amaze.filemanager.adapters.Recycleradapter$1.onClick(Recycleradapter.java:266)
+	at android.view.View.performClick(View.java:6256)
+	at android.view.View$PerformClick.run(View.java:24697)
+	at android.os.Handler.handleCallback(Handler.java:789)
+	at android.os.Handler.dispatchMessage(Handler.java:98)
+	at android.os.Looper.loop(Looper.java:164)
+	at android.app.ActivityThread.main(ActivityThread.java:6541)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+
+Process: com.amaze.filemanager
+PID: 2418
+Flags: 0x3888be45
+Package: com.amaze.filemanager v29 (3.0.1)
+Build: Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+System-App: true
+Uptime-Millis: 6853842
+
+java.lang.Throwable: file:///mnt/shared/shared/SimpleSSHD_v19_apkpure.com.apk exposed beyond app through Intent.getData()
+	at android.os.StrictMode.onFileUriExposed(StrictMode.java:1960)
+	at android.net.Uri.checkFileUriExposed(Uri.java:2348)
+	at android.content.Intent.prepareToLeaveProcess(Intent.java:9766)
+	at android.content.Intent.prepareToLeaveProcess(Intent.java:9720)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1609)
+	at android.app.Activity.startActivityForResult(Activity.java:4472)
+	at android.app.Activity.startActivityForResult(Activity.java:4430)
+	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:820)
+	at android.app.Activity.startActivity(Activity.java:4791)
+	at android.app.Activity.startActivity(Activity.java:4759)
+	at com.amaze.filemanager.utils.Futils.openunknown(Futils.java:274)
+	at com.amaze.filemanager.utils.Futils$7.onPositive(Futils.java:630)
+	at com.afollestad.materialdialogs.MaterialDialog.onClick(MaterialDialog.java:318)
+	at android.view.View.performClick(View.java:6256)
+	at android.view.View$PerformClick.run(View.java:24697)
+	at android.os.Handler.handleCallback(Handler.java:789)
+	at android.os.Handler.dispatchMessage(Handler.java:98)
+	at android.os.Looper.loop(Looper.java:164)
+	at android.app.ActivityThread.main(ActivityThread.java:6541)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+

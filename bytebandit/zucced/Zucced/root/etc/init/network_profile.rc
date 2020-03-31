@@ -1,0 +1,5 @@
+# Init file for starting network_profile on Android
+
+service network_profile /system/bin/network_profile
+    class core
+    seclabel u:r:network_profile:s0

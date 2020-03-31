@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<usagestats version="1" endTime="6998326">
+    <packages>
+        <package lastTimeActive="-1554916635819" package="com.android.providers.telephony" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.media" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.downloads" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.defcontainer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.genymotion.systempatcher" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6998302" package="com.android.launcher3" timeActive="6347249" lastEvent="2" />
+        <package lastTimeActive="6629805" package="berserker.android.apps.sshdroid" timeActive="153019" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.printspooler" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.keychain" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.dialer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="android.ext.services" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6831696" package="com.android.packageinstaller" timeActive="31578" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.inputmethod.latin" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.smspush" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6985477" package="com.sonelli.juicessh" timeActive="214452" lastEvent="2" />
+        <package lastTimeActive="6998326" package="com.amaze.filemanager" timeActive="86490" lastEvent="1" />
+        <package lastTimeActive="18267" package="com.android.settings" timeActive="12555" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.phone" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.blockednumber" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.userdictionary" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6971820" package="org.galexander.sshd" timeActive="139773" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.genymotion.genyd" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554916635819" package="com.android.systemui" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="6485042" package="com.genymotion.superuser" timeActive="4186" lastEvent="2" />
+        <package lastTimeActive="-1554916635819" package="com.android.providers.contacts" timeActive="0" lastEvent="0" />
+    </packages>
+    <configurations>
+        <config lastTimeActive="184" timeActive="102" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="367" timeActive="183" count="1" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="13233" timeActive="12866" count="1" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="13234" timeActive="0" count="1" active="true" fs="1065353216" mcc="310" mnc="270" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="82" timeActive="83" count="1" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435810" clrMod="5" width="411" height="731" sw="411" density="420" app_bounds="0 0 1080 1920" />
+    </configurations>
+    <event-log>
+        <event time="0" package="android" flags="0" type="5" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435810" clrMod="5" width="411" height="731" sw="411" density="420" app_bounds="0 0 1080 1920" />
+        <event time="83" package="android" flags="0" type="5" fs="0" scrLay="16" height="659" />
+        <event time="185" package="android" flags="0" type="5" fs="0" touch="3" key="2" nav="2" navHid="1" />
+        <event time="368" package="android" flags="0" type="5" fs="0" ui="17" />
+        <event time="5712" package="com.android.settings" class="com.android.settings.FallbackHome" flags="0" type="1" />
+        <event time="13234" package="android" flags="0" type="5" fs="0" mcc="310" mnc="270" />
+        <event time="18267" package="com.android.settings" class="com.android.settings.FallbackHome" flags="0" type="2" />
+        <event time="18623" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="1" />
+        <event time="6168090" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="2" />
+        <event time="6168246" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="1" />
+        <event time="6208860" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="2" />
+        <event time="6209093" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallStart" flags="0" type="1" />
+        <event time="6209396" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallStart" flags="0" type="2" />
+        <event time="6209468" package="com.android.packageinstaller" class="com.android.packageinstaller.PackageInstallerActivity" flags="0" type="1" />
+        <event time="6212572" package="com.android.packageinstaller" class="com.android.packageinstaller.PackageInstallerActivity" flags="0" type="2" />
+        <event time="6212597" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallInstalling" flags="0" type="1" />
+        <event time="6220413" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallInstalling" flags="0" type="2" />
+        <event time="6220429" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallSuccess" flags="0" type="1" />
+        <event time="6222820" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallSuccess" flags="0" type="2" />
+        <event time="6223009" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.MainActivity" flags="0" type="1" />
+        <event time="6231959" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.MainActivity" flags="0" type="2" />
+        <event time="6231992" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.AddressBookActivity" flags="0" type="1" />
+        <event time="6237090" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.AddressBookActivity" flags="0" type="2" />
+        <event time="6237095" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.ManageConnectionActivity" flags="0" type="1" />
+        <event time="6259610" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.ManageConnectionActivity" flags="0" type="2" />
+        <event time="6259627" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.AddressBookActivity" flags="0" type="1" />
+        <event time="6273795" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.AddressBookActivity" flags="0" type="2" />
+        <event time="6273811" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.MainActivity" flags="0" type="1" />
+        <event time="6430186" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.MainActivity" flags="0" type="2" />
+        <event time="6430214" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="1" />
+        <event time="6459620" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="2" />
+        <event time="6459893" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallStart" flags="0" type="1" />
+        <event time="6459924" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallStart" flags="0" type="2" />
+        <event time="6459952" package="com.android.packageinstaller" class="com.android.packageinstaller.PackageInstallerActivity" flags="0" type="1" />
+        <event time="6462532" package="com.android.packageinstaller" class="com.android.packageinstaller.PackageInstallerActivity" flags="0" type="2" />
+        <event time="6462603" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallInstalling" flags="0" type="1" />
+        <event time="6469371" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallInstalling" flags="0" type="2" />
+        <event time="6469399" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallSuccess" flags="0" type="1" />
+        <event time="6471594" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallSuccess" flags="0" type="2" />
+        <event time="6471728" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.MainActivity" flags="0" type="1" />
+        <event time="6480149" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.MainActivity" flags="0" type="2" />
+        <event time="6480684" package="com.genymotion.superuser" class="com.koushikdutta.superuser.RequestActivity" flags="0" type="1" />
+        <event time="6480945" package="com.genymotion.superuser" class="com.koushikdutta.superuser.RequestActivity" flags="0" type="2" />
+        <event time="6481117" package="com.genymotion.superuser" class="com.koushikdutta.superuser.MultitaskSuRequestActivity" flags="0" type="1" />
+        <event time="6485042" package="com.genymotion.superuser" class="com.koushikdutta.superuser.MultitaskSuRequestActivity" flags="0" type="2" />
+        <event time="6485060" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.MainActivity" flags="0" type="1" />
+        <event time="6521870" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.MainActivity" flags="0" type="2" />
+        <event time="6521887" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.OptionsActivity" flags="0" type="1" />
+        <event time="6524602" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.OptionsActivity" flags="0" type="2" />
+        <event time="6524670" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.PurchaseActivity" flags="0" type="1" />
+        <event time="6527457" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.PurchaseActivity" flags="0" type="2" />
+        <event time="6527491" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.OptionsActivity" flags="0" type="1" />
+        <event time="6545740" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.OptionsActivity" flags="0" type="2" />
+        <event time="6545768" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.MainActivity" flags="0" type="1" />
+        <event time="6629805" package="berserker.android.apps.sshdroid" class="berserker.android.apps.sshdroid.MainActivity" flags="0" type="2" />
+        <event time="6629819" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="1" />
+        <event time="6808545" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="2" />
+        <event time="6808561" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="1" />
+        <event time="6825031" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="2" />
+        <event time="6825116" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallStart" flags="0" type="1" />
+        <event time="6825186" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallStart" flags="0" type="2" />
+        <event time="6825283" package="com.android.packageinstaller" class="com.android.packageinstaller.PackageInstallerActivity" flags="0" type="1" />
+        <event time="6827619" package="com.android.packageinstaller" class="com.android.packageinstaller.PackageInstallerActivity" flags="0" type="2" />
+        <event time="6827674" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallInstalling" flags="0" type="1" />
+        <event time="6829707" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallInstalling" flags="0" type="2" />
+        <event time="6829745" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallSuccess" flags="0" type="1" />
+        <event time="6831696" package="com.android.packageinstaller" class="com.android.packageinstaller.InstallSuccess" flags="0" type="2" />
+        <event time="6831984" package="org.galexander.sshd" class="org.galexander.sshd.SimpleSSHD" flags="0" type="1" />
+        <event time="6893853" package="org.galexander.sshd" class="org.galexander.sshd.SimpleSSHD" flags="0" type="2" />
+        <event time="6893876" package="org.galexander.sshd" class="org.galexander.sshd.Settings" flags="0" type="1" />
+        <event time="6910694" package="org.galexander.sshd" class="org.galexander.sshd.Settings" flags="0" type="2" />
+        <event time="6910711" package="org.galexander.sshd" class="org.galexander.sshd.SimpleSSHD" flags="0" type="1" />
+        <event time="6934635" package="org.galexander.sshd" class="org.galexander.sshd.SimpleSSHD" flags="0" type="2" />
+        <event time="6934658" package="org.galexander.sshd" class="org.galexander.sshd.Settings" flags="0" type="1" />
+        <event time="6971820" package="org.galexander.sshd" class="org.galexander.sshd.Settings" flags="0" type="2" />
+        <event time="6971846" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="1" />
+        <event time="6978113" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="2" />
+        <event time="6978131" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.MainActivity" flags="0" type="1" />
+        <event time="6985477" package="com.sonelli.juicessh" class="com.sonelli.juicessh.activities.MainActivity" flags="0" type="2" />
+        <event time="6985513" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="1" />
+        <event time="6998302" package="com.android.launcher3" class="com.android.launcher3.Launcher" flags="0" type="2" />
+        <event time="6998326" package="com.amaze.filemanager" class="com.amaze.filemanager.activities.MainActivity" flags="0" type="1" />
+    </event-log>
+</usagestats>

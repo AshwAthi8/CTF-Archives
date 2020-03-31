@@ -1,0 +1,5 @@
+service batteryd /system/bin/batteryd
+    class core
+
+on property:genymotion.batteryd.started=1
+   start healthd

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="payments_block_list"></string>
+    <long name="payments_block_list_last_sync_time" value="-1" />
+    <string name="payments_setup_country_specific_info">{}</string>
+</map>

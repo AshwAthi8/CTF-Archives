@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<job-info version="0">
+    <job jobid="109948" package="android" class="com.android.server.content.SyncJobService" sourcePackageName="com.whatsapp" sourceTag="com.android.contacts/com.whatsapp/WhatsApp" sourceUserId="0" uid="1000" priority="0" flags="0">
+        <constraints connectivity="true" />
+        <periodic period="3600000" flex="300000" deadline="1554927461859" delay="1554927161859" />
+        <extras>
+            <string name="provider">com.android.contacts</string>
+            <int name="reason" value="-4" />
+            <int name="source" value="4" />
+            <int name="userId" value="0" />
+            <long name="expectedRuntime" value="0" />
+            <string name="owningPackage">com.whatsapp</string>
+            <boolean name="SyncManagerJob" value="true" />
+            <boolean name="isPeriodic" value="true" />
+            <boolean name="allowParallelSyncs" value="false" />
+            <long name="periodMillis" value="3600000" />
+            <int name="sourcePeriodicId" value="-1" />
+            <int name="jobId" value="109948" />
+            <int name="owningUid" value="10068" />
+            <long name="flexMillis" value="144000" />
+            <string name="accountName">WhatsApp</string>
+            <string name="accountType">com.whatsapp</string>
+            <int name="retries" value="0" />
+            <pbundle_as_map name="syncExtras" />
+        </extras>
+    </job>
+</job-info>

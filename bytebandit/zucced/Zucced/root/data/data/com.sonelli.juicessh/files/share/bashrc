@@ -1,0 +1,13 @@
+# Switch to the home directory
+cd ~
+
+export PATH="$JUICESSH_BIN_DIR:$PATH";
+
+if [ -f $JUICESSH_BIN_DIR/ls ]; then
+    # We have a full version of ls
+    # Enable colours
+    alias ls="ls --color";
+fi
+
+# Run the user's ~/bashrc if they have one
+if [ -f ~/.bashrc  ]; then . ~/.bashrc; fi

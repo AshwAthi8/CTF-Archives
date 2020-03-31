@@ -1,0 +1,56 @@
+Process: com.amaze.filemanager
+PID: 2418
+Flags: 0x3888be45
+Package: com.amaze.filemanager v29 (3.0.1)
+Build: Android/vbox86p/vbox86p:8.0.0/OPR6.170623.017/233:userdebug/test-keys
+System-App: true
+Uptime-Millis: 6477039
+Loop-Violation-Number: 1
+Duration-Millis: 1
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=18874375 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1438)
+	at java.io.UnixFileSystem.list(UnixFileSystem.java:302)
+	at java.io.File.list(File.java:1122)
+	at java.io.File.listFiles(File.java:1207)
+	at com.amaze.filemanager.utils.Futils.canGoBack(Futils.java:372)
+	at com.amaze.filemanager.fragments.Main.goBack(Main.java:1163)
+	at com.amaze.filemanager.activities.MainActivity.onbackpressed(MainActivity.java:840)
+	at com.amaze.filemanager.activities.MainActivity.onBackPressed(MainActivity.java:822)
+	at android.app.Activity.onKeyUp(Activity.java:2965)
+	at android.view.KeyEvent.dispatch(KeyEvent.java:2712)
+	at android.app.Activity.dispatchKeyEvent(Activity.java:3257)
+	at android.support.v7.internal.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:49)
+	at android.support.v7.app.AppCompatDelegateImplBase$AppCompatWindowCallback.dispatchKeyEvent(AppCompatDelegateImplBase.java:241)
+	at android.support.v7.internal.view.WindowCallbackWrapper.dispatchKeyEvent(WindowCallbackWrapper.java:49)
+	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:351)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4714)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4586)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4128)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4181)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4147)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4274)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4155)
+	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4331)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4128)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4181)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4147)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4155)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4128)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4181)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4147)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4307)
+	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4468)
+	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2435)
+	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:1998)
+	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:1989)
+	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2412)
+	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.next(MessageQueue.java:325)
+	at android.os.Looper.loop(Looper.java:142)
+	at android.app.ActivityThread.main(ActivityThread.java:6541)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+

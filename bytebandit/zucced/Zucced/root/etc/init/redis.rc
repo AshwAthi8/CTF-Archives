@@ -1,0 +1,7 @@
+# Init file for starting redis on Android
+
+on boot
+    start redis
+
+service redis /system/bin/redis --protected-mode no
+    disabled

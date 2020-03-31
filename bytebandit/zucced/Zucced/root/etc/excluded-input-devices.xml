@@ -1,0 +1,4 @@
+<devices>
+  <device name="ImExPS/2 Generic Explorer Mouse" />
+  <device name="VirtualBox mouse integration" />
+</devices>

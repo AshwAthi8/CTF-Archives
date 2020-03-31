@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<usagestats version="1" endTime="620018019">
+    <packages>
+        <package lastTimeActive="-1554303616126" package="com.android.providers.telephony" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.providers.media" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="39460632" package="eu.chainfire.flash" timeActive="168" lastEvent="2" />
+        <package lastTimeActive="19529874" package="com.android.documentsui" timeActive="1085847" lastEvent="3" />
+        <package lastTimeActive="-1554303616126" package="com.android.externalstorage" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="18650445" package="com.whatsapp" timeActive="1046427" lastEvent="2" />
+        <package lastTimeActive="-1554303616126" package="com.android.providers.downloads" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.defcontainer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.genymotion.systempatcher" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="39130002" package="android" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="860305" package="com.android.contacts" timeActive="48011" lastEvent="2" />
+        <package lastTimeActive="620017995" package="com.android.launcher3" timeActive="11019733" lastEvent="2" />
+        <package lastTimeActive="39595549" package="com.android.backupconfirm" timeActive="36716" lastEvent="2" />
+        <package lastTimeActive="619649498" package="berserker.android.apps.sshdroid" timeActive="153019" lastEvent="2" />
+        <package lastTimeActive="-1554303616126" package="com.android.sharedstoragebackup" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.printspooler" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.keychain" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.dialer" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="android.ext.services" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="619851389" package="com.android.packageinstaller" timeActive="75916" lastEvent="2" />
+        <package lastTimeActive="-1554303616126" package="com.android.inputmethod.latin" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.smspush" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="620005170" package="com.sonelli.juicessh" timeActive="214452" lastEvent="2" />
+        <package lastTimeActive="620018019" package="com.amaze.filemanager" timeActive="222447" lastEvent="1" />
+        <package lastTimeActive="613037960" package="com.android.settings" timeActive="65758" lastEvent="2" />
+        <package lastTimeActive="-1554303616126" package="com.android.phone" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.providers.blockednumber" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.providers.userdictionary" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="619991513" package="org.galexander.sshd" timeActive="139773" lastEvent="2" />
+        <package lastTimeActive="-1554303616126" package="com.genymotion.genyd" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="-1554303616126" package="com.android.systemui" timeActive="0" lastEvent="0" />
+        <package lastTimeActive="619504735" package="com.genymotion.superuser" timeActive="27392" lastEvent="2" />
+        <package lastTimeActive="-1554303616126" package="com.android.providers.contacts" timeActive="0" lastEvent="0" />
+    </packages>
+    <configurations>
+        <config lastTimeActive="613019877" timeActive="443" count="5" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="100282185" timeActive="250" count="2" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="613020060" timeActive="293" count="3" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="613032926" timeActive="43459" count="5" fs="1065353216" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="613032927" timeActive="612988266" count="5" active="true" fs="1065353216" mcc="310" mnc="270" locales="en-US" touch="3" key="2" keyHid="1" hardKeyHid="1" nav="2" navHid="1" ori="1" scrLay="268435794" clrMod="5" ui="17" width="411" height="659" sw="411" density="420" app_bounds="0 0 1080 1794" />
+        <config lastTimeActive="613019775" timeActive="222" count="5" fs="1065353216" locales="en-US" touch="1" key="1" keyHid="1" hardKeyHid="2" nav="1" navHid="2" ori="1" scrLay="268435810" clrMod="5" width="411" height="731" sw="411" density="420" app_bounds="0 0 1080 1920" />
+    </configurations>
+    <event-log />
+</usagestats>

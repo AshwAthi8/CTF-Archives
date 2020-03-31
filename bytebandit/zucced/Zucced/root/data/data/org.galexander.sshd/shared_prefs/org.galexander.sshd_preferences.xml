@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="path">/data/user/0/org.galexander.sshd/files</string>
+    <boolean name="onopen" value="false" />
+    <string name="port">2222</string>
+    <string name="shell">/system/bin/sh</string>
+    <boolean name="onboot" value="false" />
+    <string name="extra"></string>
+    <boolean name="foreground" value="true" />
+    <string name="env"></string>
+    <boolean name="rsyncbuffer" value="false" />
+    <string name="home">/data/user/0/org.galexander.sshd/files</string>
+</map>
