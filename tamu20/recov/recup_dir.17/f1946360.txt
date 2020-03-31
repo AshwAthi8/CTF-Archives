@@ -1,3 +1,0 @@
-. It includes information about displaying the window, characteristics of a console application, and handling errors. 
-
-Note that in Windows XP and beyond, the WinstationDesktop string property (which previously defaulted to "winsta0\default") is ignored in all cases. The value used in place of this parameter is an empty string ("").

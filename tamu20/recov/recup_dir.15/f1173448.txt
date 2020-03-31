@@ -1,1 +1,0 @@
-stateret en afbrudt skrivning under gendannelse fra logfilen %3 til sikkerhedskopiering. Den forkerte kontrolsumpost er placeret ved %4.

@@ -1,9 +1,0 @@
-I'
-			InprocServer32 = s '%MODULE%'
-			{
-				val ThreadingModel = s 'Apartment'
-			}
-			'TypeLib' = s '{466D66ED-9616-11D2-9342-0000F875AE17}'
-		}
-	}
-}

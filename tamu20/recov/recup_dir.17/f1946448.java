@@ -1,2 +1,0 @@
- a data source that resolves to an actual local storage device on a Win32 system.
-The class returns both local as well as mapped logical disks. However, the recommended approach is to use this class for obtaining information on local disks and to use the Win32_MappedLogicalDisk class for information on mapped logical disk.

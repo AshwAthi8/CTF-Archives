@@ -1,4 +1,0 @@
-rectory (use with filename to avoid extract).
-  /E         Extract (use instead of *.* to extract all files).
-  /L dir     Location to place extracted files (default is current directory).
-  /Y         Do not prompt before overwriting an existing file.

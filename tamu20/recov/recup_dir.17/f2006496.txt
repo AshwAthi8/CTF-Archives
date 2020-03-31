@@ -1,6 +1,0 @@
-is Help screen again.
-</P>
-<P ID="ridBtnContinue" ALIGN="CENTER"><BUTTON TYPE="BUTTON" ID="btnContinue">Continue</BUTTON></P>
-</FORM>
-</BODY>
-</HTML>

@@ -1,9 +1,0 @@
-<TR>
-<TD style="height:1%">
-<TABLE style="width:100%">
-<TR>
-<TD>
-<FIELDSET align=absMiddle id=fldPreference style="padding:1mm">
-<DIV id=lblQuery style="height: 1.5 em;">
-<p ID="query">
-<span id="minCookieDomain"></span>&nbsp;

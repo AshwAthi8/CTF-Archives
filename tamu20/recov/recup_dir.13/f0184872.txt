@@ -1,4 +1,0 @@
-g:'0.3em 1em'; font-family:Tahoma; font-size:8pt; font-weight:bold; font-style:normal; color:#215DC6; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#FFFFFFFF',EndColorStr='#FFC6D3F7'); border-bottom:'1px solid #C6D3F7';}
-.LearnAboutBody         {padding:'1mm 2mm'; font-family:Tahoma; font-size:8pt; font-weight:normal; font-style:normal; background-color:#EEF2FB;}
-
-UL.TaskList             {list-style-type:square; list-style-image:url(taskbullet.gif);}

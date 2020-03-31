@@ -1,8 +1,0 @@
- s 'EapMschapv2Cfg.EapMschapv2Cfg'
-			InprocServer32 = s '%MODULE%'
-			{
-				val ThreadingModel = s 'Apartment'
-			}
-		}
-	}
-}

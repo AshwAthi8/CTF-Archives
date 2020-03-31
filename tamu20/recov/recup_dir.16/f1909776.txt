@@ -1,7 +1,0 @@
-mapText/Splash/Copyright2]
-DynText = SZ INDIR, 1220
-DynRect = RECT, { 7, 184, 379, 194 }
-DynPrefFont = FONT, { "Tahoma", 7, 400 }
-DynFont = FONT, { "Arial", 7, 400 }
-DynJustify = PT, { -1, 1 }
-

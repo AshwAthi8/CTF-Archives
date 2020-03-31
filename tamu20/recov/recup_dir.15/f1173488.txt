@@ -1,1 +1,0 @@
-efragmentierung der Datenbank '%3' wurde vorzeitig aufgrund des unerwarteten Fehlers %4 abgebrochen. Beim nächsten Durchgang wird die Online-Defragmentierung an der Abbruchstelle fortsetzen.

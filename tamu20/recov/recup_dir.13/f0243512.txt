@@ -1,7 +1,0 @@
-rgifc.Format'
-			LocalServer32 = s '%MODULE%'
-			val AppID = s '{89D5C4CB-8DB6-4B8D-BB0F-FC3B91AC8FCA}'
-			'TypeLib' = s '{310DD6D6-F386-4F33-9A5D-2ECE2B0AC7B0}'
-		}
-	}
-}

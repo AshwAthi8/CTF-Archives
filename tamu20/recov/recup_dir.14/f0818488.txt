@@ -1,1 +1,0 @@
-='false' type='Error'><rate>%1.3f</rate><response_time>%1.3f</response_time><component name='UL'>%1.1f</component><component name='W3'>%1.1f</component><component name='W3Fltr'>%1.1f</component><component name='ISAPI'>%1.1f</component><component name='ASP'>%1.1f</component><component name='CGI'>%1.1f</component></requests>

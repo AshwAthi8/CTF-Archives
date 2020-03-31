@@ -1,6 +1,0 @@
-cture="amd64"
-            language="*"
-        />
-    </dependentAssembly>
-</dependency>
-</assembly>

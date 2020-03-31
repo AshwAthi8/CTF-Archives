@@ -1,4 +1,0 @@
-"6.0.0.0-6.0.3790.1830" newVersion="6.0.3790.1830"/>
-      </dependentAssembly>
-   </dependency>
-</assembly>

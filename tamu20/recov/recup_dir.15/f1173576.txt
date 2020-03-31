@@ -1,8 +1,0 @@
-%1 (%2) Mise à zéro en ligne de la base de données %3 terminée après %4 secondes avec l'erreur %5%n
-%6 pages%n
-%7 pages vides%n
-%8 pages inchangées depuis la dernière mise à zéro%n
-%9 pages inutilisées mises à zéro%n
-%10 pages utilisées consultées%n
-%11 enregistrements supprimés mis à zéro%n
-%12 fragments de données non référencés mis à zéro

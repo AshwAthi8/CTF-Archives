@@ -1,9 +1,0 @@
-eImpl.1'
-			VersionIndependentProgID = s 'COMEXPS.CCOMNSScopeImpl'
-			InprocServer32 = s '%MODULE%'
-			{
-				val ThreadingModel = s 'Apartment'
-			}
-		}
-	}
-}

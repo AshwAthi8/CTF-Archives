@@ -1,5 +1,0 @@
-<extends type="baseEap:EapType"/>
-      <element type="RoutingIdentity" minOccurs="0"/>
-      <element type="baseEap:Eap" minOccurs="0" maxOccurs="*" />
-   </ElementType>
-</Schema>

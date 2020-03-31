@@ -1,9 +1,0 @@
-		{
-						val Capabilities = d '4'
-						val FriendlyName = s 'res://wmploc.dll/RT_STRING/#1493'
-					}
-				}
-            }
-        }
-    }
-}

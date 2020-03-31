@@ -1,9 +1,0 @@
-lign="center" valign="middle">You must be connected to the Internet to update information about the Audio CD you have selected.</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-	</body>
-
-</html>

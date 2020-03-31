@@ -1,6 +1,0 @@
-unt with a smart card.  
-19 - Trusted For Delegation - Windows 2000: The account is enabled for delegation. This is a security-sensitive setting; accounts with this option enabled should be tightly controlled. This setting allows a service running under the account to assume a client's identity and authenticate as that user to other remote servers on the network. 
-20 - Not Delegated - Windows 2000: Marks the account as 'sensitive'; other users cannot act as delegates of this user account.  
-21 - Use DES Key Only - Windows 2000: Restrict this principal to use only Data Encryption Standard (DES) encryption types for keys. 
-22 - Don't Require Preauthorization - Windows 2000: This account does not require Kerberos preauthentication for logon. 
-23 - Password Expired - Indicates that password has expired.

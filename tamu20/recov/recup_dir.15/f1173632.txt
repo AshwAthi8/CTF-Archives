@@ -1,1 +1,0 @@
-ivo di liberare spazio in una struttura B (ObjectId %6) sono andate perse le pagine inutilizzate %4-%5 . Eseguire la deframmentazione non in linea, prima di riprovare a liberare spazio.

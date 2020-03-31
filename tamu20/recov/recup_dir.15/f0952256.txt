@@ -1,3 +1,0 @@
-odInfoAlign colspan=2 align=left>
-<ID id=ProductInfo1>
-<span id=ProdInfoStyle style="WIDTH: 25em; COLOR: black; FONT: 9pt ·s

@@ -1,9 +1,0 @@
-t name="condition">Is Later Than</argument>
-                            <argument name="value">Last month</argument>
-                        </fragment>
-                    </sourceFilter>
-                </querySet>
-            </smartPlaylist>
-        </seq>
-    </body>
-</smil>

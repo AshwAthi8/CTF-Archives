@@ -1,9 +1,0 @@
-omplete
-[msmsgs - OC_QUERY_STEP_COUNT] - complete
-[msmsgs - OC_QUERY_STEP_COUNT] - complete
-[msmsgs - OC_ABOUT_TO_COMMIT_QUEUE] - complete
-[msmsgs - OC_ABOUT_TO_COMMIT_QUEUE] - complete
-[msmsgs - OC_COMPLETE_INSTALLATION] - complete
-[msmsgs - OC_COMPLETE_INSTALLATION] - complete
-[msmsgs - OC_QUERY_STATE] - complete
-[msmsgs - OC_CLEANUP] - complete

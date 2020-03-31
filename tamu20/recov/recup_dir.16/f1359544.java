@@ -1,3 +1,0 @@
- hint</A> </DIV> </DIV> </DIV> <DIV class=HorzLine1></DIV> <DIV class=ButtonRow><BUTTON id=idOK type="submit" onclick="RemovePassword();" accesskey="R" title="Remove password protection from this account."><SPAN>R</SPAN>emove Password
-</BUTTON> <BUTTON id=idCancel type="reset" style="width:6em" onclick='top.window.g_Navigator.back();' title="Close this page without saving any changes you made.">Cancel
-</BUTTON> </DIV> </DIV> </BODY> </HTML> 

@@ -1,2 +1,0 @@
-ent is necessary because the scheduling service only allows jobs to be configured on a day of the month, day of the week, or run once. A job cannot be run on a specific date.
-Example: ********123000.000000-420 which implies 12:30 pm PST with daylight savings time in effect.

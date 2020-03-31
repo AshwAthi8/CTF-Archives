@@ -1,8 +1,0 @@
-{
-		pchealth.Connectivity.NavigateOnline(sOnlineURL,L_TopicTitle_Text,L_TopicIntro_Text,sOfflineURL);
-	}
-</SCRIPT>
-</HEAD>
-<BODY>
-</BODY>
-</HTML>

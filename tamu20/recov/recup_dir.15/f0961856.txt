@@ -1,7 +1,0 @@
-		{
-				val ThreadingModel = s 'Apartment'
-			}
-			'TypeLib' = s '{22D6F304-B0F6-11D0-94AB-0080C74C7E95}'
-		}
-	}
-}

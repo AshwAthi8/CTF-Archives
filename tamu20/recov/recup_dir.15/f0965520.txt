@@ -1,4 +1,0 @@
-shdoclc.dll/pagerror.gif"
-    width="25" height="33"></td>
-    <td id="tableProps2" align="left" valign="middle" width="360"><h1 id="textSection1"
-    style="COLOR: black; FONT: 13pt/14pt 

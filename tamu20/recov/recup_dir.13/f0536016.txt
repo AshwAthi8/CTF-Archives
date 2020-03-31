@@ -1,5 +1,0 @@
-kpoint is By Design.  You are accessing DRM protected content while running a debugger.
-If you are using Windows Media Player to copy music from a CD, disable DRM protection in the player.  Tools menu,
-Options.  Look at the Copy Music window pane and unckeck the Copy protected music box.
-You will also see this problem if you have the /DEBUG switch enabled in your boot.ini file.
-**********************************************************************************************

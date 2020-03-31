@@ -1,9 +1,0 @@
-">Is Later Than</argument>
-                            <argument name="value">Last week</argument>
-                        </fragment>
-                    </sourceFilter>
-                </querySet>
-            </smartPlaylist>
-        </seq>
-    </body>
-</smil>

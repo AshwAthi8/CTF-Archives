@@ -1,6 +1,0 @@
-nable to notify service
-96 - Unable to notify DNS service
-97 - Interface not configurable
-98 - Not all DHCP leases could be released/renewed
-100 - DHCP not enabled on adapter
-Other - For integer values other than those listed above, refer to Win32 error code documentation.

@@ -1,9 +1,0 @@
-u must be connected to the Internet.</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-	</body>
-
-</html>

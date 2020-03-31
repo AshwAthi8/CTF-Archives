@@ -1,2 +1,0 @@
-argado e instalado las actualizaciones críticas más recientes de Windows Update."/>
-	<errorServiceNotRunning text="El servicio Firewall de Windows/Conexi

@@ -1,1 +1,0 @@
-A página da versão máxima (%3) do parâmetro do sistema é menor que a página da versão preferida (%4).

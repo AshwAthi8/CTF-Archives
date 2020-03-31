@@ -1,8 +1,0 @@
-vice is not present, is not working properly, or does not have all its drivers installed. 
-25	Windows is still setting up this device. 
-26	Windows is still setting up this device. 
-27	This device does not have valid log configuration. 
-28	The drivers for this device are not installed. 
-29	This device is disabled because the firmware of the device did not give it the required resources. 
-30	This device is using an Interrupt Request (IRQ) resource that another device is using. 
-31	This device is not working properly because Windows cannot load the drivers required for this device.

@@ -1,2 +1,0 @@
-ontrol Manager. The executable file associated with a service can be started at boot time by a boot program or by the system. It can also be started on-demand by the Service Control Manager. Any service or process that is not owned by a specific user, and that provides an interface to some functionality supported by the computer system, is a descendent (or member) of this class.
-Example: The dynamic host configuration protocol (DHCP) client service on a Windows NT/Windows 2000 computer system.

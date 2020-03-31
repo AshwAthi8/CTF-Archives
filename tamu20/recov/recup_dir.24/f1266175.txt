@@ -1,3 +1,0 @@
-r el estado de este servicio y ver el estado del servidor de seguridad, abra " CPLLinkText="Firewall de Windows" CPLSuffixText="  en el Panel de control."/>
-	
-	<confirmDialog dialogWidth="420" dialogHeight="180" yesText="Sí" noText="No" yesAccessKey="s" noAccessKey="n" title="Actualizaciones de seguridad posteriores a la instalaci

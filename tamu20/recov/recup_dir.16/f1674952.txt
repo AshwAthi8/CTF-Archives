@@ -1,2 +1,0 @@
-r to determine which part of the computer system handles ICM support.  
-This property has been deprecated in favor of a corresponding property(s) contained in the Win32_VideoController, Win32_DesktopMonitor and//or CIM_VideoControllerResolution

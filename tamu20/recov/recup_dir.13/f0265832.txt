@@ -1,14 +1,0 @@
-s: standard hresult
-Cond:    --
-*/
-HRESULT NEAR PASCAL RemView_GetSelectedObjects(
-    PREMVIEW this,
-    HWND hwnd,
-    LPCITEMIDLIST * ppidlSel,
-    UINT *lpcidl)
-    {
-    HRESULT hres = ResultFromScode(E_FAIL);
-    LPCITEMIDLIST * apidl;
-
-    // Assume failure
-    *ppidlSel = NULL;LIST\#

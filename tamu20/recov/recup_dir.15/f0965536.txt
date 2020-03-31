@@ -1,9 +1,0 @@
-">
-
-
-<table width="400" cellpadding="3" cellspacing="5">
-  <tr>
-    <td id="tableProps" valign="top" align="left"><img id="pagerrorImg" SRC="pagerror.gif"
-    width="25" height="33"></td>
-    <td id="tableProps2" align="left" valign="middle" width="360"><h1 id="term1"
-    style="COLOR: black; FONT: 13pt/14pt 

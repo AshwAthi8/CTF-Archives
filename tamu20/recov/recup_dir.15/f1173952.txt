@@ -1,1 +1,0 @@
-registar a consolidação de uma transacção. Para garantir a consistência da base de dados, o processo foi terminado. Basta reiniciar o processo para obrigar a recuperação da base de dados e repô-la num estado consistente.

@@ -1,6 +1,0 @@
-YBINDING"><xsl:if test="position()=1">.</xsl:if><xsl:value-of select="@NAME"/>="<xsl:value-of select="KEYVALUE/text()"/>"<xsl:if test="position()!=last()">,</xsl:if></xsl:for-each></xsl:template>
-<xsl:template match="/" >
-<html>
-<H3><xsl:value-of select="$title" />  <xsl:value-of select="count(COMMAND/RESULTS/CIM/INSTANCE)"/> Instances of <xsl:value-of select="COMMAND/RESULTS/CIM/INSTANCE[1]/@CLASSNAME"/></H3>
-<xsl:apply-templates select="COMMAND"/>
-</html>

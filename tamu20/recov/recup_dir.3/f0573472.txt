@@ -1,3 +1,0 @@
-:#000000}
-.headerCellLine{background-color:#CCCCCC;width:246px;height:1px}
-.messagesCell{font-family:"

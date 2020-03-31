@@ -1,4 +1,0 @@
-asn't printing yet, another unpaused print job may begin printing. The method can return the following values:
-0 - Success.
-5 - Access denied.
-Other - For integer values other than those listed above, refer to the documentation on the Win32 error codes.

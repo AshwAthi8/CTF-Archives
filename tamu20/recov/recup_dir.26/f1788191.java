@@ -1,2 +1,0 @@
-[.ShellClassInfo]
-CLSID={d6277990-4c6a-11cf-8d87-00aa0060f5bf}

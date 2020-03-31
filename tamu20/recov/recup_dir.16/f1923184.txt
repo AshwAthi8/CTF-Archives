@@ -1,9 +1,0 @@
-e="condition">Is</argument>
-                            <argument name="value">Unrated</argument>
-                        </fragment>
-                    </sourceFilter>
-                </querySet>
-            </smartPlaylist>
-        </seq>
-    </body>
-</smil>

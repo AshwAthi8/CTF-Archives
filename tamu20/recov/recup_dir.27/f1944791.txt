@@ -1,6 +1,0 @@
-drive is not the same.
-14 - The directory is not empty.
-15 - There has been a sharing violation.
-16 - The start file specified was invalid.
-17 - A privilege required for the operation is not held.
-21 - A parameter specified is invalid.

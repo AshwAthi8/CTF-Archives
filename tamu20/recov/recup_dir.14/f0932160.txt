@@ -1,5 +1,0 @@
-         <_locTag _loc="locData" _locAttrData="*">errorDialog</_locTag>
-            <_locTag _loc="locData" _locAttrData="title,description,description_alt,moreInfoAccessKey,moreInfoText,moreInfoToolTip">step</_locTag>
-            <_locTag _loc="locData" _locAttrData="title,accessKey,actionToolTip">action</_locTag>
-	</_locDefinition>
-	<alertInfo text="

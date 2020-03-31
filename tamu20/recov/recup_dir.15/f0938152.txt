@@ -1,3 +1,0 @@
-isione connessione Internet (ICS), che supporta le impostazioni di Windows Firewall, è attualmente arrestato. Impossibile apportare modifiche alle impostazioni relative alla connessione in ingresso per il server. Scegliendo OK, Aggiornamenti protezione per Windows Server verrà chiuso." dialogHeight="215" CPLPrefixText="Per modificare lo stato di questo servizio e visualizzare lo stato del firewall, aprire " CPLLinkText="Windows Firewall" CPLSuffixText="  nel Pannello di controllo."/>
-	
-	<confirmDialog dialogWidth="410" dialogHeight="170" yesText="S

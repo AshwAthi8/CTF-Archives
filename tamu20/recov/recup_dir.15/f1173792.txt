@@ -1,1 +1,0 @@
-tempo síncrono %3 de página de leitura sobreposta. Restaure os bancos de dados de um backup anterior.

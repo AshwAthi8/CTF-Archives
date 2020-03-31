@@ -1,8 +1,0 @@
-ting.
-2  /PATH:OFF    Turns off the effect of /PATH:ON.
-O  /E           Stores a copy of the appended directory list in an environment
-K               variable named APPEND.  /E may be used only the first time
-=               you use APPEND after starting your system.
-
-5Type APPEND ; to clear the appended directory list.
-HType APPEND without parameters to display the appended directory list.

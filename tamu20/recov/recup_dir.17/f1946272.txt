@@ -1,4 +1,0 @@
- Win32Shutdown method provides the full set of shutdown options supported by Win32 operating systems.
-The method returns an integer value that can be interpretted as follows: 
-0 - Successful completion.
-Other - For integer values other than those listed above, refer to Win32 error code documentation.

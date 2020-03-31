@@ -1,3 +1,0 @@
-h or cause the mouse to be unresponsive.
-Above_Normal - (Windows 2000 and later) Indicates a process that has priority higher than Normal but lower than High.
-Below_Normal - (Windows 2000 and later): Indicates a process that has priority higher than Idle but lower than Normal.

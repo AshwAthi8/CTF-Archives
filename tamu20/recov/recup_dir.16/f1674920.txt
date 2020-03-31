@@ -1,3 +1,0 @@
- Only - Windows 2000: Restrict this principal to use only Data Encryption Standard (DES) encryption types for keys. 
-22 - Don't Require Preauthorization - Windows 2000: This account does not require Kerberos preauthentication for logon. 
-23 - Password Expired - Indicates that password has expired.

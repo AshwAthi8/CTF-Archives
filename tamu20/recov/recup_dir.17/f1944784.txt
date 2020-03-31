@@ -1,3 +1,0 @@
-specified was invalid.
-17 - A privilege required for the operation is not held.
-21 - A parameter specified is invalid.

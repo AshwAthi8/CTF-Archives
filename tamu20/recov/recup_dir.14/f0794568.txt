@@ -1,6 +1,0 @@
-yStub iid="{8FA7728F-B69B-4EE5-99F2-E2AA021BEF28}" tlbid="{8143C9AA-38F8-4729-B935-DF6823C616C6}" name="IActCtx"/>
-   </file>
-   <file name="sxsoaps.tlb" hash="ec8c3c79d41fb21356d36c516fffb997447b5b23" hashalg="SHA1">
-      <typelib tlbid="{8143C9AA-38F8-4729-B935-DF6823C616C6}" version="1.0" helpdir=""/>
-   </file>
-</assembly>

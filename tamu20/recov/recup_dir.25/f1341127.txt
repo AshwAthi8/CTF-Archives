@@ -1,6 +1,0 @@
-Copyright (c) 1995 Inso Corporation.  This work is protected by
-US & international copyright laws and contains certain trade secret
-information. All use of this work is governed by the terms of agreements
-between Inso Corporation and its licensees or potential licensees. 
-Disclosure or disassembly of the contents is prohibited. All
-rights reserved.

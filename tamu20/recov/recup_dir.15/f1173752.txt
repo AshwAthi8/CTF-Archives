@@ -1,6 +1,0 @@
-e sider%n
-%8 sider som ikke er endret siden forrige null%n
-%9 ubrukte nullstilte sider%n
-%10 viste brukte sider%n
-%11 nullstilte slettede oppføringer%n
-%12 nullstilte datadeler

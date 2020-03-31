@@ -1,8 +1,0 @@
-lty or
-mismatched memory. Try changing video adapters.
-
-Check with your hardware vendor for any BIOS updates. Disable
-BIOS memory options such as caching or shadowing. If you need
-to use Safe Mode to remove or disable components, restart your
-computer, press F8 to select Advanced Startup Options, and then
-select Safe Mode.
