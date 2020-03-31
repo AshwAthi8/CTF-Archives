@@ -1,0 +1,31 @@
+nière mise à jour le 15 avril 2004
+
+Vous pouvez consulter la dernière version de cette Déclaration de confidentialité sur le site Web des mises à jour de Windows à l'adresse suivante :
+windowsupdate.microsoft.com.
+
+Microsoft s'engage à protéger votre confidentialité.
+
+Quelles sont les données collectées et pourquoi le sont-elles ?
+Windows Update collecte des informations système générales sur votre ordinateur à chaque visite, pour que vous receviez les mises à jour appropriées à votre ordinateur. Les informations sont également utilisées pour générer des statistiques compilées sur l'utilisation du site Web Windows Update et sur les systèmes qui nécessitent un support, pour que nous puissions améliorer notre service. Ces informations comprennent :
+• Marque et modèle de l'ordinateur
+• Numéro de version de Windows
+• Numéro de version de Internet Explorer
+• Numéros de version des autres logiciels Microsoft pour lesquels des mises à jour peuvent être disponibles
+• Numéros d'identification Plug-and-Play des périphériques matériels
+• Paramètre de région et de langue
+• Identificateur unique GUID de l'ordinateur
+• Identificateur du produit et clé du produit (Product Key)
+• Nom, numéro et date de révision du BIOS
+Votre adresse IP est enregistrée lorsque vous vous connectez au site Windows Update, mais cette adresse est utilisée uniquement pour générer des statistiques compilées.
+
+Comment utilisons-nous ces données ?
+Windows Update collecte l'identificateur et la clé du produit pour confirmer que vous exécutez une copie sous licence valide de Windows. L'identificateur et la clé de produit collectés ne sont pas conservés lorsque votre session Windows Update est terminée, sauf si l'identificateur de produit n'est pas valide.
+
+Pour générer des statistiques précises, Windows Update évalue l'identificateur unique GUID (Globally Unique Identifier) qui est enregistré sur votre ordinateur afin de l'identifier de manière unique. L'identificateur unique GUID ne contient aucune information permettant de vous identifier personnellement. Un identificateur unique GUID est attribué et analysé dans les cas suivants :
+
+• Afin de fournir aux utilisateurs un meilleur service, Windows Update enregistre le nombre d'ordinateurs individuels qui visitent le site, ainsi que le succès ou l'échec des téléchargements et des installations de mises à jour spécifiques. Windows Update enregistre l'identificateur unique GUID de l'ordinateur qui a tenté le téléchargement, l'identificateur de l'élément demandé, si des mises à jour étaient nécessaires, et les informations de configuration affichées ci-dessus.
+
+• Windows Update enregistre un identificateur unique GUID supplémentaire si vous indiquez si les articles d'aide et de résolution de problèmes vous ont aidé à résoudre votre problème. Cela permet à Windows Update de vous offrir des informations toujours plus utiles et appropriées.
+
+• Microsoft collecte des informations concernant les pages visitées par nos utilisateurs sur le site microsoft.com, y compris Windows Update. Ces informations peuvent inclure : votre adresse IP, le type de navigateur Web, le système d'exploitation, le nom de domaine, la date et l'heure à laquelle vous avez visité le site et les adresses des sites Web qui vous ont renvoyé au site Microsoft. Ces données sur les visites du site sont identifiées par un numéro unique utilisé uniquement dans ce but.
+

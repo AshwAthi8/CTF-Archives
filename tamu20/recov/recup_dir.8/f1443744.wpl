@@ -1,0 +1,31 @@
+<?wpl version="1.0"?>
+<smil>
+    <head>
+        <meta name="Generator" content="Microsoft Windows Media Player -- 9.0.0.2773"/>
+        <title>Favorites -- Listen to at night</title>
+    </head>
+    <body>
+        <seq>
+            <smartPlaylist version="1.0.0.0">
+                <querySet>
+                    <sourceFilter id="{4202947A-A563-4B05-A754-A1B4B5989849}" name="Music from my Media Library">
+                        <fragment name="Sort by">
+                            <argument name="value">Playcount: Evening play totals</argument>
+                            <argument name="condition">Descending</argument>
+                        </fragment>
+                        <fragment name="Playcount: Evening play totals">
+                            <argument name="condition">Is Greater Than</argument>
+                            <argument name="value">0</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+                <filter id="{BC5E21B0-504C-46F6-82BF-FB975C911AD6}" name="Microsoft Auto Playlist Filter -- Limits auto playlists by count, size or duration">
+                    <fragment name="LimitByDuration">
+                        <argument name="Number">2</argument>
+                        <argument name="Format">Hours</argument>
+                    </fragment>
+                </filter>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

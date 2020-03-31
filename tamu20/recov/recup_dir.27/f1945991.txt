@@ -1,0 +1,5 @@
+arameters have been passed to the service.
+22 - The account, which this service is to run under is either invalid or lacks the permissions to run the service.
+23 - The service exists in the database of services available from the system.
+24 - The service is currently paused in the system.
+Other - For integer values other than those listed above, refer to Win32 error code documentation.

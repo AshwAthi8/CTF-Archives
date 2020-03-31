@@ -1,0 +1,5 @@
+ookup info
+	  flags = %lx (%s %s)
+	  lookup timeout = %lu
+	  cache TTL      = %lu
+	  server count   = %lu

@@ -1,0 +1,108 @@
+
+
+*******Initializing Message Log:tsoc.dll 03/01/20 19:00:24
+*******Version:Major=5, Minor=2, Build=3790, PlatForm=2, CSDVer=Service Pack 1, Free
+
+hydraoc.cpp(192)Entering OC_PREINITIALIZE
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_PREINITIALIZE Done. Returning 1
+
+
+hydraoc.cpp(192)Entering OC_INIT_COMPONENT
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+state.cpp(1188)Setup Parameters ****************************
+state.cpp(1195)TS InstallType eFreshInstallTS
+state.cpp(1216)-------------------------------------------------------------------
+state.cpp(1218)We are running on    = Wks
+state.cpp(1219)Is this adv server   = No
+state.cpp(1220)Is this Home Edition = No
+state.cpp(1221)Is this SBS server   = No
+state.cpp(1222)Is this Blade        = No
+state.cpp(1223)IsStandAloneSetup    = No
+state.cpp(1224)IsFreshInstall       = Yes
+state.cpp(1225)IsUnattended         = No
+state.cpp(1227)Original State ******************************
+state.cpp(1228)WasTSInstalled       = No
+state.cpp(1229)WasTSEnabled         = No
+state.cpp(1230)OriginalPermMode     = WIN2K
+state.cpp(1244)Original TS Mode = TS Disabled
+state.cpp(1257)Current State   ******************************
+state.cpp(1272)New TS Mode = Personal TS
+state.cpp(1282)New Permissions Mode = PERM_WIN2K
+state.cpp(1291)New Connections Allowed = False
+hydraoc.cpp(306)OC_INIT_COMPONENT Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_EXTRA_ROUTINES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_EXTRA_ROUTINES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_QUERY_STATE
+hydraoc.cpp(195)Component=terminalserver, SubComponent=tswebclient
+hydraoc.cpp(1000)Entering WebClient Setup
+hydraoc.cpp(205)OC_QUERY_STATE Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_QUERY_STATE
+hydraoc.cpp(195)Component=terminalserver, SubComponent=terminalserver
+hydraoc.cpp(747)Query State Asked For terminalserver, Original. Returning SubcompOff
+hydraoc.cpp(306)OC_QUERY_STATE Done. Returning 2
+
+
+hydraoc.cpp(192)Entering OC_CALC_DISK_SPACE
+hydraoc.cpp(195)Component=terminalserver, SubComponent=tswebclient
+hydraoc.cpp(1000)Entering WebClient Setup
+hydraoc.cpp(1072)Query Disk Space return: 1
+hydraoc.cpp(205)OC_CALC_DISK_SPACE Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_CALC_DISK_SPACE
+hydraoc.cpp(195)Component=terminalserver, SubComponent=terminalserver
+subcomp.cpp(153)In OCMSubComp::OnCalcDiskSpace for TerminalServices
+subcomp.cpp(109)sectionname = <FreshInstallSection.pro.amd64>, actual section = <TerminalServices.FreshInstall.pro>
+subcomp.cpp(172)Calculating disk space for add section =  TerminalServices.FreshInstall.pro
+hydraoc.cpp(306)OC_CALC_DISK_SPACE Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 6
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_REQUEST_PAGES
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_REQUEST_PAGES Done. Returning 0
+
+
+hydraoc.cpp(192)Entering OC_WIZARD_CREATED
+hydraoc.cpp(197)Component=terminalserver, SubComponent=(null)
+hydraoc.cpp(306)OC_WIZARD_CREATED Done. Returning 0
+
+
+hydraoc.cpp(19

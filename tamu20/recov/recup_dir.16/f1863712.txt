@@ -1,0 +1,29 @@
+	    <![CDATA[&With a different character]]>
+		    </Text>
+	    </Link>
+    </Balloon>
+    <Link Id="5625" IconId="290" TopMargin="5">
+		<Text><![CDATA[Without &Indexing Service]]></Text>
+	</Link>
+    <Link Id="5626" IconId="290" TopMargin="5">
+		<Text><![CDATA[With &Indexing Service (for faster local searches)]]></Text>
+	</Link>
+    <Link Id="5306" IconId="290" TopMargin="5">
+		<Text><![CDATA[Change files and folders search behavio&r]]></Text>
+	</Link>
+	<Link Id="5308" IconId="290" TopMargin="5">
+		<Text><![CDATA[Change I&nternet search behavior]]></Text>
+	</Link>
+	<Link Id="5312" IconId="290" TopMargin="5">
+		<Text><![CDATA[Show balloon ti&ps]]></Text>
+	</Link>
+	<Link Id="5313" IconId="290" TopMargin="5">
+		<Text><![CDATA[Don't show balloon ti&ps]]></Text>
+	</Link>
+	<Link Id="5314" IconId="290" TopMargin="5">
+		<Text><![CDATA[Turn AutoComplete &on]]></Text>
+	</Link>
+	<Link Id="5315" IconId="290" TopMargin="5">
+		<Text><![CDATA[Turn AutoComplete &off]]></Text>
+	</Link>
+</SimpleDialog>

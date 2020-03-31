@@ -1,0 +1,350 @@
+hell()
+{
+if (null == g_oShell)
+g_oShell = new ActiveXObject("Shell.Application");
+return g_oShell;
+}
+var g_oWShell = null;
+function GetWShell()
+{
+if (null == g_oWShell)
+g_oWShell = new ActiveXObject("WScript.Shell");
+return g_oWShell;
+}
+var g_oLocalMachine = null;
+function GetLocalMachine()
+{
+if (null == g_oLocalMachine)
+g_oLocalMachine = new ActiveXObject("Shell.LocalMachine");
+return g_oLocalMachine;
+}
+var g_szAdminAccountName = null;
+function GetAdminName()
+{
+if (!g_szAdminAccountName)
+{
+g_szAdminAccountName = GetLocalMachine().AccountName(500); 
+if (!g_szAdminAccountName)
+g_szAdminAccountName = "Administrator";
+}
+return g_szAdminAccountName;
+}
+var g_szGuestAccountName = null;
+function GetGuestName()
+{
+if (!g_szGuestAccountName)
+{
+g_szGuestAccountName = GetLocalMachine().AccountName(501); 
+if (!g_szGuestAccountName)
+g_szGuestAccountName = "Guest";
+}
+return g_szGuestAccountName;
+}
+function IsSelf()
+{
+if (!g_oSelectedUser || !g_strLoggedOnUserName)
+return false;
+return (g_oSelectedUser.setting("LoginName").toLowerCase() == g_strLoggedOnUserName);
+}
+function GetUserDisplayName(oUser)
+{
+var szDisplayName = oUser.setting("DisplayName");
+if (!szDisplayName)
+szDisplayName = oUser.setting("LoginName");
+if (szDisplayName && szDisplayName.length > 20)
+{
+szDisplayName = szDisplayName.substring(0,17) + "...";
+}
+if (szDisplayName) szDisplayName = szDisplayName.replace(/</g, "&lt;");
+return szDisplayName;
+}
+function CountOwners()
+{
+var cOwners = 0;
+var cUsers = g_oUserList.length;
+var strAdmin = GetAdminName().toLowerCase();
+for (var i = 0; i < cUsers && cOwners < 2; i++)
+{
+var oUser = g_oUserList(i);
+if ((3 == oUser.setting("AccountType")) && (oUser.setting("LoginName").toLowerCase() != strAdmin))
+++cOwners;
+}
+return cOwners;
+}
+function OnKeySelect(iTab, oEvent)
+{
+if (null == oEvent)
+oEvent = window.event;
+if (oEvent.keyCode == 27) 
+{
+g_Navigator.back();
+}
+else if (oEvent.keyCode == 32) 
+{
+oEvent.returnValue = false;
+oEvent.srcElement.click();
+}
+else if (!oEvent.altKey) 
+{
+var oTarget = null;
+switch (oEvent.keyCode)
+{
+case 37: 
+oTarget = oEvent.srcElement.leftElem;
+break;
+case 38: 
+oTarget = oEvent.srcElement.upElem;
+break;
+case 39: 
+oTarget = oEvent.srcElement.rightElem;
+break;
+case 40: 
+oTarget = oEvent.srcElement.downElem;
+break;
+}
+if (oTarget != null)
+{
+oEvent.srcElement.tabIndex = -1;
+oTarget.tabIndex = (null != iTab) ? iTab : 0;
+oTarget.focus();
+oEvent.returnValue = false;
+}
+}
+}
+function SetRelativeTasks(aTasks, iTab)
+{
+var cTasks = aTasks.length;
+var oPrevA = null;
+for (var i = 0; i < cTasks; i++)
+{
+var oTask = aTasks[i];
+if (oTask.style.display != 'none')
+{
+var oAnchor = oTask.getElementsByTagName("A")[0];
+if (oAnchor)
+{
+if (oPrevA)
+{
+oPrevA.downElem = oAnchor;
+oAnchor.upElem = oPrevA;
+}
+else
+oAnchor.tabIndex = (null != iTab) ? iTab : 0;
+oPrevA = oAnchor;
+}
+}
+}
+}
+function PopulateLeftPane(szRelatedTasks, szLearnAbout, szDescription)
+{
+if (szDescription && szDescription.length > 0)
+{
+idDescription.innerHTML = szDescription;
+idDescription.style.display = 'block';
+}
+else
+idDescription.style.display = 'none';
+if (szRelatedTasks && szRelatedTasks.length > 0)
+{
+idRelatedTaskLinks.innerHTML = szRelatedTasks;
+idRelatedTasks.style.display = 'block';
+SetRelativeTasks(idRelatedTaskLinks.children, 2);
+}
+else
+idRelatedTasks.style.display = 'none';
+if (szLearnAbout && szLearnAbout.length > 0)
+{
+idLearnAboutLinks.innerHTML = szLearnAbout;
+idLearnAbout.style.display = 'block';
+SetRelativeTasks(idLearnAboutLinks.children, 2);
+}
+else
+idLearnAbout.style.display = 'none';
+}
+function CreateUserDisplayHTML2(szName, szSubtitle, szPicture)
+{
+return '<TABLE cellspacing=0 cols=2 cellpadding=0><TD style="width:15mm;padding:1mm;text-align:center;"><IMG src="'+szPicture+'"/></TD><TD style="padding:1mm"><H3>'+szName+'</H3><H4>'+szSubtitle+'</H4></TD></TABLE>';
+}
+var g_AccountProps = new Array(L_Guest_Property, L_Limited_Property, L_UnknownAcct_Property, L_Owner_Property);
+function CreateUserDisplayHTML(oUser, szSubtitle)
+{
+if (!szSubtitle)
+{
+szSubtitle = g_AccountProps[oUser.setting("AccountType")];
+if (oUser.passwordRequired)
+szSubtitle += '<BR>' + L_Password_Property;
+}
+return CreateUserDisplayHTML2(GetUserDisplayName(oUser), szSubtitle, oUser.setting("Picture"));
+}
+var g_HelpWindow = null;
+var g_szHelpUrl = null;
+function LaunchHelp(szHTM)
+{
+if (szHTM && szHTM.length > 0)
+{
+if (null == g_HelpWindow)
+{
+var args = new Object;
+args.mainWindow = window;
+args.szHTM = szHTM;
+if (null == g_szHelpUrl)
+g_szHelpUrl = GetWShell().ExpandEnvironmentStrings("MS-ITS:%windir%\\help\\nusrmgr.chm::/");
+g_HelpWindow = window.showModelessDialog(g_szHelpUrl + "HelpFrame.htm", args, "border=thick; center=0; dialogWidth=30em; dialogHeight=34em; help=0; minimize=1; maximize=1; resizable=1; status=0;");
+}
+else
+{
+try
+{
+g_HelpWindow.ShowHelp(g_szHelpUrl + szHTM);
+}
+catch (e)
+{
+g_HelpWindow.close();
+g_HelpWindow = null;
+}
+}
+}
+}
+function EnableGuest(bEnable)
+{
+if (!bEnable)
+{
+var oGuest = g_oUserList(GetGuestName());
+if (oGuest && oGuest.isLoggedOn)
+{
+alert(L_DisableGuestInUse_ErrorMessage);
+return false;
+}
+}
+try
+{
+if (bEnable)
+{
+GetLocalMachine().EnableGuest(1);
+g_oSelectedUser = null;
+g_oUserList = null;
+g_oUserList = new ActiveXObject("Shell.Users");
+}
+else
+GetLocalMachine().DisableGuest(1);
+}
+catch (e)
+{
+}
+g_Navigator.navigate("mainpage2.htm", true);
+}
+function PageInit()
+{
+try
+{
+g_oUserList = new ActiveXObject("Shell.Users");
+}
+catch (e)
+{
+alert(L_SHGinaLoad_ErrorMessage);
+window.close();
+return;
+}
+g_bOsPersonal = GetShell().GetSystemInformation("IsOS_Personal");
+g_oSelectedUser = g_oUserList.currentUser;
+if (g_oSelectedUser)
+{
+g_strLoggedOnUserName = g_oSelectedUser.setting("LoginName").toLowerCase();
+g_bRunningAsOwner = (3 == g_oSelectedUser.setting("AccountType"));
+}
+else if (false == g_bOsPersonal)
+{
+g_bRunningAsOwner = true;
+}
+else
+{
+alert(L_NoCurrentUser_ErrorMessage);
+window.close();
+return;
+}
+if (idUM.commandLine)
+{
+var iInitialTask = idUM.commandLine.indexOf("initialTask=");
+if (-1 != iInitialTask)
+{
+g_szInitialTask = idUM.commandLine.substring(iInitialTask+12);
+}
+}
+g_Navigator = new Navigator(idContent);
+if (g_Navigator)
+g_Navigator.navigate(g_bRunningAsOwner ? "mainpage2.htm" : "mainpage.htm");
+}
+var g_Navigator = null;
+function push(url)
+{
+if (url)
+{
+if (this.current < 0 || url != this.stack[this.current])
+this.stack[++this.current] = url;
+this.stack.length = this.current + 1;
+}
+}
+function navigate(urlTo, bTrim)
+{
+if (this.current < 0)
+bTrim = false;
+if (bTrim)
+{
+while (this.current >= 0)
+{
+this.stack.length = this.current + 1;
+if (urlTo == this.stack[this.current])
+break;
+if (0 == this.current)
+{
+this.push(urlTo);
+break;
+}
+--this.current;
+}
+}
+else
+{
+this.push(urlTo);
+}
+this.SetBtnState();
+this.frame.navigate(urlTo);
+}
+function back(nCount)
+{
+if (this.current > 0)
+{
+if (!nCount)
+nCount = 1;
+if (-1 == nCount)
+this.current = 0;
+else
+this.current = Math.max(0, this.current - nCount);
+this.frame.navigate(this.stack[this.current]);
+}
+this.SetBtnState();
+}
+function forward()
+{
+if (this.current < this.stack.length - 1)
+this.frame.navigate(this.stack[++this.current]);
+this.SetBtnState();
+}
+function SetBtnState()
+{
+idToolbar.enabled(0) = (this.current > 0);
+idToolbar.enabled(1) = (this.current != this.stack.length - 1);
+idToolbar.enabled(2) = (this.current > 0);
+}
+function Navigator(frame)
+{
+this.push = push;
+this.navigate = navigate;
+this.back = back;
+this.forward = forward;
+this.SetBtnState = SetBtnState;
+this.frame = frame;
+this.current = -1;
+this.stack = new Array();
+this.SetBtnState();
+}

@@ -1,0 +1,38 @@
+return _bSelected;
+}
+function put_selected(val)
+{
+if (val == true)
+{
+_bSelected = true;
+Hilite();
+}
+else
+{
+_bSelected = false;
+Unhilite();
+}
+}
+function OnMouseOver()
+{
+if (!_bSelected && !this.contains(event.fromElement) && this.contains(event.srcElement))
+Hilite();
+}
+function OnMouseOut()
+{
+if (!_bSelected && !this.contains(event.toElement))
+Unhilite();
+}
+function OnKeyPress()
+{
+if (event.keyCode == 13)
+{
+event.returnValue = false;
+event.srcElement.click();
+}
+}
+function OnKeyDown()
+{
+top.window.OnKeySelect(0, event);
+}
+</SCRIPT>

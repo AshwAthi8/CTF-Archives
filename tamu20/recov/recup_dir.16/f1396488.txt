@@ -1,0 +1,692 @@
+back">
+			<param name="Name" value="Callback">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Using_Callback.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="protocols">
+			<param name="Name" value="Point-to-Point Protocol">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/i_ppp_ras.htm">
+			<param name="Name" value="SLIP">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/protocol_slip.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="troubleshooting">
+			<param name="Name" value="Troubleshooting network and dial-up connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/trouble_all.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="accessing programs">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="services that support other programs">
+			<param name="Name" value="Programs and services overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_services_overview.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="accessing the Internet">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Internet service providers (ISPs)">
+			<param name="Name" value="ISP access methods">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/int_access.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="adding connection to network bridge">
+		<param name="Name" value="Add a connection to the network bridge">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_bridge_add.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="administrator account logon profile">
+		<param name="Name" value="Dial-up credentials">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_DialCredents_understanding.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="arguments, scripts, Network and Dial-up Connections">
+		<param name="Name" value="Expressions">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_scripting_expressions.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="assigning multiple phone numbers to connections">
+		<param name="Name" value="Assign multiple phone numbers to a connection">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hc_huntgroup.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ATM-emulated LAN connections">
+		<param name="Name" value="Local area connections">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_LAN.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="authentication">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Windows authentication">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/AuthIntro.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="connections, configuring">
+			<param name="Name" value="Configure a connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_reconfig.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="connections, dial-up">
+			<param name="Name" value="Configure identity authentication and data encryption settings for a dial-up connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_sec_dialup.htm">
+			<param name="Name" value="Dial-up connection authentication and data encryption">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Sec_dialup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="connections, VPN">
+			<param name="Name" value="Configure identity authentication and data encryption settings for a VPN connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_sec_dialup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="security hosts">
+			<param name="Name" value="Security hosts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_security_hosts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="smart cards">
+			<param name="Name" value="Smart card and other certificate authentication">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/smartcard.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="autodial">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Autodial">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_autodial_overview.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="automating network or dial-up connections">
+			<param name="Name" value="Automating a network or dial-up connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/using_automate_conn.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring">
+			<param name="Name" value="Configure autodial">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_Autodial.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring dial-up options">
+			<param name="Name" value="Configuring dial-up options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/dial_connect_concept.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="automating connections">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Network and Dial-up Connections">
+			<param name="Name" value="Automating a network or dial-up connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/using_automate_conn.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="automating logons">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pad.inf, using on X.25 networks">
+			<param name="Name" value="Automating the remote logon process by using Switch.inf scripts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_how_arluss.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="scripting, Windows">
+			<param name="Name" value="Automating the dial-up logon process by using Windows scripting">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_scripting.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="scripts, logon">
+			<param name="Name" value="Activate a logon script">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_how_ass.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="scripts, Switch.inf">
+			<param name="Name" value="Automating the remote logon process by using Switch.inf scripts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_how_arluss.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BACP">
+		<param name="Name" value="PPP RFCs">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/i_ppp_rfc.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="bandwidth, increasing with ISDN lines">
+		<param name="Name" value="Using ISDN lines">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/isdn_overvw.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BAP">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="RFCs">
+			<param name="Name" value="PPP RFCs">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/i_ppp_rfc.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="best practices">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Network and Dial-up Connections">
+			<param name="Name" value="Best Practices">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/NWConn_BestPractices.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="binding order, modifying">
+		<param name="Name" value="Modify the protocol bindings order">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Howto_Mod_Bindings_Order.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="broadband connection">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="making using PPPoE">
+			<param name="Name" value="Make a broadband connection using PPPoE">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_Conn_Broadband.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="broadband connections using PPP over PPPoE">
+		<param name="Name" value="Make a broadband connection using PPPoE">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_Conn_Broadband.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cable modem connections">
+		<param name="Name" value="Local area connections">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_LAN.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cable modems">
+		<param name="Name" value="Local area connections">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_LAN.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cables">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DirectParallel cables">
+			<param name="Name" value="Contact Parallel Technologies">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_order_directparallel.htm">
+			<param name="Name" value="DirectParallel access">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/access_directparallel.htm">
+			<param name="Name" value="Make a direct network connection by using a DirectParallel cable">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_conn_directparallel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modems">
+			<param name="Name" value="Local area connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_LAN.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="serial cable access">
+			<param name="Name" value="Serial (RS-232) access">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/access_serial.htm">
+			<param name="Name" value="Serial (RS-232) cable access">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/access_serial.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="callback">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="callback options">
+			<param name="Name" value="Callback">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Using_Callback.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring">
+			<param name="Name" value="Configure callback">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Callback.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring for incoming connections">
+			<param name="Name" value="Configure callback for incoming connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Howto_Incoming_Callback.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dial-up options, configuring">
+			<param name="Name" value="Configuring dial-up options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/dial_connect_concept.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network and dial-up connections">
+			<param name="Name" value="Configure callback">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Callback.htm">
+			<param name="Name" value="Configure callback for incoming connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Howto_Incoming_Callback.htm">
+			<param name="Name" value="Configuring dial-up options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/dial_connect_concept.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="remote access server">
+			<param name="Name" value="Callback">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Using_Callback.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="caret translations, scripts">
+		<param name="Name" value="String literals">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_scripting_StringLiterals.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="carriage returns, Switch.inf scripts">
+		<param name="Name" value="Using commands and carriage returns in Switch.inf">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_how_cacr.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CCC">
+		<param name="Name" value="PPP RFCs">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/i_ppp_rfc.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="certificate-based authentication">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="CHAP">
+			<param name="Name" value="Challenge Handshake Authentication Protocol (CHAP)">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/auth_chap.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="certificates">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mobile users">
+			<param name="Name" value="Mobile users and certificates">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/using_certs_bootstrap.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="certificates (to ensure secure transfer of confidential information)">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Challenge Handshake Authentication Protocol (CHAP)">
+			<param name="Name" value="Challenge Handshake Authentication Protocol (CHAP)">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/auth_chap.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mobile users">
+			<param name="Name" value="Mobile users and certificates">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/using_certs_bootstrap.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="channel aggregation, Multilink">
+		<param name="Name" value="ISDN access">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/access_isdn.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CHAP">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Challenge Handshake Authentication Protocol (CHAP)">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/auth_chap.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VPN connections security">
+			<param name="Name" value="Enhanced security">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/vpn_adv_security.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="checklist">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring network connections">
+			<param name="Name" value="Checklist: Configuring Network Connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/SAG_NWConChecklist_1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Network Connection common tasks">
+			<param name="Name" value="New ways to do familiar tasks">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/SAG_NWConChecklist_1.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="checklist for configuring network connections">
+		<param name="Name" value="Checklist: Configuring Network Connections">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/SAG_NWConChecklist_1.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Client for Microsoft Networks">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Client for Microsoft Networks">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ClientforMSNetworks.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="clients, incoming connection">
+		<param name="Name" value="Incoming connection clients">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_clients.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="comment lines in scripts">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Network and Dial-up Connection scripts">
+			<param name="Name" value="Comments">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_scripting_comments.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Switch.inf scripts">
+			<param name="Name" value="Comment lines">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_how_cl.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="common tasks">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Network and Dial-up Connections">
+			<param name="Name" value="Common tasks">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/SAG_NWConChecklist_1.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="computer-to-computer connections">
+		<param name="Name" value="DirectParallel access">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/access_directparallel.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring autodial">
+		<param name="Name" value="Configure autodial">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_Autodial.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring callback">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Configure callback">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Callback.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for incoming connections">
+			<param name="Name" value="Configure callback for incoming connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Howto_Incoming_Callback.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring connections">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Configure a connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_reconfig.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dial-up options">
+			<param name="Name" value="Configuring dial-up options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/dial_connect_concept.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="incoming IPX connections">
+			<param name="Name" value="Configure an incoming connection to use IPX">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_config_ipx.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="incoming TCP/IP connections">
+			<param name="Name" value="Configure an incoming connection to use TCP/IP">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_config_incoming_tcpip.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network or dial-up">
+			<param name="Name" value="Configuring a network or dial-up connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/using_reconfig.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring encryption">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for dial-up connections">
+			<param name="Name" value="Configure identity authentication and data encryption settings for a dial-up connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_sec_dialup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for VPN connections">
+			<param name="Name" value="Configure identity authentication and data encryption settings for a VPN connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_sec_dialup.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring File and Printer Sharing for Microsoft Networks">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="File and Printer Sharing for Microsoft Networks">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/FileandPrintSharing.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring Internet connection sharing">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Configure Internet connection sharing for applications and services">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_share_conn_apps.htm">
+			<param name="Name" value="Enabling Internet connection sharing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_share_conn_apps.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Internet options">
+			<param name="Name" value="Configure Internet options for Internet connection sharing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_share_conn_apps.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="settings">
+			<param name="Name" value="Internet connection sharing settings">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/share_conn_settings.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring ISDN settings">
+		<param name="Name" value="Configure ISDN settings">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/isdn_settings.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring multiple device dialing">
+		<param name="Name" value="Configuring multiple device dialing">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_multilink_overview.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring phone number modifiers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Configuring dial-up options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/dial_connect_concept.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="how to">
+			<param name="Name" value="Configure phone number modifiers">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/modifiers.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring redial options">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Configuring redial options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hc_redial.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dial-up options">
+			<param name="Name" value="Configuring dial-up options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/dial_connect_concept.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="how to">
+			<param name="Name" value="Configure redial options">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/howto_redial.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring TCP/IP">
+		<param name="Name" value="Configure TCP/IP settings">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Howto_Enable_DHCP.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="connecting computers">
+		<param name="Name" value="DirectParallel access">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/access_directparallel.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="connection speeds, enhancing using ISDN lines">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring ISDN settings">
+			<param name="Name" value="Configure ISDN settings">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/isdn_settings.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using ISDN lines">
+			<param name="Name" value="Using ISDN lines">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/isdn_overvw.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="connections">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview of Internet connections">
+			<param name="Name" value="Internet connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/i_client.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding to network bridge">
+			<param name="Name" value="Add a connection to the network bridge">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_bridge_add.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="assigning multiple phone numbers to">
+			<param name="Name" value="Assign multiple phone numbers to a connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hc_huntgroup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bridging">
+			<param name="Name" value="To bridge connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_bridge_install.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="broadband using PPP over PPPoE">
+			<param name="Name" value="Make a broadband connection using PPPoE">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_Conn_Broadband.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring">
+			<param name="Name" value="Configure a connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Conn_reconfig.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring network">
+			<param name="Name" value="Checklist: Configuring Network Connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/SAG_NWConChecklist_1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="controlling shared Internet connections">
+			<param name="Name" value="Control the shared Internet connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_dc_control_ics_client.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="copying">
+			<param name="Name" value="Copy a network or dial-up connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/HowTo_Copy_Conn.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="displaying network connection icon in taskbar">
+			<param name="Name" value="Display network connection icons in the taskbar">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_dc_show_icon.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="enabling Internet Connection Sharing">
+			<param name="Name" value="Enable Internet Connection Sharing on-demand dialing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/hnw_dc_dialup_establish.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Group Policy for Network Connections">
+			<param name="Name" value="Group Policy for Network Connections">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/group_policyNWconn.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="how security works at">
+			<param name="Name" value="How security works at connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/ras_security_connection.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="making direct network">
+			<param name="Name" value="Make a direct network connection">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\netcfg.chm::/Howto_conn_direct.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="making VPN">
+			<param name="Name" value="Make a virtual private network (VPN) connection">
+			<param name="Local" v

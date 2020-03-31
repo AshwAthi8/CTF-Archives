@@ -1,0 +1,131 @@
+tion =3379200
+
+
+[msnexplr.Uninstall]
+DelReg         =  Install.DelReg
+DelFiles       =  DelFiles.Base,DelFiles.Components,DelFiles.OOBE
+UnregisterDlls = OOBE.UnregisterDlls
+
+
+[DestinationDirs]
+CopyFiles.Base = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%
+DelFiles.Base  = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%
+CopyFiles.Components = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%\%COMPONENTS_FOLDER%
+DelFiles.Components  = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%\%COMPONENTS_FOLDER%
+CopyFiles.OOBE = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%OOBE_FOLDER%
+DelFiles.OOBE = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%OOBE_FOLDER%
+
+
+[DelFiles.Base]
+cinfo.xml,,,1
+msnsusii.exe,,,1
+msnms.ico,,,1
+xfp.xml,,,1
+
+
+[CopyFiles.Base]
+cinfo.xml,wcinfo.xml,,,4
+msnsusii.exe,wmsnsusii.exe,,,4
+msnms.ico,wmsnms.ico,,,4
+xfp.xml,wxfp.xml,,,4
+
+
+[CopyFiles.Components]
+Msncli.exe,wMsncli.exe,,,4
+Digcore.exe,wDigcore.exe,,,4
+digopt.msi,wdigopt.msi,,,4
+digreqEx.msi,wdigreqEx.msi,,,4
+msnmsgs.msi,wmsnmsgs.msi,,,4
+
+
+[DelFiles.Components]
+Msncli.exe,,,1
+Digcore.exe,,,1
+digopt.msi,,,1
+digreqEx.msi,,,1
+msnmsgs.msi,,,1
+
+
+[CopyFiles.OOBE]
+market.mar,wmarket.mar,,,4
+obelog.dll,wobelog.dll,,,4
+obemetal.dll,wobemetal.dll,,,4
+obemtllc.dll,wobemtllc.dll,,,4
+obepopc.dll,wobepopc.dll,,,4
+signup.mar,wsignup.mar,,,4
+
+
+[DelFiles.OOBE]
+market.mar,,,1
+obelog.dll,,,1
+obemetal.dll,,,1
+obemtllc.dll,,,1
+obepopc.dll,,,1
+signup.mar,,,1
+
+[OOBE.RegisterDlls]
+16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%OOBE_FOLDER%,obemetal.dll,1
+
+
+[OOBE.UnregisterDlls]
+16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%OOBE_FOLDER%,obemetal.dll,1
+
+
+[Install.DelReg]
+HKLM,"Software\Microsoft\MSNInstaller","CDOverride",,0x04000
+
+[Install.AddReg]
+
+
+
+HKLM,"Software\Microsoft\MSNInstaller","CDOverride",0x04000,"%16426%\%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%\"
+
+
+
+[AddMSNLinks]
+Name       = %SHORTCUT_NAME%,0x00000008
+CmdLine    = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%,msnsusii.exe
+SubDir     = %16407%
+WorkingDir = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%
+IconPath   = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%,%ICON_NAME%
+InfoTip    = %INFOTIP%
+
+[DelMSNLinks]
+Name = %SHORTCUT_NAME%,0x0000000A
+CmdLine    = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%,msnsusii.exe
+SubDir = %16407%
+
+[AddOLSLink]
+Name       = %OLS_SHORTCUT_NAME%, 0x00000008, 38
+SubDir     = "Online Services"
+CmdLine    = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%,msnsusii.exe
+WorkingDir = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%
+IconPath   = 16426,%DEFAULT_FOLDER%\%COREFILES_FOLDER%\%INSTALL_FOLDER%,%ICON_NAME%
+InfoTip    = %OLS_INFOTIP%
+
+[DelLink_OLS]
+Name   = %OLS_SHORTCUT_NAME%,0x0000000A, 38
+SubDir = "Online Services"
+
+[CleanupOLSLink]
+ProfileItems = DelLink_OLS
+
+[CleanupMSNLinks]
+ProfileItems = DelMSNLinks
+
+
+[Strings]
+DISPLAYDESC         = "MSN Explorer"
+DEFAULT_FOLDER      = "MSN"
+SHORTCUT_NAME       = "MSN"
+ICON_NAME           = "msnms.ico"
+DISPLAYDESC_LONG    = "MSN"
+COREFILES_FOLDER    = "MSNCoreFiles"
+INSTALL_FOLDER      = "Install"
+COMPONENTS_FOLDER   = "MSN9Components"
+INFOTIP             = "Explore the web, read your e-mail, talk to your online contacts, enjoy online music and video, and more."
+QUICK_LAUNCH        = "Quick Launch"
+OLS_SHORTCUT_NAME   = "Use MSN Explorer to sign up for Internet Access (US only)"
+OLS_INFOTIP         = "Fast and reliable Internet Access"
+OOBE_FOLDER         = "OOBE"
+

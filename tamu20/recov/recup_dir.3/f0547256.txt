@@ -1,0 +1,696 @@
+,Responses,"CARRIER 33600 V.23",1,01,00,40,83,00,0,0,0,0,0
+HKR,Responses,"CARRIER 33600",1,01,00,40,83,00,0,0,0,0,0
+HKR,Responses,"CARRIER 33600/VFC", 1,01,00,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 EC", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 EC/V42", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 EC/V42BIS", 1,02,03,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 REL", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 REL/MNP5", 1,02,03,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 REL/V42", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200 REL/V42BIS", 1,02,03,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200", 1,02,00,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/ARQ", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/LAP-M", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/MNP", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/REL", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/REL-LAPM V.42 BIS", 1,02,03,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/REL-LAPM", 1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/V42B", 1,02,03,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/V42BIS", 1,02,03,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 EC", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 EC/V42", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 EC/V42BIS", 1,02,03,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 REL", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 REL/MNP5", 1,02,03,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 REL/V42", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600 REL/V42BIS", 1,02,03,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600", 1,02,00,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/ARQ", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/LAP-M", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/MNP", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/REL", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/REL-LAPM V.42 BIS", 1,02,03,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/REL-LAPM", 1,02,02,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/V42B", 1,02,03,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/V42BIS", 1,02,03,40,83,00,0,0,0,0,0
+HKR,Responses,"CONNECT 31200/REL-MNP",1,02,02,E0,79,00,0,0,0,0,0
+HKR,Responses,"CONNECT 33600/REL-MNP",1,02,02,40,83,00,0,0,0,0,0
+
+[Eric.Addreg]
+HKR,,ConfigDelay, 1, A0,0F,00,00
+HKR,, DeviceType, 1, 01
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 30,00,00,00, 00,C2,01,00, 80,25,00,00
+HKR,, DCB, 1, 1C,00,00,00, 00,C2,01,00, 15,20,00,00, 00,00, 0a,00, 0a,00, 08, 00, 00, 11, 13, 00, 00, 00
+HKR, Settings, CompatibilityFlags, 1, 01 ,00 ,00, 00
+
+HKR, Monitor, 1,, "ATS0=0<cr>"
+HKR, Monitor, 2,, "None"
+HKR, Hangup, 1,, "ATH<cr>"
+HKR, Answer, 1,, "ATA<cr>"
+HKR,, Reset,, "AT&F<cr>"
+HKR, Init,1,, "AT<cr>"
+HKR, Init,2,, "AT &F<cr>"
+HKR, Init,3,, "AT V1E0S0=0&D2&C1<cr>"
+HKR, Init,4,, "AT +CMEE=1<cr>"
+HKR, Settings, FlowControl_Hard,, "+IFC=2,2;"
+HKR, Settings, FlowControl_Off,,  "+IFC=0,0;"
+HKR, Settings, FlowControl_Soft,, "+IFC=1,1;"
+
+HKR, Settings, CallSetupFailTimer,, "S7=<#>;"
+HKR, Settings, DialPrefix,, "D"
+HKR, Settings, DialSuffix,, ""
+HKR, Settings, InactivityTimeout,, ""
+HKR, Settings, Prefix,, "AT"
+HKR, Settings, Terminator,, "<cr>"
+
+HKR, Protocol\GSM\V110_2DOT4K,1,,"AT+CBST=68,,1<cr>"
+HKR, Protocol\GSM\V110_4DOT8K,1,,"AT+CBST=70,,1<cr>"
+HKR, Protocol\GSM\V110_9DOT6K,1,,"AT+CBST=71,,1<cr>"
+HKR, Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,,1<cr>"
+
+[Eric2.Addreg]
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 30,00,00,00, 00,C2,01,00, 00,C2,01,00
+
+HKR, Protocol\GSM\V110_9DOT6K,  1,,"AT+CBST=71,0,1;+CHSN=1,1,0,4<cr>"
+HKR, Protocol\GSM\V110_14DOT4K, 1,,"AT+CBST=75,0,1;+CHSN=0,1,0,12<cr>"
+HKR, Protocol\GSM\V110_19DOT2K, 1,,"AT+CBST=79,0,1;+CHSN=0,2,0,12<cr>"
+HKR, Protocol\GSM\V110_28DOT8K, 1,,"AT+CBST=80,0,1;+CHSN=0,2,0,12<cr>"
+
+HKR, Settings, Compression_On,, "+DS=3,0,2048,32;"
+HKR, Settings, Compression_Off,, "+DS=0;"
+HKR, Hangup, 1,, "+++ATH<cr>"
+
+[Eric3.Addreg]
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 31,00,00,00, 00,C2,01,00, 80,70,00,00
+
+HKR, Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,,1<cr>"
+HKR, Protocol\GSM\V110_9DOT6K,  1,,"AT+CBST=71,0,1;+CHSN=1,1,0,4<cr>"
+HKR, Protocol\GSM\V110_14DOT4K, 1,,"AT+CBST=75,0,1;+CHSN=2,1,0,12<cr>"
+HKR, Protocol\GSM\V110_19DOT2K, 1,,"AT+CBST=79,0,1;+CHSN=3,2,0,12<cr>"
+HKR, Protocol\GSM\V110_28DOT8K, 1,,"AT+CBST=80,0,1;+CHSN=4,2,0,12<cr>"
+HKR, Protocol\GSM\GPRS,1,,"AT<cr>"
+
+HKR, Settings, Compression_On,, "+DS=3,0,2048,32;"
+HKR, Settings, Compression_Off,, "+DS=0;"
+HKR, Hangup, 1,, "+++ATH<cr>"
+
+[Eric.Responses]
+HKR, Responses, "0<cr>", 1, 00, 00, 00,00,00,00, 00,00,00,00 ; OK
+HKR, Responses, "1<cr>", 1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "2<cr>", 1, 08, 00, 00,00,00,00, 00,00,00,00 ; RING
+HKR, Responses, "3<cr>", 1, 04, 00, 00,00,00,00, 00,00,00,00 ; NO CARRIER
+HKR, Responses, "4<cr>", 1, 03, 00, 00,00,00,00, 00,00,00,00 ; ERROR
+HKR, Responses, "5<cr>", 1, 02, 00, b0,04,00,00, 00,00,00,00
+HKR, Responses, "6<cr>", 1, 05, 00, 00,00,00,00, 00,00,00,00 ; NO DIALTONE
+HKR, Responses, "7<cr>", 1, 06, 00, 00,00,00,00, 00,00,00,00 ; BUSY
+HKR, Responses, "8<cr>", 1, 07, 00, 00,00,00,00, 00,00,00,00 ; NO ANSWER
+
+HKR, Responses, "<cr><lf>OK<cr><lf>"         ,            1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>RING<cr><lf>"       ,            1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO CARRIER<cr><lf>" ,            1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>ERROR<cr><lf>"      ,            1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIALTONE<cr><lf>",            1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIAL TONE<cr><lf>",           1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BUSY<cr><lf>"       ,            1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO ANSWER<cr><lf>"  ,            1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT<cr><lf>",                1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 2400<cr><lf>",           1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 4800<cr><lf>",           1, 02, 00, C0,12,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 9600<cr><lf>",           1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 14400<cr><lf>",          1, 02, 00, 40,38,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 19200<cr><lf>",          1, 02, 00, 00,4B,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 28800<cr><lf>",          1, 02, 00, 80,70,00,00, 00,00,00,00
+
+HKR, Responses, "<cr><lf>FAX<cr><lf>",                    1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>DATA<cr><lf>",                   1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>VOICE<cr><lf>",                  1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>RINGING<cr><lf>",                1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>DELAYED<cr><lf>",                1, 1D, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>DELAYED NUMBER<cr><lf>",         1, 1D, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BLACKLISTED<cr><lf>",            1, 1C, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BLACKLISTED NUMBER<cr><lf>",     1, 1C, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+FCERROR<cr><lf>",               1, 03, 00, 00,00,00,00, 00,00,00,00
+
+HKR, Responses, "<cr><lf>+CME ERROR: 0<cr><lf>",    1, 03, 00, 00,00,00,00, 00,00,00,00   ; Phone failure.
+HKR, Responses, "<cr><lf>+CME ERROR: 1<cr><lf>",    1, 03, 00, 00,00,00,00, 00,00,00,00   ; No connection to phone.
+HKR, Responses, "<cr><lf>+CME ERROR: 2<cr><lf>",    1, 03, 00, 00,00,00,00, 00,00,00,00   ; Phone modem link reserved.
+HKR, Responses, "<cr><lf>+CME ERROR: 3<cr><lf>",    1, 03, 00, 00,00,00,00, 00,00,00,00   ; Operation not permitted.
+HKR, Responses, "<cr><lf>+CME ERROR: 4<cr><lf>",    1, 03, 00, 00,00,00,00, 00,00,00,00   ; Operation not supported.
+HKR, Responses, "<cr><lf>+CME ERROR: 5<cr><lf>",    1, 03, 00, 00,00,00,00, 00,00,00,00   ; PH-SIM card PIN required.
+HKR, Responses, "<cr><lf>+CME ERROR: 10<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; SIM card not inserted.
+HKR, Responses, "<cr><lf>+CME ERROR: 11<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; SIM card PIN required.
+HKR, Responses, "<cr><lf>+CME ERROR: 12<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; SIM card PUK required.
+HKR, Responses, "<cr><lf>+CME ERROR: 13<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; SIM card failure.
+HKR, Responses, "<cr><lf>+CME ERROR: 14<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; SIM card busy.
+HKR, Responses, "<cr><lf>+CME ERROR: 15<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; SIM card wrong.
+HKR, Responses, "<cr><lf>+CME ERROR: 16<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Incorrect password.
+HKR, Responses, "<cr><lf>+CME ERROR: 20<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Memory full.
+HKR, Responses, "<cr><lf>+CME ERROR: 21<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Invalid index.
+HKR, Responses, "<cr><lf>+CME ERROR: 22<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Not found.
+HKR, Responses, "<cr><lf>+CME ERROR: 23<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Memory failure.
+HKR, Responses, "<cr><lf>+CME ERROR: 24<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Text string too long.
+HKR, Responses, "<cr><lf>+CME ERROR: 25<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Invalid character in text string.
+HKR, Responses, "<cr><lf>+CME ERROR: 26<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Dial string too long.
+HKR, Responses, "<cr><lf>+CME ERROR: 27<cr><lf>",   1, 03, 00, 00,00,00,00, 00,00,00,00   ; Invalid character in dial string.
+HKR, Responses, "<cr><lf>+CME ERROR: 100<cr><lf>",  1, 03, 00, 00,00,00,00, 00,00,00,00   ; Unknown.
+HKR, Responses, "<cr><lf>+CMS ERROR: ",             1, 03, 00, 00,00,00,00, 00,00,00,00   ; CMS errors
+
+
+[Moto3.AddReg]
+HKR,, Properties, 1, 00,01,00,00, FF,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 30,01,00,00, 00,C2,01,00, C0,DA,00,00
+HKR,, InactivityScale, 1, 0a,00,00,00
+HKR, Init, 1, , "ATZ<cr>"	; reset default values and terminate any calls
+HKR, Init, 2, , "ATE0V1&FE0&D2&C1S0=0<cr>"
+HKR, Answer, 1, , "ATA<cr>"
+HKR, Hangup, 1, , "ATHE1<cr>"
+HKR,, Reset, , "ATZ<cr>"
+HKR, Settings, Prefix, , "AT"
+HKR, Settings, Terminator, , "<cr>"
+HKR, Settings, DialPrefix, , "D"
+HKR, Settings, DialSuffix, , ""
+HKR, Settings, Pulse, , "P"
+HKR, Settings, Tone, , "T"
+HKR, Monitor, 1, , "ATS0=0<cr>"
+HKR, Monitor, 2, , "None"
+HKR, Settings, FlowControl_Off, ,  "+IFC=0,0"
+HKR, Settings, FlowControl_Hard, , "+IFC=2,2"
+HKR, Settings, FlowControl_Soft, , "+IFC=1,1"
+HKR, Settings, CallSetupFailTimer,, "S7=<#>"
+HKR, Settings, InactivityTimeout,, "S30=<#>"
+
+[Moto3.Responses]
+HKR, Responses, "<cr><lf>OK<cr><lf>",          1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>RING<cr><lf>",        1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>ERROR<cr><lf>",       1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIALTONE<cr><lf>", 1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIAL TONE<cr><lf>",1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BUSY<cr><lf>",        1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO CARRIER<cr><lf>",  1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO ANSWER<cr><lf>",   1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT<cr><lf>",     1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 300<cr><lf>",       1, 02, 00, 2C,01,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 600<cr><lf>",       1, 02, 00, 58,02,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 1200<cr><lf>",      1, 02, 00, B0,04,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 2400<cr><lf>",      1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 4800<cr><lf>",      1, 02, 00, C0,12,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 7200<cr><lf>",      1, 02, 00, 20,1C,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 9600<cr><lf>",      1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 12000<cr><lf>",     1, 02, 00, E0,2E,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 14400<cr><lf>",     1, 02, 00, 40,38,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 16800<cr><lf>",     1, 02, 00, A0,41,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 19200<cr><lf>",     1, 02, 00, 00,4B,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 21600<cr><lf>",     1, 02, 00, 60,54,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 24000<cr><lf>",     1, 02, 00, C0,5D,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 26400<cr><lf>",     1, 02, 00, 20,67,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 28800<cr><lf>",     1, 02, 00, 80,70,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 31200<cr><lf>",     1, 02, 00, E0,79,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 33600<cr><lf>",     1, 02, 00, 40,83,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 38400<cr><lf>",     1, 02, 00, 00,96,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 57600<cr><lf>",     1, 02, 00, 00,E1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 115200<cr><lf>",    1, 02, 00, 00,C2,01,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 115,200<cr><lf>",   1, 02, 00, 00,C2,01,00, 00,00,00,00
+
+HKR, Responses, "0<cr>",  1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "1<cr>",  1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "2<cr>",  1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "3<cr>",  1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "4<cr>",  1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "5<cr>",  1, 02, 00, B0,04,00,00, 00,00,00,00
+HKR, Responses, "6<cr>",  1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "7<cr>",  1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "8<cr>",  1, 07, 00, 00,00,00,00, 00,00,00,00
+
+[Nokia.Addreg]
+HKR,, Reset,, "ATZ<cr>"
+HKR,, ConfigDelay, 1, 88, 13, 00, 00
+HKR,, DeviceType, 1, 01
+
+HKR, Init, 1,, "AT<cr>"
+HKR, Init, 2,, "AT&FV1E0&D2&S0&C1S0=0<cr>"
+HKR, Monitor, 1,, "ATS0=0<cr>"
+HKR, Monitor, 2,, "None"
+HKR, Hangup, 1,, "ATH<cr>"
+HKR, Answer, 1,, "ATA<cr>"
+
+HKR, Settings, Prefix,, "AT"
+HKR, Settings, Terminator,, "<cr>"
+HKR, Settings, DialPrefix,, "D"
+HKR, Settings, DialSuffix,, ""
+HKR, Settings, CallSetupFailTimer,, "S7=<#>"
+HKR, Settings, FlowControl_Off,, "&K0"
+HKR, Settings, FlowControl_Hard,, "&K3"
+HKR, Settings, FlowControl_Soft,, "&K4"
+
+;HKR, Settings, Compression_Off,, "+DS=0,0;"
+;HKR, Settings, Compression_On,,  "+DS=3,0;"
+
+HKR, Fax\Class2\AdaptiveAnswer\AnswerCommand, 1,, "ATS7=90S25=2"
+HKR, Fax\Class2\AdaptiveAnswer\AnswerCommand, 2,, "ATA"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseFaxConnect,, "+FCO"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseDataDetect,, "CARRIER"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseDataConnect,, "CONNECT"
+
+HKR,Protocol\GSM\V110_2DOT4K,1,,"AT+CBST=68,,1<cr>"
+HKR,Protocol\GSM\V110_4DOT8K,1,,"AT+CBST=70,,1<cr>"
+HKR,Protocol\GSM\V110_9DOT6K,1,,"AT+CBST=71,,1<cr>"
+HKR,Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,,1<cr>"
+
+[Nokia1.Addreg] ;6210
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 31,00,00,00, 00,C2,01,00, 00,E1,00,00
+
+HKR, Settings, Compression_Off,, "+DS=0,0;"
+HKR, Settings, Compression_On,, "+DS=3,0;"
+
+HKR,Protocol\GSM\V110_14DOT4K,1,, "AT+CBST=81,0,1;+CHSN=2,0,0,0<cr>"
+HKR,Protocol\GSM\V110_19DOT2K,1,, "AT+CBST=81,0,1;+CHSN=3,0,0,0<cr>"
+HKR,Protocol\GSM\V110_28DOT8K,1,, "AT+CBST=81,0,1;+CHSN=4,0,0,0<cr>"
+
+[Nokia2.Addreg] ;8xxx
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 30,00,00,00, 00,C2,01,00, 40,38,00,00
+
+HKR, Fax,FixModemClass,,"2"
+
+HKR, Fax\Class2\AdaptiveAnswer\AnswerCommand, 1,, "ATS7=90S25=2"
+HKR, Fax\Class2\AdaptiveAnswer\AnswerCommand, 2,, "ATA"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseFaxConnect,, "+FCO"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseDataDetect,, "CARRIER"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseDataConnect,, "CONNECT"
+
+
+[Nokia3.Addreg] ;7110, 6250
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 31,00,00,00, 00,C2,01,00, 40,38,00,00
+
+HKR, Settings, Compression_Off,, "+DS=0,0;"
+HKR, Settings, Compression_On,, "+DS=3,0;"
+
+[Nokia5.Addreg]
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,E1,00,00, 40,38,00,00
+HKR,, ConfigDelay, 1, F4, 01, 00, 00
+HKR,, InactivityScale, 1, 3c,00,00,00
+HKR,, Reset,, "ATZ<cr>"
+
+HKR, Init, 1,, "AT<cr>"
+HKR, Init, 2,, "AT&FV0E0&D2&C1S0=0<cr>"
+HKR, Monitor, 1,, "ATS0=0<cr>"
+HKR, Monitor, 2,, "None"
+HKR, Hangup, 1,, "ATH<cr>"
+HKR, Answer, 1,, "ATA<cr>"
+
+HKR, Settings, Prefix,, "AT"
+HKR, Settings, Terminator,, "<cr>"
+HKR, Settings, DialPrefix,, "D"
+HKR, Settings, DialSuffix,, ""
+HKR, Settings, CallSetupFailTimer,, "S7=<#>"
+HKR, Settings, InactivityTimeout,, "S30=<#>"
+
+HKR, Protocol\GSM\V110_2DOT4K,1,,"AT+CBST=68,,1<cr>"
+HKR, Protocol\GSM\V110_4DOT8K,1,,"AT+CBST=70,,1<cr>"
+HKR, Protocol\GSM\V110_9DOT6K,1,,"AT+CBST=71,,1<cr>"
+HKR, Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,,1<cr>"
+HKR, Protocol\GSM\ANALOG_NRLP,1,,"AT+CBST=7,,0<cr>"
+
+HKR, Responses, "<cr><lf>OK<cr><lf>", 1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>ERROR<cr><lf>", 1, 03, 00, 00,00,00,00, 00,00,00,00
+
+HKR, Responses, "0<cr>", 1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "1<cr>", 1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "2<cr>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "3<cr>", 1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "4<cr>", 1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "5<cr>", 1, 02, 00, b0,04,00,00, 00,00,00,00
+HKR, Responses, "6<cr>", 1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "7<cr>", 1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "8<cr>", 1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "10<cr>", 1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "11<cr>", 1, 02, 00, c0,12,00,00, 00,00,00,00
+HKR, Responses, "12<cr>", 1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "13<cr>", 1, 1D, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "14<cr>", 1, 1C, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "17<cr>", 1, 02, 00, 40,38,00,00, 00,00,00,00
+
+; Compression
+HKR, Responses, "<cr><lf>+DR: NONE<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: V42B<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: V42B RD<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: V42B TD<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: MNP5<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+
+; Error Control Reporting
+HKR, Responses, "<cr><lf>+ER: NONE<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+ER: LAMP<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+ER: ALT<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+
+
+[Nokia6.Addreg]
+HKR,, Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 31,00,00,00, 00,C2,01,00, 00,E1,00,00
+
+HKR,, Reset,, "ATZ<cr>"
+HKR,, ConfigDelay, 1, 88, 13, 00, 00
+HKR,, DeviceType, 1, 01
+
+HKR, Init, 1,, "AT<cr>"
+HKR, Init, 2,, "AT&FV1E0&D2&S0&C1S0=0<cr>"
+HKR, Monitor, 1,, "ATS0=0<cr>"
+HKR, Monitor, 2,, "None"
+HKR, Hangup, 1,, "ATH<cr>"
+HKR, Answer, 1,, "ATA<cr>"
+
+HKR, Settings, Prefix,, "AT"
+HKR, Settings, Terminator,, "<cr>"
+HKR, Settings, DialPrefix,, "D"
+HKR, Settings, DialSuffix,, ""
+HKR, Settings, CallSetupFailTimer,, "S7=<#>"
+HKR, Settings, FlowControl_Off,, "&K0"
+HKR, Settings, FlowControl_Hard,, "&K3"
+HKR, Settings, FlowControl_Soft,, "&K4"
+HKR, Settings, Compression_Off,, "+DS=0,0;"
+HKR, Settings, Compression_On,, "+DS=3,0;"
+
+
+HKR, Fax\Class2\AdaptiveAnswer\AnswerCommand, 1,, "ATS7=90S25=2"
+HKR, Fax\Class2\AdaptiveAnswer\AnswerCommand, 2,, "ATA"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseFaxConnect,, "+FCO"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseDataDetect,, "CARRIER"
+HKR, Fax\Class2\AdaptiveAnswer, ModemResponseDataConnect,, "CONNECT"
+
+HKR, Protocol\GSM\V110_9DOT6K,1,,"AT+CBST=71,0,1;+CHSN=1,0,0,0<cr>"
+HKR, Protocol\GSM\V110_14DOT4K,1,,"AT+CBST=81,0,1;+CHSN=2,0,0,0<cr>"
+HKR, Protocol\GSM\V110_19DOT2K,1,,"AT+CBST=81,0,1;+CHSN=3,0,0,0<cr>"
+HKR, Protocol\GSM\V110_28DOT8K,1,,"AT+CBST=81,0,1;+CHSN=4,0,0,0<cr>"
+HKR, Protocol\GSM\V110_38DOT4K,1,,"AT+CBST=81,0,1;+CHSN=6,0,0,0<cr>"
+HKR, Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,0,1<cr>"
+HKR, Protocol\GSM\ANALOG_NRLP,1,,"AT+CBST=7,0,1<cr>"
+
+[Nokia7.Addreg]
+HKR,,Properties, 1, 00,00,00,00, FF,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,C2,01,00, 00,E1,00,00
+HKR,,ConfigDelay, 1, F4, 01, 00, 00 ; 500ms = Command specifying the delay between opening the port and issuing AT commands
+HKR,,Reset,, "ATZ<cr>"
+HKR, Init, 1,, "AT<cr>"
+HKR, Init, 2,, "AT&FV1E0&D2&S0&C1S0=0<cr>" ; &S0 = DSR follows DTR
+HKR, Monitor, 1,, "ATS0=0<cr>"
+HKR, Monitor, 2,, "None"
+HKR, Hangup, 1,, "ATH<cr>"
+HKR, Answer, 1,, "ATA<cr>"
+
+HKR, Settings, Prefix,, "AT"
+HKR, Settings, Terminator,, "<cr>"
+HKR, Settings, DialPrefix,, "D"
+HKR, Settings, DialSuffix,, ""
+HKR, Settings, Compression_Off,, "+DS=0,0;" ; no compression
+HKR, Settings, Compression_On,, "+DS=3,0;" ; V.42bis both directions
+HKR, Settings, CallSetupFailTimer,, "S7=<#>"
+
+HKR, Protocol\GSM\V110_9DOT6K,1,,"AT+CBST=71,0,1;"
+HKR, Protocol\GSM\V110_14DOT4K,1,,"AT+CBST=81,0,1;+CHSN=0,1,0,12;"
+HKR, Protocol\GSM\V110_19DOT2K,1,,"AT+CBST=81,0,1;+CHSN=0,2,0,12;"
+HKR, Protocol\GSM\V110_28DOT8K,1,,"AT+CBST=81,0,1;+CHSN=0,2,0,12;"
+HKR, Protocol\GSM\V110_38DOT4K,1,,"+CBST=81,0,1;+CHSN=0,3,0,12;"
+HKR, Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,,1<cr>"
+HKR, Protocol\GSM\ANALOG_NRLP,1,,"AT+CBST=7,,0<cr>"
+
+
+HKR, Responses, "0<cr>",  1, 00, 00, 00,00,00,00, 00,00,00,00 ; OK
+HKR, Responses, "2<cr>",  1, 08, 00, 00,00,00,00, 00,00,00,00 ; RING
+HKR, Responses, "3<cr>",  1, 04, 00, 00,00,00,00, 00,00,00,00 ; NO CARRIER
+HKR, Responses, "4<cr>",  1, 03, 00, 00,00,00,00, 00,00,00,00 ; ERROR
+HKR, Responses, "6<cr>",  1, 05, 00, 00,00,00,00, 00,00,00,00 ; NO DIALTONE
+HKR, Responses, "7<cr>",  1, 06, 00, 00,00,00,00, 00,00,00,00 ; BUSY
+HKR, Responses, "8<cr>",  1, 07, 00, 00,00,00,00, 00,00,00,00 ; NO ANSWER
+HKR, Responses, "13<cr>", 1, 1D, 00, 00,00,00,00, 00,00,00,00 ; DELAYED
+HKR, Responses, "14<cr>", 1, 1C, 00, 00,00,00,00, 00,00,00,00 ; BLOCKED
+HKR, Responses, "16<cr>", 1, 01, 00, 00,00,00,00, 00,00,00,00 ; CARRIER
+
+HKR, Responses, "1<cr>",  1, 02, 00, 00,00,00,00, 00,00,00,00 ; CONNECT
+HKR, Responses, "5<cr>",  1, 02, 00, b0,04,00,00, 00,00,00,00 ; CONNECT 1200
+HKR, Responses, "10<cr>", 1, 02, 00, 60,09,00,00, 00,00,00,00 ; CONNECT 2400
+HKR, Responses, "11<cr>", 1, 02, 00, c0,12,00,00, 00,00,00,00 ; CONNECT 4800
+HKR, Responses, "12<cr>", 1, 02, 00, 80,25,00,00, 00,00,00,00 ; CONNECT 9600
+HKR, Responses, "17<cr>", 1, 02, 00, 40,38,00,00, 00,00,00,00 ; CONNECT 14400
+HKR, Responses, "18<cr>", 1, 02, 00, 00,4B,00,00, 00,00,00,00 ; CONNECT 19200
+HKR, Responses, "19<cr>", 1, 02, 00, 80,70,00,00, 00,00,00,00 ; CONNECT 28800
+HKR, Responses, "20<cr>", 1, 02, 00, 00,96,00,00, 00,00,00,00 ; CONNECT 38400
+HKR, Responses, "21<cr>", 1, 02, 00, 80,BB,00,00, 00,00,00,00 ; CONNECT 48000
+HKR, Responses, "22<cr>", 1, 02, 00, C0,DA,00,00, 00,00,00,00 ; CONNECT 56000
+
+HKR, Responses, "<cr><lf>OK<cr><lf>",           1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>RING<cr><lf>",         1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO CARRIER<cr><lf>",   1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>ERROR<cr><lf>",        1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIALTONE<cr><lf>",  1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BUSY<cr><lf>",         1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO ANSWER<cr><lf>",    1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>DELAYED<cr><lf>",      1, 1D, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BLOCKED<cr><lf>",      1, 1C, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CARRIER<cr><lf>",      1, 01, 00, 00,00,00,00, 00,00,00,00
+
+HKR, Responses, "<cr><lf>CONNECT<cr><lf>",      1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 1200<cr><lf>", 1, 02, 00, b0,04,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 2400<cr><lf>", 1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 4800<cr><lf>", 1, 02, 00, c0,12,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 9600<cr><lf>", 1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 14400<cr><lf>",1, 02, 00, 40,38,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 19200<cr><lf>",1, 02, 00, 00,4B,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 28800<cr><lf>",1, 02, 00, 80,70,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 38400<cr><lf>",1, 02, 00, 00,96,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000<cr><lf>",1, 02, 00, 80,BB,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000<cr><lf>",1, 02, 00, C0,DA,00,00, 00,00,00,00
+
+; Data compression reporting +DR=1
+HKR, Responses, "<cr><lf>+DR: NONE<cr><lf>",    1, 01, 00, 00,00,00,00, 00,00,00,00 ; not in use
+HKR, Responses, "<cr><lf>+DR: V42B<cr><lf>",    1, 01, 01, 00,00,00,00, 00,00,00,00 ; Both directions
+HKR, Responses, "<cr><lf>+DR: V42B RD<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00 ; receive only
+HKR, Responses, "<cr><lf>+DR: V42B TD<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00 ; transmit only
+
+; Error Control Reporting +ER
+HKR, Responses, "<cr><lf>+ER: NONE<cr><lf>",    1, 01, 00, 00,00,00,00, 00,00,00,00 ; not in use
+HKR, Responses, "<cr><lf>+ER: LAPM<cr><lf>",    1, 01, 00, 00,00,00,00, 00,00,00,00 ; V.42 LAPM protocol in use
+HKR, Responses, "<cr><lf>+ER: ALT<cr><lf>",     1, 01, 00, 00,00,00,00, 00,00,00,00 ; V.42 Alternative protocol in use
+
+
+[Nokia.Responses]
+; OK
+HKR, Responses, "<cr><lf>OK<cr><lf>", 1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "0<cr>", 1, 00, 00, 00,00,00,00, 00,00,00,00
+
+; Negotiation Progress
+HKR, Responses, "<cr><lf>CARRIER<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "16<cr>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>SMS<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "17<cr>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+
+; Connect
+HKR, Responses, "<cr><lf>CONNECT<cr><lf>", 1,  02,  00,  00,00,00,00,  00,00,00,00
+HKR, Responses, "1<cr>", 1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 300<cr><lf>", 1, 02, 00, 2c,01,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 1200<cr><lf>", 1, 02, 00, b0,04,00,00, 00,00,00,00
+HKR, Responses, "5<cr>", 1, 02, 00, b0,04,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 2400<cr><lf>", 1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "10<cr>", 1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 4800<cr><lf>", 1, 02, 00, C0,12,00,00, 00,00,00,00
+HKR, Responses, "11<cr>", 1, 02, 00, c0,12,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 9600<cr><lf>", 1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "12<cr>", 1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 14400<cr><lf>", 1, 02, 00, 40,38,00,00, 00,00,00,00
+HKR, Responses, "17<cr>", 1, 02, 00, 40,38,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 19200<cr><lf>", 1, 02, 00, 00,4B,00,00, 00,00,00,00
+HKR, Responses, "18<cr>", 1, 02, 00, 00,4B,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 28800<cr><lf>", 1, 02, 00, 80,70,00,00, 00,00,00,00
+HKR, Responses, "19<cr>", 1, 02, 00, 80,70,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 38400<cr><lf>", 1, 02, 00, 00,96,00,00, 00,00,00,00
+HKR, Responses, "20<cr>", 1, 02, 00, 00,96,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000<cr><lf>", 1, 02,00, 80,BB,00,00, 00,00,00,00
+HKR, Responses, "21<cr>", 1, 02,00, 80,BB,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000<cr><lf>", 1, 02,00, C0,DA,00,00, 00,00,00,00
+HKR, Responses, "22<cr>", 1, 02,00, C0,DA,00,00, 00,00,00,00
+
+; Error
+HKR, Responses, "<cr><lf>ERROR<cr><lf>", 1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "4<cr>", 1, 03, 00, 00,00,00,00, 00,00,00,00
+
+HKR, Responses, "<cr><lf>+FCERROR<cr><lf>", 1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "+F4<cr>", 1, 03, 00, 00,00,00,00, 00,00,00,00
+
+; No Carrier
+HKR, Responses, "<cr><lf>NO CARRIER<cr><lf>", 1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "3<cr>", 1, 04, 00, 00,00,00,00, 00,00,00,00
+
+;No Dial Tone
+HKR, Responses, "<cr><lf>NO DIALTONE<cr><lf>", 1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "6<cr>",  1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "13<cr>", 1, 05, 00, 00,00,00,00, 00,00,00,00
+
+HKR, Responses, "<cr><lf>BLACKLISTED<cr><lf>", 1, 1C, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "14<cr>", 1, 1C, 00, 00,00,00,00, 00,00,00,00
+
+; Busy
+HKR, Responses, "<cr><lf>BUSY<cr><lf>", 1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "7<cr>", 1, 06, 00, 00,00,00,00, 00,00,00,00
+
+; No Answer
+HKR, Responses, "<cr><lf>NO ANSWER<cr><lf>", 1, 07, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "8<cr>", 1, 07, 00, 00,00,00,00, 00,00,00,00
+
+; Ring
+HKR, Responses, "<cr><lf>RING<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "2<cr>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+
+; Compression
+HKR, Responses, "<cr><lf>+DR: NONE<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: V42B<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: V42B RD<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: V42B TD<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+DR: MNP5<cr><lf>", 1, 01, 01, 00,00,00,00, 00,00,00,00
+
+; Service Reporting Control
+HKR, Responses, "<cr><lf>+CR: ASYNC<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CR: REL ASYNC<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+
+; Error Control Reporting
+HKR, Responses, "<cr><lf>+ER: NONE<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+ER: LAMP<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+ER: ALT<cr><lf>", 1, 01, 00, 00,00,00,00, 00,00,00,00
+
+; Distinctive Ring
+HKR, Responses, "<cr><lf>+CRING: ASYNC<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: REL ASYNC<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: FAX<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: VOICE<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: VOICE/ASYNC<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: VOICE/REL ASYNC<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: ALT VOICE/ASYNC<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: ALT VOICE/REL ASYNC<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: ALT ASYNC/VOICE<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: ALT REL ASYNC/VOICE<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: ALT VOICE/FAX<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>+CRING: ALT FAX/VOICE<cr><lf>", 1, 08, 00, 00,00,00,00, 00,00,00,00
+
+[NullModem]
+HKR,, DCB, 1, 1C,00,00,00, 00,c2,01,00, 15,20,00,00, 00,00, 0a,00, 0a,00, 08, 00, 00, 11, 13, 00, 00, 00
+HKR, Init, 1,, "None"
+HKR, Init, 2,, "NoResponse"
+HKR, Monitor, 1,, "None"
+HKR, Answer, 1,, "CLIENTSERVER"
+HKR, Answer, 2,, "NoResponse"
+HKR, Settings, DialPrefix,, "CLIENT"
+HKR,, Properties, 1, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 30,00,00,00, 00,c2,01,00, 00,c2,01,00
+HKR, Responses, "CLIENT",       1, 08, 00, 00, 00, 00, 00, 00,00,00,00 ; Server side - the client is requesting a connection
+HKR, Responses, "<h00>CLIENT",  1, 08, 00, 00, 00, 00, 00, 00,00,00,00 ; Server side - the client is requesting a connection
+HKR, Responses, "CLIENTSERVER", 1, 02, 00, 00, 00, 00, 00, 00,00,00,00 ; Client side - the server has acknowledged and the connection is completed
+
+[Siemens.Addreg]
+HKR,,ConfigDelay, 1, 9a,10,00,00
+HKR,,Reset,,                            "AT&F<cr>"
+
+HKR, Init,      1,,                     "AT<cr>"
+HKR, Init,      2,,                     "AT&FE0V1&D2&C1Q0S0=0<cr>"
+HKR, Init,      3,,                     "AT+FCLASS=0<cr>"
+HKR, Monitor,   1,,                     "ATS0=0<cr>"
+HKR, Monitor,   2,,                     "None"
+HKR, Hangup,    1,,                     "ATH<cr>"
+HKR, Answer,    1,,                     "ATA<cr>"
+
+HKR, Settings, Prefix,,                 "AT"
+HKR, Settings, DialSuffix,,             ""
+HKR, Settings, Terminator,,             "<cr>"
+HKR, Settings, DialPrefix,,             "D"
+HKR, Settings, FlowControl_Off,,        "\Q0"
+HKR, Settings, FlowControl_Hard,,       "\Q3"
+HKR, Settings, FlowControl_Soft,,       "\Q1"
+HKR, Settings, CallSetupFailTimer,,     "S7=<#>"
+
+[Siemens1.Addreg]
+HKR,, Properties, 1, 00,00,00,00, 3C,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 30,00,00,00, 00,C2,01,00, 00,4B,00,00
+
+HKR, Protocol\GSM\ANALOG_RLP,1,,         "AT+CBST=7,,1<cr>"   ; or ATB13
+HKR, Protocol\GSM\V110_2DOT4K,1,,        "AT+CBST=68,,1<cr>"  ; or ATB25
+HKR, Protocol\GSM\V110_4DOT8K,1,,        "AT+CBST=70,,1<cr>"  ; or ATB27
+HKR, Protocol\GSM\V110_9DOT6K,1,,        "AT+CBST=71,,1<cr>"  ; or ATB29
+
+[Siemens2.Addreg]
+HKR,, Properties, 1, 00,00,00,00, 3C,00,00,00, 00,00,00,00, 00,00,00,00, 00,00,00,00, 30,00,00,00, 00,C2,01,00, 00,E1,00,00
+
+HKR, Protocol\GSM\ANALOG_RLP,1,,         "AT+CBST=7,,1<cr>"   ; or ATB13
+HKR, Protocol\GSM\V110_2DOT4K,1,,        "AT+CBST=68,,1<cr>"  ; or ATB25
+HKR, Protocol\GSM\V110_4DOT8K,1,,        "AT+CBST=70,,1<cr>"  ; or ATB27
+HKR, Protocol\GSM\V110_9DOT6K,1,,        "AT+CBST=71,,1<cr>"  ; or ATB29
+HKR, Protocol\GSM\V110_14DOT4K,1,,       "AT+CBST=75,,1<cr>"  ; or ATB31
+HKR, Protocol\GSM\GPRS,1,,               "AT<cr>"
+
+[Siemens.Responses]
+HKR, Responses, "<cr><lf>OK<cr><lf>",                   1, 00, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>ERROR<cr><lf>",                1, 03, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>RING<cr><lf>",                 1, 08, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO CARRIER<cr><lf>",           1, 04, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO DIALTONE<cr><lf>",          1, 05, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>BUSY<cr><lf>",                 1, 06, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>NO ANSWER<cr><lf>",            1, 07, 00, 00,00,00,00, 00,00,00,00
+
+HKR, Responses, "<cr><lf>CONNECT<cr><lf>",              1, 02, 00, 00,00,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 2400<cr><lf>",         1, 02, 00, 60,09,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 4800<cr><lf>",         1, 02, 00, c0,12,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 9600<cr><lf>",         1, 02, 00, 80,25,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 14400<cr><lf>",        1, 02, 00, 40,38,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 2400/RLP<cr><lf>",     1, 02, 0a, 60,09,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 4800/RLP<cr><lf>",     1, 02, 0a, c0,12,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 9600/RLP<cr><lf>",     1, 02, 0a, 80,25,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 14400/RLP<cr><lf>",    1, 02, 00, 40,38,00,00, 00,00,00,00
+
+HKR, Responses, "0<cr>",                                1, 00, 00, 00,00,00,00, 00,00,00,00 ; OK
+HKR, Responses, "2<cr>",                                1, 08, 00, 00,00,00,00, 00,00,00,00 ; RING
+HKR, Responses, "3<cr>",                                1, 04, 00, 00,00,00,00, 00,00,00,00 ; NO CARRIER
+HKR, Responses, "4<cr>",                                1, 03, 00, 00,00,00,00, 00,00,00,00 ; ERROR
+HKR, Responses, "6<cr>",                                1, 05, 00, 00,00,00,00, 00,00,00,00 ; NO DIALTONE
+HKR, Responses, "7<cr>",                                1, 06, 00, 00,00,00,00, 00,00,00,00 ; BUSY
+HKR, Responses, "8<cr>",                                1, 07, 00, 00,00,00,00, 00,00,00,00 ; NO ANSWER
+
+
+[GSM]
+HKR, Protocol\GSM\V110_2DOT4K,1,,"AT+CBST=68,,1<cr>"
+HKR, Protocol\GSM\V110_4DOT8K,1,,"AT+CBST=70,,1<cr>"
+HKR, Protocol\GSM\V110_9DOT6K,1,,"AT+CBST=71,,1<cr>"
+HKR, Protocol\GSM\ANALOG_RLP,1,,"AT+CBST=0,,1<cr>"
+HKR, Protocol\GSM\ANALOG_NRLP,1,,"AT+CBST=7,,0<cr>"
+
+[Strings]
+MSFT               = "Microsoft"
+
+Ericsson           = "Ericsson"
+Eric1      = "Ericsson SH888"
+Eric2      = "Ericsson DI27"
+Eric3      = "Ericsson CF888"
+Eric4      = "Ericsson DI28"
+Eric5      = "Ericsson I888"
+Eric6      = "Ericsson R320 IR modem"
+Eric7      = "Ericsson R520 IR Modem"
+Eric8      = "Ericsson T39 IR Modem"
+Eric9      = "Ericsson T68 IR Modem"
+
+MSIRCOMM.DisplayName= "Microsoft IR Communications Driver"
+
+Motorola           = "Motorola"
+Motorola_Timeport  = "Motorola Timeport"
+
+Standard                 = "Standard Cell Phones"
+Standard_phone           = "Standard Modem over IR link"
+Standard_phone_no_pnp    = "Standard Modem over IR link(Hint)"
+Standard_phoneGSM        = "Standard GSM Modem over IR link"
+Standard_phoneGSM_no_pnp = "Standard GSM Modem over IR link(Hint)"
+
+null_modem_in      = "Direct IrCOMM Connect Server"
+null_modem_out     = "Direct IrCOMM Connect Client"
+
+Moto1      = "Motorola L7089 Tri-Band"
+Moto3	   = "Motorola IR Modem"
+
+Nokia      = "Nokia"
+Nokia1     = "Nokia 6210"
+Nokia2     = "Nokia 8xxx Series"
+Nokia3     = "Nokia 7110"
+Nokia4     = "Nokia 6250"
+Nokia5     = "Nokia 9110"
+Nokia6     = "Nokia 8310"
+Nokia7     = "Nokia 9210"
+
+Siemens    = "Siemens AG"
+Siemens1   = "Siemens SL45"
+Siemens2   = "Siemens S45"

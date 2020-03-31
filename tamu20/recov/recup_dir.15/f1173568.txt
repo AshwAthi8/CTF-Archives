@@ -1,0 +1,1 @@
+s le fichier journal %3 est utilisé pour corriger un enregistrement de total de contrôle incorrect.

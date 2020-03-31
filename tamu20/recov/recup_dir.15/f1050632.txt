@@ -1,0 +1,1 @@
+an error code 0x%x.  Since this indicates an unrecoverable error, ASR cannot continue on this machine.

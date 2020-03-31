@@ -1,0 +1,1 @@
+ro massimo di pagine della versione dei parametri di sistema (%3) inferiore al numero di pagine della versione preferita (%4).

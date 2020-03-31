@@ -1,0 +1,9 @@
+ name="condition">Is More Recent Than</argument>
+                            <argument name="value">Last month</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

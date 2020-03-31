@@ -1,0 +1,841 @@
+g,VersionList.Reg
+DelReg=MsxmlCleanup.Reg
+[Unreg]
+DelReg=Msxml.Reg,Msxmldom.Reg,MsxmlIsland.Reg,MsxmlView.Reg,XMLPSR.Reg,Msxql.Reg,DSOControl.Reg,XmlHttp.Reg,MsxmlSchemaCache.Reg,MsxmlTemplate.Reg,XSLPatternfactory.Reg,UnRegAll.Reg,VersionList.Reg
+[Regmsxml]
+AddReg=msxmlvi.Reg
+[Unregmsxml]
+DelReg=msxmlvi.Reg, msxmlviunreg.Reg
+[Regdomdoc]
+AddReg=domdocvi.Reg
+[Unregdomdoc]
+DelReg=domdocvi.Reg, domdocviunreg.Reg
+[Regfreedom]
+AddReg=freedomvi.Reg
+[Unregfreedom]
+DelReg=freedomvi.Reg, freedomviunreg.Reg
+[Regxmlparser]
+AddReg=xmlparservi.Reg
+[Unregxmlparser]
+DelReg=xmlparservi.Reg, xmlparserviunreg.Reg
+[Regxmldso]
+AddReg=xmldsovi.Reg
+[Unregxmldso]
+DelReg=xmldsovi.Reg, xmldsoviunreg.Reg
+[Regxmlhttp]
+AddReg=xmlhttpvi.Reg
+[Unregxmlhttp]
+DelReg=xmlhttpvi.Reg, xmlhttpviunreg.Reg
+[Regscache]
+AddReg=scachevi.Reg
+[Unregscache]
+DelReg=scachevi.Reg, scacheviunreg.Reg
+[Regxsltemplate]
+AddReg=xsltemplatevi.Reg
+[Unregxsltemplate]
+DelReg=xsltemplatevi.Reg, xsltemplateviunreg.Reg
+[Regpfactory]
+AddReg=pfactoryvi.Reg
+[Unregpfactory]
+DelReg=pfactoryvi.Reg, pfactoryviunreg.Reg
+[FixSideBySide]
+DelReg=VersionList.Reg,XMLPSR.Reg,msxmlviunreg.Reg,Msxmldom.Reg,UnRegAll.Reg
+[UnRegAll.Reg]
+HKCR,CLSID\%CLSID_XMLDocument26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLDocument26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLDocument26%\ProgID
+HKCR,CLSID\%CLSID_XMLDocument26%\TypeLib
+HKCR,CLSID\%CLSID_XMLDocument26%
+HKCR,Msxml2.2.6\CLSID
+HKCR,Msxml2.2.6
+HKCR,CLSID\%CLSID_DOMDocument26%\TypeLib
+HKCR,CLSID\%CLSID_DOMDocument26%\Version
+HKCR,CLSID\%CLSID_DOMDocument26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_DOMDocument26%\ProgID
+HKCR,CLSID\%CLSID_DOMDocument26%\InProcServer32
+HKCR,CLSID\%CLSID_DOMDocument26%\InProcServer32
+HKCR,CLSID\%CLSID_DOMDocument26%
+HKCR,Msxml2.DOMDocument.2.6\CLSID
+HKCR,Msxml2.DOMDocument.2.6
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\InProcServer32
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\ProgID
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\Version
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\TypeLib
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%
+HKCR,Msxml2.FreeThreadedDOMDocument.2.6\CLSID
+HKCR,Msxml2.FreeThreadedDOMDocument.2.6
+HKCR,CLSID\%CLSID_XMLParser26%\InProcServer32"
+HKCR,CLSID\%CLSID_XMLParser26%\ProgID
+HKCR,CLSID\%CLSID_XMLParser26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XMLParser26%\Version
+HKCR,CLSID\%CLSID_XMLParser26%
+HKCR,Msxml2.XMLParser.2.6\CLSID
+HKCR,Msxml2.XMLParser.2.6
+HKCR,CLSID\%CLSID_DSOControl26%\InProcServer32
+HKCR,CLSID\%CLSID_DSOControl26%\ProgID
+HKCR,CLSID\%CLSID_DSOControl26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_DSOControl26%\Version
+HKCR,CLSID\%CLSID_DSOControl26%\TypeLib
+HKCR,CLSID\%CLSID_DSOControl26%
+HKCR,Msxml2.DSOControl.2.6\CLSID
+HKCR,Msxml2.DSOControl.2.6
+HKCR,CLSID\%CLSID_XMLHTTP26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLHTTP26%\ProgID
+HKCR,CLSID\%CLSID_XMLHTTP26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XMLHTTP26%\TypeLib
+HKCR,CLSID\%CLSID_XMLHTTP26%
+HKCR,Msxml2.XMLHTTP.2.6\CLSID
+HKCR,Msxml2.XMLHTTP.2.6
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\InProcServer32
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\ProgID
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\Version
+HKCR,CLSID\%CLSID_XSLPatternFactory26%
+HKCR,Msxml2.XSLPatternFactory.2.6\CLSID
+HKCR,Msxml2.XSLPatternFactory.2.6
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\ProgID
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\Version
+HKCR,CLSID\%CLSID_XMLSchemaCache26%
+HKCR,Msxml2.XMLSchemaCache.2.6\CLSID
+HKCR,Msxml2.XMLSchemaCache.2.6
+HKCR,CLSID\%CLSID_XSLTemplate26%\InProcServer32
+HKCR,CLSID\%CLSID_XSLTemplate26%\ProgID
+HKCR,CLSID\%CLSID_XSLTemplate26%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XSLTemplate26%\Version
+HKCR,CLSID\%CLSID_XSLTemplate26%
+HKCR,Msxml2.XSLTemplate.2.6\CLSID
+HKCR,Msxml2.XSLTemplate.2.6
+HKCR,CLSID\%CLSID_XMLView26%\BrowseInPlace
+HKCR,CLSID\%CLSID_XMLView26%\DefaultIcon
+HKCR,CLSID\%CLSID_XMLView26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLView26%\MiscStatus
+HKCR,CLSID\%CLSID_XMLView26%\ProgID
+HKCR,CLSID\%CLSID_XMLView26%\Version
+HKCR,CLSID\%CLSID_XMLView26%
+HKCR,CLSID\%CLSID_XMLMoniker26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLMoniker26%
+HKCR,CLSID\%CLSID_XMLIsland26%\InProcServer32
+HKCR,CLSID\%CLSID_XMLIsland26%\TypeLib
+HKCR,CLSID\%CLSID_XMLIsland26%
+[msxmlviunreg.Reg]
+HKCR,Msxml2\CLSID
+HKCR,Msxml2
+HKCR,CLSID\%CLSID_XMLDocument%\InProcServer32
+HKCR,CLSID\%CLSID_XMLDocument%\ProgID
+HKCR,CLSID\%CLSID_XMLDocument%\TypeLib
+HKCR,CLSID\%CLSID_XMLDocument%
+[domdocviunreg.Reg]
+HKCR,Msxml2.DOMDocument\CLSID
+HKCR,Msxml2.DOMDocument\CurVer
+HKCR,Msxml2.DOMDocument
+HKCR,CLSID\%CLSID_DOMDocument%\InProcServer32
+HKCR,CLSID\%CLSID_DOMDocument%\ProgID
+HKCR,CLSID\%CLSID_DOMDocument%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_DOMDocument%\Version
+HKCR,CLSID\%CLSID_DOMDocument%\TypeLib
+HKCR,CLSID\%CLSID_DOMDocument%
+[freedomviunreg.Reg]
+HKCR,Msxml2.FreeThreadedDOMDocument\CLSID
+HKCR,Msxml2.FreeThreadedDOMDocument\CurVer
+HKCR,Msxml2.FreeThreadedDOMDocument
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\InProcServer32
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\ProgID
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\Version
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\TypeLib
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%
+[xmlparserviunreg.Reg]
+HKCR,Msxml2.XMLParser\CLSID
+HKCR,Msxml2.XMLParser\CurVer
+HKCR,Msxml2.XMLParser
+HKCR,CLSID\%CLSID_XMLParser%\InProcServer32
+HKCR,CLSID\%CLSID_XMLParser%\ProgID
+HKCR,CLSID\%CLSID_XMLParser%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XMLParser%\Version
+HKCR,CLSID\%CLSID_XMLParser%
+[xmldsoviunreg.Reg]
+HKCR,Msxml2.DSOControl\CLSID
+HKCR,Msxml2.DSOControl\CurVer
+HKCR,Msxml2.DSOControl
+HKCR,CLSID\%CLSID_DSOControl%\InProcServer32
+HKCR,CLSID\%CLSID_DSOControl%\ProgID
+HKCR,CLSID\%CLSID_DSOControl%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_DSOControl%\Version
+HKCR,CLSID\%CLSID_DSOControl%\TypeLib
+HKCR,CLSID\%CLSID_DSOControl%
+[xmlhttpviunreg.Reg]
+HKCR,Msxml2.XMLHTTP\CLSID
+HKCR,Msxml2.XMLHTTP\CurVer
+HKCR,Msxml2.XMLHTTP
+HKCR,CLSID\%CLSID_XMLHTTP%\InProcServer32
+HKCR,CLSID\%CLSID_XMLHTTP%\ProgID
+HKCR,CLSID\%CLSID_XMLHTTP%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XMLHTTP%\TypeLib
+HKCR,CLSID\%CLSID_XMLHTTP%
+[pfactoryviunreg.Reg]
+HKCR,Msxml2.XSLPatternFactory\CLSID
+HKCR,Msxml2.XSLPatternFactory\CurVer
+HKCR,Msxml2.XSLPatternFactory
+HKCR,CLSID\%CLSID_XSLPatternFactory%\InProcServer32
+HKCR,CLSID\%CLSID_XSLPatternFactory%\ProgID
+HKCR,CLSID\%CLSID_XSLPatternFactory%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XSLPatternFactory%\Version
+HKCR,CLSID\%CLSID_XSLPatternFactory%
+[scacheviunreg.Reg]
+HKCR,Msxml2.XMLSchemaCache\CLSID
+HKCR,Msxml2.XMLSchemaCache\CurVer
+HKCR,Msxml2.XMLSchemaCache
+HKCR,CLSID\%CLSID_XMLSchemaCache%\InProcServer32
+HKCR,CLSID\%CLSID_XMLSchemaCache%\ProgID
+HKCR,CLSID\%CLSID_XMLSchemaCache%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XMLSchemaCache%\Version
+HKCR,CLSID\%CLSID_XMLSchemaCache%
+[xsltemplateviunreg.Reg]
+HKCR,Msxml2.XSLTemplate
+HKCR,Msxml2.XSLTemplate\CLSID
+HKCR,Msxml2.XSLTemplate\CurVer
+HKCR,CLSID\%CLSID_XSLTemplate%
+HKCR,CLSID\%CLSID_XSLTemplate%\InProcServer32
+HKCR,CLSID\%CLSID_XSLTemplate%\ProgID
+HKCR,CLSID\%CLSID_XSLTemplate%\VersionIndependentProgID
+HKCR,CLSID\%CLSID_XSLTemplate%\Version
+[Msxml.Reg]
+HKCR,CLSID\%CLSID_XMLDocument26%,,,"%NAME_XMLDOCUMENT26%"
+HKCR,CLSID\%CLSID_XMLDocument26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLDocument26%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XMLDocument26%\ProgID,,,"Msxml.2.6"
+HKCR,CLSID\%CLSID_XMLDocument26%\TypeLib,,,%TypeLibID%
+HKCR,Msxml2.2.6,,,"Msxml.2.6"
+HKCR,Msxml2.2.6\CLSID,,,%CLSID_XMLDocument26%
+[Msxmldom.Reg]
+HKCR,CLSID\%CLSID_DOMDocument26%,,,"%NAME_DOMDocument26%"
+HKCR,CLSID\%CLSID_DOMDocument26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DOMDocument26%\InProcServer32,"ThreadingModel",,"%RENTAL_MODEL%"
+HKCR,CLSID\%CLSID_DOMDocument26%\ProgID,,,"Msxml2.DOMDocument.2.6"
+HKCR,CLSID\%CLSID_DOMDocument26%\VersionIndependentProgID,,,"Msxml2.DOMDocument"
+HKCR,CLSID\%CLSID_DOMDocument26%\Version,,, "2.6"
+HKCR,CLSID\%CLSID_DOMDocument26%\TypeLib,,,%TypeLibID%
+HKCR,Msxml2.DOMDocument.2.6,,,"%NAME_DOMDocument26%"
+HKCR,Msxml2.DOMDocument.2.6\CLSID,,,%CLSID_DOMDocument26%
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%,,,"%NAME_FreeThreadedDOMDocument26%"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\ProgID,,,"Msxml2.FreeThreadedDOMDocument.2.6"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\VersionIndependentProgID,,,"Msxml2.FreeThreadedDOMDocument"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\Version,,, "2.6"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument26%\TypeLib,,,%TypeLibID%
+HKCR,Msxml2.FreeThreadedDOMDocument.2.6,,,"%NAME_FreeThreadedDOMDocument%26"
+HKCR,Msxml2.FreeThreadedDOMDocument.2.6\CLSID,,,%CLSID_FreeThreadedDOMDocument26%
+[XMLPSR.Reg]
+HKCR,CLSID\%CLSID_XMLParser26%,,,"%NAME_XMLParser26%"
+HKCR,CLSID\%CLSID_XMLParser26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLParser26%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XMLParser26%\ProgID,,,"Msxml2.XMLParser.2.6"
+HKCR,CLSID\%CLSID_XMLParser26%\VersionIndependentProgID,,,"Msxml2.XMLParser"
+HKCR,CLSID\%CLSID_XMLParser26%\Version,,,"2.6"
+HKCR,Msxml2.XMLParser.2.6,,,"%NAME_XMLParser26%"
+HKCR,Msxml2.XMLParser.2.6\CLSID,,,%CLSID_XMLParser26%
+[DSOControl.Reg]
+HKCR,CLSID\%CLSID_DSOControl26%,,,"%NAME_DSOControl26%"
+HKCR,CLSID\%CLSID_DSOControl26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DSOControl26%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_DSOControl26%\ProgID,,,"Msxml2.DSOControl.2.6"
+HKCR,CLSID\%CLSID_DSOControl26%\VersionIndependentProgID,,,"Msxml2.DSOControl"
+HKCR,CLSID\%CLSID_DSOControl26%\Version,,, "2.6"
+HKCR,CLSID\%CLSID_DSOControl26%\TypeLib,,,%TypeLibID%
+HKCR,Msxml2.DSOControl.2.6,,,"%NAME_DSOControl26%"
+HKCR,Msxml2.DSOControl.2.6\CLSID,,,%CLSID_DSOControl26%
+[XmlHttp.Reg]
+HKCR,CLSID\%CLSID_XMLHTTP26%,,,"%NAME_XMLHTTP26%"
+HKCR,CLSID\%CLSID_XMLHTTP26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLHTTP26%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLHTTP26%\ProgID,,,"Msxml2.XMLHTTP.2.6"
+HKCR,CLSID\%CLSID_XMLHTTP26%\VersionIndependentProgID,,,"Msxml2.XMLHTTP"
+HKCR,CLSID\%CLSID_XMLHTTP26%\TypeLib,,,%TypeLibID%
+HKCR,Msxml2.XMLHTTP.2.6,,,"%NAME_XMLHTTP26%"
+HKCR,Msxml2.XMLHTTP.2.6\CLSID,,,%CLSID_XMLHTTP26%
+[XSLPatternfactory.Reg]
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XSLPatternFactory26%\Version,,,"2.6"
+[MsxmlSchemaCache.Reg]
+HKCR,CLSID\%CLSID_XMLSchemaCache26%,,,"%NAME_XMLSchemaCache26%"
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\ProgID,,,"Msxml2.XMLSchemaCache.2.6"
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\VersionIndependentProgID,,,"Msxml2.XMLSchemaCache"
+HKCR,CLSID\%CLSID_XMLSchemaCache26%\Version,,,"2.6"
+HKCR,Msxml2.XMLSchemaCache.2.6,,,"%NAME_XMLSchemaCache26%"
+HKCR,Msxml2.XMLSchemaCache.2.6\CLSID,,,%CLSID_XMLSchemaCache26%
+[MsxmlTemplate.Reg]
+HKCR,CLSID\%CLSID_XSLTemplate26%,,,"%NAME_XSLTemplate26%"
+HKCR,CLSID\%CLSID_XSLTemplate26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XSLTemplate26%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XSLTemplate26%\ProgID,,,"Msxml2.XSLTemplate.2.6"
+HKCR,CLSID\%CLSID_XSLTemplate26%\VersionIndependentProgID,,,"Msxml2.XSLTemplate"
+HKCR,CLSID\%CLSID_XSLTemplate26%\Version,,,"2.6"
+HKCR,Msxml2.XSLTemplate.2.6,,,"%NAME_XSLTemplate26%"
+HKCR,Msxml2.XSLTemplate.2.6\CLSID,,,%CLSID_XSLTemplate26%
+[MsxmlView.Reg]
+HKCR,CLSID\%CLSID_XMLView26%,,,"%NAME_XMLDOCUMENT26%"
+HKCR,CLSID\%CLSID_XMLView26%\BrowseInPlace,,,""
+HKCR,CLSID\%CLSID_XMLView26%\DefaultIcon,,131072,"%_SYS_MOD_PATH%,0"
+HKCR,CLSID\%CLSID_XMLView26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLView26%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLView26%\MiscStatus,,,"2228625"
+HKCR,CLSID\%CLSID_XMLView26%\ProgID,,,"xmlfile"
+HKCR,CLSID\%CLSID_XMLView26%\Version,,,"2.6"
+HKCR,CLSID\%CLSID_XMLMoniker26%,,,"%NAME_XMLMoniker26%"
+HKCR,CLSID\%CLSID_XMLMoniker26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLMoniker26%\InProcServer32,"ThreadingModel",,"Apartment"
+[MsxmlIsland.Reg]
+HKCR,CLSID\%CLSID_XMLIsland26%,,,"%NAME_XMLIsland26%"
+HKCR,CLSID\%CLSID_XMLIsland26%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLIsland26%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLIsland26%\TypeLib,,,%TypeLibID%
+[msxmlvi.Reg]
+HKCR,Msxml2,,,"Msxml2"
+HKCR,Msxml2\CLSID,,,%CLSID_XMLDocument%
+HKCR,CLSID\%CLSID_XMLDocument%,,,"%NAME_XMLDOCUMENT%"
+HKCR,CLSID\%CLSID_XMLDocument%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLDocument%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XMLDocument%\ProgID,,,"Msxml"
+HKCR,CLSID\%CLSID_XMLDocument%\TypeLib,,,%TypeLibID%
+[domdocvi.Reg]
+HKCR,Msxml2.DOMDocument,,,"%NAME_DOMDocument%"
+HKCR,Msxml2.DOMDocument\CLSID,,,%CLSID_DOMDocument%
+HKCR,Msxml2.DOMDocument\CurVer,,,"Msxml2.DOMDocument.2.6"
+HKCR,CLSID\%CLSID_DOMDocument%,,,"%NAME_DOMDocument%"
+HKCR,CLSID\%CLSID_DOMDocument%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DOMDocument%\InProcServer32,"ThreadingModel",,"%RENTAL_MODEL%"
+HKCR,CLSID\%CLSID_DOMDocument%\ProgID,,,"Msxml2.DOMDocument"
+HKCR,CLSID\%CLSID_DOMDocument%\VersionIndependentProgID,,,"Msxml2.DOMDocument"
+HKCR,CLSID\%CLSID_DOMDocument%\Version,,, "2.6"
+HKCR,CLSID\%CLSID_DOMDocument%\TypeLib,,,%TypeLibID%
+[freedomvi.Reg]
+HKCR,Msxml2.FreeThreadedDOMDocument,,,"%NAME_FreeThreadedDOMDocument%"
+HKCR,Msxml2.FreeThreadedDOMDocument\CLSID,,,%CLSID_FreeThreadedDOMDocument%
+HKCR,Msxml2.FreeThreadedDOMDocument\CurVer,,,"Msxml2.FreeThreadedDOM.2.6"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%,,,"%NAME_FreeThreadedDOMDocument%"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\ProgID,,,"Msxml2.FreeThreadedDOMDocument"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\VersionIndependentProgID,,,"Msxml2.FreeThreadedDOMDocument"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\Version,,, "2.6"
+HKCR,CLSID\%CLSID_FreeThreadedDOMDocument%\TypeLib,,,%TypeLibID%
+[xmlparservi.Reg]
+HKCR,Msxml2.XMLParser,,,"%NAME_XMLParser%"
+HKCR,Msxml2.XMLParser\CLSID,,,%CLSID_XMLParser%
+HKCR,Msxml2.XMLParser\CurVer,,,"Msxml2.XMLParser.2.6"
+HKCR,CLSID\%CLSID_XMLParser%,,,"%NAME_XMLParser%"
+HKCR,CLSID\%CLSID_XMLParser%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLParser%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XMLParser%\ProgID,,,"Msxml2.XMLParser"
+HKCR,CLSID\%CLSID_XMLParser%\VersionIndependentProgID,,,"Msxml2.XMLParser"
+HKCR,CLSID\%CLSID_XMLParser%\Version,,,"2.6"
+[xmldsovi.Reg]
+HKCR,Msxml2.DSOControl,,,"%NAME_DSOControl%"
+HKCR,Msxml2.DSOControl\CLSID,,,%CLSID_DSOControl%
+HKCR,Msxml2.DSOControl\CurVer,,,"Msxml2.DSOControl.2.6"
+HKCR,CLSID\%CLSID_DSOControl%,,,"%NAME_DSOControl%"
+HKCR,CLSID\%CLSID_DSOControl%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DSOControl%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_DSOControl%\ProgID,,,"Msxml2.DSOControl"
+HKCR,CLSID\%CLSID_DSOControl%\VersionIndependentProgID,,,"Msxml2.DSOControl"
+HKCR,CLSID\%CLSID_DSOControl%\Version,,, "2.6"
+HKCR,CLSID\%CLSID_DSOControl%\TypeLib,,,%TypeLibID%
+[xmlhttpvi.Reg]
+HKCR,Msxml2.XMLHTTP,,,"%NAME_XMLHTTP%"
+HKCR,Msxml2.XMLHTTP\CLSID,,,%CLSID_XMLHTTP%
+HKCR,Msxml2.XMLHTTP\CurVer,,,"Msxml2.XMLHTTP.2.6"
+HKCR,CLSID\%CLSID_XMLHTTP%,,,"%NAME_XMLHTTP%"
+HKCR,CLSID\%CLSID_XMLHTTP%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLHTTP%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLHTTP%\ProgID,,,"Msxml2.XMLHTTP"
+HKCR,CLSID\%CLSID_XMLHTTP%\VersionIndependentProgID,,,"Msxml2.XMLHTTP"
+HKCR,CLSID\%CLSID_XMLHTTP%\TypeLib,,,%TypeLibID%
+[pfactoryvi.Reg]
+HKCR,CLSID\%CLSID_XSLPatternFactory%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XSLPatternFactory%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XSLPatternFactory%\Version,,,"2.6"
+[scachevi.Reg]
+HKCR,Msxml2.XMLSchemaCache,,,"%NAME_XMLSchemaCache%"
+HKCR,Msxml2.XMLSchemaCache\CLSID,,,%CLSID_XMLSchemaCache%
+HKCR,Msxml2.XMLSchemaCache\CurVer,,,"Msxml2.XMLSchemaCache.2.6"
+HKCR,CLSID\%CLSID_XMLSchemaCache%,,,"%NAME_XMLSchemaCache%"
+HKCR,CLSID\%CLSID_XMLSchemaCache%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLSchemaCache%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XMLSchemaCache%\ProgID,,,"Msxml2.XMLSchemaCache"
+HKCR,CLSID\%CLSID_XMLSchemaCache%\VersionIndependentProgID,,,"Msxml2.XMLSchemaCache"
+HKCR,CLSID\%CLSID_XMLSchemaCache%\Version,,,"2.6"
+[xsltemplatevi.Reg]
+HKCR,Msxml2.XSLTemplate,,,"%NAME_XSLTemplate%"
+HKCR,Msxml2.XSLTemplate\CLSID,,,%CLSID_XSLTemplate%
+HKCR,Msxml2.XSLTemplate\CurVer,,,"Msxml2.XSLTemplate.2.6"
+HKCR,CLSID\%CLSID_XSLTemplate%,,,"%NAME_XSLTemplate%"
+HKCR,CLSID\%CLSID_XSLTemplate%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XSLTemplate%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XSLTemplate%\ProgID,,,"Msxml2.XSLTemplate"
+HKCR,CLSID\%CLSID_XSLTemplate%\VersionIndependentProgID,,,"Msxml2.XSLTemplate"
+HKCR,CLSID\%CLSID_XSLTemplate%\Version,,,"2.6"
+[MsxmlCleanup.Reg]
+HKCR,%IE4GUID_PATH%
+HKCU,%MSXML_PATH%
+HKCU,%MSXMLDOM_PATH%
+HKCU,%XMLISLAND_PATH%
+HKCU,%XMLParser_PATH%
+HKCU,%MSXMLDSO_PATH%
+[RegOld]
+AddReg=Msxml.RegOld,Msxmldom.RegOld,MsxmlIsland.RegOld,MsxmlScriptIsland.RegOld,XMLPSR.RegOld,XMLDSO.RegOld,XmlHttp.RegOld,XSLPatternFactory.RegOld
+DelReg=MsxmlCleanup.RegOld
+[UnregOld]
+DelReg=Msxml.UnRegOld,Msxmldom.UnRegOld,MsxmlIsland.UnRegOld,MsxmlScriptIsland.UnRegOld,XMLPSR.UnRegOld,XMLDSO.UnRegOld,XmlHttp.UnRegOld,XSLPatternFactory.UnRegOld
+[RegMIME]
+AddReg=XMLMimeView.RegOld,XMLFileAssoc.Inst,XSLFileAssoc.Inst,XMLMIME.Inst
+[UnregMIME]
+DelReg=XMLMimeView.UnRegOld,XMLFileAssoc.UnInst,XSLFileAssoc.UnInst,XMLMIME.UnInst
+[Msxml.RegOld]
+HKCR,CLSID\%CLSID_XMLDocumentOld%,,,"Msxml"
+HKCR,CLSID\%CLSID_XMLDocumentOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLDocumentOld%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XMLDocumentOld%\ProgID,,,"Msxml"
+HKCR,CLSID\%CLSID_XMLDocumentOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,Msxml,,,"Msxml"
+HKCR,Msxml\CLSID,,,%CLSID_XMLDocumentOld%
+[Msxml.UnRegOld]
+HKCR,CLSID\%CLSID_XMLDocumentOld%,,,"Msxml"
+HKCR,CLSID\%CLSID_XMLDocumentOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLDocumentOld%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_XMLDocumentOld%\ProgID,,,"Msxml"
+HKCR,CLSID\%CLSID_XMLDocumentOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,CLSID\%CLSID_XMLDocumentOld%
+HKCR,Msxml,,,"Msxml"
+HKCR,Msxml\CLSID,,,%CLSID_XMLDocumentOld%
+HKCR,Msxml
+[Msxmldom.RegOld]
+HKCR,CLSID\%CLSID_DOMDocumentOld%,,,"%NAME_DOMDocument%"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DOMDocumentOld%\InProcServer32,"ThreadingModel",,"%RENTAL_MODEL%"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\ProgID,,,"Microsoft.XMLDOM.1.0"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\VersionIndependentProgID,,,"Microsoft.XMLDOM"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\Version,,, "1.0"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,CLSID\%CLSID_DOMDocumentOld%\SideBySide,RegVersion,, "2.6"
+HKCR,Microsoft.XMLDOM,,,"%NAME_DOMDocument%"
+HKCR,Microsoft.XMLDOM\CLSID,,,%CLSID_DOMDocumentOld%
+HKCR,Microsoft.XMLDOM\CurVer,,,"Microsoft.XMLDOM.1.0"
+HKCR,MSXML.DOMDocument,,,"%NAME_DOMDocument%"
+HKCR,MSXML.DOMDocument\CLSID,,,%CLSID_DOMDocumentOld%
+HKCR,MSXML.DOMDocument\CurVer,,,"Microsoft.XMLDOM.1.0"
+HKCR,Microsoft.XMLDOM.1.0,,,"%NAME_DOMDocument%"
+HKCR,Microsoft.XMLDOM.1.0\CLSID,,,%CLSID_DOMDocumentOld%
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%,,,"%NAME_FreeThreadedDocument%"
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%\InProcServer32,"ThreadingModel",,"%FREE_MODEL%"
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%\ProgID,,,"Microsoft.FreeThreadedXMLDOM.1.0"
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%\VersionIndependentProgID,,,"Microsoft.FreeThreadedXMLDOM"
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%\Version,,, "1.0"
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,Microsoft.FreeThreadedXMLDOM,,,"%NAME_FreeThreadedDocument%"
+HKCR,Microsoft.FreeThreadedXMLDOM\CLSID,,,%CLSID_DOMFreeThreadedDocumentOld%
+HKCR,Microsoft.FreeThreadedXMLDOM\CurVer,,,"Microsoft.FreeThreadedXMLDOM.1.0"
+HKCR,MSXML.FreeThreadedDOMDocument,,,"%NAME_FreeThreadedDocument%"
+HKCR,MSXML.FreeThreadedDOMDocument\CLSID,,,%CLSID_DOMFreeThreadedDocumentOld%
+HKCR,MSXML.FreeThreadedDOMDocument\CurVer,,,"Microsoft.FreeThreadedXMLDOM.1.0"
+HKCR,Microsoft.FreeThreadedXMLDOM.1.0,,,"%NAME_FreeThreadedDocument%"
+HKCR,Microsoft.FreeThreadedXMLDOM.1.0\CLSID,,,%CLSID_DOMFreeThreadedDocumentOld%
+[Msxmldom.UnRegOld]
+HKCR,CLSID\%CLSID_DOMDocumentOld%,,,"%NAME_DOMDocument%"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_DOMDocumentOld%\InProcServer32,"ThreadingModel",,"%RENTAL_MODEL%"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\ProgID,,,"Microsoft.XMLDOM.1.0"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\VersionIndependentProgID,,,"Microsoft.XMLDOM"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\Version,,, "1.0"
+HKCR,CLSID\%CLSID_DOMDocumentOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,CLSID\%CLSID_DOMDocumentOld%\SideBySide,RegVersion,, "2.6"
+HKCR,CLSID\%CLSID_DOMDocumentOld%
+HKCR,Microsoft.XMLDOM,,,"%NAME_DOMDocument%"
+HKCR,Microsoft.XMLDOM\CLSID,,,%CLSID_DOMDocumentOld%
+HKCR,Microsoft.XMLDOM\CurVer,,,"Microsoft.XMLDOM.1.0"
+HKCR,Microsoft.XMLDOM
+HKCR,MSXML.DOMDocument,,,"%NAME_DOMDocument%"
+HKCR,MSXML.DOMDocument\CLSID,,,%CLSID_DOMDocumentOld%
+HKCR,MSXML.DOMDocument\CurVer,,,"Microsoft.XMLDOM.1.0"
+HKCR,MSXML.DOMDocument
+HKCR,Microsoft.XMLDOM.1.0,,,"%NAME_DOMDocument%"
+HKCR,Microsoft.XMLDOM.1.0\CLSID,,,%CLSID_DOMDocumentOld%
+HKCR,Microsoft.XMLDOM.1.0
+HKCR,CLSID\%CLSID_DOMFreeThreadedDocumentOld%
+HKCR,Microsoft.FreeThreadedXMLDOM
+HKCR,MSXML.FreeThreadedDOMDocument
+HKCR,Microsoft.FreeThreadedXMLDOM.1.0
+[MsxmlIsland.RegOld]
+HKCR,CLSID\%CLSID_XMLIslandOld%,,,"MsxmlIsland"
+HKCR,CLSID\%CLSID_XMLIslandOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLIslandOld%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLIslandOld%\TypeLib,,,%TypeLibIDOld%
+[MsxmlIsland.UnRegOld]
+HKCR,CLSID\%CLSID_XMLIslandOld%,,,"MsxmlIsland"
+HKCR,CLSID\%CLSID_XMLIslandOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLIslandOld%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLIslandOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,CLSID\%CLSID_XMLIslandOld%
+[MsxmlScriptIsland.RegOld]
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%,,,"XML Script Engine"
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\ProgID,,,%SCRIPTLANGNAME1Old%
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\OLEScript
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\%IMPLCATEGORIESOld%
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\%IMPLCATEGORIESOld%\{F0B7A1A1-9847-11CF-8F20-00805F2CD064}
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\%IMPLCATEGORIESOld%\{F0B7A1A2-9847-11CF-8F20-00805F2CD064}
+HKCR,%SCRIPTLANGNAME1Old%,,,"XML Script Engine"
+HKCR,%SCRIPTLANGNAME1Old%\CLSID,,,%CLSID_XMLScriptIslandOld%
+HKCR,%SCRIPTLANGNAME1Old%\OLEScript
+[MsxmlScriptIsland.UnRegOld]
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%,,,"XML Script Engine"
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\ProgID,,,%SCRIPTLANGNAME1Old%
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\OLEScript
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\%IMPLCATEGORIESOld%
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\%IMPLCATEGORIESOld%\{F0B7A1A1-9847-11CF-8F20-00805F2CD064}
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%\%IMPLCATEGORIESOld%\{F0B7A1A2-9847-11CF-8F20-00805F2CD064}
+HKCR,CLSID\%CLSID_XMLScriptIslandOld%
+HKCR,%SCRIPTLANGNAME1Old%,,,"XML Script Engine"
+HKCR,%SCRIPTLANGNAME1Old%\CLSID,,,%CLSID_XMLScriptIslandOld%
+HKCR,%SCRIPTLANGNAME1Old%\OLEScript
+HKCR,%SCRIPTLANGNAME1Old%
+[XMLPSR.RegOld]
+HKCR,CLSID\%CLSID_XMLParserOld%,,,"%NAME_XMLParser%"
+HKCR,CLSID\%CLSID_XMLParserOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLParserOld%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XMLParserOld%\ProgID,,,"Microsoft.XMLParser.1.0"
+HKCR,CLSID\%CLSID_XMLParserOld%\VersionIndependentProgID,,,"Microsoft.XMLParser"
+HKCR,CLSID\%CLSID_XMLParserOld%\Version,,,"1.0"
+HKCR,Microsoft.XMLParser,,,"%NAME_XMLParser%"
+HKCR,Microsoft.XMLParser\CLSID,,,%CLSID_XMLParserOld%
+HKCR,Microsoft.XMLParser\CurVer,,,"Microsoft.XMLParser.1.0"
+HKCR,Microsoft.XMLParser.1.0,,,"%NAME_XMLParser%0"
+HKCR,Microsoft.XMLParser.1.0\CLSID,,,%CLSID_XMLParserOld%
+[XMLPSR.UnRegOld]
+HKCR,CLSID\%CLSID_XMLParserOld%,,,"%NAME_XMLParser%"
+HKCR,CLSID\%CLSID_XMLParserOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLParserOld%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XMLParserOld%\ProgID,,,"Microsoft.XMLParser.1.0"
+HKCR,CLSID\%CLSID_XMLParserOld%\VersionIndependentProgID,,,"Microsoft.XMLParser"
+HKCR,CLSID\%CLSID_XMLParserOld%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_XMLParserOld%
+HKCR,Microsoft.XMLParser,,,"%NAME_XMLParser%"
+HKCR,Microsoft.XMLParser\CLSID,,,%CLSID_XMLParserOld%
+HKCR,Microsoft.XMLParser\CurVer,,,"Microsoft.XMLParser.1.0"
+HKCR,Microsoft.XMLParser
+HKCR,Microsoft.XMLParser.1.0,,,"%NAME_XMLParser%0"
+HKCR,Microsoft.XMLParser.1.0\CLSID,,,%CLSID_XMLParserOld%
+HKCR,Microsoft.XMLParser.1.0
+[XMLDSO.RegOld]
+HKCR,CLSID\%CLSID_XMLDSOOld%,,,"%NAME_XMLDSO%"
+HKCR,CLSID\%CLSID_XMLDSOOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLDSOOld%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLDSOOld%\ProgID,,,"Microsoft.XMLDSO.1.0"
+HKCR,CLSID\%CLSID_XMLDSOOld%\VersionIndependentProgID,,,"Microsoft.XMLDSO"
+HKCR,CLSID\%CLSID_XMLDSOOld%\Version,,, "1.0"
+HKCR,CLSID\%CLSID_XMLDSOOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,Microsoft.XMLDSO,,,"%NAME_XMLDSO%"
+HKCR,Microsoft.XMLDSO\CLSID,,,%CLSID_XMLDSOOld%
+HKCR,Microsoft.XMLDSO\CurVer,,,"Microsoft.XMLDSO.1.0"
+HKCR,Microsoft.XMLDSO.1.0,,,"%NAME_XMLDSO%"
+HKCR,Microsoft.XMLDSO.1.0\CLSID,,,%CLSID_XMLDSOOld%
+[XMLDSO.UnRegOld]
+HKCR,CLSID\%CLSID_XMLDSOOld%,,,"%NAME_XMLDSO%"
+HKCR,CLSID\%CLSID_XMLDSOOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLDSOOld%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLDSOOld%\ProgID,,,"Microsoft.XMLDSO.1.0"
+HKCR,CLSID\%CLSID_XMLDSOOld%\VersionIndependentProgID,,,"Microsoft.XMLDSO"
+HKCR,CLSID\%CLSID_XMLDSOOld%\Version,,, "1.0"
+HKCR,CLSID\%CLSID_XMLDSOOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,CLSID\%CLSID_XMLDSOOld%
+HKCR,Microsoft.XMLDSO,,,"%NAME_XMLDSO%"
+HKCR,Microsoft.XMLDSO\CLSID,,,%CLSID_XMLDSOOld%
+HKCR,Microsoft.XMLDSO\CurVer,,,"Microsoft.XMLDSO.1.0"
+HKCR,Microsoft.XMLDSO
+HKCR,Microsoft.XMLDSO.1.0,,,"%NAME_XMLDSO%"
+HKCR,Microsoft.XMLDSO.1.0\CLSID,,,%CLSID_XMLDSOOld%
+HKCR,Microsoft.XMLDSO.1.0
+[XmlHttp.RegOld]
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%,,,"%NAME_XMLHTTPOld%"
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%\ProgID,,,"Microsoft.XMLHTTP.1"
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%\VersionIndependentProgID,,,"Microsoft.XMLHTTP"
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%\TypeLib,,,%TypeLibIDOld%
+HKCR,Microsoft.XMLHTTP,,,"%NAME_XMLHTTPOld%"
+HKCR,Microsoft.XMLHTTP\CLSID,,,%CLSID_XMLHTTPRequestOld%
+HKCR,Microsoft.XMLHTTP\CurVer,,,"Microsoft.XMLHTTP.1"
+HKCR,Microsoft.XMLHTTP.1,,,"%NAME_XMLHTTPOld%"
+HKCR,Microsoft.XMLHTTP.1\CLSID,,,%CLSID_XMLHTTPRequestOld%
+[XmlHttp.UnRegOld]
+HKCR,CLSID\%CLSID_XMLHTTPRequestOld%
+HKCR,Microsoft.XMLHTTP
+HKCR,Microsoft.XMLHTTP.1
+[XMLMimeView.RegOld]
+HKCR,"CLSID\%CLSID_XMLViewOld%",,,"XML Document"
+HKCR,"CLSID\%CLSID_XMLViewOld%\BrowseInPlace",,,""
+HKCR,"CLSID\%CLSID_XMLViewOld%\DefaultIcon",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%,0"
+HKCR,"CLSID\%CLSID_XMLViewOld%\InProcServer32",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%"
+HKCR,"CLSID\%CLSID_XMLViewOld%\InProcServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%CLSID_XMLViewOld%\MiscStatus",,,"2228625"
+HKCR,"CLSID\%CLSID_XMLViewOld%\ProgID",,,"xmlfile"
+HKCR,"CLSID\%CLSID_XMLViewOld%\Version",,,"1.0"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%",,,"XML Viewer Behavior"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%\InProcServer32",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%\InProcServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%CLSID_XMLMonikerOld%",,,"XML Viewer Moniker"
+HKCR,"CLSID\%CLSID_XMLMonikerOld%\InProcServer32",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%"
+HKCR,"CLSID\%CLSID_XMLMonikerOld%\InProcServer32","ThreadingModel",,"Apartment"
+[XMLMimeView.UnRegOld]
+HKCR,"CLSID\%CLSID_XMLViewOld%",,,"XML Document"
+HKCR,"CLSID\%CLSID_XMLViewOld%\BrowseInPlace",,,""
+HKCR,"CLSID\%CLSID_XMLViewOld%\DefaultIcon",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%,0"
+HKCR,"CLSID\%CLSID_XMLViewOld%\InProcServer32",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%"
+HKCR,"CLSID\%CLSID_XMLViewOld%\InProcServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%CLSID_XMLViewOld%\MiscStatus",,,"2228625"
+HKCR,"CLSID\%CLSID_XMLViewOld%\ProgID",,,"xmlfile"
+HKCR,"CLSID\%CLSID_XMLViewOld%\Version",,,"1.0"
+HKCR,"CLSID\%CLSID_XMLViewOld%"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%",,,"XML Viewer Behavior"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%\InProcServer32",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%\InProcServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%CLSID_XMLBehaviorOld%
+HKCR,"CLSID\%CLSID_XMLMonikerOld%",,,"XML Viewer Moniker"
+HKCR,"CLSID\%CLSID_XMLMonikerOld%\InProcServer32",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%"
+HKCR,"CLSID\%CLSID_XMLMonikerOld%\InProcServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%CLSID_XMLMonikerOld%"
+[XMLFileAssoc.Inst]
+HKCR,".xml",,,"xmlfile"
+HKCR,".xml","Content Type",,"text/xml"
+HKCR,"xmlfile",,,"XML Document"
+HKCR,"xmlfile","EditFlags",3,00,00,01,00
+HKCR,"xmlfile\BrowseInPlace",,,""
+HKCR,"xmlfile\CLSID",,,"%CLSID_XMLViewOld%"
+HKCR,"xmlfile\DefaultIcon",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%,0"
+HKCR,"xmlfile\shell",,,"Open"
+HKCR,"xmlfile\shell\Open",,,"%OPEN_MENU_TEXT%"
+HKCR,"xmlfile\shell\Open\command",,%REG_EXPAND_SZ%,"""%IEXPLORE%"" -nohome"
+HKCR,"xmlfile\shell\Open\ddeexec",,,"""file:%1"",,-1,,,,,"
+HKCR,"xmlfile\shell\Open\ddeexec\application",,,"IExplore"
+HKCR,"xmlfile\shell\Open\ddeexec\topic",,,"WWW_OpenURL"
+[XMLFileAssoc.UnInst]
+HKCR,".xml",,,"xmlfile"
+HKCR,".xml","Content Type",,"text/xml"
+HKCR,".xml"
+HKCR,"xmlfile",,,"XML Document"
+HKCR,"xmlfile","EditFlags",3,00,00,01,00
+HKCR,"xmlfile\BrowseInPlace",,,""
+HKCR,"xmlfile\CLSID",,,"%CLSID_XMLViewOld%"
+HKCR,"xmlfile\DefaultIcon",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%,0"
+HKCR,"xmlfile\shell",,,"Open"
+HKCR,"xmlfile\shell\Open",,,"%OPEN_MENU_TEXT%"
+HKCR,"xmlfile\shell\Open\command",,%REG_EXPAND_SZ%,"""%IEXPLORE%"" -nohome"
+HKCR,"xmlfile\shell\Open\ddeexec",,,"""file:%1"",,-1,,,,,"
+HKCR,"xmlfile\shell\Open\ddeexec\application",,,"IExplore"
+HKCR,"xmlfile\shell\Open\ddeexec\topic",,,"WWW_OpenURL"
+HKCR,"xmlfile"
+[XSLFileAssoc.Inst]
+HKCR,".xsl",,,"xslfile"
+HKCR,".xsl","Content Type",,"text/xml"
+HKCR,"xslfile",,,"XSL Stylesheet"
+HKCR,"xslfile","EditFlags",3,00,00,01,00
+HKCR,"xslfile\BrowseInPlace",,,""
+HKCR,"xslfile\CLSID",,,"%CLSID_XMLViewOld%"
+HKCR,"xslfile\DefaultIcon",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%,1"
+HKCR,"xslfile\shell",,,"Open"
+HKCR,"xslfile\shell\Open",,,"%OPEN_MENU_TEXT%"
+HKCR,"xslfile\shell\Open\command",,%REG_EXPAND_SZ%,"""%IEXPLORE%"" -nohome"
+HKCR,"xslfile\shell\Open\ddeexec",,,"""file:%1"",,-1,,,,,"
+HKCR,"xslfile\shell\Open\ddeexec\application",,,"IExplore"
+HKCR,"xslfile\shell\Open\ddeexec\topic",,,"WWW_OpenURL"
+[XSLFileAssoc.UnInst]
+HKCR,".xsl",,,"xslfile"
+HKCR,".xsl","Content Type",,"text/xml"
+HKCR,".xsl"
+HKCR,"xslfile",,,"XSL Stylesheet"
+HKCR,"xslfile","EditFlags",3,00,00,01,00
+HKCR,"xslfile\BrowseInPlace",,,""
+HKCR,"xslfile\CLSID",,,"%CLSID_XMLViewOld%"
+HKCR,"xslfile\DefaultIcon",,%REG_EXPAND_SZ%,"%_SYS_MOD_PATH%,1"
+HKCR,"xslfile\shell",,,"Open"
+HKCR,"xslfile\shell\Open",,,"%OPEN_MENU_TEXT%"
+HKCR,"xslfile\shell\Open\command",,%REG_EXPAND_SZ%,"""%IEXPLORE%"" -nohome"
+HKCR,"xslfile\shell\Open\ddeexec",,,"""file:%1"",,-1,,,,,"
+HKCR,"xslfile\shell\Open\ddeexec\application",,,"IExplore"
+HKCR,"xslfile\shell\Open\ddeexec\topic",,,"WWW_OpenURL"
+HKCR,"xslfile"
+[XMLMIME.Inst]
+HKCR,"MIME\Database\Content Type\application/xml","CLSID",,"%CLSID_XMLViewOld%"
+HKCR,"MIME\Database\Content Type\application/xml","Extension",,".xml"
+HKCR,"MIME\Database\Content Type\application/xml","Encoding",1,08,00,00,00
+HKCR,"MIME\Database\Content Type\text/xml","CLSID",,"%CLSID_XMLViewOld%"
+HKCR,"MIME\Database\Content Type\text/xml","Extension",,".xml"
+HKCR,"MIME\Database\Content Type\text/xml","Encoding",1,08,00,00,00
+[XMLMIME.UnInst]
+HKCR,"MIME\Database\Content Type\application/xml","CLSID",,"%CLSID_XMLViewOld%"
+HKCR,"MIME\Database\Content Type\application/xml","Extension",,".xml"
+HKCR,"MIME\Database\Content Type\application/xml","Encoding",1,08,00,00,00
+HKCR,"MIME\Database\Content Type\application/xml"
+HKCR,"MIME\Database\Content Type\text/xml","CLSID",,"%CLSID_XMLViewOld%"
+HKCR,"MIME\Database\Content Type\text/xml","Extension",,".xml"
+HKCR,"MIME\Database\Content Type\text/xml","Encoding",1,08,00,00,00
+HKCR,"MIME\Database\Content Type\text/xml"
+[XSLPatternfactory.RegOld]
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%,,,"%NAME_XSLPatternFactory%"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\ProgID,,,"Microsoft.XSLPatternFactory.1.0"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\VersionIndependentProgID,,,"Microsoft.XSLPatternFactory"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\Version,,,"1.0"
+HKCR,Microsoft.XSLPatternFactory,,,"%NAME_XSLPatternFactory%"
+HKCR,Microsoft.XSLPatternFactory\CLSID,,,%CLSID_XSLPatternFactoryOld%
+HKCR,Microsoft.XSLPatternFactory\CurVer,,,"Microsoft.XSLPatternFactory.1.0"
+HKCR,Microsoft.XSLPatternFactory.1.0,,,"%NAME_XSLPatternFactory%"
+HKCR,Microsoft.XSLPatternFactory.1.0\CLSID,,,%CLSID_XSLPatternFactoryOld%
+[XSLPatternfactory.UnRegOld]
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%,,,"%NAME_XSLPatternFactory%"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\InProcServer32,,131072,%_SYS_MOD_PATH%
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\InProcServer32,"ThreadingModel",,"Both"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\ProgID,,,"Microsoft.XSLPatternFactory.1.0"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\VersionIndependentProgID,,,"Microsoft.XSLPatternFactory"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_XSLPatternFactoryOld%
+HKCR,Microsoft.XSLPatternFactory,,,"%NAME_XSLPatternFactory%"
+HKCR,Microsoft.XSLPatternFactory\CLSID,,,%CLSID_XSLPatternFactoryOld%
+HKCR,Microsoft.XSLPatternFactory\CurVer,,,"Microsoft.XSLPatternFactory.1.0"
+HKCR,Microsoft.XSLPatternFactory
+HKCR,Microsoft.XSLPatternFactory.1.0,,,"%NAME_XSLPatternFactory%"
+HKCR,Microsoft.XSLPatternFactory.1.0\CLSID,,,%CLSID_XSLPatternFactoryOld%
+HKCR,Microsoft.XSLPatternFactory.1.0
+[MsxmlCleanup.RegOld]
+HKCR,%IE4GUID_PATH%
+HKCU,%MSXML_PATH%
+HKCU,%MSXMLDOM_PATH%
+HKCU,%XMLISLAND_PATH%
+HKCU,%XMLParser_PATH%
+HKCU,%MSXMLDSO_PATH%
+[VersionList.Reg]
+HKCR,CLSID\%CLSID_DOMDocumentOld%\VersionList,"2.6",131072,%_SYS_MOD_PATH%
+[Strings]
+TypeLibID ="{f5078f18-c551-11d3-89b9-0000f81fe221}"
+IXMLDOMNode="{2933BF80-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMDocument="{2933BF81-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMNodeList="{2933BF82-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMNamedNodeMap="{2933BF83-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMCharacterData="{2933BF84-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMAttribute="{2933BF85-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMElement="{2933BF86-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMText="{2933BF87-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMComment="{2933BF88-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMProcessingInstruction="{2933BF89-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMCDATASection="{2933BF8A-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMDocumentType="{2933BF8B-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMNotation="{2933BF8C-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMEntity="{2933BF8D-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMEntityReference="{2933BF8E-7B36-11D2-B20E-00C04F983E60}"
+IXMLDOMImplementation="{2933BF8F-7B36-11D2-B20E-00C04F983E60}"
+IXMLElement2="{2B8DE2FF-8D2D-11D1-B2FC-00C04FD915A9}"
+IXMLDSOControl="{310AFA62-0575-11D2-9CA9-0060B0EC3D39}"
+IXMLDOMDocumentFragment="{3EFAA413-272F-11D2-836F-0000F87A7782}"
+IXTLRuntime="{3EFAA425-272F-11D2-836F-0000F87A7782}"
+IXMLDOMParseError="{3EFAA426-272F-11D2-836F-0000F87A7782}"
+XMLDOMDocumentEvents="{3EFAA427-272F-11D2-836F-0000F87A7782}"
+IXMLElement="{3F7F31AC-E15F-11D0-9C25-00C04FC99C8E}"
+IXMLElementCollection="{65725580-9B5D-11D0-9BFE-00C04FC99C8E}"
+IXMLAttribute="{D4D4A0FC-3B73-11D1-B2B4-00C04FB92596}"
+IXMLHttpRequest="{ED8C108D-4349-11D2-91A4-00C04F7969E8}"
+IXMLDocument="{F52E2B61-18A1-11D1-B105-00805F49916B}"
+PROXYSTUB="{00020424-0000-0000-C000-000000000046}"
+PROXYSTUB1="{00020420-0000-0000-C000-000000000046}"
+CLSID_XMLDocument ="{F6D90F10-9C73-11D3-B32E-00C04F990BB4}"
+CLSID_XMLDocument26="{f5078f22-c551-11d3-89b9-0000f81fe221}"
+CLSID_DOMDocument ="{F6D90F11-9C73-11D3-B32E-00C04F990BB4}"
+NAME_DOMDocument ="XML DOM Document"
+NAME_XMLDOCUMENT ="XML Document"
+CLSID_DOMDocument26="{f5078f1b-c551-11d3-89b9-0000f81fe221}"
+NAME_DOMDocument26="XML DOM Document 2.6"
+NAME_XMLDOCUMENT26="XML Document 2.6"
+NAME_XSLSTYLESHEET="XSL Stylesheet 2.6"
+CLSID_FreeThreadedDOMDocument ="{F6D90F12-9C73-11D3-B32E-00C04F990BB4}"
+NAME_FreeThreadedDOMDocument ="Free Threaded XML DOM Document"
+CLSID_FreeThreadedDOMDocument26	="{f5078f1c-c551-11d3-89b9-0000f81fe221}"
+NAME_FreeThreadedDOMDocument26 ="Free Threaded XML DOM Document 2.6"
+CLSID_XMLIsland ="{F6D90F13-9C73-11D3-B32E-00C04F990BB4}"
+NAME_XMLIsland = "XML Island"
+CLSID_XMLIsland26 ="{f5078f25-c551-11d3-89b9-0000f81fe221}"
+NAME_XMLIsland26 = "XML Island 2.6"
+CLSID_XMLScriptIsland="{F6D90F17-9C73-11D3-B32E-00C04F990BB4}"
+NAME_XMLSCRIPTENGINE ="XML Script Engine 2.6"
+CLSID_XMLParser ="{f5078f19-c551-11d3-89b9-0000f81fe221}"
+NAME_XMLParser ="XML Parser"
+CLSID_XMLParser26 ="{f5078f20-c551-11d3-89b9-0000f81fe221}"
+NAME_XMLParser26 ="XML Parser 2.6"
+CLSID_XMLSchemaCache="{373984C9-B845-449B-91E7-45AC83036ADE}"
+NAME_XMLSchemaCache="XML Schema Cache"
+CLSID_XMLSchemaCache26="{f5078f1d-c551-11d3-89b9-0000f81fe221}"
+NAME_XMLSchemaCache26 ="XML Schema Cache 2.6"
+CLSID_XSLTemplate ="{2933BF94-7B36-11d2-B20E-00C04F983E60}"
+NAME_XSLTemplate ="XSL Template"
+CLSID_XSLTemplate26 ="{f5078f21-c551-11d3-89b9-0000f81fe221}"
+NAME_XSLTemplate26 ="XSL Template 2.6"
+IMPLCATEGORIES="Implemented Categories"
+SCRIPTLANGNAME1="XML"
+CLSID_DSOControl="{F6D90F14-9C73-11D3-B32E-00C04F990BB4}"
+NAME_DSOControl ="XML Data Source Object "
+CLSID_DSOControl26 ="{f5078f1f-c551-11d3-89b9-0000f81fe221}"
+NAME_DSOControl26 ="XML Data Source Object 2.6"
+CLSID_XMLHTTP ="{F6D90F16-9C73-11D3-B32E-00C04F990BB4}"
+NAME_XMLHTTP = "XML HTTP"
+CLSID_XMLHTTP26 ="{f5078f1e-c551-11d3-89b9-0000f81fe221}"
+NAME_XMLHTTP26 ="XML HTTP 2.6"
+CLSID_XSLPatternFactory ="{f5078f27-c551-11d3-89b9-0000f81fe221}"
+NAME_XSLPatternFactory = "XSL Pattern Factory"
+CLSID_XSLPatternFactory26 ="{f5078f26-c551-11d3-89b9-0000f81fe221}"
+NAME_XSLPatternFactory26 = "XSL Pattern Factory 2.6"
+CLSID_XMLView ="{F6D90F15-9C73-11D3-B32E-00C04F990BB4}";
+CLSID_XMLView26 ="{f5078f28-c551-11d3-89b9-0000f81fe221}";
+CLSID_XMLMoniker ="{f5078f1a-c551-11d3-89b9-0000f81fe221}";
+NAME_XMLMoniker = "XML Moniker"
+CLSID_XMLMoniker26 ="{f5078f29-c551-11d3-89b9-0000f81fe221}";
+NAME_XMLMoniker26 = "XML Moniker 2.6"
+OPEN_MENU_TEXT ="&Open";
+TypeLibIDOld = "{D63E0CE2-A0A2-11D0-9C02-00C04FC99C8E}"
+CLSID_XMLDocumentOld ="{CFC399AF-D876-11d0-9C10-00C04FC99C8E}"
+CLSID_DOMDocumentOld ="{2933BF90-7B36-11d2-B20E-00C04F983E60}"
+NAME_DOMDocument = "XML DOM Document"
+CLSID_DOMFreeThreadedDocumentOld ="{2933BF91-7B36-11d2-B20E-00C04F983E60}"
+NAME_FreeThreadedDocument = "Free Threaded XML DOM Document"
+CLSID_XMLIslandOld ="{379E501F-B231-11d1-ADC1-00805FC752D8}"
+CLSID_XMLScriptIslandOld="{989D1DC0-B162-11d1-B6EC-D27DDCF9A923}"
+CLSID_XMLParserOld ="{d2423620-51a0-11d2-9caf-0060b0ec3d39}"
+NAME_XMLParser = "XML Parser"
+CLSID_XSLPatternFactoryOld ="{57B4B693-2388-11d3-8E39-0080C7ACC199}"
+NAME_XSLPatternFactory = "XSL Pattern Factory"
+IMPLCATEGORIESOld="Implemented Categories"
+SCRIPTLANGNAME1Old="XML"
+CLSID_XMLDSOOld="{550dda30-0541-11d2-9ca9-0060b0ec3d39}"
+NAME_XMLDSO = "XML Data Source Object"
+CLSID_XMLHTTPRequestOld ="{ED8C108E-4349-11D2-91A4-00C04F7969E8}"
+NAME_XMLHTTPOld = "XML HTTP Request"
+CLSID_XMLViewOld = "{48123bc4-99d9-11d1-a6b3-00c04fd91555}";
+CLSID_XMLBehaviorOld = "{4419DD31-28A5-11d2-AE08-0080C7337EA1}";
+CLSID_XMLMonikerOld = "{7E3FCEA1-31B4-11d2-AE1F-0080C7337EA1}";
+REG_EXPAND_SZ = 0x00020000
+OPEN_MENU_TEXT = "&Open";
+IE4GUID_PATH="TypeLib\{D63E0CE2-A0A2-11D0-9C02-00C04FC99C8E}\1.0"
+MSXML_PATH="Software\Microsoft\Windows\CurrentVersion\Msxml"
+MSXMLDSO_PATH="Software\Microsoft\Windows\CurrentVersion\Microsoft.XMLDSO"
+MSXMLDOM_PATH="Software\Microsoft\Windows\CurrentVersion\Microsoft.XMLDOM"
+XMLISLAND_PATH="Software\Microsoft\Windows\CurrentVersion\MsxmlIsland"
+XMLParser_PATH="Software\Microsoft\Windows\CurrentVersion\Microsoft.XMLParser"
+[End]

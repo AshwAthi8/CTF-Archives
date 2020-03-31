@@ -1,0 +1,14 @@
+ion ShowPopup()
+{
+KillDelay();
+top.window.ShowPopup(ttText, element, ttWidth);
+}
+function KillDelay()
+{
+if (_tidDelay)
+{
+window.clearInterval(_tidDelay);
+_tidDelay = null;
+}
+}
+</SCRIPT>

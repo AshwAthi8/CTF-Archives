@@ -1,0 +1,9 @@
+oteHelper.RemoteHelper'
+			VersionIndependentProgID = s 'RemoteHelper.RemoteHelper'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+		}
+	}
+}

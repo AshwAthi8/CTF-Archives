@@ -1,0 +1,119 @@
+yFiles.Console
+AddReg         = WBEMSNMP.AddReg
+IconIndex      = 17			; Net service
+Uninstall      = WBEMSNMP.Uninstall
+RegisterDlls   = WBEMSNMP.RegSvr
+
+[WBEMSNMP.Uninstall]
+DelFiles       = WBEMSNMP.CopyFiles, WBEMSNMP.SNMPCopyFiles, WBEMSNMP.SNMPCopyFiles.Console
+DelReg         = WBEMSNMP.DelReg
+UnregisterDlls = WBEMSNMP.UnRegSvr
+
+[DestinationDirs]
+WBEMSNMP.CopyFiles             = 11,WBEM
+WBEMSNMP.SNMPCopyFiles         = 11,WBEM\SNMP
+WBEMSNMP.SNMPCopyFiles.Console = 11,WBEM\SNMP
+
+[WBEMSNMP.CopyFiles]
+snmpcl.dll
+snmpincl.dll
+snmpreg.mof
+snmpsmir.dll
+snmpsmir.mof
+snmpstup.dll
+snmpthrd.dll
+
+[WBEMSNMP.CopyFiles.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GRGX;;;WD)"
+
+[WBEMSNMP.SNMPCopyFiles]
+smierrsm.dll
+smierrsy.dll
+smimsgif.dll
+
+[WBEMSNMP.SNMPCopyFiles.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GRGX;;;WD)"
+
+[WBEMSNMP.SNMPCopyFiles.Console]
+smi2smir.exe
+
+[WBEMSNMP.SNMPCopyFiles.Console.Security]
+"D:P(A;;GRGX;;;IU)(A;;GRGX;;;SU)(A;;GRGX;;;S-1-5-3)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;CO)"
+
+[WBEMSNMP.RegSvr]
+11,wbem,snmpincl.dll,1
+11,wbem,snmpsmir.dll,1
+11,wbem,snmpstup.dll,1
+
+[WBEMSNMP.UnRegSvr]
+11,wbem,snmpincl.dll,1
+11,wbem,snmpsmir.dll,1
+
+[WBEMSNMP.AddReg]
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER","File Suffixes",0x00010000,"txt","mib","asn"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER\MIB",,,
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Correlator","MaxVarBinds",0x00010001,6
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Events","StrobeCount",0x00010001,1
+
+[WBEMSNMP.DelReg]
+HKLM,"SOFTWARE\Microsoft\WBEM","SNMP Build"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER","File Suffixes"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER\MIB"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Correlator","MaxVarBinds"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Correlator"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Events","StrobeCount"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Events"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP"
+
+[Strings]
+WBEMSNMP_DESC	= "WMI SNMP Provider"
+WBEMSNMP_TIP	= "Allows client applications to access static and dynamic SNMP information through Windows Management Instrumentation (WMI)."
+
+
+
+
+[wbemsnmp]
+CopyFiles=wWBEMSNMP.CopyFiles,wWBEMSNMP.SNMPCopyFiles,wWBEMSNMP.SNMPCopyFiles.Console
+RegisterDlls=wWBEMSNMP.RegSvr
+AddReg=wWBEMSNMP.AddReg
+
+[wbemsnmp.uninstall]
+DelFiles=wWBEMSNMP.CopyFiles,wWBEMSNMP.SNMPCopyFiles,wWBEMSNMP.SNMPCopyFiles.Console
+UnRegisterDlls=wWBEMSNMP.UnRegSvr
+DelReg=wWBEMSNMP.DelReg
+
+[wWBEMSNMP.AddReg]
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER","File Suffixes",0x00014000,txt,mib,asn
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER\MIB",,0x00004000,
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Correlator",MaxVarBinds,0x00014001,6
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Events",StrobeCount,0x00014001,1
+
+[wWBEMSNMP.DelReg]
+HKLM,"SOFTWARE\Microsoft\WBEM","SNMP Build"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER","File Suffixes"
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER\MIB",,0x00004000
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\COMPILER",,0x00004000
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Correlator",MaxVarBinds
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Correlator",,0x00004000
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Events",StrobeCount
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP\Events",,0x00004000
+HKLM,"SOFTWARE\Microsoft\WBEM\CIMOM\Providers\SNMP",,0x00004000
+
+[wWBEMSNMP.RegSvr]
+
+[wWBEMSNMP.SNMPCopyFiles.Console]
+smi2smir.exe,wsmi2smir.exe
+
+[wWBEMSNMP.UnRegSvr]
+16425,wbem,snmpincl.dll,1
+16425,wbem,snmpsmir.dll,1
+
+[wWBEMSNMP.SNMPCopyFiles]
+
+[wWBEMSNMP.CopyFiles]
+
+[DestinationDirs]
+wWBEMSNMP.SNMPCopyFiles.Console=16425,WBEM\SNMP
+wWBEMSNMP.SNMPCopyFiles=16425,WBEM\SNMP
+wWBEMSNMP.CopyFiles=16425,WBEM

@@ -1,0 +1,126 @@
+Val || checkReadyStateComplete(embeds, reportLocation);
+return retVal;
+}
+function checkReadyStateComplete(objects, reportLocation)
+{
+var L_ObjectNotInstalled_Text = "The following OBJECT did not install properly.<BR>";
+var L_AppletNotInstalled_Text = "The following APPLET did not install properly.<BR>";
+var L_EmbedNotInstalled_Text = "The following EMBED did not install properly.<BR>";
+var L_ObjectNotInstalledReasons_Text = "<br><br>This might have been caused by one of the following conditions:<OL><LI>Your current security settings prevent this OBJECT from being used.</li><li>This OBJECT was not properly installed on your computer.</li><li>The page or OBJECT was authored incorrectly.</li></ul><hr>";
+var L_AppletNotInstalledReasons_Text = "<br><br>This might have been caused by one of the following conditions:<OL><LI>Your current security settings prevent this APPLET from being used.</li><li>This APPLET was not properly installed on your computer.</li><li>The page or APPLET was authored incorrectly.</li></ul><hr>";
+var L_EmbedNotInstalledReasons_Text = "<br><br>This might have been caused by one of the following conditions:<OL><LI>Your current security settings prevent this EMBED from being used.</li><li>This EMBED was not properly installed on your computer.</li><li>The page or EMBED was authored incorrectly.</li></ul><hr>";
+var strNotInstalled;
+var strNotInstalledReason;
+var i, element;
+var retVal;
+retVal = false;
+if (objects == null)
+return retVal;
+for (i=0; i < objects.length; i++) {
+element = objects(i);
+if (element.readyState != 4 && element.readyState != "complete") {
+switch (element.tagName.toLowerCase())
+{
+case "object":
+strNotInstalled = L_ObjectNotInstalled_Text;
+strNotInstalledReason = L_ObjectNotInstalledReasons_Text;
+break;
+case "applet":
+strNotInstalled = L_AppletNotInstalled_Text;
+strNotInstalledReason = L_AppletNotInstalledReasons_Text;
+break;
+case "embed":
+strNotInstalled = L_EmbedNotInstalled_Text;
+strNotInstalledReason = L_EmbedNotInstalledReasons_Text;
+break;
+}
+reportLocation.insertAdjacentHTML("BeforeEnd", strNotInstalled);
+reportLocation.insertAdjacentText("BeforeEnd", element.outerHTML);
+reportLocation.insertAdjacentHTML("BeforeEnd", strNotInstalledReason);
+retVal = true;
+}
+}
+return retVal;
+}
+function checkNonApartmentControls(reportLocation)
+{
+var L_ObjectNotApartmentModel_Text = "The following OBJECT may not work reliably in all circumstances because it doesn't use the Apartment threading model.<br>";
+var theDocument;
+var objects;
+var i;
+var retVal;
+retVal = false;
+theDocument = otherDocument();
+objects = theDocument.all.tags("object");
+for (i=0; i < objects.length; i++) {
+element = objects(i);
+nonApartmentModel = checkCLSIDForNonApartmentModel(element);
+retVal = retVal || nonApartmentModel;
+if (nonApartmentModel == true) {
+reportLocation.insertAdjacentHTML("BeforeEnd", L_ObjectNotApartmentModel_Text);
+reportLocation.insertAdjacentText("BeforeEnd", element.outerHTML);
+reportLocation.insertAdjacentHTML("BeforeEnd", "<br><hr>");
+}
+}
+return retVal;
+}
+function checkCLSIDForNonApartmentModel(element) {
+return !(window.dialogArguments.isApartmentModel(element));
+}
+function checkUnloadedStyleSheets(reportLocation)
+{
+var theDocument;
+var links;
+var retVal;
+retVal = false;
+theDocument = otherDocument();
+links = theDocument.all.tags("link");
+retVal = checkLinkReadyStateComplete(links, reportLocation);
+return retVal;
+}
+function checkLinkReadyStateComplete(objects, reportLocation)
+{
+var i, element;
+var retVal;
+var L_StyleSheetNotInstalled_Text = "This document might not display properly because the following style sheet did not get installed: ";
+retVal = false;
+if (objects == null)
+return retVal;
+for (i=0; i < objects.length; i++) {
+element = objects(i);
+if (element.rel.toLowerCase() == "stylesheet"
+|| element.rel.toLowerCase() == "alternate stylesheet")
+{
+if (element.readyState != "complete" && element.readyState != 4) {
+reportLocation.insertAdjacentHTML("BeforeEnd", L_StyleSheetNotInstalled_Text + element.href + "<BR><hr>");
+retVal = true;
+}
+}
+}
+return retVal;
+}
+</SCRIPT>
+</HEAD>
+<BODY ID=bdy onLoad="loadBdy()" style="font-family: 'MS Shell Dlg';
+font-size: 8pt; background: threedface; color: windowtext;"
+topmargin=0 scroll=no>
+<br id=brAnalysis>&nbsp;&nbsp;Analysis of current document:<br>
+<br>
+<DIV id=ReportArea style="height: 75%; width: 93%;
+position: absolute; left: 5%; top: 12%; overflow: auto; padding: 3px;
+border-style: solid; border-width: 1px; border-color: threeddarkshadow">
+No errors found.
+</DIV>
+<br id=br2><P id=par1>&nbsp;</P>
+<DIV id=divButton style="font-family: MS Shell Dlg; font-size: 8pt;
+width: 8em; height: 2.2em; position: absolute;
+top: 27.1em; left: 20em; background: threedface;">
+</DIV>
+<BUTTON id=btnOk tabIndex=55
+style="font-family: MS Shell Dlg; font-size: 8pt;
+width: 7em; height: 2.2em; position: absolute;
+top: 27.5em; left: 21em" type=submit>
+OK
+</BUTTON>
+</BODY>
+</HTML>

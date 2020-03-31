@@ -1,0 +1,9 @@
+ = s 'DfrgSnapin.DfrgSnapin'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CD83A785-6F75-11D2-A385-00609772642E}'
+		}
+	}
+}

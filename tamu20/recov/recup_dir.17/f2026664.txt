@@ -1,0 +1,795 @@
+\Common Files\Microsoft Shared\Stationery\anabnr2.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\waswrule.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\aswrule.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wblank.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Blank.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wblankbkg.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Blank Bkgrd.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wbtzhsepa.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Btzhsepa.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wcitbanna.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\citbannA.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wcitrbkg.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Citrus Punch Bkgrd.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wcitrpun.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Citrus Punch.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wclearday.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Clear Day.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wclrdaybg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Clear Day Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wfieruld.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\fieruled.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wfiesta.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Fiesta.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wfiestabg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Fiesta Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wglacier.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Glacier.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wglacrbkg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Glacier Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wivy.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Ivy.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wivy.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Ivy.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wleaves.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Leaves.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wleavesbg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Leaves Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmaize.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Maize.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmaizebkg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Maize Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnature.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Nature.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnaturebg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Nature Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnetblitz.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Network Blitz.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnetblzbg.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Network Blitz Bkgrd.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wpiechtbg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Pie Charts Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wpiechts.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Pie Charts.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsunbanna.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\sunbannA.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsunfbkg.jp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Sunflower Bkgrd.jpg.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsunflowr.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Sunflower.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsweets.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Sweets.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsweetsbg.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Sweets Bkgrd.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wtech.gi_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\tech.gif.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wtech.ht_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Stationery\Technical.htm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\winetcomm.dl_ was copied to C:\WINDOWS\SysWOW64\inetcomm.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\winetres.dl_ was copied to C:\WINDOWS\SysWOW64\inetres.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wdirectdb.dl_ was copied to C:\Program Files (x86)\Common Files\System\directdb.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wab.hl_ was copied to C:\WINDOWS\help\wab.hlp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wab.ch_ was copied to C:\WINDOWS\help\wab.chm.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msoeacct.hl_ was copied to C:\WINDOWS\help\msoeacct.hlp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wab32res.dl_ was copied to C:\Program Files\Common Files\System\wab32res.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wab32.dl_ was copied to C:\Program Files\Common Files\System\wab32.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wabimp.dl_ was copied to C:\Program Files\Outlook Express\wabimp.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wabfind.dl_ was copied to C:\Program Files\Outlook Express\wabfind.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wabmig.ex_ was copied to C:\Program Files\Outlook Express\wabmig.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wab.ex_ was copied to C:\Program Files\Outlook Express\wab.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\verisign.bm_ was copied to C:\Program Files\Common Files\Services\verisign.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\bigfoot.bm_ was copied to C:\Program Files\Common Files\Services\bigfoot.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\whowhere.bm_ was copied to C:\Program Files\Common Files\Services\whowhere.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msoeacct.dl_ was copied to C:\WINDOWS\system32\msoeacct.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\acctres.dl_ was copied to C:\WINDOWS\system32\acctres.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msoert2.dl_ was copied to C:\WINDOWS\system32\msoert2.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwab32res.dl_ was copied to C:\Program Files (x86)\Common Files\System\wab32res.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwab32.dl_ was copied to C:\Program Files (x86)\Common Files\System\wab32.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwabimp.dl_ was copied to C:\Program Files (x86)\Outlook Express\wabimp.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwabfind.dl_ was copied to C:\Program Files (x86)\Outlook Express\wabfind.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwabmig.ex_ was copied to C:\Program Files (x86)\Outlook Express\wabmig.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwab.ex_ was copied to C:\Program Files (x86)\Outlook Express\wab.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wverisign.bm_ was copied to C:\Program Files (x86)\Common Files\Services\verisign.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wbigfoot.bm_ was copied to C:\Program Files (x86)\Common Files\Services\bigfoot.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwhowhere.bm_ was copied to C:\Program Files (x86)\Common Files\Services\whowhere.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmsoeacct.dl_ was copied to C:\WINDOWS\SysWOW64\msoeacct.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wacctres.dl_ was copied to C:\WINDOWS\SysWOW64\acctres.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmsoert2.dl_ was copied to C:\WINDOWS\SysWOW64\msoert2.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\tshoot.cab was copied to C:\WINDOWS\PCHEALTH\HELPCTR\BATCH\tshoot.cab.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msinfo32.ex_ was copied to C:\Program Files\Common Files\Microsoft Shared\MSInfo\msinfo32.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmsinfo32.ex_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\MSInfo\msinfo32.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmplayer2.ex_ was copied to C:\Program Files (x86)\Windows Media Player\mplayer2.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnpdsplay.dl_ was copied to C:\Program Files (x86)\Windows Media Player\npdsplay.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnpds.zi_ was copied to C:\Program Files (x86)\Windows Media Player\npds.zip.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\sr.sy_ was copied to C:\WINDOWS\system32\DRIVERS\sr.sys.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srclient.dl_ was copied to C:\WINDOWS\system32\srclient.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srsvc.dl_ was copied to C:\WINDOWS\system32\srsvc.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srrstr.dl_ was copied to C:\WINDOWS\system32\srrstr.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\filelist.xm_ was copied to C:\WINDOWS\system32\Restore\filelist.xml.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rstrui.ex_ was copied to C:\WINDOWS\system32\Restore\rstrui.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srframe.mm_ was copied to C:\WINDOWS\system32\Restore\srframe.mmf.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srdiag.ex_ was copied to C:\WINDOWS\system32\Restore\srdiag.exe.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsrclient.dl_ was copied to C:\WINDOWS\SysWOW64\srclient.dll.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\fltMgr.sy_ was copied to C:\WINDOWS\system32\DRIVERS\fltMgr.sys.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\airplane.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\airplane.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\astro.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\astronaut.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\soccer.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\ball.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\butterfl.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\butterfly.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\cat.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\cat.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\fish.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\fish.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\pnkflowr.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\pink flower.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\guitar.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\guitar.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\snwflake.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\snowflake.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\beach.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\beach.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\car.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\car.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\chess.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\chess.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dirtbike.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\dirt bike.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dog.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\dog.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\drip.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\drip.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\duck.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\duck.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\frog.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\frog.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\horses.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\horses.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\kick.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\kick.bmp.
+
+03/01/2020 19:06:37,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\liftoff.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\lift-off.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\palmtree.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\palm tree.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\redflowr.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\red flower.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\skater.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\skater.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\guest.bm_ was copied to C:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\guest.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\moon.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Moon flower.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\redmoon.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Red moon desert.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\vortec.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Vortec space.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\ascent.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Ascent.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\autumn.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Autumn.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\friend.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Friend.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\home.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Home.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\peace.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Peace.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\power.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Power.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\purplef.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Purple flower.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\radiance.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Radiance.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\stoneh.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Stonehenge.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\tulips.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Tulips.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wind.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Wind.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\crystal.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Crystal.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\ripple.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Ripple.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\azul.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Azul.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\follow.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Follow.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\winxp.jp_ was copied to C:\WINDOWS\Web\Wallpaper\default.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\bliss.jp_ was copied to C:\WINDOWS\Web\Wallpaper\Bliss.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\softbar.in_ was copied to C:\WINDOWS\desktop.ini.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\softbar.in_ was copied to C:\WINDOWS\system32\desktop.ini.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\softbar.in_ was copied to C:\Program Files (x86)\desktop.ini.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\win64pro.bm_ was copied to C:\WINDOWS\winnt.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\win64pro.bm_ was copied to C:\WINDOWS\winnt256.bmp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\bluehill.jp_ was copied to C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\sunset.jp_ was copied to C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\waterlil.jp_ was copied to C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water lilies.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\winter.jp_ was copied to C:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\HCAppRes.dl_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\HCAppRes.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\HelpCtr.ex_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\HelpCtr.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\HelpHost.ex_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\HelpHost.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\HelpSvc.ex_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\HelpSvc.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\HscUpd.ex_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\HscUpd.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\brpinfo.dl_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\brpinfo.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msconfig.ex_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\msconfig.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msinfo.dl_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\msinfo.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\pchdt_w6.cab was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\pchdt_w6.cab.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\pchshell.dl_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\pchshell.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\pchsvc.dl_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Binaries\pchsvc.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dataspec.xm_ was copied to C:\WINDOWS\PCHealth\HelpCtr\Config\dataspec.xml.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\atrace.dl_ was copied to C:\WINDOWS\system32\atrace.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\racpldlg.dl_ was copied to C:\WINDOWS\system32\racpldlg.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\safrcdlg.dl_ was copied to C:\WINDOWS\system32\safrcdlg.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\safrdm.dl_ was copied to C:\WINDOWS\system32\safrdm.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\safrslv.dl_ was copied to C:\WINDOWS\system32\safrslv.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\UploadM.ex_ was copied to C:\WINDOWS\PCHealth\UploadLB\Binaries\UploadM.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\actshell.ht_ was copied to C:\WINDOWS\system32\oobe\actshell.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dialmgr.js_ was copied to C:\WINDOWS\system32\oobe\dialmgr.js.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\error.js_ was copied to C:\WINDOWS\system32\oobe\error.js.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\icsmgr.js_ was copied to C:\WINDOWS\system32\oobe\icsmgr.js.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\oobeutil.js_ was copied to C:\WINDOWS\system32\oobe\oobeutil.js.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migip.du_ was copied to C:\WINDOWS\system32\oobe\migip.dun.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migx25a.du_ was copied to C:\WINDOWS\system32\oobe\migx25a.dun.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migx25b.du_ was copied to C:\WINDOWS\system32\oobe\migx25b.dun.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migx25c.du_ was copied to C:\WINDOWS\system32\oobe\migx25c.dun.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\obeip.du_ was copied to C:\WINDOWS\system32\oobe\obeip.dun.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migrate.is_ was copied to C:\WINDOWS\system32\oobe\migrate.isp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msobe.is_ was copied to C:\WINDOWS\system32\oobe\msobe.isp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\reg.is_ was copied to C:\WINDOWS\system32\oobe\reg.isp.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migrate.ob_ was copied to C:\WINDOWS\system32\oobe\migrate.obe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\phone.in_ was copied to C:\WINDOWS\system32\oobe\phone.inf.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\phone.ob_ was copied to C:\WINDOWS\system32\oobe\phone.obe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\oobebaln.ex_ was copied to C:\WINDOWS\system32\oobe\oobebaln.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\oobeinfo.in_ was copied to C:\WINDOWS\system32\oobe\oobeinfo.ini.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msoobe.ex_ was copied to C:\WINDOWS\system32\oobe\msoobe.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msobweb.dl_ was copied to C:\WINDOWS\system32\oobe\msobweb.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msobcomm.dl_ was copied to C:\WINDOWS\system32\oobe\msobcomm.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msobshel.dl_ was copied to C:\WINDOWS\system32\oobe\msobshel.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msobmain.dl_ was copied to C:\WINDOWS\system32\oobe\msobmain.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msobdl.dl_ was copied to C:\WINDOWS\system32\oobe\msobdl.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\cnncterr.ht_ was copied to C:\WINDOWS\system32\oobe\error\cnncterr.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dialtone.ht_ was copied to C:\WINDOWS\system32\oobe\error\dialtone.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\hndshake.ht_ was copied to C:\WINDOWS\system32\oobe\error\hndshake.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\isp2busy.ht_ was copied to C:\WINDOWS\system32\oobe\error\isp2busy.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\noanswer.ht_ was copied to C:\WINDOWS\system32\oobe\error\noanswer.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\pberr.ht_ was copied to C:\WINDOWS\system32\oobe\error\pberr.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\pulse.ht_ was copied to C:\WINDOWS\system32\oobe\error\pulse.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\toobusy.ht_ was copied to C:\WINDOWS\system32\oobe\error\toobusy.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dialtone.gi_ was copied to C:\WINDOWS\system32\oobe\images\dialtone.gif.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dialup.gi_ was copied to C:\WINDOWS\system32\oobe\images\dialup.gif.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\oemcoa.jp_ was copied to C:\WINDOWS\system32\oobe\images\oemcoa.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\prodkey.gi_ was copied to C:\WINDOWS\system32\oobe\images\prodkey.gif.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\progress.gi_ was copied to C:\WINDOWS\system32\oobe\images\progress.gif.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wpaback.jp_ was copied to C:\WINDOWS\system32\oobe\images\wpaback.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wpabtm.jp_ was copied to C:\WINDOWS\system32\oobe\images\wpabtm.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wpaflag.jp_ was copied to C:\WINDOWS\system32\oobe\images\wpaflag.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wpakey.jp_ was copied to C:\WINDOWS\system32\oobe\images\wpakey.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wpatop.jp_ was copied to C:\WINDOWS\system32\oobe\images\wpatop.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\swpaback.jp_ was copied to C:\WINDOWS\system32\oobe\images\swpaback.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\swpabtm.jp_ was copied to C:\WINDOWS\system32\oobe\images\swpabtm.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\swpaflag.jp_ was copied to C:\WINDOWS\system32\oobe\images\swpaflag.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\swpakey.jp_ was copied to C:\WINDOWS\system32\oobe\images\swpakey.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\swpatop.jp_ was copied to C:\WINDOWS\system32\oobe\images\swpatop.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rcnterr.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rcnterr.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rdtone.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rdtone.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rhndshk.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rhndshk.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rnoansw.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rnoansw.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rnomdm.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rnomdm.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rpberr.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rpberr.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rpulse.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rpulse.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rtoobusy.ht_ was copied to C:\WINDOWS\system32\oobe\regerror\rtoobusy.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\actconn.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\actconn.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\actdone.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\actdone.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\activ.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\activ.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\activerr.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\activerr.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\activsvc.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\activsvc.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\actlan.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\actlan.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\adeskerr.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\adeskerr.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\adrdyreg.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\adrdyreg.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\apolicy.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\apolicy.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\aprvcyms.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\aprvcyms.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\areg1.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\areg1.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\aregdial.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\aregdial.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\aregdone.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\aregdone.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\aregsty2.cs_ was copied to C:\WINDOWS\system32\oobe\actsetup\aregsty2.css.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\aregstyl.cs_ was copied to C:\WINDOWS\system32\oobe\actsetup\aregstyl.css.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\ausrinfo.ht_ was copied to C:\WINDOWS\system32\oobe\actsetup\ausrinfo.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\oobestyl.cs_ was copied to C:\WINDOWS\system32\oobe\setup\oobestyl.css.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\dialup.ht_ was copied to C:\WINDOWS\system32\oobe\setup\dialup.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\migdial.ht_ was copied to C:\WINDOWS\system32\oobe\setup\migdial.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\prvcyms.ht_ was copied to C:\WINDOWS\system32\oobe\setup\prvcyms.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\refdial.ht_ was copied to C:\WINDOWS\system32\oobe\setup\refdial.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\regdial.ht_ was copied to C:\WINDOWS\system32\oobe\setup\regdial.htm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmoviemk.ex_ was copied to C:\Program Files (x86)\Movie Maker\moviemk.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2AE.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2AE.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2EXT.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2EXT.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2FILT.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2FILT.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2FXA.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2FXA.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2FXB.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2FXB.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2RES.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2RES.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2ERES.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2ERES.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wWMM2RES2.dl_ was copied to C:\Program Files (x86)\Movie Maker\WMM2RES2.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wEmpty.tx_ was copied to C:\Program Files (x86)\Movie Maker\Shared\Empty.txt.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wFilters.xm_ was copied to C:\Program Files (x86)\Movie Maker\Shared\Filters.xml.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wnews.pn_ was copied to C:\Program Files (x86)\Movie Maker\Shared\news.png.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wpaint.pn_ was copied to C:\Program Files (x86)\Movie Maker\Shared\paint.png.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wSample1.jp_ was copied to C:\Program Files (x86)\Movie Maker\Shared\Sample1.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wSample2.jp_ was copied to C:\Program Files (x86)\Movie Maker\Shared\Sample2.jpg.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wBlank.tx_ was copied to C:\Program Files (x86)\Movie Maker\Shared\Profiles\Blank.txt.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmoviemk.ch_ was copied to C:\Program Files (x86)\Movie Maker\MUI\0409\moviemk.chm.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\qmgr.dl_ was copied to C:\WINDOWS\system32\qmgr.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\qmgrprxy.dl_ was copied to C:\WINDOWS\system32\qmgrprxy.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\bitsprx2.dl_ was copied to C:\WINDOWS\system32\bitsprx2.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\bitsprx3.dl_ was copied to C:\WINDOWS\system32\bitsprx3.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wqmgrprxy.dl_ was copied to C:\WINDOWS\SysWOW64\qmgrprxy.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wbitsprx2.dl_ was copied to C:\WINDOWS\SysWOW64\bitsprx2.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wbitsprx3.dl_ was copied to C:\WINDOWS\SysWOW64\bitsprx3.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuapi.dl_ was copied to C:\WINDOWS\system32\wuapi.dll.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuauclt.ex_ was copied to C:\WINDOWS\system32\wuauclt.exe.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuaucpl.cp_ was copied to C:\WINDOWS\system32\wuaucpl.cpl.
+
+03/01/2020 19:06:38,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wups.dl_ was copied to C:\WINDOWS\system32\wups.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wups2.dl_ was copied to C:\WINDOWS\system32\wups2.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuaueng.dl_ was copied to C:\WINDOWS\system32\wuaueng.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuauserv.dl_ was copied to C:\WINDOWS\system32\wuauserv.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wucltui.dl_ was copied to C:\WINDOWS\system32\wucltui.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuweb.dl_ was copied to C:\WINDOWS\system32\wuweb.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\wuau.ad_ was copied to C:\WINDOWS\INF\wuau.adm.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwuapi.dl_ was copied to C:\WINDOWS\SysWOW64\wuapi.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwuweb.dl_ was copied to C:\WINDOWS\SysWOW64\wuweb.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwups.dl_ was copied to C:\WINDOWS\SysWOW64\wups.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwups2.dl_ was copied to C:\WINDOWS\SysWOW64\wups2.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwuaueng.dl_ was copied to C:\WINDOWS\SysWOW64\wuaueng.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwuaucpl.cp_ was copied to C:\WINDOWS\SysWOW64\wuaucpl.cpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwmplayer.ex_ was copied to C:\Program Files (x86)\Windows Media Player\wmplayer.exe.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwmlaunch.ex_ was copied to C:\Program Files (x86)\Windows Media Player\wmlaunch.exe.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wcustsat.dl_ was copied to C:\Program Files (x86)\Windows Media Player\custsat.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmpvis.dl_ was copied to C:\Program Files (x86)\Windows Media Player\mpvis.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wmigrate.ex_ was copied to C:\Program Files (x86)\Windows Media Player\migrate.exe.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwmpband.dl_ was copied to C:\Program Files (x86)\Windows Media Player\wmpband.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wwmpenc.ex_ was copied to C:\Program Files (x86)\Windows Media Player\wmpenc.exe.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsetup_wm.ex_ was copied to C:\Program Files (x86)\Windows Media Player\setup_wm.exe.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst1.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST1.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst2.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST2.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst3.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST3.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst4.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST4.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst5.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST5.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst6.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST6.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst7.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST7.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst8.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST8.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst9.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST9.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst10.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST10.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst11.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST11.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst12.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST12.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst13.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST13.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst14.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST14.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wplylst15.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\PLYLST15.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl01.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl01.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl02.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl02.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl03.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl03.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl04.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl04.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl05.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl05.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl06.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl06.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl07.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl07.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl08.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl08.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl09.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl09.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl10.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl10.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl11.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl11.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wsyncpl12.wp_ was copied to C:\Documents and Settings\All Users\Documents\My Music\Sync Playlists\syncpl12.wpl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wCompact.wm_ was copied to C:\Program Files (x86)\Windows Media Player\Skins\Compact.wmz.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wRevert.wm_ was copied to C:\Program Files (x86)\Windows Media Player\Skins\Revert.wmz.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\flash.oc_ was copied to C:\WINDOWS\SysWOW64\Macromed\Flash\flash.ocx.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu003.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0003\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu005.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0005\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu006.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0006\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu007.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0007\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu008.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0008\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu009.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0009\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu00a.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\000a\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu00b.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\000b\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu00e.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\000e\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu010.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0010\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu011.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0011\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu012.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0012\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu013.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0013\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu014.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0014\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu015.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0015\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu019.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0019\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu01a.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\001a\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu01b.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\001b\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu01d.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\001d\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu01e.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\001e\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu01f.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\001f\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu021.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0021\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu024.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0024\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu02d.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\002d\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu404.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0404\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu40c.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\040c\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu416.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0416\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu804.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0804\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetu816.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0816\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wisetuc0c.dl_ was copied to C:\WINDOWS\SysWOW64\InstallShield\setupdir\0c0c\_Setup.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\vgx.dl_ was copied to C:\Program Files\Common Files\Microsoft Shared\VGX\vgx.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\i386\wvgx.dl_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\VGX\vgx.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\msgr3en.dl_ was copied to C:\WINDOWS\srchasst\msgr3en.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\nls302en.le_ was copied to C:\WINDOWS\srchasst\nls302en.lex.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srchctls.dl_ was copied to C:\WINDOWS\srchasst\srchctls.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\srchui.dl_ was copied to C:\WINDOWS\srchasst\srchui.dll.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\courtney.ac_ was copied to C:\WINDOWS\srchasst\chars\courtney.acs.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\earl.ac_ was copied to C:\WINDOWS\srchasst\chars\earl.acs.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\rover.ac_ was copied to C:\WINDOWS\srchasst\chars\rover.acs.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\balloon.xs_ was copied to C:\WINDOWS\srchasst\mui\0409\balloon.xsl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\bar.xs_ was copied to C:\WINDOWS\srchasst\mui\0409\bar.xsl.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\charchsr.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\charchsr.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\charctxt.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\charctxt.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\error.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\error.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\finish.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\finish.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\indxsvc.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\indxsvc.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\inetfind.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\inetfind.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\inetopts.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\inetopts.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\inetpref.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\inetpref.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\inetsrch.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\inetsrch.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\intents.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\intents.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\intro.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\intro.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcladv.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcladv.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcladvd.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcladvd.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcladvdf.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcladvdf.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcladvmm.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcladvmm.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclcomp.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclcomp.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcldate.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcldate.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcldocs.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcldocs.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclkwrds.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclkwrds.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcllook.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcllook.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclmm.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclmm.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclmode.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclmode.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclother.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclother.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclprog.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclprog.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclrfine.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclrfine.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclsize.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclsize.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lclsrch.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lclsrch.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,D:\amd64\lcltechy.xm_ was copied to C:\WINDOWS\srchasst\mui\0409\lcltechy.xml.
+
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\external.c,376,END_SECTION,Installing component files
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\external.c,403,BEGIN_SECTION,Installing component reg settings
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\WINDOWS\system32\wscript.exe...
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\WINDOWS\system32\wscript.exe registered successfully
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,532,,SETUP: C:\WINDOWS\system32\wscript.exe broke the exception handler.
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\WINDOWS\SysWOW64\wscript.exe...
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\WINDOWS\SysWOW64\wscript.exe registered successfully
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Internet Explorer\hmmapi.dll...
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Internet Explorer\hmmapi.dll registered successfully
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files (x86)\Internet Explorer\hmmapi.dll...
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files (x86)\Internet Explorer\hmmapi.dll registered successfully
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files (x86)\Common Files\Microsoft Shared\Triedit\dhtmled.ocx...
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files (x86)\Common Files\Microsoft Shared\Triedit\dhtmled.ocx registered successfully
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files (x86)\Common Files\Microsoft Shared\Triedit\triedit.dll...
+03/01/2020 19:06:39,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files (x86)\Common Files\Microsoft Shared\Triedit\triedit.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msadce.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msadce.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msadcf.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msadcf.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msadco.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msadco.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msdaprst.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msdaprst.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msdfmap.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msdfmap.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msdarem.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msdarem.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\msadc\msadds.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\msadc\msadds.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\ado\msado15.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\ado\msado15.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\ado\msador15.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\ado\msador15.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\ado\msadrh15.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\ado\msadrh15.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\ado\msadox.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\ado\msadox.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\ado\msadomd.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\ado\msadomd.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\Ole DB\msdaps.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\Ole DB\msdaps.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\Ole DB\sqloledb.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,467,,SETUP: C:\Program Files\Common Files\System\Ole DB\sqloledb.dll registered successfully
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\syssetup\ctls.c,444,,SETUP: file to register is C:\Program Files\Common Files\System\Ole DB\sqlxmlx.dll...
+03/01/2020 19:06:40,d:\srvrtm\base\ntsetup\sysseMZ

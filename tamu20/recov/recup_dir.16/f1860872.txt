@@ -1,0 +1,399 @@
+lly shorter) tooltip for the all settings page. If this does not exist, the text is used.
+-->
+
+<section name.loc="[! set.secname1.txt/ ]" name="Accounts"
+         id="idMyAccountSection" icon="account.gif" link="msn://@ui.mar@/settings/account.htm"
+         header.loc="[! set.secheader1.txt/ ]"
+         header="What do you want to change about accounts on this computer?">
+  <setting name.loc="[! set.settingname6.txt/ ]" name="Add Users"
+           id="idNewUser" link="msn://@ui.mar@/settings/account-newuser.htm">
+    <!--locstart set.settingdesc6.txt/ -->Create additional accounts for other people to use on this computer.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname7.txt/ ]" name="Remove Users"
+           id="idDeleteUser" link="msn://@ui.mar@/settings/account-usermgmt.htm">
+    <!--locstart set.settingdesc7.txt/ -->Remove users from this computer.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname1.txt/ ]" name="Change Your Nickname"
+           id="idChangeNick" link="msn://@ui.mar@/settings/account-nickname.htm">
+    <!--locstart set.settingdesc1.txt/ -->Change the name you see on the sign-in screen and the name your online contacts see.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname2.txt/ ]" name="Change Your Password"
+           id="idResetPassword" link="msn://@ui.mar@/settings/account-changepswd.htm" info="msn://@ui.mar@/settings/safety-safepasswd.htm"
+           infotext.loc="[! set.settinginfo2.txt/ ]" infotext="creating and maintaining a safe password">
+    <!--locstart set.settingdesc2.txt/ -->Select a different password for your account.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname5.txt/ ]" name="Change Your Personal Profile Information"
+           id="AccountPersonalInfo" link="msn://@ui.mar@/settings/account-profile.htm" hideforkids="true" info="msn://@ui.mar@/settings/safety-personalinfo.htm"
+           infotext.loc="[! set.settinginfo5.txt/ ]" infotext="protecting your privacy">
+    <!--locstart set.settingdesc5.txt/ -->Change your personal profile information.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname3.txt/ ]" name="Change Your Picture"
+           id="idChangePicture"  link="msn://@ui.mar@/settings/account-picture.htm">
+    <!--locstart set.settingdesc3.txt/ -->Select a picture that represents your account when you sign in.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname4.txt/ ]" name="Change Your Secret Question"
+           id="idSecretQuestion" link="msn://@ui.mar@/redir.htm?settingsSecretQ">
+    <!--locstart set.settingdesc4.txt/ -->Change the secret question that will be used to identify you if you forget your password.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingname8.txt/ ]" name="Your Public Profile" hideforkids="true"
+           id="idEditProfile" link="msn://@ui.mar@/redir.htm?settingspublicprof">
+    <!--locstart set.settingdesc8.txt/ -->Change the public profile information that others see about you on the Internet.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname9.txt/ ]" name="Create or Edit a Wallet"
+           id="idWallet" link="msn://@ui.mar@/redir.htm?settingswallet" hideforkids="true" tip.loc="[! set.settingtip9.txt/ ]" tip="A passport wallet stores credit card information for online shopping">
+    <!--locstart set.settingdesc9.txt/ -->Create a Passport Wallet account that stores your credit card and billing information for quick one-click online shopping in participating Passport Web sites.<!--locend-->
+  </setting>
+
+
+</section>
+
+<section name.loc="[! set.secnamecustsupport.txt/ ]" name="Customer Support" link="msn://@ui.mar@/settings/support.htm"
+         id="idCustSupportSection" icon="account.gif" hidelefticon="true"
+         header.loc="[! set.secheadercustsupport.txt/ ]"
+         header="Get Support">
+
+  <setting name.loc="[! set.settingsnamesupport.txt/ ]" name="Visit MSN Support Services" showformsnia="true"
+      id="idContactUs" link="msn://@ui.mar@/redir.htm?settingssupport" golink="settingssupport">
+      <!--locstart set.settingsdescsupport.txt/ -->Online resources for MSN subscribers including: guides for new users, answers to common questions, and more.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamecontactus.txt/ ]" name="Contact Us" showformsnia="false"
+           id="idContactUs" link="msn://@ui.mar@/redir.htm?settingscontactus" golink="settingscontactus">
+    <!--locstart set.settingdesccontactus.txt/ -->Contact MSN via e-mail, phone or interactive online support tools.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamecontactusIA.txt/ ]" name="Contact Us" showformsnia="true"
+           id="idContactUsIA" link="msn://@ui.mar@/redir.htm?settingscontactusia" golink="settingscontactusia">
+    <!--locstart set.settingdesccontactusIA.txt/ -->Contact MSN via e-mail, phone or interactive online support tools.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamedialup.txt/ ]" name="Dial Up Numbers"
+           id="idDialup" link="msn://@ui.mar@/redir.htm?settingsdialup" showformsnia="true">
+    <!--locstart set.settingdescdialup.txt/ -->Get MSN Internet Access numbers in an area near you.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamenetstatus.txt/ ]" name="Network Status"
+           id="idNetStatus" link="msn://@ui.mar@/redir.htm?settingsstatus" showformsnia="true">
+    <!--locstart set.settingdescnetstatus.txt/ -->Having problems connecting to the network? Check here for the status of our service.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamefeedback.txt/ ]" name="Give Us Feedback"
+           id="idFeedback" link="msn://@ui.mar@/redir.htm?settingsfeedback">
+    <!--locstart set.settingdescfeedback.txt/ -->Provide feedback by filling out our form.<!--locend-->
+  </setting>
+
+</section>
+
+<section name.loc="[! set.secname2.txt/ ]" name="Member Services" link="msn://@ui.mar@/settings/billing.htm"
+         id="idBillingSection" icon="account.gif" hidelefticon="true" showformsnia="true" showforadmin="true"
+         header.loc="[! set.secheader2.txt/ ]"
+         header="What do you want to do in Member Services?">
+  <setting name.loc="[! set.settingname10.txt/ ]" name="Internet Access Billing Information"
+           id="idArea1" link="msn://@ui.mar@/redir.htm?settingsiabilling">
+    <!--locstart set.settingdesc10.txt/ -->View your Internet Access Billing Information<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname3.txt/ ]" name="Personalize MSN" link="msn://@ui.mar@/settings/personalization.htm"
+         id="idPersonalizeSection" icon="personalization.gif" hidelefticon="true"
+         header.loc="[! set.secheader3.txt/ ]"
+         header="What do you want to personalize?">
+  <setting name.loc="[! set.settingname11.txt/ ]" name="Change Your Picture"
+           id="idPictureChange" link="msn://@ui.mar@/settings/account-picture.htm">
+    <!--locstart set.settingdesc11.txt/ -->Select a picture that represents your account when you sign in.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname12.txt/ ]" name="Change &quot;My Stuff&quot;"
+           id="idMyStuff" link="msn://@ui.mar@/settings/personalize-mystuff.htm">
+    <!--locstart set.settingdesc12.txt/ -->Add to or change the order of the &quot;My Stuff&quot; links on the left bar.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname13.txt/ ]" name="Change Your Sound Settings"
+           id="idSounds" link="msn://@ui.mar@/settings/personalize-sounds.htm">
+    <!--locstart set.settingdesc13.txt/ -->Change when sounds are generated, alerting you to new e-mail, instant messages and more.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname4.txt/ ]" name="Home Page" link="msn://@ui.mar@/settings/homepage.htm"
+         id="idHomepageSection" icon="account.gif" hidelefticon="true"
+         header.loc="[! set.secheader4.txt/ ]"
+         header="What do you want to personalize about your home page?">
+  <setting name.loc="[! set.settingname14.txt/ ]" name="Change Content/Zip Code"
+           id="idContent" link="msn://@ui.mar@/redir.htm?settingshpcontent">
+    <!--locstart set.settingdesc14.txt/ -->Add and remove links from your home page or change your zip code.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname15.txt/ ]" name="Change Layout"
+           id="idLayout" link="msn://@ui.mar@/redir.htm?settingshplayout">
+    <!--locstart set.settingdesc15.txt/ -->Rearrange the contents of your home page.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname5.txt/ ]" name="E-mail" link="msn://@ui.mar@/settings/mail.htm"
+         id="idMailSection" icon="mail.gif"
+         header.loc="[! set.secheader5.txt/ ]"
+         header="What do you want to change about your E-mail?">
+  <setting name.loc="[! set.settingname16.txt/ ]" name="Block Sender"
+           id="idBlock" link="msn://@ui.mar@/settings/mail-blocksender.htm" hideforhotmail="true">
+    <!--locstart set.settingdesc16.txt/ -->Block delivery of e-mail from specific senders.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname17.txt/ ]" name="Inbox Protector"
+           id="idJunk" link="msn://@ui.mar@/settings/mail-inboxprotect.htm" info="msn://@ui.mar@/settings/safety-spam.htm"
+           infotext.loc="[! set.settinginfo17.txt/ ]" infotext="fighting spam" hideforhotmail="true">
+    <!--locstart set.settingdesc17.txt/ -->Get help keeping unwanted e-mail out of your Inbox.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname18.txt/ ]" name="Mail Signature"
+           id="idSig" link="msn://@ui.mar@/settings/mail-signature.htm" hideforhotmail="true">
+    <!--locstart set.settingdesc18.txt/ -->Create an original signature to add to your outgoing messages.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname19.txt/ ]" name="Mail Preferences"
+           id="idPrefs" link="msn://@ui.mar@/settings/mail-prefs.htm" hideforhotmail="true">
+    <!--locstart set.settingdesc19.txt/ -->Customize the appearance and operation of your e-mail account.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname20.txt/ ]" name="Import Address Book"
+           id="idMigrate" link="msn://@ui.mar@/settings/mail-importab.htm" hideforhotmail="true">
+    <!--locstart set.settingdesc20.txt/ -->Import contacts from another address book into your MSN Explorer address book.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingnamewebcourier.txt/ ]" name="Subscriptions to Newsletters"
+           id="idMigrate" link="#subscribe" onclick="goNewsletters();" hideforhotmail="true">
+    <!--locstart set.settingdescwebcourier.txt/ -->Hotmail WebCourier delivers free newsletters on your favorite topics directly to your e-mail Inbox.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname24.txt/ ]" name="Read your archived E-mail"
+           id="idArchive" link="msn://@mail.mar@/archlist.htm">
+    <!--locstart set.settingdesc24.txt/ -->Read e-mail archived on your computer.<!--locend-->
+  </setting>
+  
+  <setting name.loc="[! set.settingname25.txt/ ]" name="More E-Mail Options"
+           id="idMoreMailOptions" link="msn://@ui.mar@/settings/mail-" hideformarsmail="true" >
+    <!--locstart set.settingdesc25.txt/ -->Personalize your e-mail account.<!--locend-->
+  </setting> 
+  
+  <setting name.loc="[! set.settinghelp1.txt/ ]" name="Get Help with E-mail" hideforhotmail="true"
+           id="idMailHelp" link="#showEmailHelp" onclick="showHelpPane(g_sMailHelpKey, g_sMailHelpText);" type="help" tip.loc="[! set.settinghelptip1.txt/ ]" tip="Help with e-mail">
+  </setting>
+</section>
+
+<section name.loc="[! set.secname6.txt/ ]" name="Favorites" link="msn://@ui.mar@/settings/favorites.htm"
+         id="idFavoritesSection" icon="favorites.gif" hidelefticon="true"
+         header.loc="[! set.secheader6.txt/ ]"
+         header="What do you want to change about your Favorites?">
+  <setting name.loc="[! set.settingname21.txt/ ]" name="Organize Favorites" id="idOrgFav" link="msn://@ui.mar@/favorites/favorites.htm">
+    <!--locstart set.settingdesc21.txt/ -->Delete, rename and move your MSN Explorer Favorites.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settinghelp2.txt/ ]" name="Get Help with Favorites"
+           id="idFavHelp" link="#showFavoritesHelp" onclick="showHelpPane(g_sFavHelpKey, g_sFavHelpText);" type="help" tip.loc="[! set.settinghelptip2.txt/ ]" tip="Help with Favorites">
+  </setting>
+</section>
+
+<section name.loc="[! set.secname7.txt/ ]" name="Online Contacts" link="msn://@ui.mar@/settings/messenger.htm"
+         id="idMessengerSection" icon="messenger.gif"
+         header.loc="[! set.secheader7.txt/ ]"
+         header="What would you like to change about your Online Contact settings?">
+  <setting name.loc="[! set.settingname22.txt/ ]" name="Your Name"
+           id="idMsgrName" link="msn://@ui.mar@/settings/account-nickname.htm">
+           <!-- We have merged the account nickname with the Messenger Display Name. -->
+    <!--locstart set.settingdesc22.txt/ -->Change the name you see on the sign-in screen and the name your online contacts see.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname23.txt/ ]" name="More Options"
+           id="idMsgrSettings" onclick="javascript:showMessengerOptions(MOPTDLG_GENERAL_PAGE);" link="#showMessengerOptions">
+    <!--locstart set.settingdesc23.txt/ -->Change your font, allow and block list, away timer, and other preferences.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname8.txt/ ]" name="People &amp; Chat" link="msn://@ui.mar@/settings/communities.htm"
+         id="idCommunitiesSection" icon="communities.gif" hidelefticon="true"
+         header.loc="[! set.secheader8.txt/ ]"
+         header="What do you want to change about your People &amp; Chat settings?">
+  <setting name.loc="[! set.settingname27.txt/ ]" name="Chat"
+           id="idChat" link="msn://@ui.mar@/redir.htm?settingschat">
+    <!--locstart set.settingdesc27.txt/ -->Change your Chat settings.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname28.txt/ ]" name="My Web Sites"
+           id="idCommunitiesList" link="msn://@ui.mar@/redir.htm?settingswebsites">
+    <!--locstart set.settingdesc28.txt/ -->See a list of the Web Communities you belong to.<!--locend-->
+  </setting>
+
+</section>
+
+<section name.loc="[! set.secname9.txt/ ]" name="Money" link="msn://@ui.mar@/settings/money.htm"
+         id="idMoneySection" icon="money.gif"
+         header.loc="[! set.secheader9.txt/ ]"
+         header="What do you want to change about My MoneyCentral?">
+  <setting name.loc="[! set.settingname29.txt/ ]" name="Customize Content"
+           id="idMoneyContent" link="msn://@ui.mar@/redir.htm?settingsmnycontent">
+    <!--locstart set.settingdesc29.txt/ -->Choose your content for My MoneyCentral. Select from bills, bank accounts, stock quotes, breaking news, and more.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname30.txt/ ]" name="Customize Layout"
+           id="idMoneyLayout" link="msn://@ui.mar@/redir.htm?settingsmnylayout">
+    <!--locstart set.settingdesc30.txt/ -->Position the content you've chosen for My MoneyCentral.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname10.txt/ ]" name="Shopping" link="msn://@ui.mar@/settings/shopping.htm"
+         id="idShoppingSection" icon="shopping.gif" hidelefticon="true"
+         header.loc="[! set.secheader10.txt/ ]"
+         header="What do you want to change about your Shopping settings?">
+  <setting name.loc="[! set.settingname31.txt/ ]" name="eShop Gift Center"
+           id="idShopList" link="msn://@ui.mar@/redir.htm?settingsshopping">
+    <!--locstart set.settingdesc31.txt/ -->Create a list of gifts for special occasions (birthdays, anniversaries, etc.).    <!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname32.txt/ ]" name="Create a Wallet"
+           id="idShopWallet" link="msn://@ui.mar@/redir.htm?settingswallet" hideforkids="true" info="safety-fraud.htm" tip.loc="[! set.settingtip32.txt/ ]"  tip="A passport wallet stores credit card information for online shopping"
+           infotext.loc="[! set.settinginfo32.txt/ ]" infotext="avoiding cyber fraud">
+    <!--locstart set.settingdesc32.txt/ -->Create a Passport Wallet account that stores credit card and billing information for one-click online shopping in participating Passport Web sites.<!--locend-->
+  </setting>
+
+</section>
+
+<section name.loc="[! set.secname11.txt/ ]" name="MSN Mobile" link="msn://@ui.mar@/settings/mobile.htm"
+         id="idMobileSection" icon="mobile.gif"
+         header.loc="[! set.secheader11.txt/ ]"
+         header="Personalize MSN Mobile">
+  <setting name.loc="[! set.settingname33.txt/ ]" name="MSN Mobile"
+           id="idMobileEdit" link="msn://@ui.mar@/redir.htm?settingsmobile">
+    <!--locstart set.settingdesc33.txt/ -->Receive customized MSN content on your wireless devices.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname12.txt/ ]" name="Other MSN Services" link="msn://@ui.mar@/settings/services.htm"
+         id="idServicesContentSection" icon="account.gif" hidelefticon="true"
+         header.loc="[! set.secheader12.txt/ ]"
+         header="Which MSN Services do you want to personalize?">
+  <setting name.loc="[! set.settingname34.txt/ ]" name="Calendar"
+           id="idCalendar" link="msn://@ui.mar@/redir.htm?settingscalendar">
+    <!--locstart set.settingdesc34.txt/ -->Change calendar settings.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname35.txt/ ]" name="MSN Newsletters"
+           id="idNewsletter" link="msn://@ui.mar@/redir.htm?settingsnewsletter">
+    <!--locstart set.settingdesc35.txt/ -->Receive e-mail updates from MSN sites.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secnameparentalcontrols.txt/ ]" name="Parental Controls" link="msn://@ui.mar@/settings/pc.htm"
+         id="idParentalcontrolsSection" icon="parcontr.gif" showforadmin="true" hideforkids="true" showforcf="true"
+         header.loc="[! set.secheaderparentalcontrols.txt/ ]"
+         header="Parental Controls">
+
+  <setting name.loc="[! set.settingnameparentalcontrols2.txt/ ]" name="Set Parental Controls for an account"
+           id="idParentalSet" link="msn://@ui.mar@/settings/pc-set.htm" info="pc-info.htm"
+           infotext.loc="[! set.settinginfoparentalcontrols2.txt/ ]" infotext="how Parental Controls Work">
+    <!--locstart set.settingdescparentalcontrols2.txt/ -->Keep your children and other household members safe by blocking inappropriate Web sites. Parental Controls are applied to a restricted user only when that user connects to the Internet through MSN's dial-up service.<!--locend-->
+  </setting>
+
+
+  <setting name.loc="[! set.settingnameparentalcontrols4.txt/ ]" name="Give your child permission to use certain features"
+           id="idParentalPermitChildLink" link="msn://@ui.mar@/redir.htm?settingskidsparent" showforparent="true">
+    <!--locstart set.settingdescparentalcontrols4.txt/ -->Your child will need permission to use certain features, such as Online Contacts, MSN Communities, Calendar, and others.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnameparentalcontrols5.txt/ ]" name="Get Help with Parental Controls" id="idContactUs" link="msn://@ui.mar@/settings/pc-help.htm" help="pc"
+      tip.loc="[! set.settingnameparentalcontrolstip5.txt/ ]" tip="Help with Parental Controls">
+
+  </setting>
+
+</section>
+
+<section name.loc="[! set.secname13.txt/ ]" name="Web Browsing" link="msn://@ui.mar@/settings/web.htm"
+         id="idWebSection" icon="account.gif" hidelefticon="true"
+         header.loc="[! set.secheader13.txt/ ]"
+         header="What do you want to change about your Web browsing settings?">
+  <setting name.loc="[! set.settingname36.txt/ ]" name="Deleting Temporary Internet Files"
+           id="idDeleteTempFile" link="msn://@ui.mar@/settings/web-deltemp.htm">
+    <!--locstart set.settingdesc36.txt/ -->Get information on how to delete temporary Internet files (recently visited Web pages) stored on your computer.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname37.txt/ ]" name="MSN Explorer Security Statement"
+           id="idSecurityStatement" link="msn://@ui.mar@/settings/web-security.htm">
+    <!--locstart set.settingdesc37.txt/ -->Read about how MSN Explorer changes your security settings.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname38.txt/ ]" name="Connection Settings"
+           id="idConnectionSettings" link="msn://@ui.mar@/settings/web-connection.htm">
+    <!--locstart set.settingdesc38.txt/ -->Learn about how to change your connection settings.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname39.txt/ ]" name="Stay Signed In"
+           id="idSignedIn" link="msn://@ui.mar@/settings/msgr-signedin.htm">
+    <!--locstart set.settingdesc39.txt/ -->Stay signed in when you close MSN Explorer so you can continue to receive alerts and instant messages.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingname010.txt/ ]" name="Change Your Cookie Settings"
+           id="idCookieSwap" link="msn://@ui.mar@/settings/web-cookies.htm" hideforkids="true">
+    <!--locstart set.settingdesc010.txt/ -->Change the way cookies are handled for your account on this computer.<!--locend-->
+  </setting>
+
+</section>
+
+
+
+<section name.loc="[! set.secname14.txt/ ]" name="Online Safety" link="msn://@ui.mar@/settings/safety.htm"
+         id="idParentalControlsSection" icon="privacy.gif" hidelefticon="true"
+         header.loc="[! set.secheader14.txt/ ]"
+         header="View Online Safety Tips">
+  <setting name.loc="[! set.settingnameprotectinfo.txt/ ]" name="Protect Your Personal Information"
+           id="idProtectInfo" link="msn://@ui.mar@/settings/safety-personalinfo.htm">
+    <!--locstart set.settingdescprotectinfo.txt/ -->Keep your name, address, and phone number safe.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamesafepasswd.txt/ ]" name="Create and Maintain a Safe Password"
+           id="idSafePasswd" link="msn://@ui.mar@/settings/safety-safepasswd.htm">
+    <!--locstart set.settingdescsafepasswd.txt/ -->Find out what makes a safe password.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamefraud.txt/ ]" name="Avoid Fraud When Shopping Online"
+           id="idFraud" link="msn://@ui.mar@/settings/safety-fraud.htm">
+    <!--locstart set.settingdescfraud.txt/ -->Shop smartly on the Web.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamefightspam.txt/ ]" name="Fight Spam"
+           id="idFightSpam" link="msn://@ui.mar@/settings/safety-spam.htm">
+    <!--locstart set.settingdescfightspam.txt-->Keep unsolicited e-mail out of your mailbox.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnameestabguideline.txt/ ]" name="Keep Your Children Safe Online"
+           id="idEstabGuideline" link="msn://@ui.mar@/settings/safety-safeonline.htm">
+    <!--locstart set.settingdescestabguideline.txt-->Get tips on setting guidelines for computer use and for keeping your kids safe online.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamesafeguardvirus.txt/ ]" name="Safeguard Your Computer"
+           id="idSafeguardVirus" link="msn://@ui.mar@/settings/safety-virus.htm">
+    <!--locstart set.settingdescsafeguardvirus.txt-->Protect your computer from viruses sent by e-mail .<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingnamenetiquette.txt/ ]" name="Practice Good Online Manners"
+           id="idNetiquette" link="msn://@ui.mar@/settings/safety-netiquette.htm">
+    <!--locstart set.settingdescnetiquette.txt-->Learn what is acceptable for e-mail messages and chat.<!--locend-->
+  </setting>
+
+  <setting name.loc="[! set.settingname40.txt/ ]" name="Kids Passport"
+           id="idKidsPassport" link="msn://@ui.mar@/redir.htm?settingskidspp">
+    <!--locstart set.settingdesc40.txt/ -->Kids Passport is a service that conveniently helps to protect the online privacy of children.  <!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname15.txt/ ]" name="Accessibility" link="msn://@ui.mar@/settings/accessibility.htm"
+         id="idAccessibilitySection" icon="account.gif" hidelefticon="true"
+         header.loc="[! set.secheader15.txt/ ]"
+         header="Change Your Accessibility Settings">
+  <setting name.loc="[! set.settingname45.txt/ ]" name="Convert Menus for Accessibility Aids"
+           id="idOwnerDrawMenu" link="msn://@ui.mar@/settings/accessib-ownerdrawmenu.htm">
+    <!--locstart set.settingdesc45.txt/ -->Convert menus so they can be read by a wide variety of accessibility aids.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname46.txt/ ]" name="Notification of Interface Changes in MSN Explorer"
+           id="idUpdate" link="msn://@ui.mar@/settings/accessib-autoupdateui.htm">
+    <!--locstart set.settingdesc46.txt/ -->Select to receive notifications when improvements are made to MSN Explorer that might change accessibility features.<!--locend-->
+  </setting>
+</section>
+
+<section name.loc="[! set.secname16.txt/ ]" name="Privacy" link="msn://@ui.mar@/settings/privacy.htm"
+         id="idPrivacySection" icon="privacy.gif"
+         header.loc="[! set.secheader16.txt/ ]"
+         header="What do you want to change about your Privacy settings?">
+  <setting name.loc="[! set.settingname47.txt/ ]" name="Privacy Statement"
+           id="idPrivacy" link="msn://@ui.mar@/redir.htm?settingsprivacy">
+    <!--locstart set.settingdesc47.txt/ -->Read the policy on how we collect, use and share out account information.<!--locend-->
+  </setting>
+  <setting name.loc="[! set.settingname48.txt/ ]" name="Service Quality Monitoring"
+           id="idLogging" link="privacy-logging.htm">
+    <!--locstart set.settingdesc48.txt/ -->To improve the quality of service, some usage data is tracked. You can turn off this feature here.<!--locend-->
+  </setting>
+
+</section>
+
+</settings>
+GIF89ad

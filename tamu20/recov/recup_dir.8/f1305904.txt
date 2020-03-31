@@ -1,0 +1,11 @@
+01 19:06:32 2020): Processing C:\WINDOWS\system32\WBEM\vss.mfl
+(Sun Mar 01 19:06:32 2020): MOF load completed.
+(Sun Mar 01 19:06:32 2020): Beginning MOF load
+(Sun Mar 01 19:06:32 2020): MOF load completed.
+(Sun Mar 01 19:06:32 2020): Core Upgrade completed.
+(Sun Mar 01 19:06:32 2020): Wbemupgd.dll Service Security upgrade not required.
+(Sun Mar 01 19:06:32 2020): Beginning WMI(WDM) Namespace Init
+(Sun Mar 01 19:06:32 2020): WMI(WDM) Namespace Init Completed
+(Sun Mar 01 19:06:32 2020): ESS enabled
+(Sun Mar 01 19:06:32 2020): Wbemupgd.dll Registration completed.
+(Sun Mar 01 19:06:32 2020): ================================================================================

@@ -1,0 +1,10 @@
+at_Text = "Research which hardware and software works best with the Windows Server 2003 family and related Windows products.";
+				var L_TopicTitleCompat_Text = "Compatible Hardware and Software";
+				var sURL = "http://go.microsoft.com/fwlink/?LinkId=7201&mode=compatcenter&lcid=" + pchealth.UserSettings.CurrentSKU.Language;
+				pchealth.UI_NavBar.content.parentWindow.external.places.transitionTo( 'FullWindow' );
+				pchealth.Connectivity.NavigateOnline( sURL, L_TopicTitleCompat_Text, L_TopicIntroCompat_Text );
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

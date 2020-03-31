@@ -1,0 +1,30 @@
+.b_w;.bga;.bit;.bld;.bm;.bmp;.cdf;.cdr;.cgm;.cmp;.cps;.dcx;.dib;.dip;.dkb;.eps;.fit;.flc;.fli;.gcd;.gif;.gl;.gsd;.hrf;.hs2;.hsi;.iax;.ica;.icb;.jas;.jff;.jpc;.jpg;.jpeg;.jtf;.lbm;.lbm;.mpt;.msp;.nc;.neo;.pct;.pcx;.pda;.pds;.pgm;.pic;.pic;.pic;.pix;.png;.ppm;.ps;.pse;.qdv;.rgb;.rif;.rip;.rix;.rl4;.rl8;.sg1;.tif;.tiff;.van;.vda;.wmf;.xbm;.xif;.xpm;</SearchProp>
+        <Property Name="AddSearchPaths"><![CDATA[]]></Property>
+	</Checkbox>
+	<Checkbox Id="5601" Height="13" TopMargin="3">
+		<Text><![CDATA[M&usic]]></Text>
+        <SearchProp Name="MediaType">1</SearchProp>
+        <SearchProp Name="FileType">.aif;.aiff;.amf;.asf;.au;.cda;.dfs;.dss;.far;.m3u;.mid;.midi;.mp3;.mus;.okt;.p16;.psm;.ra;.ram;.rmi;.rmj;.s3m;.snd;.sng;.stm;.ub;.ult;.uw;.voc;.wma;.xm;.xmi;</SearchProp>
+        <Property Name="AddSearchPaths"><![CDATA[%ProgramFiles%\Napster;%ProgramFiles%\MusicMatch]]></Property>
+	</Checkbox>
+	<Checkbox Id="5602" Height="13" TopMargin="3">
+		<Text><![CDATA[Vide&o]]></Text>
+        <SearchProp Name="MediaType">2</SearchProp>
+        <SearchProp Name="FileType">.asf;.asx;.awm;.avi;.cmv;.m1v;.mmm;.mov;.mp2;.mpa;.mpe;.mpeg;.mpg;.mpv2;.mwf;.qt;.vue;.wmv;.wvx;</SearchProp>
+        <Property Name="AddSearchPaths"><![CDATA[]]></Property>
+	</Checkbox>
+	<Label TopMargin="8" BottomMargin="2">
+		<Text><![CDATA[All or part of the f&ile name:]]></Text>
+        <SearchProp Name="SearchSystemDirs">0</SearchProp>
+        <SearchProp Name="SearchHidden">0</SearchProp>
+	</Label>
+	<Edit Id="5604" Height="20"  AutoComplete="3">
+        <SearchProp Name="ContainingText" />
+    </Edit>
+	<Label TopMargin="8">
+		<Text><![CDATA[You may also want to...]]></Text>
+	</Label>
+	<Link Id="5502" IconId="24001" TopMargin="8">
+		<Text><![CDATA[Use adva&nced search options]]></Text>
+	</Link>
+</SimpleDialog>

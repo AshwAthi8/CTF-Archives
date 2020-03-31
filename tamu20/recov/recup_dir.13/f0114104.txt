@@ -1,0 +1,4 @@
+ESC_CLocalMachine      = "Shell Local Machine Object"
+CLSID_CLogonStatusHost  = "{60664caf-af0d-0007-a300-5c7d25ff22a0}"
+DESC_CLogonStatusHost   = "Shell Logon Status Host Object"
+ERR_NOSETUPAPI      = "Can not register SHGINA.DLL because SETUPAPI.DLL is missing."

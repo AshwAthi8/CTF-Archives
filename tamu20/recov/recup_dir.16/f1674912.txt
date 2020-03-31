@@ -1,0 +1,2 @@
+ A value of 0xFFFFFFFF indicates that the value is unknown. This property is maintained separately on each backup domain controller (BDC) in the domain. To get an accurate value only the largest value from all BDCs should be used.
+Example: 4

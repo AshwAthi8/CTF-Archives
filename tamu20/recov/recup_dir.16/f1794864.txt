@@ -1,0 +1,9 @@
+D = s 'obja.obja.1'
+			VersionIndependentProgID = s 'obja.obja'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+		}
+	}
+}

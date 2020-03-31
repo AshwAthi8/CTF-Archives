@@ -1,0 +1,33 @@
+ProgID = s 'DispatchMapper.DispatchMapper'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+		}
+	}
+}
+HKCR
+{
+	RequestMakeCall.RequestMakeCall.1 = s 'RequestMakeCall Class'
+	{
+		CLSID = s '{AC48FFE0-F8C4-11d1-A030-00C04FB6809F}'
+	}
+	RequestMakeCall.RequestMakeCall = s 'RequestMakeCall Class'
+	{
+		CurVer = s 'RequestMakeCall.RequestMakeCall.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {AC48FFE0-F8C4-11d1-A030-00C04FB6809F} = s 'RequestMakeCall Class'
+		{
+			ProgID = s 'RequestMakeCall.RequestMakeCall.1'
+			VersionIndependentProgID = s 'RequestMakeCall.RequestMakeCall'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+		}
+	}
+}

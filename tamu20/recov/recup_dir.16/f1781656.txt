@@ -1,0 +1,10 @@
+                   ProgID = s 'COMSVCS.TrkInfoCollUnmarshal.1'
+                        VersionIndependentProgID = s 'COMSVCS.TrkInfoCollUnmarshal'
+                        ForceRemove 'Programmable'
+                        InprocServer32 = s '%MODULE%'
+                        {
+                                val ThreadingModel = s 'Both'
+                        }
+                }
+        }
+}

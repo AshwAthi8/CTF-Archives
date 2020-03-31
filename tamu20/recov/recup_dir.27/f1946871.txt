@@ -1,0 +1,2 @@
+r automatically assigns an IP address to the computer system when establishing a network connection.
+Values: TRUE or FALSE. If TRUE, DHCP is enabled.

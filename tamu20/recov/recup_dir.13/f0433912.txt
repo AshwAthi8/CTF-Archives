@@ -1,0 +1,1161 @@
+              = 16419, %str_CoverPages%   ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Common Coverpages
+FaxFiles.Addin                              = 10, %str_addins%          ; NOT Localized Addin Directory under Windows
+FaxFiles.DelOnUpgrade.FromW9X.Windows       = 10
+FaxFiles.DelOnUpgrade.FromW2K.System        = 11
+FaxFiles.DelOnUpgrade.FromW2K.Help          = 18
+FaxFiles.DelOnUpgrade.FromW2K.AddIn         = 10, %str_addins%    ; NOT Localized Addin Directory under Windows
+FaxFiles.DelOnUpgrade.FromXP.NET.System     = 11
+
+FaxFiles.Clients.Fax                        = 11,%str_DownLevelClients%                                     ; %systemroot%\system32\clients\faxclient
+FaxFiles.Clients.Fax.PrgFiles               = 11,%str_DownLevelClients%\%str_PrgFiles%                      ; %systemroot%\system32\clients\faxclient\PrgFiles
+FaxFiles.Clients.Fax.PrgFiles.msfax         = 11,%str_DownLevelClients%\%str_PrgFiles%\%str_MsFax%          ; %systemroot%\system32\clients\faxclient\PrgFiles\msfax
+FaxFiles.Clients.Fax.PrgFiles.msfax.Bin     = 11,%str_DownLevelClients%\%str_PrgFiles%\%str_MsFax%\Bin      ; %systemroot%\system32\clients\faxclient\PrgFiles\msfax\Bin
+FaxFiles.Clients.Fax.PrgFiles.msfax.Bin9x   = 11,%str_DownLevelClients%\%str_PrgFiles%\%str_MsFax%\Bin9x    ; %systemroot%\system32\clients\faxclient\PrgFiles\msfax\Bin9x
+FaxFiles.Clients.Fax.System                 = 11,%str_DownLevelClients%\%str_System%                        ; %systemroot%\system32\clients\faxclient\System
+FaxFiles.Clients.Fax.System.W95             = 11,%str_DownLevelClients%\%str_System%\W95                    ; %systemroot%\system32\clients\faxclient\System\W95
+FaxFiles.Clients.Fax.System.W98             = 11,%str_DownLevelClients%\%str_System%\W98                    ; %systemroot%\system32\clients\faxclient\System\W98
+FaxFiles.Clients.Fax.System32               = 11,%str_DownLevelClients%\System32                            ; %systemroot%\system32\clients\faxclient\System32
+FaxFiles.Clients.Fax.System32.NT4           = 11,%str_DownLevelClients%\System32\NT4                        ; %systemroot%\system32\clients\faxclient\System32\NT4
+FaxFiles.Clients.Fax.Windows                = 11,%str_DownLevelClients%\%str_Windows%                       ; %systemroot%\system32\clients\faxclient\Windows
+FaxFiles.Clients.Fax.Windows.addins         = 11,%str_DownLevelClients%\%str_Windows%\addins                ; %systemroot%\system32\clients\faxclient\Windows\addins
+FaxFiles.Clients.Fax.Windows.help           = 11,%str_DownLevelClients%\%str_Windows%\help                  ; %systemroot%\system32\clients\faxclient\Windows\help
+FaxFiles.Clients.Fax.Drivers                = 11,%str_DownLevelClients%\%str_Drivers%                       ; %systemroot%\system32\clients\faxclient\Drivers
+FaxFiles.Clients.Fax.Drivers.W9X            = 11,%str_DownLevelClients%\%str_Drivers%\W9X                   ; %systemroot%\system32\clients\faxclient\Drivers\W9X
+FaxFiles.Clients.Fax.Drivers.NT4            = 11,%str_DownLevelClients%\%str_Drivers%\NT4                   ; %systemroot%\system32\clients\faxclient\Drivers\NT4
+FaxFiles.SysWOW64                     = 10, "SysWOW64"   ; %windir%\SysWOW64
+
+
+
+[Fax]
+OptionDesc          = %str_fax_desc%
+Tip                 = %str_fax_tip%
+IconIndex           = 19            ;; 19 is index for the Fax Icon 
+
+FaxCleanInstall         = Fax.CleanInstall
+FaxUpgradeFromWin9x     = Fax.UpgradeFromW9X
+FaxUpgradeFromWin2K     = Fax.UpgradeFromWin2K
+FaxUpgradeFromXpDotNet  = Fax.UpgradeFromXpDotNet
+FaxUninstall            = Fax.Uninstall
+
+
+[Fax.CleanInstall]  
+CopyFiles               = FaxFiles.System, \
+                          FaxFiles.System.Console, \
+                          FaxFiles.Addin, \
+                          FaxFiles.Clients.Fax.Drivers, \
+                    FaxFiles.SysWOW64, \
+                          FaxFiles.Coverpage
+DelReg                  = FaxReg.DelOnUpgrade.FromW2K.PerUser
+DelDir                  = Fax.Dir.W2K.CommonCoverpages
+AddReg                  = FaxReg.CoverPageAssociation, \
+                          FaxReg.EventLogging, \
+                          FaxReg.MSFax, \
+                          FaxReg.ActivityLogging, \
+                          FaxReg.Receipts, \
+                          FaxReg.Setup, \                          
+                          FaxReg.OriginalSetup, \
+                          FaxReg.Client, \
+                          FaxReg.PerformanceCounters, \
+                          FaxReg.RoutingExtensions, \
+                          FaxReg.ModemDeviceProvider, \
+                          FaxReg.ModemDeviceProvider.LoggingFolders, \
+                          FaxReg.OutboundRouting, \
+                          FaxReg.PerUserStub, \
+                          FaxReg.EventSounds.PerUser, \
+                          FaxReg.Setup.PerUser, \
+                          FaxReg.ExchangeClientExtension, \
+                    FaxReg.Inbox.Desktop.Section, \
+                    FaxReg.SentItems.Desktop.Section, \
+                          FaxReg.PerUserStub.Provider
+AddService              = %str_FaxServiceName%,,FaxSvc.Service
+RegisterDlls      = Fax.RegSvr.Common.Section
+ProfileItems            = Fax.InstallGroup.Fax, \
+                          Fax.InstallLink.SendWizard, \
+                          Fax.InstallLink.CoverPage, \
+                          Fax.InstallLink.Client
+CreateDir               = Fax.Dir.Inbox, \
+                          Fax.Dir.SentItems, \
+                          Fax.Dir.Queue, \
+                          Fax.Dir.ActivityLog, \
+                          Fax.Dir.PSSLogIncoming, \
+                          Fax.Dir.PSSLogOutgoing, \
+                          Fax.Dir.FxsTmp, \
+                          Fax.Dir.CommonCoverpages
+UpdateInis        = MAPI.AddToIni.SysWOW64
+CreateShare             = Fax.Share.CommonCoverpages, Fax.Share.DownLevelClientInstallationPoint
+SizeApproximation=8376320
+
+
+[Fax.UpgradeFromXpDotNet]
+DelFiles                = FaxFiles.DelOnUpgrade.FromXP.NET.System
+CopyFiles               = FaxFiles.System, \
+                          FaxFiles.System.Console, \
+                          FaxFiles.Clients.Fax.Drivers, \
+                    FaxFiles.SysWOW64, \
+                          FaxFiles.Addin
+DelReg                  = FaxReg.DelOnUpgrade.FromXpDotNet
+AddReg                  = FaxReg.Client, \
+                          FaxReg.MSFax.Upgrade, \                          
+                          FaxReg.ModemDeviceProvider.LoggingFolders
+RegisterDlls      = Fax.RegSvr.Common.Section
+UnregisterDlls    = Fax.RegSvr.Server.Section
+CreateDir               = Fax.Dir.Inbox, \
+                          Fax.Dir.SentItems, \
+                          Fax.Dir.Queue, \
+                          Fax.Dir.ActivityLog, \
+                          Fax.Dir.PSSLogIncoming, \
+                          Fax.Dir.PSSLogOutgoing, \
+                          Fax.Dir.FxsTmp
+AddService              = %str_FaxServiceName%,0x400,FaxSvc.Service
+SizeApproximation=8323072
+
+
+
+[Fax.UpgradeFromWin2K]
+DelFiles                = FaxFiles.DelOnUpgrade.FromW2K.System, \
+                          FaxFiles.DelOnUpgrade.FromW2K.Help,   \
+                          FaxFiles.DelOnUpgrade.FromW2K.AddIn
+DelReg                  = FaxReg.DelOnUpgrade.FromW2K, \
+                          FaxReg.DelOnUpgrade.FromW2K.PerUser
+DelDir                  = Fax.Dir.W2K.CommonCoverpages
+ProfileItems            = Fax.UninstallLink.FromW2K.MyFaxes, \
+                          Fax.UninstallLink.FromW2K.SendCoverPage, \
+                          Fax.UninstallLink.FromW2K.Help, \
+                          Fax.UninstallLink.FromW2K.MMCSnapin, \
+                          Fax.UninstallLink.FromW2K.FaxQueue, \
+                          Fax.UninstallLink.CfgWzrd, \
+                          Fax.InstallGroup.Fax, \
+                          Fax.InstallLink.SendWizard, \
+                          Fax.InstallLink.CoverPage, \
+                    Fax.UninstallLink.MMCSnapin, \
+                          Fax.InstallLink.Client
+CopyFiles               = FaxFiles.System, \
+                          FaxFiles.System.Console, \
+                          FaxFiles.Addin, \
+                          FaxFiles.Clients.Fax.Drivers, \
+                    FaxFiles.SysWOW64, \
+                          FaxFiles.Coverpage
+AddReg                  = FaxReg.CoverPageAssociation, \
+                          FaxReg.EventLogging, \
+                          FaxReg.MSFax, \
+                          FaxReg.ActivityLogging, \
+                          FaxReg.Receipts, \
+                          FaxReg.Setup, \                          
+                          FaxReg.OriginalSetup, \
+                          FaxReg.Client, \
+                          FaxReg.PerformanceCounters, \
+                          FaxReg.RoutingExtensions, \
+                          FaxReg.ModemDeviceProvider, \
+                          FaxReg.ModemDeviceProvider.LoggingFolders, \
+                          FaxReg.OutboundRouting, \
+                          FaxReg.PerUserStub, \
+                          FaxReg.EventSounds.PerUser, \
+                          FaxReg.Setup.PerUser, \
+                          FaxReg.ExchangeClientExtension, \
+                    FaxReg.Inbox.Desktop.Section, \
+                    FaxReg.SentItems.Desktop.Section, \
+                          FaxReg.PerUserStub.Provider
+AddService              = %str_FaxServiceName%,0x400,FaxSvc.Service
+RegisterDlls      = Fax.RegSvr.Common.Section
+UnregisterDlls    = Fax.RegSvr.Server.Section, Fax.Unregister.FromW2K.Section
+CreateDir               = Fax.Dir.Inbox, \
+                          Fax.Dir.SentItems, \
+                          Fax.Dir.Queue, \
+                          Fax.Dir.ActivityLog, \
+                          Fax.Dir.PSSLogIncoming, \
+                          Fax.Dir.PSSLogOutgoing, \
+                          Fax.Dir.FxsTmp, \
+                          Fax.Dir.CommonCoverpages
+UpdateInis        = MAPI.AddToIni.SysWOW64
+CreateShare             = Fax.Share.CommonCoverpages, Fax.Share.DownLevelClientInstallationPoint
+SizeApproximation=8376320
+
+
+[Fax.UpgradeFromW9X]
+DelFiles                = FaxFiles.DelOnUpgrade.FromW9X.Windows
+DelReg                  = FaxReg.DelOnUpgrade.FromW9X
+ProfileItems            = Fax.UninstallLink.FromW9x.CoverPage, \
+                          Fax.InstallGroup.Fax, \
+                          Fax.InstallLink.SendWizard, \
+                          Fax.InstallLink.CoverPage, \
+                          Fax.InstallLink.Client
+CopyFiles               = FaxFiles.System, \
+                          FaxFiles.System.Console, \
+                          FaxFiles.Addin, \
+                          FaxFiles.Coverpage, \
+                          FaxFiles.Clients.Fax.Drivers
+AddReg                  = FaxReg.CoverPageAssociation, \
+                          FaxReg.EventLogging, \
+                          FaxReg.MSFax, \
+                          FaxReg.ActivityLogging, \
+                          FaxReg.Receipts, \
+                          FaxReg.Setup, \                          
+                          FaxReg.OriginalSetup, \
+                          FaxReg.Client, \
+                          FaxReg.PerformanceCounters, \
+                          FaxReg.RoutingExtensions, \
+                          FaxReg.ModemDeviceProvider, \
+                          FaxReg.ModemDeviceProvider.LoggingFolders, \
+                          FaxReg.OutboundRouting, \
+                          FaxReg.PerUserStub, \
+                          FaxReg.EventSounds.PerUser, \
+                          FaxReg.Setup.PerUser, \
+                          FaxReg.ExchangeClientExtension, \
+                          FaxReg.AwdAssociation, \
+                          FaxReg.PerUserStub.Provider, \
+                          FaxReg.Inbox.Desktop.Section, \
+                          FaxReg.SentItems.Desktop.Section
+AddService              = %str_FaxServiceName%,0x400,FaxSvc.Service
+RegisterDlls            = Fax.RegSvr.Common.Section
+CreateDir               = Fax.Dir.Inbox, \
+                          Fax.Dir.SentItems, \
+                          Fax.Dir.Queue, \
+                          Fax.Dir.ActivityLog, \
+                          Fax.Dir.PSSLogIncoming, \
+                          Fax.Dir.PSSLogOutgoing, \
+                          Fax.Dir.FxsTmp, \
+                          Fax.Dir.CommonCoverpages
+UpdateInis              = \
+                    MAPI.AddToIni.SysWOW64, \
+                          MAPI.RemoveFromIni.AWF
+CreateShare             = Fax.Share.CommonCoverpages
+SizeApproximation=6574080
+
+
+[Fax.Uninstall]
+
+AddReg              =   FaxReg.PerUserStub.UnInstall, \
+                        FaxReg.PerUserStub.UnInstall.Provider
+DelShare            =   Fax.Share.CommonCoverpages, \
+                        Fax.Share.DownLevelClientInstallationPoint
+DelDir              =   Fax.Dir.FxsTmp
+DelFiles            =   FaxFiles.System, \
+                        FaxFiles.System.Console, \
+                        FaxFiles.Addin,  FileFiles.Coverpage, \
+                        FaxFiles.System.Server.Section, \
+                  FaxFiles.SysWOW64, \
+                        FaxFiles.Clients.Fax.Drivers
+DelReg              =   FaxReg.RemoveTree.HKLM, \
+                        FaxReg.RemoveTree.PerUser, \
+                        FaxReg.ExchangeClientExtension, \
+                        FaxReg.PerformanceCounters
+UnregisterDlls      =   Fax.RegSvr.Common.Section, \
+                        Fax.RegSvr.Server.Section
+ProfileItems        =   Fax.UninstallLink.CoverPage, \
+                        Fax.UninstallLink.SendWizard, \
+                        Fax.UninstallLink.Client, \
+                        Fax.UninstallLink.MMCSnapin, \
+                        Fax.UninstallLink.CfgWzrd
+UpdateInis          =   \
+UpdateInis    =   MAPI.RemoveFromIni.SysWOW64
+DelService          =   %str_FaxServiceName%
+
+[Fax.Share.CommonCoverpages]
+Path        = %16419%\%str_CoverPages%                      ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Common Coverpages
+Name        = %str_CoverPageShareName%                      ; "FxsSrvCp$"
+Comment     = %str_CoverPageShareComment%                   ; "Common Fax Cover Pages Directory"
+Security    = "D:(A;;FA;;;BA)(A;;0x1200a9;;;WD)"            ; Everyone can read, Administrators have full control
+Platform    = %PRODUCT_SHARED_SKU%                          ; Share on server SKUs only
+
+
+[Fax.Share.DownLevelClientInstallationPoint]
+Path        = %11%\%str_DownLevelClients%                   ; %systemroot%\system32\clients\faxclient
+Name        = %str_DownLevelClientShare%                    ; "faxclient"
+Comment     = %str_DownLevelClientComment%                  ; "Microsoft Shared Fax Clients"
+Security    = "D:(A;;0x1200a9;;;WD)"                        ; Everyone can read
+Platform    = %PRODUCT_SHARED_SKU%                          ; Share on server SKUs only
+
+[Fax.Dir.Inbox]
+Path        = %16419%\%str_Inbox%                           ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Inbox
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;FA;;;NS)"       ; Administrators have full access, Network service have full access
+
+[Fax.Dir.SentItems]
+Path        = %16419%\%str_SentItems%                       ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Sent Items
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;FA;;;NS)"       ; Administrators have full access, Network service have full access
+
+[Fax.Dir.Queue]
+Path        = %16419%\%str_Queue%                           ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Queue
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;FA;;;NS)"       ; Administrators have full access, Network service have full access
+
+[Fax.Dir.ActivityLog]
+Path        = %16419%\%str_ActivityLog%                     ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Queue
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;FA;;;NS)"       ; Administrators have full access, Network service have full access
+
+[Fax.Dir.PSSLogIncoming]
+Path        = %11%\%str_PSSLogIncoming%                     ; %windir%\system32\LogFiles\Fax\Incoming
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;FA;;;NS)"       ; Administrators have full access, Network service have full access
+
+[Fax.Dir.PSSLogOutgoing]
+Path        = %11%\%str_PSSLogOutgoing%                     ; %windir%\system32\LogFiles\Fax\Outgoing
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;FA;;;NS)"       ; Administrators have full access, Network service have full access
+
+[Fax.Dir.FxsTmp]
+Path        = %11%\FxsTmp                                                                   ; %windir%\system32\FxsTmp
+Platform    = %PRODUCT_ALL_SKUS%                                                            ; create on all platforms
+Security    = "D:PAI(A;;0x100003;;;BU)(A;OICI;FA;;;BA)(A;OICI;FA;;;SY)(A;OICIIO;FA;;;CO)"   ; Special ACL
+
+[Fax.Dir.CommonCoverpages]
+Path        = %16419%\%str_CoverPages%                      ; CSIDL_COMMON_APPDATA\Microsoft\Windows NT\MSFax\Common Coverpages
+Platform    = %PRODUCT_ALL_SKUS%                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;0x1200a9;;;WD)" ; Everyone can read, Administrators have full control
+
+; We delete this folder to support upgrade from build
+; to build and to clear the W2K common coverpages
+; Our migration code moves the W2K coverpages to
+; the new location before this folder is removed
+[Fax.Dir.W2K.CommonCoverpages]
+Path        = %16430%\%str_MyFaxes%\%str_CommonCoverPages%                                  ; CSIDL_COMMON_DOCUMENTS\My Faxes\Common CoverPages (i.e. All Users\Documents\My Faxes\..., 0x002e or'd with 0x4000)
+Platform    = %PRODUCT_ALL_SKUS%                                                            ; create on all platforms
+Security    = "D:PAI(A;OICI;FA;;;BA)(A;OICI;0x1200a9;;;WD)"                                 ; Everyone can read, Administrators have full control
+
+
+
+
+[MAPI.AddToIni.SysWOW64]
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,,"PR_PROVIDER_DISPLAY=%str_FaxMailTransport%"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,,"PR_DISPLAY_NAME=%str_FaxMailTransport%"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,,"PR_RESOURCE_FLAGS=STATUS_NO_DEFAULT_STORE"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,,"PR_RESOURCE_TYPE=MAPI_TRANSPORT_PROVIDER"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,,"PR_PROVIDER_DLL_NAME=FXSXP.DLL"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,,"PR_RESOURCE_FLAGS=SERVICE_SINGLE_COPY|SERVICE_NO_PRIMARY_IDENTITY"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,,"PR_SERVICE_ENTRY_NAME=ServiceEntry"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,,"PR_SERVICE_SUPPORT_FILES=FXSXP.DLL"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,,"PR_SERVICE_DLL_NAME=FXSXP.DLL"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,,"Providers=MSFAX XPP"
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,,"PR_DISPLAY_NAME=%str_FaxMailTransport%"
+%10%\SysWOW64\mapisvc.inf,"Services"         ,,"MSFAX XP=%str_FaxMailTransport%"
+%10%\SysWOW64\mapisvc.inf,"Default Services" ,,"MSFAX XP=%str_FaxMailTransport%"
+
+[MAPI.RemoveFromIni.SysWOW64]
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,"PR_PROVIDER_DISPLAY=%str_FaxMailTransport%",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,"PR_DISPLAY_NAME=%str_FaxMailTransport%",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,"PR_RESOURCE_FLAGS=STATUS_NO_DEFAULT_STORE",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,"PR_RESOURCE_TYPE=MAPI_TRANSPORT_PROVIDER",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XPP"        ,"PR_PROVIDER_DLL_NAME=FXSXP.DLL",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,"PR_RESOURCE_FLAGS=SERVICE_SINGLE_COPY|SERVICE_NO_PRIMARY_IDENTITY",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,"PR_SERVICE_ENTRY_NAME=ServiceEntry",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,"PR_SERVICE_SUPPORT_FILES=FXSXP.DLL",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,"PR_SERVICE_DLL_NAME=FXSXP.DLL",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,"Providers=MSFAX XPP",
+%10%\SysWOW64\mapisvc.inf,"MSFAX XP"         ,"PR_DISPLAY_NAME=%str_FaxMailTransport%",
+%10%\SysWOW64\mapisvc.inf,"Services"         ,"MSFAX XP=%str_FaxMailTransport%",
+%10%\SysWOW64\mapisvc.inf,"Default Services" ,"MSFAX XP=%str_FaxMailTransport%",
+
+[MAPI.RemoveFromIni.AWF]
+%11%\mapisvc.inf,"AWFAX_AB"         ,"PR_PROVIDER_DISPLAY=Microsoft Fax Address Book",,
+%11%\mapisvc.inf,"AWFAX_AB"         ,"PR_DISPLAY_NAME=Microsoft Fax Address Book",,
+%11%\mapisvc.inf,"AWFAX_AB"         ,"PR_PROVIDER_DLL_NAME=awfxab.dll",,
+%11%\mapisvc.inf,"AWFAX_AB"         ,"PR_RESOURCE_TYPE=MAPI_AB_PROVIDER",,
+%11%\mapisvc.inf,"AWFAX_AB"         ,"PR_RESOURCE_FLAGS=00000000",,
+%11%\mapisvc.inf,"AWFAX_XP"         ,"PR_PROVIDER_DISPLAY=Microsoft Fax Transport",,
+%11%\mapisvc.inf,"AWFAX_XP"         ,"PR_PROVIDER_DLL_NAME=awfaxp.dll",,
+%11%\mapisvc.inf,"AWFAX_XP"         ,"PR_RESOURCE_TYPE=MAPI_TRANSPORT_PROVIDER",,
+%11%\mapisvc.inf,"AWFAX_XP"         ,"PR_RESOURCE_FLAGS=00000000",,
+%11%\mapisvc.inf,"AWFAX"            ,"PR_DISPLAY_NAME=Microsoft Fax Messaging Service",,
+%11%\mapisvc.inf,"AWFAX"            ,"PR_SERVICE_DLL_NAME=awfaxp.dll",,
+%11%\mapisvc.inf,"AWFAX"            ,"PR_SERVICE_ENTRY_NAME=ServiceEntry",,
+%11%\mapisvc.inf,"AWFAX"            ,"WIZARD_ENTRY_NAME=WizardInformation",,
+%11%\mapisvc.inf,"AWFAX"            ,"Providers=AWFAX_AB, AWFAX_XP",,
+%11%\mapisvc.inf,"AWFAX"            ,"PR_RESOURCE_FLAGS=SERVICE_SINGLE_COPY|SERVICE_NO_PRIMARY_IDENTITY",,
+%11%\mapisvc.inf,"AWFAX"            ,"PR_SERVICE_SUPPORT_FILES=awfaxp,awfxab,awcl1_,awdevl,awrndr,awfxcg",,
+%11%\mapisvc.inf,"Services"         ,"AWFAX=Microsoft Fax",,
+%11%\mapisvc.inf,"Default Services" ,"AWFAX=Microsoft Fax",,
+
+[CreateLink.Common]
+ProfileItems        = Fax.InstallGroup.Fax, \
+                      Fax.InstallLink.SendWizard, \
+                      Fax.InstallLink.CoverPage, \
+                      Fax.InstallLink.Client
+
+[Fax.InstallGroup.Fax]
+Name            = %str_FaxGroup%, 4                           ; the flag '4' means create a program group
+DisplayResource = "%systemroot%\system32\fxsres.dll",118      ; display resource is 'Fax'
+
+[Fax.InstallLink.CoverPage]
+Name            = %str_FaxCoverPageLink%
+CmdLine         = 11,,FxsCover.exe
+Subdir          = %str_FaxGroup%
+WorkingDir      = 16389,%str_FaxPersonalCoverpages%         ; CSIDL_PERSONAL or'd with 0x4000
+IconPath        = 11,, FxsCover.exe
+IconIndex       = 0
+InfoTip         = "@%systemroot%\system32\fxsres.dll,-113"
+DisplayResource = "%systemroot%\system32\fxsres.dll",112
+
+[Fax.UninstallLink.CoverPage]
+Name        = %str_FaxCoverPageLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.InstallLink.MMCSnapin]
+Name            = %str_FaxMMCLink%
+CmdLine         = 11,,fxsadmin.msc
+Subdir          = %str_FaxGroup%
+IconPath        = 11,, fxsadmin.dll
+IconIndex       = 0
+InfoTip         = "@%systemroot%\system32\fxsres.dll,-117"
+DisplayResource = "%systemroot%\system32\fxsres.dll",116
+
+[Fax.UninstallLink.MMCSnapin]
+Name        = %str_FaxMMCLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.InstallLink.SendWizard]
+Name            = %str_FaxSendWizardLink%
+CmdLine         = 11,,FxsSend.exe
+Subdir          = %str_FaxGroup%
+IconPath        = 11,, FxsSend.exe
+IconIndex       = 0
+InfoTip         = "@%systemroot%\system32\fxsres.dll,-111"
+DisplayResource = "%systemroot%\system32\fxsres.dll",110 
+
+[Fax.UninstallLink.SendWizard]
+Name        = %str_FaxSendWizardLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.InstallLink.Client]
+Name            = %str_FaxClientLink%
+CmdLine         = 11,,"FxsClnt.exe /new"
+Subdir          = %str_FaxGroup%
+IconPath        = 11,, FxsClntR.dll
+IconIndex       = 0
+InfoTip         = "@%systemroot%\system32\fxsres.dll,-115"
+DisplayResource = "%systemroot%\system32\fxsres.dll",114
+
+[Fax.UninstallLink.Client]
+Name        = %str_FaxClientLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.UninstallLink.CfgWzrd]
+Name        = %str_FaxConfigWzrdLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.InstallLink.WhereDidMyFaxGo]
+Name        = %str_WhereDidMyFaxGo%,1     ; the flag '1' means create for current user.
+CmdLine     = 11,,"rundll32.exe %11%\Setup\FxsOcm.dll,WhereDidMyFaxGo"
+Subdir      = %str_SBSFaxGroup%
+IconPath    = 11,, FxsClntR.dll
+IconIndex   = 0
+
+[Fax.UninstallLink.WhereDidMyFaxGo]
+Name        = %str_WhereDidMyFaxGo%, 3    ; the flag '3' means 'delete link' for 'currnet user'
+SubDir      = %str_SBSFaxGroup%
+
+[Fax.UninstallLink.FromW9x.CoverPage]
+Name        = %str_FaxW9XCoverPageLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_AWFaxGroup%
+
+[Fax.UninstallLink.FromW2K.MyFaxes]
+Name        = %str_FaxW2KMyFaxesLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.UninstallLink.FromW2K.SendCoverPage]
+Name        = %str_FaxW2KSendCoverPageLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.UninstallLink.FromW2K.Help]
+Name        = %str_FaxW2KHelpLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.UninstallLink.FromW2K.MMCSnapin]
+Name        = %str_FaxW2KMMCSnapinLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+[Fax.UninstallLink.FromW2K.FaxQueue]
+Name        = %str_FaxW2KFaxQueueLink%, 2    ; the flag '2' means 'delete link'
+SubDir      = %str_FaxGroup%
+
+
+[SourceDisksNames.x86]
+201=%cdname%,"",0,\i386
+
+[SourceDisksNames.amd64]
+
+[SourceDisksNames.ia64]
+
+[SourceDisksFiles]
+
+
+[FaxFiles.DelOnUpgrade.FromW2K.System]
+basenote.cov,,,0x00010000
+fax.cpk,,,0x00010000
+fax.cpl,,,0x00010000
+faxadmin.dll,,,0x00010000
+faxcom.dll,,,0x00010000
+faxcover.exe,,,0x00010000
+faxcount.h,,,0x00010000
+faxdrv.dll,,,0x00010000
+faxevent.dll,,,0x00010000
+faxext32.dll,,,0x00010000
+faxmapi.dll,,,0x00010000
+faxocm.dll,,,0x00010000
+faxperf.dll,,,0x00010000
+faxperf.ini,,,0x00010000
+faxqueue.exe,,,0x00010000
+faxroute.dll,,,0x00010000
+faxsend.exe,,,0x00010000
+faxserv.msc,,,0x00010000
+faxshell.dll,,,0x00010000
+faxsvc.exe,,,0x00010000
+faxt30.dll,,,0x00010000
+faxtiff.dll,,,0x00010000
+faxui.dll,,,0x00010000
+faxxp32.dll,,,0x00010000
+msfaxmon.dll,,,0x00010000
+routeext.dll,,,0x00010000
+
+[FaxFiles.DelOnUpgrade.FromW2K.Help]
+fax.chm,,,0x00010000
+fax.hlp,,,0x00010000
+faxcover.chm,,,0x00010000
+faxmgmt.chm,,,0x00010000
+faxqueue.chm,,,0x00010000
+
+[FaxFiles.DelOnUpgrade.FromW2K.AddIn]
+faxext.ecf,,,0x00010000
+
+[FaxFiles.DelOnUpgrade.FromW9X.Windows]
+faxcover.exe,,,0x00010000   
+
+[FaxFiles.DelOnUpgrade.FromXP.NET.System]
+fxsdrv.dll,		,					,0x00010000
+fxsui.dll,		,					,0x00010000
+fxswzrd.dll,	,					,0x00010000
+
+[FaxFiles.System.Server.Section]
+fxsadmin.msc,,,0x00010000
+fxsadmin.dll,,,0x00010000
+fxsrtmtd.dll,,,0x00010000
+fxst30p.dll,,,0x00010000
+
+[FaxFiles.System]
+fxsapi.dll,,,0x00010000
+fxscfgwz.dll,,,0x00010000
+fxscom.dll,,,0x00010000
+fxscomex.dll,,,0x00010000
+fxsclntR.dll,,,0x00010000
+fxsclnt.exe,,,0x00010000
+fxscount.h,,,0x00010000
+fxscover.exe,,,0x00010000
+fxsevent.dll,,,0x00010000
+fxsmon.dll,,,0x00010000
+fxsperf.dll,,,0x00010000
+fxsperf.ini,,,0x00010000
+fxsres.dll,,,0x00010000
+fxsroute.dll,,,0x00010000
+fxssend.exe,,,0x00010000
+fxsst.dll,,,0x00010000
+fxst30.dll,,,0x00010000
+fxstiff.dll,,,0x00010000
+
+
+[FaxFiles.System.Console]
+fxssvc.exe,,,0x00010000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[FaxFiles.Clients.Fax.Drivers]
+fxsapi.dll,,					,0x00010000
+fxsdrv.dll,,					,0x00010000
+fxsres.dll,,					,0x00010000
+fxstiff.dll,,					,0x00010000
+fxsui.dll,,					,0x00010000
+fxswzrd.dll,,					,0x00010000
+
+
+
+
+[FaxFiles.SysWOW64]
+fxsapi.dll,       wfxsapi.dll,	,0x00010000
+fxsres.dll,       wfxsres.dll,	,0x00010000
+fxscom.dll,       wfxscom.dll,	,0x00010000
+fxscomex.dll,     wfxscomex.dll,	,0x00010000
+fxsxp32.dll,      wfxsxp32.dll,	,0x00010000
+fxsext32.dll,     wfxsext32.dll,	,0x00010000
+fxsperf.dll,      wfxsperf.dll,	,0x00010000
+fxscat.cat,       wfxscat.cat,	,0x00010000
+
+[FaxFiles.System.Security]
+"D:P(A;;GRGX;;;BU)(A;;GRGX;;;PU)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GRGX;;;WD)"
+
+[FaxFiles.System.Console.Security]
+"D:P(A;;GRGX;;;IU)(A;;GRGX;;;SU)(A;;GRGX;;;S-1-5-3)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;CO)"
+
+[FaxFiles.Addin]
+fxsext.ecf,,,0x00010000
+
+[FaxFiles.Coverpage]
+%str_confdent%,confdent.cov,,0x00010000
+%str_fyi%,fyi.cov,,0x00010000
+%str_generic%,generic.cov,,0x00010000
+%str_urgent%,urgent.cov,,0x00010000
+
+
+[Fax.RegSvr.Common]
+RegisterDlls = Fax.RegSvr.Common.Section
+
+[Fax.RegSvr.Common.Section]
+11,,fxscomex.dll,1
+11,,fxscom.dll,1
+10,"SysWOW64",fxscomex.dll,1
+10,"SysWOW64",fxscom.dll,1
+
+[Fax.Unregister.FromW2K.Section]
+11,,faxadmin.dll,1
+
+[Fax.RegSvr.Server.Section]
+11,,fxsadmin.dll,1
+11,,fxst30p.dll,1
+11,,fxsrtmtd.dll,1
+
+[FaxReg.PerUserStub]
+HKLM,%KEY_ACTIVE_SETUP_NT%,,,%PRODUCT_NAME%
+HKLM,%KEY_ACTIVE_SETUP_NT%,"ComponentID",,"Fax"
+HKLM,%KEY_ACTIVE_SETUP_NT%,"IsInstalled",%REG_DWORD_OVERWRITE%, 1
+HKLM,%KEY_ACTIVE_SETUP_NT%,"DontAsk",%REG_DWORD%, 2
+HKLM,%KEY_ACTIVE_SETUP_NT%,"Version",,"%VERSION_STR%"
+HKLM,%KEY_ACTIVE_SETUP_NT%,"Locale",,"%LOCALE_ID%"
+HKLM,%KEY_ACTIVE_SETUP_NT%,"StubPath",,"rundll32.exe advpack.dll,LaunchINFSection %17%\fxsocm.inf,Fax.Install.PerUser"
+
+[FaxReg.PerUserStub.UnInstall]
+HKLM,%KEY_ACTIVE_SETUP_NT%,"IsInstalled",%REG_DWORD_OVERWRITE%, 0
+HKLM,%KEY_ACTIVE_SETUP_NT%,"StubPath",,"rundll32.exe advpack.dll,LaunchINFSection %17%\fxsocm.inf,Fax.UnInstall.PerUser"
+
+[FaxReg.PerUserStub.Provider]
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,,,%PRODUCT_NAME_PROVIDER%
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"ComponentID",,"Fax Provider"
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"IsInstalled",%REG_DWORD_OVERWRITE%, 1
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"DontAsk",%REG_DWORD%, 2
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"Version",,"%VERSION_STR%"
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"Locale",,"%LOCALE_ID%"
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"StubPath",,""
+
+[FaxReg.PerUserStub.UnInstall.Provider]
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"IsInstalled",%REG_DWORD_OVERWRITE%, 0
+HKLM,%KEY_ACTIVE_SETUP_PROVIDER%,"StubPath",,"rundll32.exe %11%\Setup\FxsOcm.dll,XP_UninstallProvider"
+
+[Fax.Install.PerUser]
+AddReg = FaxReg.EventSounds.PerUser, \
+         FaxReg.Setup.PerUser
+DelReg = FaxReg.DelOnUpgrade.FromW2K.PerUser
+
+[Fax.Install.PerUser.AppUpgrade]
+AddReg          = FaxReg.EventSounds.PerUser, \
+                  FaxReg.Setup.PerUser
+DelReg          = FaxReg.DelOnUpgrade.FromW2K.PerUser
+ProfileItems    = Fax.InstallLink.WhereDidMyFaxGo
+
+[Fax.UnInstall.PerUser]
+DelReg          = FaxReg.RemoveTree.PerUser
+ProfileItems    = Fax.UninstallLink.WhereDidMyFaxGo
+
+[Fax.UnInstall.PerUser.WhereDidMyFaxGo]
+ProfileItems    = Fax.UninstallLink.WhereDidMyFaxGo
+
+
+[FaxReg.CoverPageAssociation]
+HKCR,".cov",,%REG_SZ_OVERWRITE%, %str_CoverPage%
+HKCR,".cpe",,%REG_SZ_OVERWRITE%, %str_CoverPage%
+HKCR,%str_CoverPage%,,%REG_SZ%, %str_FaxCoverpageFile%
+HKCR,%str_CoverPage%,"FriendlyTypeName",%REG_EXPAND_SZ%, "@%systemroot%\system32\fxscover.exe,-2332"
+HKCR,%str_CoverPage%\DefaultIcon,,%REG_EXPAND_SZ%, "%systemroot%\system32\fxscover.exe,-2100"
+HKCR,%str_CoverPage%\Shell\Open\Command,,%REG_SZ_EXPAND_OVERWRITE%,%systemroot%\system32\fxscover.exe """%1"""
+HKCR,%str_CoverPage%\Shell\Print\Command,,%REG_SZ_EXPAND_OVERWRITE%,%systemroot%\system32\fxscover.exe /p """%1"""
+
+[FaxReg.AwdAssociation]
+HKCR,".awd",,%REG_SZ_OVERWRITE%, %str_AwdFile%
+HKCR,%str_AwdFile%,,%REG_SZ%, %str_FaxAwdFileType%
+HKCR,%str_AwdFile%,"FriendlyTypeName",%REG_EXPAND_SZ%, "@%systemroot%\system32\fxsres.dll,-119"
+HKCR,%str_AwdFile%\Shell\Open\Command,,%REG_SZ_EXPAND_OVERWRITE%,%systemroot%\system32\awdvstub.exe """%1"""
+HKCR,%str_AwdFile%\Shell\Convert\Command,,%REG_SZ_EXPAND_OVERWRITE%,%systemroot%\system32\awdvstub.exe /c """%1"""
+
+[FaxReg.EventSounds.PerUser]
+HKCU,"AppEvents\EventLabels\FaxNew"         ,,%REG_SZ%,%str_FaxNew%
+HKCU,"AppEvents\EventLabels\FaxSent"        ,,%REG_SZ%,%str_FaxSent%
+HKCU,"AppEvents\EventLabels\FaxError"       ,,%REG_SZ%,%str_FaxError%
+HKCU,"AppEvents\EventLabels\FaxLineRings"   ,,%REG_SZ%,%str_FaxLineRings%
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxNew\.Default"      ,, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\notify.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxNew\.Current"      ,, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\notify.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxSent\.Default"     ,, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\tada.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxSent\.Current"     ,, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\tada.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxError\.Default"    ,, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\ding.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxError\.Current"    ,, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\ding.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxLineRings\.Default",, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\ringin.wav
+HKCU,"AppEvents\Schemes\Apps\explorer\FaxLineRings\.Current",, %REG_SZ_EXPAND_OVERWRITE%,%systemroot%\media\ringin.wav
+
+[FaxReg.Setup.PerUser]
+HKCU,Software\Microsoft\Fax\Setup,    "CoverPageDir",%REG_SZ_OVERWRITE%,%str_FaxPersonalCoverpages%
+
+[FaxReg.EventLogging]
+HKLM, SYSTEM\CurrentControlSet\Services\Eventlog\Application\Microsoft Fax, "EventMessageFile", %REG_SZ_EXPAND_OVERWRITE%, "%systemroot%\system32\fxsevent.dll"
+HKLM, SYSTEM\CurrentControlSet\Services\Eventlog\Application\Microsoft Fax, "CategoryMessageFile", %REG_SZ_EXPAND_OVERWRITE%, "%systemroot%\system32\fxsevent.dll"
+HKLM, SYSTEM\CurrentControlSet\Services\Eventlog\Application\Microsoft Fax, "CategoryCount", %REG_DWORD_OVERWRITE%, 0x00000004
+HKLM, SYSTEM\CurrentControlSet\Services\Eventlog\Application\Microsoft Fax, "TypesSupported", %REG_DWORD_OVERWRITE%, 0x00000007
+
+[FaxReg.MSFax]
+HKLM, Software\Microsoft\Fax, "Retries", %REG_DWORD%, 0x00000003
+HKLM, Software\Microsoft\Fax, "Retry Delay", %REG_DWORD%, 0x0000000a
+HKLM, Software\Microsoft\Fax, "QueueState", %REG_DWORD_OVERWRITE%, 0x00000000
+HKLM, Software\Microsoft\Fax, "NextJobNumber", %REG_DWORD_OVERWRITE%, 0x00000003
+HKLM, Software\Microsoft\Fax, "Branding", %REG_DWORD_OVERWRITE%, 0x00000001
+HKLM, Software\Microsoft\Fax, "UseDeviceTsid", %REG_DWORD_OVERWRITE%, 0x00000001
+HKLM, Software\Microsoft\Fax, "Inbound Profile", %REG_SZ_OVERWRITE%
+HKLM, Software\Microsoft\Fax, "ServerCoverPageOnly", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax, "LastUniqueLineId", %REG_DWORD_OVERWRITE%, 0x00010001
+
+[FaxReg.MSFax.Security]
+"D:PAI(A;OICI;FA;;;BA)(A;OICI;RCSDKRKW;;;NS)"      ; Built-in administrators have full access
+                                                   ; Network Service has - KEY_READ | KEY_WRITE | DELETE | READ_CONTROL
+
+[FaxReg.MSFax.Upgrade]
+HKLM, Software\Microsoft\Fax, "Inbound Profile", %REG_SZ_OVERWRITE%
+
+[FaxReg.MSFax.Upgrade.Security]
+"D:PAI(A;OICI;FA;;;BA)(A;OICI;RCSDKRKW;;;NS)"      ; Built-in administrators have full access
+                                                   ; Network Service has - KEY_READ | KEY_WRITE | DELETE | READ_CONTROL
+
+[FaxReg.MSFax.ServerSpecific.Section]
+HKLM, Software\Microsoft\Fax, "Dirty Days", %REG_DWORD%, 0x00000007
+HKLM, Software\Microsoft\Fax\Setup, "IsFaxPrinterShared", %REG_DWORD%, 0x00000000
+
+[FaxReg.ActivityLogging]
+HKLM, Software\Microsoft\Fax\ActivityLogging, "LogIncoming", %REG_DWORD_OVERWRITE%, 0x00000001
+HKLM, Software\Microsoft\Fax\ActivityLogging, "LogOutgoing", %REG_DWORD_OVERWRITE%, 0x00000001
+HKLM, Software\Microsoft\Fax\ActivityLogging, "DBFile", %REG_SZ_OVERWRITE%, %16419%\%str_ActivityLog%  ;;; 16419=CSIDL_COMMON_APPDATA (i.e. All Users\Application Data\..., 0x0023 or'd with 0x4000)
+
+[FaxReg.Receipts]
+HKLM, Software\Microsoft\Fax\Receipts, "Port", %REG_DWORD_OVERWRITE%, 0x00000019    ;; 25 = Default SMTP port
+HKLM, Software\Microsoft\Fax\Receipts, "Type", %REG_DWORD_OVERWRITE%, 0x00000000    ;; No receipts by default
+
+[FaxReg.Inbox.Server.Section]
+HKLM, Software\Microsoft\Fax\Inbox, "Use", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\Inbox, "SizeQuotaWarn", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\Inbox, "HighWatermark", %REG_DWORD%, 0x00000078
+HKLM, Software\Microsoft\Fax\Inbox, "LowWatermark", %REG_DWORD%, 0x00000073
+HKLM, Software\Microsoft\Fax\Inbox, "AgeLimit", %REG_DWORD%, 0x0000005a
+HKLM, Software\Microsoft\Fax\Inbox, "Folder", %REG_SZ_OVERWRITE%, %16419%\%str_Inbox%  ;;; 16419=CSIDL_COMMON_APPDATA (i.e. All Users\Application Data\...,0x0023 or'd with 0x4000)
+
+[FaxReg.Inbox.Desktop.Section]
+HKLM, Software\Microsoft\Fax\Inbox, "Use", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\Inbox, "SizeQuotaWarn", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\Inbox, "HighWatermark", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\Inbox, "LowWatermark", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\Inbox, "AgeLimit", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\Inbox, "Folder", %REG_SZ_OVERWRITE%, %16419%\%str_Inbox%  ;;; 16419=CSIDL_COMMON_APPDATA (i.e. All Users\Application Data\...,0x0023 or'd with 0x4000)
+
+[FaxReg.SentItems.Server.Section]
+HKLM, Software\Microsoft\Fax\SentItems, "Use", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\SentItems, "SizeQuotaWarn", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\SentItems, "HighWatermark", %REG_DWORD%, 0x00000064
+HKLM, Software\Microsoft\Fax\SentItems, "LowWatermark", %REG_DWORD%, 0x0000005F
+HKLM, Software\Microsoft\Fax\SentItems, "AgeLimit", %REG_DWORD%, 0x0000003C
+HKLM, Software\Microsoft\Fax\SentItems, "Folder", %REG_SZ_OVERWRITE%, %16419%\%str_SentItems%  ;;; 16419=CSIDL_COMMON_APPDATA (i.e. All Users\Application Data\...,0x0023 or'd with 0x4000)
+
+[FaxReg.SentItems.Desktop.Section]
+HKLM, Software\Microsoft\Fax\SentItems, "Use", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\SentItems, "SizeQuotaWarn", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\SentItems, "HighWatermark", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\SentItems, "LowWatermark", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\SentItems, "AgeLimit", %REG_DWORD%, 0x00000000
+HKLM, Software\Microsoft\Fax\SentItems, "Folder", %REG_SZ_OVERWRITE%, %16419%\%str_SentItems%  ;;; 16419=CSIDL_COMMON_APPDATA (i.e. All Users\Application Data\...,0x0023 or'd with 0x4000)
+
+[FaxReg.OriginalSetup]
+HKLM, Software\Microsoft\Fax\Setup\Original Setup Data, "CSID", %REG_SZ%, %str_CSID_Fax%
+HKLM, Software\Microsoft\Fax\Setup\Original Setup Data, "TSID", %REG_SZ%, %str_TSID_Fax%
+HKLM, Software\Microsoft\Fax\Setup\Original Setup Data, "Rings", %REG_DWORD%, 0x00000002
+HKLM, Software\Microsoft\Fax\Setup\Original Setup Data, "Flags", %REG_DWORD%, 0x00000002
+
+[FaxReg.OriginalSetup.security]
+"D:PAI(A;OICI;FA;;;BA)(A;OICI;RCSDKRKW;;;NS)"      ; Built-in administrators have full access
+                                                   ; Network Service has - KEY_READ | KEY_WRITE | DELETE | READ_CONTROL
+
+[FaxReg.Setup]
+HKLM, Software\Microsoft\Fax\Setup, "Installed", %REG_DWORD_OVERWRITE%, 0x00000001
+HKLM, Software\Microsoft\Fax\Setup, "ServerCoverPageDir", %REG_SZ_OVERWRITE%, %str_CoverPages%
+
+[FaxReg.Setup.security]
+"D:PAI(A;OICI;FA;;;BA)(A;OICI;RCSDKRKW;;;NS)(A;;KR;;;BU)"      ; This subkey is designed to give Authenticated users read permissions
+                                                               ;    Built-in administrators have full access
+                                                               ;    Network Service has - KEY_READ | KEY_WRITE | DELETE | READ_CONTROL
+                                                               ;    Authenticated users - KEY_READ (Includes notify)
+
+[FaxReg.DelOnUpgrade.FromXpDotNet]
+HKLM, Software\Microsoft\Fax, "CfgWzdrDevice", %REG_DWORD%, 0x00000001
+HKLM, Software\Microsoft\Fax\Client, "ServerCoverPageDir", %REG_SZ_OVERWRITE%, %str_CoverPages%
+HKLM, Software\Microsoft\Fax\Setup\ServiceStartup, "RPCReady", %REG_DWORD_OVERWRITE%, 0x00000000 ; Notify clients the service's RPC server is ready
+HKLM, Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "LoggingFolder", %REG_EXPAND_SZ%, "%windir%\system32\LogFiles\Fax"
+
+
+[FaxReg.Client]
+HKLM, Software\Microsoft\Fax\Setup, "ServerCoverPageDir", %REG_SZ_OVERWRITE%, %str_CoverPages%
+HKLM, Software\Microsoft\Fax\Client\ServiceStartup, "RPCReady", %REG_DWORD_OVERWRITE%, 0x00000000    ; Notify clients the service's RPC server is ready
+
+[FaxReg.Client.security]
+"D:PAI(A;OICI;FA;;;BA)(A;OICI;RCSDKRKW;;;NS)(A;;KR;;;BU)"      ; This subkey is designed to give Authenticated users read permissions
+                                                               ;    Built-in administrators have full access
+                                                               ;    Network Service has - KEY_READ | KEY_WRITE | DELETE | READ_CONTROL
+                                                               ;    Authenticated users - KEY_READ (Includes notify)
+
+[FaxReg.Client.ServerSpecific.Section]
+HKLM, Software\Microsoft\Fax\Client, "CfgWzdrDevice", %REG_DWORD%, 0x00000001
+
+[FaxReg.Client.ServerSpecific.Section.Security]
+"D:PAI(A;OICI;FA;;;BA)(A;OICI;RCSDKRKW;;;NS)(A;;KR;;;BU)"      ; This subkey is designed to give Authenticated users read permissions
+                                                               ;    Built-in administrators have full access
+                                                               ;    Network Service has - KEY_READ | KEY_WRITE | DELETE | READ_CONTROL
+                                                               ;    Authenticated users - KEY_READ (Includes notify)
+
+[FaxReg.PerformanceCounters]
+HKLM, System\CurrentControlSet\Services\Fax\Performance, "Open", %REG_SZ_OVERWRITE%, "OpenFaxPerformanceData"
+HKLM, System\CurrentControlSet\Services\Fax\Performance, "Close", %REG_SZ_OVERWRITE%, "CloseFaxPerformanceData"
+HKLM, System\CurrentControlSet\Services\Fax\Performance, "Collect", %REG_SZ_OVERWRITE%, "CollectFaxPerformanceData"
+HKLM, System\CurrentControlSet\Services\Fax\Performance, "Library", %REG_SZ_EXPAND_OVERWRITE%, "%systemroot%\\system32\\fxsperf.dll"
+
+[FaxReg.ExchangeClientExtension]
+HKLM, Software\Wow6432Node\Microsoft\Exchange\Client\Extensions, "FaxExtension", %REG_SZ_OVERWRITE%, "4.0;%11%\fxsext32.dll;1;00000100000000"
+HKLM, Software\Wow6432Node\Microsoft\Exchange\Client\Extensions, "Outlook Setup Extension", %REG_SZ_OVERWRITE%, "4.0;outxxx.dll;7;000000000000000;0000000000;OutXXX"
+
+[FaxReg.RoutingExtensions]
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension, "FriendlyName", %REG_SZ%, %str_MSRoutingExtension%
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension, "ImageName", %REG_SZ_EXPAND_OVERWRITE%, "%systemroot%\system32\fxsroute.dll"
+
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Email, "FriendlyName", %REG_SZ%, %str_RouteThroughEmail%
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Email, "Function Name", %REG_SZ%, "FaxRouteEmail"
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Email, "Guid", %REG_SZ%, "{6bbf7bfe-9af2-11d0-abf7-00c04fd91a4e}"
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Email, "Priority", %REG_DWORD%, 0x00000001
+
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Folder, "FriendlyName", %REG_SZ%, %str_StoreInFolder%
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Folder, "Function Name", %REG_SZ%, "FaxRouteStore"
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Folder, "Guid", %REG_SZ%, "{92041a90-9af2-11d0-abf7-00c04fd91a4e}"
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Folder, "Priority", %REG_DWORD%, 0x00000002
+
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Printing, "FriendlyName", %REG_SZ%, %str_Print%
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Printing, "Function Name", %REG_SZ%, "FaxRoutePrint"
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Printing, "Guid", %REG_SZ%, "{aec1b37c-9af2-11d0-abf7-00c04fd91a4e}"
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Printing, "Priority", %REG_DWORD%, 0x00000003
+
+[FaxReg.ModemDeviceProvider]
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "FriendlyName", %REG_SZ%, %str_MSModemDeviceProvider% 
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "ImageName", %REG_SZ_EXPAND_OVERWRITE%, "%systemroot%\system32\fxst30.dll"
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "ProviderName", %REG_SZ%, %str_WinCTI_SrvPrvdr%
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "LoggingEnabled", %REG_DWORD%, 0x00000002
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "MaxLogFileCount", %REG_DWORD%, 0x0000000a
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "MaxLogFileSize", %REG_DWORD%, 0x00019000
+
+[FaxReg.ModemDeviceProvider.LoggingFolders]
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "LoggingFolderIncoming", %REG_EXPAND_SZ%, "%windir%\system32\LogFiles\Fax\Incoming"
+HKLM,Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}, "LoggingFolderOutgoing", %REG_EXPAND_SZ%, "%windir%\system32\LogFiles\Fax\Outgoing"
+
+[FaxReg.OutboundRouting]
+HKLM,Software\Microsoft\Fax\Outbound Routing
+
+[FaxReg.RemoveTree.HKLM]
+HKLM, Software\Microsoft\Fax, "Retries"
+HKLM, Software\Microsoft\Fax, "Retry Delay"
+HKLM, Software\Microsoft\Fax, "QueueState"
+HKLM, Software\Microsoft\Fax, "NextJobNumber"
+HKLM, Software\Microsoft\Fax, "Branding"
+HKLM, Software\Microsoft\Fax, "UseDeviceTsid"
+HKLM, Software\Microsoft\Fax, "Inbound Profile"
+HKLM, Software\Microsoft\Fax, "ServerCoverPageOnly"
+HKLM, Software\Microsoft\Fax, "LastUniqueLineId"
+HKLM, Software\Microsoft\Fax, "Dirty Days"
+HKLM, Software\Microsoft\Fax, "UseDefaultFaultHandlingPolicy"
+HKLM, Software\Microsoft\Fax\Setup
+HKLM, Software\Microsoft\Fax\ActivityLogging
+HKLM, Software\Microsoft\Fax\Receipts
+HKLM, Software\Microsoft\Fax\Inbox
+HKLM, Software\Microsoft\Fax\SentItems
+HKLM, Software\Microsoft\Fax\Client
+HKLM, Software\Microsoft\Fax\Devices
+HKLM, Software\Microsoft\Fax\Logging
+HKLM, Software\Microsoft\Fax\Security
+HKLM, Software\Microsoft\Fax\TAPIDevices
+HKLM, Software\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}
+HKLM,Software\Microsoft\Fax\Routing Extensions
+HKLM,Software\Microsoft\Fax\Outbound Routing
+
+[FaxReg.RemoveTree.PerUser]
+HKCU, "Software\Microsoft\Fax"
+HKCU, "AppEvents\EventLabels\FaxNew"
+HKCU, "AppEvents\EventLabels\FaxSent"
+HKCU, "AppEvents\EventLabels\FaxError"
+HKCU, "AppEvents\EventLabels\FaxLineRings"
+HKCU, "AppEvents\Schemes\Apps\explorer\FaxNew"
+HKCU, "AppEvents\Schemes\Apps\explorer\FaxSent"
+HKCU, "AppEvents\Schemes\Apps\explorer\FaxError"
+HKCU, "AppEvents\Schemes\Apps\explorer\FaxLineRings"
+
+[FaxReg.DelOnUpgrade.FromW2K]
+HKLM,Software\Microsoft\Fax, "DebugLevel"
+HKLM,Software\Microsoft\Fax, "QueuePaused"
+HKLM,Software\Microsoft\Fax\Device Providers\Microsoft Modem Device Provider
+HKLM,Software\Microsoft\Fax\Devices
+HKLM,Software\Microsoft\Fax\Security
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Inbox
+HKLM,Software\Microsoft\Fax\Routing Extensions\Microsoft Routing Extension\Routing Methods\Printing, "FriendlyName"
+HKLM,Software\Microsoft\Fax\Setup, "InstalledPlatforms"
+HKLM,Software\Microsoft\Fax\Setup\Original Setup Data, "Printer"
+HKLM,Software\Microsoft\Fax\Setup\Original Setup Data, "Store Directory"
+HKLM,Software\Microsoft\Fax\Setup\Original Setup Data, "Profile"
+HKLM,Software\Microsoft\Fax\Setup\Original Setup Data, "Mask"
+
+[FaxReg.DelOnUpgrade.FromW2K.PerUser]
+HKCU,Software\Microsoft\Fax\Queue
+HKCU,Software\Microsoft\Fax\Setup,    "CoverPageEditor"
+HKCU,Software\Microsoft\Fax\UserInfo, "AlwaysOnTop"
+HKCU,Software\Microsoft\Fax\UserInfo, "EnableManualAnswer"
+HKCU,Software\Microsoft\Fax\UserInfo, "LastCountryID"
+HKCU,Software\Microsoft\Fax\UserInfo, "LastRecipientAreaCode"
+HKCU,Software\Microsoft\Fax\UserInfo, "LastUseDialingRules"
+HKCU,Software\Microsoft\Fax\UserInfo, "OnTaskBar"
+HKCU,Software\Microsoft\Fax\UserInfo, "SoundNotification"
+HKCU,Software\Microsoft\Fax\UserInfo, "VisualNotification"
+HKCU,"AppEvents\EventLabels\Incoming-Fax"
+HKCU,"AppEvents\EventLabels\Outgoing-Fax"
+HKCU,"AppEvents\Schemes\Apps\explorer\Incoming-Fax"
+HKCU,"AppEvents\Schemes\Apps\explorer\Outgoing-Fax"
+
+[FaxReg.DelOnUpgrade.FromW9X]
+HKLM, "Software\Microsoft\At Work Fax"
+HKLM, "Software\Microsoft\Exchange\Client\Extensions", "MicrosoftFax", %REG_SZ%, "4.0;awfext32.dll;10;;;AWFAX"
+
+
+[FaxSvc.Service]
+DisplayName   = %str_FaxServiceDisplayName%
+ServiceType   = 16  ; SERVICE_WIN32_OWN_PROCESS
+StartType     = 2   ; SERVICE_AUTO_START
+ErrorControl  = 1   ; SERVICE_ERROR_NORMAL
+ServiceBinary = %systemroot%\system32\fxssvc.exe
+StartName     = "NT AUTHORITY"\NetworkService
+Dependencies  = TapiSrv, RpcSs, PlugPlay, Spooler
+Description   = %str_FaxServiceDescription%
+Security      = "D:(A;;LCRP;;;WD)(A;;CCLCSWRPWPDTLOCRRC;;;NS)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)"
+
+
+
+[Strings]
+
+;=============================================
+; Begin: Constants used in INF
+;=============================================
+
+
+
+REG_SZ_OVERWRITE        =0x00000    ;; FLG_ADDREG_TYPE_SZ
+REG_SZ                  =0x00002    ;; FLG_ADDREG_TYPE_SZ | FLG_ADDREG_NOCLOBBER
+
+REG_BINARY_OVERWRITE    =0x00001    ;; FLG_ADDREG_BINVALUETYPE
+REG_BINARY              =0x00003    ;; FLG_ADDREG_BINVALUETYPE | FLG_ADDREG_NOCLOBBER
+
+REG_SZ_EXPAND_OVERWRITE =0x20000    ;; FLG_ADDREG_TYPE_EXPAND_SZ
+REG_EXPAND_SZ           =0x20002    ;; FLG_ADDREG_TYPE_EXPAND_SZ | FLG_ADDREG_NOCLOBBER
+
+REG_DWORD_OVERWRITE     =0x10001    ;; FLG_ADDREG_TYPE_DWORD
+REG_DWORD               =0x10003    ;; FLG_ADDREG_TYPE_DWORD | FLG_ADDREG_NOCLOBBER
+
+
+PRODUCT_SKU_PERSONAL            = 0x0001
+PRODUCT_SKU_PROFESSIONAL        = 0x0002
+PRODUCT_SKU_SERVER              = 0x0004
+PRODUCT_SKU_ADVANCED_SERVER     = 0x0008
+PRODUCT_SKU_DATA_CENTER         = 0x0010
+PRODUCT_SKU_DESKTOP_EMBEDDED    = 0x0020
+PRODUCT_SKU_SERVER_EMBEDDED     = 0x0040
+PRODUCT_SKU_WEB_SERVER          = 0x0080
+
+PRODUCT_DESKTOP_SKUS            = 0x0023    ; PRODUCT_SKU_PERSONAL | PRODUCT_SKU_PROFESSIONAL | PRODUCT_SKU_DESKTOP_EMBEDDED
+PRODUCT_SERVER_SKUS             = 0x00DC    ; PRODUCT_SKU_SERVER | PRODUCT_SKU_ADVANCED_SERVER | PRODUCT_SKU_DATA_CENTER | PRODUCT_SKU_SERVER_EMBEDDED | PRODUCT_SKU_WEB_SERVER
+PRODUCT_SHARED_SKU              = 0x005C    ; PRODUCT_SKU_SERVER | PRODUCT_SKU_ADVANCED_SERVER | PRODUCT_SKU_DATA_CENTER | PRODUCT_SKU_SERVER_EMBEDDED
+PRODUCT_ALL_SKUS                = 0xFFFF
+
+FILE_ATTRIBUTE_READONLY         = 0x00000001  
+FILE_ATTRIBUTE_HIDDEN           = 0x00000002  
+FILE_ATTRIBUTE_SYSTEM           = 0x00000004  
+FILE_ATTRIBUTE_NORMAL           = 0x00000080  
+FILE_ATTRIBUTE_SUPER_HIDDEN     = 0x00000006    ; this is FILE_ATTRIBUTE_HIDDEN | FILE_ATTRIBUTE_SYSTEM
+
+;=============================================
+; End: Constants used in INF
+;=============================================
+
+;=============================================
+; Begin: NON-Localized Strings
+;=============================================
+
+str_addins                  = "addins"
+str_FaxPath                 = "Microsoft\Windows NT\MSFax"
+str_FaxServiceName          = "Fax"
+str_FaxServiceDisplayName   = "Fax"
+str_DefaultPrinterName      = "Fax"
+
+str_CoverPage               = "Coverpage"
+str_AwdFile                 = "awdfile"
+
+str_Inbox                   = "Microsoft\Windows NT\MSFax\Inbox"
+str_SentItems               = "Microsoft\Windows NT\MSFax\SentItems"
+str_Queue                   = "Microsoft\Windows NT\MSFax\Queue"
+str_ActivityLog             = "Microsoft\Windows NT\MSFax\ActivityLog"
+str_CoverPages              = "Microsoft\Windows NT\MSFax\Common Coverpages"
+str_PSSLogIncoming          = "LogFiles\Fax\Incoming"
+str_PSSLogOutgoing          = "LogFiles\Fax\Outgoing"
+
+str_DownLevelClientShare    = "faxclient"
+
+str_DownLevelClients        = "clients\faxclient"
+str_PrgFiles                = "PrgFiles"
+str_MsFax                   = "msfax"
+str_Windows                 = "Windows"
+str_System                  = "System"
+str_Drivers                 = "Drivers"
+
+str_CSID_Fax                = "Fax"
+str_TSID_Fax                = "Fax"
+
+str_CoverPageShareName      = "FxsSrvCp$"
+
+str_WinCTI_SrvPrvdr         = "Windows Telephony Service Provider for Universal Modem Driver"
+
+KEY_ACTIVE_SETUP_NT                 = "SOFTWARE\Microsoft\Active Setup\Installed Components\{8b15971b-5355-4c82-8c07-7e181ea07608}"
+KEY_ACTIVE_SETUP_PROVIDER           = "SOFTWARE\Microsoft\Active Setup\Installed Components\{94de52c8-2d59-4f1b-883e-79663d2d9a8c}"
+PRODUCT_NAME                        = "Fax"
+PRODUCT_NAME_PROVIDER               = "Fax Provider"
+VERSION_STR                         = "5.1"
+LOCALE_ID                           = "EN"
+
+;=============================================
+; End: NON-Localized Strings
+;=============================================
+
+;=============================================
+; Begin: Localized Strings
+;=============================================
+
+str_confdent                = "confident.cov"
+str_fyi                     = "fyi.cov"
+str_generic                 = "generic.cov"
+str_urgent                  = "urgent.cov"
+
+str_fax_desc                = "Fax Services"
+str_fax_tip                 = "Allows fax to be sent and received"
+str_FaxCoverpageFile        = "Fax Cover Page File"
+str_FaxAwdFileType          = "Windows 95 Fax File (obsolete)"
+str_IncomingFax             = "Incoming Fax"
+str_OutgoingFax             = "Outgoing Fax"
+str_FaxError                = "Fax error"
+str_FaxLineRings            = "Fax line rings"
+str_FaxNew                  = "New fax"
+str_FaxSent                 = "Fax sent"
+str_RouteThroughEmail       = "Route through e-mail"
+str_StoreInFolder           = "Store in a folder"
+str_Print                   = "Print"
+
+str_DownLevelClientComment  = "Microsoft Shared Fax Clients"
+
+str_FaxPersonalCoverpages   = "\Fax\Personal Coverpages\"
+
+str_MyFaxes                 = "My Faxes"
+str_CommonCoverPages        = "Common Cover Pages"
+
+str_FaxCoverPageLink        = "Fax Cover Page Editor"
+str_FaxGroup                = "Accessories\Communications\Fax"
+str_AWFaxGroup              = "Accessories\Fax"
+
+str_FaxW9XCoverPageLink     = "Cover Page Editor"
+
+str_FaxW2KMyFaxesLink       = "My Faxes"
+str_FaxW2KSendCoverPageLink = "Send Cover Page Fax"
+str_FaxW2KHelpLink          = "Help"
+str_FaxW2KMMCSnapinLink     = "Fax Service Management"
+str_FaxW2KFaxQueueLink      = "Fax Queue"
+
+str_FaxSendWizardLink       = "Send a Fax..."
+
+str_FaxClientLink           = "Fax Console"
+
+str_FaxConfigWzrdLink       = "Fax Configuration Wizard"
+str_FaxConfigWzrdInfoTip    = "Configures the fax devices on your computer"
+str_FaxMMCLink              = "Fax Service Manager"
+
+str_MSRoutingExtension      = "Microsoft Routing Extension"
+str_MSModemDeviceProvider   = "Microsoft Modem Device Provider"
+
+str_CoverPageShareComment   = "Common Fax Cover Pages Folder"
+str_PrinterShareComment     = "Fax Printer"
+
+str_FaxServiceDescription   = "Enables you to send and receive faxes, utilizing fax resources available on this computer or on the network."
+
+str_FaxMailTransport        = "Fax Mail Transport"
+
+str_WhereDidMyFaxGo         = "Where Did My Fax Go"
+
+str_SBSFaxGroup             = "Microsoft Shared Fax Client"
+
+
+
+
+
+
+
+
+
+
+
+cdname      = "Windows XP Professional x64 Edition CD-ROM"
+productname = "Windows XP Professional x64 Edition"
+
+
+bootname1    = "Windows XP Professional Setup Boot Disk"
+bootname2    = "Windows XP Professional Setup Disk #2"
+bootname3    = "Windows XP Professional Setup Disk #3"
+bootname4    = "Windows XP Professional Setup Disk #4"
+bootname5    = "Windows XP Professional Setup Disk #5"
+bootname6    = "Windows XP Professional Setup Disk #6"
+bootname7    = "Windows XP Professional Setup Disk #7"
+
+
+
+cdtagfile   = "\win51ap"
+
+cdtagfilei   = "\win51ip"
+
+cdtagfilem   = "\win51mp"
+
+cdtagfilea   = "\win51ap"
+
+boottagfile1      = "\disk101"
+boottagfile2      = "\disk102"
+boottagfile3      = "\disk103"
+boottagfile4      = "\disk104"
+boottagfile5      = "\disk105"
+boottagfile6      = "\disk106"
+boottagfile7      = "\disk107"
+
+spcdname	  = "Service Pack 1 CD-ROM"
+
+
+
+spcdtagfile   = "\win51ap.sp1"
+
+spcdtagfilei   = "\win51ip.sp1"
+
+spcdtagfilem   = "\win51mp.sp1"
+
+spcdtagfilea   = "\win51ap.sp1"
+
+

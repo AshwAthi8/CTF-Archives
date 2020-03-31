@@ -1,0 +1,249 @@
+ex=17
+Uninstall=P2P.Remove
+AddReg=GeneralRegKeys,PnrpRegKeys,Netsh.Add.Reg
+RegisterDlls=P2P.Register
+SizeApproximation=1
+StartServices=P2P
+CopyFiles=CopyFilesSection
+
+[P2P.Services]
+AddService=p2psvc,,P2PServiceInstall
+AddService=p2pimsvc,,P2PImServiceInstall
+AddService=p2pgasvc,,P2PGaServiceInstall
+AddService=PNRPSvc,,PnrpServiceInstall
+
+[P2P.Remove]
+UnregisterDlls=P2P.Register
+DelReg=GeneralRegKeys,DelSvcHostKeys,DelP2PKeys,Netsh.Uninstall.Remove.Reg
+
+[P2P.Remove.Services]
+DelService=p2psvc,0x0200
+DelService=p2pgasvc,0x0200
+DelService=PNRPSvc,0x0200
+DelService=p2pimsvc,0x0200
+
+;-------------------------------------------------
+
+
+[DestinationDirs]
+CopyFilesSection=11
+
+
+[CopyFilesSection]
+p2p.dll
+p2psvc.dll
+p2pgasvc.dll
+p2pgraph.dll
+pnrpNsp.dll
+p2pnetsh.dll
+
+
+[P2P.Register]
+11,, p2p.dll, 2, 600
+
+;-------------------------------------------------
+
+[GeneralRegKeys]
+HKLM,"SOFTWARE\Microsoft\PeerNet","Version",,%VER_PRODUCTVERSION_STR%
+
+[PnrpRegKeys]
+HKLM, "SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP",, 0x00000010
+HKLM, "SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global",, 0x00000010
+HKLM, "SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global",SeedServer, 0x00000002,"pnrp.ipv6.microsoft.com"
+HKLM, "SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-SiteLocal",, 0x00000010
+HKLM, "SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-LinkLocal",, 0x00000010
+
+[PnrpRegKeys.security]
+"D:(A;OICI;KA;;;SY)(A;OICI;KA;;;BA)(A;OICI;KA;;;LS)(A;OICI;KA;;;CO)(A;OICI;KR;;;AU)"
+
+[DelP2PKeys]
+HKLM,"SOFTWARE\Microsoft\PeerNet"
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet"
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\PeerNet"
+
+[DelSvcHostKeys]
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost",p2psvc
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost",p2pgasvc
+
+[Netsh.Add.Reg]
+HKLM,"SOFTWARE\Microsoft\NetSh","p2pnetsh",0x00000002,"p2pnetsh.dll" 
+
+[Netsh.Uninstall.Remove.Reg]
+HKLM,"SOFTWARE\Microsoft\NetSh","p2pnetsh"
+
+
+
+;-------------------------------------------------
+
+[P2PServiceInstall]
+DisplayName     = %P2PService.DisplayName%
+ServiceType     = 0x20
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %11%\svchost.exe -k p2psvc
+Dependencies    = PNRPSvc, p2pgasvc
+Security        = "D:(D;;GA;;;BG)(A;;GA;;;SY)(A;;GA;;;BA)(A;;GRGX;;;PU)(A;;GA;;;SO)(A;;GRRP;;;AU)"
+AddReg          = P2PService.Reg
+Description     = %P2PService.Description%
+StartName       = "NT AUTHORITY\LocalService"
+
+[P2PService.Reg]
+HKR, Parameters, ServiceDll,  0x00020000,  "%%SystemRoot%%\system32\p2psvc.dll"
+HKR, Parameters, ServiceMain, 0x00000000,  "GroupServiceMain"
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost","p2psvc",0x00010008,"p2psvc"
+
+;-------------------------------------------------
+
+[P2PImServiceInstall]
+DisplayName     = %P2PImService.DisplayName%
+ServiceType     = 0x20
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %11%\svchost.exe -k p2psvc
+Dependencies    =
+Security        = "D:(D;;GA;;;BG)(A;;GA;;;SY)(A;;GA;;;BA)(A;;GRGX;;;PU)(A;;GA;;;SO)(A;;GRRP;;;AU)"
+AddReg          = P2PImService.Reg
+Description     = %P2PImService.Description%
+StartName       = "NT AUTHORITY\LocalService"
+
+[P2PImService.Reg]
+HKR, Parameters, ServiceDll,  0x00020000,  "%%SystemRoot%%\system32\p2psvc.dll"
+HKR, Parameters, ServiceMain, 0x00000000,  "IMServiceMain"
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost","p2psvc",0x00010008,"p2pimsvc"
+
+;-------------------------------------------------
+
+[P2PGaServiceInstall]
+DisplayName     = %P2PGaService.DisplayName%
+ServiceType     = 0x20
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %11%\svchost.exe -k p2psvc
+Dependencies    = p2pimsvc
+Security        = "D:(D;;GA;;;BG)(A;;GA;;;SY)(A;;GA;;;BA)(A;;GRGX;;;PU)(A;;GA;;;SO)(A;;GRRP;;;AU)"
+AddReg          = P2PGaService.Reg
+Description     = %P2PGaService.Description%
+StartName       = "NT AUTHORITY\LocalService"
+
+[P2PGaService.Reg]
+HKR, Parameters, ServiceDll,  0x00020000,  "%%SystemRoot%%\system32\p2pgasvc.dll"
+HKR, Parameters, ServiceMain, 0x00000000,  "SVCServiceMain"
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost","p2psvc",0x00010008,"p2pgasvc"
+
+;-------------------------------------------------
+
+[PnrpServiceInstall]
+DisplayName     = %PnrpService.DisplayName%
+ServiceType     = 0x20
+StartType       = 3
+ErrorControl    = 1
+ServiceBinary   = %11%\svchost.exe -k p2psvc
+Dependencies    = p2pimsvc
+Security        = "D:(D;;GA;;;BG)(A;;GA;;;SY)(A;;GA;;;BA)(A;;GRGX;;;PU)(A;;GA;;;SO)(A;;GRRP;;;AU)(A;;GR;;;LS)"
+AddReg          = PnrpService.Reg
+Description     = %PnrpService.Description%
+StartName       = "NT AUTHORITY\LocalService"
+
+[PnrpService.Reg]
+HKR, Parameters, ServiceDll,  0x00020000,  "%%SystemRoot%%\system32\p2psvc.dll"
+HKR, Parameters, ServiceMain, 0x00000000,  "SVCServiceMain"
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost","p2psvc",0x00010008,"PNRPSvc"
+
+;-------------------------------------------------
+
+[Strings]
+Msft = Microsoft
+Component_Name           = "Peer-to-Peer"
+Component_Description    = "Provides Peer-to-Peer Networking"
+Disk_Description         = "Peer Networking Setup"
+P2PService.DisplayName   = "Peer Networking"
+P2PService.Description   = "Provides Peer Networking services"
+P2PImService.DisplayName = "Peer Networking Identity Manager"
+P2PImService.Description = "Provides Identity service for Peer Networking"
+P2PGaService.DisplayName = "Peer Networking Group Authentication"
+P2PGaService.Description = "Provides Network Authentication for Peer Group Members."
+PnrpService.DisplayName  = "Peer Name Resolution Protocol"
+PnrpService.Description  = "Enables Serverless Peer Name Resolution over the Internet"
+VER_PRODUCTVERSION_STR   = "0.3"
+
+
+
+
+
+[p2p]
+CopyFiles=wCopyFilesSection
+RegisterDlls=wP2P.Register
+AddReg=wGeneralRegKeys,wPnrpRegKeys,wNetsh.Add.Reg
+
+[p2p.remove]
+UnRegisterDlls=wP2P.Register
+DelReg=wGeneralRegKeys,wDelSvcHostKeys,wDelP2PKeys,wNetsh.Uninstall.Remove.Reg
+
+[p2pserviceinstall]
+AddReg=wP2PService.Reg
+
+[p2pimserviceinstall]
+AddReg=wP2PImService.Reg
+
+[p2pgaserviceinstall]
+AddReg=wP2PGaService.Reg
+
+[pnrpserviceinstall]
+AddReg=wPnrpService.Reg
+
+[wDelSvcHostKeys]
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost",p2psvc
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\SvcHost",p2pgasvc
+
+[wDelP2PKeys]
+HKLM,"SOFTWARE\Microsoft\PeerNet",,0x00004000
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet",,0x00004000
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Tracing\Microsoft\PeerNet",,0x00004000
+
+[wPnrpService.Reg]
+HKR,Parameters,ServiceDll,0x00024000,"%%SystemRoot%%\system32\p2psvc.dll"
+HKR,Parameters,ServiceMain,0x00004000,SVCServiceMain
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost",p2psvc,0x00014008,PNRPSvc
+
+[wP2PGaService.Reg]
+HKR,Parameters,ServiceDll,0x00024000,"%%SystemRoot%%\system32\p2pgasvc.dll"
+HKR,Parameters,ServiceMain,0x00004000,SVCServiceMain
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost",p2psvc,0x00014008,p2pgasvc
+
+[wP2PImService.Reg]
+HKR,Parameters,ServiceDll,0x00024000,"%%SystemRoot%%\system32\p2psvc.dll"
+HKR,Parameters,ServiceMain,0x00004000,IMServiceMain
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost",p2psvc,0x00014008,p2pimsvc
+
+[wNetsh.Uninstall.Remove.Reg]
+HKLM,"SOFTWARE\Microsoft\NetSh",p2pnetsh
+
+[wP2P.Register]
+16425,,p2p.dll,2,600
+
+[wPnrpRegKeys]
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP",,0x00004010
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global",,0x00004010
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-Global",SeedServer,0x00004002,pnrp.ipv6.microsoft.com
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-SiteLocal",,0x00004010
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\PeerNet\PNRP\IPV6-LinkLocal",,0x00004010
+
+[wCopyFilesSection]
+p2p.dll,wp2p.dll
+p2pgraph.dll,wp2pgraph.dll
+pnrpNsp.dll,wpnrpNsp.dll
+p2pnetsh.dll,wp2pnetsh.dll
+
+[wNetsh.Add.Reg]
+HKLM,"SOFTWARE\Microsoft\NetSh",p2pnetsh,0x00004002,p2pnetsh.dll
+
+[wP2PService.Reg]
+HKR,Parameters,ServiceDll,0x00024000,"%%SystemRoot%%\system32\p2psvc.dll"
+HKR,Parameters,ServiceMain,0x00004000,GroupServiceMain
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Svchost",p2psvc,0x00014008,p2psvc
+
+[wGeneralRegKeys]
+HKLM,"SOFTWARE\Microsoft\PeerNet",Version,0x00004000,0.3
+
+[DestinationDirs]
+wCopyFilesSection=16425

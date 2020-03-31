@@ -1,0 +1,35 @@
+
+    ObjSystemRestore.CanNavigatePage = true ;
+    if ( screen.height > 540 ) {
+        ObjSystemRestore.SetFormSize( 770, 540 );
+    }
+    else {
+      ObjSystemRestore.SetFormSize( 620, 420 );
+    };
+    switch ( ObjSystemRestore.StartMode )
+    {
+    case 0 :
+        self.location="srui-main.htm";
+        break;
+    case 1 :
+        self.location="srui-success.htm";
+        break;
+    case 2 :
+        self.location="srui-fail.htm";
+        break;
+    case 3 :
+        self.location="srui-lowdisk.htm";
+        break;
+    case 4:
+        self.location="srui-interrupt.htm";
+        break;
+    }
+-->
+</SCRIPT>
+
+<BODY>
+
+<br>
+
+</BODY>
+</HTML>

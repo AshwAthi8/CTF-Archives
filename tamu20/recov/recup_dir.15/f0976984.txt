@@ -1,0 +1,488 @@
+ C4
+ExcludeFromSelect = PCI\VEN_1244&DEV_0a00                           ; FRITZpci
+ExcludeFromSelect = PCI\VEN_1244&DEV_0e00                           ; FRITZpci2
+ExcludeFromSelect = PCMCIA\AVM-ISDN_A-AC79                          ; FRITZpcmcia
+ExcludeFromSelect = AVMCOWANCI
+
+[AVM.NTamd64]
+%AVMB1PCI.DeviceDesc%  = AVMB1PCI.ndi, PCI\VEN_1244&DEV_0700
+%AVMC2.DeviceDesc%     = AVMC2.ndi,    PCI\VEN_1011&DEV_1065&SUBSYS_11001244&REV_04
+%AVMC4.DeviceDesc%     = AVMC4.ndi,    PCI\VEN_1011&DEV_1065&SUBSYS_08001244&REV_04
+%AVMFCPCI.DeviceDesc%  = AVMFCPCI.ndi,  PCI\VEN_1244&DEV_0a00
+%AVMFCPCI2.DeviceDesc% = AVMFCPCI2.ndi, PCI\VEN_1244&DEV_0e00
+%AVMFCPCM.DeviceDesc%  = AVMFCPCM.ndi,  PCMCIA\AVM-ISDN_A-AC79
+%AVMCOWAN.DeviceDesc%  = AVMCOWAN.ndi, AVMCOWANCI
+
+
+;-----------------------------------------------------------------------------
+;- B1 PCI --------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+[AVMB1PCI.ndi.NT.CoInstallers]
+AddReg          = AVMISDNB1.coinst.reg, AVMB1PCI.ndis.reg, AVMALLB1.ndis.reg, AVMISDNB1.nt.reg
+CopyFiles       = AVMISDN.Copy32bitDLLs,AVMISDN.Copy64bitDLLs
+
+[AVMB1PCI.ndi.NT]
+CopyFiles       = AVMALL.CopyFiles, AVMALLB1.CopyIDriver
+Characteristics = 0x04  ; NCF_PHYSICAL
+BusType         = 5
+
+;-----------------------------------------------------------------------------
+;- C2 ------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+[AVMC2.ndi.NT.CoInstallers]
+AddReg          = AVMISDNC2.coinst.reg, AVMC2.ndis.reg, AVMALLC2.ndis.reg, AVMISDNC2.nt.reg
+CopyFiles       = AVMISDN.Copy32bitDLLs,AVMISDN.Copy64bitDLLs
+
+[AVMC2.ndi.NT]
+CopyFiles       = AVMALL.CopyFiles, AVMALLC2.CopyIDriver
+Characteristics = 0x04  ; NCF_PHYSICAL
+BusType         = 5
+
+;-----------------------------------------------------------------------------
+;- C4 ------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+[AVMC4.ndi.NT.CoInstallers]
+AddReg          = AVMISDNC4.coinst.reg, AVMC4.ndis.reg, AVMALLC4.ndis.reg, AVMISDNC4.nt.reg
+CopyFiles       = AVMISDN.Copy32bitDLLs,AVMISDN.Copy64bitDLLs
+
+[AVMC4.ndi.NT]
+CopyFiles       = AVMALL.CopyFiles, AVMALLC4.CopyIDriver
+Characteristics = 0x04  ; NCF_PHYSICAL
+BusType         = 5
+
+;-----------------------------------------------------------------------------
+;- FRITZ!Card PCI ------------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMFCPCI.ndi.NT.CoInstallers]
+AddReg          = AVMISDNFPCI.coinst.reg, AVMFCPCI.ndis.reg, AVMALLFPCI.ndis.reg, AVMISDNFPCI.nt.reg
+CopyFiles       = AVMISDN.Copy32bitDLLs,AVMISDN.Copy64bitDLLs
+
+[AVMFCPCI.ndi.NT]
+CopyFiles       = AVMALLFPCI.CopyFiles
+Characteristics = 0x04  ; NCF_PHYSICAL
+BusType         = 5
+
+
+[AVMFCPCI2.ndi.NT.CoInstallers]
+AddReg          = AVMISDNFPCI.coinst.reg, AVMFCPCI2.ndis.reg, AVMALLFPCI.ndis.reg, AVMISDNFPCI.nt.reg
+CopyFiles       = AVMISDN.Copy32bitDLLs,AVMISDN.Copy64bitDLLs
+
+[AVMFCPCI2.ndi.NT]
+CopyFiles       = AVMALLFPCI.CopyFiles
+Characteristics = 0x04  ; NCF_PHYSICAL
+BusType         = 5
+
+;-----------------------------------------------------------------------------
+;- FRITZ!Card PCMCIA ---------------------------------------------------------
+;-----------------------------------------------------------------------------
+[AVMFCPCM.ndi.NT.CoInstallers]
+AddReg          = AVMISDNFPCM.coinst.reg, AVMFCPCM.ndis.reg, AVMALLFPCM.ndis.reg, AVMISDNFPCM.nt.reg
+CopyFiles       = AVMISDN.Copy32bitDLLs,AVMISDN.Copy64bitDLLs
+
+[AVMFCPCM.ndi.NT]
+CopyFiles       = AVMFCPCM.CopyFiles
+Characteristics = 0x04  ; NCF_PHYSICAL
+BusType         = 8
+
+;-----------------------------------------------------------------------------
+;- NDIS CoWAN Miniport -------------------------------------------------------
+;-----------------------------------------------------------------------------
+[AVMCOWAN.ndi.NT.CoInstallers]
+AddReg = AVMCOWAN.coinst.reg,AVMCOWAN.ndis.reg, AVMCOWAN.nt.reg
+CopyFiles       = AVMCOWAN.CopyFiles
+
+[AVMCOWAN.ndi.NT]
+Characteristics = 0x09  ; NCF_VIRTUAL | NCF_HIDDEN
+
+;-----------------------------------------------------------------------------
+;- Reg-Parts -----------------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMCOWAN.coinst.reg]
+HKR, ,                    CoInstallers32,       0x10000, "avmcoxp.dll,AVMCoInstall"
+HKR, Ndi,                 Service,              0      , "AVMCOWAN"
+HKR, Ndi\Interfaces,      LowerRange,           0      , "nolower"
+HKR, Ndi\Interfaces,      UpperRange,           0      , "ndiscowan"
+
+[AVMCOWAN.ndis.reg]
+
+[AVMCOWAN.nt.reg]
+HKR, ,                    IsdnAutoSwitchDetect, 0x10001, "0"
+HKR, ,                    IsdnSwitchTypes,       0x10001, "0x01"   ; ISDN_SWITCH_AUTO
+HKR, ,                    IsdnNumDChannels,     0x10001, "1"
+HKR, ,                    WanEndPoints,         0x10001, "2"
+HKR, 0,                   IsdnNumBChannels,     0x10001, "2"
+HKR, 0\0,                 IsdnPhoneNumber,      0x00002, ""
+HKR, 0\0,                 IsdnSpid,             0x00002, ""
+HKR, 0\1,                 IsdnPhoneNumber,      0x00002, ""
+HKR, 0\1,                 IsdnSpid,             0x00002, ""
+
+
+;-----------------------------------------------------------------------------
+;- Reg-Parts - B1 PCI --------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMB1PCI.ndis.reg]
+HKR, ,                    ,                     0,       %AVMB1PCI.DeviceDesc%
+HKR, ,                    CardType,             0,       "B1pci"
+HKR, ,			  LineName,		0	, %AVMCOWAN.LineName%
+
+[AVMALLB1.ndis.reg]
+HKR, ,                    DriverDate1,          0,       %AVMDriverDate%
+HKR, ,                    DriverVersion,        0,       %AVMDriverVersion%
+HKR, ,                    EnumPropPages32,      0,       "avmenum.dll,AVMEnumPages"
+;HKR, ,                    AdditionalInstallDLL, 0,       "avmadd32.dll,ExternalInstall"
+HKR, ,                    Language,             0,       %AVMLanguage%
+HKR, ,                    IsdnSwitchType,       0x10001, 0x80   ; _DSS1
+HKR, ,                    IsdnSwitchTypes,      0x10001, 0x80   ; _DSS1
+HKR, Base-Module,         T4Path,               0,       %11%
+HKR, Base-Module,         Name,                 0,       %11%\b1.t4
+HKR, Ndi,                 Service,              0,       "B1CBASE"
+HKLM, %AVMB1PARAMS%,      NumberOfApplIDs,      0x10001, 200
+HKLM, %AVMB1PARAMS%,      NumberOfNCCIs,        0x10001, 8
+
+
+;- Reg-Part for all ISDN Controllers -----------------------------------------
+[AVMISDNB1.coinst.reg]
+HKR, ,                    CoInstallers32,       0x10000, "avmcoxp.dll,AVMCoInstall"
+HKR, ,                    ProviderName,         0,       %V_AVM%
+HKR, ,                    CoWanVersion,   0x10001,       %CowanVersion%	
+HKR, ,                    SetupProtocol,        0,       "DSS1"
+HKR, Base-Module\Values,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values,  PROTOCOL,             0,       "\x00"
+HKR, Ndi\Interfaces,      LowerRange,           0,       "isdn"
+
+[AVMISDNB1.nt.reg]
+HKR, ,                    IsdnAutoSwitchDetect, 0x10001, 0
+HKR, ,                    IsdnNumDChannels,     0x10001, 1
+HKR, ,                    WanEndPoints,         0x10001, 2
+HKR, 0,                   IsdnNumBChannels,     0x10001, 2
+HKR, Ndi\Interfaces,      UpperRange,           0,       "ndiswan"
+
+;-----------------------------------------------------------------------------
+;- Reg-Parts - C2 ------------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMC2.ndis.reg]
+HKR, ,                    ,                     0,       %AVMC2.DeviceDesc%
+HKR, ,                    CardType,             0,       "C2"
+HKR, ,			  LineName,		0,	 %AVMCOWAN.LineName%
+
+[AVMALLC2.ndis.reg]
+HKR, ,                    DriverDate1,          0,       %AVMDriverDate%
+HKR, ,                    DriverVersion,        0,       %AVMDriverVersion%
+HKR, ,                    EnumPropPages32,      0,       "avmenum.dll,AVMEnumPages"
+;HKR, ,                    AdditionalInstallDLL, 0,       "avmadd32.dll,ExternalInstall"
+HKR, ,                    Language,             0,       %AVMLanguage%
+HKR, ,                    IsdnSwitchType,       0x10001, 0x80                 ; _DSS1
+HKR, ,                    IsdnSwitchTypes,      0x10001, 0x80   ; _DSS1
+HKR, Base-Module,         Name,                 0,       %11%\C2.bin
+HKR, Base-Module,         AllSame,              0x10001, 1
+HKR, Ndi,                 Service,              0,       "B1CBASE"
+HKLM, %AVMB1PARAMS%,      NumberOfApplIDs,      0x10001, 200
+HKLM, %AVMB1PARAMS%,      NumberOfNCCIs,        0x10001, 20
+
+
+;- Reg-Part for all ISDN Controllers -----------------------------------------
+[AVMISDNC2.coinst.reg]
+HKR, ,                      CoInstallers32,       0x10000, "avmcoxp.dll,AVMCoInstall"
+HKR, ,                      ProviderName,         0,       %V_AVM%
+HKR, ,                      CoWanVersion,         0x10001, %CowanVersion% 
+HKR, ,                      SetupProtocol,        0,       "DSS1"
+HKR, Base-Module\Values,    AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values,    PROTOCOL,             0,       "\x00"
+HKR, Base-Module\Values\1,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values\1,  PROTOCOL,             0,       "\x00"
+HKR, Base-Module\Values\2,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values\2,  PROTOCOL,             0,       "\x00"
+HKR, Ndi\Interfaces,        LowerRange,           0,       "isdn"
+
+[AVMISDNC2.nt.reg]
+HKR, ,                    IsdnAutoSwitchDetect, 0x10001, 0
+HKR, ,                    WanEndPoints,         0x10001, 4
+HKR, ,                    IsdnNumDChannels,     0x10001, 2 
+HKR, 0,                   IsdnNumBChannels,     0x10001, 2
+HKR, 1,                   IsdnNumBChannels,     0x10001, 2 
+HKR, Ndi\Interfaces,      UpperRange,           0,       "ndiswan"
+
+;-----------------------------------------------------------------------------
+;- Reg-Parts - C4 ------------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMC4.ndis.reg]
+HKR, ,                    ,                     0,       %AVMC4.DeviceDesc%
+HKR, ,                    CardType,             0,       "C4"
+HKR, ,			  LineName,		0,	 %AVMCOWAN.LineName%
+
+[AVMALLC4.ndis.reg]
+HKR, ,                    DriverDate1,          0,       %AVMDriverDate%
+HKR, ,                    DriverVersion,        0,       %AVMDriverVersion%
+HKR, ,                    EnumPropPages32,      0,       "avmenum.dll,AVMEnumPages"
+;HKR, ,                    AdditionalInstallDLL, 0,       "avmadd32.dll,ExternalInstall"
+HKR, ,                    Language,             0,       %AVMLanguage%
+HKR, ,                    IsdnSwitchType,       0x10001, 0x80                 ; _DSS1
+HKR, ,                    IsdnSwitchTypes,      0x10001, 0x80   ; _DSS1
+HKR, Base-Module,         Name,                 0,       %11%\C4.bin
+HKR, Base-Module,         AllSame,              0x10001, 1
+HKR, Ndi,                 Service,              0,       "B1CBASE"
+HKLM, %AVMB1PARAMS%,      NumberOfApplIDs,      0x10001, 200
+HKLM, %AVMB1PARAMS%,      NumberOfNCCIs,        0x10001, 32
+
+
+;- Reg-Part for all ISDN Controllers -----------------------------------------
+[AVMISDNC4.coinst.reg]
+HKR, ,                      CoInstallers32,       0x10000, "avmcoxp.dll,AVMCoInstall"
+HKR, ,                      ProviderName,         0,       %V_AVM%
+HKR, ,                      CoWanVersion,         0x10001, %CowanVersion%  
+HKR, ,                      SetupProtocol,        0,       "DSS1"
+HKR, Base-Module\Values,    AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values,    PROTOCOL,             0,       "\x00"
+HKR, Base-Module\Values\1,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values\1,  PROTOCOL,             0,       "\x00"
+HKR, Base-Module\Values\2,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values\2,  PROTOCOL,             0,       "\x00"
+HKR, Base-Module\Values\3,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values\3,  PROTOCOL,             0,       "\x00"
+HKR, Base-Module\Values\4,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values\4,  PROTOCOL,             0,       "\x00"
+HKR, Ndi\Interfaces,        LowerRange,           0,       "isdn"
+
+[AVMISDNC4.nt.reg]
+HKR, ,                    IsdnAutoSwitchDetect, 0x10001, 0
+HKR, ,                    WanEndPoints,         0x10001, 8
+HKR, ,                    IsdnNumDChannels,     0x10001, 4 
+HKR, 0,                   IsdnNumBChannels,     0x10001, 2
+HKR, 1,                   IsdnNumBChannels,     0x10001, 2 
+HKR, 2,                   IsdnNumBChannels,     0x10001, 2 
+HKR, 3,                   IsdnNumBChannels,     0x10001, 2
+HKR, Ndi\Interfaces,      UpperRange,           0,       "ndiswan"
+
+;-----------------------------------------------------------------------------
+;- Reg-Parts - FRITZ!Card PCI ------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMFCPCI.ndis.reg]
+HKR, ,                    ,                     0,       %AVMFCPCI.DeviceDesc%
+
+[AVMFCPCI2.ndis.reg]
+HKR, ,                    ,                     0,       %AVMFCPCI2.DeviceDesc%
+
+[AVMALLFPCI.ndis.reg]
+HKR, ,                    CardType,             0,       "FRITZpci"
+HKR, ,                    DriverDate1,          0,       %AVMDriverDate%
+HKR, ,                    DriverVersion,        0,       %AVMDriverVersion%
+HKR, ,                    EnumPropPages32,      0,       "avmenum.dll,AVMEnumPages"
+;HKR, ,                    AdditionalInstallDLL, 0,       "avmadd32.dll,ExternalInstall"
+HKR, ,                    Language,             0,       %AVMLanguage%
+HKR, ,                    LineName,             0,       %AVMCOWAN.LineName%
+HKR, ,                    IsdnSwitchType,       0x10001, 0x80   ; _DSS1
+HKR, ,                    IsdnSwitchTypes,      0x10001, 0x80   ; _DSS1
+HKR, Base-Module,         Name,                 0,       fpcibase.sys
+HKR, Ndi,                 Service,              0,       "FPCIBASE"
+
+;- Reg-Part for all ISDN Controllers -----------------------------------------
+[AVMISDNFPCI.coinst.reg]
+HKR, ,                    CoInstallers32,       0x10000, "avmcoxp.dll,AVMCoInstall"
+HKR, ,                    ProviderName,         0,       %V_AVM%
+HKR, ,                    SetupProtocol,        0,       %PROTOCOL%
+HKR, ,                    CoWanVersion,   0x10001,       %CowanVersion%  
+HKR, Base-Module,         Name,                 0,       fpcibase.sys
+HKR, Base-Module\Values,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values,  PROTOCOL,             0,       "\x00"
+HKR, Ndi\Interfaces,      LowerRange,           0,       "isdn"
+
+[AVMISDNFPCI.nt.reg]
+HKR, ,                    IsdnAutoSwitchDetect, 0x10001, "0"
+HKR, ,                    IsdnNumDChannels,     0x10001, "1"
+HKR, ,                    WanEndPoints,         0x10001, "2"
+HKR, 0,                   IsdnNumBChannels,     0x10001, "2"
+HKR, Ndi\Interfaces,      UpperRange,           0,       "ndiswan"
+
+;-----------------------------------------------------------------------------
+;- Reg-Parts - FRITZ!card PCMCIA ---------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMFCPCM.ndis.reg]
+HKR, ,                    ,                     0,       %AVMFCPCM.DeviceDesc%
+
+[AVMALLFPCM.ndis.reg]
+HKR, ,                    CardType,             0,       "FRITZpcmcia"
+HKR, ,                    DriverDate1,          0,       %AVMDriverDate%
+HKR, ,                    DriverVersion,        0,       %AVMDriverVersion%
+HKR, ,                    EnumPropPages32,      0,       "avmenum.dll,AVMEnumPages"
+;HKR, ,                    AdditionalInstallDLL, 0,       "avmadd32.dll,ExternalInstall"
+HKR, ,                    Language,             0,       %AVMLanguage%
+HKR, ,                    LineName,             0,       %AVMCOWAN.LineName%
+HKR, ,                    IsdnSwitchType,       0x10001, 0x80   ; _DSS1
+HKR, ,                    IsdnSwitchTypes,      0x10001, 0x80   ; _DSS1
+HKR, Base-Module,         Name,                 0,       fpcmbase.sys
+HKR, Ndi,                 Service,              0,       "FPCMBASE"
+
+;- Reg-Part for all ISDN Controllers -----------------------------------------
+[AVMISDNFPCM.coinst.reg]
+HKR, ,                    CoInstallers32,       0x10000, "avmcoxp.dll,AVMCoInstall"
+HKR, ,                    ProviderName,         0,       %V_AVM%
+HKR, ,                    SetupProtocol,        0,       %PROTOCOL%
+HKR, ,                    CoWanVersion,   0x10001,       %CowanVersion%  
+HKR, Base-Module,         Name,                 0,       fpcmbase.sys
+HKR, Base-Module\Values,  AutoCompress,         0,       "\x00"
+HKR, Base-Module\Values,  PROTOCOL,             0,       "\x00"
+HKR, Ndi\Interfaces,      LowerRange,           0,       "isdn"
+
+[AVMISDNFPCM.nt.reg]
+HKR, ,                    IsdnAutoSwitchDetect, 0x10001, "0"
+HKR, ,                    IsdnNumDChannels,     0x10001, "1"
+HKR, ,                    WanEndPoints,         0x10001, "2"
+HKR, 0,                   IsdnNumBChannels,     0x10001, "2"
+HKR, Ndi\Interfaces,      UpperRange,           0,       "ndiswan"
+
+;-----------------------------------------------------------------------------
+;- Copy Files Section --------------------------------------------------------
+;-----------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir         = 11
+AVMALL.CopyFiles       = 12
+AVMCOWAN.CopyFiles     = 12
+AVMALLB1.CopyIDriver   = 11
+AVMALLC2.CopyIDriver   = 11
+AVMALLC4.CopyIDriver   = 11
+AVMALLFPCI.CopyFiles   = 12
+AVMFCPCM.CopyFiles     = 12
+AVMISDN.Copy64bitDLLs  = 11
+AVMISDN.Copy32bitDLLs  = 10,SysWOW64
+
+[AVMALL.CopyFiles]
+b1cbase.sys
+
+[AVMALLFPCI.CopyFiles]
+fpcibase.sys
+
+[AVMFCPCM.CopyFiles]
+fpcmbase.sys
+
+[AVMCOWAN.CopyFiles]
+avmcowan.sys,,,0x00000020
+
+[AVMALLB1.CopyIDriver]
+b1.t4
+
+[AVMALLC4.CopyIDriver]
+c4.bin
+
+[AVMALLC2.CopyIDriver]
+c2.bin
+
+[AVMISDN.Copy64bitDLLs]
+avmcoxp.dll
+capi2064.dll, avmc2064.dll,,0x00000004
+avmenum.dll
+
+[AVMISDN.Copy32bitDLLs]
+capi2032.dll, avmc2032.dll,,0x00000004
+
+;-----------------------------------------------------------------------------
+;- Services Section ----------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+[AVMB1PCI.ndi.NT.Services]
+AddService = b1cbase, 2, AVMALLB1Service, B1AddEventLog
+
+[AVMC4.ndi.NT.Services]
+AddService = b1cbase, 2, AVMALLB1Service, B1AddEventLog
+
+[AVMC2.ndi.NT.Services]
+AddService = b1cbase, 2, AVMALLB1Service, B1AddEventLog
+
+[B1AddEventLog]
+AddReg = B1AddEventLog.reg
+
+[B1AddEventLog.reg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\netevent.dll,%%SystemRoot%%\System32\drivers\b1cbase.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[AVMALLB1Service]
+DisplayName    = "AVM ISDN-Controller B1"
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\b1cbase.sys
+LoadOrderGroup = NDIS
+
+[AVMFCPCI.ndi.NT.Services]
+AddService = fpcibase, 2, AVMFPCIService, FpciAddEventLog
+
+[AVMFCPCI2.ndi.NT.Services]
+AddService = fpcibase, 2, AVMFPCIService, FpciAddEventLog
+
+[FpciAddEventLog]
+AddReg = FpciAddEventLog.reg
+
+[FpciAddEventLog.reg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\netevent.dll,%%SystemRoot%%\System32\drivers\fpcibase.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[AVMFPCIService]
+DisplayName    = "AVM FRITZ!Card PCI"
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\fpcibase.sys
+LoadOrderGroup = NDIS
+
+[AVMFCPCM.ndi.NT.Services]
+AddService = fpcmbase, 2, AVMFCPCMService, AVMFCPCMAddEventLog
+
+[AVMFCPCMAddEventLog]
+AddReg = AVMFCPCMAddEventLog.reg
+
+[AVMFCPCMAddEventLog.reg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\netevent.dll,%%SystemRoot%%\System32\drivers\fpcmbase.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[AVMFCPCMService]
+DisplayName    = "FRITZ!Card PCMCIA"
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\fpcmbase.sys
+LoadOrderGroup = NDIS
+
+;-----------------------------------------------------------------------------
+
+[AVMCOWAN.ndi.NT.Services]
+AddService = AVMCOWAN,   2, AVMCOWAN.Service, AVMCOWANAddEventLog
+
+[AVMCOWANAddEventLog]
+AddReg=AVMCOWANAddEventLog.reg
+
+[AVMCOWANAddEventLog.reg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\netevent.dll,%%SystemRoot%%\System32\drivers\avmcowan.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[AVMCOWAN.Service]
+DisplayName    = %AVMCOWAN.DeviceDesc%
+ServiceType    = 1  ; SERVICE_KERNEL_DRIVER
+StartType      = 3  ; SERVICE_DEMAND_START
+ErrorControl   = 1  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\AVMCOWAN.sys
+LoadOrderGroup = NDIS
+;-----------------------------------------------------------------------------
+;- Strings Sections ----------------------------------------------------------
+;-----------------------------------------------------------------------------
+[Strings]
+AVMLanguage          = ""
+V_AVM                = "AVM GmbH"
+MS                   = "Microsoft"
+AVMB1PCI.DeviceDesc  = "AVM ISDN-Controller B1 PCI"
+AVMC4.DeviceDesc     = "AVM ISDN-Controller C4"
+AVMC2.DeviceDesc     = "AVM ISDN-Controller C2"
+AVMFCPCI.DeviceDesc  = "AVM ISDN-Controller FRITZ!Card PCI"
+AVMFCPCI2.DeviceDesc = "AVM ISDN-Controller FRITZ!Card PCI Rev. A"
+AVMFCPCM.DeviceDesc  = "AVM ISDN-Controller FRITZ!Card PCMCIA"
+AVMCOWAN.DeviceDesc  = "AVM ISDN CoNDIS WAN CAPI Driver"
+AVMCOWAN.LineName    = "AVM NDIS WAN CAPI-Driver"
+AVMB1PARAMS          = "System\CurrentControlSet\Services\b1cbase\Parameters"
+AVMDriverDate        = "04/19/2004"
+AVMDriverVersion     = "3.11.04.2004"
+CowanVersion         = "11"

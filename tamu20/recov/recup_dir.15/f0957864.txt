@@ -1,0 +1,17 @@
+ raccolte e scopo della raccolta
+Ad ogni visita al sito, Windows Update raccoglie dal computer informazioni generali sul sistema, che consentono di ricevere gli aggiornamenti più indicati per il computer. Tali informazioni sono inoltre utilizzate per generare statistiche aggregate sull'utilizzo del sito Web Windows Update e sui sistemi che necessitano di supporto, al fine di migliorare il servizio offerto. Le informazioni includono:
+•    Marchio e modello del computer
+•    Numero di versione di Windows 
+•    Numero di versione di Internet Explorer
+•    Numero di versione di altri programmi software Microsoft per cui potrebbero essere disponibili aggiornamenti
+•    ID Plug and Play delle periferiche hardware
+•    Impostazioni del paese e della lingua 
+•    GUID (Globally Unique Identifier, identificatore univoco globale)
+•    Numero di serie del prodotto e codice "Product Key"
+•    Nome, numero e data di revisione del BIOS
+L'indirizzo IP del computer è registrato quando viene effettuata la connessione al sito di Windows Update, ma è utilizzato solo per generare statistiche aggregate.
+
+Utilizzo delle informazioni
+Vengono raccolti il numero di serie del prodotto e il codice "Product Key" a conferma che la copia di Windows in esecuzione è fornita di licenza valida. Il numero di serie e il codice "Product Key" vengono conservati solo fino al termine della sessione di Windows Update a meno che il numero di serie non sia errato.
+
+Per generare statistiche attendibili, Windows Update analizza un GUID (Globally Unique Identifier, identificatore univoco globale) che viene memorizzato sul computer in modo da identificarlo in modo univoco. Il GUID non contiene dati personali e quindi non pu

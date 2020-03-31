@@ -1,0 +1,10 @@
+{BBB36F15-408D-4056-8C27-920843D40BE5} = s 'DataChannel Class'
+		{
+			ProgID = s 'ALG.DataChannel.1'
+			VersionIndependentProgID = s 'ALG.DataChannel'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{4A0F9AA8-A71E-4CC3-891B-76CAC67E67C0}'
+			'TypeLib' = s '{B6D1D098-E235-4B99-BA98-7C624FD875DB}'
+		}
+	}
+}

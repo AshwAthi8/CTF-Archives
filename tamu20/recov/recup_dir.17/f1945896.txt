@@ -1,0 +1,9 @@
+equires that the schedule service be started at the computer towhich the job is submitted. The method returns an integer value which can be interpretted as follows: 
+0 - Successful completion
+1 - Not supported
+2 - Access denied
+8 - Unknown failure
+9 - Path not found
+21 - Invalid parameter
+22 - Service not started
+Other - For integer values other than those listed above, refer to Win32 error code documentation.

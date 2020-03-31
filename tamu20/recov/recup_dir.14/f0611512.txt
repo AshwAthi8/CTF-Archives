@@ -1,0 +1,33 @@
+in each connect section or the section is ignored
+;Access=NoAccess
+;Access=ReadOnly
+;Access=ReadWrite
+;[userlist name] allows specific users to have special access
+;The Access is computed as follows:
+;  (1) First take the access of the connect section.
+;  (2) If a user entry is found, it will override.
+
+[connect default]
+;If we want to disable unknown connect values, we set Access to NoAccess
+Access=NoAccess
+
+[sql default]
+;If we want to disable unknown sql values, we set Sql to an invalid query.
+Sql=" "
+
+[connect CustomerDatabase]
+Access=ReadWrite
+Connect="DSN=AdvWorks"
+
+[sql CustomerById]
+Sql="SELECT * FROM Customers WHERE CustomerID = ?"
+
+[connect AuthorDatabase]
+Access=ReadOnly
+Connect="DSN=MyLibraryInfo;UID=MyUserID;PWD=MyPassword"
+
+[userlist AuthorDatabase]
+Administrator=ReadWrite
+
+[sql AuthorById]
+Sql="SELECT * FROM Authors WHERE au_id = ?"

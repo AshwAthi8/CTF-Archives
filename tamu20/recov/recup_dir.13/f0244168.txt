@@ -1,0 +1,15 @@
+ocessorArchitecture="amd64"/>
+<description>Disk Defragmenter UI Module</description>
+<dependency>
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="amd64"
+            language="*"
+            publicKeyToken="6595b64144ccf1df"
+        />
+    </dependentAssembly>
+</dependency>
+</assembly>

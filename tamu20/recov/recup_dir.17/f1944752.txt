@@ -1,0 +1,15 @@
+y a directory, then TakeOwnerShip will act recursively, taking ownership of all the files and sub-directories the directory contains. 
+It returns one of the following integer values:
+0 - The request was successful.
+2 - Access was denied.
+8 - An unspecified failure occurred.
+9 - The name specified was invalid.
+10 - The object specified already exists.
+11 - The file system is not NTFS.
+12 - The platform is not Windows NT or Windows 2000.
+13 - The drive is not the same.
+14 - The directory is not empty.
+15 - There has been a sharing violation.
+16 - The start file specified was invalid.
+17 - A privilege required for the operation is not held.
+21 - A parameter specified is invalid.

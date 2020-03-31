@@ -1,0 +1,9 @@
+"condition">Is No More Than</argument>
+                            <argument name="value">64</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

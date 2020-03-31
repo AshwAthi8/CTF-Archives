@@ -1,0 +1,85 @@
+procServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\{BE09F473-7FEB-11d2-9962-00C04FA309D4}\InprocServer32","ThreadingModel",,"Both"
+HKCR,"CLSID\{6F74FDC5-E366-11d1-9A4E-00C04FA309D4}",,,"CLSID_MessageDatabase"
+HKCR,"CLSID\{6F74FDC5-E366-11d1-9A4E-00C04FA309D4}\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\{6F74FDC5-E366-11d1-9A4E-00C04FA309D4}\InprocServer32","ThreadingModel",,"Both"
+HKCR,"CLSID\{6F74FDC6-E366-11d1-9A4E-00C04FA309D4}",,,"CLSID_FolderDatabase"
+HKCR,"CLSID\{6F74FDC6-E366-11d1-9A4E-00C04FA309D4}\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\{6F74FDC6-E366-11d1-9A4E-00C04FA309D4}\InprocServer32","ThreadingModel",,"Both"
+HKCR,"CLSID\{CAE80521-F685-11d1-AF32-00C04FA31B90}",,,"CLSID_OENote"
+HKCR,"CLSID\{CAE80521-F685-11d1-AF32-00C04FA31B90}\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\{CAE80521-F685-11d1-AF32-00C04FA31B90}\InprocServer32","ThreadingModel",,"Both"
+HKCR,"CLSID\{626BAFE1-E5D6-11D1-B1DD-006097D503D9}",,,"CLSID_OERulesManager"
+HKCR,"CLSID\{626BAFE1-E5D6-11D1-B1DD-006097D503D9}\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\{626BAFE1-E5D6-11D1-B1DD-006097D503D9}\InprocServer32","ThreadingModel",,"Both"
+HKCR,"OutlookExpress.MessageList",,,"Outlook Express Message List"
+HKCR,"OutlookExpress.MessageList\CLSID",,,%OEMsgList_MSOE_GUID%
+HKCR,"OutlookExpress.MessageList\CurVer",,,"OutlookExpress.MessageList.1"
+HKCR,"OutlookExpress.MessageList.1",,,"Outlook Express Message List"
+HKCR,"OutlookExpress.MessageList.1\CLSID",,,%OEMsgList_MSOE_GUID%
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%",,,"Outlook Express Message List"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\DefaultIcon",,131072,%SYS_MOD_PATH%",2"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\InprocServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\NotInsertable"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\MiscStatus",,,"0"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\MiscStatus\1",,,"131473"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\Programmable"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\ProgID",,,"OutlookExpress.MessageList.1"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\VersionIndependentProgID",,,"OutlookExpress.MessageList"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\Version",,,"1.0"
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\Implemented Categories\{40FC6ED3-2438-11CF-A3DB-080036F12502}",,,,
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}",,,,
+HKCR,"CLSID\%OEMsgList_MSOE_GUID%\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}",,,,
+HKCR,"OutlookExpress.AddressBook",,,"Outlook Express Address Book"
+HKCR,"OutlookExpress.AddressBook\CLSID",,,%OEBuddyList_MSOE_GUID%
+HKCR,"OutlookExpress.AddressBook\CurVer",,,"OutlookExpress.AddressBook.1"
+HKCR,"OutlookExpress.AddressBook.1",,,"Outlook Express Address Book"
+HKCR,"OutlookExpress.AddressBook.1\CLSID",,,%OEBuddyList_MSOE_GUID%
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%",,,"Outlook Express Address Book"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\DefaultIcon",,131072,%SYS_MOD_PATH%",2"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\InprocServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\NotInsertable"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\MiscStatus",,,"0"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\MiscStatus\1",,,"131473"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\ProgID",,,"OutlookExpress.AddressBook.1"
+HKCR,"CLSID\%OEBuddyList_MSOE_GUID%\VersionIndependentProgID",,,"OutlookExpress.AddressBook"
+HKLM,"Software\Microsoft\WAB\WAB4\ExtDisplay\MailUser"
+HKLM,"Software\Microsoft\WAB\WAB4\ExtDisplay\MailUser",%OEBuddyList_MSOE_GUID%,,"1"
+HKCR,"OutlookExpress.Envelope",,,"Outlook Express Envelope"
+HKCR,"OutlookExpress.Envelope\CLSID",,,%OEEnvelope_MSOE_GUID%
+HKCR,"OutlookExpress.Envelope\CurVer",,,"OutlookExpress.Envelope.1"
+HKCR,"OutlookExpress.Envelope.1",,,"Outlook Express Envelope"
+HKCR,"OutlookExpress.Envelope.1\CLSID",,,%OEEnvelope_MSOE_GUID%
+HKCR,"CLSID\%OEEnvelope_MSOE_GUID%",,,"Outlook Express Envelope"
+HKCR,"CLSID\%OEEnvelope_MSOE_GUID%\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\%OEEnvelope_MSOE_GUID%\InprocServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%OEEnvelope_MSOE_GUID%\ProgID",,,"OutlookExpress.Envelope.1"
+HKCR,"CLSID\%OEEnvelope_MSOE_GUID%\VersionIndependentProgID",,,"OutlookExpress.Envelope"
+HKLM,"%KEY_MSOE_MAILCLIENT%\%KEY_MSOE_OUTLOOK%\Envelope\CLSID",,,"%OEEnvelope_MSOE_GUID%"
+HKLM,"%KEY_MSOE_MAILCLIENT%\%KEY_MSOE_OUTLOOK%\Envelope\CurVer",,,"OutlookExpress.Envelope.1"
+HKCR,"CLSID\%OEMail_MSOE_GUID%",,,"Outlook Express Mail Object"
+HKCR,"CLSID\%OEMail_MSOE_GUID%\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\%OEMail_MSOE_GUID%\InprocServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%OEMail_MSOE_GUID%\Implemented Categories\{40FC6ED3-2438-11CF-A3DB-080036F12502}",,,,
+HKCR,"CLSID\%OEMail_MSOE_GUID%\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}",,,,
+HKCR,"CLSID\%OEMail_MSOE_GUID%\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}",,,,
+HKCR,"CLSID\%OEMail_MSOE_GUID%\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}",,,,
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%",,,"Outlook Express MsgTable Object"
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%\InprocServer32",,131072,%SYS_MOD_PATH%
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%\InprocServer32","ThreadingModel",,"Apartment"
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%\Implemented Categories\{40FC6ED3-2438-11CF-A3DB-080036F12502}",,,,
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%\Implemented Categories\{40FC6ED4-2438-11CF-A3DB-080036F12502}",,,,
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%\Implemented Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}",,,,
+HKCR,"CLSID\%OEMsgTable_MSOE_GUID%\Implemented Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}",,,,
+[Strings]
+OEMsgList_MSOE_GUID         =   "{233A9692-667E-11d1-9DFB-006097D50408}"
+OEBuddyList_MSOE_GUID       =   "{233A9694-667E-11d1-9DFB-006097D50408}"
+OEEnvelope_MSOE_GUID        =   "{A08AF898-C2A3-11d1-BE23-00C04FA31009}"
+OEMail_MSOE_GUID            =   "{06BE7323-EF34-11d1-ACD8-00C04FA31009}"
+OEMsgTable_MSOE_GUID 	    =   "{abc00000-0000-0000-0000-000000000000}"
+OEOneStopHandler_MSOE_GUID  =   "{D2984AB4-F2DE-11d1-AF07-00C04FA35D02}"
+KEY_MSOE_MAILCLIENT         =   "Software\Clients\Mail"
+KEY_MSOE_OUTLOOK            =   "Outlook Express"
+[End]

@@ -1,0 +1,10 @@
+Text>
+	</Label>
+	<Link Id="5504" IconId="24004" TopMargin="8">
+		<Text>
+			<Balloon><![CDATA[&Search the Internet]]></Balloon>
+			<Bar><![CDATA[&Search the Internet]]></Bar>
+		</Text>
+	</Link>
+
+</SimpleDialog>

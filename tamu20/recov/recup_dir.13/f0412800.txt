@@ -1,0 +1,8 @@
+ s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+            ToolBoxBitmap32 = s '%MODULE%,235'
+        }
+    }
+}

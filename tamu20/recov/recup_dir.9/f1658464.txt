@@ -1,0 +1,7 @@
+ext highest precedence application.  
+1 = This application's Language is a less suitable match for the target, 
+2 = This application's Product Identifier conflicts with the higher application 
+3 = This application was deployed more recently than the higher application 
+4 = This application is upgraded by the higher precedence application. 
+5 = This application is the winning application 
+6 = This assigned application is upgraded by an optional upgrade

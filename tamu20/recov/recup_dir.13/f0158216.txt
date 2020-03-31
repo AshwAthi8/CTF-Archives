@@ -1,0 +1,110 @@
+55.DeviceDesc% = GAGP30KX_Install,PCI\VEN_1022&DEV_7455
+
+[HP_SYS.NTamd64]
+
+[SIS_SYS.NTamd64]
+%PCI\VEN_1039&DEV_0002.DeviceDesc% = GAGP30KX_Install,PCI\VEN_1039&DEV_0002
+
+[VIA_SYS.NTamd64]
+%PCI\VEN_1106&DEV_B188.DeviceDesc% = GAGP30KX_Install,PCI\VEN_1106&DEV_B188
+
+;**************************************************************************
+; AGP filters that sit on top of PCI
+;
+
+;
+; Microsoft AGPv3.5
+;
+[UAGP35_Install]
+CopyFiles=@UAGP35.SYS
+
+[UAGP35_Filter_Reg]
+HKR,,"UpperFilters", 0x00010000,"UAGP35"
+HKLM,"SYSTEM\CurrentControlSet\Services\uagp35\Parameters","1106316800",0x00030003,00,00,30,00,00,00,00,00
+HKLM,"SYSTEM\CurrentControlSet\Services\uagp35\Parameters","1106316802",0x00030003,00,00,30,00,00,00,00,00
+HKLM,"SYSTEM\CurrentControlSet\Services\uagp35\Parameters","1106316803",0x00030003,00,00,30,00,00,00,00,00
+HKLM,"SYSTEM\CurrentControlSet\Services\uagp35\Parameters","1106318900",0x00030003,00,00,70,00,00,00,00,00
+
+[UAGP35_Install.HW]
+AddReg = UAGP35_Filter_Reg
+
+[UAGP35_Install.Services]
+Include=machine.inf
+AddService = uagp35,0,uagp35_ServiceInstallSection
+AddService = pci, %SPSVCINST_ASSOCSERVICE%, pci_ServiceInstallSection
+DelService = agp440
+DelService = viaagp1
+DelService = sisagp
+
+[uagp35_ServiceInstallSection]
+DisplayName    = %uagp35_svcdesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\uagp35.sys
+LoadOrderGroup = PnP Filter
+
+;
+; Generic AGPv3.0 driver for AMD K8/9 platforms
+;
+[GAGP30KX_Install]
+CopyFiles=@GAGP30KX.SYS
+
+[GAGP30KX_Filter_Reg]
+HKR,,"UpperFilters", 0x00010000,"GAGP30KX"
+HKLM,"SYSTEM\CurrentControlSet\Services\gagp30kx\Parameters","10227454",0x00000001,00,00,d0,00,00,00,00,00
+
+[GAGP30KX_Install.HW]
+AddReg = GAGP30KX_Filter_Reg
+
+[GAGP30KX_Install.Services]
+Include=machine.inf
+AddService = gagp30kx,0,gagp30kx_ServiceInstallSection
+AddService = pci, %SPSVCINST_ASSOCSERVICE%, pci_ServiceInstallSection
+DelService = amdagp8p
+DelService = viaagp1
+DelService = sisagp
+
+[gagp30kx_ServiceInstallSection]
+DisplayName    = %gagp30kx_svcdesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\gagp30kx.sys
+LoadOrderGroup = PnP Filter
+
+
+[Strings]
+
+SystemClassName = "System devices"
+MSFT            = "Microsoft"
+
+AMD_MFG = "AMD"
+PCI\VEN_1022&DEV_7455.DeviceDesc = "AMD-8151 HyperTransport(tm) AGP3.0 Graphics Tunnel"
+
+HP_MFG = "Hewlett-Packard"
+PCI\VEN_103C&DEV_12B4.DeviceDesc = "HP NetServer Advanced Graphics Port v3.5"
+
+SIS_MFG = "Silicon Integrated Systems"
+PCI\VEN_1039&DEV_0002.DeviceDesc = "SIS Processor to AGP Controller"
+PCI\VEN_1039&DEV_0003.DeviceDesc = "SIS Processor to AGP Controller"
+
+VIA_MFG = "VIA"
+PCI\VEN_1106&DEV_B188.DeviceDesc = "VIA CPU to AGP Controller"
+PCI\VEN_1106&DEV_B198.DeviceDesc = "VIA CPU to AGP Controller"
+
+;service descriptions
+uagp35_svcdesc = "Microsoft AGPv3.5 Filter"
+gagp30kx_svcdesc = "Microsoft Generic AGPv3.0 Filter for K8 Processor Platforms"
+
+;*******************************************
+;Handy macro substitutions (non-localizable)
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_BOOT_START     = 0
+SERVICE_SYSTEM_START   = 1
+SERVICE_DEMAND_START   = 3
+SERVICE_ERROR_NORMAL   = 1
+SERVICE_ERROR_CRITICAL = 3
+REG_EXPAND_SZ          = 0x00020000
+REG_DWORD              = 0x00010001

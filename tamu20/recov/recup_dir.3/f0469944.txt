@@ -1,0 +1,75 @@
+mfsdk\Uninstall",,0x00004000
+HKCR,"windows media\WMSDK\AudioDecode\10",,0x00004000
+HKCR,"Windows Media\WMSDK\AudioDecode\352",,0x00004000
+HKCR,"Windows Media\WMSDK\AudioDecode\353",,0x00004000
+HKCR,"windows media\WMSDK\AudioDecode\354",,0x00004000
+HKCR,"windows media\WMSDK\AudioDecode\355",,0x00004000
+HKCR,"Windows Media\WMSDK\VideoDecode\MSS1",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\MSS2",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\WMV1",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\WMV2",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\WMV3",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\WMVP",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\MP4S",,0x00004000
+HKCR,"windows media\WMSDK\VideoDecode\M4S2",,0x00004000
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc",wma9dmod.dll
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc",wms9dmod.dll
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc",wmspdmod.dll
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc",wmv9dmod.dll
+HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\drivers.desc",mp4sdmod.dll
+HKCR,"DirectShow\MediaObjects\82d353df-90bd-4382-8bc2-3f6192b76e34\InputTypes\73646976-0000-0010-8000-00aa00389b71\3334504d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\82d353df-90bd-4382-8bc2-3f6192b76e34\InputTypes\73646976-0000-0010-8000-00aa00389b71\3334706d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\82d353df-90bd-4382-8bc2-3f6192b76e34\InputTypes\73646976-0000-0010-8000-00aa00389b71\5334504d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\82d353df-90bd-4382-8bc2-3f6192b76e34\InputTypes\73646976-0000-0010-8000-00aa00389b71\7334706d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\Categories\4a69b442-28be-4991-969c-b500adf5d8a8\InputTypes\73646976-0000-0010-8000-00aa00389b71\Subtypes\3334504d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\Categories\4a69b442-28be-4991-969c-b500adf5d8a8\InputTypes\73646976-0000-0010-8000-00aa00389b71\Subtypes\3334706d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\Categories\4a69b442-28be-4991-969c-b500adf5d8a8\InputTypes\73646976-0000-0010-8000-00aa00389b71\Subtypes\5334504d-0000-0010-8000-00aa00389b71",,0x00004000
+HKCR,"DirectShow\MediaObjects\Categories\4a69b442-28be-4991-969c-b500adf5d8a8\InputTypes\73646976-0000-0010-8000-00aa00389b71\Subtypes\7334706d-0000-0010-8000-00aa00389b71",,0x00004000
+
+[wReg.Codecs]
+HKCR,"Windows Media\WMSDK\AudioEncode",10,0x00004000,
+HKCR,"Windows Media\WMSDK\AudioEncode",304,0x00004000,
+HKCR,"Windows Media\WMSDK\AudioEncode",353,0x00004000,
+HKCR,"Windows Media\WMSDK\AudioEncode",354,0x00004000,
+HKCR,"Windows Media\WMSDK\AudioEncode",355,0x00004000,
+
+HKCR,"Windows Media\WMSDK\VideoEncode",MSS1,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",MSS2,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",MP4S,0x00004000,
+
+HKCR,"Windows Media\WMSDK\VideoEncode",WMV1,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",WMV2,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",WMV3,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",WMVP,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",WMVA,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",WMVB,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoEncode",WVP2,0x00004000,
+
+HKCR,"Windows Media\WMSDK\AudioDecode",,0x00004000,
+HKCR,"Windows Media\WMSDK\VideoDecode",,0x00004000,
+
+HKCU,"Software\Microsoft\Windows Media\WMSDK",,0x00004000,
+HKCU,"Software\Microsoft\Windows Media\WMSDK\General",,0x00004000,
+HKCU,"Software\Microsoft\Windows Media\WMSDK\Local",,0x00004000,
+HKCU,"Software\Microsoft\Windows Media\WMSDK\Remote",,0x00004000,
+HKCU,"Software\Microsoft\Windows Media\WMSDK\AudioDecode",,0x00004000,
+HKCU,"Software\Microsoft\Windows Media\WMSDK\VideoDecode",,0x00004000,
+
+
+HKCR,%%KEY_DMO1%%\73646976-0000-0010-8000-00aa00389b71\3334504d-0000-0010-8000-00aa00389b71,,0x00004000,
+HKCR,%%KEY_DMO1%%\73646976-0000-0010-8000-00aa00389b71\3334706d-0000-0010-8000-00aa00389b71,,0x00004000,
+HKCR,%%KEY_DMO1%%\73646976-0000-0010-8000-00aa00389b71\5334504d-0000-0010-8000-00aa00389b71,,0x00004000,
+HKCR,%%KEY_DMO1%%\73646976-0000-0010-8000-00aa00389b71\7334706d-0000-0010-8000-00aa00389b71,,0x00004000,
+
+HKCR,%%KEY_DMO%%\73646976-0000-0010-8000-00aa00389b71\Subtypes\3334504d-0000-0010-8000-00aa00389b71,,0x00004000,
+HKCR,%%KEY_DMO%%\73646976-0000-0010-8000-00aa00389b71\Subtypes\3334706d-0000-0010-8000-00aa00389b71,,0x00004000,
+HKCR,%%KEY_DMO%%\73646976-0000-0010-8000-00aa00389b71\Subtypes\5334504d-0000-0010-8000-00aa00389b71,,0x00004000,
+HKCR,%%KEY_DMO%%\73646976-0000-0010-8000-00aa00389b71\Subtypes\7334706d-0000-0010-8000-00aa00389b71,,0x00004000,
+
+;wmdm
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\MSWMDMHandler","Action",0x00000000,"@%SystemRoot%\SysWOW64\wmploc.dll,-29300"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\MSWMDMHandler","Provider",0x00000000,"@%SystemRoot%\SysWOW64\wmploc.dll,-6502"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\MSWMDMHandler","DefaultIcon",0x00020000,"%ProgramFiles(x86)%\Windows Media Player\wmplayer.exe,0"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\MSWMDMHandler","ProgID",0x00000000,"WMP.Device"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\MSWMDMHandler","CLSIDForCancel",0x00000000,"{91778246-9BE4-4713-A651-E833B853CC30}"
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlers\MTPMediaPlayerArrival,"MSWMDMHandler",,""

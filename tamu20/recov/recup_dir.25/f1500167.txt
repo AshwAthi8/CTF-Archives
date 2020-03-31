@@ -1,0 +1,13 @@
+(Sun Mar 01 19:06:32 2020.389734) : WDM call returned error: 4200
+(Sun Mar 01 19:06:32 2020.390093) : ***************************************
+(Sun Mar 01 19:06:32 2020.390093) : Could not get pointer to binary resource for file:
+(Sun Mar 01 19:06:32 2020.390093) : C:\WINDOWS\System32\drivers\afd.sys[AfdMofResource](Sun Mar 01 19:06:32 2020.390093) : 
+(Sun Mar 01 19:06:32 2020.390093) : ***************************************
+(Sun Mar 01 19:08:03 2020.14265) : WDM call returned error: 4200
+(Sun Mar 01 19:08:06 2020.17187) : ***************************************
+(Sun Mar 01 19:08:06 2020.17187) : Could not get pointer to binary resource for file:
+(Sun Mar 01 19:08:06 2020.17187) : C:\WINDOWS\System32\drivers\afd.sys[AfdMofResource](Sun Mar 01 19:08:06 2020.17187) : 
+(Sun Mar 01 19:08:06 2020.17187) : ***************************************
+(Sun Mar 01 19:08:07 2020.18593) : Received Event
+(Sun Mar 01 19:09:54 2020.117234) : Received Event
+(Sun Mar 01 19:10:11 2020.134531) : Received Event

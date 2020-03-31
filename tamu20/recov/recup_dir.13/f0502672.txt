@@ -1,0 +1,152 @@
+fo_ was copied to C:\WINDOWS\fonts\app850.fon.
+D:\amd64\smallf.fo_ was copied to C:\WINDOWS\fonts\smallf.fon.
+D:\amd64\vga860.fo_ was copied to C:\WINDOWS\fonts\vga860.fon.
+D:\amd64\vga863.fo_ was copied to C:\WINDOWS\fonts\vga863.fon.
+D:\amd64\vga865.fo_ was copied to C:\WINDOWS\fonts\vga865.fon.
+D:\i386\wc_20127.nl_ was copied to C:\WINDOWS\SysWOW64\c_20127.nls.
+The external program RUNDLL32 shell32,Control_RunDLL intl.cpl,,/f:"C:\WINDOWS\system32\$winnt$.inf" /s:"D:\AMD64" returned exit code 0.
+D:\amd64\sapi.dl_ was copied to C:\Program Files\Common Files\Microsoft Shared\Speech\sapi.dll.
+D:\amd64\sapisvr.ex_ was copied to C:\Program Files\Common Files\Microsoft Shared\Speech\sapisvr.exe.
+D:\amd64\sapi.cp_ was copied to C:\Program Files\Common Files\Microsoft Shared\Speech\sapi.cpl.
+D:\amd64\ltts1033.lx_ was copied to C:\Program Files\Common Files\SpeechEngines\Microsoft\Lexicon\1033\ltts1033.lxa.
+D:\amd64\r1033tts.lx_ was copied to C:\Program Files\Common Files\SpeechEngines\Microsoft\Lexicon\1033\r1033tts.lxa.
+D:\amd64\spttseng.dl_ was copied to C:\Program Files\Common Files\SpeechEngines\Microsoft\TTS\1033\spttseng.dll.
+D:\amd64\sam.sd_ was copied to C:\Program Files\Common Files\SpeechEngines\Microsoft\TTS\1033\sam.sdf.
+D:\amd64\sam.sp_ was copied to C:\Program Files\Common Files\SpeechEngines\Microsoft\TTS\1033\sam.spd.
+D:\amd64\spcommon.dl_ was copied to C:\Program Files\Common Files\SpeechEngines\Microsoft\spcommon.dll.
+D:\amd64\spcplui.dl_ was copied to C:\Program Files\Common Files\Microsoft Shared\Speech\1033\spcplui.dll.
+D:\i386\wsapi.dl_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Speech\sapi.dll.
+D:\i386\wsapisvr.ex_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Speech\sapisvr.exe.
+D:\i386\wsapi.cp_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Speech\sapi.cpl.
+D:\i386\wltts1033.lx_ was copied to C:\Program Files (x86)\Common Files\SpeechEngines\Microsoft\Lexicon\1033\ltts1033.lxa.
+D:\i386\wr1033tts.lx_ was copied to C:\Program Files (x86)\Common Files\SpeechEngines\Microsoft\Lexicon\1033\r1033tts.lxa.
+D:\i386\wspttseng.dl_ was copied to C:\Program Files (x86)\Common Files\SpeechEngines\Microsoft\TTS\1033\spttseng.dll.
+D:\i386\wsam.sd_ was copied to C:\Program Files (x86)\Common Files\SpeechEngines\Microsoft\TTS\1033\sam.sdf.
+D:\i386\wsam.sp_ was copied to C:\Program Files (x86)\Common Files\SpeechEngines\Microsoft\TTS\1033\sam.spd.
+D:\i386\wspcommon.dl_ was copied to C:\Program Files (x86)\Common Files\SpeechEngines\Microsoft\spcommon.dll.
+D:\i386\wspcplui.dl_ was copied to C:\Program Files (x86)\Common Files\Microsoft Shared\Speech\1033\spcplui.dll.
+NetSetup: SetupMode: 0x1, ProductType: 0x0, OperationFlags: 0x8000
+desk.cpl:  Returning 0xe000020e for function 0x17 and device PCI\VEN_80EE&DEV_BEEF&SUBSYS_00000000&REV_00\3&267A616A&0&10
+desk.cpl:  Returning 0xe000020e for function 0x18 and device PCI\VEN_80EE&DEV_BEEF&SUBSYS_00000000&REV_00\3&267A616A&0&10
+desk.cpl:  Returning 0xe000020e for function 0x15
+C:\WINDOWS\Driver Cache\amd64\driver.cab was copied to C:\WINDOWS\system32\DRIVERS\vgapnp.sys.
+desk.cpl:  Returning 0xe000020e for function 0x22
+desk.cpl:  Returning 0xe000020e for function 0x20
+desk.cpl:  Disabled 0 legacy devices in 1 tries
+desk.cpl:  Returning 0x00000000 for function 0x2 and device PCI\VEN_80EE&DEV_BEEF&SUBSYS_00000000&REV_00\3&267A616A&0&10
+desk.cpl:  Returning 0xe000020e for function 0x1e
+C:\WINDOWS\system32\usbhub.sys was not deleted because of the following error:
+The system ca/*++
+copyright (c) 2002 Microsoft Corporation
+
+Module Name:
+
+ ipsecprfnm.h
+
+Abstract:
+
+ This file defines the IPSec symbols used in ipsecprf.ini file for
+ loading the counters to registry.
+
+
+Created:
+
+   Avnish Kumar Chhabra      July 3, 2002
+
+Revision History:
+
+--*/
+
+
+
+#define IPSECOBJ 0
+
+#define ACTIVESA 2
+
+#define OFFLOADEDSA 4
+
+#define PENDINGKEYOPS 6
+
+#define KEYADDITIONS 8
+
+#define KEYDELETIONS 10
+
+#define REKEYNUM 12
+
+#define ACTIVETUNNEL 14
+
+#define BADSPIPKTS 16
+
+#define PKTSNOTDECRYPTED 18
+
+#define PKTSNOTAUTHENTICATED 20
+
+#define PKTSFAILEDREPLAY 22
+
+#define CONFBYTESSENT 24
+
+#define CONFBYTESRECV 26
+
+#define AUTHBYTESSENT 28
+
+#define AUTHBYTESRECV 30
+
+#define TPTBYTESSENT 32
+
+#define TPTBYTESRECV 34
+
+#define TUNBYTESSENT 36
+
+#define TUNBYTESRECV 38
+
+#define OFFLOADBYTESSENT 40
+
+#define OFFLOADBYTESRECV 42
+
+#define IKEOBJ	44
+
+#define ACTIVEACQUIRE	46
+
+#define ACTIVERECEIVE	48
+
+#define ACQUIREFAILURE	50
+
+#define RECEIVEFAILURE	52
+
+#define SENDFAILURE		54
+
+#define ACQUIREHEAPSIZE	56
+
+#define RECEIVEHEAPSIZE 	58
+
+#define NEGFAILURE	60
+
+#define AUTHFAILURE	62
+
+#define INVCOOKIE	64
+
+#define TOTACQUIRE	66
+
+#define TOTGETSPI	68
+
+#define IKEKEYSADD	70
+
+#define IKEKEYSUPDT	72
+
+#define GETSPIFAIL	74
+
+#define KEYADDFAIL	76
+
+#define KEYUPDTFAIL	78
+
+#define ISADBSIZE	80
+
+#define CONNLSIZE	82
+
+#define MMSA	84
+
+#define QMSA	86
+
+#define SOFTSA	88
+
+#define INVPKTSRCV	90

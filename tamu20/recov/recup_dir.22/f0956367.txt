@@ -1,0 +1,29 @@
+RL style="font-family: MS Shell Dlg; font-size: 8pt;
+background: buttonface; overflow: hidden; width: 28em; height: 3.9em;
+border: 0px;" readonly wrap=physical tabindex=-1>
+</TEXTAREA>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+</DIV>
+<DIV id=divDebug style="background: threedface; position: absolute;
+font-family: ms sans serif; font-size: 8pt; top: 17em;
+text-align: center; width=100%;">
+Do you want to continue running scripts on this page?
+</DIV>
+<DIV id=divButttons style="background: buttonface; position: absolute;
+font-family: ms sans serif; font-size: 8pt; top: 20em; width: 100%">
+<CENTER id=ctrButtons>
+<BUTTON ID=btnYes style="font-family: ms sans serif; font-size: 8pt;
+width: 3.8em; height: 2.2em;" type=submit accesskey=y>
+<U id=undYes>Y</U>es
+</BUTTON>
+<BUTTON ID=btnNo style="font-family: ms sans serif; font-size: 8pt;
+width: 3.8em; height: 2.2em" type=reset accesskey=n>
+<U id=undNo>N</U>o
+</BUTTON>
+</CENTER>
+</DIV>
+</BODY>
+</HTML>

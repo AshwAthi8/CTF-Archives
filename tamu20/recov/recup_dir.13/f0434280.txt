@@ -1,0 +1,145 @@
+ ; an IBM standard joystick port
+
+
+[AztechLabs.NTamd64]
+%AztechLabsPort.DeviceDesc%=NullPnPGamePort, *AZT0003
+%AztechLabsPort.DeviceDesc%=NullPnPGamePort, *AZT3001
+
+
+[CreativeLabs.NTamd64]
+%CreativeLabsPort.DeviceDesc%=NullPnPGamePort, *CTL7001
+%CreativeLabsPort.DeviceDesc%=NullPnPGamePort, *CTL7002
+%CreativeLabsPort.DeviceDesc%=NullPnPGamePort, *CTL7005
+
+[Crystal.NTamd64]
+%CrystalPort.DeviceDesc%=NullPnPGamePort, *CSC0001
+%CrystalPort.DeviceDesc%=NullPnPGamePort, *CSC0101
+
+[ESS.NTamd64]
+%ESSPort.DeviceDesc%=ESS_Port, *ESS0005
+
+[MediaVision.NTamd64]
+%MediaVisionPort.DeviceDesc%=MediaVision_Port, MF\PNPB00D_Dev2
+%MediaVisionPort.DeviceDesc%=MediaVision_Port, MF\PNPB00E_Dev3
+%MediaVisionPort.DeviceDesc%=MediaVision_Port, MF\PNPB019_Dev2
+
+
+[NeoMagic.NTamd64]
+%PNPB02F.DeviceDesc%=Standard_Port, *NMX2220
+
+
+[Yamaha.NTamd64]
+%YamahaPort.DeviceDesc%=NullPnPGamePort, *YMH0006
+%YamahaPort.DeviceDesc%=NullPnPGamePort, *YMH0022
+
+[NullPnPGamePort.NT]
+; Null
+
+[NullPnPGamePort.NT.Services]
+AddService = , %SPSVCINST_ASSOCSERVICE% ; null service installation
+
+
+[Standard_Port.NT]
+LogConfig=StandardJoyStick.LC0,BasicJoyStick.LC1,BasicJoyStick.LC2
+
+[Standard_Port.NT.Services]
+AddService = , %SPSVCINST_ASSOCSERVICE% ; null service installation
+
+
+[ESS_Port.NT]
+LogConfig=BasicJoyStick.LC0
+
+[ESS_Port.NT.Services]
+AddService = , %SPSVCINST_ASSOCSERVICE% ; null service installation
+
+
+[MediaVision_Port.NT]
+LogConfig=BasicJoyStick.LC0
+
+[MediaVision_Port.NT.Services]
+AddService = , %SPSVCINST_ASSOCSERVICE% ; null service installation
+
+
+[StandardJoyStick.NT.FactDef]
+ConfigPriority=HARDWIRED
+IOConfig=201-201(3ff::)
+
+[StandardJoyStick.LC0]
+ConfigPriority=HARDWIRED
+IOConfig=201-201(3ff::)
+
+[BasicJoyStick.LC0]
+ConfigPriority=HARDWIRED
+IOConfig=201-201(3ff::)
+
+[BasicJoyStick.LC1]
+ConfigPriority=HARDWIRED
+IOConfig=200-207(3ff::)
+
+[BasicJoyStick.LC2]
+ConfigPriority=HARDRECONFIG
+IOConfig=1@200-20f(3ff::)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Strings]
+
+SPSVCINST_ASSOCSERVICE= 0x00000002
+MSFT = "Microsoft"
+MediaClassName = "Sound, video and game controllers"
+StdMfg = "(Standard system devices)"
+
+
+;
+;  Game card manufacturers
+;
+AztechLabs                   = "Aztech Systems"
+CreativeLabs                 = "Creative Technology Ltd."
+Crystal                      = "Crystal Semiconductor"
+ESS                          = "ESS Technology, Inc."
+MediaVision                  = "MediaVision Inc."
+NeoMagic                     = "NeoMagic Corporation"
+Yamaha                       = "Yamaha"
+
+;
+;  Device descriptions for known game ports
+;
+
+PNPB02F.DeviceDesc              = "Unsupported Standard Game Port"
+AztechLabsPort.DeviceDesc       = "Unsupported Game Port for Aztech"
+CreativeLabsPort.DeviceDesc     = "Unsupported Game Port for Creative "
+CrystalPort.DeviceDesc          = "Unsupported Crystal WDM Game Port"
+ESSPort.DeviceDesc              = "Unsupported Game port for ESS"
+MediaVisionPort.DeviceDesc      = "Unsupported Game port for MediaVision"
+YamahaPort.DeviceDesc           = "Unsupported Game port for Yamaha"
+

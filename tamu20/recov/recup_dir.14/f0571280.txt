@@ -1,0 +1,6 @@
+ with a serial file transfer cable, you will need to purchase a serial cable for transferring your files and settings.</P>
+<P id="pid2">The most common serial cables are <I>LapLink serial cables</I>, <I>serial file transfer cable</I>, and <I>null modem serial cables</I>.  You cannot use parallel cables to transfer files or settings between computers using the Direct cable option.</P>
+<P id="pid3">Before purchasing a serial cable, you must check both computers to see if the serial port (also called a <I>COM port</I>) is a 25-pin or a  9-pin port. Most new computers have a 9-pin port and most new cables have a 9-pin plug. If you have a 25-pin port on the computer, you may need an adaptor for the cable. If you have more than one port to plug the serial cable into the computer, don't worry about it too much.  Pick one port and plug the serial cable in.  The Files And Settings Transfer Wizard will be able to automatically detect the connection, in most cases.</P>
+<P id="pid4">Once you have selected a serial cable and connected the computers together, run the Files and Settings Transfer Wizard.</P>
+</BODY>
+</HTML>

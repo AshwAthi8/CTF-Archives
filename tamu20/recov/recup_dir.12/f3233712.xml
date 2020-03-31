@@ -1,0 +1,94 @@
+﻿<?xml version="1.0"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl">
+    <xsl:template match="/">
+        <xsl:apply-templates />
+    </xsl:template>
+
+    <xsl:template match="text()"><xsl:copy /></xsl:template>
+
+    <xsl:template match="Word|Text|ButtonText|Name">
+		<Text><xsl:apply-templates /></Text>
+    </xsl:template>
+    
+    <xsl:template match="Index">
+        <xsl:apply-templates />
+    </xsl:template>
+
+    <xsl:template match="Balloon">
+        <xsl:apply-templates />
+    </xsl:template>
+
+    <!-- Templates for the different Input Types -->
+    <!-- 0 = SpellEdit -->
+    <!-- 1 = Text Field -->
+    <!-- 2 = Combo Box -->
+    <!-- 3 = List Box -->
+    <!-- 4 = Checkboxes -->
+    <!-- 5 = Radio Buttons -->
+    <!-- 6 = Character Chooser -->
+
+    <!-- 0 = SpellEdit -->
+    <xsl:template match="InputTypeID[.=0]">
+		<!--<Control Class="SA_SpellEdit" Id="5004" Left="0" Top="0" Width="100" Height="50" Style="2162756" />-->
+		<Control Class="SA_SpellEdit" Id="5004" Left="0" Top="0" Width="100" Height="50" Style="10551364">
+
+		    <Property Name="QuestionType">SpellEdit</Property>
+            <Property Name="CanonicalProp" DataType="23"><xsl:value-of select="/Question/SearchProperty" /></Property>
+            <Property Name="AllowNULL" DataType="11"><xsl:value-of select="/Question/AllowNULL" /></Property>            
+
+            <xsl:if test="/Question/SaveUserAnswer[. = 1]">
+                <Property Name="SaveUserAnswer"><xsl:value-of select="/Question/@ID" /></Property>
+            </xsl:if>
+
+        </Control>
+    </xsl:template>
+
+    <!-- 1 = Text Field -->
+    <xsl:template match="InputTypeID[.=1]">
+		<Control Class="Edit" Id="5004" Left="0" Top="0" Width="1000" Height="20" Style="8454272" TopMargin="1">
+
+		    <Property Name="QuestionType">TextEdit</Property>
+            <Property Name="CanonicalProp" DataType="23"><xsl:value-of select="/Question/SearchProperty" /></Property>
+            <Property Name="AllowNULL" DataType="11"><xsl:value-of select="/Question/AllowNULL" /></Property>            
+
+            <xsl:if test="/Question/SaveUserAnswer[. = 1]">
+                <Property Name="SaveUserAnswer"><xsl:value-of select="/Question/@ID" /></Property>
+            </xsl:if>
+
+        </Control>
+    </xsl:template>
+
+    <!-- 2 = Combo Box -->
+    <xsl:template match="InputTypeID[.=2]">
+		<Control Class="ComboBox" Id="5004" Style="10551299" Left="0" Top="0" Width="100" Height="200" TopMargin="1">
+            <xsl:for-each select="../Answers/Answer">
+			<Item>
+                <xsl:attribute name="Text"><xsl:value-of select="Text"/></xsl:attribute>
+                <xsl:attribute name="Data"><xsl:value-of select="Value"/></xsl:attribute>
+            </Item>
+            </xsl:for-each>
+
+			<Property Name="QuestionType">Combo</Property>
+            <Property Name="CanonicalProp" DataType="23"><xsl:value-of select="/Question/SearchProperty" /></Property>            
+            <Property Name="AllowNULL" DataType="11"><xsl:value-of select="/Question/AllowNULL" /></Property>            
+
+            <xsl:if test="/Question/SaveUserAnswer[. = 1]">
+                <Property Name="SaveUserAnswer"><xsl:value-of select="/Question/@ID" /></Property>
+            </xsl:if>
+
+		</Control>
+    </xsl:template>
+
+    <!-- 3 = List Box -->
+    <xsl:template match="InputTypeID[.=3]">
+		<Control Class="ListBox" Id="5004" Style="10551297" Left="0" Top="0" Width="100" Height="50" TopMargin="1">
+            <xsl:for-each select="../Answers/Answer">
+			<Item>
+                <xsl:attribute name="Text"><xsl:value-of select="Text"/></xsl:attribute>
+                <xsl:attribute name="Data"><xsl:value-of select="Value"/></xsl:attribute>
+            </Item>
+            </xsl:for-each>
+
+			<Property Name="QuestionType">List</Property>
+            <Property Name="CanonicalProp" DataType="23"><xsl:value-of select="/Question/SearchProperty" /></Property>
+            <Property Name="AllowNULL" DataType="11">

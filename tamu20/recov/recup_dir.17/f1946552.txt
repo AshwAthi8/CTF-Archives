@@ -1,0 +1,2 @@
+l is made to excluded some disks, then the new list is not added to the list of ones that were already marked for exclusion, instead the new list of disks overwrites the previous one. The method is applicable to only those instances of logical disk that represent a physical disk in the machine and is not applicable to mapped logical drives. 
+For example, a valid specification of drives would be "C:", "d:","G:"  Note that the colon is required with the drive letter.

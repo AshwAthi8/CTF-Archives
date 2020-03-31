@@ -1,0 +1,7 @@
+veloped at the National Center for Supercomputing Applications at the University of Illinois at Urbana-Champaign.
+Distributed under a licensing agreement with Spyglass, Inc.
+Contains security software licensed from RSA Data Security Inc.
+Portions of this software are based in part on the work of the Independent JPEG Group.
+Multimedia software components, including Indeo(R); video, Indeo(R) audio, and Web Design Effects are provided by Intel Corp.
+Unix version contains software licensed from Mainsoft Corporation. Copyright (c) 1998-1999 Mainsoft Corporation. All rights reserved. Mainsoft is a trademark of Mainsoft Corporation.
+°æ°í: 

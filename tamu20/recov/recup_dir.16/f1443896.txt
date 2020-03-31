@@ -1,0 +1,9 @@
+ition">Is</argument>
+                            <argument name="value">1 star</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

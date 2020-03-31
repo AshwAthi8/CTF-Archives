@@ -1,0 +1,9 @@
+ionIndependentProgID = s 'linkdata.linkdata'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+		}
+	}
+}

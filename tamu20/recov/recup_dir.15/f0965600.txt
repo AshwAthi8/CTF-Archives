@@ -1,0 +1,5 @@
+trNameShort = MeasureText(spanMeasureBold.innerText, true, textProperties.offsetWidth - 4);
+spanMeasure.innerText = strUrl;
+strUrlShort = MeasureText(spanMeasure.innerText, false, textProperties.offsetWidth - 4);
+spanMeasure.innerText = "";
+var L_FavoritesFolder_Text = "

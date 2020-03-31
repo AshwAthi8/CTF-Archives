@@ -1,0 +1,13 @@
+ct="'\'"/>
+                <xsl:with-param name="replacetoken" select="'\\'"/>
+            </xsl:call-template>
+        </xsl:variable>
+
+        <xsl:call-template name="StrReplace">
+            <xsl:with-param name="in" select="$resultString"/>
+            <xsl:with-param name="token" select="'&quot;'"/>
+            <xsl:with-param name="replacetoken" select="'\&quot;'"/>
+        </xsl:call-template>        
+    </xsl:template>
+    
+</xsl:stylesheet>

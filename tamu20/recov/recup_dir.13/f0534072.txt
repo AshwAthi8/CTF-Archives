@@ -1,0 +1,48 @@
+DefaultIcon]
+full=%WinDir%SYSTEM32\shell32.dll,32
+empty=%WinDir%SYSTEM32\shell32.dll,31
+
+
+
+
+[Control Panel\Cursors]
+Arrow=
+Help=
+AppStarting=
+Wait=
+NWPen=
+No=
+SizeNS=
+SizeWE=
+Crosshair=
+IBeam=
+SizeNWSE=
+SizeNESW=
+SizeAll=
+UpArrow=
+DefaultValue=Windows default
+DefaultValue.MUI=@themeui.dll,-2043
+
+[Control Panel\Desktop]
+Wallpaper=%WinDir%web\wallpaper\Windows XP.bmp
+Wallpaper.MUI=@themeui.dll,-2036
+TileWallpaper=0
+WallpaperStyle=2
+Pattern=
+ScreenSaveActive=1
+
+
+
+[VisualStyles]
+Path=%ResourceDir%\Themes\luna\luna.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+
+
+[boot]
+SCRNSAVE.EXE=%WinDir%\System32\logon.scr
+
+
+[MasterThemeSelector]
+MTSM=DABJDKT
+ThemeColorBPP=8

@@ -1,0 +1,3 @@
+channel #>
+    for ssl and spipe see the documentation
+  example: ... -remote npipe:server=yourmachine,pipe=foobar

@@ -1,0 +1,10 @@
+<Button Id="5804" TopMargin="10">
+		<Text><![CDATA[Hi&ghlight Next]]></Text>
+	</Button>
+	<Link Id="5006" IconId="23" TopMargin="10">
+		<Text>
+			<Balloon><![CDATA[Start a &new search]]></Balloon>
+			<Bar><![CDATA[Start a &new search]]></Bar>
+		</Text>
+	</Link>
+</SimpleDialog>

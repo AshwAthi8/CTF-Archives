@@ -1,0 +1,9 @@
+on="1.0">
+    <assemblyIdentity name="Microsoft.Windows.Networking.Dialer" processorArchitecture="amd64" type="win32" version="1.0.0.0"/>
+    <description>Phone Dialer</description>
+    <dependency>
+        <dependentAssembly>
+        <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" language="*" processorArchitecture="*" publicKeyToken="6595b64144ccf1df"/>
+        </dependentAssembly>
+    </dependency>
+</assembly>

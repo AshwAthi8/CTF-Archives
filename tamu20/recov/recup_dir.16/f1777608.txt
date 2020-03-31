@@ -1,0 +1,1350 @@
+ork">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_net_printerW.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="long names">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="long printer names">
+			<param name="Name" value="Choosing a printer name">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_choosing_a_printer_name.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="long printer names">
+		<param name="Name" value="Rename a printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_rename_printer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LPR">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ports">
+			<param name="Name" value="Add an LPR port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_lpr_port.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LPT ports">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="installing parallel port printers">
+			<param name="Name" value="Add a printer that is attached to your computer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_local_printerW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="memory">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer memory">
+			<param name="Name" value="Set printer memory">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_pdevice_memory.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="multiple language support">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="names">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer names">
+			<param name="Name" value="Choosing a printer name">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_choosing_a_printer_name.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="naming printers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="choosing printer names">
+			<param name="Name" value="Choosing a printer name">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_choosing_a_printer_name.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="networks and networking">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network printers">
+			<param name="Name" value="Choosing a printer name">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_choosing_a_printer_name.htm">
+			<param name="Name" value="Connect to a printer on a network">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_net_printerW.htm">
+			<param name="Name" value="Security permissions for printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissionsW.htm">
+			<param name="Name" value="Set or remove permissions for a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_limit_accessW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="new printer drivers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="additional drivers">
+			<param name="Name" value="Install additional printer drivers">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_additional.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="updated drivers">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="new printer ports">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding local ports">
+			<param name="Name" value="Add a local port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_local_port.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding LPR ports">
+			<param name="Name" value="Add an LPR port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_lpr_port.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding ports">
+			<param name="Name" value="Add a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_port.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding TCP/IP ports">
+			<param name="Name" value="Add a standard TCP/IP port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_tcpip_port.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="new soft fonts">
+		<param name="Name" value="Install or remove external PCL soft fonts">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_soft_fonts_install_remove.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="non-English languages">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="null ports">
+		<param name="Name" value="Choosing and configuring a port">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_PortsW.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="page orientation">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setting">
+			<param name="Name" value="Set page orientation">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_orientation.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="page printers">
+		<param name="Name" value="Printers overview">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_devices.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="page protection">
+		<param name="Name" value="Ensure that complex pages print properly">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_protect.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pages">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing multiple pages per sheet">
+			<param name="Name" value="Print multiple pages per sheet">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_pages_per_sheet.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="separator pages">
+			<param name="Name" value="Choose a separator page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages.htm">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="paper size">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying">
+			<param name="Name" value="Specify paper size">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_specify_form.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="paper source">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for forms">
+			<param name="Name" value="Match a form to a printer tray">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_match_form_source.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel ports">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="installing parallel port printers">
+			<param name="Name" value="Add a printer that is attached to your computer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_local_printerW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="timeout settings, changing">
+			<param name="Name" value="Change the parallel port timeout settings">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_change_timeoutw.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pausing print jobs">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for all documents">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for one document">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			<param name="Name" value="Restart printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_restart.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PCL printing">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="separator pages">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PCL soft fonts">
+		<param name="Name" value="Install or remove external PCL soft fonts">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_soft_fonts_install_remove.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pcl.sep">
+		<param name="Name" value="Separator pages">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pen plotters">
+		<param name="Name" value="Using plotters">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_using_plotters.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="permissions">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing and printer permissions">
+			<param name="Name" value="Printing permissions assigned to groups">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissions_groupsW.htm">
+			<param name="Name" value="Security permissions for printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissionsW.htm">
+			<param name="Name" value="Set or remove permissions for a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_limit_accessW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared printers">
+			<param name="Name" value="Set or remove permissions for a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_limit_accessW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="plotters">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Using plotters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_using_plotters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="drivers for">
+			<param name="Name" value="Printer drivers overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_drivers.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="timeout settings, changing">
+			<param name="Name" value="Change the parallel port timeout settings">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_change_timeoutw.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="port monitors">
+		<param name="Name" value="Choosing and configuring a port">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_PortsW.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="portrait page orientation">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setting page orientation">
+			<param name="Name" value="Set page orientation">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_orientation.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PostScript printers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="banner pages">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pre-loaded fonts">
+		<param name="Name" value="Printer fonts">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_fonts.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="print queues">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Print queue overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_queue_view_window.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="canceling printing">
+			<param name="Name" value="Cancel printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_cancel.htm">
+			<param name="Name" value="Cancel printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_cancel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changing print order">
+			<param name="Name" value="Change the printing priority of documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_change_order.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pausing printing">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="restarting printing">
+			<param name="Name" value="Restart printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_restart.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="resuming printing">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="viewing">
+			<param name="Name" value="View documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printer drivers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Printer drivers overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_drivers.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="installing">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			<param name="Name" value="Install additional printer drivers">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_additional.htm">
+			<param name="Name" value="Share your printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_sharingW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			<param name="Name" value="Set print server properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printer fonts">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Printer fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_fonts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cartridge fonts">
+			<param name="Name" value="Make cartridge fonts available">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_cartridge_fonts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="extended characters">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="external PCL soft fonts">
+			<param name="Name" value="Install or remove external PCL soft fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_soft_fonts_install_remove.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="international characters">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TrueType fonts, printing as graphics">
+			<param name="Name" value="Print TrueType fonts as graphics">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_grx_as_text.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printer ports">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding">
+			<param name="Name" value="Add a local port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_local_port.htm">
+			<param name="Name" value="Add a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_port.htm">
+			<param name="Name" value="Add an LPR port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_lpr_port.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="choosing and configuring">
+			<param name="Name" value="Choosing and configuring a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_PortsW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="deleting">
+			<param name="Name" value="Delete a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_delete_port.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties">
+			<param name="Name" value="Set print server properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			<param name="Name" value="Set printer properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="timeout settings, changing">
+			<param name="Name" value="Change the parallel port timeout settings">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_change_timeoutw.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Printers overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_devices.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding">
+			<param name="Name" value="Add a printer that is attached to your computer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_local_printerW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="assigning forms to trays">
+			<param name="Name" value="Match a form to a printer tray">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_match_form_source.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="connecting to shared printers">
+			<param name="Name" value="Connect to a printer on a network">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_net_printerW.htm">
+			<param name="Name" value="Connect to a printer using a browser">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_internet_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="control codes">
+			<param name="Name" value="Using printer control codes">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_control_codes.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="default printer, setting">
+			<param name="Name" value="Specify your default printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_set_default_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="deleting a printer">
+			<param name="Name" value="To delete a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_delete_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="installing">
+			<param name="Name" value="Add a printer that is attached to your computer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_local_printerW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Internet printers">
+			<param name="Name" value="Connect to a printer using a browser">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_internet_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="local printers">
+			<param name="Name" value="Add a printer that is attached to your computer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_local_printerW.htm">
+			<param name="Name" value="Share your printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_sharingW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="memory, setting">
+			<param name="Name" value="Set printer memory">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_pdevice_memory.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="naming">
+			<param name="Name" value="Choosing a printer name">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_choosing_a_printer_name.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="paper size">
+			<param name="Name" value="Specify paper size">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_specify_form.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pausing">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="print monitors">
+			<param name="Name" value="Choosing and configuring a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_PortsW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="print servers">
+			<param name="Name" value="Set print server properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer names">
+			<param name="Name" value="Rename a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_rename_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer permissions">
+			<param name="Name" value="Set or remove permissions for a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_limit_accessW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="problems and troubleshooting">
+			<param name="Name" value="Fixing a printing problem">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_fixing_problem.htm">
+			<param name="Name" value="To get help with printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_fixing_problem_getting_help.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			<param name="Name" value="Set installable options for a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_device_installable_optionsW.htm">
+			<param name="Name" value="Set printer properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="settings, changing">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="transferring jobs between printers">
+			<param name="Name" value="Transfer documents to another printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_redirect_documents_to_another_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="types of printers">
+			<param name="Name" value="Printers overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_devices.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printing">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Print a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_print_documentW.htm">
+			<param name="Name" value="Printing overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_overviewW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="banner pages">
+			<param name="Name" value="Choose a separator page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages.htm">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="both sides">
+			<param name="Name" value="Print on one or both sides of the paper">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_one_both_sides.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="canceling">
+			<param name="Name" value="Cancel printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_cancel.htm">
+			<param name="Name" value="Cancel printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_cancel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changing print order">
+			<param name="Name" value="Change the printing priority of documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_change_order.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changing settings">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Character Map">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="collating pages">
+			<param name="Name" value="Set the number of copies to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_number_of_copies.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="complex formatting">
+			<param name="Name" value="Ensure that complex pages print properly">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_protect.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="copies, number of">
+			<param name="Name" value="Set the number of copies to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_number_of_copies.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="defaults">
+			<param name="Name" value="Set personal printing preferences">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_document_defaults_personal.htm">
+			<param name="Name" value="Set printing defaults">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_document_defaults.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="deleting jobs in queue">
+			<param name="Name" value="Cancel printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_cancel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="denying permissions">
+			<param name="Name" value="Security permissions for printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissionsW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="documents">
+			<param name="Name" value="Print a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_print_documentW.htm">
+			<param name="Name" value="Printers overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_devices.htm">
+			<param name="Name" value="View documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="duplex">
+			<param name="Name" value="Print on one or both sides of the paper">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_one_both_sides.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="extended characters">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="foreign languages">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="international characters">
+			<param name="Name" value="Printing extended or international characters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_extended_characters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="layout">
+			<param name="Name" value="Print multiple pages per sheet">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_pages_per_sheet.htm">
+			<param name="Name" value="Print on one or both sides of the paper">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_one_both_sides.htm">
+			<param name="Name" value="Set page orientation">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_orientation.htm">
+			<param name="Name" value="Set printing defaults">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_document_defaults.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multiple pages per sheet">
+			<param name="Name" value="Print multiple pages per sheet">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_pages_per_sheet.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="number of copies">
+			<param name="Name" value="Set the number of copies to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_number_of_copies.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="page orientation">
+			<param name="Name" value="Set page orientation">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_orientation.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="page protection">
+			<param name="Name" value="Ensure that complex pages print properly">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_protect.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="paper size">
+			<param name="Name" value="Specify paper size">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_specify_form.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pausing">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="permissions">
+			<param name="Name" value="Printing permissions assigned to groups">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissions_groupsW.htm">
+			<param name="Name" value="Security permissions for printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissionsW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="preferences">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing text as graphics">
+			<param name="Name" value="Print TrueType fonts as graphics">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_grx_as_text.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="prioritizing">
+			<param name="Name" value="Change the printing priority of documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_change_order.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="problems and troubleshooters">
+			<param name="Name" value="Fixing a printing problem">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_fixing_problem.htm">
+			<param name="Name" value="To get help with printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_fixing_problem_getting_help.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="quality">
+			<param name="Name" value="Set printing resolution">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_set_resolution.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="redirecting print jobs">
+			<param name="Name" value="Transfer documents to another printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_redirect_documents_to_another_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="resolution">
+			<param name="Name" value="Set printing resolution">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_set_resolution.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="restarting">
+			<param name="Name" value="Restart printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_restart.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="resuming">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="separator pages">
+			<param name="Name" value="Choose a separator page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages.htm">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="speed, increasing">
+			<param name="Name" value="Printer fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_fonts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="starting">
+			<param name="Name" value="Print a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_print_documentW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="stopping">
+			<param name="Name" value="Cancel printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_cancel.htm">
+			<param name="Name" value="Cancel printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_cancel.htm">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="test pages">
+			<param name="Name" value="Print a test page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_test_page.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="transferring jobs between printers">
+			<param name="Name" value="Transfer documents to another printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_redirect_documents_to_another_printer.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="prioritizing print jobs">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Change the printing priority of documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_change_order.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="properties">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printed documents">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer drivers">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printers">
+			<param name="Name" value="Printing properties overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_properties.htm">
+			<param name="Name" value="Set printer properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="protecting complex formats while printing">
+		<param name="Name" value="Ensure that complex pages print properly">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_protect.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pscript.sep">
+		<param name="Name" value="Separator pages">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="publishing shared printers">
+		<param name="Name" value="Share your printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_sharingW.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="quality of printed pages">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing resolution">
+			<param name="Name" value="Set printing resolution">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_set_resolution.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="reading print queue">
+		<param name="Name" value="Print queue overview">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_queue_view_window.htm">
+		<param name="Name" value="View documents waiting to print">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="redirecting print jobs">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="transferring documents">
+			<param name="Name" value="Transfer documents to another printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_redirect_documents_to_another_printer.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="removing a printer">
+		<param name="Name" value="To delete a printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_delete_printer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="removing fonts">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="external PCL soft fonts">
+			<param name="Name" value="Install or remove external PCL soft fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_soft_fonts_install_remove.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="removing PCL soft fonts">
+		<param name="Name" value="Install or remove external PCL soft fonts">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_soft_fonts_install_remove.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="removing printer ports">
+		<param name="Name" value="Delete a port">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_delete_port.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="renaming printers">
+		<param name="Name" value="Rename a printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_rename_printer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="resident fonts">
+		<param name="Name" value="Printer fonts">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_fonts.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="resolution">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing">
+			<param name="Name" value="Set printing resolution">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_set_resolution.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="rotated landscape printing">
+		<param name="Name" value="Set page orientation">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_orientation.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="scheduling tasks">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing, printers">
+			<param name="Name" value="Set printer properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="seeing print queues">
+		<param name="Name" value="Print queue overview">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_queue_view_window.htm">
+		<param name="Name" value="View documents waiting to print">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sending jobs to another printer">
+		<param name="Name" value="Transfer documents to another printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_redirect_documents_to_another_printer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="separator pages">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="choosing">
+			<param name="Name" value="Choose a separator page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shared printers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="connecting to network printers">
+			<param name="Name" value="Connect to a printer on a network">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_net_printerW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="local printers">
+			<param name="Name" value="Share your printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_sharingW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="long printer names">
+			<param name="Name" value="Rename a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_rename_printer.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="naming">
+			<param name="Name" value="Choosing a printer name">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_choosing_a_printer_name.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="permissions">
+			<param name="Name" value="Security permissions for printing">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_security_permissionsW.htm">
+			<param name="Name" value="Set or remove permissions for a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_limit_accessW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setting up">
+			<param name="Name" value="Set printer properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="stopping sharing">
+			<param name="Name" value="Stop sharing your printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_stop_sharing.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sharing printers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="local printers">
+			<param name="Name" value="Share your printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_sharingW.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer properties">
+			<param name="Name" value="Set printer properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="stopping sharing">
+			<param name="Name" value="Stop sharing your printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_stop_sharing.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="soft fonts">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Name" value="Printer fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_fonts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="external PCL soft fonts">
+			<param name="Name" value="Install or remove external PCL soft fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_soft_fonts_install_remove.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="special characters">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer names">
+			<param name="Name" value="Rename a printer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_rename_printer.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="speed">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing speed, increasing">
+			<param name="Name" value="Printer fonts">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_fonts.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="spoolers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setting options">
+			<param name="Name" value="Set print server properties">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_setting_printer_props.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="step-by-step guides through Windows XP (Wizards)">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printers and printing">
+			<param name="Name" value="Add a local port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_local_port.htm">
+			<param name="Name" value="Add a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_port.htm">
+			<param name="Name" value="Add a standard TCP/IP port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_tcpip_port.htm">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="stopping print jobs">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="canceling printing of a document">
+			<param name="Name" value="Cancel printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_cancel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="canceling printing of all documents">
+			<param name="Name" value="Cancel printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_cancel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pausing printing of a document">
+			<param name="Name" value="Pause or resume printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_pause_resume.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pausing printing of all documents">
+			<param name="Name" value="Pause or resume printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_pause_resume.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="stopping printer">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for all documents">
+			<param name="Name" value="Cancel printing of all documents">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_printer_cancel.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for single document">
+			<param name="Name" value="Cancel printing of a document">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_documents_cancel.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="stopping printer sharing">
+		<param name="Name" value="Stop sharing your printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_stop_sharing.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sysprint.sep">
+		<param name="Name" value="Separator pages">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="taking off a printer">
+		<param name="Name" value="To delete a printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_delete_printer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TCP/IP">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ports, adding">
+			<param name="Name" value="Add a standard TCP/IP port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_tcpip_port.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="protocols">
+			<param name="Name" value="Add a standard TCP/IP port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_tcpip_port.htm">
+			<param name="Name" value="Add an LPR port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_lpr_port.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="testing printers">
+		<param name="Name" value="Print a test page">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_test_page.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="thermal printers">
+		<param name="Name" value="Printers overview">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_devices.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="time and date">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="on print job separator pages">
+			<param name="Name" value="Choose a separator page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages.htm">
+			<param name="Name" value="Separator pages">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_use_separator_pages_table.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="timeouts">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="changing settings">
+			<param name="Name" value="Change the parallel port timeout settings">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_change_timeoutw.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="transferring jobs to another printer">
+		<param name="Name" value="Transfer documents to another printer">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_redirect_documents_to_another_printer.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="troubleshooting">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="plotters">
+			<param name="Name" value="Using plotters">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_using_plotters.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing">
+			<param name="Name" value="Print a test page">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_test_page.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TrueType fonts">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing as graphics">
+			<param name="Name" value="Print TrueType fonts as graphics">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_grx_as_text.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tutorials">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wizards (step-by-step guides to Windows XP)">
+			<param name="Name" value="Add a local port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_local_port.htm">
+			<param name="Name" value="Add a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_port.htm">
+			<param name="Name" value="Add a standard TCP/IP port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_tcpip_port.htm">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="types of printers">
+		<param name="Name" value="Printers overview">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_c_devices.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="updating drivers">
+		<param name="Local" value="hcp://system/errors/indePK

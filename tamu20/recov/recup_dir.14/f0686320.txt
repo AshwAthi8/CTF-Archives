@@ -1,0 +1,7 @@
+422-D541-11D4-9523-00B0D022CA64}"
+DESC_CommonDialog       = "Common Dialog Object"
+CLSID_PassportManager   = "{A5064424-D541-11D4-9523-00B0D022CA64}"
+DESC_PassportManager    = "Passport Manager Object"
+CLSID_Toolbar           = "{A5064426-D541-11D4-9523-00B0D022CA64}"
+DESC_Toolbar            = "User Accounts Toolbar Object"
+ERR_NOSETUPAPI          = "Can not register NUSRMGR.DLL because SETUPAPI.DLL is missing."

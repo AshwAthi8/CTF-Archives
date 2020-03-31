@@ -1,0 +1,25 @@
+e>OSBuildNumber</name>
+      <dataType>i4</dataType>
+    </stateVariable>
+    <stateVariable>
+      <name>OSMachineName</name>
+      <dataType>string</dataType>
+    </stateVariable>
+  </serviceStateTable>
+</scpd>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

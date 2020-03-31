@@ -1,0 +1,25 @@
+[Printers, &computers, or people]]></Text>
+	</Link>
+	<Link Id="5505" IconId="290" TopMargin="5">
+		<Text><![CDATA[&Computers or people]]></Text>
+	</Link>
+	<Link Id="5703" IconId="24" TopMargin="5">
+        <Text><![CDATA[&Information in Help and Support Center]]></Text>
+    </Link>
+	<Label TopMargin="8">
+		<Text><![CDATA[You may also want to...]]></Text>
+	</Label>
+	<Link Id="5504" IconId="24004" TopMargin="8">
+		<Text><![CDATA[&Search the Internet]]></Text>
+	</Link>
+	<Link Id="5000" IconId="24001" TopMargin="5" BottomMargin="8">
+		<Text><![CDATA[Chan&ge preferences]]></Text>
+	</Link>
+	<Balloon>
+	    <Link Id="5304" IconId="18" TopMargin="-3" BottomMargin="8">
+		    <Text>
+			    <![CDATA[T&urn off animated character]]>
+		    </Text>
+	    </Link>
+    </Balloon>
+</SimpleDialog>

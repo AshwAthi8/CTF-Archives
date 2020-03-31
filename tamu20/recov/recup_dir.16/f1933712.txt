@@ -1,0 +1,4 @@
+rgeRate_00000	10
+#define	RemainingCapacity_00000	12
+#define	Tag_00000	14
+#define	Voltage_00000	16

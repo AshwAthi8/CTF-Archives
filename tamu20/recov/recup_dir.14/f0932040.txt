@@ -1,0 +1,3 @@
+ CONTENT="text/html; charset=big5">
+		<!-- It is not necessary to localize this text - it will be dynamically loaded from the XML file at runtime -->
+		<title>Windows Server 

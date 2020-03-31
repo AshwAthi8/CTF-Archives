@@ -1,0 +1,1 @@
+%1 (%2) De database-engine kan de uitvoering van een transactie niet in het logboekbestand vastleggen. De foutmelding is %3. Het proces is afgebroken om de consistentie van de database te waarborgen. Herstart het proces om de database te herstellen en de database consistent te maken.

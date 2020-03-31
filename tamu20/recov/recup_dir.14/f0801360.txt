@@ -1,0 +1,8 @@
+Messenger.1'
+                        VersionIndependentProgID = s 'RsmUI.Messenger'
+                        LocalServer32 = s '%MODULE%'
+                        val AppID = s '{003E771E-DF5E-40C0-94A2-4109FF9AF445}'
+                        'TypeLib' = s '{D61A27C0-8F53-11D0-BFA0-00A024151983}'
+                }
+        }
+}

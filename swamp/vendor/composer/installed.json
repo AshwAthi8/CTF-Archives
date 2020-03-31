@@ -1,0 +1,48 @@
+[
+    {
+        "name": "pyrou/morpheus",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pyrou/Morpheus.git",
+            "reference": "33553cf593b4b94f72e427e43171bb8b7209b08f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pyrou/Morpheus/zipball/33553cf593b4b94f72e427e43171bb8b7209b08f",
+            "reference": "33553cf593b4b94f72e427e43171bb8b7209b08f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-03-19T19:36:26+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Morpheus\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Hurni",
+                "email": "michael.hurni@gmail.com"
+            }
+        ],
+        "description": "Library to encrypt and decrypt data in colors of a picture. Process also known as steganography",
+        "keywords": [
+            "ImageMagick",
+            "data encryption",
+            "gdlib",
+            "image encryption",
+            "imagick",
+            "steganography"
+        ]
+    }
+]

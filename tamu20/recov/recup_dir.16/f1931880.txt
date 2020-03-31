@@ -1,0 +1,9 @@
+ion(): iis_smtp=AT_DO_NOTHING
+[3/1/2020 19:06:35] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:35] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:06:35] 	Function = OC_QUERY_STATE (12), Param1 = 00000002 (2), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:06:35] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:35] Entering OCEntry; Component = <ims> (0), Subcomponent = <> (4)
+[3/1/2020 19:06:35] 	Function = OC_CLEANUP (11), Param1 = 00000000 (0), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:06:35] Leaving OCEntry.  Return=0
+[3/1/2020 19:07:38] LogFile Close.

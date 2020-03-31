@@ -1,0 +1,63 @@
+ressedLexicon = s 'SpCompressedLexicon Class'
+	{
+		CLSID = s '{90903716-2F42-11D3-9C26-00C04F8EF87C}'
+		CurVer = s 'SAPI.SpCompressedLexicon.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {90903716-2F42-11D3-9C26-00C04F8EF87C} = s 'SpCompressedLexicon Class'
+		{
+			ProgID = s 'SAPI.SpCompressedLexicon.1'
+			VersionIndependentProgID = s 'SAPI.SpCompressedLexicon'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{C866CA3A-32F7-11D2-9602-00C04F8EE628}'
+		}
+	}
+}
+HKCR
+{
+	SAPI.SpUncompressedLexicon.1 = s 'SpUncompressedLexicon Class'
+	{
+		CLSID = s '{C9E37C15-DF92-4727-85D6-72E5EEB6995A}'
+	}
+	SAPI.SpUncompressedLexicon = s 'SpUncompressedLexicon Class'
+	{
+		CLSID = s '{C9E37C15-DF92-4727-85D6-72E5EEB6995A}'
+		CurVer = s 'SAPI.SpUncompressedLexicon.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {C9E37C15-DF92-4727-85D6-72E5EEB6995A} = s 'SpUncompressedLexicon Class'
+		{
+			ProgID = s 'SAPI.SpUncompressedLexicon.1'
+			VersionIndependentProgID = s 'SAPI.SpUncompressedLexicon'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			'TypeLib' = s '{C866CA3A-32F7-11D2-9602-00C04F8EE628}'
+		}
+	}
+}
+
+HKLM
+{
+    NoRemove SOFTWARE
+    {
+        NoRemove Microsoft
+        {
+            NoRemove Speech
+            {
+                NoRemove AppLexicons
+                {
+                    NoRemove Tokens
+                    {
+                    }
+                }
+            }
+        }
+    }
+}

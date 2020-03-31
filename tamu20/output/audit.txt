@@ -1,0 +1,31 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Mar 20 14:44:22 2020
+Invocation: foremost recovered_disk.img 
+Output directory: /home/ashu/Downloads/tamu20/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: recovered_disk.img
+Start: Fri Mar 20 14:44:22 2020
+Length: 3 MB (4192944 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000757.jpg 	      95 KB 	     387760 	 
+1:	00003573.jpg 	     180 KB 	    1829552 	 
+2:	00000533.zip 	     108 KB 	     273072 	 
+3:	00000181.png 	       1 KB 	      92848 	  (329 x 17)
+4:	00000949.png 	       1 MB 	     486064 	  (1068 x 966)
+5:	00000149.pdf 	      12 KB 	      76464 	 
+Finish: Fri Mar 20 14:44:22 2020
+
+6 FILES EXTRACTED
+	
+jpg:= 2
+zip:= 1
+png:= 2
+pdf:= 1
+------------------------------------------------------------------
+
+Foremost finished at Fri Mar 20 14:44:22 2020

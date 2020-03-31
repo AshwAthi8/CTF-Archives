@@ -1,0 +1,4 @@
+   <bindingRedirect oldVersion="5.2.0.0-5.2.2.1830" newVersion="5.2.2.1830"/>
+      </dependentAssembly>
+   </dependency>
+</assembly>

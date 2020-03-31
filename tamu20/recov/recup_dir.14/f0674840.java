@@ -1,0 +1,30 @@
+ss>
+        <windowClass>msctls_trackbar32</windowClass>
+        <windowClass>msctls_updown32</windowClass>
+        <windowClass>msctls_progress32</windowClass>
+        <windowClass>msctls_hotkey32</windowClass>
+        <windowClass>msctls_statusbar32</windowClass>
+        <windowClass>SysHeader32</windowClass>
+        <windowClass>SysListView32</windowClass>
+        <windowClass>SysTreeView32</windowClass>
+        <windowClass>SysTabControl32</windowClass>
+        <windowClass>SysIPAddress32</windowClass>
+        <windowClass>SysPager</windowClass>
+        <windowClass>NativeFontCtl</windowClass>
+        <windowClass>Button</windowClass>
+        <windowClass>Static</windowClass>
+        <windowClass>Listbox</windowClass>
+        <windowClass>ScrollBar</windowClass>
+        <windowClass>SysLink</windowClass>
+        <windowClass>tooltips_class32</windowClass>
+        <windowClass>ButtonListBox</windowClass>
+        <windowClass>SysAnimate32</windowClass>
+        <windowClass>SysMonthCal32</windowClass>
+        <windowClass>SysDateTimePick32</windowClass>
+        <windowClass>ReBarWindow32</windowClass>
+        <windowClass>Edit</windowClass>
+        <windowClass>Combobox</windowClass>
+        <windowClass>ComboLBox</windowClass>
+        <windowClass>ReaderModeCtl</windowClass>
+    </file>
+</assembly>

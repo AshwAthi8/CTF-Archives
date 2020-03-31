@@ -1,0 +1,20 @@
+mblyIdentity
+	version="5.1.0.0"
+	processorArchitecture="x86"
+	name="Microsoft.Windows.StorageServices.RSM"
+	type="win32"
+/>
+<description>Windows Storage [ Property Pages ] Module</description>
+<dependency>
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="x86"
+            publicKeyToken="6595b64144ccf1df"
+            language="*"
+        />
+    </dependentAssembly>
+</dependency>
+</assembly>

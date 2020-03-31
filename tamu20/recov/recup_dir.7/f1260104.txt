@@ -1,0 +1,13 @@
+m">
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+<head>
+<style>
+.button {color: BUTTONTEXT; font-size: 9pt}
+.info {font-size: 9pt; color: WINDOWTEXT}
+.btext {color: BUTTONTEXT}
+LI {line-height:10pt}
+A {text-decoration: none; color: WINDOWTEXT}
+</style>
+<TITLE id=txtTitleOrgFavsDialog>
+お気�

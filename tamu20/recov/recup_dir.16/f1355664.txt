@@ -1,0 +1,7 @@
+called with parameters:
+   Flags = 0x%08lx
+   ActivationContextData = %p
+   ExtraBytes = %lu
+   NotificationRoutine = %p
+   NotificationContext = %p
+   ActCtx = %p

@@ -1,0 +1,8 @@
+ Description     = s 'Local Analog FM Radio'
+        val MinFrequency    = d '88100000'
+        val MaxFrequency    = d '107900000'
+        val 'Network Type'  = s '{00000000-0000-0000-0000-000000000000}'
+        val 'Step'          = d '200000'
+        val CountryCode     = d '1'
+    }
+}

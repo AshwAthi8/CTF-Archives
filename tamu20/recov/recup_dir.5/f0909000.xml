@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<Schema 
+      name="http://www.microsoft.com/provisioning/DeviceProfile/2004"
+      xmlns="urn:schemas-microsoft-com:xml-data"
+      xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+   <ElementType name="device" content="eltOnly">
+      	<element type="configId" 		minOccurs="1" maxOccurs="1" />
+      	<element type="configHash" 		minOccurs="0" maxOccurs="1" />
+      	<element type="configError" 	minOccurs="0" maxOccurs="1" />
+      	<element type="manufacturer" 	minOccurs="1" maxOccurs="1" />
+      	<element type="manufacturerURL" minOccurs="0" maxOccurs="1" />
+      	<element type="deviceStatus" 	minOccurs="0" maxOccurs="1" />
+      	<element type="modelName" 		minOccurs="1" maxOccurs="1" />
+      	<element type="modelURL" 		minOccurs="0" maxOccurs="1" />
+      	<element type="serialNumber" 	minOccurs="1" maxOccurs="1" />
+      	<element type="firmwareVersion" minOccurs="0" maxOccurs="1" />
+      	<element type="presentationURL" minOccurs="0" maxOccurs="1" />
+      	<element type="deviceType" 		minOccurs="0" maxOccurs="1" />
+      	<element type="workgroup" 		minOccurs="0" maxOccurs="1" />
+      	<element type="networkInterface" minOccurs="0" maxOccurs="*" />
+      	<element type="wifiAuthentication" minOccurs="0" maxOccurs="1" />
+      	<element type="wifiEncryption" 	minOccurs="0" maxOccurs="1" />
+      	<element type="wifiClient" 		minOccurs="0" maxOccurs="1" />
+      	<element type="wifiInfrastructure" minOccurs="0" maxOccurs="*" />
+      	<element type="wifiAccessPoint" minOccurs="0" maxOccurs="1" />
+   </ElementType>
+
+   <ElementType name="configId" 		dt:type="string" content="textOnly" dt:minLength="36" dt:maxLength="36"/>
+   <ElementType name="configHash" 		dt:type="string" content="textOnly" dt:minLength="20" dt:maxLength="20"/>
+   <ElementType name="configError" 		dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="256"/>
+   <ElementType name="manufacturer" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="256"/>
+   <ElementType name="manufacturerURL" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="2084"/>
+   <ElementType name="deviceStatus" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="256"/>
+   <ElementType name="modelName" 		dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="256"/>
+   <ElementType name="modelURL" 		dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="2084"/>
+   <ElementType name="serialNumber" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="256"/>
+   <ElementType name="firmwareVersion" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="256"/>
+   <ElementType name="presentationURL" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="2084"/>
+   <ElementType name="deviceType" 		dt:type="enumeration" dt:values="Computer Access_Point Printer Electronic_Picture_Frame Digital_Audio_Receiver Windows_Media_Center_Extender Personal_Video_Recorder Printer_Bridge Projector Pocket_PC Other" />
+
+   <ElementType name="workgroup" content="eltOnly">
+      <element type="deviceName"		minOccurs="0" maxOccurs="1" />
+      <element type="workgroupName" 	minOccurs="0" maxOccurs="1" />
+      <element type="deviceDescription"	minOccurs="0" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="deviceName" 		dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="15"/>
+   <ElementType name="workgroupName" 	dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="15"/>
+   <ElementType name="deviceDescription" dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="50"/>
+
+   <ElementType name="networkInterface" content="eltOnly">
+      <element type="IPv4Address"		minOccurs="0" maxOccurs="1" />
+      <element type="IPv6Address" 		minOccurs="0" maxOccurs="*" />
+      <element type="macAddress"		minOccurs="1" maxOccurs="1" />
+      <element type="interfaceStatus"	minOccurs="1" maxOccurs="1" />
+      <element type="mediaType"			minOccurs="1" maxOccurs="1" />
+      <element type="speed"				minOccurs="1" maxOccurs="1" />
+      <element type="DHCP"				minOccurs="1" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="IPv4Address" 		dt:type="string" content="textOnly" dt:minLength="7" dt:maxLength="15"/>
+   <ElementType name="IPv6Address" 		dt:type="string" content="textOnly" dt:minLength="16" dt:maxLength="39"/>
+   <ElementType name="macAddress" 		dt:type="string" content="textOnly" dt:minLength="12" dt:maxLength="12"/>
+   <ElementType name="interfaceStatus" 	dt:type="enumeration" dt:values="active disabled noMedia authenticating media noSignal" />
+   <ElementType name="mediaType"		dt:type="enumeration" dt:values="802.3 1394 802.11 usb bluetooth other" />
+   <ElementType name="speed"			dt:type="ui4" />
+   <ElementType name="DHCP"				dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+
+   <ElementType name="wifiAuthentication" content="eltOnly">
+      <element type="open"				minOccurs="0" maxOccurs="1" />
+      <element type="shared" 			minOccurs="0" maxOccurs="1" />
+      <element type="WPA-NONE"			minOccurs="0" maxOccurs="1" />
+      <element type="WPA"				minOccurs="0" maxOccurs="1" />
+      <element type="WPAPSK"			minOccurs="0" maxOccurs="1" />
+      <element type="WPA2"				minOccurs="0" maxOccurs="1" />
+      <element type="WPA2PSK"			minOccurs="0" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="open" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="shared" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="WPA-NONE"			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="WPA" 				dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="WPAPSK" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="WPA2" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="WPA2PSK" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+
+   <ElementType name="wifiEncryption" content="eltOnly">
+      <element type="none"				minOccurs="0" maxOccurs="1" />
+      <element type="WEP" 				minOccurs="0" maxOccurs="1" />
+      <element type="TKIP"				minOccurs="0" maxOccurs="1" />
+      <element type="AES"				minOccurs="0" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="none" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="WEP" 				dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="TKIP" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="AES" 				dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+
+   <ElementType name="wifiClient" content="eltOnly">
+      <element type="regulatoryDomain"	minOccurs="0" maxOccurs="1" />
+      <element type="transmitPower" 	minOccurs="0" maxOccurs="1" />
+      <element type="clientNetworkType" minOccurs="1" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="regulatoryDomain" dt:type="string" content="textOnly" dt:minLength="3" dt:maxLength="3"/>
+   <ElementType name="transmitPower" 	dt:type="int" />
+
+   <ElementType name="clientNetworkType" content="eltOnly">
+      <element type="ieee802Dot11a"	/>
+      <element type="ieee802Dot11b" 	/>
+      <element type="ieee802Dot11g"	/>
+   </ElementType> 
+     
+   <ElementType name="ieee802Dot11a" 	dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="ieee802Dot11b" 	dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="ieee802Dot11g" 	dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+
+   <ElementType name="wifiInfrastructure" content="eltOnly">
+      <element type="ssid"				minOccurs="1" maxOccurs="1" />
+      <element type="macAddress" 		minOccurs="1" maxOccurs="1" />
+      <element type="visibleNetworkType" minOccurs="1" maxOccurs="1" />
+      <element type="channel"			minOccurs="1" maxOccurs="1" />
+      <element type="signalStrength"	minOccurs="0" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="ssid" dt:type="string" content="textOnly" dt:minLength="1" dt:maxLength="32"/>
+   <ElementType name="visibleNetworkType" dt:type="enumeration" dt:values="ieee802Dot11a ieee802Dot11b ieee802Dot11g" />
+   <ElementType name="channel" 			dt:type="ui4" />
+   <ElementType name="signalStrength" 	dt:type="int" />
+
+   <ElementType name="wifiAccessPoint" content="eltOnly">
+      <element type="ieee802Dot11a"		minOccurs="0" maxOccurs="1" />
+      <element type="ieee802Dot11b" 	minOccurs="0" maxOccurs="1" />
+      <element type="ieee802Dot11g"		minOccurs="0" maxOccurs="1" />
+      <element type="regulatoryDomain"	minOccurs="0" maxOccurs="1" />
+      <element type="macFilter"			minOccurs="0" maxOccurs="1" />
+      <element type="securityType"		minOccurs="0" maxOccurs="1" />
+      <element type="beaconInterval"	minOccurs="0" maxOccurs="1" />
+   </ElementType>   
+
+   <ElementType name="macFilter" dt:type="string" content="textOnly" dt:minLength="8" dt:maxLength="8"/>
+   <ElementType name="securityType" content="eltOnly">
+      <element type="basic"				minOccurs="0" maxOccurs="1" />
+      <element type="WPA" 				minOccurs="0" maxOccurs="1" />
+      <element type="WPA2"				minOccurs="0" maxOccurs="1" />
+   </ElementType>   
+   
+   <ElementType name="basic" 			dt:type="enumeration" dt:values="0 1 true false TRUE FALSE True False" />	
+   <ElementType name="beaconInterval"	dt:type="ui4" />
+
+</Schema>
+                                                                                                                                                                                                                                                                                                                            oõöf÷<ö¼ùÑöOü¸÷õþÙøU÷ù.û|.ü;ý£ý‡Ûýjþ4‡þáMÿq? Ø!¼FPJ‡ ˜ $õÿÑ †* * tÚÿ¨4ÿ¶aþ½¨ýÆý¡©üBKü·çûûd;ûŸ2û´Iû± ¥ûéÿ>ü\ÿÛüêþ_ýsþ©ýþÀý¿ýŽý–ýîünýùûýûpüSú ûú¶úúÑùdúêø¹úø"ûS÷®ûööyü3÷ƒýÿ÷³þ1ùÓÿŽú° õûAýý <þ ìþ	 sÿ¬ÿÚÿ¦ÿK Úÿ´ * D ; Ú G „   ÿÿVxÿ]ÿ¿ÿnøþ1ÝþÛ¼þ>
+•þˆþo¿þf:ÿ1¢ÿÚ
+âÿ3
+âÿ@	½ÿ#›ÿî“ÿ£·ÿ[ 9e aä ã‘FIÞÙ BV ›¤ÿçþv'þ³ý¼Zýƒ_ý¨ý}þØ™þM6ÿûúÿÝñ ³"Èd7|ì8ØrÔ%ºpÝR«ó=ËÆî;	,‡	X»	kÐ	ƒÎ	À¯	}	”{	vË	s
+3D
+–!
+Ð	2`	±¾%ð‘ïûËb}Å·>[ „ÿü ïýÉ  ýAü†Ðû¹ûˆÚûéûKÁûÌ…û:ûN ýú€ÿìú¼þÖúøýlúAý¶ù˜ü÷øüVø‚ûü÷2ûæ÷;ûø†ûƒøàû?ùüûúÊûÐúrû%ûôúûsú²úúSúÆùú¦ùæù¦ùòù·ùúØùú
+úúhúêùñú¢ùûSùüùµýóøÊþÈøÿøðÿhøâÿaøXÿ•øþù†ý“ùŸüFúÇû÷úþúzû[úÎûçùüuù|üùþüäø‡ýÝøþ-ùÜþ¨ùÏÿúÏ 5úÆTúº}ú~¬úËú]ÿú­Oûä¼ûÿTüÔ'ý|Gþ-¡ÿÿ)ØøÍøð!;0	‚à
+œ/Ÿ*¤Ñ—0ºB!¡}¨‘†ð:
+PÆ©"ÚŠX`˜Ø"b	Å	ìÝ	¢	# 	6ÿpIþÀkýÐ³ü¨(üa¡ûéû*úZÿñùšýùæûYø~úÞ÷€ù ÷Âøt÷Gø÷õ÷uö¦÷ õJ÷§ôöö®óÄöÔòÅö(òðö¶ñ÷ ñîöÛñöEòö¿òuõTóþôô¹ôúô–ôúõ¨ô÷õ=ø¹õXù¥öpúœ÷•ûø§ükùœý$ú©þÜú²ÿ\û„ hû5CûÊû7Åúgrú£8ú*Fú-¸ú½mû£Kü’	=ý@"þóþj›ÿÔ1 îÌ ¾T:¾‡ŸGv
+b÷\=HZ0œ)!9ü —3 C…ÿ×þÇ-þ|ýAý¸üð€ü”kü	›üK	úü"	WýwÈývTþJ
+ÿ#Íÿ)w Pÿ ÊMgu,w`%6Kó r¡ “J ²ñÿ´“ÿ†$ÿE²þùdþœIþKKþ.‹þ]ÿÜÌÿœi ˆÊ Oþ\³—8§‰‹±l£E/ý ?‡ üòÿ˜mÿ)(ÿÔÿFÿÃþäÿ/þä þõ-þÒþz¨ýCý–ùüïü—BýøÝý-yþ4ýþYÿ™‡ÿTšÿSÂÿ‹ùÿá2 @ ›á ì2#UOTŠxÁåÓ]ÉÃªt¸ >ƒ- $ÿï.þ¡ýdnýooý!qý¤{ýó£ýÎÖý4þhÿgþŒýÅþÇû	ÿúGÿˆøoÿ÷~ÿ­õÿiô~ÿ7óoÿPò”ÿÊñìÿtñ[ ;ñ· .ñù Sñø ‡ñ½ ±ñx çñN Jò3 ßò ~óÝÿôGÿ²ôaþ_õCý&öýû÷Çú3øéùšùsù4ûSùëümùÃþ¢ù´ óù‰múðú‹û¦-üÖ³ü²0ýNˆý¦µý¿Âý³´ý˜œý˜ ©ýÞÿþ`ÿ´þÿ‘ÿÿv ÿQOÿÿ‡uÿü8ÿŽàþƒþm8þ|/þmdþOŸþÆþèþæÿF<ÿ¨_ÿYÿ• 5ÿéÿüþÿµþ&þ@þKý¬ýŠüêüÏû
+üûú'û(úXúUùÄù˜øqùø÷>

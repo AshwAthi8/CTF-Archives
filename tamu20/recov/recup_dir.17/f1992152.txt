@@ -1,0 +1,24 @@
+lose();
+				}
+			}
+
+			function window::onload()
+			{
+				setTimeout( 'window.dialogArguments.ASSERT( "DisplayXML()" )', 100 );
+			}
+
+			function window::onbeforeunload()
+			{
+				try
+				{
+					window.dialogArguments.g_oXMLDlg = null;
+				}
+				catch( e ){ }
+			}
+
+        // -->
+		</script>
+	</head>
+	<body onkeydown="ESC_KeyDown();" bgcolor="#ffffff" text="#000000" topmargin="0" leftmargin="0" marginheight="0">
+	</body>
+</html>

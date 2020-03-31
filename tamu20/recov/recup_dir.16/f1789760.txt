@@ -1,0 +1,48 @@
+TION for C:\WINDOWS\SysWOW64\msdtcuiu.dll, Win32Error = 0 FailureCode = 0
+DTC Setup[7:6:33]: C:\WINDOWS\SysWOW64\msdtcuiu.dll successfully registered
+DTC Setup[7:6:33]: Leaving COcmComponent::InfRegisterDllsHandler ReturnCode = 1
+DTC Setup[7:6:33]: Entering COcmComponent::InfRegisterDllsHandler Context=0x0 Notification = 25 Param1 = 0x3202668 Param2 = 0x1
+DTC Setup[7:6:33]: Received SPFILENOTIFY_STARTREGISTRATION for C:\WINDOWS\SysWOW64\mtxoci.dll
+DTC Setup[7:6:33]: Leaving COcmComponent::InfRegisterDllsHandler ReturnCode = 1
+DTC Setup[7:6:33]: Entering COcmComponent::InfRegisterDllsHandler Context=0x0 Notification = 32 Param1 = 0x3202650 Param2 = 0x1
+DTC Setup[7:6:33]: Received SPFILENOTIFY_ENDREGISTRATION for C:\WINDOWS\SysWOW64\mtxoci.dll, Win32Error = 0 FailureCode = 0
+DTC Setup[7:6:33]: C:\WINDOWS\SysWOW64\mtxoci.dll successfully registered
+DTC Setup[7:6:33]: Leaving COcmComponent::InfRegisterDllsHandler ReturnCode = 1
+DTC Setup[7:6:33]: Queuing InstallServices ops for component dtc, Section Name: dtc_install
+DTC Setup[7:6:33]: Registering C:\WINDOWS\system32\msdtctm.dll.
+DTC Setup[7:6:33]: Before call to LoadLibraryEx - Module: C:\WINDOWS\system32\msdtctm.dll
+DTC Setup[7:6:33]: After call to LoadLibraryEx - Module: C:\WINDOWS\system32\msdtctm.dll
+DTC Setup[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\msdtctm.dll
+DTC Setup[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\msdtctm.dll
+DTC Setup[7:6:33]: Registering C:\WINDOWS\system32\msdtcprx.dll.
+DTC Setup[7:6:33]: Before call to LoadLibraryEx - Module: C:\WINDOWS\system32\msdtcprx.dll
+DTC Setup[7:6:33]: After call to LoadLibraryEx - Module: C:\WINDOWS\system32\msdtcprx.dll
+DTC Setup[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\msdtcprx.dll
+DTC Setup[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\msdtcprx.dll
+DTC Setup[7:6:33]: Registering C:\WINDOWS\system32\mtxoci.dll.
+DTC Setup[7:6:33]: Before call to LoadLibraryEx - Module: C:\WINDOWS\system32\mtxoci.dll
+DTC Setup[7:6:33]: After call to LoadLibraryEx - Module: C:\WINDOWS\system32\mtxoci.dll
+DTC Setup[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\mtxoci.dll
+DTC Setup[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\mtxoci.dll
+DTC Setup[7:6:33]: Registering C:\WINDOWS\system32\msdtcuiu.dll.
+DTC Setup[7:6:33]: Before call to LoadLibraryEx - Module: C:\WINDOWS\system32\msdtcuiu.dll
+DTC Setup[7:6:33]: After call to LoadLibraryEx - Module: C:\WINDOWS\system32\msdtcuiu.dll
+DTC Setup[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\msdtcuiu.dll
+DTC Setup[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\msdtcuiu.dll
+DTC Setup[7:6:33]: Running command: unlodctr "MSDTC"
+DTC Setup[7:6:33]: Running command: lodctr "C:\WINDOWS\system32\msdtcprf.ini"
+DTC Setup[7:6:33]: Running command: "C:\WINDOWS\system32\msdtc.exe" -install  -d "C:\WINDOWS\system32" -l "C:\WINDOWS\system32\MSDTC" -silentinstall
+DTC Setup[7:6:33]: Running command: "C:\WINDOWS\system32\msdtc.exe" -ws03sp1install
+DTC Setup[7:6:33]: Starting service MSDTC.
+DTC Setup[7:6:33]: Setup Error: d:\srvrtm\com\complus\dtc\ntdtcsetup\src\csetuputil.cpp 3376.
+DTC Setup[7:6:33]: Writing persistent registry values
+DTC Setup[7:6:33]: Finished writing persistent registry values, retval = 0x0
+DTC Setup[7:6:33]: End OC_COMPLETE_INSTALLATION Return Value = 0
+DTC Setup[7:6:33]: Start OC_QUERY_STATEComponent = dtc Subcomponent = dtc
+DTC Setup[7:6:33]: Subcomponent dtc state: O-,C+,R+
+DTC Setup[7:6:33]: End OC_QUERY_STATE Return Value = 1
+DTC Setup[7:6:35]: Start OC_CLEANUP Component = dtc
+DTC Setup[7:6:35]: End OC_CLEANUP Return Value = 0
+DTC Setup[7:7:38]: ********************************************************************************
+DTC Setup[7:7:38]: Setup finished - [DATE:03,01,2020 TIME: 07:07 pm]
+DTC Setup[7:7:38]: ********************************************************************************

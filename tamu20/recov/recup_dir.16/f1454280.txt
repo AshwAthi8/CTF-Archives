@@ -1,0 +1,750 @@
+helper.getLayoutSize( 5 );
+	lCaptions = helper.getLayoutSize( 6 );
+	lBanner = helper.getLayoutSize( 7 );
+
+	if( 0 != lSettings )
+	{
+		svSettings.verticalAlignment="top";
+		svSettings.top=svMain.height-lSettings;
+		svSettings.height=lSettings;
+		svSettings.verticalAlignment="bottom";
+		svSettings.visible = true;
+		svMedia.height = svMain.height-svMedia.top-g_SepHeight-lSettings ;
+	}
+	else
+	{
+		svSettings.visible = false;
+		svMedia.height = svMain.height-svMedia.top;
+	}
+
+	if( 0 != lSidebar )
+	{
+		svSidebar.width = lSidebar;
+		svMain.width = vMain.width - lSidebar - g_SepWidth;
+		svSidebar.visible = true;
+	}
+	else
+	{
+		svSidebar.visible = false;
+		svSidebar.width = lSidebar;
+		svMain.width = vMain.width;
+	}
+
+	if( 0 != lMetadata )
+	{
+	    if (0 != lPlaylist)
+	    {
+	        piMetadata.top = lPlaylist + g_SepHeight;
+	    }
+	    else
+	    {
+	        piMetadata.top = 0;
+	    }
+
+		piMetadata.height = lMetadata;
+		piMetadata.visible = true;
+	}
+	else
+	{
+		piMetadata.visible = false;
+	}
+
+	if( 0 != lPlaylist )
+	{
+		plMedia.top = 0;
+		plMedia.height = lPlaylist;
+		plMedia.visible = true;
+	}
+	else
+	{
+		plMedia.visible = false;
+	}
+
+	UpdateResizeBars();
+
+	if( 0 != lDisplay )
+	{
+		piDisplay.height = lDisplay;
+		piDisplay.visible = true;
+	}
+	else
+	{
+		piDisplay.visible = false;
+	}
+
+	piBanner.visible = ( 0 != lBanner );
+
+	if( 0 != lCaptions )
+	{
+		piCaptions.verticalAlignment = "top";
+		piCaptions.top = lDisplay;
+		piCaptions.height = lCaptions;
+		piCaptions.verticalAlignment = "bottom";
+		piCaptions.visible = true;
+	}
+	else
+	{
+		piCaptions.visible = false;
+	}
+   }
+}
+
+function ResetDisplayPlugin()
+{
+		mediacenter.displayView = helper.resolveDisplayView(false);
+		UpdateDisplayPlugin();
+		UpdateDisplayPreset();
+}
+
+var g_fSetQuickHideForBorder=false;
+
+function OnClose()
+{
+   g_fClosing = true;
+   if( g_fSetQuickHideForBorder )
+   {
+      QuickHideForBorder( false );
+   }
+}
+
+function QuickHideForBorder(fHide)
+{
+	if (fHide && (!mediacenter.quickHide) && (!g_fSetQuickHideForBorder))
+	{
+		g_fSetQuickHideForBorder = true;
+		mediacenter.quickHide=true;
+	}
+	else if ( (!fHide) && g_fSetQuickHideForBorder)
+	{
+		mediacenter.quickHide=false;
+		g_fSetQuickHideForBorder=false;
+	}
+}
+
+function UpdateDisplayPlugin()
+{
+	piDisplay.objectID = mediacenter.displayView;
+
+	// handle skin
+
+	if( piDisplay.objectID == "BorderView" )
+	{
+		QuickHideForBorder(true);		
+		var skinfile = helper.getSkinFile();
+		piDisplay.setProperty( PLUGIN_PROP_SKINFILE, skinfile );
+
+		// Reset if error
+
+		if( ( piDisplay.getProperty( PLUGIN_PROP_SKINFILE ) != skinfile ) || ( "" == skinfile ) )
+		{
+			mediacenter.displayView = helper.resolveDisplayView(true);
+			UpdateDisplayPreset();
+			QuickHideForBorder(false);
+		}
+	}
+	else
+	{		
+		QuickHideForBorder(false);		
+	}
+
+	// Clear the security goo for anything that isn't a border view or metadata view
+	if( piDisplay.objectID != "BorderView" && piDisplay.objectID != "MetadataView" )
+	{
+		helper.htmlViewBaseURL = "";
+		helper.htmlViewFullURL = "";
+		helper.htmlViewSecureLock = 0;
+		helper.htmlViewBusy = false;
+	}
+
+
+
+	// Reset if error
+
+	if( "" == piDisplay.objectID )
+	{
+			mediacenter.displayView = helper.resolveDisplayView(true);
+			UpdateDisplayPreset();
+	}
+
+	// Reset full screen
+
+	if( piDisplay.objectID != "VideoView" && piDisplay.objectID != "VizView" )
+	{
+			mediacenter.fullScreenAvailable = false;
+	}
+
+	// Sync back
+
+	mediacenter.displayView = piDisplay.objectID;
+
+}
+
+function UpdateDisplayPreset()
+{
+	var displayPreset = 0;
+
+	if( piDisplay.objectID != "VideoView" && piDisplay.objectID != "VizView" && piDisplay.objectID != "BorderView" && piDisplay.objectID != "MetadataView" )
+	{
+		piDisplay.setProperty( PLUGIN_PROP_CURRENTPRESET, mediacenter.displayPreset );
+
+		// Sync back
+
+		displayPreset = piDisplay.getProperty( PLUGIN_PROP_CURRENTPRESET );
+		mediacenter.displayPreset = displayPreset;
+	}
+}
+
+function UpdateCaptions()
+{
+	var fShowCaptions = false;
+	
+	if ( mediacenter.showCaptions && !PlayingDVD() )
+	{
+		if( piDisplay.objectID == "VideoView" || piDisplay.objectID == "VizView" || piDisplay.objectID == "AlbumArtView" )
+		{		
+			fShowCaptions = g_fCaptionsDetected;
+		}
+	}
+	
+	g_fShowCaptions = fShowCaptions;
+}
+
+function UpdateBannerPlugin()
+{
+	if(player.currentMedia && (player.currentmedia.getItemInfo("BannerURL") != ""))
+	{
+		g_fShowBanner = true;
+	}
+	else
+	{
+		g_fShowBanner = false;
+	}
+}
+
+function UpdateSettingsPlugin()
+{
+	var settingsPreset = 0;
+
+	piSettings.objectID = mediacenter.settingsView;
+	piSettings.setProperty( PLUGIN_PROP_CURRENTPRESET, mediacenter.settingsPreset );
+
+	// Reset if error
+
+	if( "" == piSettings.objectID )
+	{
+			piSettings.objectID = "EQView";
+	}
+
+	// Sync back
+
+	settingsPreset = piSettings.getProperty( PLUGIN_PROP_CURRENTPRESET );
+	mediacenter.settingsView = piSettings.objectID;
+	mediacenter.settingsPreset = settingsPreset;
+
+	// Update spinners and text
+
+	if( 0 <= MapSettingsToIndex( mediacenter.settingsView ) )
+	{
+		btnSettingsPrev.visible = true;
+		txtSettingsTitle.horizontalAlignment="left";
+		txtSettingsTitle.left = g_nSettingsTitleLeft;
+		txtSettingsTitle.width = btnSettingsClose.left-txtSettingsTitle.left;
+		txtSettingsTitle.horizontalAlignment="stretch";
+	}
+	else
+	{
+		btnSettingsPrev.visible = false;
+		txtSettingsTitle.horizontalAlignment="left";
+		txtSettingsTitle.left = btnSettingsPrev.left;
+		txtSettingsTitle.width = btnSettingsClose.left-txtSettingsTitle.left;
+		txtSettingsTitle.horizontalAlignment="stretch";
+	}
+}
+
+function UpdateMetadataPlugin()
+{
+	var metadataPreset = 0;
+
+	piMetadata.objectID = mediacenter.metadataView;
+	piMetadata.setProperty( PLUGIN_PROP_CURRENTPRESET, mediacenter.metadataPreset );
+
+	// Reset if error
+
+	if( "" == piMetadata.objectID )
+	{
+			piMetadata.objectID = "MediaInfoView";
+			mediacenter.showMetadata = false;
+	}
+
+	// Sync back
+
+	metadataPreset = piMetadata.getProperty( PLUGIN_PROP_CURRENTPRESET );
+	mediacenter.metadataView = piMetadata.objectID;
+	mediacenter.metadataPreset = metadataPreset;
+
+}
+
+
+function UpdateVizControls()
+{
+	// DVD?
+
+	if( ( "VideoView" == piDisplay.objectID ) && PlayingDVD() )
+	{
+			txtVizTitle.visible = false;
+			txtVizTitle2.visible = false;
+			btnDVDMenu.visible =  ( ("videoManagerMenu" != player.dvd.domain) && ("videoTitleSetMenu" != player.dvd.domain) ); 
+			btnDVDResume.visible = !btnDVDMenu.visible;
+
+			return;
+	}
+
+	// No Viz or Border or Video?
+
+	if( ( ( mediacenter.showEffects == false ) && ( "VizView" == piDisplay.objectID ) ) || 
+			( "BorderView" == piDisplay.objectID ) || ( "VideoView" == piDisplay.objectID ) )
+	{
+			txtVizTitle.visible = false;
+			txtVizTitle2.visible = false;
+			btnDVDMenu.visible = false;
+			btnDVDResume.visible = false;
+
+			return;
+	}
+
+	// Viz or Plugin
+
+	UpdateVizTitle();
+
+	if( ( "VizView" == piDisplay.objectID ) || ( 1 < helper.viewPresetCount( piDisplay.objectID ) ) )
+	{
+			txtVizTitle2.visible = false; 
+			btnDVDMenu.visible = false;
+			btnDVDResume.visible = false;
+			txtVizTitle.visible = true;
+
+			if( "VizView" == piDisplay.objectID )
+			{
+				btnVizPrev.upTooltip="res://wmploc/RT_STRING/#1842";
+				btnVizNext.upTooltip="res://wmploc/RT_STRING/#1843";
+			}
+			else
+			{
+				btnVizPrev.upTooltip="res://wmploc/RT_STRING/#1422";
+				btnVizNext.upTooltip="res://wmploc/RT_STRING/#1423";
+			}
+
+            btnVizPrev.accName = btnVizPrev.upTooltip;
+            btnVizNext.accName = btnVizNext.upTooltip;
+	}
+	else
+	{
+			txtVizTitle.visible = false; 
+			btnDVDMenu.visible = false;
+			btnDVDResume.visible = false;
+			txtVizTitle2.visible = true; 
+	}
+}
+
+function UpdateVizTitle()
+{
+	var viewName;
+	var presetName;
+
+	if( "VizView" == piDisplay.objectID )
+	{
+			viewName = helper.effectFriendlyName( mediacenter.effectType );
+			presetName = helper.effectPresetName( mediacenter.effectType, mediacenter.effectPreset );
+	}
+	else
+	{
+			viewName = helper.viewFriendlyName( piDisplay.objectID );
+			presetName = helper.viewPresetName( piDisplay.objectID, mediacenter.displayPreset );
+	}
+
+	if (""!=presetName)
+	{
+			txtVizTitle.value = viewName + " : " + presetName;
+	}
+	else
+	{
+			txtVizTitle.value = viewName;
+	}
+
+	txtVizTitle2.value = txtVizTitle.value;
+}
+
+function PreviousDisplay()
+{
+	if( "VizView" == piDisplay.objectID )
+	{
+		if (event.shiftKey)
+		{
+			mediacenter.vizRequest = VR_VIZ_PREV;
+		}
+		else
+		{
+			mediacenter.vizRequest = VR_PRESET_PREV;
+		}
+	}
+	else
+	{
+		var presetCount = helper.viewPresetCount( piDisplay.objectID );
+		var preset = mediacenter.displayPreset;
+
+		preset = preset - 1;
+
+		if( preset < 0 )
+		{
+			preset = presetCount - 1;
+		}
+
+		mediacenter.displayPreset = preset;
+	}
+}
+
+function NextDisplay()
+{
+	if( "VizView" == piDisplay.objectID )
+	{
+		if (event.shiftKey)
+		{
+			mediacenter.vizRequest = VR_VIZ_NEXT;
+		}
+		else
+		{
+			mediacenter.vizRequest = VR_PRESET_NEXT;
+		}
+	}
+	else
+	{
+		var presetCount = helper.viewPresetCount( piDisplay.objectID );
+		var preset = mediacenter.displayPreset;
+
+		preset = preset + 1;
+
+		if( preset >= presetCount )
+		{
+			preset = 0;
+		}
+
+		mediacenter.displayPreset = preset;
+	}
+}
+
+function PreviousSettings()
+{
+	var nIndex = MapSettingsToIndex( mediacenter.settingsView );
+	var nCurrentIndex = nIndex;
+	
+	do
+	{
+		nIndex = nIndex - 1;
+
+		if( 0 > nIndex )
+		{
+			nIndex = g_rgSettings.length - 1;
+		}
+
+		mediacenter.settingsView = g_rgSettings[ nIndex ];
+
+	} while( ( MapSettingsToIndex( mediacenter.settingsView ) == nCurrentIndex ) && ( nCurrentIndex != nIndex ) );
+}
+
+function NextSettings()
+{
+	var nIndex = MapSettingsToIndex( mediacenter.settingsView );
+	var nCurrentIndex = nIndex;
+	
+	do
+	{
+		nIndex = nIndex + 1;
+
+		if( g_rgSettings.length <= nIndex )
+		{
+			nIndex = 0;
+		}
+
+		mediacenter.settingsView = g_rgSettings[ nIndex ];
+
+	} while( ( MapSettingsToIndex( mediacenter.settingsView ) == nCurrentIndex ) && ( nCurrentIndex != nIndex ) );
+}
+
+function UpdateResizeBars()
+{
+		if( plMedia.visible && piMetadata.visible )
+		{
+				btnSResize.top = plMedia.height;
+				btnSResize.height = g_SepWidth;
+				btnSResize.visible = true;
+		}
+		else
+		{
+				btnSResize.visible = false;
+		}
+
+		if( plMedia.visible || piMetadata.visible )
+		{
+				btnVResize.horizontalAlignment='left';
+				btnVResize.left = vMain.width - plMedia.width - g_SepWidth;
+				btnVResize.width = g_SepWidth;
+				btnVResize.horizontalAlignment='right';
+				btnVResize.visible = true;
+		}
+		else
+		{
+				btnVResize.visible = false;
+		}
+
+		if( svSettings.visible )
+		{
+				btnHResize.verticalAlignment='top';
+				btnHResize.top = svMain.height - svSettings.height - g_SepHeight;
+				btnHResize.height = g_SepHeight;
+				btnHResize.verticalAlignment='bottom';
+				btnHResize.visible = true;
+		}
+		else
+		{
+				btnHResize.visible = false;
+		}
+}
+
+function UpdateFullScreenButton()
+{
+	if( mediacenter.fullScreenAvailable && ( osMediaOpen == player.openState ) &&
+			( ( player.playState >= psPaused ) && ( player.playState <= psScanReverse ) ) )
+	{
+			btnFullScreen.enabled=true;
+	}
+	else
+	{
+			btnFullScreen.enabled=false;
+	}
+}
+
+function UpdateSettingsTitle()
+{
+		var viewName = helper.viewFriendlyName( piSettings.objectID );
+
+		txtSettingsTitle.value = viewName;
+}
+
+function OnVResizeStart()
+{
+		btnVResize.horizontalAlignment='left';
+		svSidebar.horizontalAlignment='left';
+		g_VResize=true;
+}
+
+function OnVResize(xPos)
+{
+		var plLeft=xPos+g_SepWidth;
+
+		if(xPos<g_DisplayMinWidth)
+		{
+				xPos=g_DisplayMinWidth;
+				plLeft=xPos+g_SepWidth;
+		}
+		else if(vMain.width-plLeft<g_SidebarMinWidth)
+		{
+				plLeft=vMain.width-g_SidebarMinWidth;
+				xPos=plLeft-g_SepWidth;
+		}
+		else if(vMain.width-plLeft>g_SidebarMaxWidth)
+		{
+				plLeft=vMain.width-g_SidebarMaxWidth;
+				xPos=plLeft-g_SepWidth;
+		}
+
+		btnVResize.left = xPos;
+		btnVResize.width = g_SepWidth;
+		svMain.width = xPos;
+		svSidebar.left = plLeft;
+		svSidebar.width = vMain.width-plLeft;
+		vMain.updateWindow();
+}
+
+function OnVResizeEnd()
+{
+		g_VResize=false;
+		btnVResize.horizontalAlignment='right';
+		svSidebar.horizontalAlignment='right';
+		mediacenter.playlistWidth=svSidebar.width;
+		mediacenter.metadataWidth=svSidebar.width;
+}
+
+function OnHResizeStart()
+{
+		btnHResize.verticalAlignment='top';
+		svSettings.verticalAlignment='top';
+		g_HResize=true;
+}
+
+function OnHResize(yPos)
+{
+		var plTop=yPos+g_SepHeight;
+
+		if(yPos<g_DisplayMinHeight)
+		{
+				yPos=g_DisplayMinHeight;
+				plTop=yPos+g_SepHeight;
+		}
+		else if(svMain.height-g_ControlbarHeight-plTop<g_SettingsMinHeight)
+		{
+				plTop=svMain.height-g_ControlbarHeight-g_SettingsMinHeight;
+				yPos=plTop-g_SepHeight;
+		}
+		else if(svMain.height-g_ControlbarHeight-plTop>g_SettingsMaxHeight)
+		{
+				plTop=svMain.height-g_ControlbarHeight-g_SettingsMaxHeight;
+				yPos=plTop-g_SepHeight;
+		}
+
+		btnHResize.top = yPos;
+		btnHResize.height = g_SepHeight;
+		svMedia.height=yPos-svMedia.top;
+		svSettings.top=plTop;
+		svSettings.height=svMain.height-g_ControlbarHeight-plTop;
+		vMain.updateWindow();
+}
+
+function OnHResizeEnd()
+{
+		g_HResize=false;
+		btnHResize.verticalAlignment='bottom';
+		svSettings.verticalAlignment='bottom';
+		mediacenter.settingsHeight=svSettings.height;
+}
+
+function OnSResizeStart()
+{
+		g_SResize=true;
+}
+
+function OnSResize(yPos)
+{
+		var plTop=yPos+g_SepHeight;
+
+		if(svSidebar.height-plTop<g_PlaylistMinHeight)
+		{
+				plTop=svSidebar.height-g_PlaylistMinHeight;
+				yPos=plTop-g_SepHeight;
+		}
+
+		if(yPos<g_MetadataMinHeight)
+		{
+				yPos=g_MetadataMinHeight;
+				plTop=yPos+g_SepHeight;
+		}
+
+		btnSResize.top = yPos;
+		btnSResize.height = g_SepHeight;
+		plMedia.height=yPos;
+		piMetadata.top=plTop;
+		piMetadata.height=svSidebar.height-plTop;
+		vMain.updateWindow();
+}
+
+function OnSResizeEnd()
+{
+		g_SResize=false;
+		mediacenter.metadataHeight=piMetadata.height;
+}
+
+function UpdateCustomize()
+{
+		btnCustomize.enabled = mediacenter.showTitles || mediacenter.showPlaylist || mediacenter.showMetadata || mediacenter.showSettings || mediacenter.quickHide;
+		btnCustomize.downimage = btnCustomize.down ? "res://wmploc/#1730" : "res://wmploc/#1734";
+		btnCustomize.accName = btnCustomize.down ? btnCustomize.downTooltip : btnCustomize.upTooltip;
+}
+
+function CustomizeMenu()
+{
+		mnuCustomize.top = btnCustomizeMenu.top+btnCustomizeMenu.height;
+		mnuCustomize.left = btnCustomizeMenu.left;
+
+		mnuCustomize.showEx( 3 );
+}
+
+function OnLinkRequest()
+{
+	theme.CurrentViewID="vBrowser";
+}
+
+function OnBrowserLoad()
+{
+	Browser1.SetProperty( "linkRequestParams", helper.linkRequestParams );
+	Browser1.SetProperty( "linkRequest", helper.linkRequest );
+}
+
+function OnBrowserBack()
+{
+	Browser1.visible=false;
+	vBrowser.updateWindow();
+	theme.CurrentViewID="vMain";
+}
+
+function PlayingDVD()
+{
+	return ( (player.currentPlaylist.count>0) && (player.currentPlaylist.item(0).sourceURL.indexOf("wmpdvd:")==0));
+}
+
+function MapSettingsToIndex( View )
+{
+	for (var i = 0; i < g_rgSettings.length; i++)
+	{
+		if (View == g_rgSettings[i])
+		{
+			return( i );
+		}
+	}
+
+	return( -1 );
+}
+
+
+function SyncBrowserStatus()
+{
+    UpdateBrowserIcon();
+    txtBrowserBaseURL.value = helper.htmlViewBaseURL;
+}
+
+function UpdateBrowserIcon()
+{
+    /*
+        Here's the enum from IE.  Can't really use it in script:
+        
+            typedef enum SecureLockIconConstants {
+                secureLockIconUnsecure = 0,
+                secureLockIconMixed = 0x1,	
+                secureLockIconUnknownBits = 0x2,
+                secureLockIcon40Bit = 0x3,
+                secureLockIcon56Bit = 0x4,
+                secureLockIconFortezza = 0x5,
+                secureLockIcon128Bit = 0x6
+            } SecureLockIconConstants;        
+    */
+
+    //We're reusing the toolbar strip here, so our customslider needs to be
+    //kept between 35 and (36+15).  This is actually simpler than it looks at first.
+    if (helper.htmlViewSecureLock>=2)
+    {
+        //this means we have actual security.  2 is secureLockIconUnknownBits.  36 is the index of the lock
+        //note that we don't animate if there is security
+        browserIcon.value=35;
+    }
+    else 
+    { 
+        if (helper.htmlViewBusy)
+        {
+            //36 is the index of the first frame of the spinning globe.
+            browserIcon.value = 36 + (((browserIcon.value-36)%15)+1);
+            browserIcon.moveTo(browserIcon.left,browserIcon.top,100);
+        } 
+        else
+        { 
+            browserIcon.value=36;
+        } 
+    }
+}

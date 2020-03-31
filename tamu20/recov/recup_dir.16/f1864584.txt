@@ -1,0 +1,1065 @@
+.add(oItem);
+                fAddDeviceToList = false;
+                
+            }
+        }
+    }
+
+    //0 modems?  Blank entry to prevent IE6 from crashing.  We should never get to this
+    //page under that scenario anyway, though.
+    if(oFS.lstDevices.length == 0)
+    {
+        oItem = document.createElement("OPTION");
+        oItem.text = "";
+        oItem.value = "";
+        oFS.lstDevices.add(oItem);
+    }
+
+    selectDefaultInCombo();
+}
+
+function selectDefaultInCombo()
+{
+    var fSetDefault = false;
+    
+    //Select the default connector by default.
+    for(var iList = 0; iList < oFS.lstDevices.length; iList++)
+    {
+        if(oFS.lstDevices.options.item(iList).value != "")
+        {
+            if(oConnectors.Item(oFS.lstDevices.options.item(iList).value) == oConnectors.Default)
+            {
+                oFS.lstDevices.selectedIndex = iList;
+                oFS.lstDevices.options[iList].defaultSelected = true;
+                fSetDefault = true;
+                break;
+            }
+        }
+    }
+
+    if(!fSetDefault)
+    {
+        try
+        {
+            lstDevices.options[0].defaultSelected = true;
+        }
+        catch(e)
+        {
+        }
+    }
+}
+
+function selectDevice()
+{
+    var nConIndex = oFS.lstDevices.options(oFS.lstDevices.selectedIndex).value;
+    if(nConIndex != "")
+    {
+        var oConnector = oConnectors.Item(nConIndex);
+        if(oConnector != null)
+        {
+            //Set this connector to be the default for future sessions.
+            oConnectors.Default = oConnector;
+        
+            //Use this connector as default in IE
+            oConnectors.Default.SetAsDefault(true);
+        
+            MarsLog("User picked Connector: " + oConnectors.Default.DeviceName, true);
+            return true;
+        }
+        else
+        {
+            MarsLog("ERROR: Could not retrieve Connector from the OPTIONS list!");
+        }
+    }
+    
+    return false;
+}
+
+//-->
+</script>
+
+</head>
+<body>
+<form id="oFS" onsubmit="return(stub())">
+
+<table id="tbl0" cellpadding="0" cellspacing="0"><tr><td id="td0" valign="top" height="5%">
+
+<div id=divBrand><img id="imgBrand" title="MSN Explorer" src="msn://rsrc/signup.gif" align="right"></div>
+<div id=divHR></div>
+</td></tr><tr><td id="td1" height="90%" valign="top"><div id="div0"><div class="head">Choose a device</div>
+
+<label for=lstDevices>
+<span class="bluesubhead">
+Choose the modem that you will use to connect to the internet.
+</span>
+</label>
+<br><br><br>
+
+<div id="divControls" class="controls">
+    <SELECT id="lstDevices" style="width:400"></SELECT>
+</div>
+
+</div>
+</td></tr><tr><td id="td2" valign="bottom" height="5%" align="left">
+<div id="divNav">
+
+<br>
+<div id=divHR></div>
+
+<table id="tblNav" cellpadding="0" cellspacing="0" >
+<tr><td height="5" id="tdnav1" align="left"></td>
+<td align="right">
+
+<button class="nav" id="btnBack" tabindex="42" dataFld="true" accesskey="b"><img id="imgBack" class="arowback" src="msn://@signup.mar@/cn_aleft.gif" WIDTH="10" HEIGHT="12"><u>B</u>ack</button>&nbsp;
+<button class="nav" id="btnNext" tabindex="41" dataFld="true" type="submit" accesskey="c"><u>C</u>ontinue<img id="imgNext" class="arownext" src="msn://@signup.mar@/cn_aright.gif" WIDTH="10" HEIGHT="12"></button>&nbsp;
+
+</td></tr>
+</table>
+
+</div>
+
+</td></tr></table>
+</form>
+</body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<object classid="clsid:1745EDC4-CDCE-4e20-B91E-312F0C2AD16B" id="msncf" height="0" width="0" style="display:none"></object>
+<link id="lnk0" rel="stylesheet" type="text/css" href="global.css">
+<script language="jscript" src="global.js"></script>
+<title></title>
+<style>
+SELECT
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+LABEL
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+TD
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+TABLE
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+INPUT
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+BUTTON
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+#spanOther
+{
+    font-family:MS SANS SERIF;
+    font-size:9;
+}
+.clickme
+{
+cursor:hand;
+color:red;
+}
+
+</style>
+<script LANGUAGE="javascript">
+<!--
+var oLM;
+var oConnectors;
+var oDevices;
+
+function Init()
+{
+    document.body.style.marginLeft = "20px";
+    document.body.style.marginRight = "20px";
+    document.body.style.marginTop = "1px";
+    document.body.style.marginBottom = "1px";
+
+    for(x=0;x<divHR.length;x++)
+        divHR[x].style.width = "100%";
+
+    refreshLMObjects();
+    loadData();
+    listCurrentUsers();
+
+	spanMarket.innerHTML = window.external.BrandID;
+	spanBrand.innerHTML = window.external.MarketID;
+        
+}
+function refreshLMObjects()
+{
+   oLM = oMarsSignup.logonmgr;
+   oDevices = oLM.ConnectorDeviceEnum;
+   oConnectors = oLM.Connectors;
+}
+function valiData()
+{
+    return true;
+}
+function saveData()
+{
+    saveIt();
+}
+
+
+function loadData()
+{
+    var i,iConn;
+    var sBuff = "";
+    var opt;
+    var oThisConnector;
+    var sConnName;
+    var oDefConn;
+
+    oDefConn = oConnectors.Default;
+    if(oDefConn != null)
+    {
+        divCurrentConnector.innerHTML = oDefConn.Name + " [" + oDefConn.DeviceName +" / "+ oDefConn.DeviceType +"]";
+        divCurrentConnector.style.fontWeight = "bold";
+    }
+    else
+    {
+        divCurrentConnector.innerHTML = "null";
+    }
+    //init enum info.
+    oDevices.GatherDeviceInfo();
+
+    var iDeviceCount = oDevices.GetNumDevices();
+    //divNumDevices.innerHTML = iDeviceCount;
+
+    sBuff="";
+    for(i=0;i<iDeviceCount;i++)
+    {
+        sBuff +=  i + ". <input type=radio id='radDevice"+ i +"' name='grpDevices' onclick='checkDeviceOptions()' ndx="+ i +" >";
+        sBuff += "<label for='radDevice" + i +"'>";
+        sBuff += "<span id=spanDeviceType>"+ oDevices.GetDeviceType(i) +"</span>"
+        sBuff += "<span id=spanDeviceName>"+ oDevices.GetDeviceName(i) +"</span>"
+        sBuff += "</label><div id='spanOther'></div>";
+    }
+
+    divDevices.innerHTML = sBuff;
+
+    iConnectorCount = oConnectors.Count;
+    //divNumConnectors.innerHTML = iConnectorCount;
+
+
+    sBuff = "";
+    var x=0;
+    while(x < iConnectorCount)
+    {
+        oThisConnector = oConnectors.item(x);
+
+        sConnName = oThisConnector.Name
+        if(sConnName==""){sConnName = "NoName";}
+
+        sBuff += "<div id='divConn' style='cursor:hand' onclick='toggleVisible(spanConn"+ x +")'><b style='color:blue'>" + sConnName +"</b> [click]<BR>";
+        sBuff += "<span style='display:none;cursor:default' id='spanConn"+ x +"'>";
+        sBuff += "<span class='clickme' onclick='DelConnector("+ x +")' title='DelConnector("+ x +")'>[Remove]</span>&nbsp;";
+        sBuff += "<span class='clickme' onclick='SetConn("+ x +")' title='SetConn("+ x +")'>[SetDefault]</span><br>";
+
+        sBuff += "<table><tr><td>Name:</td><td>"+ oThisConnector.Name +"</td></tr>";
+        sBuff += "<tr><td>DeviceType:</td><td>"+ oThisConnector.DeviceType +"</td></tr>";
+        sBuff += "<tr><td>DeviceName:</td><td>"+ oThisConnector.DeviceName +"</td></tr>";
+        sBuff += "</table></span></div>";
+
+        x++;
+    }
+
+    divConnectors.innerHTML = sBuff;
+}
+function nav()
+{
+    saveData();
+    if(event.srcElement.id != "btnBack")
+    {
+        if( !valiData() )
+            return;
+
+        //location.href = "signupServer.htm";
+    }
+    else
+    {
+        //location.href = "dialOptions.htm";
+
+    }
+    return false; //return false for form
+}
+function toggleVisible(oElement)
+{
+    if(oElement.style.display == "none")
+        oElement.style.display = "inline";
+    else
+        oElement.style.display = "none";
+}
+function checkDeviceOptions()
+{
+    var oRad = event.srcElement;
+    var iNdx = oRad.ndx;
+    var inum,iNDevices;
+    var oThisConnector;
+    var sConnName,sConnType;
+    var sBuff="";
+    oDevices.GatherDeviceInfo();
+
+    inum=0;
+
+    while(inum < oConnectors.Count)
+    {
+        oThisConnector = oConnectors.Item(inum);
+        sConnName = oThisConnector.DeviceName.toLowerCase();
+        sConnType = oThisConnector.DeviceType.toLowerCase();
+
+        if( sConnName == oDevices.GetDeviceName(iNdx).toLowerCase() && sConnType == oDevices.GetDeviceType(iNdx).toLowerCase() )
+        {
+            sBuff += "<span class='clickme' onclick='DelConnector("+ inum +")' title='DelConnector("+ inum +")'>remove connector #"+ inum +"</span><BR>";
+        }
+        inum++;
+    }
+
+	var oSpan;
+	if(spanOther.length > 0)
+		oSpan = spanOther[iNdx];
+	else
+		oSpan = spanOther;
+	
+    if(sBuff=="")
+    {
+    	
+        oSpan.innerHTML = "<span class='clickme' onclick='AddConnector("+ iNdx +")' title='AddConnector("+ iNdx +")'>Add Connector</span>";
+    }
+    else
+    {
+        oSpan.innerHTML = sBuff;
+    }
+}
+function DelConnector(iConn)
+{
+    if(confirm("Confirm Delete"))
+    {
+        oConnectors.Remove(iConn);
+        loadData();
+    }
+}
+function SetConn(iConn)
+{
+    oLM.CurrentConnector = oConnectors.Item(iConn);
+    oConnectors.Default = oLM.CurrentConnector;
+    oLM.CurrentConnector.SetAsDefault(true);
+    loadData();
+}
+
+function AddConnector(iDevice)
+{
+//    try{
+    var sDType,sDName,oNewConnector;
+    oDevices.GatherDeviceInfo();
+
+    sDType = oDevices.GetDeviceType(iDevice);
+    sDName = oDevices.GetDeviceName(iDevice);
+
+    oNewConnector = oConnectors.Add(sDType);
+
+    if(sDType.toLowerCase() == "modem")
+    {
+        oNewConnector.DeviceName = sDName;
+        oNewConnector.Name = "MSN Explorer"; //trying to debug on testers machine ran into cute branding error.
+    }
+    else
+    {
+        oNewConnector.DeviceName = sDName;
+        oNewConnector.Name = "Broadband";
+    }
+
+    //oNewConnector.DeviceType = sDType;
+
+//    }catch(e){ alert( (e.number & 0xFFFF) +" :"+ e.description ); }
+
+    loadData();
+}
+
+var oPopc;
+function getPops()
+{
+
+    var MSNRegKey = oMarsSignup.RegKey;
+    var iRet=0;
+    var aRet;
+    var iNPA = oConnectors.Default.GetCustomProperty("phone").substr(0,3);
+    var iNXX = oConnectors.Default.GetCustomProperty("phone").substr(3,3);
+    var sClientVersion = "6.5";
+    var sBuffer="";
+    var i;
+
+    MSNRegKey.Init("HKCU","Software\\Microsoft\\MSN6\\Pop",true);
+    MSNRegKey.WriteValue("ServerLocation","poptimize.msn.com");
+    MSNRegKey.WriteValue("PoptimizeNumber","8773853349");
+
+    iNPA = 425;
+    iNXX = 936;
+
+    oPopc = oMarsSignup.Poptimize;
+
+    //oMarsSignup.AccountId
+    iRet = oPopc.UpdatePops(0,iNPA,iNXX,sClientVersion,aRet);
+
+    var oPopEntries;// = oPopc.PopEntries(oLM.CurrentConnector);
+    try{
+    oPopEntries = oPopc.PopEntries(oConnectors.Default);
+    }catch(e){ alert(e.description) }
+
+    sBuffer += "<table>";
+    //sBuffer += "<tr><td>Use</td><td>1</td><td>AreaCode</td><td>Access Numbers</td></tr>";
+
+    for(i=0;i<oPopEntries.Count;i++)
+    {
+        enumPopEntry = oPopEntries.Item(i);
+        sBuffer += "<tr><td><input type=checkbox id=chkUsePop>Use</td>"
+        sBuffer += "<td><input type=checkbox id=chkDialOne>dial 1</td>"
+        sBuffer += "<td><input type=checkbox id=chkDialArea>dial Area Code</td>"
+        sBuffer += "<td></td>"
+
+        sBuffer +=  enumPopEntry.Location + "<BR>";
+    }
+
+    if(sBuffer != "")
+    {
+        divPops.innerHTML = sBuffer;
+    }
+
+    try{
+    }catch(e){ prompt("Error", (e.number & 0xFFFF) +" :"+ e.description ); }
+}
+
+function listCurrentUsers()
+{
+//spits out a list of current users on the box.
+
+    var iUserCount = oUser.usercount;
+    var oMe;
+    var strOut = "";
+
+    if(iUserCount == 0)
+        strOut += "<b>No Users<b>";
+
+    for(x=0;x<iUserCount;x++)
+    {
+        oMe = oUser.UserAt(x);
+        oLoc = oMe.localSettings;
+        strOut += oMe.passport + "&nbsp;<span onclick='delUser("+ x +")' style='cursor:hand;color:red;'>";
+        if(oMe.IsAdmin())
+            strOut += "[remove Admin]</span><br>";
+        else
+            strOut += "[remove]</span><br>";
+    }
+
+    tdExistingUsers.innerHTML = strOut;
+    tdExistingUsers.style.display = "inline";
+}
+
+function delUser(nIndex)
+{
+    var oUsr = oUser.UserAt(nIndex);
+
+    if(oUsr.IsAdmin())
+    {
+       if( !confirm("WARNING! Deleting this user will clear your Dial-Up credentials!!\nYou will not be able to dial into MSN until you add a new MSNIA account. Continue?") ){
+            return;
+       }
+    }
+
+    if(confirm("WARNING! It is not recommended that you remove a user from this machine using Mr Utility. Proceed?"))
+    {
+        oUser.deleteUser(oUsr.passport);
+    }
+    listCurrentUsers();
+}
+
+function addMe()
+{
+    var fSetIA = false;
+    var email = oFS.usrEmail.value;
+
+    if(trim(email)=="" || (email.indexOf("@") <= 0)  || trim(oFS.usrPassword.value)==""){alert("Cannot add user. Missing or invalid data. Check entries.");return}
+
+    var domain = email.substr(email.indexOf("@")+1);
+
+    oMarsSignup.domain = domain;
+    oMarsSignup.memberName = email.substring(0,email.indexOf("@"));
+    oMarsSignup.password = oFS.usrPassword.value;
+    oMarsSignup.birthdayMonth = 1;
+    oMarsSignup.birthdayDay = 1;
+    oMarsSignup.birthdayYear = 1970;
+    oMarsSignup.male = true;
+
+    
+
+    if(oFS.chkMSNIA.checked)
+    {
+        if(oMarsSignup.IsAccountInfoConfigured())
+        {
+           if(confirm("WARNING! You are about to overwrite your existing dial-up credentials! Continue?"))
+               {fSetIA = true;}
+        }
+        else
+        {
+           if(confirm("WARNING! You are about to dial-up credentials using Mr Utility!\nTHIS IS NOT RECOMMENDED! Continue?"))
+               {fSetIA = true;}
+
+        }
+    }
+
+
+    if(fSetIA)
+    {
+        if(trim(oFS.usrLogonDomain.value)=="" || trim(oFS.usrAccountId.value)=="" || isNaN(oFS.usrAccountId.value) || trim(oFS.usrAcctRef.value)==""){alert("Cannot add IA user. Missing or invalid IA data. Check entries.");return}
+        oMarsSignup.SetAccountIdPw( oFS.usrLogonDomain.value, oFS.usrAccountId.value, oFS.usrAcctRef.value);
+        if(!oMarsSignup.IsAccountInfoConfigured()){alert("Cannot set Dial-Up credentials. Missing or invalid Dial-Up Data. Check entries.");return}
+    }
+
+    if(confirm("WARNING! It is not recommended that you add a user using Mr. Utility. Proceed?"))
+    {
+        var nUserIndex = oMarsSignup.AddNewUser(fSetIA,false);
+        ShowErrorMessage("","User Added : nUserIndex=" + nUserIndex,false);
+    }
+    listCurrentUsers();
+
+    oMarsSignup.LoginUser();
+    
+}
+
+function toggleMSNIA()
+{
+    if(event.srcElement.checked)
+    {
+        oFS.usrLogonDomain.disabled=false;oFS.usrLogonDomain.style.backgroundColor="white";
+        oFS.usrAcctRef.disabled=false;oFS.usrAcctRef.style.backgroundColor="white";
+        oFS.usrAccountId.disabled=false;oFS.usrAccountId.style.backgroundColor="white";
+    }
+    else
+    {
+        oFS.usrLogonDomain.style.backgroundColor="silver";oFS.usrLogonDomain.disabled=true;
+        oFS.usrAcctRef.style.backgroundColor="silver";oFS.usrAcctRef.disabled=true;
+        oFS.usrAccountId.style.backgroundColor="silver";oFS.usrAccountId.disabled=true;
+    }
+}
+
+function getPopInfo()
+{
+    if(oConnectors.Default.DeviceType.toLowerCase() != "modem")
+    {
+        alert("Your default connection device must be a modem in order to get pops.")
+        return;
+    }
+
+    var oPopc = oMarsSignup.Poptimize;
+    var oPopEntries = oPopc.PopEntries(oConnectors.Default);
+    var iPopCount = oPopEntries.count;
+    var sBuff = "";
+
+    sBuff += "<table>";
+    sBuff += "<tr><td>Arecode: <input id='txtAreaCode' type='text' size='6' maxlength='3' value='"+ oConnectors.Default.Areacode +"'>";
+    sBuff += "&nbsp;Phone: <input id='txtPhone' type='text' size='12' maxlength='8' value='"+ oConnectors.Default.PhoneNumber +"'>";
+    sBuff += "&nbsp;&nbsp;<button id='btnGetPops' onclick='getPopped()'>Get Popped</button>";
+    sBuff += "<button id='btnViewPops' onclick='viewPops()'>View Pops</button>";
+    sBuff += "<button id='btnAddPops' onclick='framePop.location.href = \"editpops.htm?addPopcheck\";divPopFrame.style.display = \"inline\";'>Add Pop</button>";
+    sBuff += "</td></tr>";
+    sBuff += "<tr><td>Current PopCount: "+ iPopCount +"</td></tr>";
+    sBuff += "</table>";
+
+    divPopInfo.innerHTML = sBuff;
+}
+
+function viewPops()
+{
+    framePop.location.href = "editpops.htm?check";
+    divPopFrame.style.display = "inline";
+}
+
+function getPopped()
+{
+
+    if(!confirm("WARNING! This will try to retrieve numbers for the areacode and phone entered here. Proceed?") )
+        { return; }
+
+    var areacode = oFS.txtAreaCode.value;
+    var phone = oFS.txtPhone.value;
+    var oPopc = oMarsSignup.Poptimize;
+    var oPopEntries = oPopc.PopEntries(oConnectors.Default);
+
+    if(trim(phone) == "" || trim(areacode) == "" ){alert("invalid areacode / phone data");return;}
+    if(phone.length < 3){alert("invalid phone length");return;}
+
+    oMarsSignup.phone = areacode + phone;
+    oMarsSignup.PutProperty("areacode",areacode);
+    oMarsSignup.PutProperty("phonenumber",phone);
+
+    oConnectors.Default.PhoneNumber = phone;
+    oConnectors.Default.AreaCode = areacode;
+    oConnectors.Default.Exchange = phone.substr(0,3);
+
+    try{
+        oPopEntries = oPopc.DownloadPopEntries(0, oConnectors.Default.AreaCode, oConnectors.Default.Exchange);
+    }catch(e){ ShowErrorMessage("MSN Explorer","oPopc.DownloadPopEntries failed : " + e.description, false, e.number, "");return; }
+
+    if(oPopEntries.count > 0)
+    {
+        oPopc.SetPopEntries(oConnectors.Default, oPopEntries, true);
+        getPopInfo();
+        framePop.location.href = "editpops.htm?check";
+        divPopFrame.style.display = "inline";
+    }
+    else
+    {
+        noPops(true);
+        return;
+    }
+}
+
+//-->
+</script>
+
+</head>
+<body>
+<form id="oFS" onsubmit="return(stub())">
+<table id="tbl0" width="100%" height="100%" cellpadding="0" cellspacing="0" ><tr><td id="td0" valign="top" height="5%">
+<div ><img id="imgBrand" title="MSN Explorer" src="msn://rsrc/signup.gif" ><span class="bluesubhead"> &nbsp;&nbsp;&nbsp;Mr. Utility &nbsp;&nbsp;:-) </span></div>
+<div id=divHR></div>
+</td></tr><tr><td id="td1" height="90%" valign="top"><div id="div0">
+<table><tr><td>
+<button id=btnSignupUrl onclick="setSignupUrl()">Signup URL</button>
+<button id=btnAcctConfig onclick="alert(oMarsSignup.IsAccountInfoConfigured())">IsDialUpConfigured?</button>
+</td></tr></table>
+
+<div id=divHR></div>
+<b>Brand</b>: <span id="spanBrand"></span>&nbsp;&nbsp;
+<b>Market</b>: <span id="spanMarket"></span>
+<div id=divHR></div>
+<b>Users:</b>
+<div id=divHR></div>
+<table>
+<tr id="trExistingUsers"><td valign="top">CurrentUsers: </td><td id="tdExistingUsers" style="font-weight:bold;"></td></tr>
+</table>
+<div id=divHR></div>
+
+<table>
+<tr><td>
+
+<table>
+<tr><td valign="top">
+email</td><td>
+<input type="text" id="usrEmail">
+</td></tr>
+<tr><td>
+password
+</td><td>
+<input type="password" id="usrPassword">
+</td></tr>
+<tr><td>
+MSNIA
+</td><td align="left" >
+<input type="checkbox" id="chkMSNIA" onclick="toggleMSNIA()">
+</td></tr>
+<tr><td>
+logondomain
+</td><td>
+<input type="text" id="usrLogonDomain" disabled style="background-color:silver;">
+</td></tr>
+<tr><td>
+acctref
+</td><td>
+<input type="text" id="usrAcctRef" disabled style="background-color:silver;">
+</td></tr>
+<tr><td>
+AccountId
+</td><td>
+<input type="text" id="usrAccountId" disabled style="background-color:silver;">
+</td></tr>
+</table>
+
+</td><td valign="top">
+<button id=btnAdd onclick="addMe()">Add User</button><br>
+
+</td></tr>
+</table>
+
+<div id=divHR></div>
+<b>Modems:</b>
+<div id=divHR></div>
+
+<button style="width:120" onclick="alert(ModemCount())" id=b1 >ModemCount</button>
+<button style="width:120" onclick="AddModemConnectors();loadData();" id=b2 >AddModemConnectors</button>
+<button style="width:120" onclick="AddLanConnectors();loadData();" id=b3 >AddLanConnectors</button>
+<button style="width:120" onclick="AddConnectors();loadData();" id=b4 >AddConnectors</button>
+
+<table><tr><td nowrap>
+    Current Connector:
+</td><td width="80%">
+    <div id=divCurrentConnector></div>
+</td></tr>
+<tr><td valign=top nowrap>
+    Connection Devices:</td><td>
+</td></tr>
+<tr><td colspan=2>
+    <div id=divDevices></div>
+    <select size=3 id="lstDevices" onclick="checkDeviceOptions()" style="display:none"></select>
+</td></tr>
+<tr><td colspan="2">
+<div id=divHR></div>
+    <b>Connectors:</b>
+<div id=divHR></div>
+</td></tr>
+<tr><td valign=top colspan="2">
+    <div id=divConnectors></div>
+</td></tr>
+</table>
+
+
+<div id=divHR></div>
+<b>Pop Config</b>
+<div id=divHR></div>
+
+<button id="btnPopInfo" onclick="getPopInfo()">Get Pop Info</button><br>
+<div id="divPopInfo"></div>
+<div id="divPopFrame" style='width:100%;height:300;display:none;'><iframe frameborder="1" id="framePop" onload="iframestate" style="width:100%;height:100%" src ></iframe></div>
+</div>
+
+</td></tr>
+</table>
+
+</form>
+</body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<head>
+<link rel="stylesheet" type="text/css" href="global.css">
+<title></title>
+<script LANGUAGE="javascript">
+<!--
+var loc = window.location.search;
+if(loc == '?changedev')
+{
+	window.location.href = "changeConnSettings.htm?changeconnection";
+}
+else if(loc == '?nopops')
+{
+	window.location.href = "whereNow.htm";
+}
+else if(loc == '?verifypops')
+{
+	window.location.href = "editPops.htm";
+}
+else
+{
+	//oMarsSignup.PutProperty("ChangeConnection",false);
+	window.location.href = "welcome.htm";
+}
+//-->
+</script>
+
+</head>
+<body>
+</body>
+</html>
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" Content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="msn://@signup.mar@/help.css">
+<title>Help with Signing Up in MSN Explorer</title>
+
+<!-- Bring in the branding substitution jscript --!>
+<object classid="clsid:1745EDC4-CDCE-4e20-B91E-312F0C2AD16B" id="msncf" height="0" width="0" style="display:none"></object>
+<div id="oUtils" style="behavior:url(#msncf#utilities);display:none"></div>
+<script src=helputils.js></script>
+<!------------------------------------------------!>
+
+</head>
+
+<body bgcolor="#FCFAF4">
+
+<TABLE align="left">
+<TR>
+<TD Valign="top"><img src="signuphelp_icon.gif"></TD>
+<TD WIDTH="500">
+
+<p class="title">Help with Signing Up in MSN Explorer </p>
+<p class="header"><A NAME="top">Need some help signing up?</a></p>
+<p>Here you'll find answers to some of the most often asked questions about getting started with MSN Explorer.</p>
+
+<p><A HREF="msn://@signup.mar@/help_ATsignup.htm">Using assistive technology to sign up</a></p>
+<p><A HREF="#selecting">Which option should I select?</a></p>
+<p><A HREF="#offlinemail">How do I use offline e-mail?</a></p>
+<p><A HREF="#age">Why do we need to know your birthday?</a></p>
+<p><A HREF="#passwords">How do I create a good password?</a></p>
+<p><A HREF="#secure">Is it safe to send credit card information over the Internet?</a></p>
+<p><A HREF="#phone">Why do we need to know your phone number?</a></p>
+<p><A HREF="#email">What is an e-mail name?</a></p>
+<p><A HREF="#secret">What is a secret question?</a></p>
+<p><A HREF="#wallet">What is Passport wallet?</a></p> 
+<p><A HREF="msn://@signup.mar@/help_trouble.htm">Having trouble dialing in?</a></p>
+<hr>
+<A NAME="selecting"></a>
+<p class="title">Selecting the right option for you</p>
+<P>While signing up in MSN Explorer, you will be offered a number of 
+options. Be sure to choose the correct option for the Internet service you 
+subscribe to. If you don't choose the correct option, you may create a 
+duplicate <span id=oISPName>MSN Internet Access</span>&nbsp;account.
+
+<p class="header2">You don't have a connection to the Internet.</p>
+<p> If you want to get a <b>new <span id=oISPName>MSN Internet Access</span>&nbsp;<nobr>e-mail</nobr> address</b>:</p>
+<ul><li>
+On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page,
+select "Yes, I am interested in signing up for <span id=oISPName>MSN Internet Access</span>.</li></ul>
+<p>If you have an <b>existing hotmail.com or msn.com <nobr>e-mail</nobr> address </b>and want to use it as your <span id=oISPName>MSN Internet Access</span>&nbsp;<nobr>e-mail</nobr> address:
+<ul><li>
+On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page,
+select "Yes, upgrade my free hotmail.com/msn.com account to 
+use <span id=oISPName>MSN Internet Access</span>."</li></ul>
+
+<p class="header2">You are an existing <span id=oISPName>MSN Internet Access</span>&nbsp;customer.</p>
+
+<p> If you already have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;Member ID and connect using a <b>modem</b>. </p> <ul><li>On the 
+"Do you want <span id=oISPName>MSN Internet Access</span>?" page, select 
+"No. I already have Internet access." </li></ul>
+<ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" page, 
+select "Yes. I have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account."</li></ul>
+
+<p> If you have <b>upgraded</b> a free hotmail.com/msn.com account to 
+use <span id=oISPName>MSN Internet Access</span>&nbsp;and connect using a <b>modem</b>. </p> <ul><li>On the "Do you 
+want <span id=oISPName>MSN Internet Access</span>?" page, select 
+"No. I already have Internet access." </li></ul>
+<ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" page, 
+select "Yes. I have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account."</li></ul>
+
+<p> If you have just <b>signed up at the store or on the Internet</b> for <span id=oISPName>MSN Internet Access</span>&nbsp;and connect using a <b>modem</b>. </p> <ul><li>On the 
+"Do you want <span id=oISPName>MSN Internet Access</span>" page, select 
+"No. I already have Internet access." </li></ul>
+<ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp; dial-up account?" page, 
+select "Yes. I have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account."</li></ul>
+
+
+<p> If you already have an MSN Internet Access Member ID and connect using <b>Highspeed DSL</b>.</p>
+<ul><li>On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page, 
+select "No. I already have Internet access."</li></ul> 
+<ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" page, select "No. I connect to the Internet 
+using another Internet service provider, or one of the following:  MSN HighSpeed Internet Access,
+ LAN, DSL, cable modem, or satellite connection."</li></ul>
+
+<p> If you already have an MSN Internet Access Member ID and connect using<b> Satellite</b>.</p>  <ul><li>
+On "Do you want <span id=oISPName>MSN Internet Access</span>?" page, select 
+"No. I already have Internet access." </li></ul>
+<ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" page, select "No. I connect to the Internet using another Internet 
+ service provider, or one of the following: MSN HighSpeed Internet Access, LAN, DSL, cable modem, 
+ or satellite connection."</li></ul>
+
+<p class="header2">You have an existing non-MSN connection to the Internet and you want to keep using it.</p><ul><li>On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page, select "No. I already have Internet access." </li></ul>
+<ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" page, select "No.
+I connect to the Internet using another Internet service provider, or
+ one of the following:  MSN HighSpeed Internet Access, LAN, DSL, cable modem, 
+   or satellite connection."</li></ul>
+   
+<p class="header2">You have an existing non-MSN connection to the Internet but you want
+ to sign up for <span id=oISPName>MSN Internet Access</span>.</p>
+<p> If you want to get a <b>new <span id=oISPName>MSN Internet Access</span>&nbsp;<nobr>e-mail</nobr> address</b>:</p>
+<ul><li>
+On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page,
+select "Yes, I am interested in signing up for <span id=oISPName>MSN Internet Access</span>."</li></ul>
+<p> If you have an <b>existing hotmail.com or msn.com <nobr>e-mail</nobr> address</b> and want to use it as your <span id=oISPName></span>&nbsp; <nobr>e-mail</nobr> address:
+<ul><li>
+On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page,
+select "Yes, upgrade my free hotmail.com/msn.com account to use <span id=oISPName>MSN Internet Access</span>."</li></ul>
+
+<p class="header2">You have DSL/LAN to connect to the Internet.</p>
+<ul><li>On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page,
+ select "No. I already have Internet access." </li></ul>
+ <ul><li>Next, on the "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" 
+ page, select "No. I connect to the 
+ Internet using another Internet service provider, or one of the following:
+   MSN HighSpeed Internet Access, LAN, DSL, cable modem, or satellite connection."</li></ul>
+
+<p class="header2">You have satellite/cable modem to connect to the Internet.</p>
+<ul><li>On the "Do you want <span id=oISPName>MSN Internet Access</span>?" page, 
+select "No. I already have Internet access."</li></ul>
+<ul><li>Next, on "Do you have <span id=oISPNameAnOrA>MSN Internet Access</span>&nbsp;dial-up account?" page, select "No. I connect to the Internet 
+using another Internet service provider, or one of the following:  MSN HighSpeed Internet Access, 
+LAN, DSL, cable modem, or satellite connection."</li></ul>
+
+<br>
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+<A NAME="#offlinemail"></a>
+<p class="title">How to use offline <nobr>e-mail</nobr></p>
+
+<p><b>If you are <span id=oISPNameAnOrA>an MSN Internet Access</span>&nbsp;member, you can use MSN Explorer to read and write
+ <nobr>e-mail</nobr> when you are not connected to the Internet.</b></p>
+ When you choose to prepare your mail for offline use, MSN Explorer downloads your <nobr>e-mail</nobr> 
+to your local computer. When you are working offline, you can read and respond to e-mail
+  the same way you work online. MSN Explorer knows that you want
+   to remain offline until you choose to go online. The next time you go online,
+   <nobr>e-mail</nobr> in your Outbox is sent, <nobr>e-mail</nobr> marked for deletion is removed, and 
+   all other actions taken offline are completed. </p>
+
+<p class="header2">To use offline <nobr>e-mail</nobr> you need to do these three steps:</p>
+
+<ol><li>While online, prepare your <nobr>e-mail</nobr> for offline use.</li><br>
+	<ul><li>In MSN Explorer E-mail, click <b>My <nobr>E-mail</b></nobr>.</li><br>
+	<li>Above the list of messages in your Inbox, click <b>More</b> and 	
+	choose <b>Prepare Mail for Offline</b>.</li></ul><br>
+<li>Sign out of MSN Explorer.</li><br>
+<ul><li> On the sign-in screen, click <b>Disconnect</b> to go offline. </li></ul><br>
+<li>Sign back in to MSN Explorer as an offline user.</li><br>
+<ul><li>On the sign-in screen, click your <nobr>e-mail</nobr> (sign-in) name.</li><br>
+<li>Underneath your password, select the check box<b> Read mail offline</b>,
+and then click <b>Sign In</b>.</li></ul></ol><br>
+
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+<A NAME="age"></a>
+<p class="title">Why we need to know your birthday</P>
+<p>We need to know your age if you are subscribing to <span id=oISPName>MSN Internet Access</span>&nbsp;because members of
+ this service must be at least 18 years old.</p> 
+<p>Also, U.S. federal law requires parental consent for the collection or posting on
+ the Internet of personal 
+ information from children under the age of 13. We can only assign the correct type of account
+ (adult account or child account) when we know the dates of birth for you and 
+ other users in your household. 
+ </p>
+
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+<A NAME="passwords"></a>
+<p class="title">How to create a good password</p>
+<p class="header2">What is a password? </p>
+<p>A password is a combination of characters and numbers that is used in conjunction 
+with your account name to sign in to your account.
+Like a key, your password restricts access to your account.</p>
+
+<p>Your password will always show up on the screen as asterisks
+so no one can see it and sign in without your permission. 
+Memorize your password and be cautious about sharing your password with others. </p>
+
+<p class="header2">Password Rules</p>
+<p>The foundation of online safety is a strong, secret password. 
+Use the following password rules and tips
+when creating or changing your password.</p>
+<ul>
+  <li>
+    Your password must be at least 8 characters long, but no longer than 16 characters.
+    It may contain numbers (0-9) and upper and lowercase letters (A-Z, a-z), but no blank spaces.
+</li>
+  <li>
+   Your password is case-sensitive, so note which letters you capitalize.</li>
+  <li>
+   Use a combination of letters and numbers, such as px3up469.</li>
+</ul>
+<BR>
+<p class="header2">Password Tips</p>
+<p>Never use a password that is
+easy to guess. Your birth date, Social Security number, and children's names are
+easy targets.</p>
+<p>Your password should not
+contain your e-mail name, your first name or last name.</p>
+<p>Never write your password on
+paper. Use a password you can remember.</p>
+<p>Don't use dictionary words
+from any language.</p>
+<p>Never send your password by
+e-mail or in an instant message.</p>
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+
+<A NAME="secure"></a>
+<p class="title">Why it is safe to send credit card information over the Internet</p>
+<p>You can safely send your credit card information over the Internet because MSN 
+uses secure server technology and Secure Sockets Layer (SSL) to securely
+ transmit your credit card number over the Internet. </p>
+
+<p>Secure Sockets Layer is the industry standard in Web security. 
+It is used primarily to transmit sensitive information over the Internet. 
+When you have a secure connection between your browser and a Web site, 
+no one else can easily access the data that you send across the connection.
+ MSN uses SSL to encrypt your sign-in name, password, and wallet to
+  give you a high level of security.</p> 
+
+<p>Occasionally, your browser might display security alerts
+ to notify you that you are entering or leaving a secure connection. 
+ These alerts tell you when MSN is taking precautions to keep your private information (such as your password) secure while it travels from
+  your computer to the MSN server. This is normal, and you can choose to continue 
+  when these alerts appear.</p>
+
+</ul>
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+<A NAME="phone"></a>
+<p class="title">Why we need to know your phone number</P>
+<P> Your phone number helps us provide you with
+dial-up numbers that appear to be within your local calling area. After you type in your
+phone number, we search for phone numbers that are close to your location.</p>
+  
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+
+
+<A NAME="email"></a>
+<p class="title">About e-mail names</p>
+
+Your e-mail name provides a
+secure way for you to access your Web content and account information. It is
+also part of the address you give out to people who want to send you e-mail. <P>Your
+e-mail address will be in the following format: someone@msn.com.</p>
+
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+<A NAME="secret"></a><p class="title">About secret questions</p>
+<p>The secret question and answer are used to identify you when you have forgotten 
+your password. We will simply ask you your secret question. When you provide the correct answer,
+your original password will not be revealed, but you will be able to create a new password.
+</p><p>
+</p>
+
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+
+<A NAME="wallet"></a><p class="title">About Passport wallet</p>
+				
+				
+<p>Your Passport wallet is much like the wallet you carry around in your back pocket or your purse.
+When you enter a retail shop and you see something you want to buy, you
+pull out your wallet and choose the appropriate credit card to hand to the merchant.
+After the merchant authorizes your card, you get the merchandise, and you're on your way.</p>
+
+<p>Your Passport wallet works in a similar way when you shop online, and you can use it at
+a growing number of online merchants. In your Passport wallet, you can store as many credit
+cards and shipping addresses as you want. When you make an online
+purchase, you choose which card and shipping address you want to use, and you send only
+that information to the online merchant over a secure connection. The online merchant then
+uses the information to authorize and deliver your purchase.</p>
+
+<p>By storing your credit card and address information in your Passport wallet, you don't need to
+retype it every time you make an online purchase. This will make your online purchases 
+safer and faster.
+</p>
+<p><b>Note:</b> Your wallet accepts all major credit and charge cards, as well as debit 
+cards that do not require a PIN (personal identification number) to use.</p>
+<p>To learn more about Passport wallet, go to www.passport.com.</p><br>
+<img src="top_hlp.gif" alt=""><A HREF="#top">Go to Top</a>
+<hr>
+
+</BODY>
+
+</HTML>
+
+GIF89a

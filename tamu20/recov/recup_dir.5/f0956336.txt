@@ -1,0 +1,310 @@
+"
++ L_ErrorNumber_Text + line + "\n"
++ message;
+alert (str);
+window.close();
+}
+else
+{
+g_fError = true;
+g_fFrameset = false;
+}
+}
+return true;
+}
+function CrawlPath()
+{
+var win = window.dialogArguments.unsecuredWindowOfDocument;
+var i = 0;
+if (g_fSearchTopFrame)
+{
+return win;
+}
+while (g_arrFrames[i] >= 0)
+{
+win = win.frames[g_arrFrames[i]];
+i++;
+}
+return win;
+}
+function AtFrameset()
+{
+var win = CrawlPath();
+return win.frames.length;
+}
+function AtIframe()
+{
+var win = CrawlPath();
+return win.document.all.tags("IFRAME").length;
+}
+function IsLegalPage(win)
+{
+var arrBadFileTypes = new Array(".doc", ".xls", ".pdf");
+var strHref = win.location.href;
+for (i=0; i < arrBadFileTypes.length; i++)
+{
+if (strHref.lastIndexOf(arrBadFileTypes[i]) == (strHref.length - 4))
+{
+return false;
+}
+}
+return true;
+}
+function GetCurrentPos()
+{
+var i = GetCurrentDepth();
+return g_arrFrames[i];
+}
+function GetCurrentDepth()
+{
+var i = 0;
+while (g_arrFrames[i] >= 0)
+{
+i++;
+}
+return i-1;
+}
+function MovePossible(fForward)
+{
+var intCurPos = GetCurrentPos();
+var win = CrawlPath();
+var winParent = win.parent;
+if (fForward)
+{
+if ((winParent.frames.length - intCurPos - 1)
+&& (IsLegalPage(winParent.frames[intCurPos + 1])))
+{
+return true;
+}
+else
+{
+return false;
+}
+}
+else
+{
+return (intCurPos != 0);
+}
+}
+function MoveUpFrameset()
+{
+var i = GetCurrentDepth();
+g_arrFrames[i] = -1;
+}
+function MoveDownFrameset(fForward)
+{
+var i = GetCurrentDepth();
+var win = CrawlPath();
+g_arrFrames[i+1] = fForward ? 0 : win.frames.length - 1;
+g_arrFrames[i+2] = -1;
+}
+function MoveWin(fForward)
+{
+var intDepth = GetCurrentDepth();
+var intPos = GetCurrentPos();
+g_arrFrames[intDepth] = fForward ? ++intPos : --intPos;
+}
+function MoveDoc(fForward)
+{
+if (g_fSearchTopFrame)
+{
+if (fForward)
+{
+g_fSearchTopFrame = false;
+return true;
+}
+else
+{
+return false;
+}
+}
+if (!fForward && (g_arrFrames[0] == 0) && (g_arrFrames[1] < 0)
+&& window.dialogArguments.document.all.tags("IFRAME").length)
+{
+g_fSearchTopFrame = true;
+return true;
+}
+if (g_fFollowIframes && AtIframe())
+{
+MoveDownFrameset(fForward);
+while (!AtIframe() && AtFrameset())
+{
+MoveDownFrameset(fForward);
+return true;
+}
+return false;
+}
+if (MovePossible(fForward))
+{
+MoveWin(fForward);
+g_fFollowIframes = true;
+while (!AtIframe() && AtFrameset())
+{
+MoveDownFrameset(fForward);
+}
+return true;
+}
+else
+{
+if (GetCurrentDepth() > 0)
+{
+MoveUpFrameset();
+while (AtIframe() && !MovePossible(fForward)
+&& (GetCurrentDepth() >= 0))
+{
+MoveUpFrameset();
+}
+if (AtIframe() && MovePossible(fForward))
+{
+g_fFollowIframes = false;
+}
+return MoveDoc(fForward);
+}
+}
+return false;
+}
+function GetFirstDoc()
+{
+var win;
+var doc = window.dialogArguments.document;
+if (doc.all.tags("IFRAME").length)
+{
+g_fSearchTopFrame = true;
+return doc;
+}
+while (!AtIframe() && AtFrameset())
+{
+MoveDownFrameset(true);
+}
+win = CrawlPath();
+return win.document;
+}
+function setInitSearchRng()
+{
+findStartPoint();
+if (g_fFrameset)
+{
+var win;
+if (!AtIframe() && AtFrameset())
+{
+MoveDownFrameset(!radDirection[0].checked);
+while (!AtIframe() && AtFrameset())
+{
+MoveDownFrameset(!radDirection[0].checked);
+}
+}
+win = CrawlPath();
+g_docSearch = win.document;
+}
+else
+{
+g_docSearch = window.dialogArguments.document;
+}
+if (g_docSearch .queryCommandState("BrowseMode")
+&& g_docSearch .selection.type != "Text")
+{
+if (g_docSearch .body == null)
+return;
+g_rngWorking = g_docSearch .body.createTextRange();
+}
+else
+{
+g_rngWorking = g_docSearch .selection.createRange();
+}
+}
+function directionAdjust()
+{
+g_fFoundText = (g_docSearch .selection.type == "Text");
+if (radDirection[0].checked)
+{
+if (g_fFoundText)
+{
+g_rngWorking.moveEnd("character" , -1);
+}
+while (0 != g_rngWorking.moveStart("textedit", -10000))
+{
+}
+g_intDirection = -1000000000;
+}
+else
+{
+if (g_fFoundText)
+{
+g_rngWorking.moveStart("character", 1);
+}
+while (0 != g_rngWorking.moveEnd("textedit", 10000))
+{
+}
+g_intDirection = 1000000000;
+}
+}
+function btnFindClick()
+{
+var fDone = false;
+var L_FinishedDocument_Text = "Finished searching the document.";
+var index;
+setInitSearchRng();
+directionAdjust();
+g_rngFoundText = g_rngWorking.duplicate();
+success = g_rngFoundText.findText(txtFindText.value,
+g_intDirection,
+findFlags());
+while ((!fDone) && success)
+{
+fDone = true;
+try
+{
+g_rngFoundText.select();
+}
+catch (exception)
+{
+if (g_intDirection == 1000000000)
+{
+g_rngFoundText.moveStart("character" , 1);
+while (0 != g_rngFoundText.moveEnd("textedit", 10000))
+{
+}
+}
+else
+{
+g_rngFoundText.moveEnd("character" , -1);
+while (0 != g_rngFoundText.moveStart("textedit", -10000))
+{
+}
+}
+fDone = false;
+success = g_rngFoundText.findText(txtFindText.value,
+g_intDirection,
+findFlags());
+}
+}
+if (!success)
+{
+if (g_fFrameset)
+{
+if (MoveDoc(!radDirection[0].checked))
+{
+btnFindClick();
+return;
+}
+}
+alert(L_FinishedDocument_Text);
+txtFindText.focus();
+}
+else
+{
+if (g_fFrameset)
+{
+g_docLastFound.execCommand("Unselect", false);
+g_docLastFound = g_docSearch ;
+}
+g_rngFoundText.select();
+g_rngFoundText.scrollIntoView(true);
+}
+}
+function btnCancelClick2()
+{
+window.dialogArguments.findText = txtFindText.value;
+window.close();
+}
+//</SCRIPT> 

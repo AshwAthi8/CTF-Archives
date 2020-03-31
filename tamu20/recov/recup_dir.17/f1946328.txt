@@ -1,0 +1,2 @@
+hen you change a partition (with IOCTL_DISK_SET_DRIVE_LAYOUT), the system uses this property member to determine which partitions have changed and need their information rewritten.
+Values: TRUE or FALSE. If TRUE, the partition needs to be rewritten.

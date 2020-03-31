@@ -1,0 +1,12 @@
+
+			ProgID = s 'DXImageTransform.Microsoft.CrIris.1'
+			VersionIndependentProgID = s 'DXImageTransform.Microsoft.CrIris'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+			ToolBoxBitmap32 = s '%MODULE%,235'
+		}
+	}
+}

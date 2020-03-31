@@ -1,0 +1,35 @@
+Type>
+            <serviceId>urn:upnp-org:serviceId:WANCommonIFC1</serviceId>
+				    <controlURL></controlURL>
+				    <eventSubURL></eventSubURL>
+            <SCPDURL>cmnicfg.xml</SCPDURL>
+          </service>
+        </serviceList>
+        <deviceList>
+          <device>
+            <deviceType>urn:schemas-upnp-org:device:WANConnectionDevice:1</deviceType>
+            <friendlyName>WANConnectionDevice</friendlyName>
+            <manufacturer>Microsoft</manufacturer>
+            <manufacturerURL>http://www.microsoft.com/</manufacturerURL>
+            <modelDescription>Residential Gateway</modelDescription>
+            <modelName>Internet Connection Sharing</modelName>
+            <modelNumber>1</modelNumber>
+            <modelURL>http://www.microsoft.com/</modelURL>
+            <serialNumber>0000001</serialNumber>
+            <UDN>DummyUDN3</UDN>
+            <UPC>00000-00001</UPC>
+            <serviceList>
+              <service>
+                <serviceType>urn:schemas-upnp-org:service:WANIPConnection:1</serviceType>
+                <serviceId>urn:upnp-org:serviceId:WANIPConn1</serviceId>
+                <controlURL></controlURL>
+                <eventSubURL></eventSubURL>
+                <SCPDURL>ipcfg.xml</SCPDURL>
+              </service>
+            </serviceList>
+          </device>
+        </deviceList>
+      </device>
+		</deviceList>
+	</device>
+</root>

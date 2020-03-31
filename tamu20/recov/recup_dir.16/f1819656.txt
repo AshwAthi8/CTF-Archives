@@ -1,0 +1,44 @@
+bullet.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\buddy.gif
+2020/03/01 19:07:02 0 - Extracted buddy.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\buddy_attention.gif
+2020/03/01 19:07:02 0 - Extracted buddy_attention.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\logon_anim.gif
+2020/03/01 19:07:02 0 - Extracted logon_anim.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\buddy_away.gif
+2020/03/01 19:07:02 0 - Extracted buddy_away.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\buddy_busy.gif
+2020/03/01 19:07:02 0 - Extracted buddy_busy.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\buddy_none.gif
+2020/03/01 19:07:02 0 - Extracted buddy_none.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\buddy_offline.gif
+2020/03/01 19:07:02 0 - Extracted buddy_offline.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\generic_mail.gif
+2020/03/01 19:07:02 0 - Extracted generic_mail.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\info.gif
+2020/03/01 19:07:02 0 - Extracted info.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\messenger_big.gif
+2020/03/01 19:07:02 0 - Extracted messenger_big.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\square_bullet.gif
+2020/03/01 19:07:02 0 - Extracted square_bullet.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\outlook.gif
+2020/03/01 19:07:02 0 - Extracted outlook.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\outlook_express.gif
+2020/03/01 19:07:02 0 - Extracted outlook_express.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\Envelope.gif
+2020/03/01 19:07:02 0 - Extracted Envelope.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\floppy.gif
+2020/03/01 19:07:02 0 - Extracted floppy.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\IM_icon.gif
+2020/03/01 19:07:02 0 - Extracted IM_icon.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\icon_extweb.gif
+2020/03/01 19:07:02 0 - Extracted icon_extweb.gif from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\alert.bmp
+2020/03/01 19:07:02 0 - Extracted alert.bmp from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Common\info.bmp
+2020/03/01 19:07:02 0 - Extracted info.bmp from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Email\rcscreen5.htm
+2020/03/01 19:07:02 0 - Extracted rcscreen5.htm from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Email\rcscreen6.htm
+2020/03/01 19:07:02 0 - Extracted rcscreen6.htm from help package
+2020/03/01 19:07:02 0 - Installing file : ADD : Remote Assistance\Escalation\Email\rcscreen6_head.hBMæ

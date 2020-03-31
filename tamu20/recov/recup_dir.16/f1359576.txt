@@ -1,0 +1,7 @@
+Fast User Switching cannot be turned off at this time. Log off, log back on, and then turn off Fast User Switching.";
+var L_DeleteInUse_ErrorMessage = "The account you want to delete is logged on. Before you can delete it, you must switch to that user account and log off that user.";
+var L_DisableGuestInUse_ErrorMessage= "The Guest account is logged on. Before you can turn off the Guest account, you must switch to the Guest account and log it off.";
+var L_NonStandardGina_ErrorMessage = "A recently installed program has disabled the Welcome screen and Fast User Switching. To restore these features, you must uninstall the program. The following file name might help you identify the program that made the change:  %1";
+var L_NetWareClient_ErrorMessage = "Client Services for NetWare has disabled the Welcome screen and Fast User Switching. To restore these features, you must uninstall Client Services for NetWare.";
+var L_NoPassportURL_ErrorMessage = "Windows cannot connect to the Passport Member Services Web site.";
+var L_CSCNoFUS_ErrorMessage = "Fast User Switching cannot be used because Offline Files is currently enabled.\n\nTo make changes to Offline Files settings, click OK.";

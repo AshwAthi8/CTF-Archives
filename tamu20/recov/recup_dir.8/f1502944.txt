@@ -1,0 +1,13 @@
+dvOptions=36
+AddReg=!RegRollbackComctl32
+DelReg=IncompatReg
+RequiredEngine=SETUPAPI,%ERR_NOSETUPAPI%
+[UnregDll]
+ComponentName=IE40.Comctl32
+AdvOptions=260
+RequireEngine=SETUPAPI,%ERR_NOSETUPAPI%
+[!RegRollbackComctl32]
+HKLM,"Software\Microsoft\Advanced INF Setup\IE CompList","IE40.Comctl32",0,""
+[IncompatReg]
+HKCR,"*\shellex\PropertySheetHandlers\Navigator"
+[Strings]

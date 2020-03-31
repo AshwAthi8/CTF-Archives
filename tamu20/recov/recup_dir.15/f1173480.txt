@@ -1,0 +1,2 @@
+schädigung von Protokolldatei %3 festgestellt. Der Datensatz mit der fehlerhaften Prüfsumme befindet sich an Position %4.
+Daten, die nicht mit dem Füllmuster der Protkolldatei übereinstimmen, traten zuerst in Sektor %5 auf.

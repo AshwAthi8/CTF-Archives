@@ -1,0 +1,18 @@
+rgin="5">
+		<Text><![CDATA[Highlight &words on the results page]]></Text>
+	</Link>
+
+	<WebLink IconId="1005" >
+	<URL><![CDATA[http://sa.windows.com/sasearch/safeedback/scfeed.htm]]></URL>
+		<Text><![CDATA[Tell us what you think of these results]]></Text>
+	</WebLink>
+
+
+	<Label TopMargin="8" BottomMargin="2">
+		<Text><![CDATA[&Change current search:]]></Text>
+	</Label>
+	<SpellEdit Height="48" Id="5001" AutoComplete="2" />
+	<Link Id="5006" IconId="23" TopMargin="10">
+		<Text><![CDATA[Start a &new search]]></Text>
+	</Link>
+</SimpleDialog>

@@ -1,0 +1,23 @@
+_Text + line + "\n" + message;
+
+	try
+	{
+		pchealth.MessageBox( str, "OK" );
+	}
+	catch(e)
+	{
+		alert(str);
+	}
+
+	window.close();
+	return true;
+}
+
+function fnInitCommon()
+{
+	window.onerror   = fnHandleError;
+	window.onkeyup   = txtDefaultESC;
+	window.onkeydown = txtDefaultESC;
+
+	window.onunload  = global_Shutdown;
+}

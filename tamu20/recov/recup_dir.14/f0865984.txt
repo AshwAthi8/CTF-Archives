@@ -1,0 +1,37 @@
+I.AddReg
+IconIndex      = 17			; Net service
+Uninstall      = WBEMMSI.Uninstall
+RegisterDlls   = WBEMMSI.RegSvr
+SizeApproximation=712704
+
+[WBEMMSI.Uninstall]
+DelFiles       = WBEMMSI.CopyFiles
+DelReg         = WBEMMSI.DelReg
+UnregisterDlls = WBEMMSI.UnRegSvr
+
+[DestinationDirs]
+WBEMMSI.CopyFiles = 11,WBEM
+
+[WBEMMSI.CopyFiles]
+msi.mfl
+msi.mof
+msiprov.dll
+
+[WBEMMSI.CopyFiles.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GRGX;;;WD)"
+
+[WBEMMSI.RegSvr]
+11,wbem,msiprov.dll,1
+
+[WBEMMSI.UnRegSvr]
+11,wbem,msiprov.dll,1
+
+[WBEMMSI.AddReg]
+; none
+
+[WBEMMSI.DelReg]
+; none
+
+[Strings]
+WBEMMSI_DESC	= "WMI Windows Installer Provider"
+WBEMMSI_TIP	= "Allows client applications to access Windows Installer information through Windows Management Instrumentation (WMI)."

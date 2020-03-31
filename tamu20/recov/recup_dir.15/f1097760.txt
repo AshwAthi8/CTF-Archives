@@ -1,0 +1,22 @@
+Both'
+            }
+        }
+
+        NoRemove {B9D1F32E-C401-11D0-A520-000000000000}
+        {
+            ForceRemove InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+        }
+
+        NoRemove {D51BD5AE-7548-11CF-A520-0080C77EF58A}
+        {
+            ForceRemove InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+        }
+    }
+}
+

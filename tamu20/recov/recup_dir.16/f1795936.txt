@@ -1,0 +1,6 @@
+9:06 : DTC Install error = 00000000, Created MsDtc Service. Msdtc Service will be running as NetworkService, d:\srvrtm\com\complus\dtc\dtc\adme\uiname.cpp (4585) 
+03-01-2020 19:06 : DTC Install error = 00000000, About to create performance counter registry keys, d:\srvrtm\com\complus\dtc\dtc\adme\uiname.cpp (4733) 
+03-01-2020 19:06 : DTC Install error = 00000000, Executing lodctr msdtcprf.ini command, d:\srvrtm\com\complus\dtc\dtc\adme\uiname.cpp (4747) 
+03-01-2020 19:06 : DTC Install error = 80070002, RegOpenKeyExW call failed, d:\srvrtm\com\complus\dtc\dtc\adme\uiname.cpp (5556) 
+03-01-2020 19:06 : DTC Install error = 00000000, -ws03sp1install, d:\srvrtm\com\complus\dtc\dtc\msdtc\src\msdtc.cpp (784) 
+03-01-2020 19:06 : DTC Install error = 00000000, Starting MSDTC Service, d:\srvrtm\com\complus\dtc\ntdtcsetup\src\cdtccore.cpp (563) 

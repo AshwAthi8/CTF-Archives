@@ -1,0 +1,31 @@
+LOR: #D6DFF5;
+}
+.padl
+{
+	padding-left:2em;
+}
+.padr
+{
+	padding-right:2em;
+}
+.padt
+{
+	padding-top:2em;
+}
+.padb
+{
+	padding-bottom:2em;
+}
+.pad1emt
+{
+	padding-top:1em;
+}
+.pad1eml
+{
+	padding-left:1em;
+}
+.padlink
+{
+	padding-left:1pt;
+}
+</Style>

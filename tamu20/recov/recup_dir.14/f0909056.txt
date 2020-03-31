@@ -1,0 +1,7 @@
+/>
+   </ElementType>      
+   <ElementType name="Connections" model="closed">
+      <element type="Connection" minOccurs="0" maxOccurs="*"/>
+   </ElementType>
+</Schema>
+

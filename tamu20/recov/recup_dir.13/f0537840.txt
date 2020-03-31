@@ -1,0 +1,464 @@
+  ;DIRID_PROGRAM_FILES_COMMON
+MSADC.Reg = 16427,System\%MSADC%     ;DIRID_PROGRAM_FILES_COMMON
+MSADC.Delete = 16427,System\%MSADC%  ;DIRID_PROGRAM_FILES_COMMON
+ADO = 16427,System\%ADO%             ;DIRID_PROGRAM_FILES_COMMON
+ADO.Reg = 16427,System\%ADO%         ;DIRID_PROGRAM_FILES_COMMON
+ADO.Delete = 16427,System\%ADO%      ;DIRID_PROGRAM_FILES_COMMON
+OLEDB = 16427,System\%OLDDB%         ;DIRID_PROGRAM_FILES_COMMON
+OLEDB.Reg = 16427,System\%OLDDB%     ;DIRID_PROGRAM_FILES_COMMON
+OLEDB.Delete = 16427,System\%OLDDB%  ;DIRID_PROGRAM_FILES_COMMON
+SYSTEM = 11
+SYSTEM.Reg = 11
+SYSTEM.Delete = 11
+DAO = 16427,%MsSHARED%\%DAO%         ;DIRID_PROGRAM_FILES_COMMON
+
+[OLEDB]
+; msdaipp.dll,,,32
+msxactps.dll,,,32
+msdaps.dll,,,32
+msdaosp.dll,,,32
+msdatl3.dll,,,32
+oledb32.dll,,,32
+oledb32r.dll,,,32
+oledbjvs.inc
+oledbvbs.inc
+sqloledb.dll,,,32
+sqloledb.rll,,,32
+sqlxmlx.dll,,,32
+sqlxmlx.rll,,,32
+
+[OLEDB.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)"
+
+
+[ADO]
+adojavas.inc
+adovbs.inc
+MDACReadme.htm, MDACRdMe.htm
+msader15.dll,,,32
+msado15.dll,,,32
+msado20.tlb
+msado21.tlb
+msado25.tlb
+msado26.tlb
+msado27.tlb
+msadomd.dll,,,32
+msador15.dll,,,32
+msadox.dll,,,32
+msadrh15.dll,,,32
+
+[ADO.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)"
+
+
+[MSADC]
+adcjavas.inc
+adcvbs.inc
+handler.reg
+handsafe.reg
+msadce.dll,,,32
+msadcer.dll,,,32
+msadcf.dll,,,32
+msadcfr.dll,,,32
+msadco.dll,,,32
+msadcor.dll,,,32
+msadcs.dll,,,32
+msadds.dll,,,32
+msaddsr.dll,,,32
+msdaprsr.dll,,,32
+msdaprst.dll,,,32
+msdfmap.dll,,,32
+msdaremr.dll,,,32
+msdarem.dll,,,32
+
+[MSADC.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)"
+
+
+[SYSTEM]
+odbcconf.rsp
+
+[DAO]
+
+[DAO.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)"
+
+[InstallODBCDrivers.RegAdd]
+HKLM,"Software\Microsoft\Windows\CurrentVersion\RunOnce","MDAC_InstODBCDrivers",0x00000000,"%11%\odbcconf @%11%\odbcconf.rsp"
+
+[SQLServer.RegAdd]
+HKLM,"Software\ODBC\ODBCINST.INI\SQL Server","CPTimeout",0x00000000,"60"
+
+[BIDInterface.RegAdd]
+HKLM, "Software\Microsoft\BidInterface",,2
+
+[BIDInterface.RegAdd.Security]
+"D:P(A;OICI;GR;;;BU)(A;OICI;GR;;;PU)(A;OICI;GA;;;BA)(A;OICI;GA;;;CO)(A;OICI;GA;;;SY)"
+
+[safer.RegAdd]
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","Description",,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","FriendlyName",,"Mdac11.cab"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","SaferFlags",0x00010003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","HashAlg",0x00010003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","ItemData",0x00000001,5e,ab,30,4f,95,7a,49,89,6a,00,6c,1c,31,15,40,15
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","LastModified",0x000B0001,85,c4,34,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}","ItemSize",0x000B0001,0b,03,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","Description",,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","FriendlyName",,"mdac20.cab"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","SaferFlags",0x00010003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","HashAlg",0x00010003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","ItemData",0x00000001,67,b0,d4,8b,34,3a,3f,d3,bc,e9,dc,64,67,04,f3,94
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","LastModified",0x000B0001,03,8a,39,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}","ItemSize",0x000B0001,05,02,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","Description",,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","FriendlyName",,"mdac20_a.cab"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","SaferFlags",0x00010003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","HashAlg",0x00010003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","ItemData",0x00000001,32,78,02,dc,fe,f8,c8,93,dc,8a,b0,06,dd,84,7d,1d
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","LastModified",0x000B0001,be,77,45,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}","ItemSize",0x000B0001,96,03,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","Description",,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","FriendlyName",,"_msadc10.cab"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","SaferFlags",0x00010003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","HashAlg",0x00010003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","ItemData",0x00000001,bd,9a,2a,db,42,eb,d8,56,0e,25,0e,4d,f8,16,2f,67
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","LastModified",0x000B0001,81,4f,3e,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}","ItemSize",0x000B0001,e5,00,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","Description",,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","FriendlyName",,"msadc11.cab"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","SaferFlags",0x00010003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","HashAlg",0x00010003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","ItemData",0x00000001,38,6b,08,5f,84,ec,f6,69,d3,6b,95,6a,22,c0,1e,80
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","LastModified",0x000B0001,40,b2,40,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}","ItemSize",0x000B0001,72,01,00,00,00,00,00,00
+
+
+[RemoveOCMDAC.RegDel]
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_ADO_CORE"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_DRV_BRAZOS"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_DRV_SQLSRV"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_DRV_ORACLE"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_ADO_DOC"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_RDS_11"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_RDS_CORE"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_RDS_DOC"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents", "DAC_RDS_SAMPLE"
+
+[MSADC.Delete]
+
+[ADO.Delete]
+ADOMDreadme.txt
+ADOreadme.txt
+adoxreadme.txt
+JroReadme.txt
+
+[OLEDB.Delete]
+dbrstprx.dll
+msdaerr.dll
+msdasc.cnt
+msdasc.hlp
+oledbpr.dll
+oledb32x.dll
+msdasc.txt
+MSDASQLReadme.txt
+MSOrclOLEDBreadme.txt
+sqloledb.txt
+sqlsoldb.hlp
+
+[SYSTEM.Delete]
+cliconf.cnt
+cliconfg.cpl
+dbmsshrn.dll
+msrpjt40.dll
+odbctl32.dll
+msorcloledbreadme.txt
+msoracle32readme.txt
+odbcinst.txt
+odbcjet.txt
+sqlsrdme.txt
+vfpodbc.txt
+cliconf.hlp
+sqlxmlx.dll
+
+[MSADC.RegSvr]
+16427,System\%MSADC%,msadce.dll   ,1
+16427,System\%MSADC%,msadcf.dll   ,1
+16427,System\%MSADC%,msadco.dll   ,1
+16427,System\%MSADC%,msdaprst.dll ,1
+16427,System\%MSADC%,msdfmap.dll  ,1
+16427,System\%MSADC%,msdarem.dll  ,1
+16427,System\%MSADC%,msadds.dll   ,1
+
+[ADO.RegSvr]
+16427,System\%ADO%,msado15.dll,  1
+16427,System\%ADO%,msador15.dll, 1
+16427,System\%ADO%,msadrh15.dll, 1
+16427,System\%ADO%,msadox.dll,   1
+16427,System\%ADO%,msadomd.dll,  1
+
+[OLEDB.RegSvr]
+; msdaipp.dll,,,32
+16427,System\%OLDDB%,msdaps.dll,   1
+16427,System\%OLDDB%,sqloledb.dll, 1
+16427,System\%OLDDB%,sqlxmlx.dll, 1
+16427,System\%OLDDB%,msxactps.dll, 1
+16427,System\%OLDDB%,oledb32.dll,  1
+16427,System\%OLDDB%,oledb32r.dll, 1
+16427,System\%OLDDB%,msdaosp.dll,  1
+
+
+[DAO.RegSvr]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Strings]
+MsSHARED = "Microsoft Shared"
+OLDDB = "Ole DB"
+ADO = "ado"
+MSADC = "msadc"
+DAO = "DAO"
+MSSOAPBIN = "MSSoap\Binaries"
+MSSOAPBINRES = "MSSoap\Binaries\Resources\1033"
+
+
+
+
+[defaultinstall]
+CopyFiles=wMSADC,wADO,wOLEDB,wDAO
+DelFiles=wMSADC.Delete,wADO.Delete,wOLEDB.Delete,wSYSTEM.Delete
+RegisterDlls=wMSADC.RegSvr,wADO.RegSvr,wOLEDB.RegSvr,wDAO.RegSvr
+AddReg=wInstallODBCDrivers.RegAdd,wSQLServer.RegAdd,wBIDInterface.RegAdd,wsafer.RegAdd
+DelReg=wRemoveOCMDAC.RegDel
+
+[wADO.RegSvr]
+16428,"System\ado",msado15.dll,1
+16428,"System\ado",msador15.dll,1
+16428,"System\ado",msadrh15.dll,1
+16428,"System\ado",msjro.dll,1
+16428,"System\ado",msadox.dll,1
+16428,"System\ado",msadomd.dll,1
+
+[wDAO.RegSvr]
+16428,"Microsoft Shared\DAO",dao360.dll,1
+
+[wOLEDB]
+msdadc.dll,wmsdadc.dll,,32
+msdaenum.dll,wmsdaenum.dll,,32
+msdaer.dll,wmsdaer.dll,,32
+msdaora.dll,wmsdaora.dll,,32
+msdaorar.dll,wmsdaorar.dll,,32
+msdasc.dll,wmsdasc.dll,,32
+msdasql.dll,wmsdasql.dll,,32
+msdasqlr.dll,wmsdasqlr.dll,,32
+msdatt.dll,wmsdatt.dll,,32
+msdaurl.dll,wmsdaurl.dll,,32
+msxactps.dll,wmsxactps.dll,,32
+msdaps.dll,wmsdaps.dll,,32
+msdaosp.dll,wmsdaosp.dll,,32
+msdatl3.dll,wmsdatl3.dll,,32
+oledb32.dll,woledb32.dll,,32
+oledb32r.dll,woledb32r.dll,,32
+oledbjvs.inc,woledbjvs.inc
+oledbvbs.inc,woledbvbs.inc
+sqloledb.dll,wsqloledb.dll,,32
+sqloledb.rll,wsqloledb.rll,,32
+sqlxmlx.dll,wsqlxmlx.dll,,32
+sqlxmlx.rll,wsqlxmlx.rll,,32
+sqlsoldb.chm,wsqlsoldb.chm
+
+[wMSADC]
+adcjavas.inc,wadcjavas.inc
+adcvbs.inc,wadcvbs.inc
+handler.reg,whandler.reg
+handsafe.reg,whandsafe.reg
+msadce.dll,wmsadce.dll,,32
+msadcer.dll,wmsadcer.dll,,32
+msadcf.dll,wmsadcf.dll,,32
+msadcfr.dll,wmsadcfr.dll,,32
+msadco.dll,wmsadco.dll,,32
+msadcor.dll,wmsadcor.dll,,32
+msadcs.dll,wmsadcs.dll,,32
+msadds.dll,wmsadds.dll,,32
+msaddsr.dll,wmsaddsr.dll,,32
+msdaprsr.dll,wmsdaprsr.dll,,32
+msdaprst.dll,wmsdaprst.dll,,32
+msdfmap.dll,wmsdfmap.dll,,32
+msdaremr.dll,wmsdaremr.dll,,32
+msdarem.dll,wmsdarem.dll,,32
+
+[wInstallODBCDrivers.RegAdd]
+HKLM,"Software\Microsoft\Windows\CurrentVersion\RunOnce",MDAC_InstODBCDrivers,0x00004000,"%16425%\odbcconf @%16425%\odbcconf.rsp"
+
+[wSQLServer.RegAdd]
+HKLM,"Software\ODBC\ODBCINST.INI\SQL Server",CPTimeout,0x00004000,60
+
+[wsafer.RegAdd]
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",Description,0x00004000,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",FriendlyName,0x00004000,Mdac11.cab
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",SaferFlags,0x00014003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",HashAlg,0x00014003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",ItemData,0x00004001,5e,ab,30,4f,95,7a,49,89,6a,00,6c,1c,31,15,40,15
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",LastModified,0x000b4001,85,c4,34,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{349d35ab-37b5-462f-9b89-edd5fbde1328}",ItemSize,0x000b4001,0b,03,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",Description,0x00004000,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",FriendlyName,0x00004000,mdac20.cab
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",SaferFlags,0x00014003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",HashAlg,0x00014003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",ItemData,0x00004001,67,b0,d4,8b,34,3a,3f,d3,bc,e9,dc,64,67,04,f3,94
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",LastModified,0x000b4001,03,8a,39,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{7fb9cd2e-3076-4df9-a57b-b813f72dbb91}",ItemSize,0x000b4001,05,02,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",Description,0x00004000,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",FriendlyName,0x00004000,mdac20_a.cab
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",SaferFlags,0x00014003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",HashAlg,0x00014003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",ItemData,0x00004001,32,78,02,dc,fe,f8,c8,93,dc,8a,b0,06,dd,84,7d,1d
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",LastModified,0x000b4001,be,77,45,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{81d1fe15-dd9d-4762-b16d-7c29ddecae3f}",ItemSize,0x000b4001,96,03,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",Description,0x00004000,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",FriendlyName,0x00004000,_msadc10.cab
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",SaferFlags,0x00014003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",HashAlg,0x00014003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",ItemData,0x00004001,bd,9a,2a,db,42,eb,d8,56,0e,25,0e,4d,f8,16,2f,67
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",LastModified,0x000b4001,81,4f,3e,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{94e3e076-8f53-42a5-8411-085bcc18a68d}",ItemSize,0x000b4001,e5,00,00,00,00,00,00,00
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",Description,0x00004000,"Stop the download of this file"
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",FriendlyName,0x00004000,msadc11.cab
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",SaferFlags,0x00014003,00000000
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",HashAlg,0x00014003,0x0008003
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",ItemData,0x00004001,38,6b,08,5f,84,ec,f6,69,d3,6b,95,6a,22,c0,1e,80
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",LastModified,0x000b4001,40,b2,40,dc,19,a2,c2,01
+HKLM,"Software\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Hashes\{dc971ee5-44eb-4fe4-ae2e-b91490411bfc}",ItemSize,0x000b4001,72,01,00,00,00,00,00,00
+
+[wOLEDB.Delete]
+dbrstprx.dll
+msdaerr.dll
+msdasc.cnt
+msdasc.hlp
+oledbpr.dll
+oledb32x.dll
+msdasc.txt
+MSDASQLReadme.txt
+MSOrclOLEDBreadme.txt
+sqloledb.txt
+sqlsoldb.hlp
+
+[wMSADC.Delete]
+[wOLEDB.RegSvr]
+16428,"System\Ole DB",msdadc.dll,1
+16428,"System\Ole DB",msdaenum.dll,1
+16428,"System\Ole DB",msdaer.dll,1
+16428,"System\Ole DB",msdaora.dll,1
+16428,"System\Ole DB",msdaps.dll,1
+16428,"System\Ole DB",msdasc.dll,1
+16428,"System\Ole DB",msdasql.dll,1
+16428,"System\Ole DB",msdatt.dll,1
+16428,"System\Ole DB",msdaurl.dll,1
+16428,"System\Ole DB",sqloledb.dll,1
+16428,"System\Ole DB",sqlxmlx.dll,1
+16428,"System\Ole DB",msxactps.dll,1
+16428,"System\Ole DB",oledb32.dll,1
+16428,"System\Ole DB",oledb32r.dll,1
+16428,"System\Ole DB",msdaosp.dll,1
+
+[wMSADC.RegSvr]
+16428,"System\msadc",msadce.dll,1
+16428,"System\msadc",msadcf.dll,1
+16428,"System\msadc",msadco.dll,1
+16428,"System\msadc",msdaprst.dll,1
+16428,"System\msadc",msdfmap.dll,1
+16428,"System\msadc",msdarem.dll,1
+16428,"System\msadc",msadds.dll,1
+
+[wADO]
+adojavas.inc,wadojavas.inc
+adovbs.inc,wadovbs.inc
+MDACReadme.htm,wMDACRdMe.htm
+msader15.dll,wmsader15.dll,,32
+msado15.dll,wmsado15.dll,,32
+msado20.tlb,wmsado20.tlb
+msado21.tlb,wmsado21.tlb
+msado25.tlb,wmsado25.tlb
+msado26.tlb,wmsado26.tlb
+msado27.tlb,wmsado27.tlb
+msadomd.dll,wmsadomd.dll,,32
+msador15.dll,wmsador15.dll,,32
+msadox.dll,wmsadox.dll,,32
+msadrh15.dll,wmsadrh15.dll,,32
+msjro.dll,wmsjro.dll,,32
+
+[wDAO]
+dao360.dll,wdao360.dll
+
+[wSYSTEM.Delete]
+cliconf.cnt
+cliconfg.cpl
+dbmsshrn.dll
+msrpjt40.dll
+odbctl32.dll
+msorcloledbreadme.txt
+msoracle32readme.txt
+odbcinst.txt
+odbcjet.txt
+sqlsrdme.txt
+vfpodbc.txt
+cliconf.hlp
+sqlxmlx.dll
+
+[wBIDInterface.RegAdd]
+HKLM,"Software\Microsoft\BidInterface",,0x00004002
+
+[wRemoveOCMDAC.RegDel]
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_ADO_CORE
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_DRV_BRAZOS
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_DRV_SQLSRV
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_DRV_ORACLE
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_ADO_DOC
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_RDS_11
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_RDS_CORE
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_RDS_DOC
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents",DAC_RDS_SAMPLE
+
+[wADO.Delete]
+ADOMDreadme.txt
+ADOreadme.txt
+adoxreadme.txt
+JroReadme.txt
+
+[DestinationDirs]
+wOLEDB=16428,System\Ole DB
+wMSADC=16428,System\msadc
+wOLEDB.Delete=16428,System\Ole DB
+wMSADC.Delete=16428,System\msadc
+wADO=16428,System\ado
+wDAO=16428,Microsoft Shared\DAO
+wSYSTEM.Delete=16425
+wADO.Delete=16428,System\ado

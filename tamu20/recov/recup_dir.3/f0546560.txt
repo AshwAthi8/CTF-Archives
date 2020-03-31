@@ -1,0 +1,190 @@
+llular Protocol<cr><lf>",    1, 02, 0a, AA,A6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 42666 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, AA,A6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 42666 V42 DSVD<cr><lf>",       1, 02, 02, AA,A6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 42666 V42bis DSVD<cr><lf>",    1, 02, 03, AA,A6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000<cr><lf>",      1, 02, 00, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 NoEC<cr><lf>",      1, 02, 00, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 MNP4<cr><lf>",      1, 02, 02, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 MNP5<cr><lf>",      1, 02, 03, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 V42<cr><lf>",       1, 02, 02, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 V42bis<cr><lf>",    1, 02, 03, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 V42 DSVD<cr><lf>",       1, 02, 02, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 44000 V42bis DSVD<cr><lf>",    1, 02, 03, e0,ab,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333<cr><lf>",      1, 02, 00, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 NoEC<cr><lf>",      1, 02, 00, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 MNP4<cr><lf>",      1, 02, 02, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 MNP5<cr><lf>",      1, 02, 03, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 V42<cr><lf>",       1, 02, 02, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 V42bis<cr><lf>",    1, 02, 03, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 V42 Cellular Protocol<cr><lf>",    1, 02, 0a, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 V42 DSVD<cr><lf>",       1, 02, 02, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 45333 V42bis DSVD<cr><lf>",    1, 02, 03, 15,B1,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000<cr><lf>",      1, 02, 00, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 NoEC<cr><lf>",      1, 02, 00, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 MNP4<cr><lf>",      1, 02, 02, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 MNP5<cr><lf>",      1, 02, 03, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 V42<cr><lf>",       1, 02, 02, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 V42bis<cr><lf>",    1, 02, 03, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 V42 DSVD<cr><lf>",       1, 02, 02, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46000 V42bis DSVD<cr><lf>",    1, 02, 03, b0,b3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666<cr><lf>",      1, 02, 00, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 NoEC<cr><lf>",      1, 02, 00, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 MNP4<cr><lf>",      1, 02, 02, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 MNP5<cr><lf>",      1, 02, 03, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 V42<cr><lf>",       1, 02, 02, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 V42bis<cr><lf>",    1, 02, 03, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 V42 Cellular Protocol<cr><lf>",    1, 02, 0a, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 V42 DSVD<cr><lf>",       1, 02, 02, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 46666 V42bis DSVD<cr><lf>",    1, 02, 03, 4A,B6,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000<cr><lf>",      1, 02, 00, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 NoEC<cr><lf>",      1, 02, 00, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 MNP4<cr><lf>",      1, 02, 02, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 MNP5<cr><lf>",      1, 02, 03, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 V42<cr><lf>",       1, 02, 02, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 V42bis<cr><lf>",    1, 02, 03, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 V42 DSVD<cr><lf>",       1, 02, 02, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 48000 V42bis DSVD<cr><lf>",    1, 02, 03, 80,bb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333<cr><lf>",      1, 02, 00, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 NoEC<cr><lf>",      1, 02, 00, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 MNP4<cr><lf>",      1, 02, 02, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 MNP5<cr><lf>",      1, 02, 03, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 V42<cr><lf>",       1, 02, 02, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 V42bis<cr><lf>",    1, 02, 03, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 V42 Cellular Protocol<cr><lf>",    1, 02, 0a, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 V42 DSVD<cr><lf>",       1, 02, 02, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 49333 V42bis DSVD<cr><lf>",    1, 02, 03, B5,C0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000<cr><lf>",      1, 02, 00, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 NoEC<cr><lf>",      1, 02, 00, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 MNP4<cr><lf>",      1, 02, 02, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 MNP5<cr><lf>",      1, 02, 03, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 V42<cr><lf>",       1, 02, 02, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 V42bis<cr><lf>",    1, 02, 03, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 V42 DSVD<cr><lf>",       1, 02, 02, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50000 V42bis DSVD<cr><lf>",    1, 02, 03, 50,c3,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666<cr><lf>",      1, 02, 00, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 NoEC<cr><lf>",      1, 02, 00, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 MNP4<cr><lf>",      1, 02, 02, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 MNP5<cr><lf>",      1, 02, 03, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 V42<cr><lf>",       1, 02, 02, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 V42bis<cr><lf>",    1, 02, 03, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 V42 Cellular Protocol<cr><lf>",    1, 02, 0a, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 V42 DSVD<cr><lf>",       1, 02, 02, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 50666 V42bis DSVD<cr><lf>",    1, 02, 03, EA,C5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000<cr><lf>",      1, 02, 00, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 NoEC<cr><lf>",      1, 02, 00, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 MNP4<cr><lf>",      1, 02, 02, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 MNP5<cr><lf>",      1, 02, 03, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 V42<cr><lf>",       1, 02, 02, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 V42bis<cr><lf>",    1, 02, 03, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 V42 DSVD<cr><lf>",       1, 02, 02, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 52000 V42bis DSVD<cr><lf>",    1, 02, 03, 20,cb,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333<cr><lf>",      1, 02, 00, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 NoEC<cr><lf>",      1, 02, 00, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 MNP4<cr><lf>",      1, 02, 02, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 MNP5<cr><lf>",      1, 02, 03, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 V42<cr><lf>",       1, 02, 02, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 V42bis<cr><lf>",    1, 02, 03, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 V42 Cellular Protocol<cr><lf>",    1, 02, 0a, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 V42 DSVD<cr><lf>",       1, 02, 02, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 53333 V42bis DSVD<cr><lf>",    1, 02, 03, 55,d0,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000<cr><lf>",      1, 02, 00, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 NoEC<cr><lf>",      1, 02, 00, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 MNP4<cr><lf>",      1, 02, 02, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 MNP5<cr><lf>",      1, 02, 03, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 V42<cr><lf>",       1, 02, 02, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 V42bis<cr><lf>",    1, 02, 03, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 V42 DSVD<cr><lf>",       1, 02, 02, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54000 V42bis DSVD<cr><lf>",    1, 02, 03, f0,d2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666<cr><lf>",      1, 02, 00, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 NoEC<cr><lf>",      1, 02, 00, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 MNP4<cr><lf>",      1, 02, 02, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 MNP5<cr><lf>",      1, 02, 03, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 V42<cr><lf>",       1, 02, 02, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 V42bis<cr><lf>",    1, 02, 03, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 V42 Cellular Protocol<cr><lf>",    1, 02, 0a, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 V42bis Cellular Protocol<cr><lf>",    1, 02, 0b, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 V42 DSVD<cr><lf>",       1, 02, 02, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 54666 V42bis DSVD<cr><lf>",    1, 02, 03, 8A,D5,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000<cr><lf>",      1, 02, 00, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 NoEC<cr><lf>",      1, 02, 00, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 MNP4<cr><lf>",      1, 02, 02, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 MNP5<cr><lf>",      1, 02, 03, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 V42<cr><lf>",       1, 02, 02, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 V42bis<cr><lf>",    1, 02, 03, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 V42 DSVD<cr><lf>",       1, 02, 02, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 56000 V42bis DSVD<cr><lf>",    1, 02, 03, c0,da,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000<cr><lf>",      1, 02, 00, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 NoEC<cr><lf>",      1, 02, 00, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 MNP4<cr><lf>",      1, 02, 02, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 MNP5<cr><lf>",      1, 02, 03, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 V42<cr><lf>",       1, 02, 02, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 V42bis<cr><lf>",    1, 02, 03, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 V42 DSVD<cr><lf>",       1, 02, 02, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 58000 V42bis DSVD<cr><lf>",    1, 02, 03, 90,e2,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000<cr><lf>",      1, 02, 00, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 NoEC<cr><lf>",      1, 02, 00, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 MNP4<cr><lf>",      1, 02, 02, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 MNP5<cr><lf>",      1, 02, 03, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 V42<cr><lf>",       1, 02, 02, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 V42bis<cr><lf>",    1, 02, 03, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 V42 DSVD<cr><lf>",       1, 02, 02, 60,ea,00,00, 00,00,00,00
+HKR, Responses, "<cr><lf>CONNECT 60000 V42bis DSVD<cr><lf>",    1, 02, 03, 60,ea,00,00, 00,00,00,00
+
+[DataFax.AddReg]                                
+HKR,, Properties, 1, C0,01,00,00, FF,00,00,00, FF,00,00,00, 07,00,00,00, 0F,00,00,00, F7,03,00,00, 00,C2,01,00, 00,FA,00,00
+HKR,, DCB,        1, 1C,00,00,00, 00,C2,01,00, 15,20,00,00,00,00,0A,00,0A,00,08,00,00,11,13,00,00,00
+
+[EXTERNAL]
+HKR,, DeviceType, 1, 01
+
+[INTERNAL]
+HKR,, DeviceType, 1, 02
+
+[PCMCIA]
+HKR,,PortDriver,,Serial.vxd
+HKR,,Contention,,*vcd
+HKR,, DeviceType, 1, 03
+
+[19200]
+HKR,, DCB, 1, 1C,00,00,00, 00,4B,00,00, 15,20,00,00, 00,00, 0a,00, 0a,00, 08, 00, 00, 11, 13, 00, 00, 00
+
+; DeviceTypes
+[SERIAL]
+HKR,, DeviceType, 1, 00
+
+[PARALLEL]
+HKR,, DeviceType, 1, 04
+HKR,,Override,,Paralink.vxd
+HKR,, DCB, 1, 1C,00,00,00, 00,00,06,00, 15,20,00,00, 00,00, 0a,00, 0a,00, 08, 00, 00, 11, 13, 00, 00, 00
+
+;;; DCB's - dwords and words are byte reversed
+;;;                                                                           ByteSize (Number of bits/byte, 4-8)
+;;;                                                                               Parity (0-4=None,Odd,Even,Mark,Space)
+;;;                                                                                   StopBits (0,1,2 = 1, 1.5, 2)
+;;;              |DCBLength   |BaudRate    |Bit Mask    |Rsvd  |XonLim|XofLim|   |   |   |Xon|Xof|Err|Eof|Evt
+;;[9600]
+;;HKR,, DCB, 1, 1C,00,00,00, 80,25,00,00, 15,20,00,00, 00,00, 0a,00, 0a,00, 08, 00, 00, 11, 13, 00, 00, 00
+
+
+[Strings]
+MSFT = "Microsoft"
+
+M18 = "Hayes"
+M1811PNP = "Hayes 288 V.34 + FAX"
+M1831 = "Hayes Optima 288 V.34 + FAX PCMCIA"
+M1839 = "Hayes Optima 288 V.34 + FAX + Voice"
+M1848PNP = "Hayes Optima 288 V.34 + FAX + Voice Plug & Play"
+M1848 = "Hayes Optima 288 V.34 + FAX + Voice"
+M27 = "(Standard Modem Types)"
+M2700 = "Communications cable between two computers"
+M2701 = "Parallel cable between two computers"
+Modem1="Hayes Accura 56K Ext Fax Modem 4703US"
+Modem2="Hayes Accura 336 Flash + Fax 4714US"
+Modem3="Hayes Accura 56K Int Fax Modem 4704US"
+Modem4="Hayes Accura 336 Flash Int + Fax 4723US"
+

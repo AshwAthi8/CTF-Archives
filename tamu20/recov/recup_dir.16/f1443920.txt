@@ -1,0 +1,9 @@
+name="condition">Is At Least</argument>
+                            <argument name="value">5 stars</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

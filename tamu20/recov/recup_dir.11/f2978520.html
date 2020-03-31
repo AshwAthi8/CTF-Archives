@@ -1,0 +1,220 @@
+<HTML>
+<HEAD>
+<!--
+Copyright (c) 2000 Microsoft Corporation
+-->
+<TITLE id="idTitle" name="idTitle">REMOTE_ASSISTANCE</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<LINK id="UI_StyleSheet1" REL="stylesheet" TYPE="text/css" HREF="../Css/rcbuddy.css">
+<LINK id="UI_StyleSheet2" REL="stylesheet" TYPE="text/css" HREF="hcp://system/css/shared.css">
+</Head>
+<BODY scroll="auto" id="idBody" name="idBody" class="margin" tabindex="-1">
+<Table id="idTableframe" name="idTableFrame" cellspacing="0" cellpadding="16px" border="0">
+<TR>
+<TD>
+<Table border="0" id="MoreInfoTable" name="MoreInfoTable" cellspacing="0" cellpadding="0">
+<TR>
+<TD id="idTd1" name="idTd1">
+<Span id="idMainTitle" name="idMainTitle" class="sys-font-heading3 sys-rhp-color-title">Troubleshooting connection issues</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd2" name="idTd2">
+<Span id="idSubTitle" name="idSubTitle" class="sys-font-body-bold sys-color-body">What issue do you need help resolving?</span>
+</TD>
+</TR>
+<TR>
+<TD class="Height5">
+</TD>
+</TR>
+<TR>
+<TD id="idTd3" name="idTd3">
+<Span id="idSubHeader1" name="idSubHeader1" class="sys-font-body-bold sys-color-body">
+On the Invitation Status page, the invitation has a "Resend Required" status.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd4" name="idTd4">
+<span id="idText1" name="idText1" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> If you use a dial-up Internet service provider (ISP) to connect to the Internet, the ISP might assign your computer an Internet Protocol (IP) address from a pool of IP addresses each time you log on to your ISP's network. If you disconnect from the Internet after sending your Remote Assistance request, you could receive a new IP address when you reconnect and your assistant's computer will be unable to recognize it.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd5" name="idTd5">
+<Span id="idText2" name="idText2" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B> On the <b>Invitation Status</b> page, click the invitation you want to resend, and then click <b>Resend</b>. Then follow the instructions to send a Remote Assistance request.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd9" name="idTd9">
+<Span id="idSubHeader3" name="idSubHeader3" class="sys-font-body-bold sys-color-body">
+I cannot establish a connection with the assistant.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd13" name="idTd13">
+<Span id="idText5" name="idText5" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> Your computer has Windows Firewall enabled but does not have the Windows Firewall exception enabled for Remote Desktop.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd14" name="idTd14">
+<span id="idText6" name="idText6" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B> In Control Panel, open Windows Firewall and click the Exceptions tab. In the Programs and Services list, make sure there is a check in the check box next to "Remote Desktop." Or, if you are on a corporate network, ask your administrator to configure the Remote Desktop exception through Group Policy.
+</span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd10" name="idTd10">
+<Span id="idText5" name="idText5" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> Either your computer or both your and your assistant's computers have Windows Firewall enabled and set to "On with no exceptions" mode. This blocks all connections, including Remote Assistance connections.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd11" name="idTd11">
+<span id="idText6" name="idText6" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B> Try sending the invitation using Windows Messenger. If this doesn't work, it may be because both your and your assistant's computers are set to "On with no exceptions" mode. All connection methods, including e-mail and Windows Messenger, should work when your Windows Firewall is not set to "On with no exceptions" mode.
+</span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd15" name="idTd15">
+<Span id="idText5" name="idText5" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> You are using a third-party firewall that is not configured to allow incoming traffic on port 3389.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd16" name="idTd16">
+<span id="idText6" name="idText6" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B> Refer to that firewall manufacturer's documentation for instructions for opening port 3389.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd17" name="idTd17">
+<Span id="idText5" name="idText5" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> You are on a corporate network that uses a network proxy server that does not allow incoming or outgoing traffic on port 3389.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd18" name="idTd18">
+<span id="idText6" name="idText6" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B> Contact your network administrator or corporate help desk to determine how you may be able to receive or provide Remote Assistance to users on an external network.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd19" name="idTd19">
+<Span id="idText5" name="idText5" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> Your computer connects to the Internet through a router that is not a UPnP certified device.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd20" name="idTd20">
+<span id="idText6" name="idText6" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B> Contact the router manufacturer for a possible firmware update to enable UPnP certification for the router, or obtain a UPnP certified router.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd21" name="idTd21">
+<Span id="idText5" name="idText5" class="sys-font-body sys-color-body">
+<B>Possible Cause:</B> Your computer was turned off, not connected to the Internet, or was experiencing network-related problems when your assistant was trying to connect.
+</Span>
+</TD>
+</TR>
+<TR>
+<TD class="Height9">
+</TD>
+</TR>
+<TR>
+<TD id="idTd22" name="idTd22">
+<span id="idText6" name="idText6" class="sys-font-body sys-color-body">
+<B>Possible Resolution:</B><br>
+<ul>
+<li id="li1" name="li1">Ensure that your computer is connected to the Internet when your assistant attempts to connect.</li>
+<li id="li2" name="li2">Try using Windows Messenger. Note: Firewall and router issues on your assistant's computer can also prevent connection.</li>
+</ul>
+</Span>
+</TD>
+</TR>
+</Table>
+</TD>
+</TR>
+</Table>
+</Body>
+</HTML>

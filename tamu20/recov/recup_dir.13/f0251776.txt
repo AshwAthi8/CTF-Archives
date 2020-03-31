@@ -1,0 +1,5 @@
+es in memory (requires /P as well).
+K  /LOW            Forces COMMAND to keep its resident data in low memory.
+J  /Y              Steps through the batch program specified by /C or /K.
+?  /C command      Executes the specified command and returns.
+I  /K command      Executes the specified command and continues running.

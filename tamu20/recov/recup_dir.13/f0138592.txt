@@ -1,0 +1,8 @@
+8FBA-AD25-11D0-98A8-0800361B1103}"
+CLSID_MyDocsDropTarget="{ECF03A32-103D-11d2-854D-006008059367}"
+CLSID_MyDocsCopyHook="{ECF03A33-103D-11d2-854D-006008059367}"
+CLSID_MyDocsProp="{4a7ded0a-ad25-11d0-98a8-0800361b1103}"
+MYDOCUMENTS="My Documents"
+SMWCEA="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+DESC_NoOpen=Drag Files onto this icon to store them in My Documents
+ERR_NOSETUPAPI="Can not register MYDOCS.DLL because SETUPAPI.DLL is missing."

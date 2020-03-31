@@ -1,0 +1,4 @@
+ch modell
+•    Windows-version
+•    Internet Explorer-version
+•    Versionsinformation för annan programvara fr

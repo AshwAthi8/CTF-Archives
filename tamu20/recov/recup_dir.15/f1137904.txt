@@ -1,0 +1,4 @@
+ XMS Driver  Version 3.95
+Extended Memory Specification (XMS) Version 3.0
+Copyright 1988-1995 Microsoft Corp.
+$

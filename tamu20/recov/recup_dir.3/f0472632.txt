@@ -1,0 +1,60 @@
+me="RefineCondition">InetActive AND SoundSearch</Property>
+        <Property Name="TaskId" DataType="23">546</Property>
+        <Property Name="QueryTemplate"><![CDATA[%1 %2 music or sound]]></Property>
+	</Link>
+	<Link Id="5770" IconId="290" TopMargin="5">
+		<Text><![CDATA[Search for video on the Internet]]></Text>
+        <Property Name="RefineCondition">InetActive AND MovieSearch</Property>
+        <Property Name="TaskId" DataType="23">84</Property>
+        <Property Name="QueryTemplate"><![CDATA[%1 %2 video]]></Property>
+	</Link>
+	<Link Id="5771" IconId="290" TopMargin="5">
+		<Text><![CDATA[Search for digital media on the Internet]]></Text>
+        <Property Name="RefineCondition">InetActive AND MediaSearch AND NOT PictureSearch AND NOT SoundSearch AND NOT MovieSearch</Property>
+        <Property Name="TaskId" DataType="23">1051</Property>
+        <Property Name="QueryTemplate"><![CDATA[%1 %2 digital media]]></Property>
+	</Link>
+
+	<Title TopMargin="8">
+		<Text><![CDATA[You may also want to...]]></Text>
+        <Property Name="RefineCondition">ManyResults</Property>
+	</Title>
+	<Expando Id="5750" TopMargin="8">
+		<Text><![CDATA[Sort results by category]]></Text>
+        <Property Name="RefineCondition">ManyResults</Property>
+	</Expando>
+    <ExpandoGroup Id="5750">
+	    <Radio Id="5730" Height="13" TopMargin="3" Group="1">
+		    <Text><![CDATA[Name]]></Text>
+	    </Radio>
+	    <Radio Id="5731" Height="13" TopMargin="3">
+		    <Text><![CDATA[Date Modified]]></Text>
+	    </Radio>
+	    <Radio Id="5732" Height="13" TopMargin="3">
+		    <Text><![CDATA[Size]]></Text>
+	    </Radio>
+	    <Radio Id="5733" Height="13" TopMargin="3">
+		    <Text><![CDATA[File Type]]></Text>
+	    </Radio>
+    </ExpandoGroup>
+	<Expando Id="5751" TopMargin="3" Group="1">
+		<Text><![CDATA[View results differently]]></Text>
+        <Property Name="RefineCondition">ManyResults</Property>
+	</Expando>
+    <ExpandoGroup Id="5751">
+	    <Radio Id="5720" Height="13" TopMargin="3" Group="1">
+		    <Text><![CDATA[Details]]></Text>
+	    </Radio>
+	    <Radio Id="5721" Height="13" TopMargin="3">
+		    <Text><![CDATA[Thumbnails]]></Text>
+	    </Radio>
+	    <Radio Id="5722" Height="13" TopMargin="3">
+		    <Text><![CDATA[Tiles]]></Text>
+	    </Radio>
+    </ExpandoGroup>
+
+	<Link Id="5006" IconId="23" TopMargin="10" Group="1">
+		<Text><![CDATA[Start a &new search]]></Text>
+	</Link>
+
+</SimpleDialog>

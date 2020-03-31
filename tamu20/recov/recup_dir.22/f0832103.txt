@@ -1,0 +1,53 @@
+ objekty.scr" = ss3dfo.scr
+"Rullande remsa.scr" = ssmarque.scr
+"Rullende tekst.scr" = ssmarque.scr
+"Rumrejse.scr" = ssstars.scr
+"Scrolling Marquee.scr" = ssmarque.scr
+"Starfield Simulation.scr" = ssstars.scr
+"Sterren.scr" = ssstars.scr
+"Tekst 3W.scr" = sstext3d.scr
+"Texte 3D.scr" = sstext3d.scr
+"Texte défilant.scr" = ssmarque.scr
+"Texto 3D.scr" = sstext3d.scr
+"Ukryj swe myœli.scr" = ssmyst.scr
+"Univerzum.scr" = ssstars.scr
+"Uzayda Yolculuk.scr" = ssstars.scr
+"Vaeltavat kuviot.scr" = ssmyst.scr
+"Viesti.scr" = ssmarque.scr
+"Voar pelo espaço.scr" = ssstars.scr
+"Volando por el espacio.scr" = ssstars.scr
+"3D Pipes.scr" = sspipes.scr
+"3D Flying Objects.scr" = ss3dfo.scr
+"3D Text.scr" = sstext3d.scr
+"3D Flower Box.scr" = ssflwbox.scr
+
+[ExcludedLinks]
+"*\EXPLORER.EXE","::{20D04FE0-3AEA-1069-A2D8-08002B30309D}\::{992CFFA0-F557-101A-88EC-00DD010CCC48}","*"
+"%%windir%%\Installer\{*}\ACCICONS.EXE","*","*"
+"%%windir%%\Installer\{*}\CAGICON.EXE","*","*"
+"%%windir%%\Installer\{*}\FPICON.EXE","*","*"
+"%%windir%%\Installer\{*}\MISC.EXE","*","*"
+"%%windir%%\Installer\{*}\MSPICONS.EXE","*","*"
+"%%windir%%\Installer\{*}\OPWICON.EXE","*","*"
+"%%windir%%\Installer\{*}\OUTICON.EXE","*","*"
+"%%windir%%\Installer\{*}\PEICONS.EXE","*","*"
+"%%windir%%\Installer\{*}\PPTICO.EXE","*","*"
+"%%windir%%\Installer\{*}\UNBNDICO.EXE","*","*"
+"%%windir%%\Installer\{*}\WORDICON.EXE","*","*"
+"%%windir%%\Installer\{*}\XLICONS.EXE","*","*"
+
+[EquivalentLinks]
+"*\wmplayer.exe","/prefetch:1","*","*\wmplayer.exe","","*"
+
+[Strings]
+Accessories9X = "Accessories"
+AccessoriesNT = "Accessories"
+WindowsNT = "Windows NT"
+
+;
+; unlocalized strings:
+;
+HkrWindowsNT        = "HKR\Software\Microsoft\Windows NT\CurrentVersion"
+HklmWindowsNT       = "HKLM\Software\Microsoft\Windows NT\CurrentVersion"
+HkrWindows          = "HKR\Software\Microsoft\Windows\CurrentVersion"
+HklmWindows         = "HKLM\Software\Microsoft\Windows\CurrentVersion"

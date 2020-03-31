@@ -1,0 +1,6 @@
+nHttpRequest component" threadingModel="Apartment" progid="WinHttp.WinHttpRequest.5.1"/>
+        <typelib tlbid="{662901FC-6951-4854-9EB2-D9A2570F2B2E}" resourceid="1" version="5.1" helpdir=""/>
+    </file>
+    <comInterfaceExternalProxyStub iid="{016FE2EC-B2C8-45F8-B23B-39E53A75396B}" tlbid="{662901FC-6951-4854-9EB2-D9A2570F2B2E}" name="Oleaut32 PSOAInterface" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+    <comInterfaceExternalProxyStub iid="{F97F4E15-B787-4212-80D1-D380CBBF982E}" tlbid="{662901FC-6951-4854-9EB2-D9A2570F2B2E}" name="Oleaut32 PSOAInterface" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>    
+</assembly>

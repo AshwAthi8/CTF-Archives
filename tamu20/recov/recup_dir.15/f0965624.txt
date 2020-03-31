@@ -1,0 +1,19 @@
+ = site;
+   }
+
+   function BodyOnKeyPress(nCode)
+   { 
+       if (nCode == 27)    //ESC
+       {
+           //this return value means that the Cancel button was clicked
+           window.returnValue = 0;
+
+           //close the dialog
+           window.close();
+       }
+   }
+  </script>
+ </head>
+
+ <body id="body" 
+       style="font-family: 

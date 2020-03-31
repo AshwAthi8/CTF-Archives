@@ -1,0 +1,10 @@
+P.MSP.2'
+			VersionIndependentProgID = s 'MSP.MSP'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Both'
+			}
+		}
+	}
+}

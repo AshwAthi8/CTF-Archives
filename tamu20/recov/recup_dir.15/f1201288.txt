@@ -1,0 +1,126 @@
+4FC295EE}\hashmast.cbk -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\catmast.cbd -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\catmast.cbk -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\sysmast.cbd -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\sysmast.cbk -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\hashmast.cbd -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\hashmast.cbk -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\catmast.cbd -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\catmast.cbk -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\sysmast.cbd -> DELETE
+DTC Setup[7:6:24]: C:\WINDOWS\SysWOW64\CatRoot\sysmast.cbk -> DELETE
+DTC Setup[7:6:24]: End OC_ABOUT_TO_COMMIT_QUEUE Return Value = 0
+DTC Setup[7:6:24]: Start OC_ABOUT_TO_COMMIT_QUEUE Component = dtc Subcomponent = dtc
+DTC Setup[7:6:24]: Subcomponent dtc state: O-,C+,R-
+DTC Setup[7:6:24]: Stopping MSDTC...
+DTC Setup[7:6:24]: Stopping service MSDTC...
+DTC Setup[7:6:24]: Stopping service MSSQLServer...
+DTC Setup[7:6:24]: End OC_ABOUT_TO_COMMIT_QUEUE Return Value = 0
+DTC Setup[7:6:29]: Start OC_COMPLETE_INSTALLATION Component = dtc Subcomponent = 
+DTC Setup[7:6:29]: PendingFileRenameOperations...
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\hashmast.cbd -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\hashmast.cbk -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\catmast.cbd -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\catmast.cbk -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\sysmast.cbd -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\{127D0A1D-4EF2-11D1-8608-00C04FC295EE}\sysmast.cbk -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\hashmast.cbd -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\hashmast.cbk -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\catmast.cbd -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\catmast.cbk -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\sysmast.cbd -> DELETE
+DTC Setup[7:6:29]: C:\WINDOWS\SysWOW64\CatRoot\sysmast.cbk -> DELETE
+DTC Setup[7:6:29]: End OC_COMPLETE_INSTALLATION Return Value = 0
+DTC Setup[7:6:32]: Start OC_COMPLETE_INSTALLATION Component = dtc Subcomponent = dtc
+DTC Setup[7:6:32]: Subcomponent dtc state: O-,C+,R+
+DTC Setup[7:6:32]: Queuing reg ops for component dtc, Section Name: dtc_install
+DTC Setup[7:6:32]: Queuing RegisterDlls ops for component dtc, Section Name: dtc_install
+DTC Setup[7:6:32]: Entering COcmComponent::InfRegisterDllsHandler Context=0x0 Notification = 25 Param1 = 0x3202668 Param2 = 0x1
+DTC Setup[7:6:32]: Received SPFILENOTIFY_STARTREGISTRATION for C:\WINDOWS\SysWOW64\msdtcprx.dll
+DTC Setup[7:6:32]: Leaving COcmComponent::InfRegisterDllsHandler ReturnCode = 1
+DTC Setup[7:6:33]: Entering COcmComponent::InfRegisterDllsHandler Context=0x0 Notification = 32 Param1 = 0x3202650 Param2 = 0x1
+DTC Setup[7:6:33]: Received SPFILENOTIFY_ENDREGISTRATION for C:\WINDOWS\SysWOW64\msdtcprx.dll, Win32Error = 0 FailureCode = 0
+DTC Setup[7:6:33]: C:\WINDOWS\SysWOW64\msdtcprx.dll successfully registered
+DTC Setup[7:6:33]: Leaving COcmComponent::InfRegisterDlls
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[accessutil - OC_QUERY_STEP_COUNT] - complete
+[commapps - OC_QUERY_STEP_COUNT] - complete
+[commapps - OC_QUERY_STEP_COUNT] - complete
+[commapps - OC_QUERY_STEP_COUNT] - complete
+[accessopt - OC_QUERY_STEP_COUNT] - complete
+[accessopt - OC_QUERY_STEP_COUNT] - complete
+[pinball - OC_QUERY_STEP_COUNT] - complete
+[pinball - OC_QUERY_STEP_COUNT] - complete
+[mswordpad - OC_QUERY_STEP_COUNT] - complete
+[mswordpad - OC_QUERY_STEP_COUNT] - complete
+[wbem - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wbemmsi - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wmaccess - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[rootautoupdate - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[ieaccess - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[oeaccess - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wmpocm - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[multim - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[games - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[commapps - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessopt - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[pinball - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[mswordpad - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wmpocm - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wmaccess - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[rootautoupdate - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[ieaccess - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[oeaccess - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[mswordpad - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessutil - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[commapps - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[commapps - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[multim - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[multim - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[multim - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[accessopt - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[pinball - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[games - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[games - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[games - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[games - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[games - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wbemmsi - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wbem - OC_ABOUT_TO_COMMIT_QUEUE] - complete
+[wbem - OC_COMPLETE_INSTALLATION] - complete
+[wbemmsi - OC_COMPLETE_INSTALLATION] - complete
+[wmaccess - OC_COMPLETE_INSTALLATION] - complete
+[rootautoupdate - OC_COMPLETE_INSTALLATION] - complete
+[ieaccess - OC_COMPLETE_INSTALLATION] - complete
+[oeaccess - OC_COMPLETE_INSTALLATION] - complete
+[wmpocm - OC_COMPLETE_INSTALLATION] - complete
+[multim - OC_COMPLETE_INSTALLATION] - complete
+[games - OC_COMPLETE_INSTALLATION] - complete
+[accessutil - OC_COMPLETE_INSTALLATION] - complete
+[commapps - OC_COMPLETE_INSTALLATION] - complete
+[accessopt - OC_COMPLETE_INSTALLATION] - complete
+[pinball - OC_COMPLETE_INSTALLATION] - complete
+[mswordpad - OC_COMPLETE_INSTALLATION] - complete
+[wmpocm - OC_COMPLETE_INSTALLATION]OCGEN: C:\WINDOWS\inf\unregmp2.exe /ShowWMP /SetShowState successfully completed within 500 seconds.
+ - complete
+[wmpocm - OC_QUERY_STATE] - complete
+[rootautoupdate - OC_COMPLETE_INSTALLATION] - complete
+[rootautoupdate - OC_QUERY_STATE] - complete
+[wbem - OC_COMPLETE_INSTALLATION] - complete
+[wbem - OC_QUERY_STATE] - complete
+[ieaccess - OC_COMPLETE_INSTALLATION]OCGEN: "C:\WINDOWS\system32\shmgrate.exe" OCInstallShowIE successfully completed within 500 seconds.
+ - complete
+[ieaccess - OC_QUERY_STATE] - complete
+[oeaccess - OC_COMPLETE_INSTALLATION]OCGEN: "C:\WINDOWS\s

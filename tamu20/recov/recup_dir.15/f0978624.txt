@@ -1,0 +1,1209 @@
+    = BLC.CleanPrev.App
+DelReg         = BLC.CleanPrev.Reg,BLC.CleanPrev.Reg.PerUser, HideIcons.Remove.Reg.PerUser
+AddReg         = BLC.Option.MarkInstalled,BLC.Install.Reg,BLC.Install.Reg.Brand,BLC.Install.Reg.ShowHideEntries
+RegisterDlls   = RegisterOCXSection
+SizeApproximation =2400256
+[ShowIcons]
+CustomDestination  = BLC.Existing
+AddReg             = ShowIcons.Install.Reg
+ProfileItems       = BLC.AllUsers.Create
+[BLC.Remove]
+AddReg             = BLC.Option.MarkRemoved
+DelReg             = BLC.Remove.Reg,BLC.Remove.Reg.PerUser
+DelFiles           = BLC.Remove.App
+ProfileItems       = BLC.AllUsers.Delete
+DelDirs            = BLC.Remove.Dirs
+UnRegisterOCXs     = UnRegisterOCXSection
+[HideIcons]
+AddReg             = HideIcons.Install.Reg
+ProfileItems       = BLC.AllUsers.Delete
+[HideIconsUser]
+DelReg             = HideIcons.Remove.Reg.PerUser
+ProfileItems       = BLC.HideIcons.Delete
+[BLC.Install.UserStub]
+DisplayName=%MSMSGSXP_NAME_AND_VER%
+ComponentID=Messenger
+GUID={5945c046-1e7d-11d1-bc44-00c04fd912be}
+Version=4,7,0,3000
+Locale=%LOCALE_ID%
+IsInstalled=1
+StubPath=%10%\SysWoW64\rundll32.exe advpack.dll,LaunchINFSection %17%\msmsgs.inf,BLC.Install.PerUser
+[BLC.Install.PerUser]
+CustomDestination = BLC.Existing
+AddReg            = BLC.Install.Reg.PerUser,BLC.Install.Reg.PUBrand,BLC.Install.Reg.PUAlwaysRun
+DelReg            = BLC.CleanPrev.Reg.PerUser
+[BLC.QuietInstall.PerUser]
+CustomDestination = BLC.Existing
+AddReg            = BLC.Install.Reg.PerUser,BLC.Install.Reg.PUBrand
+DelReg            = BLC.CleanPrev.Reg.PerUser
+[DestinationDirs]
+BLC.Install.App            = 16422, Messenger
+BLC.CleanPrev.App          = 16422, Messenger
+BLC.Remove.App             = 16422, Messenger
+BLC.Install.Inf            = 17    ; LDID_INF
+BLC.Install.Shared         = 11    ; LDID_SYS
+[BLC.Existing]
+49000,49001,49002=BLCDir.Remove,23
+[BLCDir.Remove]
+HKLM,"%KEY_BLCLIENT%",'InstallationDirectory','',''
+[BLC.Install.Shared]
+[BLC.CleanPrev.App]
+blogo.gif,,,1
+custsat.dll,,,1
+msmsgs.exe.manifest,,,1
+msmsgs.man,,,1
+lvback.bmp,,,1
+msgsad.gif,,,1
+msgsad1.gif,,,1
+msgsad2.gif,,,1
+client.xml,,,1
+msmsgs.chm,,,1
+msnmsgr.chm,,,1
+xpmsgr.chm,,,1
+rtcimsp.dll,,,1
+msimmsgr.dll,,,1
+msimnetc.dll,,,1
+msmsgs.in_,,,1
+msmsgs.ins,,,1
+mcmess.dll,,,1
+links.txt,,,1
+br_links.txt,,,1
+msgstrst.dll,,,1
+n2pcli.dll,,,1
+login.xml,,,1
+logout.xml,,,1
+test.wav,,,1
+pmsnlogo.gif,,,1
+license.txt,,,1
+msgsmigr.dll,,,1
+migrate.dll,,,1
+[BLC.Install.App]
+msmsgs.exe,wmsmsgs.exe,,32
+msgsc.dll,wmsgsc.dll,,32
+msgsc64.dll,,,32
+msgslang.dll,wmsgslang.dll,,32
+WMonline.wav,wWMonline.wav,,32
+WMemail.wav,wWMemail.wav,,32
+WMalert.wav,wWMalert.wav,,32
+type.wav,wtype.wav,,32
+logowin.gif,wlogowin.gif,,32
+lvback.gif,wlvback.gif,,32
+xpmsgr.chm,wxpmsgr.chm,,32
+[BLC.Remove.App]
+custsat.dll,,,1
+msmsgs.exe,,,1
+msmsgsc.dll,,,1
+msgsc.dll,,,1
+msgsc64.dll,,,1
+msgslang.dll,,,1
+license.txt,,,1
+WMonline.wav,,,1
+WMalert.wav,,,1
+WMemail.wav,,,1
+type.wav,,,1
+logowin.gif,,,1
+xpmsgr.chm,,,1
+[BLC.Remove.Dirs]
+%16422%\Messenger
+[BLC.Option.Reg]
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents","Messenger",,"Messenger"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents\Messenger",INF,,"msmsgs.inf"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents\Messenger",Section,,"msmsgs"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents\Messenger",Installed,,"0"
+[BLC.Option.MarkInstalled]
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents\Messenger",Installed,,"1"
+[BLC.Option.MarkRemoved]
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents\Messenger",Installed,,"0"
+[BLC.Install.Reg]
+HKLM,%KEY_BLCLIENT%,"RollbackCommand",,"RunDll32.EXE"
+HKLM,%KEY_BLCLIENT%,"RollbackParameters",," advpack.dll,LaunchINFSection %17%\msmsgs.inf,BLC.Remove,5"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","KeyFileName",,"%16422%\Messenger\msmsgs.exe"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","",,"%MSMSGSXP_NAME_AND_VER%"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","ComponentID",,"Messenger"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","StubPath",,"rundll32.exe advpack.dll,LaunchINFSection %17%\msmsgs.inf,BLC.QuietInstall.PerUser"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","Locale",,"%LOCALE_ID%"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","Version",,"4,7,0,3000"
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","IsInstalled",0x10001,1,0,0,0
+HKLM,%KEY_BLCLIENT%,"InstallationDirectory",,"%16422%\Messenger\"
+HKLM,%KEY_BLCLIENT64%,"InstallationDirectory",,"%16422%\Messenger\"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE",,,"%16422%\Messenger\msmsgs.exe"
+HKLM,"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE",,,"%16422%\Messenger\msmsgs.exe"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE","Path",,"%16422%\Messenger;"
+HKLM,"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE","Path",,"%16422%\Messenger;"
+HKCR,.CTT,,,MessengerContactList
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\.CTT,,,MessengerContactList
+HKCR,MessengerContactList,,,%CTT_FILE_DESC%
+HKCR,MessengerContactList,NoOpen,,%CTT_FILE_ACTION%
+HKCR,MessengerContactList\DefaultIcon,,,"%16422%\Messenger\msmsgs.exe,-1"
+HKCR,CLSID\%CLSID_BIMOBJECT%,,,%BIM_OBJECT%
+HKCR,CLSID\%CLSID_BIMOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_BIMOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BIMOBJECT%,,,%BIM_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BIMOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BIMOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_BLOBJECT%,,,%BL_OBJECT%
+HKCR,CLSID\%CLSID_BLOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_BLOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_BLOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_BLOBJECT%\ProgID,,,"Messenger.MsgrObject.1"
+HKCR,CLSID\%CLSID_BLOBJECT%\Programmable
+HKCR,CLSID\%CLSID_BLOBJECT%\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,CLSID\%CLSID_BLOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_BLOBJECT%\VersionIndependentProgID,,,"Messenger.MsgrObject"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%,,,%BL_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\ProgID,,,"Messenger.MsgrObject.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%\VersionIndependentProgID,,,"Messenger.MsgrObject"
+HKCR,CLSID\%CLSID_UIOBJECT%,,,%UI_OBJECT%
+HKCR,CLSID\%CLSID_UIOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_UIOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_UIOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_UIOBJECT%\InProcServer32,,,"%16422%\Messenger\msgsc64.dll"
+HKCR,CLSID\%CLSID_UIOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_UIOBJECT%\ProgID,,,"Messenger.MessengerApp.1"
+HKCR,CLSID\%CLSID_UIOBJECT%\Programmable
+HKCR,CLSID\%CLSID_UIOBJECT%\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,CLSID\%CLSID_UIOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_UIOBJECT%\VersionIndependentProgID,,,"Messenger.MessengerApp"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%,,,%UI_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\InProcServer32,,,"%16422%\Messenger\msgsc.dll"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\ProgID,,,"Messenger.MessengerApp.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%\VersionIndependentProgID,,,"Messenger.MessengerApp"
+HKCR,CLSID\%CLSID_SMGROBJECT%,,,%SMGR_OBJECT%
+HKCR,CLSID\%CLSID_SMGROBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_SMGROBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_SMGROBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_SMGROBJECT%\InProcServer32,,,""%16422%\Messenger\msgsc64.dll""
+HKCR,CLSID\%CLSID_SMGROBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_SMGROBJECT%\ProgID,,,"Messenger.MsgrSessionManager.1"
+HKCR,CLSID\%CLSID_SMGROBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,CLSID\%CLSID_SMGROBJECT%\Programmable
+HKCR,CLSID\%CLSID_SMGROBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_SMGROBJECT%\VersionIndependentProgID,,,"Messenger.MsgrSessionManager"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%,,,%SMGR_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\InProcServer32,,,""%16422%\Messenger\msgsc.dll""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\ProgID,,,"Messenger.MsgrSessionManager.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%\VersionIndependentProgID,,,"Messenger.MsgrSessionManager"
+HKCR,CLSID\%CLSID_MPRIOBJECT%,,,%MPRI_OBJECT%
+HKCR,CLSID\%CLSID_MPRIOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_MPRIOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_MPRIOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MPRIOBJECT%\ProgID,,,"MessengerPrivate.MessengerPriv.1"
+HKCR,CLSID\%CLSID_MPRIOBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,CLSID\%CLSID_MPRIOBJECT%\Programmable
+HKCR,CLSID\%CLSID_MPRIOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_MPRIOBJECT%\VersionIndependentProgID,,,"MessengerPrivate.MessengerPriv"
+HKCR,CLSID\%CLSID_MPRIOBJECT%\InProcServer32,,,"%16422%\Messenger\msgsc64.dll"
+HKCR,CLSID\%CLSID_MPRIOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%,,,%MPRI_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\ProgID,,,"MessengerPrivate.MessengerPriv.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\VersionIndependentProgID,,,"MessengerPrivate.MessengerPriv"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\InProcServer32,,,"%16422%\Messenger\msgsc.dll"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MUAOBJECT%,,,%MUA_OBJECT%
+HKCR,CLSID\%CLSID_MUAOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_MUAOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_MUAOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MUAOBJECT%\InProcServer32,,,"%16422%\Messenger\msgsc64.dll"
+HKCR,CLSID\%CLSID_MUAOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MUAOBJECT%\ProgID,,,"Messenger.UIAutomation.1"
+HKCR,CLSID\%CLSID_MUAOBJECT%\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,CLSID\%CLSID_MUAOBJECT%\Programmable
+HKCR,CLSID\%CLSID_MUAOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_MUAOBJECT%\VersionIndependentProgID,,,"Messenger.UIAutomation"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%,,,%MUA_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\InProcServer32,,,"%16422%\Messenger\msgsc.dll"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\ProgID,,,"Messenger.UIAutomation.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%\VersionIndependentProgID,,,"Messenger.UIAutomation"
+HKCR,CLSID\%CLSID_MSMOBJECT%,,,""
+HKCR,CLSID\%CLSID_MSMOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_MSMOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_MSMOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MSMOBJECT%\ProgID,,,"MessengerNative.MsgrSessionManager.1"
+HKCR,CLSID\%CLSID_MSMOBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,CLSID\%CLSID_MSMOBJECT%\Programmable
+HKCR,CLSID\%CLSID_MSMOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_MSMOBJECT%\VersionIndependentProgID,,,"MessengerNative.MsgrSessionManager"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%,,,""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\ProgID,,,"MessengerNative.MsgrSessionManager.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%\VersionIndependentProgID,,,"MessengerNative.MsgrSessionManager"
+HKCR,CLSID\%CLSID_MPNOBJECT%,,,""
+HKCR,CLSID\%CLSID_MPNOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_MPNOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_MPNOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MPNOBJECT%\ProgID,,,"MessengerPrivateNative.MessengerPriv.1"
+HKCR,CLSID\%CLSID_MPNOBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,CLSID\%CLSID_MPNOBJECT%\Programmable
+HKCR,CLSID\%CLSID_MPNOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_MPNOBJECT%\VersionIndependentProgID,,,"MessengerPrivateNative.MessengerPriv"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%,,,""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\InProcServer32,,,""%16422%\Messenger\msgsc.dll""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\ProgID,,,"MessengerPrivateNative.MessengerPriv.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%\VersionIndependentProgID,,,"MessengerPrivateNative.MessengerPriv"
+HKCR,CLSID\%CLSID_MNUIOBJECT%,,,""
+HKCR,CLSID\%CLSID_MNUIOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_MNUIOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_MNUIOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKCR,CLSID\%CLSID_MNUIOBJECT%\ProgID,,,"MessengerNative.UIAutomation.1"
+HKCR,CLSID\%CLSID_MNUIOBJECT%\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,CLSID\%CLSID_MNUIOBJECT%\Programmable
+HKCR,CLSID\%CLSID_MNUIOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_MNUIOBJECT%\VersionIndependentProgID,,,"MessengerNative.UIAutomation"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%,,,""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\LocalServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\InProcServer32,,,""%16422%\Messenger\msgsc.dll""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\InProcServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\ProgID,,,"MessengerNative.UIAutomation.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%\VersionIndependentProgID,,,"MessengerNative.UIAutomation"
+HKCR,CLSID\%CLSID_EXTOBJECT%,,,%EXT_OBJECT%
+HKCR,CLSID\%CLSID_EXTOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKCR,CLSID\%CLSID_EXTOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKCR,CLSID\%CLSID_EXTOBJECT%\ProgID,,,"Messenger.ExtensionsManager.1"
+HKCR,CLSID\%CLSID_EXTOBJECT%\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,CLSID\%CLSID_EXTOBJECT%\Programmable
+HKCR,CLSID\%CLSID_EXTOBJECT%\Version,,,"1.0"
+HKCR,CLSID\%CLSID_EXTOBJECT%\VersionIndependentProgID,,,"Messenger.ExtensionsManager"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%,,,%EXT_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\LocalServer32,,,"""%16422%\Messenger\msmsgs.exe"""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\LocalServer32,"ServerExecutable",,""%16422%\Messenger\msmsgs.exe""
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\ProgID,,,"Messenger.ExtensionsManager.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\Programmable
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\Version,,,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%\VersionIndependentProgID,,,"Messenger.ExtensionsManager"
+HKCR,Interface\{218CB451-20B6-11d2-8E17-0000F803A446},,,"IMsgrObject"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB451-20B6-11d2-8E17-0000F803A446},,,"IMsgrObject"
+HKCR,Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB451-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{218CB455-20B6-11d2-8E17-0000F803A446},,,"IMsgrObject2"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB455-20B6-11d2-8E17-0000F803A446},,,"IMsgrObject2"
+HKCR,Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB455-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{218CB453-20B6-11d2-8E17-0000F803A446},,,"IMsgrUser"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB453-20B6-11d2-8E17-0000F803A446},,,"IMsgrUser"
+HKCR,Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB453-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{218CB456-20B6-11d2-8E17-0000F803A446},,,"IMsgrUser2"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB456-20B6-11d2-8E17-0000F803A446},,,"IMsgrUser2"
+HKCR,Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB456-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{218CB454-20B6-11d2-8E17-0000F803A446},,,"IMsgrUsers"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB454-20B6-11d2-8E17-0000F803A446},,,"IMsgrUsers"
+HKCR,Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB454-20B6-11d2-8E17-0000F803A446}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C},,,"IMsgrHost"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C},,,"IMsgrHost"
+HKCR,Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{06F6EA9D-88B0-45A9-9F26-CE0898D9EA1C}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5},,,"DMsgrSessionEvents"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5},,,"DMsgrSessionEvents"
+HKCR,Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\TypeLib,,,"{53CED51D-432B-45B2-A3E0-0CE2C24235D4}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\TypeLib,,,"{53CED51D-432B-45B2-A3E0-0CE2C24235D4}"
+HKCR,Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{1847A74F-2E7F-43AF-B7F9-55A4DE3276F5}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9},,,"IMsgrSession"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9},,,"IMsgrSession"
+HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B},,,"IMsgrPassportClient"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B},,,"IMsgrPassportClient"
+HKCR,Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\TypeLib,,,"{218CB45F-20B6-11D2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\TypeLib,,,"{218CB45F-20B6-11D2-8E17-0000F803A446}"
+HKCR,Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{97C3808A-ECA1-4CA6-8D09-122A3CC54B3B}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96},,,"DMessengerEvents"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96},,,"DMessengerEvents"
+HKCR,Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\TypeLib,,,"{218CB45F-20B6-11D2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\TypeLib,,,"{218CB45F-20B6-11D2-8E17-0000F803A446}"
+HKCR,Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C9A6A6B6-9BC1-43A5-B06B-E58874EEBC96}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61},,,"IMsgrWebScriptManager"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61},,,"IMsgrWebScriptManager"
+HKCR,Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\TypeLib,,,"{218CB45F-20B6-11D2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\TypeLib,,,"{218CB45F-20B6-11D2-8E17-0000F803A446}"
+HKCR,Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{CB643558-61CD-42B2-A9A5-496A7884AD61}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{E6F787C2-C759-4403-B1BD-9359CB96EB04}\TypeLib,,,"{DCB43485-19FB-4D6D-BB3D-73C7F48D5F00}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E6F787C2-C759-4403-B1BD-9359CB96EB04}\TypeLib,,,"{DCB43485-19FB-4D6D-BB3D-73C7F48D5F00}"
+HKCR,Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9},,,"IMsgrSessions"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9},,,"IMsgrSessions"
+HKCR,Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683},,,"IMsgrService"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683},,,"IMsgrService"
+HKCR,Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD9-A5C0-11d2-A440-00C04F795683}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683},,,"IMsgrServices"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683},,,"IMsgrServices"
+HKCR,Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683},,,"IMessengerApp"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683},,,"IMessengerApp"
+HKCR,Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8},,,"IMessengerApp2"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8},,,"IMessengerApp2"
+HKCR,Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5},,,"IMessengerApp3"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5},,,"IMessengerApp3"
+HKCR,Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376},,,"IMessengerIMWindow"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376},,,"IMessengerIMWindow"
+HKCR,Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{59EC0342-7506-11d2-B05F-00C04F7F89FE},,,"IBasicIMUser"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0342-7506-11d2-B05F-00C04F7F89FE},,,"IBasicIMUser"
+HKCR,Interface\{59EC0342-7506-11d2-B05F-00C04F7F89FE}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0342-7506-11d2-B05F-00C04F7F89FE}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{306C16F6-ECB9-4d60-9E48-84A01A25604F},,,"IBasicIMUser2"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{306C16F6-ECB9-4d60-9E48-84A01A25604F},,,"IBasicIMUser2"
+HKCR,Interface\{306C16F6-ECB9-4d60-9E48-84A01A25604F}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{306C16F6-ECB9-4d60-9E48-84A01A25604F}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{59EC0343-7506-11d2-B05F-00C04F7F89FE},,,"IBasicIMUsers"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0343-7506-11d2-B05F-00C04F7F89FE},,,"IBasicIMUsers"
+HKCR,Interface\{59EC0343-7506-11d2-B05F-00C04F7F89FE}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0343-7506-11d2-B05F-00C04F7F89FE}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{59EC0340-7506-11d2-B05F-00C04F7F89FE},,,"IBasicIMOld"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0340-7506-11d2-B05F-00C04F7F89FE},,,"IBasicIMOld"
+HKCR,Interface\{59EC0340-7506-11d2-B05F-00C04F7F89FE}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0340-7506-11d2-B05F-00C04F7F89FE}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{936B70F8-75A1-455d-8F37-E211302D3B69},,,"IBasicIM"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{936B70F8-75A1-455d-8F37-E211302D3B69},,,"IBasicIM"
+HKCR,Interface\{936B70F8-75A1-455d-8F37-E211302D3B69}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{936B70F8-75A1-455d-8F37-E211302D3B69}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453},,,"ISPMessengerIMWindow"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453},,,"ISPMessengerIMWindow"
+HKCR,Interface\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{70BF15A8-58CD-4687-A8B3-D14E2F760371},,,"ISPMessengerIMWindow2"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{70BF15A8-58CD-4687-A8B3-D14E2F760371},,,"ISPMessengerIMWindow2"
+HKCR,Interface\{70BF15A8-58CD-4687-A8B3-D14E2F760371}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{70BF15A8-58CD-4687-A8B3-D14E2F760371}\ProxyStubClsid32,,,"{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}"
+HKCR,Interface\{305D86C6-6896-4099-91F5-CB7BA7733563},,,"IMsgrSessionManager"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{305D86C6-6896-4099-91F5-CB7BA7733563},,,"IMsgrSessionManager"
+HKCR,Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A},,,"IMsgrSession"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A},,,"IMsgrSession"
+HKCR,Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA},,,"IMsgrLock"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA},,,"IMsgrLock"
+HKCR,Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D50C3186-0F89-48f8-B204-3604629DEE10},,,"IMessenger"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3186-0F89-48f8-B204-3604629DEE10},,,"IMessenger"
+HKCR,Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D50C3286-0F89-48f8-B204-3604629DEE10},,,"IMessenger2"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3286-0F89-48f8-B204-3604629DEE10},,,"IMessenger2"
+HKCR,Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D50C3386-0F89-48f8-B204-3604629DEE10},,,"IMessenger3"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3386-0F89-48f8-B204-3604629DEE10},,,"IMessenger3"
+HKCR,Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8},,,"IMessengerWindow"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8},,,"IMessengerWindow"
+HKCR,Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8},,,"IMessengerConversationWnd"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8},,,"IMessengerConversationWnd"
+HKCR,Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC},,,"IMessengerContact"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC},,,"IMessengerContact"
+HKCR,Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC},,,"IMessengerContacts"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC},,,"IMessengerContacts"
+HKCR,Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B},,,"IMessengerServices"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B},,,"IMessengerServices"
+HKCR,Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B},,,"IMessengerService"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B},,,"IMessengerService"
+HKCR,Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB},,,"IMessengerGroups"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB},,,"IMessengerGroups"
+HKCR,Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB},,,"IMessengerGroup"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB},,,"IMessengerGroup"
+HKCR,Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,,,%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,,,%LIBID_MUAOBJECT%
+HKCR,Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{7C95459B-C8E7-4605-B641-45EB06866659},,,"IMessengerPrivate"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{7C95459B-C8E7-4605-B641-45EB06866659},,,"IMessengerPrivate"
+HKCR,Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\TypeLib,,,%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\TypeLib,,,%LIBID_PRIOBJECT%
+HKCR,Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{7C95459B-C8E7-4605-B641-45EB06866659}\TypeLib,"Version",,"1.0"
+HKCR,CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453},,,"MessengerProxy"
+HKCR,CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}\InprocServer32,,,"%16422%\Messenger\msgsc64.dll"
+HKCR,CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}\InprocServer32,"ThreadingModel",,"Apartment"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453},,,"MessengerProxy"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}\InprocServer32,,,"%16422%\Messenger\msgsc.dll"
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}\InprocServer32,"ThreadingModel",,"Apartment"
+HKCR,Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376},,,"IMessengerIMWindows"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376},,,"IMessengerIMWindows"
+HKCR,Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\TypeLib,,,"{218CB45F-20B6-11d2-8E17-0000F803A446}"
+HKCR,Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1},,,"IMessengerPagingExt"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1},,,"IMessengerPagingExt"
+HKCR,Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{540F4CC0-57D4-45b4-A3CC-84DF89A235B1}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{3A436309-C4D6-4233-A765-98CA06BDB304},,,"IMessengerPagingEvents"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3A436309-C4D6-4233-A765-98CA06BDB304},,,"IMessengerPagingEvents"
+HKCR,Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3A436309-C4D6-4233-A765-98CA06BDB304}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630},,,"IMessengerMailExt"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630},,,"IMessengerMailExt"
+HKCR,Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F1136AC4-9791-46e6-BBD6-626AC6369630}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA},,,"IMessengerMailEvents"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA},,,"IMessengerMailEvents"
+HKCR,Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6D6E96F-C0A1-4ce8-860E-D124F98EFFEA}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D3898878-DA0A-471b-B14A-3276E1293195},,,"IMessengerAnnouncementsExt"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D3898878-DA0A-471b-B14A-3276E1293195},,,"IMessengerAnnouncementsExt"
+HKCR,Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D3898878-DA0A-471b-B14A-3276E1293195}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D2E5530F-0093-472e-A09A-104F4053977F},,,"IMessengerViewProfile"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D2E5530F-0093-472e-A09A-104F4053977F},,,"IMessengerViewProfile"
+HKCR,Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D2E5530F-0093-472e-A09A-104F4053977F}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7},,,"IMessengerEditProfile"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7},,,"IMessengerEditProfile"
+HKCR,Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{A579B033-360C-41d8-8464-9508C9B8AEF7}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36},,,"IMessengerChatExt"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36},,,"IMessengerChatExt"
+HKCR,Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D},,,"IMessengerExtension"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D},,,"IMessengerExtension"
+HKCR,Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}\TypeLib,"Version",,"1.0"
+HKCR,Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6},,,"IMessengerExtensionsManager"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6},,,"IMessengerExtensionsManager"
+HKCR,Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\ProxyStubClsid,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\ProxyStubClsid32,,,"{00020424-0000-0000-C000-000000000046}"
+HKCR,Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\TypeLib,,,%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\TypeLib,,,%LIBID_EXTOBJECT%
+HKCR,Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\TypeLib,"Version",,"1.0"
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}\TypeLib,"Version",,"1.0"
+HKCR,TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0,,,"Messenger Type Library"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0,,,"Messenger Type Library"
+HKCR,TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe"
+HKCR,TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0\FLAGS,,,"0"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0\FLAGS,,,"0"
+HKCR,TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0\HELPDIR,,,""
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}\1.0\HELPDIR,,,""
+HKCR,TypeLib\%LIBID_PRIOBJECT%\1.0,,,"Messenger Private Type Library"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_PRIOBJECT%\1.0,,,"Messenger Private Type Library"
+HKCR,TypeLib\%LIBID_PRIOBJECT%\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe\2"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_PRIOBJECT%\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe\2"
+HKCR,TypeLib\%LIBID_PRIOBJECT%\1.0\FLAGS,,,"0"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_PRIOBJECT%\1.0\FLAGS,,,"0"
+HKCR,TypeLib\%LIBID_PRIOBJECT%\1.0\HELPDIR,,,""
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_PRIOBJECT%\1.0\HELPDIR,,,""
+HKCR,TypeLib\%LIBID_MUAOBJECT%\1.0,,,"Messenger API Type Library"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_MUAOBJECT%\1.0,,,"Messenger API Type Library"
+HKCR,TypeLib\%LIBID_MUAOBJECT%\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe\3"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_MUAOBJECT%\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe\3"
+HKCR,TypeLib\%LIBID_MUAOBJECT%\1.0\FLAGS,,,"0"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_MUAOBJECT%\1.0\FLAGS,,,"0"
+HKCR,TypeLib\%LIBID_MUAOBJECT%\1.0\HELPDIR,,,"%18%"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_MUAOBJECT%\1.0\HELPDIR,,,"%18%"
+HKCR,TypeLib\%LIBID_EXTOBJECT%\1.0,,,"Messenger Extensions Type Library"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_EXTOBJECT%\1.0,,,"Messenger Extensions Type Library"
+HKCR,TypeLib\%LIBID_EXTOBJECT%\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe\4"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_EXTOBJECT%\1.0\0\win32,,,"%16422%\Messenger\msmsgs.exe\4"
+HKCR,TypeLib\%LIBID_EXTOBJECT%\1.0\FLAGS,,,"0"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_EXTOBJECT%\1.0\FLAGS,,,"0"
+HKCR,TypeLib\%LIBID_EXTOBJECT%\1.0\HELPDIR,,,"%18%"
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_EXTOBJECT%\1.0\HELPDIR,,,"%18%"
+HKCR,Messenger.MsgrObject,,,%BL_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject,,,%BL_OBJECT%
+HKCR,Messenger.MsgrObject\CLSID,,,%CLSID_BLOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject\CLSID,,,%CLSID_BLOBJECT%
+HKCR,Messenger.MsgrObject\CurVer,,,"Messenger.MsgrObject.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject\CurVer,,,"Messenger.MsgrObject.1"
+HKCR,Messenger.MsgrObject.1,,,%BL_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject.1,,,%BL_OBJECT%
+HKCR,Messenger.MsgrObject.1\CLSID,,,%CLSID_BLOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject.1\CLSID,,,%CLSID_BLOBJECT%
+HKCR,Messenger.MessengerApp,,,%UI_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp,,,%UI_OBJECT%
+HKCR,Messenger.MessengerApp\CLSID,,,%CLSID_UIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp\CLSID,,,%CLSID_UIOBJECT%
+HKCR,Messenger.MessengerApp\CurVer,,,"Messenger.MessengerApp.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp\CurVer,,,"Messenger.MessengerApp.1"
+HKCR,Messenger.MessengerApp.1,,,%UI_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp.1,,,%UI_OBJECT%
+HKCR,Messenger.MessengerApp.1\CLSID,,,%CLSID_UIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp.1\CLSID,,,%CLSID_UIOBJECT%
+HKCR,Messenger.UIAutomation,,,%MUA_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation,,,%MUA_OBJECT%
+HKCR,Messenger.UIAutomation\CLSID,,,%CLSID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation\CLSID,,,%CLSID_MUAOBJECT%
+HKCR,Messenger.UIAutomation\CurVer,,,"Messenger.UIAutomation.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation\CurVer,,,"Messenger.UIAutomation.1"
+HKCR,Messenger.UIAutomation.1,,,%MUA_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation.1,,,%MUA_OBJECT%
+HKCR,Messenger.UIAutomation.1\CLSID,,,%CLSID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation.1\CLSID,,,%CLSID_MUAOBJECT%
+HKCR,MessengerPrivate.MessengerPriv,,,%MPRI_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv,,,%MPRI_OBJECT%
+HKCR,MessengerPrivate.MessengerPriv\CLSID,,,%CLSID_MPRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv\CLSID,,,%CLSID_MPRIOBJECT%
+HKCR,MessengerPrivate.MessengerPriv\CurVer,,,"MessengerPrivate.MessengerPriv.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv\CurVer,,,"MessengerPrivate.MessengerPriv.1"
+HKCR,MessengerPrivate.MessengerPriv.1,,,%MPRI_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv.1,,,%MPRI_OBJECT%
+HKCR,MessengerPrivate.MessengerPriv.1\CLSID,,,%CLSID_MPRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv.1\CLSID,,,%CLSID_MPRIOBJECT%
+HKCR,Messenger.ExtensionsManager,,,%EXT_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager,,,%EXT_OBJECT%
+HKCR,Messenger.ExtensionsManager\CLSID,,,%CLSID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager\CLSID,,,%CLSID_EXTOBJECT%
+HKCR,Messenger.ExtensionsManager\CurVer,,,"Messenger.MessengerExtensions.1"
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager\CurVer,,,"Messenger.MessengerExtensions.1"
+HKCR,Messenger.ExtensionsManager.1,,,%EXT_OBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager.1,,,%EXT_OBJECT%
+HKCR,Messenger.ExtensionsManager.1\CLSID,,,%CLSID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager.1\CLSID,,,%CLSID_EXTOBJECT%
+HKLM,%KEY_IE_WM_EXT%, "ButtonText",,"Messenger"
+HKLM,%KEY_IE_WM_EXT%, "CLSID",,"{1FBA04EE-3024-11D2-8F1F-0000F87ABD16}"
+HKLM,%KEY_IE_WM_EXT%, "Default Visible",,"Yes"
+HKLM,%KEY_IE_WM_EXT%, "Exec",,"%16422%\Messenger\msmsgs.exe"
+HKLM,%KEY_IE_WM_EXT%, "HotIcon",,"%16422%\Messenger\msmsgs.exe,302"
+HKLM,%KEY_IE_WM_EXT%, "Icon",,"%16422%\Messenger\msmsgs.exe,301"
+HKLM,%KEY_IE_WM_EXT%, "MenuText",,"%MSMSGSXP_NAME%"
+HKLM,%KEY_IE_WM_EXT%, "ToolTip",,"%MSMSGSXP_NAME%"
+HKLM,%KEY_IE_WM_EXT32%, "ButtonText",,"Messenger"
+HKLM,%KEY_IE_WM_EXT32%, "CLSID",,"{1FBA04EE-3024-11D2-8F1F-0000F87ABD16}"
+HKLM,%KEY_IE_WM_EXT32%, "Default Visible",,"Yes"
+HKLM,%KEY_IE_WM_EXT32%, "Exec",,"%16422%\Messenger\msmsgs.exe"
+HKLM,%KEY_IE_WM_EXT32%, "HotIcon",,"%16422%\Messenger\msmsgs.exe,302"
+HKLM,%KEY_IE_WM_EXT32%, "Icon",,"%16422%\Messenger\msmsgs.exe,301"
+HKLM,%KEY_IE_WM_EXT32%, "MenuText",,"%MSMSGSXP_NAME%"
+HKLM,%KEY_IE_WM_EXT32%, "ToolTip",,"%MSMSGSXP_NAME%"
+HKLM,Software\Microsoft\MessengerService\Clients,,,,,,0
+[BLC.Install.Reg.PerUser]
+HKCU,Software\Microsoft\MessengerService,"CorpPC2Phone",0x10003,0,0,0,0
+HKCU,Software\Microsoft\MessengerService,"MSNState",0x00000003,1,0,0,0
+HKCU,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","Locale",,"%LOCALE_ID%"
+HKCU,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","Version",,"4,7,0,3000"
+HKCU,AppEvents\EventLabels\MSMSGS_ContactOnline,,,%BUDDY_ONLINE_SOUND%
+HKCU,AppEvents\EventLabels\MSMSGS_NewMessage,,,%NEW_MESSAGE_SOUND%
+HKCU,AppEvents\EventLabels\MSMSGS_NewMail,,,%NEW_MAIL_SOUND%
+HKCU,AppEvents\EventLabels\MSMSGS_NewAlert,,,%NEW_ALERT_SOUND%
+HKCU,AppEvents\EventLabels\MSMSGS_ContactOnline,"DispFileName",,"@""xpob2res.dll"",-41583"
+HKCU,AppEvents\EventLabels\MSMSGS_NewMessage,"DispFileName",,"@""xpob2res.dll"",-41584"
+HKCU,AppEvents\EventLabels\MSMSGS_NewMail,"DispFileName",,"@""xpob2res.dll"",-41586"
+HKCU,AppEvents\EventLabels\MSMSGS_NewAlert,"DispFileName",,"@""xpob2res.dll"",-41585"
+HKCU,AppEvents\Schemes\Apps\MSMSGS\MSMSGS_ContactOnline\.Current,,2,"%16422%\Messenger\WMonline.wav"
+HKCU,AppEvents\Schemes\Apps\MSMSGS\MSMSGS_NewMessage\.Current,,2,"%16422%\Messenger\type.wav"
+HKCU,AppEvents\Schemes\Apps\MSMSGS\MSMSGS_NewMail\.Current,,2,"%16422%\Messenger\WMemail.wav"
+HKCU,AppEvents\Schemes\Apps\MSMSGS\MSMSGS_NewAlert\.Current,,2,"%16422%\Messenger\WMalert.wav"
+[BLC.Install.Reg.PUAlwaysRun]
+[BLC.Install.Reg.PUBrand]
+HKCU,AppEvents\Schemes\Apps\MSMSGS,,,"%MSMSGSXP_NAME%"
+HKCU,Software\Microsoft\MessengerService,,,"%MSMSGSXP_NAME%"
+[BLC.Install.Reg.Brand]
+HKLM,%KEY_BLCLIENT%,,,"%MSMSGSXP_NAME%"
+[BLC.Install.Reg.ShowHideEntries]
+HKLM, %KEY_IM_XP%,"",,"%MSMSGSXP_NAME%"
+HKLM, %KEY_IM_XP%\shell\open\command,"",%REGEXSZ%,"%%ProgramFiles%%\Messenger\msmsgs.exe"
+HKLM, %KEY_IM_XP_INSTALLINFO%, "IconsVisible",0x10003,1,0,0,0
+HKLM, %KEY_IM_XP%, "LocalizedString",,"@xpob2res.dll,-41519"
+HKLM, %KEY_IM_XP_INSTALLINFO%, "ReinstallCommand",,"""%10%\System32\rundll32.exe"" ""%16422%\Messenger\msgsc64.dll"",Reinstall"
+HKLM, %KEY_IM_XP_INSTALLINFO%, "ShowIconsCommand",,"""%10%\System32\rundll32.exe"" ""%16422%\Messenger\msgsc64.dll"",ShowIcons"
+HKLM, %KEY_IM_XP_INSTALLINFO%, "HideIconsCommand",,"""%10%\System32\rundll32.exe"" ""%16422%\Messenger\msgsc64.dll"",HideIcons"
+[ShowIcons.Install.Reg]
+HKLM, %KEY_IM_XP_INSTALLINFO%, "IconsVisible",0x10001,1,0,0,0
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents, "wmaccess", 0x10001,1,0,0,0
+HKLM, %KEY_IM%,"",,"%MSMSGSXP_NAME%"
+[HideIcons.Install.Reg]
+HKLM, %KEY_IM_XP_INSTALLINFO%, "IconsVisible",0x10001,0,0,0,0
+HKLM, SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OC Manager\Subcomponents, "wmaccess", 0x10001,0,0,0,0
+[BLC.Install.Reg.Brand.AddRemove]
+[BLC.Remove.Reg]
+HKCR,tel
+HKLM,"%KEY_BLCLIENT%","InstallationDirectory"
+HKLM,%KEY_BLCLIENT%,"RollbackCommand"
+HKLM,%KEY_BLCLIENT%,"RollbackParameters"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Migration\200\Messenger Migration"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Migration DLLs\{5945c046-1e7d-11d1-bc44-00c04fd912be}"
+HKLM,Software\Microsoft\Windows\CurrentVersion\Uninstall\MSNEXT
+HKLM,SOFTWARE\Microsoft\MessengerService\Add-Ins\{FD33A5FF-5C76-4d2f-BB66-87D11B76B583}
+HKLM,SOFTWARE\Microsoft\MessengerService\Add-Ins,""
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{5945c046-1e7d-11d1-bc44-00c04fd912be}","KeyFileName"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MSMSGS"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE"
+HKLM,"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\App Paths\MSMSGS.EXE"
+HKLM,"SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Extensions\{FB5F1910-F110-11d2-BB9E-00C04F795683}"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Migration\200","Messenger Migration"
+HKLM, %KEY_IM_XP%
+HKLM, %KEY_IM_XP_INSTALLINFO%
+HKCR,.CTT
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\.CTT
+HKCR,MessengerContactList
+HKCR,CLSID\%CLSID_BIMOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BIMOBJECT%
+HKCR,CLSID\%CLSID_BLOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_BLOBJECT%
+HKCR,CLSID\%CLSID_UIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_UIOBJECT%
+HKCR,CLSID\%CLSID_SMGROBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_SMGROBJECT%
+HKCR,CLSID\%CLSID_MPRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPRIOBJECT%
+HKCR,CLSID\%CLSID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MUAOBJECT%
+HKCR,CLSID\%CLSID_MSMOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MSMOBJECT%
+HKCR,CLSID\%CLSID_MPNOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MPNOBJECT%
+HKCR,CLSID\%CLSID_MNUIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_MNUIOBJECT%
+HKCR,CLSID\%CLSID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\%CLSID_EXTOBJECT%
+HKCR,CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}       
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}
+HKCR,Interface\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2B7E6AA9-C4FA-4951-815B-4AFE39D81453}
+HKCR,Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{28E28123-7DC5-45d3-860E-8EE1C3681BD5}
+HKCR,Interface\{70BF15A8-58CD-4687-A8B3-D14E2F760371}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{70BF15A8-58CD-4687-A8B3-D14E2F760371}   
+HKCR,Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{FF55D627-CF5B-40de-850F-62D20BC241C8}   
+HKCR,Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{F3A614DD-ABE0-11d2-A441-00C04F795683}   
+HKCR,Interface\{218CB455-20B6-11d2-8E17-0000F803A446}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB455-20B6-11d2-8E17-0000F803A446}   
+HKCR,Interface\{218CB456-20B6-11d2-8E17-0000F803A446}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB456-20B6-11d2-8E17-0000F803A446}   
+HKCR,Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{305D86C6-6896-4099-91F5-CB7BA7733563}   
+HKCR,Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{42D7CAFC-0167-4941-A5D8-9FD7F104C41A}   
+HKCR,Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}   
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{659ECAD8-A5C0-11d2-A440-00C04F795683}   
+HKCR,Interface\{218CB451-20B6-11d2-8E17-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB451-20B6-11d2-8E17-0000F803A446}
+HKCR,Interface\{218CB453-20B6-11d2-8E17-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB453-20B6-11d2-8E17-0000F803A446}
+HKCR,Interface\{59EC0342-7506-11d2-B05F-00C04F7F89FE}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0342-7506-11d2-B05F-00C04F7F89FE}
+HKCR,Interface\{218CB454-20B6-11d2-8E17-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{218CB454-20B6-11d2-8E17-0000F803A446}
+HKCR,Interface\{59EC0343-7506-11d2-B05F-00C04F7F89FE}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0343-7506-11d2-B05F-00C04F7F89FE}
+HKCR,Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{82e11592-20f5-11d2-91ad-0000f81fefc9}
+HKCR,Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{6fd143e6-20a5-11d2-91ad-0000f81fefc9}
+HKCR,Interface\{3656FE3E-16A6-11d2-B49D-00C04FB90376}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3656FE3E-16A6-11d2-B49D-00C04FB90376}
+HKCR,Interface\{59EC0340-7506-11d2-B05F-00C04F7F89FE}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{59EC0340-7506-11d2-B05F-00C04F7F89FE}
+HKCR,Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CD-1A8C-11d2-B49D-00C04FB90376}
+HKCR,Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C8-FAD6-4885-B271-0DC5A584ADF8}
+HKCR,Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D6B0E4C9-FAD6-4885-B271-0DC5A584ADF8}
+HKCR,Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{35EDD1CC-1A8C-11d2-B49D-00C04FB90376}
+HKCR,Interface\{320DDC99-80A2-454C-A21B-BA0A7E7587C7}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{320DDC99-80A2-454C-A21B-BA0A7E7587C7}
+HKCR,Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3186-0F89-48f8-B204-3604629DEE10}
+HKCR,Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3286-0F89-48f8-B204-3604629DEE10}
+HKCR,Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D50C3386-0F89-48f8-B204-3604629DEE10}
+HKCR,Interface\{7C95459B-C8E7-4605-B641-45EB06866659}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{7C95459B-C8E7-4605-B641-45EB06866659}
+HKCR,Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0F-BB19-44a5-968F-6F41D93EE0BC}
+HKCR,Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E7479A0D-BB19-44a5-968F-6F41D93EE0BC}
+HKCR,Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547B-A8AA-4f60-B57E-1F414711007B}
+HKCR,Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1028-B884-44cb-A535-1C3C11A3D1DB}
+HKCR,Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{E1AF1038-B884-44cb-A535-1C3C11A3D1DB}
+HKCR,Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{2E50547C-A8AA-4f60-B57E-1F414711007B}
+HKCR,Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{36602AFA-4859-4DF5-820B-BF35ACAA16CA}
+HKCR,Interface\{D3898878-DA0A-471b-B14A-3276E1293195}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D3898878-DA0A-471b-B14A-3276E1293195}
+HKCR,Interface\{D2E5530F-0093-472e-A09A-104F4053977F}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D2E5530F-0093-472e-A09A-104F4053977F}
+HKCR,Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{8F3BC1AE-4F2B-455e-ADBD-C3659BC22B36}
+HKCR,Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{B9102B4F-F82C-4e0d-98DC-7066A63CA70D}
+HKCR,Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{D15F58EA-5B26-4b47-A77D-E45911D274D6}
+HKCR,TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{218CB45F-20B6-11d2-8E17-0000F803A446}
+HKCR,TypeLib\%LIBID_PRIOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_PRIOBJECT%
+HKCR,TypeLib\{566ACF67-6124-4812-9362-E6D0C431D6F5}
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{566ACF67-6124-4812-9362-E6D0C431D6F5}
+HKCR,TypeLib\%LIBID_MUAOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_MUAOBJECT%
+HKCR,TypeLib\%LIBID_EXTOBJECT%
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\%LIBID_EXTOBJECT%
+HKCR,Messenger.MsgrObject
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject
+HKCR,Messenger.MsgrObject.1
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MsgrObject.1
+HKCR,Messenger.MessengerApp
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp
+HKCR,Messenger.MessengerApp.1
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.MessengerApp.1
+HKCR,Messenger.Messenger.BasicIMObject
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.Messenger.BasicIMObject
+HKCR,Messenger.Messenger.BasicIMObject.1
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.Messenger.BasicIMObject.1
+HKCR,Messenger.UIAutomation
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation
+HKCR,Messenger.UIAutomation.1
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.UIAutomation.1
+HKCR,Messenger.ExtensionsManager
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager
+HKCR,Messenger.ExtensionsManager.1
+HKLM,SOFTWARE\Classes\Wow6432Node\Messenger.ExtensionsManager.1
+HKCR,MessengerPrivate.MessengerPriv
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv
+HKCR,MessengerPrivate.MessengerPriv.1
+HKLM,SOFTWARE\Classes\Wow6432Node\MessengerPrivate.MessengerPriv.1
+[BLC.Remove.Reg.PerUser]
+HKCU,Software\Microsoft\MessengerService
+HKCU,AppEvents\Schemes\Apps\MSMSGS
+HKCU,AppEvents\EventLabels\MSMSGS_ContactOnline
+HKCU,AppEvents\EventLabels\MSMSGS_NewMessage
+HKCU,AppEvents\EventLabels\MSMSGS_NewMail
+HKCU,AppEvents\EventLabels\MSMSGS_NewAlert
+HKCU,SOFTWARE\Microsoft\Windows\CurrentVersion\Run,"MSMSGS"
+HKCU,Software\Microsoft\Exchange\Messenger
+[HideIcons.Remove.Reg.PerUser]
+HKCU,SOFTWARE\Microsoft\Windows\CurrentVersion\Run,"MSMSGS"
+[BLC.CleanPrev.Reg.PerUser]
+HKCU,AppEvents\Schemes\Apps\MSMSGS\%BUDDY_ONLINE_SOUND_OLD%
+HKCU,AppEvents\Schemes\Apps\MSMSGS\%NEW_MESSAGE_SOUND_OLD%
+HKCU,AppEvents\Schemes\Apps\MSMSGS\%NEW_MAIL_SOUND_OLD%
+HKCU,AppEvents\Schemes\Apps\MSMSGS\%NEW_ALERT_SOUND_OLD%
+HKCU,SOFTWARE\Microsoft\MessengerService\ListCache\MSN Messenger Service
+HKCU,SOFTWARE\Microsoft\MessengerService,UseKeyring
+HKCU,SOFTWARE\Microsoft\MessengerService,FirstTimeUser
+[BLC.CleanPrev.Reg]
+HKCR,CLSID\{C08518E0-0532-11d2-8E15-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{C08518E0-0532-11d2-8E15-0000F803A446}
+HKCR,CLSID\{218CB450-20B6-11d2-8E17-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{218CB450-20B6-11d2-8E17-0000F803A446}
+HKCR,CLSID\{07CDD3FA-1758-11d2-B49D-00C04FB90376}
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{07CDD3FA-1758-11d2-B49D-00C04FB90376}
+HKCR,CLSID\{FB7199AA-79BF-11d2-8D94-0000F875C541}
+HKLM,SOFTWARE\Classes\Wow6432Node\CLSID\{FB7199AA-79BF-11d2-8D94-0000F875C541}
+HKCR,Interface\{C08518E1-0532-11d2-8E15-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C08518E1-0532-11d2-8E15-0000F803A446}
+HKCR,Interface\{C08518E3-0532-11d2-8E15-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C08518E3-0532-11d2-8E15-0000F803A446}
+HKCR,Interface\{C08518E4-0532-11d2-8E15-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{C08518E4-0532-11d2-8E15-0000F803A446}
+HKCR,Interface\{3656FE3E-16A6-11d2-B49D-00C04FB90376}
+HKLM,SOFTWARE\Classes\Wow6432Node\Interface\{3656FE3E-16A6-11d2-B49D-00C04FB90376}
+HKCR,TypeLib\{C08518EF-0532-11d2-8E15-0000F803A446}
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{C08518EF-0532-11d2-8E15-0000F803A446}
+HKCR,TypeLib\{B2973F5E-C33E-4C94-8989-221CEEB8DC23}
+HKLM,SOFTWARE\Classes\Wow6432Node\TypeLib\{B2973F5E-C33E-4C94-8989-221CEEB8DC23}
+HKLM,SOFTWARE\Microsoft\MessengerService\Domains
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MSMSGS
+HKLM,"SOFTWARE\Microsoft\Active Setup\Installed Components\{306D6C21-C1B6-4629-986C-E59E1875B8AF}"
+[BLC.AllUsers.Create]
+Name     = %MSMSGSXP_NAME%
+CmdLine  = 16422,Messenger,msmsgs.exe
+Infotip  = %MESSENGER_DESC%
+[BLC.AllUsers.Delete.OldBrand]
+Name   = %MSMSGS_OLD_NAME%,2
+[BLC.AllUsers.Delete]
+Name   = %MSMSGSXP_NAME%,2
+[BLC.HideIcons.Delete]
+Name   = %MSMSGSXP_NAME%,3
+[Strings]
+REGEXSZ               = 0x00020000
+KEY_BLCLIENT          = SOFTWARE\Microsoft\MessengerService
+KEY_BLCLIENT64        = SOFTWARE\Wow6432Node\Microsoft\MessengerService
+KEY_IM                = SOFTWARE\Clients\IM
+KEY_IM_XP             = SOFTWARE\Clients\IM\Windows Messenger
+KEY_IM_XP_INSTALLINFO = SOFTWARE\Clients\IM\Windows Messenger\InstallInfo
+CLSID_BLOBJECT        = "{F3A614DC-ABE0-11d2-A441-00C04F795683}"
+CLSID_UIOBJECT        = "{FB7199AB-79BF-11d2-8D94-0000F875C541}"
+CLSID_BIMOBJECT       = "{E0B8F398-BB08-4298-87F0-34502693902E}"
+CLSID_SMGROBJECT      = "{E3A3B1D9-5675-43c0-BF04-37BE11939FB7}"
+CLSID_MPRIOBJECT      = "{AB1D8565-40E9-4616-984D-98465687E82C}"
+CLSID_MUAOBJECT       = "{B69003B3-C55E-4b48-836C-BC5946FC3B28}"
+CLSID_MSMOBJECT       = "{A1031BAF-3039-4dd6-BC5E-522F007DAF8B}"
+CLSID_MPNOBJECT       = "{BBBFCB14-3B21-491c-9E2A-B0F3D50F83FD}"
+CLSID_EXTOBJECT       = "{BC20CB75-A981-460e-81D4-F06F61B59247}"
+CLSID_MNUIOBJECT      = "{DF66AFC9-C61D-404a-B535-64FBF91D420F}"
+BL_OBJECT             = "Messenger Object"
+UI_OBJECT             = "Messenger Application"
+BIM_OBJECT            = "Messenger Basic IM Object"
+SMGR_OBJECT           = "Messenger Session Manager Object"
+MUA_OBJECT            = "Messenger Object"
+MPRI_OBJECT           = "Messenger Private Object"
+EXT_OBJECT            = "Messenger Extensions Manager Object"
+LIBID_MUAOBJECT       = "{E02AD29E-80F5-46c6-B416-9B3EBDDF057E}"
+LIBID_PRIOBJECT       = "{53CED51D-432B-45b2-A3E0-0CE2C24235D4}"
+LIBID_EXTOBJECT       = "{3201590C-8C63-4558-8142-82C29FC695E9}"
+KEY_IE_WM_EXT         = "SOFTWARE\Microsoft\Internet Explorer\Extensions\{FB5F1910-F110-11d2-BB9E-00C04F795683}"
+KEY_IE_WM_EXT32       = "SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Extensions\{FB5F1910-F110-11d2-BB9E-00C04F795683}"
+BLCDIR = "Messenger"
+MSMSGS_NAME         = "MSN Messenger"
+MSMSGS_NAME_AND_VER = "MSN Messenger 5.0"
+MSMSGS_OLD_NAME     = "MSN Messenger Service"
+MSMSGSXP_NAME         = "Windows Messenger"
+MSMSGSXP_NAME_AND_VER = "Windows Messenger 4.7"
+MSMSGSXP_OLD_NAME     = "MSN Messenger Service"
+DISK1 = "Messenger Files"
+BUDDY_ONLINE_SOUND       = "Contact Online"
+NEW_MESSAGE_SOUND        = "New Message"
+NEW_MAIL_SOUND           = "New Mail"
+NEW_ALERT_SOUND          = "New Alert"
+BUDDY_ONLINE_SOUND_OLD    = "Contact Online"
+NEW_MESSAGE_SOUND_OLD     = "New Message"
+NEW_MAIL_SOUND_OLD        = "New Mail"
+NEW_ALERT_SOUND_OLD       = "New Alert"
+CTT_FILE_DESC            = "Messenger Contact List"
+CTT_FILE_ACTION          = "You cannot open this file directly. You must open Messenger and select ""Import Contacts..."" from the ""File"" menu."
+MSGS_VERSION_WARNING = "Installation cannot be completed because there is a more recent version of Messenger already installed on your computer."
+MSGS_WINXP_ONLY_WARNING = "Windows Messenger requires Windows XP or later to install. For earlier versions of Windows, please download an appropriate version from http://messenger.microsoft.com"
+MSGS_CORP_ONLY_WARNING = "Currently your computer is not allowed to have consumer versions of Messenger installed. Please talk to your network administrator for more information."
+MSGS_DOWNGRADE_WARNING = "A newer version of Messenger is already installed on this computer. If you continue, an older version of Messenger will be installed with a potential loss of functionality. Do you want to continue?"
+MSGS_IEVERSION_WARNING = "MSN Messenger now requires Internet Explorer version %d or later to be installed on your computer, though it does not need to be your default browser. If you already have MSN Messenger installed you will continue to get upgrade alerts, but you won't be able to install the new version until you upgrade Internet Explorer."
+MSGSXP_IEVERSION_WARNING = "Windows Messenger now requires Internet Explorer version %d or later to be installed on your computer, though it does not need to be your default browser. If you already have Windows Messenger installed you will continue to get upgrade alerts, but you won't be able to install the new version until you upgrade Internet Explorer."
+MSGS_IN_USE_CAPTION = "Installation Cannot Continue"
+MSGS_IN_USE_WARNING = "Please exit Messenger to continue: Click the Messenger icon in the taskbar, then click Exit. Please also close any programs that display your contact list (Internet Explorer, Outlook, Outlook Express, MSN Explorer). If others are signed in to this computer, they must do the same. When finished, click Retry to continue or Abort to cancel installation. Click Ignore to continue the installation and restart your computer to complete setup."
+NEED_ADMIN_PRIVILEGES_CAPTION = "Unable to Install Messenger"
+NEED_ADMIN_PRIVILEGES_WARNING = "You do not have the permissions required to install Messenger on this computer.  Please ask the system administrator to provide you with the necessary permissions, or to install Messenger for you."
+MSGS_XCHGSP_REMOVAL_WARNING = "If you proceed with this installation, you will lose the ability to connect to Exchange Instant Messaging. Are you sure you want to proceed and lose connectivity to Exchange Instant Messaging?"
+PGMGRP_FOLDER   = ""
+MESSENGER_DESC = "Shows whether your friends are online and lets you have online conversations."
+MSGR_OPTION_TIP = "Helps you stay in touch with people you know on the Internet. You can see if people you know are online when you are and have online conversations with them."
+LOCALE_ID = "EN"

@@ -1,0 +1,13 @@
+FC1270E} = s 'Network Connections Extract Icon'
+        {
+            Delete ProgID
+            Delete VersionIndependentProgID
+            InProcServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,133 @@
+ebugTrace, L_Text_Msg_Printer05_Text & L_Space_Text & strPort
+    
+    dim oPrinter
+    dim oService
+    dim iRetval
+    
+    if WmiConnect(strServer, kNameSpace, strUser, strPassword, oService) then
+        
+        set oPrinter = oService.Get("Win32_Printer").SpawnInstance_
+
+    else
+    
+        AddPrinter = kErrorFailure
+        
+        exit function        
+    
+    end if    
+    
+    oPrinter.DriverName = strDriver
+    oPrinter.PortName   = strPort
+    oPrinter.DeviceID   = strPrinter
+
+    oPrinter.Put_(kFlagCreateOnly)
+    
+    if Err.Number = kErrorSuccess then
+
+        wscript.echo L_Text_Msg_General01_Text & L_Space_Text & strPrinter
+        
+        iRetval = kErrorSuccess
+
+    else
+
+        wscript.echo L_Text_Msg_General02_Text & L_Space_Text & strPrinter & L_Space_Text & L_Error_Text _ 
+                     & L_Space_Text & L_Hex_Text & hex(Err.Number) & L_Space_Text & Err.Description
+        
+        '
+        ' Try getting extended error information
+        '         
+        call LastError()
+                     
+        iRetval = kErrorFailure                     
+                                      
+    end if
+    
+    AddPrinter = iRetval
+
+end function
+
+'
+' Add a printer connection
+'
+function AddPrinterConnection(strPrinter, strUser, strPassword)
+
+    on error resume next
+
+    DebugPrint kDebugTrace, L_Text_Dbg_Msg02_Text
+    
+    dim oPrinter
+    dim oService
+    dim iRetval
+    dim uResult
+    
+    '
+    ' Initialize return value
+    '
+    iRetval = kErrorFailure
+
+    '
+    ' We connect to the local server
+    '                
+    if WmiConnect("", kNameSpace, strUser, strPassword, oService) then
+        
+        set oPrinter = oService.Get("Win32_Printer")
+    
+    else
+    
+        AddPrinterConnection = kErrorFailure
+        
+        exit function        
+    
+    end if
+    
+    '
+    ' Check if Get was successful
+    '
+    if Err.Number = kErrorSuccess then
+        
+        '
+        ' The Err object indicates whether the WMI provider reached the execution
+        ' of the function that adds a printer connection. The uResult is the Win32 
+        ' error code returned by the static method that adds a printer connection
+        '
+        uResult = oPrinter.AddPrinterConnection(strPrinter)
+    
+        if Err.Number = kErrorSuccess then
+
+            if uResult = kErrorSuccess then 
+            
+                wscript.echo L_Text_Msg_General03_Text & L_Space_Text & strPrinter 
+            
+                iRetval = kErrorSuccess
+                
+            else 
+            
+                wscript.echo L_Text_Msg_General04_Text & L_Space_Text & L_Text_Error_General03_Text _ 
+                             & L_Space_text & uResult
+            
+            end if    
+
+        else
+         
+            wscript.echo L_Text_Msg_General04_Text & L_Space_Text & strPrinter & L_Space_Text _
+                         & L_Error_Text & L_Space_Text & L_Hex_Text & hex(Err.Number) & L_Space_Text _
+                         & Err.Description
+                    
+        end if
+        
+    else
+    
+        wscript.echo L_Text_Msg_General04_Text & L_Space_Text & strPrinter & L_Space_Text _
+                     & L_Error_Text & L_Space_Text & L_Hex_Text & hex(Err.Number) & L_Space_Text _
+                     & Err.Description
+    
+    end if    
+    
+    AddPrinterConnection = iRetval
+
+end function
+
+'
+' Delete a printer or a printer connection
+'
+function DelPrinter(strServer, 

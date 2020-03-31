@@ -1,0 +1,244 @@
+   ; Accessibility Options
+
+
+[AccessOpt]
+OptionDesc      = %AccessOpt_DESC%
+Tip             = %AccessOpt_TIP%
+IconIndex       = 41
+CopyFiles       = AccessOptCopyFilesSys, AccessOptCopyFilesHelp, CopyEnableFiles.cur
+ProfileItems    = AccessUninstallItems, AccessInstallItems
+AddReg          = cursors.AddReg
+Uninstall       = AccessOptUninstall
+Modes           = 0,1,2,3
+Parent          = AccessUtil
+SizeApproximation=1253376
+
+
+[AccessOptUninstall]
+DelFiles        = AccessOptCopyFilesSys, AccessOptCopyFilesHelp, CopyEnableFiles.cur
+DelReg          = cursors.AddReg
+ProfileItems    = AccessUninstallItems, AccessUninstallItemsCommon
+
+
+[AccessOptCopyFilesSys]
+access.cpl
+accwiz.exe
+
+[AccessOptCopyFilesSys.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)(A;;GRGX;;;WD)"
+
+
+[AccessOptCopyFilesHelp]
+access.hlp
+
+[AccessOptCopyFilesHelp.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)"
+
+
+[AccessInstallItems]
+Name       = %ACCWIZ_NAME%
+CmdLine    = 11,,%ACCWIZ_EXE%
+Subdir     = %ACCESSIB_GROUP_NAME%
+InfoTip    = "@%SystemRoot%\system32\shell32.dll,-22528"
+DisplayResource="%SystemRoot%\system32\shell32.dll",22016
+
+[AccessUninstallItems]
+Name       = %ACCWIZ_NAME%,0x00000003
+Subdir     = %ACCESSIB_GROUP_NAME%
+
+
+[AccessUninstallItemsCommon]
+Name       = %ACCWIZ_NAME%,0x00000002
+Subdir     = %ACCESSIB_GROUP_NAME%
+
+
+[cursors.AddReg]                     ; Common Registry Entries
+; Current User
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme1%",,"%25%%C0%r.cur,%25%%C1%r.cur,%25%%C2%r.cur,%25%%C3%r.cur,%25%%C4%r.cur,%25%%C5%r.cur,%25%%C6%r.cur,%25%%C7%r.cur,%25%%C8%r.cur,%25%%C9%r.cur,%25%%CA%r.cur,%25%%CB%r.cur,%25%%CC%r.cur,%25%%CD%r.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme2%",,"%25%%C0%rm.cur,%25%%C1%rm.cur,%25%%C2%rm.cur,%25%%C3%rm.cur,%25%%C4%rm.cur,%25%%C5%rm.cur,%25%%C6%rm.cur,%25%%C7%rm.cur,%25%%C8%rm.cur,%25%%C9%rm.cur,%25%%CA%rm.cur,%25%%CB%rm.cur,%25%%CC%rm.cur,%25%%CD%rm.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme3%",,"%25%%C0%rl.cur,%25%%C1%rl.cur,%25%%C2%rl.cur,%25%%C3%rl.cur,%25%%C4%rl.cur,%25%%C5%rl.cur,%25%%C6%rl.cur,%25%%C7%rl.cur,%25%%C8%rl.cur,%25%%C9%rl.cur,%25%%CA%rl.cur,%25%%CB%rl.cur,%25%%CC%rl.cur,%25%%CD%rl.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme4%",,"%25%%C0%i.cur,%25%%C1%i.cur,%25%%C2%i.cur,%25%%C3%i.cur,%25%%C4%i.cur,%25%%C5%i.cur,%25%%C6%i.cur,%25%%C7%i.cur,%25%%C8%i.cur,%25%%C9%i.cur,%25%%CA%i.cur,%25%%CB%i.cur,%25%%CC%i.cur,%25%%CD%i.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme5%",,"%25%%C0%im.cur,%25%%C1%im.cur,%25%%C2%im.cur,%25%%C3%im.cur,%25%%C4%im.cur,%25%%C5%im.cur,%25%%C6%im.cur,%25%%C7%im.cur,%25%%C8%im.cur,%25%%C9%im.cur,%25%%CA%im.cur,%25%%CB%im.cur,%25%%CC%im.cur,%25%%CD%im.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme6%",,"%25%%C0%il.cur,%25%%C1%il.cur,%25%%C2%il.cur,%25%%C3%il.cur,%25%%C4%il.cur,%25%%C5%il.cur,%25%%C6%il.cur,%25%%C7%il.cur,%25%%C8%il.cur,%25%%C9%il.cur,%25%%CA%il.cur,%25%%CB%il.cur,%25%%CC%il.cur,%25%%CD%il.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme7%",,"%25%%C0%m.cur,%25%%C1%m.cur,%25%%C2%m.cur,%25%%C3%m.cur,%25%%C4%m.cur,%25%%C5%m.cur,%25%%C6%m.cur,%25%%C7%m.cur,%25%%C8%m.cur,%25%%C9%m.cur,%25%%CA%m.cur,%25%%CB%m.cur,%25%%CC%m.cur,%25%%CD%m.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","%Scheme8%",,"%25%%C0%l.cur,%25%%C1%l.cur,%25%%C2%l.cur,%25%%C3%l.cur,%25%%C4%l.cur,%25%%C5%l.cur,%25%%C6%l.cur,%25%%C7%l.cur,%25%%C8%l.cur,%25%%C9%l.cur,%25%%CA%l.cur,%25%%CB%l.cur,%25%%CC%l.cur,%25%%CD%l.cur"
+
+
+[CopyEnableFiles.cur]
+arrow_r.cur
+arrow_rl.cur
+arrow_rm.cur
+beam_r.cur
+beam_rl.cur
+beam_rm.cur
+busy_r.cur
+busy_rl.cur
+busy_rm.cur
+cross_r.cur
+cross_rl.cur
+cross_rm.cur
+help_r.cur
+help_rl.cur
+help_rm.cur
+move_r.cur
+move_rl.cur
+move_rm.cur
+no_r.cur
+no_rl.cur
+no_rm.cur
+pen_r.cur
+pen_rl.cur
+pen_rm.cur
+size1_r.cur
+size1_rl.cur
+size1_rm.cur
+size2_r.cur
+size2_rl.cur
+size2_rm.cur
+size3_r.cur
+size3_rl.cur
+size3_rm.cur
+size4_r.cur
+size4_rl.cur
+size4_rm.cur
+up_r.cur
+up_rl.cur
+up_rm.cur
+wait_r.cur
+wait_rl.cur
+wait_rm.cur
+arrow_i.cur
+arrow_il.cur
+arrow_im.cur
+beam_i.cur
+beam_il.cur
+beam_im.cur
+busy_i.cur
+busy_il.cur
+busy_im.cur
+cross_i.cur
+cross_il.cur
+cross_im.cur
+help_i.cur
+help_il.cur
+help_im.cur
+move_i.cur
+move_il.cur
+move_im.cur
+no_i.cur
+no_il.cur
+no_im.cur
+pen_i.cur
+pen_il.cur
+pen_im.cur
+size1_i.cur
+size1_il.cur
+size1_im.cur
+size2_i.cur
+size2_il.cur
+size2_im.cur
+size3_i.cur
+size3_il.cur
+size3_im.cur
+size4_i.cur
+size4_il.cur
+size4_im.cur
+up_i.cur
+up_il.cur
+up_im.cur
+wait_i.cur
+wait_il.cur
+wait_im.cur
+arrow_l.cur
+arrow_m.cur
+beam_l.cur
+beam_m.cur
+busy_l.cur
+busy_m.cur
+cross_l.cur
+cross_m.cur
+help_l.cur
+help_m.cur
+move_l.cur
+move_m.cur
+no_l.cur
+no_m.cur
+pen_l.cur
+pen_m.cur
+size1_l.cur
+size1_m.cur
+size2_l.cur
+size2_m.cur
+size3_l.cur
+size3_m.cur
+size4_l.cur
+size4_m.cur
+up_l.cur
+up_m.cur
+wait_l.cur
+wait_m.cur
+
+[CopyEnableFiles.cur.Security]
+"D:P(A;;GRGX;;;BU)(A;;GA;;;BA)(A;;GA;;;SY)"
+
+
+[Strings]
+KEY_OPTIONAL        = "SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OptionalComponents"
+AccessOpt_DESC      = "Accessibility Wizard"
+AccessOpt_TIP       = "Use the Accessibility Wizard to configure your system to meet your vision, hearing, and mobility needs."
+ACCESSIB_GROUP_NAME = "Accessories\Accessibility"
+ACCWIZ_NAME         = "Accessibility Wizard"
+ACCWIZ_EXE          = "accwiz.exe"
+Scheme1             = "Windows Black "
+Scheme2             = "Windows Black (large)"
+Scheme3             = "Windows Black (extra large)"
+Scheme4             = "Windows Inverted"
+Scheme5             = "Windows Inverted (large)"
+Scheme6             = "Windows Inverted (extra large)"
+Scheme7             = "Windows Standard (large)"
+Scheme8             = "Windows Standard (extra large)"
+;
+; Used to keep the line length above to a minimum - no need to localize
+;
+C0              = "\cursors\arrow_"
+C1              = "\cursors\help_"
+C2              = "\cursors\wait_"
+C3              = "\cursors\busy_"
+C4              = "\cursors\cross_"
+C5              = "\cursors\beam_"
+C6              = "\cursors\pen_"
+C7              = "\cursors\no_"
+C8              = "\cursors\size4_"
+C9              = "\cursors\size3_"
+CA              = "\cursors\size2_"
+CB              = "\cursors\size1_"
+CC              = "\cursors\move_"
+CD              = "\cursors\up_"
+
+
+
+
+[accessopt]
+CopyFiles=wAccessOptCopyFilesSys
+AddReg=wcursors.AddReg
+
+[accessoptuninstall]
+DelFiles=wAccessOptCopyFilesSys
+DelReg=wcursors.AddReg
+
+[wAccessOptCopyFilesSys]
+access.cpl,waccess.cpl
+accwiz.exe,waccwiz.exe
+
+[wcursors.AddReg]
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Black ",0x00004000,"%10%\cursors\arrow_r.cur,%10%\cursors\help_r.cur,%10%\cursors\wait_r.cur,%10%\cursors\busy_r.cur,%10%\cursors\cross_r.cur,%10%\cursors\beam_r.cur,%10%\cursors\pen_r.cur,%10%\cursors\no_r.cur,%10%\cursors\size4_r.cur,%10%\cursors\size3_r.cur,%10%\cursors\size2_r.cur,%10%\cursors\size1_r.cur,%10%\cursors\move_r.cur,%10%\cursors\up_r.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Black (large)",0x00004000,"%10%\cursors\arrow_rm.cur,%10%\cursors\help_rm.cur,%10%\cursors\wait_rm.cur,%10%\cursors\busy_rm.cur,%10%\cursors\cross_rm.cur,%10%\cursors\beam_rm.cur,%10%\cursors\pen_rm.cur,%10%\cursors\no_rm.cur,%10%\cursors\size4_rm.cur,%10%\cursors\size3_rm.cur,%10%\cursors\size2_rm.cur,%10%\cursors\size1_rm.cur,%10%\cursors\move_rm.cur,%10%\cursors\up_rm.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Black (extra large)",0x00004000,"%10%\cursors\arrow_rl.cur,%10%\cursors\help_rl.cur,%10%\cursors\wait_rl.cur,%10%\cursors\busy_rl.cur,%10%\cursors\cross_rl.cur,%10%\cursors\beam_rl.cur,%10%\cursors\pen_rl.cur,%10%\cursors\no_rl.cur,%10%\cursors\size4_rl.cur,%10%\cursors\size3_rl.cur,%10%\cursors\size2_rl.cur,%10%\cursors\size1_rl.cur,%10%\cursors\move_rl.cur,%10%\cursors\up_rl.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Inverted",0x00004000,"%10%\cursors\arrow_i.cur,%10%\cursors\help_i.cur,%10%\cursors\wait_i.cur,%10%\cursors\busy_i.cur,%10%\cursors\cross_i.cur,%10%\cursors\beam_i.cur,%10%\cursors\pen_i.cur,%10%\cursors\no_i.cur,%10%\cursors\size4_i.cur,%10%\cursors\size3_i.cur,%10%\cursors\size2_i.cur,%10%\cursors\size1_i.cur,%10%\cursors\move_i.cur,%10%\cursors\up_i.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Inverted (large)",0x00004000,"%10%\cursors\arrow_im.cur,%10%\cursors\help_im.cur,%10%\cursors\wait_im.cur,%10%\cursors\busy_im.cur,%10%\cursors\cross_im.cur,%10%\cursors\beam_im.cur,%10%\cursors\pen_im.cur,%10%\cursors\no_im.cur,%10%\cursors\size4_im.cur,%10%\cursors\size3_im.cur,%10%\cursors\size2_im.cur,%10%\cursors\size1_im.cur,%10%\cursors\move_im.cur,%10%\cursors\up_im.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Inverted (extra large)",0x00004000,"%10%\cursors\arrow_il.cur,%10%\cursors\help_il.cur,%10%\cursors\wait_il.cur,%10%\cursors\busy_il.cur,%10%\cursors\cross_il.cur,%10%\cursors\beam_il.cur,%10%\cursors\pen_il.cur,%10%\cursors\no_il.cur,%10%\cursors\size4_il.cur,%10%\cursors\size3_il.cur,%10%\cursors\size2_il.cur,%10%\cursors\size1_il.cur,%10%\cursors\move_il.cur,%10%\cursors\up_il.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Standard (large)",0x00004000,"%10%\cursors\arrow_m.cur,%10%\cursors\help_m.cur,%10%\cursors\wait_m.cur,%10%\cursors\busy_m.cur,%10%\cursors\cross_m.cur,%10%\cursors\beam_m.cur,%10%\cursors\pen_m.cur,%10%\cursors\no_m.cur,%10%\cursors\size4_m.cur,%10%\cursors\size3_m.cur,%10%\cursors\size2_m.cur,%10%\cursors\size1_m.cur,%10%\cursors\move_m.cur,%10%\cursors\up_m.cur"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Control Panel\Cursors\Schemes","Windows Standard (extra large)",0x00004000,"%10%\cursors\arrow_l.cur,%10%\cursors\help_l.cur,%10%\cursors\wait_l.cur,%10%\cursors\busy_l.cur,%10%\cursors\cross_l.cur,%10%\cursors\beam_l.cur,%10%\cursors\pen_l.cur,%10%\cursors\no_l.cur,%10%\cursors\size4_l.cur,%10%\cursors\size3_l.cur,%10%\cursors\size2_l.cur,%10%\cursors\size1_l.cur,%10%\cursors\move_l.cur,%10%\cursors\up_l.cur"
+
+[DestinationDirs]
+wAccessOptCopyFilesSys=16425

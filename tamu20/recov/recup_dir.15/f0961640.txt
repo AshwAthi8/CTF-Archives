@@ -1,0 +1,30 @@
+t.substring(0, iCutoff-cExtraCutoff) + L_Ellipses_Text;
+}
+return oSpanToUse.innerText;
+}
+function OnSelectionChange(cItems, hItem, strName, strUrl, cVisits, strDate, fAvailableOffline)
+{
+if (cItems == -1)
+{
+BodyOnKeyPress(27);
+return;
+}
+if (cItems == 0)
+{
+textProperties.innerHTML = "";
+return;
+}
+g_strUrl = strUrl;
+if (g_dxEllipses == 0)
+{
+spanMeasure.innerText = L_Ellipses_Text;
+g_dxEllipses = spanMeasure.offsetWidth;
+spanMeasureBold.innerText = L_Ellipses_Text;
+g_dxEllipsesBold = spanMeasureBold.offsetWidth;
+}
+spanMeasureBold.innerText = strName;
+strNameShort = MeasureText(spanMeasureBold.innerText, true, textProperties.offsetWidth - 4);
+spanMeasure.innerText = strUrl;
+strUrlShort = MeasureText(spanMeasure.innerText, false, textProperties.offsetWidth - 4);
+spanMeasure.innerText = "";
+var L_FavoritesFolder_Text = "

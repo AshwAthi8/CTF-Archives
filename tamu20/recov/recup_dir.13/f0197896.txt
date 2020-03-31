@@ -1,0 +1,11 @@
+IU)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWRPWPDTLOCRRC;;;SY)S:(AU;FA;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;WD)"
+
+
+[Strings]
+;
+; Localizable Strings
+;
+
+INF_Provider          = "Macrovision Corporation"
+CdaD10BA_Display_Name = "CdaD10BA"
+

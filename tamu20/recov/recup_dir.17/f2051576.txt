@@ -1,0 +1,17 @@
+l "%%1"'
+			}
+		}
+	}
+
+	ForceRemove SignedJavaScript = s 'Trusted Scripts Wrapper for JavaScript'
+	{
+		'CLSID' = s '{FC7D9F01-3F9E-11D3-93C0-00C04F72DAF7}'
+		'OLEScript'
+	}
+
+	ForceRemove SignedVBScript = s 'Trusted Scripts Wrapper for VBScript'
+	{
+		'CLSID' = s '{FC7D9F02-3F9E-11D3-93C0-00C04F72DAF7}'
+		'OLEScript'
+	}
+}

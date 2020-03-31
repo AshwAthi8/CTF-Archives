@@ -1,0 +1,2 @@
+tMinute when the transition from standard time to daylight savings time occurs on this operating system.
+Example: 59

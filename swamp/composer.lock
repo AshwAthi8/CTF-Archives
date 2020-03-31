@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "18e361cbe8e64b731f4c10cb95b65771",
+    "packages": [
+        {
+            "name": "pyrou/morpheus",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pyrou/Morpheus.git",
+                "reference": "33553cf593b4b94f72e427e43171bb8b7209b08f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pyrou/Morpheus/zipball/33553cf593b4b94f72e427e43171bb8b7209b08f",
+                "reference": "33553cf593b4b94f72e427e43171bb8b7209b08f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Morpheus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Hurni",
+                    "email": "michael.hurni@gmail.com"
+                }
+            ],
+            "description": "Library to encrypt and decrypt data in colors of a picture. Process also known as steganography",
+            "keywords": [
+                "ImageMagick",
+                "data encryption",
+                "gdlib",
+                "image encryption",
+                "imagick",
+                "steganography"
+            ],
+            "time": "2015-03-19T19:36:26+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,8 @@
+        <argument name="condition">Is</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

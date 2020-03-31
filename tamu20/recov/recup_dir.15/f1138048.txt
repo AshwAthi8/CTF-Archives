@@ -1,0 +1,8 @@
+ changes made by the last restore operation.
+echo.
+echo Remove disks from the floppy disk drives and press CTRL+ALT+DELETE to
+echo restart your computer.
+echo.
+pause >nul
+
+:Exit

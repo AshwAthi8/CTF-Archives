@@ -1,0 +1,83 @@
+Microsoft.NTia64]
+ ; DisplayName                        Section      DeviceID
+ ; -----------                        -------      --------
+ %MSLOOP.DeviceDesc% = MSLOOP.ndi, *MSLOOP
+
+[Microsoft.NTamd64]
+ ; DisplayName                        Section      DeviceID
+ ; -----------                        -------      --------
+ %MSLOOP.DeviceDesc% = MSLOOP.ndi, *MSLOOP
+
+ 
+[MSLOOP.ndi.NT]
+ AddReg          = MSLOOP.ndi.params, MSLOOP.ndi.reg
+ BusType         = 1
+ Characteristics = 0x4  ; NCF_PHISYCAL
+ CopyFiles       = msloop.CopyFiles
+ 
+[MSLOOP.ndi.reg]
+ HKR, Ndi,                                  Service,    0,  "msloop"
+ HKR, Ndi\Interfaces,                       DefLower,   0,  "nolower"
+ HKR, Ndi\Interfaces,                       LowerRange, 0,  "nolower"
+ HKR, Ndi\Interfaces,                       DefUpper,   0,  "ndis5"
+ HKR, Ndi\Interfaces,                       UpperRange, 0,  "ndis5"
+
+[MSLOOP.ndi.params]
+ HKR, Ndi\Params\Medium,                    ParamDesc,  0,  %Medium%
+ HKR, Ndi\Params\Medium,                    Default,    0,  "0"
+ HKR, Ndi\Params\Medium\enum,               "0",        0,  %Ethernet%
+ HKR, Ndi\Params\Medium\enum,               "1",        0,  %TokenRing%
+ HKR, Ndi\Params\Medium\enum,               "2",        0,  %FDDI%
+ HKR, Ndi\Params\Medium\enum,               "3",        0,  %LocalTalk%
+ HKR, Ndi\Params\Medium\enum,               "4",        0,  %ARCNET%
+ HKR, Ndi\Params\Medium,                    Type,       0,  "enum"
+ 
+ HKR, Ndi\Params\NetworkAddress,            ParamDesc,  0,  %NetworkAddress%
+ HKR, Ndi\Params\NetworkAddress,            Default,    0,  ""
+ HKR, Ndi\Params\NetworkAddress,            Type,       0,  "text"
+
+[msloop.CopyFiles]
+ loop.sys,,,2
+
+[MSLOOP.ndi.NT.Services]
+ AddService = msloop, 2, msloop.Service, msloop.AddEventLog
+
+[msloop.Service]
+ DisplayName    = %msloop.Service.DispName%
+ ServiceType    = 1    ;SERVICE_KERNEL_DRIVER
+ StartType      = 3    ;SERVICE_AUTO_START
+ ErrorControl   = 1    ;NORMAL
+ ServiceBinary  = %12%\loop.sys
+ LoadOrderGroup = NDIS
+
+[msloop.AddEventLog]
+ AddReg =  msloop.AddEventLog.Reg
+
+[msloop.AddEventLog.Reg]
+ HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+ HKR, , TypesSupported,   0x00010001, 7
+
+
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[DestinationDirs]
+ DefaultDestDir    = 12 ; Drivers directory 
+ msloop.CopyFiles  = 12
+
+
+[Strings]
+Msft = "Microsoft"
+
+Medium                   = "Medium"
+Ethernet                 = "Ethernet"
+TokenRing                = "Token Ring"
+FDDI                     = "FDDI"
+LocalTalk                = "LocalTalk"
+ARCNET                   = "ARCNET"
+NetworkAddress           = "Network Address"
+
+MSLOOP.DeviceDesc        = "Microsoft Loopback Adapter"
+msloop.Service.DispName  = "Microsoft Loopback Adapter Driver"
+

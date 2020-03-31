@@ -1,0 +1,11 @@
+ActCtx'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Free'
+			}
+			'TypeLib' = s '{8143C9AA-38F8-4729-B935-DF6823C616C6}'
+		}
+	}
+}
+MSFT

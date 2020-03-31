@@ -1,0 +1,1 @@
+ClRtlGetBinaryValue: hkeyClusterKey, pClusterRegApis, or pClusterRegApis->pfnQueryValue == NULL. Returning ERROR_BAD_ARGUMENTS.

@@ -1,0 +1,10 @@
+ErrMsg_Text = "Error and Event Log Messages";
+				var sURL = "http://go.microsoft.com/fwlink/?linkid=11950&clcid=0x409&mode=errmsg&LCID=" + pchealth.UserSettings.CurrentSKU.Language;
+				pchealth.UI_NavBar.content.parentWindow.external.places.transitionTo( 'FullWindow' );
+				pchealth.Connectivity.NavigateOnline( sURL, L_TopicTitleErrMsg_Text, "" );
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

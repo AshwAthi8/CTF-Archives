@@ -1,0 +1,4 @@
+es parameters or switches for the specified command.
+
+To use the FOR command in a batch program, specify %%variable instead of
+%variable.

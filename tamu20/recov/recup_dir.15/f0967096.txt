@@ -1,0 +1,3 @@
+; FONT: 8pt/11pt verdana"><hr color="#C0C0C0" noshade>
+    <p id="LID2">Pruebe lo siguiente:</p><ul>
+      <li id="instructionsText1">Si escribi

@@ -1,0 +1,47 @@
+u>A</u>lways allow this site to use cookies.
+</LABEL>
+</TD>
+</TR>
+<TR>
+<TD>
+&nbsp;&nbsp;&nbsp;<INPUT id=radReject type=radio name=radPreference ACCESSKEY=n
+tabIndex=5 style="width: 1.2em;">
+</TD>
+<TD>
+<LABEL ID=lblReject FOR=radReject>
+&nbsp;&nbsp;<u>N</u>ever allow this site to use cookies.
+</LABEL>
+<TD>
+</TR>
+</TABLE>
+</FIELDSET>
+</TD>
+<TD valign=top width="1%">
+<TABLE>
+<TR>
+<TD>
+<BUTTON id=btnOk onClick="okButtonClick()" tabIndex=1 ACCESSKEY=o type=submit>
+OK
+</BUTTON>
+</TD>
+</TR>
+<TR>
+<TD>
+<BUTTON id=btnCancel onClick="cancelButtonClick()" tabIndex=2 ACCESSKEY=c type=submit>
+Cancel
+</BUTTON>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+<SCRIPT language="JavaScript">
+checkCurrentPreference();
+CheckIfPolicyFound();
+</SCRIPT>
+</BODY>
+</HTML>

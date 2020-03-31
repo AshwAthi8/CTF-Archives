@@ -1,0 +1,136 @@
+
+var _bMultipleUsersEnabled = false;
+function PageInit()
+{
+top.window.PopulateLeftPane(idRelatedTaskContent.innerHTML, idLearnAboutContent.innerHTML);
+var oWShell = top.window.GetWShell();
+var strAbort = null;
+try
+{
+var strNetProviders = oWShell.RegRead("HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order\\ProviderOrder");
+if (-1 != strNetProviders.indexOf("NWCWorkstation") || -1 != strNetProviders.indexOf("NetwareWorkstation"))
+{
+strAbort = top.window.L_NetWareClient_ErrorMessage;
+}
+}
+catch (error)
+{
+}
+if (null == strAbort)
+{
+try
+{
+var szGinaDLL = oWShell.RegRead("HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\WinLogon\\GinaDLL");
+strAbort = top.window.L_NonStandardGina_ErrorMessage.replace(/%1/g, szGinaDLL);
+}
+catch (error)
+{
+}
+}
+if (null != strAbort)
+{
+idWelcomeGroup.checked = false;
+idWelcomeGroup.disabled = true;
+idShutdown.checked = false;
+idShutdownGroup.disabled = true;
+idOK.disabled = true;
+alert(strAbort);
+return;
+}
+var oLocalMachine = top.window.GetLocalMachine();
+_bFriendlyUIEnabled = oLocalMachine.isFriendlyUIEnabled;
+_bMultipleUsersEnabled = oLocalMachine.isMultipleUsersEnabled;
+idWelcome.checked = _bFriendlyUIEnabled;
+idShutdown.checked = _bMultipleUsersEnabled;
+idWelcome.onclick = OnClickWelcome;
+OnClickWelcome();
+if (!_bMultipleUsersEnabled && oLocalMachine.isOfflineFilesEnabled && confirm(top.window.L_CSCNoFUS_ErrorMessage))
+{
+top.window.GetShell().ShellExecute('rundll32.exe','cscui.dll,CSCOptions_RunDLL '+top.window.document.title);
+top.window.g_Navigator.back();
+}
+idWelcome.focus();
+}
+function OnClickWelcome()
+{
+if (idWelcome.checked && (_bMultipleUsersEnabled || !top.window.GetLocalMachine().isOfflineFilesEnabled))
+{
+idShutdown.checked = _bMultipleUsersEnabled;
+idShutdownGroup.disabled = false;
+}
+else
+{
+idShutdown.checked = false;
+idShutdownGroup.disabled = true;
+}
+}
+function ApplyAdvChanges()
+{
+var nErr = 0;
+var szMsg = null;
+if (idShutdown.checked != _bMultipleUsersEnabled)
+{
+try
+{
+top.window.GetLocalMachine().isMultipleUsersEnabled = idShutdown.checked;
+_bMultipleUsersEnabled = idShutdown.checked;
+}
+catch (error)
+{
+nErr = (error.number & 0x7fffffff);
+szMsg = top.window.L_MultiUser_ErrorMessage;
+if (!idShutdown.checked)
+{
+switch (nErr)
+{
+case 0xA0046: 
+szMsg = top.window.L_MultiUserMulti_ErrorMessage;
+break;
+case 0x71B7E: 
+szMsg = top.window.L_MultiUserRemote_ErrorMessage;
+break;
+case 0x70032: 
+szMsg = top.window.L_MultiUserSession0_ErrorMessage;
+break;
+}
+}
+idShutdown.checked = _bMultipleUsersEnabled;
+}
+}
+if (idWelcome.checked != _bFriendlyUIEnabled)
+{
+if (0 == nErr)
+{
+try
+{
+top.window.GetLocalMachine().isFriendlyUIEnabled = idWelcome.checked;
+_bFriendlyUIEnabled = idWelcome.checked;
+}
+catch (error)
+{
+nErr = (error.number & 0x7fffffff);
+szMsg = top.window.L_FriendlyUI_ErrorMessage;
+if (_bMultipleUsersEnabled && !_bFriendlyUIEnabled)
+{
+try
+{
+top.window.GetLocalMachine().isMultipleUsersEnabled = false;
+_bMultipleUsersEnabled = false;
+}
+catch (error)
+{
+}
+}
+}
+}
+if (0 != nErr)
+{
+idWelcome.checked = _bFriendlyUIEnabled;
+OnClickWelcome();
+}
+}
+if (0 == nErr)
+top.window.g_Navigator.navigate("mainpage2.htm", true);
+else if (szMsg)
+alert(szMsg);
+}

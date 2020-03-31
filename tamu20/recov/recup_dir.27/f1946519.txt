@@ -1,0 +1,2 @@
+sk partition supports file based compression, such as is the case with NTFS. This property is FALSE, when the Compressed property is TRUE.
+Values: TRUE or FALSE. If TRUE, the logical disk supports file based compression.

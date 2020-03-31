@@ -1,0 +1,9 @@
+sspipes.scr
+"3D-Labyrinth.scr" = sspipes.scr
+"3D-Objekte.scr" = ss3dfo.scr
+"3D-text.scr" = sstext3d.scr
+"3D - blomstereske.scr" = ssflwbox.scr
+"3D - flygende objekter.scr" = ss3dfo.scr
+"3D - labyrint.scr" = sspipes.scr
+"3D - tekst.scr" = sstext3d.scr
+"3D 

@@ -1,0 +1,6 @@
+    # PARC universal packet protocol
+udp      17    UDP      # User datagram protocol
+hmp      20    HMP      # Host monitoring protocol
+xns-idp  22    XNS-IDP  # Xerox NS IDP
+rdp      27    RDP      # "reliable datagram" protocol
+rvd      66    RVD      # MIT remote virtual disk

@@ -1,0 +1,3 @@
+08059382}"
+CLSID_DarwinAppPublisher        = "{CFCCC7A0-A282-11D1-9082-006008059382}"
+ERR_NOSETUPAPI="Can not register APPMGR.DLL because SETUPAPI.DLL is missing."

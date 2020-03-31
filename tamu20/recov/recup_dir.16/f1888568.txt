@@ -1,0 +1,19 @@
+"value">Playcount: Evening play totals</argument>
+                            <argument name="condition">Descending</argument>
+                        </fragment>
+                        <fragment name="Playcount: Evening play totals">
+                            <argument name="condition">Is Greater Than</argument>
+                            <argument name="value">0</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+                <filter id="{BC5E21B0-504C-46F6-82BF-FB975C911AD6}" name="Microsoft Auto Playlist Filter -- Limits auto playlists by count, size or duration">
+                    <fragment name="LimitByDuration">
+                        <argument name="Number">2</argument>
+                        <argument name="Format">Hours</argument>
+                    </fragment>
+                </filter>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

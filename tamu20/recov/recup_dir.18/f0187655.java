@@ -1,0 +1,81 @@
+;
+; BRMFCUMD.INF -- brother MFC USB driver (FaxModem port) setup file
+; Copyright (c) 1999,2000,2001 brother industries,LTD.
+;
+[Version]
+signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider="Brother"
+DriverVer=10/01/2002,5.2.3790.1830
+LayoutFile=Layout.inf
+
+
+; Table of Contents
+[Manufacturer]
+%Brother%=Brother,NTamd64
+
+[DestinationDirs]
+BrUsbMdm.CopyList = 10,System32\Drivers
+DefaultDestDir = 11
+
+[Brother.NTamd64]
+;ZL
+%Brother_MFC8600/9650_Series% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0100_USBMDMP
+%Brother_MFC9600/9870_Series% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0101_USBMDMP
+%Brother_MFC-8300J% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0104_USBMDMP
+%Brother_MFC-9600J% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0105_USBMDMP
+;BY4
+%Brother_MFC-7300C% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0106_USBMDMP
+%Brother_MFC-7400C% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0107_USBMDMP
+%Brother_MFC-9200C% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0108_USBMDMP
+%Brother_MFC-830%   = BrUsbMdm, MF\BROTHER_VID_04F9&PID_0109_USBMDMP
+%Brother_MFC-840%   = BrUsbMdm, MF\BROTHER_VID_04F9&PID_010A_USBMDMP
+%Brother_MFC-860%   = BrUsbMdm, MF\BROTHER_VID_04F9&PID_010B_USBMDMP
+%Brother_MFC-7400J% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_010C_USBMDMP
+%Brother_MFC-9200J% = BrUsbMdm, MF\BROTHER_VID_04F9&PID_010D_USBMDMP
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[BrUsbMdm.NT]
+CopyFiles=BrUsbMdm.CopyList
+AddReg=BrUsbMdm.AddReg
+
+[BrUsbMdm.NT.Services]
+Addservice = BrUsbMdm, 0x00000002, BrUsbMdm.AddService
+
+
+[BrUsbMdm.AddService]
+DisplayName    = %BrUsbMdm.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\BrUsbMdm.sys
+
+[BrUsbMdm.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,N,TMPDriver,,BrUsbMdm.sys
+
+[BrUsbMdm.CopyList]
+BrUsbMdm.sys
+
+
+[Strings]
+Brother="Brother"
+BrUsbMdm.SvcDesc="Brother MFC USB Fax Only Modem"
+
+;; Model Name
+Brother_MFC8600/9650_Series = "Brother MFC8600/9650 Series"
+Brother_MFC9600/9870_Series = "Brother MFC9600/9870 Series"
+Brother_MFC-8300J = "Brother MFC-8300J"
+Brother_MFC-9600J = "Brother MFC-9600J"
+Brother_MFC-7300C = "Brother MFC-7300C"
+Brother_MFC-7400C = "Brother MFC-7400C"
+Brother_MFC-9200C = "Brother MFC-9200C"
+Brother_MFC-830 = "Brother MFC-830"
+Brother_MFC-840 = "Brother MFC-840"
+Brother_MFC-860 = "Brother MFC-860"
+Brother_MFC-7400J = "Brother MFC-7400J"
+Brother_MFC-9200J = "Brother MFC-9200J"
+

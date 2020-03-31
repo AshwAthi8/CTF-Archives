@@ -1,0 +1,304 @@
+tup\log.c,316,,IDE\CdRomVBOX_CD-ROM_____________________________1.0_____
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Location: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,0
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,2. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,IDE channel
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,, - 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\Ide\PciIde0Channel1-1
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     Intel-PIIX4
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     Secondary_IDE_Channel
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     *PNP0600
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Intel-PIIX4
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Location: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Secondary Channel
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,3. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,IDE Controller
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,, - 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\NTPNP_PCI0002
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&REV_01
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&CC_01018A
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&CC_0101
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Location: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PCI bus 0, device 1, function 1
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PhysicalDeviceObjectName: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\0000000d
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\baseGUI mode Setup has started.
+Volume: D:\ 
+
+Device Path: \\?\ide#cdromvbox_cd-rom_____________________________1.0_____#42562d3231303037333036372020202020202020#{53f56308-b6bf-11d0-94f2-00a0c91efb8b}
+
+1. VBOX CD-ROM - \Device\Ide\IdeDeviceP1T0L0-e
+   HardwareId: 
+     IDE\CdRomVBOX_CD-ROM_____________________________1.0_____
+     IDE\VBOX_CD-ROM_____________________________1.0_____
+     IDE\CdRomVBOX_CD-ROM_____________________________
+     VBOX_CD-ROM_____________________________1.0_____
+     GenCdRomIDE\CdRomVBOX_CD-ROM_____________________________1.0_____
+   Location: 0
+2. IDE channel - \Device\Ide\PciIde0Channel1-1
+   HardwareId: 
+     Intel-PIIX4
+     Secondary_IDE_Channel
+     *PNP0600Intel-PIIX4
+   Location: Secondary Channel
+3. IDE Controller - \Device\NTPNP_PCI0002
+   HardwareId: 
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000
+     PCI\VEN_8086&DEV_7111&REV_01
+     PCI\VEN_8086&DEV_7111
+     PCI\VEN_8086&DEV_7111&CC_01018A
+     PCI\VEN_8086&DEV_7111&CC_0101PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+   Location: PCI bus 0, device 1, function 1
+PhysicalDeviceObjectName: \Device\0000000d
+   HardwareId: 
+     ACPI\PNP0A03
+     *PNP0A03ACPI\PNP0A03
+PhysicalDeviceObjectName: \Device\0000000c
+   HardwareId: 
+     ACPI_HAL\PNP0C08
+     *PNP0C08ACPI_HAL\PNP0C08
+6. HardwareId: acpiapic_up
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Volume: C:\ 
+
+Device Path: \\?\ide#diskvbox_harddisk___________________________1.0_____#42566239663432316635612d3831393639332061#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+1. VBOX HARDDISK - \Device\Ide\IdeDeviceP0T0L0-3
+   HardwareId: 
+     IDE\DiskVBOX_HARDDISK___________________________1.0_____
+     IDE\VBOX_HARDDISK___________________________1.0_____
+     IDE\DiskVBOX_HARDDISK___________________________
+     VBOX_HARDDISK___________________________1.0_____
+     GenDiskIDE\DiskVBOX_HARDDISK___________________________1.0_____
+   Location: 0
+2. IDE channel - \Device\Ide\PciIde0Channel0-0
+   HardwareId: 
+     Intel-PIIX4
+     Primary_IDE_Channel
+     *PNP0600Intel-PIIX4
+   Location: Primary Channel
+3. IDE Controller - \Device\NTPNP_PCI0002
+   HardwareId: 
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000
+     PCI\VEN_8086&DEV_7111&REV_01
+     PCI\VEN_8086&DEV_7111
+     PCI\VEN_8086&DEV_7111&CC_01018A
+     PCI\VEN_8086&DEV_7111&CC_0101PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+   Location: PCI bus 0, device 1, function 1
+PhysicalDeviceObjectName: \Device\0000000d
+   HardwareId: 
+     ACPI\PNP0A03
+     *PNP0A03ACPI\PNP0A03
+PhysicalDeviceObjectName: \Device\0000000c
+   HardwareId: 
+     ACPI_HAL\PNP0C08
+     *PNP0C08ACPI_HAL\PNP0C08
+6. HardwareId: acpiapic_up
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+D:\AMD64\NT5INF.CA_ was copied to C:\WINDOWS\system32\dllcache\NT5INF.CAT.
+D:\AMD64\NT5.CA_ was copied to C:\WINDOWS\system32\dllcache\NT5.CAT.
+D:\AMD64\NTPRINT.CAT was copied to C:\WINDOWS\system32\dllcache\NTPRINT.CAT.
+D:\AMD64\NT5IIS.CA_ was copied to C:\WINDOWS\system32\dllcache\NT5IIS.CAT.
+D:\AMD64\IMS.CAT was copied to C:\WINDOWS\system32\dllcache\IMS.CAT.
+D:\AMD64\IASNT4.CA_ was copied to C:\WINDOWS\system32\dllcache\IASNT4.CAT.
+D:\AMD64\WOW64.CA_ was copied to C:\WINDOWS\system32\dllcache\WOW64.CAT.
+D:\AMD64\WOWLANG.CA_ was copied to C:\WINDOWS\system32\dllcache\WOWLANG.CAT.
+D:\AMD64\MSTSWEB.CA_ was copied to C:\WINDOWS\system32\dllcache\MSTSWEB.CAT.
+D:\AMD64\OEMBIOS.CA_ was copied to C:\WINDOWS\system32\dllcache\OEMBIOS.CAT.
+C:\WINDOWS\Driver Cache\amd64\driver.cab was copied to C:\WINDOWS\system32\irclass.dll.
+C:\WINDOWS\Driver Cache\amd64\driver.cab was copied to C:\WINDOWS\system32\DRIVERS\irenum.sys.
+C:\WINDOWS\Driver Cache\amd64\driver.cab was copied to C:\WINDOWS\system32\batt.dll.
+C:\WINDOWS\Driver Cache\amd64\driver.cab was copied to C:\W\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     ACPI\PNP0A03
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     *PNP0A03
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,ACPI\PNP0A03
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PhysicalDeviceObjectName: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\0000000c
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     ACPI_HAL\PNP0C08
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     *PNP0C08
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,ACPI_HAL\PNP0C08
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,6. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,acpiapic_up
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,-------------------------------------------------------------------------------------------------------------------------------
+
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Volume: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,C:\ 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Device Path: \\?\ide#diskvbox_harddisk___________________________1.0_____#42566239663432316635612d3831393639332061#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,1. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,VBOX HARDDISK
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,, - 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\Ide\IdeDeviceP0T0L0-3
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     IDE\DiskVBOX_HARDDISK___________________________1.0_____
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     IDE\VBOX_HARDDISK___________________________1.0_____
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     IDE\DiskVBOX_HARDDISK___________________________
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     VBOX_HARDDISK___________________________1.0_____
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     GenDisk
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,IDE\DiskVBOX_HARDDISK___________________________1.0_____
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Location: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,0
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,2. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,IDE channel
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,, - 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\Ide\PciIde0Channel0-0
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     Intel-PIIX4
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     Primary_IDE_Channel
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     *PNP0600
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Intel-PIIX4
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Location: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Primary Channel
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,3. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,IDE Controller
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,, - 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\NTPNP_PCI0002
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&SUBSYS_00000000
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&REV_01
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&CC_01018A
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     PCI\VEN_8086&DEV_7111&CC_0101
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PCI\VEN_8086&DEV_7111&SUBSYS_00000000&REV_01
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,Location: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PCI bus 0, device 1, function 1
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PhysicalDeviceObjectName: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\0000000d
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     ACPI\PNP0A03
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     *PNP0A03
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,ACPI\PNP0A03
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,PhysicalDeviceObjectName: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,\Device\0000000c
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,   
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     ACPI_HAL\PNP0C08
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+     *PNP0C08
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,ACPI_HAL\PNP0C08
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,6. 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,HardwareId: 
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,acpiapic_up
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\base\ntsetup\syssetup\log.c,316,,
+
+03/01/2020 19:00:11,d:\srvrtm\basMZ

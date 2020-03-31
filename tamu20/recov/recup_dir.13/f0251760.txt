@@ -1,0 +1,7 @@
+name]
+              Specifies drive, directory, and/or files to list.
+              (Could be enhanced file specification or multiple filespecs.)
+a  /P          Pauses after each screenful of information.
+  /W          Uses wide list format.
+z  /A          Displays files with specified attributes.
+  attributes   D  Directories                R  Read-only files

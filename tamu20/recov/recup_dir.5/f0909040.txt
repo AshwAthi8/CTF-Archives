@@ -1,0 +1,29 @@
+<Schema name="http://www.microsoft.com/provisioning/Locations" 
+        xmlns="urn:schemas-microsoft-com:xml-data"
+        xmlns:dt="urn:schemas-microsoft-com:datatypes"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+
+        <ElementType name="city"     dt:type="string" dt:minLength="1" dt:maxLength="60" />
+        <ElementType name="state"    dt:type="string" dt:minLength="1" dt:maxLength="60" />
+        <ElementType name="country"  dt:type="string" dt:minLength="1" dt:maxLength="60" />
+        <ElementType name="zipcode"  dt:type="string" dt:minLength="1" dt:maxLength="60" />
+        <ElementType name="operator" dt:type="string" dt:minLength="1" dt:maxLength="100" />
+        <ElementType name="location" dt:type="string" dt:minLength="1" dt:maxLength="255" />
+        <ElementType name="address"  dt:type="string" dt:minLength="1" dt:maxLength="255" />
+
+        <ElementType name="entry" content="eltOnly" model="closed" order="seq">
+                <element type="city" minOccurs="0" maxOccurs="1"/>
+                <element type="state" minOccurs="0" maxOccurs="1"/>
+                <element type="country" minOccurs="0" maxOccurs="1"/>
+                <element type="zipcode" minOccurs="0" maxOccurs="1"/>
+                <element type="operator" minOccurs="0" maxOccurs="1"/>
+                <element type="location" minOccurs="0" maxOccurs="1"/>
+                <element type="address" minOccurs="0" maxOccurs="1"/>
+        </ElementType>
+
+        <ElementType name="hotspotfinder" content="eltOnly" model="closed" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+                <element type="entry" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+
+</Schema>

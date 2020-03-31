@@ -1,0 +1,10 @@
+ve 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{B5359CA1-EF40-4C31-8C5F-4B4CFC0D3439}'
+		}
+	}
+}
+MSFT

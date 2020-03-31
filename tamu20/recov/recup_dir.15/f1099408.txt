@@ -1,0 +1,14 @@
+ already in use.
+
+Use a new filename or close the file in use by another application.T%s
+Cannot access this file.
+
+Please verify security privileges on the network drive.?%s
+This file exists and is read-only.
+Use a different filename.*%s
+DOS critical error.
+Cannot access file.F%s
+This filename is a reserved device name.
+
+Use a different filename.NDisk %c: is write-protected.
+A file cannot be saved on a write-protected disk.

@@ -1,0 +1,34 @@
+nface"></SPAN>&nbsp;<SPAN id=spaBytes>bytes</SPAN>
+</tr>
+<tr>
+<td id=td17 style="font-family: MS Shell Dlg; font-size: 8pt;">Dimensions:
+<td id=td18 style="font-family: MS Shell Dlg; font-size: 8pt;">
+<SPAN id=_width style="font-family: MS Shell Dlg; font-size: 8pt;
+background: buttonface"></SPAN>&nbsp;
+<SPAN id=spaX>x</SPAN>&nbsp;
+<SPAN id=_height style="font-family: MS Shell Dlg; font-size: 8pt;
+background: buttonface"></SPAN>&nbsp;
+<SPAN id=spaPixels>pixels</SPAN>
+</tr>
+<tr>
+<td id=td12 style="font-family: MS Shell Dlg; font-size: 8pt;" colspan=2>&nbsp;
+<hr>
+</tr>
+<tr>
+<td id=td13 style="font-family: MS Shell Dlg; font-size: 8pt;">Created:
+<td id=td14 style="font-family: MS Shell Dlg; font-size: 8pt;">
+<TEXTAREA id=_fileCreatedDate style="font-family: MS Shell Dlg; font-size: 8pt;
+background: buttonface; overflow: hidden; width: 24em; height: 1.5em;
+border: 0px" readonly=1 wrap=physical tabindex=-1></TEXTAREA>
+</tr>
+<tr>
+<td id=td15 style="font-family: MS Shell Dlg; font-size: 8pt;">Modified:
+<td id=td16 style="font-family: MS Shell Dlg; font-size: 8pt;">
+<TEXTAREA id=_fileModifiedDate style="font-family: MS Shell Dlg; font-size: 8pt;
+background: buttonface; overflow: hidden; width: 24em; height: 1.5em;
+border: 0px" readonly=1 wrap=physical tabindex=-1></TEXTAREA>
+</tr>
+</table>
+</BODY>
+</HTML>
+GIF89a#

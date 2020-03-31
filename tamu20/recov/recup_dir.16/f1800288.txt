@@ -1,0 +1,88 @@
+="text/sitemap">
+			<param name="Name" value="installing drivers">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="upgrading drivers">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer drivers">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="URLs">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printer connections using">
+			<param name="Name" value="Connect to a printer on a network">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_net_printerW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="USB devices">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="installing USB printers">
+			<param name="Name" value="Add a printer that is attached to your computer">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_connect_local_printerW.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="vertical pages from printer">
+		<param name="Name" value="Set page orientation">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_page_orientation.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="viewing print queues">
+		<param name="Name" value="Print queue overview">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_queue_view_window.htm">
+		<param name="Name" value="View documents waiting to print">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="what's waiting to print">
+		<param name="Name" value="View documents waiting to print">
+		<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="windows and panes on your computer screen">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="documents waiting to print">
+			<param name="Name" value="Print queue overview">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_queue_view_window.htm">
+			<param name="Name" value="View documents waiting to print">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_Q_view_documents.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wizards (step-by-step guides through Windows XP)">
+		<param name="Local" value="hcp://system/errors/indexfirstlevel.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printers and printing">
+			<param name="Name" value="Add a local port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_local_port.htm">
+			<param name="Name" value="Add a port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_port.htm">
+			<param name="Name" value="Add a standard TCP/IP port">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_add_tcpip_port.htm">
+			<param name="Name" value="Install a new or updated printer driver">
+			<param name="Local" value="ms-its:C:\WINDOWS\Help\printing.chm::/print_drivers_install_updateW.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

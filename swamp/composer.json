@@ -1,0 +1,5 @@
+{
+    "require": {
+        "pyrou/morpheus": "^1.0"
+    }
+}

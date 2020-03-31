@@ -1,0 +1,13 @@
+ent name="condition">Is Later Than</argument>
+                            <argument name="value">Last week</argument>
+                        </fragment>
+                        <fragment name="User Rating">
+                            <argument name="condition">Is</argument>
+                            <argument name="value">Unrated</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

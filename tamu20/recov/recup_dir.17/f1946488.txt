@@ -1,0 +1,2 @@
+is member is ignored if a value for the StandardDay member is not supplied. The value of this member is added to the Bias member to form the bias during standard time.
+Example: 0

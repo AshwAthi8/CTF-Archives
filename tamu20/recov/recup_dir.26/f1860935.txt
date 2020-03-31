@@ -1,0 +1,392 @@
+Entry" />
+  <str name="AllowedPassportDomains" val="hotmail-int.com;msn-int.com" />
+  <str name="HttpPassportCookieDomain" val="http://passport-int.com" />
+  <str name="PassportCookieDomain" val="passport-int.com" />
+
+
+  <!-- Name of the server where greetings are stored -->
+  <str name="personalgreetings" val="http://client.manga.net/greetings" />
+
+  <!-- this URL will be run through FormatMessage -->
+  <str name="generalhelpia"      val="http://help.moonport.com/panehelp_test/en_us/frameset.asp?DIR=toc&amp;S_Text=MSN&amp;INI=msnev2.ini&amp;H_APP=MSN&amp;BrandID=&amp;Filter=&amp;H_VER=1.7" />
+
+  <str name="generalhelpnonia"   val="http://help.moonport.com/panehelp_test/en_us/frameset.asp?DIR=toc&amp;S_Text=MSN&amp;INI=msnnoniav2.ini&amp;H_APP=MSN&amp;BrandID=&amp;Filter=&amp;H_VER=1.7" />
+
+  <str name="generalhelptmpl" val="http://help.moonport.com/panehelp_test/en_us/frameset.asp?SearchTerm=%1!.1023ls!&amp;S_Text=%2!.1023ls!&amp;INI=%3!.1023ls!&amp;Filter=%4!.1023ls!&amp;H_APP=MSN%%20Explorer&amp;BrandID=&amp;H_VER=1.7"/>
+
+
+  <!-- messenger -->
+  <str name="messengerprofile"    val="http://next-profiles.moonport.com/"/> <!-- username follows -->
+
+  <!-- settings -->
+  <str name="settingsSecretQ"     val="https://next-memserv.msnia.passporttest.com/ppsecure/MSRV_ChangeSQ.srf?lc=1033&amp;cbid=486"/>
+  <str name="settingswebsites"      val="http://next.groups.moonport.com/MyWebSites" />
+  <str name="settingspublicprof"    val="http://next-profiles.moonport.com/default.asp" />
+  <str name="settingswallet"        val="https://next-wallet.passporttest.com/ppsecure/default.asp" />  
+  <str name="settingskidspp"        val="http://next-kids.passporttest.com" />
+  <str name="settingskidskid"       val="https://next-kids.passporttest.com/Kids.asp" />
+  <str name="settingskidsparent"    val="https://next-kids.passporttest.com/ppsecure/MyKids.asp" />
+  <str name="settingsprotectinfo" val="http://memberservices2.manga.net/supportservices22/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssprivacy&amp;contentPg=content/StayingSafe/stayingsafe_privacy.htm" />
+  <str name="settingssafepasswd"  val="http://memberservices2.manga.net/supportservices22netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=sspswd&amp;contentPg=content/StayingSafe/stayingsafe_passwords.htm" />
+  <str name="settingsfraud"       val="http://memberservices2.manga.net/supportservices22netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssshop&amp;contentPg=content/StayingSafe/stayingsafe_shopping.htm" />
+  <str name="settingssupport"     val="http://memberservices2.manga.net/supportservices22/help.asp" />
+  <str name="settingsdialup"      val="http://memberservices2.manga.net/supportservices22/phoneaccess.asp" />
+  <str name="settingsstatus"      val="http://memberservices2.manga.net/supportservices22/netstatus.asp" />
+  <str name="settingsspam"        val="http://memberservices2.manga.net/supportservices22/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssspam&amp;contentPg=content/StayingSafe/stayingsafe_spam.htm" />
+  <str name="settingsvirus"       val="http://memberservices2.manga.net/supportservices22/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssvirus&amp;contentPg=content/StayingSafe/stayingsafe_viruses.htm" />
+  <str name="settingscookies"     val="http://memberservices2.manga.net/supportservices22/netarticles.asp?brandkey= staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssplan&amp;contentPg=content/StayingSafe/stayingsafe_plan.htm" />
+  <str name="settingsparents"     val="http://memberservices2.manga.net/supportservices22/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssparents&amp;contentPg=content/StayingSafe/stayingsafe_parents.htm" />
+
+  <!-- tour -->
+  <str name="tour"  val="http://explorer.manga.net/tour/en/us/ms/V.2/tour-home.htm" />
+  <str name="tipstricks"  val="http://explorer.manga.net/tour/en/us/ms/V.2/tipstricks.htm" />
+  <str name="accesstour"  val="http://explorer.manga.net/tour/en/us/ms/V.2/tour_access.htm" />
+
+  <!-- Settings Promo URLs -->
+  <str name="promoupgrade"  val="https://texreg.moonport.com/msf/yst/default.asp?update=1&amp;oemcode=FREE2PAID&amp;" />
+  
+  <!-- Misc URLs --> 
+  <str name="signuphelp"      val="msn://@signup.mar@/signuphelp.htm" />
+  
+</stringtable>
+<buttons>
+    <button class="space">
+        <width>30</width>
+    </button>
+    <button class="basic" id="GoBack">
+        <command>GoBack</command>
+        <image>msn://theme/browse_back.bmp</image>
+        <label visible="false"><!--locstart toolbar.back.txt/ -->Back<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.back.tt/ -->
+          Goes back to the previous page
+          <!--locend-->
+        </tip>
+        <instrument clicks="261" />
+    </button>
+    <button class="basic" id="GoForward">
+        <command>GoForward</command>
+        <image>msn://theme/browse_forward.bmp</image>
+        <label visible="false"><!--locstart toolbar.forward.txt/ -->Forward<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.forward.tt/ -->
+          Goes forward after going back
+          <!--locend-->
+        </tip>
+        <instrument clicks="262" />
+    </button>
+    <button class="space">
+        <width>30</width>
+    </button>
+    <button class="basic" id="Home">
+        <command>Home</command>
+        <param>home</param>
+        <image>msn://theme/home.bmp</image>
+        <label><!--locstart toolbar.home.txt/ -->Home<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.home.tt/ -->
+          Your homepage
+          <!--locend-->
+        </tip>
+        <instrument clicks="48" loadtime="44" />
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="mail" id="Mail">
+        <command>Mail</command>
+        <param>mail</param>
+        <image>msn://theme/mail.bmp</image>
+        <label><!--locstart toolbar.email.txt/ -->E-mail<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.email.tt/ -->
+          Keep in touch using e-mail
+          <!--locend-->
+        </tip>
+        <instrument clicks="47" />
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="basic" id="Favorites">
+        <command>Favorites</command>
+        <image>msn://theme/favorites.bmp</image>
+        <label><!--locstart toolbar.favorites.txt/ -->Favorites<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.favorites.tt/ -->
+          Add and organize your favorite Web sites for easy retrieval
+          <!--locend-->
+        </tip>
+        <instrument clicks="54" />
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="buddies" id="OnlineBuddies">
+        <command>Friends</command>
+        <image>msn://theme/messenger.bmp</image>
+        <label><!--locstart toolbar.friends.txt/ -->Online Contacts<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.friends.tt/ -->
+          Send your friends and family an instant message!
+          <!--locend-->
+        </tip>
+        <instrument clicks="55" />
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="basic" id="PeopleAndChat">
+        <command>Navigate</command>
+        <param>chat</param>
+        <image>msn://theme/people.bmp</image>
+        <label><!--locstart toolbar.people.txt/ -->People &amp;&amp; Chat<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.people.tt/ -->
+          Create Web sites, chat, share photos and files!
+          <!--locend-->
+        </tip>
+        <instrument clicks="49" loadtime="52"/>
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="basic" id="Money">
+        <command>Navigate</command>
+        <param>money</param>
+        <image>msn://theme/money.bmp</image>
+        <label><!--locstart toolbar.money.txt/ -->Money<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.money.tt/ -->
+          Get the latest information on managing your finances with MSN Money
+          <!--locend-->
+        </tip>
+        <instrument clicks="50" loadtime="53"/>
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="basic" id="Shopping">
+        <command>Navigate</command>
+        <param>shop</param>
+        <image>msn://theme/shopping.bmp</image>
+        <label><!--locstart toolbar.shop.txt/ -->Shopping<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.shop.tt/ -->
+          Shop 'til you drop with safe and easy shopping
+          <!--locend-->
+        </tip>
+        <instrument clicks="51" loadtime="25"/>
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="basic" id="Music">
+        <command>Navigate</command>
+        <param>mediaplayer</param>
+        <image>msn://theme/music.bmp</image>
+        <label><!--locstart toolbar.music.txt/ -->Music<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.music.tt/ -->
+          Groove to your favorite tunes with MSN Music!
+          <!--locend-->
+        </tip>
+        <instrument clicks="152" />
+    </button>
+    <button class="space">
+        <width>12</width>
+    </button>
+    <button class="basic" id="Games">
+        <command>Navigate</command>
+        <param>games</param>
+        <image>msn://theme/games2.bmp</image>
+        <label><!--locstart toolbar.games.txt/ -->Games<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.games.tt/ -->
+          Play your favorite games at the Zone!
+          <!--locend-->
+        </tip>
+        <instrument clicks="32770" />
+    </button>
+
+    <button class="chevron">
+        <image>msn://theme/chevron.bmp</image>
+        <label visible="false"><!--locstart toolbar.chevron.txt/ -->More Buttons<!--locend--></label>
+        <tip>
+          <!--locstart toolbar.chevron.tt/ -->
+          More Buttons
+          <!--locend-->
+        </tip>
+    </button>
+</buttons>
+<stringtable>
+
+  <str name="home"         val="http://www.msn.com/"/>
+  <str name="mediaplayer"  val="http://g.msn.com/01enus/2"/>
+  <str name="chat"         val="http://g.msn.com/01enus/3"/>
+  <str name="money"        val="http://g.msn.com/01enus/4"/>
+  <str name="shop"         val="http://g.msn.com/01enus/5"/>
+  <str name="games"        val="http://g.msn.com/01enus/9"/>
+  <str name="greetingcard" val="http://greetingcards.msn.com/"/>
+
+  <!-- Mail URLs -->
+  <str name="firstwebcourierurl"    val="sbox/EN?rru=wc_splash%3finLang%3dEN%26gointl%3dUS"/>
+  <str name="webcourierurl"         val="sbox/EN?rru=wc_maint%3finLang%3dEN%26gointl%3dUS"/>
+  <str name="specialoffersurl"      val="sbox/EN?rru=somaintain"/>
+
+  <!-- Search Urls -->
+  <str name="search"            val="http://g.msn.com.my/0SEPEX/enushm??DI=6&PI=30759&SU=ExplorerChrome.msn.com/default.htm&#038"/>
+  <str name="searchquery"       val="http://g.msn.com.my/0SEPEX/enusascp?!%s&&DI=6&PI=30759&SU=ExplorerChrome.msn.com/default.htm&#038"/>
+  <str name="searchtopicsquery" val="http://g.msn.com.my/0SEPEX/enusrscp?!%s&&DI=6&PI=30759&SU=ExplorerChrome.msn.com/default.htm&#038"/>
+  <str name="searchsecurityurl" val="http://g.msn.com.my/0SEPEX/enushm??DI=6&PI=30759&SU=ExplorerChrome.msn.com/default.htm&#038"/>
+
+  <!-- weather url -->
+  <str name="weather"           val="http://g.msn.com/01enus/16"/>
+  <str name="cityserver"        val="http://client.msn.com/cities/en/us/ms/v2/" />
+
+
+  <!-- popup urls -->
+  <str name="cityguide"           val="http://g.msn.com/01enus/18"/>
+  <str name="createwebsites"      val="http://g.msn.com/01enus/19"/>
+
+
+  <!-- My Stuff urls -->
+  <str name="sharedstocklist"   val="http://moneycentral.msn.com/sharedstock/shstock.asp" />
+  <str name="stocksad"          val="http://arc2.msn.com/ADSAdClient31.dll?GetImage?PG=marmsb?SC=d2" />
+  <str name="stocksadclick"     val="http://arc2.msn.com/Clicker/ADSClicker31.dll?Redirect?PG=marmsb?SC=d2" />
+  <str name="stocksadiframe"    val="http://arc2.msn.com/ADSAdClient31.dll?GetAd?PG=marmsb?SC=d2" />
+  <str name="editstocks"        val="http://moneycentral.msn.com/partner/redir/mars.asp?iPage=edit"/>
+  <str name="mymoney"           val="http://moneycentral.msn.com/partner/redir/mars.asp?iPage=MyMoney"/>
+  <str name="myportfolio"       val="http://moneycentral.msn.com/partner/redir/mars.asp?iPage=pmx"/>
+  <str name="calendar"          val="http://g.msn.com/01enus/22"/>
+  <str name="radio"             val="http://g.msn.com/01enus/23"/>
+  <str name="filecabinet"       val="http://communities.msn.com/%s/_files.msnw" />
+  <str name="settings"          val="msn://rsrc/settings.htm" />
+  <str name="communities"       val="http://www.msnusers.com" />
+  <str name="mycommunities"     val="http://communities.msn.com/MyCommunities" />
+  <str name="mywebsites"        val="http://communities.msn.com/MyWebSites"/>
+  <str name="scoreboard"        val="http://g.msn.com/01enus/29"/>
+  <str name="maps"              val="http://g.msn.com/01enus/30"/>
+  <str name="travel"            val="http://g.msn.com/01enus/31"/>
+  <str name="myauto"            val="http://g.msn.com/01enus/32"/>
+  <str name="movies"            val="http://g.msn.com/01enus/33"/>
+  <str name="wishlist"          val="http://g.msn.com/01enus/34"/>
+  <str name="pictures"          val="http://g.msn.com/01enus/35"/>
+  <str name="mobile"            val="http://g.msn.com/01enus/36"/>
+  <str name="horoscope"         val="http://g.msn.com/01enus/42"/>
+
+  <str name="adclicknormal"     val="http://arc2.msn.com/Clicker/ADSClicker31.dll?Redirect?PG=margnb?SC=s4" />
+  <str name="adnormal"          val="http://arc2.msn.com/ADSAdClient31.dll?GetImage?PG=margnb?SC=s4" />
+  <str name="adnormaliframe"    val="http://arc2.msn.com/ADSAdClient31.dll?GetAd?PG=margnb?SC=s4?TF=_top" />
+
+  <!-- Signup -->
+  <str name="hmcgibin"    val="http://mail.msn.hotmail.msn.com/cgi-bin/" />
+  <str name="hmcgibinID"  val="963" />
+  <str name="hmgetpop"    val="https://bmd.hotmail.msn.com/cgi-bin/getpop" />
+  <str name="upgradepath" val="https://icereg2.msn.com/101/" />
+  <str name="signup"      val="https://icereg2.msn.com/101/en/release/" />
+  <str name="isp_a_an"    val="an" />
+  <str name="isp_name"    val="MSN Internet Access" />
+  <str name="isp_shortname" val="MSN" />
+  <str name="DeAssociate"   val="https://texreg2.msn.com/MSN8_release/SPS/removeuser.asp" />
+  <str name="TexregUrl"   val="https://texreg2.msn.com/MSN8_release/SPS/" />
+
+  <!-- Login -->
+  <str name="loginIDRU"   val="?id=2595&amp;RU=http%3A%2F%2Flogin.msn.com%2Fpassport%2F" />
+
+  <!-- Add this line for a given market/brand to enable offline support
+  <str name="OfflineEnabled" val="yes" />
+  -->
+
+  <!-- Misc URLs -->
+  <str name="logo"            val="msn://rsrc/logo.gif"/>
+  <str name="logo_online"     val="http://logo.msn.com/en-us/default/logo.gif"/>
+  <str name="generalhelpOffline" val="msn://@ui.mar@/help/offlinetoc.htm" />
+  <str name="signuphelp"      val="msn://@signup.mar@/signuphelp.htm" />
+  <str name="privacy"         val="http://www.msn.com/help/legal/privacy.htm" />
+
+  <!-- Name of the server where greetings are stored -->
+  <str name="personalgreetings" val="http://client.msn.com/greetings" />
+
+  <str name="morehelp" val="http://g.msn.com/01enus/107"/>
+
+  <str name="generalhelpia" val="http://help.msn.com/en_us/frameset.asp?DIR=toc&amp;S_Text=MSN%%20Explorer&amp;INI=msnev72.ini&amp;H_APP=MSN%%20Explorer&amp;BrandID=&amp;Filter=&amp;H_VER=1.7" />
+
+  <str name="generalhelpnonia" val="http://help.msn.com/en_us/frameset.asp?DIR=toc&amp;S_Text=MSN%%20Explorer&amp;INI=msnnoniav72.ini&amp;H_APP=MSN%%20Explorer&amp;BrandID=&amp;Filter=&amp;H_VER=1.7" />
+
+  <str name="generalhelptmpl" val="http://help.msn.com/en_us/frameset.asp?SearchTerm=%1!.1023ls!&amp;S_Text=%2!.1023ls!&amp;INI=%3!.1023ls!&amp;Filter=%4!.1023ls!&amp;H_APP=MSN%%20Explorer&amp;BrandID=&amp;H_VER=1.7"/>
+
+  <str name="generalhelpiaini"    val="msnev72.ini"/>    <!-- what to use for INI= in generalhelptmpl -->
+  <str name="generalhelpnoniaini" val="msnnoniav72.ini"/>  <!-- what to use for INI= in generalhelptmpl -->
+
+  <str name="adtemplate"  val="http://arc2.msn.com/ADSAdClient31.dll?GetAd?PG=%1!.1023ls!?SC=%2!.1023ls!?HM=%3!.1023ls!"/>
+  <!-- these are ad page codes to be used in the PG=%1 parameter in adtemplate -->
+  <str name="adpagecode_marsuib" val="MARUIB" />
+  <str name="adsizecode_LG"      val="LG" />
+
+  <!-- tour -->
+  <str name="tour"  val="http://explorer.msn.com/tour/en/us/ms/V.2/tour-home.htm" />
+  <str name="tipstricks"  val="http://explorer.msn.com/tour/en/us/ms/V.2/tipstricks.htm" />
+  <str name="accesstour"  val="http://explorer.msn.com/tour/en/us/ms/V.2/tour_access.htm" />
+
+  <!-- messenger -->
+  <str name="messengerfriendurl"   val="http://messenger.msn.com/friend/default.asp"/>
+  <str name="messengerprofile"     val="http://profiles.msn.com/"/> <!-- username follows -->
+
+  <!-- URL where the promo page is stored - need an online location too -->
+  <str name="promo_page"  val="msn://rsrc/promo.htm" />
+
+  <!-- Settings Promo URLs -->
+  <str name="promoupgrade"  val="https://icereg2.msn.com/101/en/release/default.asp?update=1&amp;oemcode=FREE2PAID&amp;" />
+  <str name="promofly"  val="http://g.msn.com/01enus/90"/>
+  <str name="promomoney"  val="http://g.msn.com/01enus/91"/>
+  <str name="promonewsletter"  val="http://g.msn.com/01enus/92"/>
+
+  <!-- Settings URLs -->
+  <str name="settingsSecretQ"     val="https://memberservicesnet.passport.com/ppsecure/MSRV_ChangeSQ.srf?lc=1033&amp;cbid=486"/>
+  <str name="settingspublicprof"  val="http://g.msn.com/01enus/101"/>
+  <str name="settingswallet"      val="http://g.msn.com/01enus/102"/>
+  <str name="settingsprotectinfo" val="http://supportservices.msn.com/us/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssprivacy&amp;contentPg= content/StayingSafe/stayingsafe_privacy.htm" />
+  <str name="settingssafepasswd"  val="http://supportservices.msn.com/us/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=sspswd&amp;contentPg= content/StayingSafe/stayingsafe_passwords.htm" />
+  <str name="settingsfraud"       val="http://supportservices.msn.com/us/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssshop&amp;contentPg= content/StayingSafe/stayingsafe_shopping.htm" />
+  <str name="settingssupport"     val="http://supportservices.msn.com/" />
+  <str name="settingscontactus"   val="http://g.msn.com/01enus/107"/>
+  <str name="settingscontactusia" val="http://g.msn.com/01enus/108"/>
+  <str name="settingsdialup"      val="http://supportservices.msn.com/us/phoneaccess.asp" />
+  <str name="settingsstatus"      val="http://supportservices.msn.com/us/netstatus.asp" />
+  <str name="settingsfeedback"    val="http://g.msn.com/01enus/111"/>
+  <str name="settingsnewsletters" val="http://g.msn.com/01enus/112"/>
+  <str name="settingsmobile"      val="http://g.msn.com/01enus/113"/>
+  <str name="settingsiabilling"   val="http://g.msn.com/01enus/115"/>
+  <str name="settingshpcontent"   val="http://g.msn.com/01enus/116"/>
+  <str name="settingshplayout"    val="http://g.msn.com/01enus/117"/>
+  <str name="settingsparental"    val="msn://@ui.mar@/settings/pc.htm"/>
+  <str name="settingsspam"        val="http://supportservices.msn.com/us/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssspam&amp;contentPg= content/StayingSafe/stayingsafe_spam.htm" />
+  <str name="settingsvirus"       val="http://supportservices.msn.com/us/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssvirus&amp;contentPg= content/StayingSafe/stayingsafe_viruses.htm" />
+  <str name="settingsnetiquette"  val="http://chat.msn.com/conduct.asp" />
+  <str name="settingschat"        val="http://g.msn.com/01enus/123"/>
+  <str name="settingswebsites"    val="http://g.msn.com/01enus/124"/>
+  <str name="settingsmnycontent"  val="http://g.msn.com/01enus/125"/>
+  <str name="settingsmnylayout"   val="http://g.msn.com/01enus/126"/>
+  <str name="settingsshopping"    val="http://g.msn.com/01enus/127"/>
+  <str name="settingscookies"     val="http://supportservices.msn.com/us/netarticles.asp?brandkey= staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssplan&amp;contentPg= content/StayingSafe/stayingsafe_plan.htm" />
+  <str name="settingsparents"     val="http://supportservices.msn.com/us/netarticles.asp?brandkey=staysafe&amp;titleimgkey=staysafe&amp;keywordkey=ssparents&amp;contentPg= content/StayingSafe/stayingsafe_parents.htm" />
+  <str name="settingsmobile"      val="http://g.msn.com/01enus/130"/>
+  <str name="settingscalendar"    val="http://g.msn.com/01enus/131"/>
+  <str name="settingsnewsletter"  val="http://g.msn.com/01enus/132"/>
+  <str name="settingsnetwise"     val="http://g.msn.com/01enus/133"/>
+  <str name="settingsencarta"     val="http://g.msn.com/01enus/134"/>
+  <str name="settingssafekids"    val="http://g.msn.com/01enus/135"/>
+  <str name="settingsstaysafe"    val="http://g.msn.com/01enus/136"/>
+  <str name="settingsprivacy"     val="http://g.msn.com/01enus/137"/>
+
+  <str name="settingskidspp"      val="http://g.msn.com/01enus/139"/>
+  <str name="settingskidskid"     val="http://g.msn.com/01enus/140"/>
+  <str name="settingskidsparent"  val="http://g.msn.com/01enus/141"/>
+  <str name="settingsupdatehistory" val="http://explorer.msn.com/setting" />
+
+  <!--  Non-URL strings for GetBrandString() (there's currently no better place to put them) -->
+  <str name="supportnum"          val="1-877-635-7019" />
+  <str name="Mailui"       val="MMPaid" />
+
+</stringtable>

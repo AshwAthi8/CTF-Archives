@@ -1,0 +1,102 @@
+OWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\comsvcs.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\comaddin.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\comaddin.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\catsrv.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\catsrv.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\catsrvps.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\catsrvps.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\catsrvut.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\catsrvut.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\clbcatex.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\clbcatex.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\stclient.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\stclient.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\comadmin.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\comadmin.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\comsnap.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\comsnap.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\comuid.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\comuid.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\es.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\es.dll
+COM+[7:6:33]: Registering C:\WINDOWS\SysWOW64\txflog.dll.
+COM+[7:6:33]: Running command: C:\WINDOWS\SysWOW64\regsvr32 /s C:\WINDOWS\SysWOW64\txflog.dll
+COM+[7:6:33]: Registering TypeLib: C:\WINDOWS\system32\Com\mtsadmin.tlb
+COM+[7:6:33]: SetFileAttributes returned 0x80070003 for menu item C:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Component Services Explorer.lnk
+COM+[7:6:33]: Creating menu item for Component Services.
+COM+[7:6:33]: Nuke registry key: HKEY_CLASSES_ROOT\AppID\{182C40F0-32E4-11D0-818B-00A0C9231C29}.
+COM+[7:6:33]: Schema version is 0; schema is incompatible
+COM+[7:6:33]: Running command: C:\WINDOWS\system32\com\migregdb.exe 0 "C:\WINDOWS\INF\COM4D4.tmp"
+COM+[7:6:33]: MigRegDB sucessfully migrated the incompatible schema
+COM+[7:6:33]: Nuke registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\COM3\Setup.
+COM+[7:6:33]: Restored remote access registry value to 1
+COM+[7:6:33]: Registering C:\WINDOWS\system32\clbcatq.dll.
+COM+[7:6:33]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\clbcatq.dll
+COM+[7:6:33]: After call to LoadLibrary - Module: C:\WINDOWS\system32\clbcatq.dll
+COM+[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\CLBCatQ.DLL
+COM+[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\CLBCatQ.DLL
+COM+[7:6:33]: Registering C:\WINDOWS\system32\comsnap.dll.
+COM+[7:6:33]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\comsnap.dll
+COM+[7:6:33]: After call to LoadLibrary - Module: C:\WINDOWS\system32\comsnap.dll
+COM+[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\comsnap.dll
+COM+[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\comsnap.dll
+COM+[7:6:33]: Registering C:\WINDOWS\system32\comuid.dll.
+COM+[7:6:33]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\comuid.dll
+COM+[7:6:33]: After call to LoadLibrary - Module: C:\WINDOWS\system32\comuid.dll
+COM+[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\comuid.dll
+COM+[7:6:33]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\comuid.dll
+COM+[7:6:33]: Registering C:\WINDOWS\system32\comsvcs.dll.
+COM+[7:6:33]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\comsvcs.dll
+COM+[7:6:33]: After call to LoadLibrary - Module: C:\WINDOWS\system32\comsvcs.dll
+COM+[7:6:33]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\comsvcs.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\comsvcs.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\catsrv.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\catsrv.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\catsrv.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\catsrv.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\catsrv.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\catsrvut.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\catsrvut.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\catsrvut.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\catsrvut.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\catsrvut.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\clbcatex.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\clbcatex.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\clbcatex.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\clbcatex.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\clbcatex.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\catsrvps.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\catsrvps.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\catsrvps.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\catsrvps.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\catsrvps.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\stclient.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\stclient.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\stclient.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\stclient.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\stclient.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\comrepl.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\comrepl.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\comrepl.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\comrepl.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\comrepl.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\comaddin.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\comaddin.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\comaddin.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\comaddin.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\comaddin.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\colbact.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\colbact.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\colbact.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\colbact.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\colbact.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\Com\comadmin.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\Com\comadmin.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\Com\comadmin.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\Com\comadmin.dll
+COM+[7:6:34]: After call to DllRegisterServer - Module: C:\WINDOWS\system32\Com\comadmin.dll
+COM+[7:6:34]: Registering C:\WINDOWS\system32\es.dll.
+COM+[7:6:34]: Before call to LoadLibrary - Module: C:\WINDOWS\system32\es.dll
+COM+[7:6:34]: After call to LoadLibrary - Module: C:\WINDOWS\system32\es.dll
+COM+[7:6:34]: Before call to DllRegisterServer - Module: C:\WINDOWS\system32\es.dll
+COM+[7:6:34]: After call to DllRe

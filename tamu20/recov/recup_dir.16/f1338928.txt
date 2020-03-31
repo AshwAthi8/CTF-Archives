@@ -1,0 +1,9 @@
+   Delete VersionIndependentProgID
+            InProcServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Both'
+            }
+        }
+    }
+}
+

@@ -1,0 +1,171 @@
+CI\VEN_9004&DEV_6915&SUBSYS_00289004 ; Single 10/100 Mb/s UTP Port
+
+; 32 bit 620XX cards
+%ANA62011TX.DeviceDesc%  = ana62011tx.ndi,      PCI\VEN_9004&DEV_6915&SUBSYS_00089004 ; Single 10/100 Mb/s UTP Port
+%ANA62011TX.DeviceDesc%  = ana62011tx.ndi,      PCI\VEN_9004&DEV_6915&SUBSYS_00099004 ; Single 10/100 Mb/s UTP Port
+%ANA62022.DeviceDesc%    = ana62022.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00109004 ; 2 each 10/100 Mb/s UTP Port
+%ANA64022.DeviceDesc%    = ana62022.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00389004 ; 2 each 10/100 Mb/s UTP Port
+%ANA62044.DeviceDesc%    = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00189004 ; 4 each 10/100 Mb/s UTP Port
+%ANA62044.DeviceDesc%    = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00199004 ; 4 each 10/100 Mb/s UTP Port
+%ANA64044.DeviceDesc%    = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00409004 ; 4 each 10/100 Mb/s UTP Port
+
+; 64 bit 620XX cards
+%ANA62011TX.DeviceDesc%  = ana62011tx.ndi,      PCI\VEN_9004&DEV_6915&SUBSYS_80089004 ; Single 10/100 Mb/s UTP Port
+%ANA62011TX.DeviceDesc%  = ana62011tx.ndi,      PCI\VEN_9004&DEV_6915&SUBSYS_80099004 ; Single 10/100 Mb/s UTP Port
+%ANA62022.DeviceDesc%    = ana62022.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_80109004 ; 2 each 10/100 Mb/s UTP Port
+%ANA62044.DeviceDesc%    = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_80189004 ; 4 each 10/100 Mb/s UTP Port
+%ANA62044.DeviceDesc%    = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_80199004 ; 4 each 10/100 Mb/s UTP Port
+%ANA62011LV.DeviceDesc%  = ana62011tx.ndi,      PCI\VEN_9004&DEV_6915&SUBSYS_00509004 ; Single 10/100 Mb/s UTP Port
+%ANA62022LV.DeviceDesc%  = ana62022.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00589004 ; 2 each 10/100 Mb/s UTP Port
+%ANA64022LV.DeviceDesc%  = ana62022.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00689004 ; 2 each 10/100 Mb/s UTP Port
+%ANA62044LV.DeviceDesc%  = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00609004 ; 4 each 10/100 Mb/s UTP Port 
+%ANA64044LV.DeviceDesc%  = ana62044.ndi,        PCI\VEN_9004&DEV_6915&SUBSYS_00709004 ; 4 each 10/100 Mb/s UTP Port
+
+;-------------------------------------------------------------------------------
+; Adaptec ANA-69011 32-bit PCI Fast Ethernet Adapter
+;
+[ana69011tx.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 6915.params.reg, adptsf.reg
+CopyFiles       = adptsf1.Copyfiles
+
+[ana69011tx.ndi.Services]
+AddService      = ADPTSF, 2, adptsf.Service, adptsf.EventLog
+
+;-------------------------------------------------------------------------------
+; Adaptec ANA-62011/TX 64-bit PCI Fast Ethernet Adapter
+;
+[ana62011tx.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 6915.params.reg, adptsf.reg
+CopyFiles       = adptsf1.Copyfiles
+
+[ana62011tx.ndi.Services]
+AddService      = ADPTSF, 2, adptsf.Service, adptsf.EventLog
+
+;-------------------------------------------------------------------------------
+; Adaptec ANA-62022 PCI Fast Ethernet Adapter
+;
+[ana62022.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 6915.params.reg, adptsf.reg
+CopyFiles       = adptsf1.Copyfiles
+
+[ana62022.ndi.Services]
+AddService      = ADPTSF, 2, adptsf.Service, adptsf.EventLog
+
+;-------------------------------------------------------------------------------
+; Adaptec ANA-62044 PCI Fast Ethernet Adapter
+;
+[ana62044.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 6915.params.reg, adptsf.reg
+CopyFiles       = adptsf1.Copyfiles
+
+[ana62044.ndi.Services]
+AddService      = ADPTSF, 2, adptsf.Service, adptsf.EventLog
+
+;-------------------------------------------------------------------------------
+;6915 common parameters from the old installation
+[6915.oldparams.reg]
+HKR, Ndi\params
+
+;-------------------------------------------------------------------------------
+; 6915 common parameters
+;these default values  can be changed by the user through the GUI
+[6915.params.reg]
+;ReceiveBuffers
+HKR, Ndi\params\RxBuffers,                  ParamDesc,   0, %ReceiveBuffers%
+HKR, Ndi\params\RxBuffers,                  default,     0, "40"
+HKR, Ndi\params\RxBuffers,                  type,        0, "enum"
+HKR, Ndi\params\RxBuffers\enum,             10,          0, "16"
+HKR, Ndi\params\RxBuffers\enum,             20,          0, "32"
+HKR, Ndi\params\RxBuffers\enum,             40,          0, "64"
+HKR, Ndi\params\RxBuffers\enum,             80,          0, "128"
+
+;WriteInvalidateEnable
+HKR, Ndi\params\MemoryWriteInvalidate,      ParamDesc,   0, %WriteInvalidateEnable%
+HKR, Ndi\params\MemoryWriteInvalidate,      default,     0, "1"
+HKR, Ndi\params\MemoryWriteInvalidate,      type,        0, "enum"
+HKR, Ndi\params\MemoryWriteInvalidate\enum, 0,           0, "0"
+HKR, Ndi\params\MemoryWriteInvalidate\enum, 1,           0, "1"
+
+;Connection Type
+HKR, Ndi\params\ConnectionType,             ParamDesc,   0, %ConnectionType%
+HKR, Ndi\params\ConnectionType,             default,     0, "8"
+HKR, Ndi\params\ConnectionType,             type,        0, "enum"
+HKR, Ndi\params\ConnectionType\enum,        "8",         0, %auto%
+HKR, Ndi\params\ConnectionType\enum,        "3",         0, %10%
+HKR, Ndi\params\ConnectionType\enum,        "103",       0, %10FD%
+HKR, Ndi\params\ConnectionType\enum,        "0F",        0, %100%
+HKR, Ndi\params\ConnectionType\enum,        "10F",       0, %100FD%
+
+
+HKR, TxChecksumOffload, 0, 0, 0
+HKR, RxChecksumOffload, 0, 0, 0
+
+;-------------------------------------------------------------------------------
+; ADPTSF Services and Driver
+;
+[adptsf.reg]
+HKR, Ndi,            Service,     0, "ADPTSF"
+HKR, Ndi\Interfaces, LowerRange,  0, "ethernet"
+HKR, Ndi\Interfaces, UpperRange,  0, "ndis5"
+HKR, ,               MediaType,   0, "1"
+HKR, ,               AdapterType, 0, "5"
+HKR, ,               AdapterCFID, 0, "69159004"
+
+[adptsf.Service]
+DisplayName     = %adptsf.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 3 ;%SERVICE_DEMAND_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\adptsf50.sys
+LoadOrderGroup  = NDIS
+
+[adptsf1.Copyfiles]
+adptsf50.sys,,,2
+
+[adptsf.EventLog]
+AddReg = adptsf.AddEventLog.reg
+
+[adptsf.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll;%%SystemRoot%%\System32\drivers\adptsf50.sys"
+HKR, , TypesSupported,   0x00010001, 7
+
+[DestinationDirs]
+adptsf1.Copyfiles = 12 
+
+;-------------------------------------------------------------------------------
+; Localizable Strings
+;
+[Strings]
+Msft                    = "Microsoft"
+ADAPTEC                 = "Adaptec, Inc."
+WriteInvalidateEnable   = "Write Invalidate Enable"
+ConnectionType          = "Connection Type"
+ReceiveBuffers          = "Receive Buffers"
+auto                    = "Autodetect (Default)"   
+10                      = "10 Mbps UTP/Half-Duplex"
+10FD                    = "10 Mbps UTP/Full-Duplex"
+100                     = "100 Mbps TX/Half-Duplex"
+100FD                   = "100 Mbps TX/Full-Duplex"
+
+
+Generic.DeviceDesc      = "Adaptec ANA690xx-Based PCI Fast Ethernet Adapter (Generic)"
+ANA69011TX.DeviceDesc   = "Adaptec ANA69011 32-bit PCI Fast Ethernet Adapter"
+ANA62011TX.DeviceDesc   = "Adaptec ANA62011/TX 64-bit PCI Fast Ethernet Adapter"
+ANA62022.DeviceDesc     = "Adaptec ANA62022 64-bit 2 port PCI Fast Ethernet Adapter"
+ANA64022.DeviceDesc     = "Adaptec ANA64022 64-bit/66 MHz 2 port PCI Fast Ethernet Adapter"
+ANA62044.DeviceDesc     = "Adaptec ANA62044 64-bit 4 port PCI Fast Ethernet Adapter"
+ANA64044.DeviceDesc     = "Adaptec ANA64044 64-bit/66 MHz 4 port PCI Fast Ethernet Adapter"
+ANA62011LV.DeviceDesc	= "Adaptec ANA62011LV 64-bit PCI Fast Ethernet Adapter"
+ANA62022LV.DeviceDesc	= "Adaptec ANA62022LV 64-bit 2 port PCI Fast Ethernet Adapter"
+ANA64022LV.DeviceDesc   = "Adaptec ANA64022LV 64-bit/66 MHz 2 port PCI Fast Ethernet Adapter"
+ANA62044LV.DeviceDesc	= "Adaptec ANA62044LV 64-bit 4 port PCI Fast Ethernet Adapter"
+ANA64044LV.DeviceDesc	= "Adaptec ANA64044LV 64-bit/66 MHz 4 port PCI Fast Ethernet Adapter"
+adptsf.Service.DispName = "Adaptec DuraLAN PCI Ethernet/Fast Ethernet driver for Windows 2000"

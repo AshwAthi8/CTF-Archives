@@ -1,0 +1,4 @@
+ementType name="HelpFile" content="eltOnly" model="closed" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+                <element type="Help" minOccurs="1" maxOccurs="1"/>
+        </ElementType>
+</Schema>

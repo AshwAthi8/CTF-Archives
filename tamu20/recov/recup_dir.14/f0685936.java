@@ -1,0 +1,5 @@
+administrator" account type.
+</DIV> 
+</DIV> </DIV> </DIV> <DIV class=HorzLine1></DIV> <DIV class=ButtonRow><BUTTON id=idOK type=submit disabled onclick="ApplyNewAccountType();" accesskey="C" title="Change this account type to the one you chose."><SPAN>C</SPAN>hange Account Type
+</BUTTON> <BUTTON id=idCancel type="reset" onclick='top.window.g_Navigator.back();' title="Close this page without saving any changes you made.">Cancel
+</BUTTON> </DIV> </DIV> <DIV style="display:none"><DIV id=idLearnAboutContent><TABLE onclick="LaunchHelp(g_bOsPersonal ? 'HelpUATAdmin2.htm' : 'HelpAccountTypes.htm'); return false;" onkeydown="OnKeySelect(2);"><TR><TD><IMG id=uaImg1 src="helpdoc.ico"/></TD> <TD id=uaLink1><A href="" tabIndex=-1>User account types</A></TD> </TR> </TABLE> </DIV> </DIV> </BODY> </HTML> 

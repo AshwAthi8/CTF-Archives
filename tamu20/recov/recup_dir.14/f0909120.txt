@@ -1,0 +1,8 @@
+   <ElementType name="LogonDomain" dt:type="string" content="textOnly"/>
+   <ElementType name="EapType" content="eltOnly">
+         <extends type="baseEap:EapType"/>
+      <element type="Username" minOccurs="0" />
+      <element type="Password" minOccurs="0" />
+      <element type="LogonDomain" minOccurs="0" />
+   </ElementType>
+</Schema>

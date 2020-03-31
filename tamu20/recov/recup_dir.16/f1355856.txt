@@ -1,0 +1,4 @@
+w64 process initialization because:
+   FileHeader.Machine (%u) != IMAGE_FILE_MACHINE_I386 (%u) or
+   OptionalHeader.SectionAlignment (%u) >= NATIVE_PAGE_SIZE (%u) or
+   NtQueryVirtualMemory on PE header failed (ntstatus %x)

@@ -1,0 +1,17 @@
+<Schema name="http://www.microsoft.com/provisioning/Help" 
+        xmlns="urn:schemas-microsoft-com:xml-data"
+        xmlns:dt="urn:schemas-microsoft-com:datatypes"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+>
+
+        <ElementType name="MHTML" dt:type="string" dt:minLength="1" dt:maxLength="2000000" />
+
+        <ElementType name="Help" content="eltOnly" model="closed" order="seq">
+                <element type="MHTML" minOccurs="1" maxOccurs="1"/>
+        </ElementType>
+
+
+        <ElementType name="HelpFile" content="eltOnly" model="closed" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+                <element type="Help" minOccurs="1" maxOccurs="1"/>
+        </ElementType>
+</Schema>

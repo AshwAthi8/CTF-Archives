@@ -1,0 +1,10 @@
+Tahoma; font-size:8pt; font-weight:bold; font-style:normal; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#FF96A867',EndColorStr='#FFA5BD84');}
+
+.SecondaryPane          {width:200px; font-family:Tahoma; font-size:8pt; font-weight:normal; font-style:normal; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#FFCCD9AD',EndColorStr='#FFA5BD84'); color:#000080; background-color:#CCD9AD; display:expression( (document.body.clientWidth > 400) ? 'block' : 'none' );}
+.SecondaryPane TABLE    {color:#000080;}
+
+.LearnAboutBox          {border:'1px solid white'; background-color:white; margin-bottom:1em;}
+.LearnAboutCaption      {height:2em; padding:'0.3em 1em'; font-family:Tahoma; font-size:8pt; font-weight:bold; font-style:normal; color:#56662D; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#FFFFFCEC',EndColorStr='#FFE0E7B8'); border-bottom:'1px solid #E0E7B8';}
+.LearnAboutBody         {padding:'1mm 2mm'; font-family:Tahoma; font-size:8pt; font-weight:normal; font-style:normal; background-color:#F6F6EC;}
+
+UL.TaskList             {list-style-type:square; list-style-image:url(taskbullet.gif);}

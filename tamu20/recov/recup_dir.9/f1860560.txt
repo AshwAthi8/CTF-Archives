@@ -1,0 +1,92 @@
+  <xsl:value-of select="url"/>
+      </xsl:attribute>
+      <xsl:attribute name="title">
+          <xsl:value-of select="@dispName"/>
+      </xsl:attribute>
+      <img ALT.loc="[! headlines.img.tt/Tooltip for msn logo]" ALT="MSN" border="0" id="idImgHeadline">
+         <xsl:attribute name="src">
+            <xsl:choose>
+               <xsl:when test=".[@dispName = 'Politics -- from Slate']">
+                  msn://theme/msn_slate.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'Slate']">
+                  msn://theme/msn_slate.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSNBC News']">
+                  msn://theme/msnbc_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'eShop Featured Specials']">
+                  msn://theme/e_shop_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSNBC Local News']">
+                  msn://theme/msnbc_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'Computing Central']">
+                  msn://theme/computing_central_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'Microsoft TechNet']">
+                  msn://theme/technet_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'Microsoft Office Update']">
+                  msn://theme/office_update_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN UnderWire']">
+                  msn://theme/underwire_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'WindowsMedia.com Events']">
+                  msn://theme/windows_media.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'Expedia.com']">
+                  msn://theme/expedia_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN HomeAdvisor']">
+                  msn://theme/home_advisor_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'CarPoint']">
+                  msn://theme/car_point_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN Live Events']">
+                  msn://theme/msn_chat_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'WomenCentral']">
+                  msn://theme/women_central_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN Health']">
+                  msn://theme/msn_health.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN Careers']">
+                  msn://theme/msn_careers_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN Entertainment']">
+                  msn://theme/msn_entertainment_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'Internet Guide']">
+                  msn://theme/msn_internet_guide.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MoneyCentral Headlines']">
+                  msn://theme/msn_money_central.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN Gaming Zone']">
+                  msn://theme/game_zone_logo.gif
+               </xsl:when>
+               <xsl:when test=".[@dispName = 'MSN City Guides']">
+                  msn://theme/city_guide_logo.gif
+               </xsl:when>
+               <xsl:otherwise>
+                  msn://rsrc/msn_default_logo.gif
+               </xsl:otherwise>
+            </xsl:choose>
+         </xsl:attribute>
+      </img>
+    </a>
+    <a onclick="idDatastore.Increment((idImgHeadline.src == 'msn://rsrc/msn_default_logo.gif') ? 240 : 241, 1);">
+      <xsl:attribute name="href">
+          <xsl:value-of select="url"/>
+      </xsl:attribute>
+      <div style="margin-right : 20px; margin-left : 20px;">
+         <xsl:value-of select="title" />
+      </div>
+    </a>
+</xsl:template>
+</xsl:stylesheet>
+GIF89ax

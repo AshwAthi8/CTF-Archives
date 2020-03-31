@@ -1,0 +1,221 @@
+[3/1/2020 19:00:24] LogFile Open.
+[3/1/2020 19:00:24] Entering OCEntry; Component = <ims> (0)
+[3/1/2020 19:00:24] 	Function = OC_PREINITIALIZE (0), Param1 = 00000003 (3), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:00:24] Leaving OCEntry.  Return=1
+[3/1/2020 19:00:24] Entering OCEntry; Component = <ims> (0)
+[3/1/2020 19:00:24] 	Function = OC_INIT_COMPONENT (1), Param1 = 00000000 (0), Param2 = 00000000001A9FF0 (00000000001A9FF0)
+[3/1/2020 19:00:24] DetectPreviousInstallations(iis_smtp): IM_FRESH
+[3/1/2020 19:00:24] DetectPreviousInstallations(iis_nntp): IM_FRESH
+[3/1/2020 19:00:24] DetectPreviousInstallations(iis_smtp_docs): IM_FRESH
+[3/1/2020 19:00:24] DetectPreviousInstallations(iis_nntp_docs): IM_FRESH
+[3/1/2020 19:00:24] DetectPreviousInstallations(): IM_UPGRADE10
+[3/1/2020 19:00:24] No other SMTP servers detected, installing IMS.
+[3/1/2020 19:00:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:00:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:00:24] 	Function = OC_QUERY_STATE (12), Param1 = 00000000 (0), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:00:24] Original state is: DEFAULT
+[3/1/2020 19:00:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:00:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:00:24] 	Function = OC_CALC_DISK_SPACE (6), Param1 = 00000001 (1), Param2 = 000000000021ABA0 (000000000021ABA0)
+[3/1/2020 19:00:24] DetermineInstallMode(ims): IM_FRESH
+[3/1/2020 19:00:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:00:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <> (4)
+[3/1/2020 19:00:24] 	Function = OC_WIZARD_CREATED (16), Param1 = 00000000 (0), Param2 = 0000000000020034 (0000000000020034)
+[3/1/2020 19:00:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:05:55] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:05:55] 	Function = OC_QUERY_STATE (12), Param1 = 00000001 (1), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:05:55] Current state is: DEFAULT
+[3/1/2020 19:05:55] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <> (4)
+[3/1/2020 19:06:24] 	Function = OC_QUEUE_FILE_OPS (7), Param1 = 00000000 (0), Param2 = 000000000026AD70 (000000000026AD70)
+[3/1/2020 19:06:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:06:24] 	Function = OC_QUEUE_FILE_OPS (7), Param1 = 00000000 (0), Param2 = 000000000026AD70 (000000000026AD70)
+[3/1/2020 19:06:24] GetSubcompActionFromCheckboxState(iis_smtp): Old state=0, state=0
+[3/1/2020 19:06:24] GetSubcompAction(): iis_smtp=AT_DO_NOTHING
+[3/1/2020 19:06:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <> (4)
+[3/1/2020 19:06:24] 	Function = OC_QUERY_STEP_COUNT (9), Param1 = 00000000 (0), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:06:24] Leaving OCEntry.  Return=2
+[3/1/2020 19:06:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:06:24] 	Function = OC_QUERY_STEP_COUNT (9), Param1 = 00000000 (0), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:06:24] Leaving OCEntry.  Return=2
+[3/1/2020 19:06:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <> (4)
+[3/1/2020 19:06:24] 	Function = OC_ABOUT_TO_COMMIT_QUEUE (14), Param1 = 00000000 (0), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:06:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:24] Entering OCEntry; Component = <ims> (0), Subcomponent = <iis_smtp> (0)
+[3/1/2020 19:06:24] 	Function = OC_ABOUT_TO_COMMIT_QUEUE (14), Param1 = 00000000 (0), Param2 = 0000000000000000 (0000000000000000)
+[3/1/2020 19:06:24] GetSubcompActionFromCheckboxState(iis_smtp): Old state=0, state=0
+[3/1/2020 19:06:24] GetSubcompAction(): iis_smtp=AT_DO_NOTHING
+[3/1/2020 19:06:24] Leaving OCEntry.  Return=0
+[3/1/2020 19:06:29] Entering OCEntry; Component = <ims> (0), Subcomponent = <> (4)
+[3/1/2020 19
+
+Initialize setup: OCGEN.DLL 03/01/20 19:00:24
+[wbem - OC_PREINITIALIZE] - complete
+[wbem - OC_INIT_COMPONENT] - complete
+[wbemmsi - OC_PREINITIALIZE] - complete
+[wbemmsi - OC_INIT_COMPONENT] - complete
+[wmaccess - OC_PREINITIALIZE] - complete
+[wmaccess - OC_INIT_COMPONENT] - complete
+[rootautoupdate - OC_PREINITIALIZE] - complete
+[rootautoupdate - OC_INIT_COMPONENT] - complete
+[ieaccess - OC_PREINITIALIZE] - complete
+[ieaccess - OC_INIT_COMPONENT] - complete
+[oeaccess - OC_PREINITIALIZE] - complete
+[oeaccess - OC_INIT_COMPONENT] - complete
+[wmpocm - OC_PREINITIALIZE] - complete
+[wmpocm - OC_INIT_COMPONENT] - complete
+[multim - OC_PREINITIALIZE] - complete
+[multim - OC_INIT_COMPONENT] - complete
+[games - OC_PREINITIALIZE] - complete
+[games - OC_INIT_COMPONENT] - complete
+[accessutil - OC_PREINITIALIZE] - complete
+[accessutil - OC_INIT_COMPONENT] - complete
+[commapps - OC_PREINITIALIZE] - complete
+[commapps - OC_INIT_COMPONENT] - complete
+[accessopt - OC_PREINITIALIZE] - complete
+[accessopt - OC_INIT_COMPONENT] - complete
+[pinball - OC_PREINITIALIZE] - complete
+[pinball - OC_INIT_COMPONENT] - complete
+[mswordpad - OC_PREINITIALIZE] - complete
+[mswordpad - OC_INIT_COMPONENT] - complete
+[rootautoupdate - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[multim - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[wmpocm - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[pinball - OC_QUERY_STATE] - complete
+[wbemmsi - OC_QUERY_STATE] - complete
+[multim - OC_QUERY_STATE] - complete
+[ieaccess - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[oeaccess - OC_QUERY_STATE] - complete
+[multim - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[wmaccess - OC_QUERY_STATE] - complete
+[commapps - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[commapps - OC_QUERY_STATE] - complete
+[wbem - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessopt - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[mswordpad - OC_QUERY_STATE] - complete
+[wmaccess - OC_CALC_DISK_SPACE] - complete
+[rootautoupdate - OC_CALC_DISK_SPACE] - complete
+[ieaccess - OC_CALC_DISK_SPACE] - complete
+[oeaccess - OC_CALC_DISK_SPACE] - complete
+[wmpocm - OC_CALC_DISK_SPACE] - complete
+[wbem - OC_WIZARD_CREATED] - complete
+[wbemmsi - OC_WIZARD_CREATED] - complete
+[wmaccess - OC_WIZARD_CREATED] - complete
+[rootautoupdate - OC_WIZARD_CREATED] - complete
+[ieaccess - OC_WIZARD_CREATED] - complete
+[oeaccess - OC_WIZARD_CREATED] - complete
+[wmpocm - OC_WIZARD_CREATED] - complete
+[multim - OC_WIZARD_CREATED] - complete
+[games - OC_WIZARD_CREATED] - complete
+[accessutil - OC_WIZARD_CREATED] - complete
+[commapps - OC_WIZARD_CREATED] - complete
+[accessopt - OC_WIZARD_CREATED] - complete
+[pinball - OC_WIZARD_CREATED] - complete
+[mswordpad - OC_WIZARD_CREATED] - complete
+[wbem - OC_QUERY_STATE] - complete
+[wbemmsi - OC_QUERY_STATE] - complete
+[wmaccess - OC_QUERY_STATE] - complete
+[rootautoupdate - OC_QUERY_STATE] - complete
+[ieaccess - OC_QUERY_STATE] - complete
+[oeaccess - OC_QUERY_STATE] - complete
+[wmpocm - OC_QUERY_STATE] - complete
+[mswordpad - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[accessutil - OC_QUERY_STATE] - complete
+[commapps - OC_QUERY_STATE] - complete
+[commapps - OC_QUERY_STATE] - complete
+[multim - OC_QUERY_STATE] - complete
+[multim - OC_QUERY_STATE] - complete
+[multim - OC_QUERY_STATE] - complete
+[accessopt - OC_QUERY_STATE] - complete
+[pinball - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[games - OC_QUERY_STATE] - complete
+[ga [   ]    } 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - fax) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_CALC_DISK_SPACE' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnCalcDiskSpace (fax - fax) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]       fxocFile_CalcDiskSpace (fax) 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]          fxocUtil_GetKeywordValue (fax - FaxCleanInstall ) 
+[03/01/20 19:00:24] [0x010c] [   ]          { 
+[03/01/20 19:00:24] [0x010c] [   ]          } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]          fxocFile_CalcDiskSpace, SubComponentID: 'fax', Section: 'Fax.CleanInstall', bIsBeingAdded: '1', rc=0x0 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 0) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 1) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 2) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]       Sharing not supported in this SKU, don't show wizard page 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 3) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 4) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 5) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_REQUEST_PAGES' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnSetupRequestPages (fax - 6) 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - (null)) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/2

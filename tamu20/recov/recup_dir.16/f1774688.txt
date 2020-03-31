@@ -1,0 +1,120 @@
+tm","11db"
+"\WINDOWS\system32\oobe\setup\migdial.htm"="migdial.htm","10302"
+"\WINDOWS\system32\oobe\setup\prvcyms.htm"="prvcyms.htm","2023"
+"\WINDOWS\system32\oobe\setup\refdial.htm"="refdial.htm","8c91"
+"\WINDOWS\system32\oobe\setup\regdial.htm"="regdial.htm","eac1"
+"\WINDOWS\system32\qmgr.dll"="qmgr.dll","af2c2"
+"\WINDOWS\system32\qmgrprxy.dll"="qmgrprxy.dll","e9ad"
+"\WINDOWS\system32\bitsprx2.dll"="bitsprx2.dll","4a62"
+"\WINDOWS\system32\bitsprx3.dll"="bitsprx3.dll","bb21"
+"\WINDOWS\SysWOW64\qmgrprxy.dll"="wqmgrprxy.dll","d89f"
+"\WINDOWS\SysWOW64\bitsprx2.dll"="wbitsprx2.dll","9ed1"
+"\WINDOWS\SysWOW64\bitsprx3.dll"="wbitsprx3.dll","5f46"
+"\WINDOWS\system32\wuapi.dll"="wuapi.dll","a0718"
+"\WINDOWS\system32\wuauclt.exe"="wuauclt.exe","2fcc2"
+"\WINDOWS\system32\wuaucpl.cpl"="wuaucpl.cpl","35f58"
+"\WINDOWS\system32\wups.dll"="wups.dll","b345"
+"\WINDOWS\system32\wups2.dll"="wups2.dll","11466"
+"\WINDOWS\system32\wuaueng.dll"="wuaueng.dll","22a8c7"
+"\WINDOWS\system32\wuauserv.dll"="wuauserv.dll","33ab"
+"\WINDOWS\system32\wucltui.dll"="wucltui.dll","290ff"
+"\WINDOWS\system32\wuweb.dll"="wuweb.dll","1877b"
+"\WINDOWS\INF\wuau.adm"="wuau.adm","17ff4"
+"\WINDOWS\SysWOW64\wuapi.dll"="wwuapi.dll","77cd8"
+"\WINDOWS\SysWOW64\wuweb.dll"="wwuweb.dll","2658c"
+"\WINDOWS\SysWOW64\wups.dll"="wwups.dll","1018f"
+"\WINDOWS\SysWOW64\wups2.dll"="wwups2.dll","71d3"
+"\WINDOWS\SysWOW64\wuaueng.dll"="wwuaueng.dll","13818d"
+"\WINDOWS\SysWOW64\wuaucpl.cpl"="wwuaucpl.cpl","37587"
+"\WINDOWS\SysWOW64\Macromed\Flash\flash.ocx"="flash.ocx","d486a"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0003\_Setup.dll"="wisetu003.dll","12d4b"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0005\_Setup.dll"="wisetu005.dll","d04b"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0006\_Setup.dll"="wisetu006.dll","ef6e"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0007\_Setup.dll"="wisetu007.dll","8c8d"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0008\_Setup.dll"="wisetu008.dll","12bb2"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0009\_Setup.dll"="wisetu009.dll","98fd"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\000a\_Setup.dll"="wisetu00a.dll","11a8b"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\000b\_Setup.dll"="wisetu00b.dll","96bc"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\000e\_Setup.dll"="wisetu00e.dll","12365"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0010\_Setup.dll"="wisetu010.dll","130f3"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0011\_Setup.dll"="wisetu011.dll","a7dd"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0012\_Setup.dll"="wisetu012.dll","971c"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0013\_Setup.dll"="wisetu013.dll","9d2d"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0014\_Setup.dll"="wisetu014.dll","ac10"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0015\_Setup.dll"="wisetu015.dll","15c86"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0019\_Setup.dll"="wisetu019.dll","d17a"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\001a\_Setup.dll"="wisetu01a.dll","1433b"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\001b\_Setup.dll"="wisetu01b.dll","132f3"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\001d\_Setup.dll"="wisetu01d.dll","1556f"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\001e\_Setup.dll"="wisetu01e.dll","edaf"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\001f\_Setup.dll"="wisetu01f.dll","1424c"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0021\_Setup.dll"="wisetu021.dll","130ea"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\0024\_Setup.dll"="wisetu024.dll","117e4"
+"\WINDOWS\SysWOW64\InstallShield\setupdir\002d\_Setup.dll"="wisetu02d.dll","1575e"
+"\WINDOWS\Sy
+<html>
+<head>
+<title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.RegDial_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;"><ID id="diapup_title">Connecting...</ID></span>
+
+    <br>
+    <span class="text-primary">
+        <span TABINDEX=-1 id=spnISPName>
+            <!-- Dynamic text -->
+        </span>
+
+        <br><br>
+        <ID id="dialup_txt1">Dialing phone number: </ID>
+        <span TABINDEX=-1 id=spnDialing DIR=LTR></span>
+    </span>
+
+    <br><br>
+    <span id=spnRegDialStatus class="text-primary"></span>
+
+    <br><br>
+    <span id=spnDialingImage1 class="text-primary">
+    <center>
+    <p><img src="../images/dialup.gif" width="324" height="72"></p>
+    </center>
+    </span>
+
+    </td>
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=2 ACCESSKEY="S" TABINDEX=-1 style="visibility:hidden"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>S</u>kip</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnBack" class="buttons" TABINDEX=3 ACCESSKEY="B"><label for=btnBack><id id="LocalBtnBack_Text"><u>B</u>ack</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=4 ACCESSKEY="N" TABINDEX=-1 style="visibility:hidden"><label for=btnNext><id id="LocalBtnNext_Text"><u>N</u>ext</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

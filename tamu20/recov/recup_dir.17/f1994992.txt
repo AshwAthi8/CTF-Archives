@@ -1,0 +1,10 @@
+se;
+}
+
+//kill the right mouse
+function killrightmouse(){
+	window.event.returnValue = false;
+	window.event.cancelBubble = true;
+	return false;	
+}
+

@@ -1,0 +1,10 @@
+                      val zoom = s 'wmpprop:mediacenter.videoZoom'
+                        val stretchToFit = s 'wmpprop:mediacenter.videoStretchToFit'
+                        val backgroundColor = s 'black'
+                    }
+                }
+            }
+        }
+    }
+}
+

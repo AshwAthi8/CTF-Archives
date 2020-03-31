@@ -1,0 +1,37 @@
+><AlwaysDownload>1</AlwaysDownload></Product><Product><FriendlyName>
+
+MSN Messenger
+
+</FriendlyName><PackageType>MSI</PackageType><PackageName>msnmsgs.msi</PackageName><ProductCode>{A26D7C8B-875D-48E2-BED1-7168268D022A}</ProductCode><MinVersion>6.1.0155</MinVersion><PackageVersion>6.1.0207</PackageVersion><PackageUrlPath>http://download.microsoft.com/download/8/9/0/89024674-eb65-4383-8944-944a9d072e8e/</PackageUrlPath><PackageRelativePath>MSN9Components\</PackageRelativePath><downloadSize>5080576</downloadSize><Dependencies><ProductCode>{B441AC66-E022-B773-888C-09588C83785F}</ProductCode></Dependencies><PostInstallSoftDependencies><ProductCode>{4F1CECBC-670F-4DAA-81D6-944B12453E00}</ProductCode></PostInstallSoftDependencies><VersionDetection><Type>MSIUpgradeCode</Type></VersionDetection><Description>
+
+Connect with family, collaborate with friends, and personalize how you communicate.
+
+</Description><Order>1</Order><Billboards><BillboardFile>bb_messenger.htm</BillboardFile><BillboardFile>bb_messenger_photoswap.htm</BillboardFile></Billboards><InstallBytesRequired>23068672</InstallBytesRequired></Product><Product><PackageType>MSI</PackageType><ProductCode>{90110409-6000-11D3-8CFE-0150048383C9}</ProductCode><MinVersion>10.000.0.0</MinVersion><PackageVersion>10.000.0.0</PackageVersion><PackageUrlPath /><Dependencies><ProductCode>{B441AC66-E022-B773-888C-09588C83785F}</ProductCode></Dependencies><VersionDetection><Type>MSIProductCode</Type></VersionDetection><SubstituteProductCodes><Code name="office XP">{90280409-6000-11D3-8CFE-0050048383C9}</Code></SubstituteProductCodes><Hidden>1</Hidden><NoInstall>1</NoInstall></Product><Product><FriendlyName>
+  
+  Microsoft Office Outlook Connector for MSN
+  
+  </FriendlyName><PackageType>MSI</PackageType><PackageName>msnolcon.msi</PackageName><ProductCode>{DE704216-C6DD-46B5-B8E1-819E28A13C0E}</ProductCode><MinVersion>1.0.5256.0</MinVersion><PackageVersion>1.0.5256.0</PackageVersion><PackageUrlPath>http://download.microsoft.com/download/8/9/0/89024674-eb65-4383-8944-944a9d072e8e/</PackageUrlPath><PackageRelativePath /><downloadSize>1344512</downloadSize><Dependencies><ProductCode>{B441AC66-E022-B773-888C-09588C83785F}</ProductCode></Dependencies><VersionDetection><Type>MSIUpgradeCode</Type></VersionDetection><RequiredPermits><SCID>3c71e7e553cb49bdafe80931b8ad2b5a</SCID></RequiredPermits><Description>
+  
+  Use Microsoft Office Outlook 2002 (XP) or later to access your MSN information, including e-mail messages, calendar, tasks, notes, reminders, and contacts.
+  
+</Description><Order>15</Order><AlwaysDownload>1</AlwaysDownload><shouldUninstall>1</shouldUninstall><Billboards><BillboardFile>bb_outlookconnector.htm</BillboardFile></Billboards><InstallBytesRequired>3145728</InstallBytesRequired></Product><Product><FriendlyName>
+
+Picture It! Express
+
+</FriendlyName><PackageType>MSI</PackageType><PackageName>pi9.msi</PackageName><ProductCode>{DBA8B9E1-C6FF-4624-9598-73D3B41A0900}</ProductCode><InstallCmd>MSNSETUP=1 NOIE=1 NOMEMCHECK=1 ALTEULA=1</InstallCmd><MinVersion>9.000.0730.0</MinVersion><PackageVersion>9.000.1305.0</PackageVersion><PackageUrlPath>http://download.microsoft.com/download/8/9/0/89024674-eb65-4383-8944-944a9d072e8e/</PackageUrlPath><PackageRelativePath>MSN9Components\</PackageRelativePath><downloadSize>32482304</downloadSize><shouldUninstall>1</shouldUninstall><Dependencies><ProductCode>{B441AC66-E022-B773-888C-09588C83785F}</ProductCode><ProductCode>MSNClient</ProductCode></Dependencies><VersionDetection><Type>MSIProductCode</Type></VersionDetection><UninstallBeforeInstall>1</UninstallBeforeInstall><SubstituteProductCodes><Code name="PIE retail">{DBA8B9E1-C6FF-4624-9598-73D3B41A0901}</Code><Code name="PIE Premium">{DBA8B9E1-C6FF-4624-9598-73D3B41A0903}</Code><Code name="PIE Pro">{DBA8B9E1-C6FF-4624-9598-73D3B41A0904}</Code><Code name="DIS Editor">{DBA8B9E1-C6FF-4624-9598-73D3B41A0905}</Code></SubstituteProductCodes><RequiredPermits><SCID>60F7ABE7CBE04528937E936BF29C3483</SCID></RequiredPermits><Description>
+
+Fix up your photos with great photo-editing features, like brightness, contrast, crop, rotate, and red-eye correction. Fix photos one at a time or in a batch. When you're done, print your photos using specialized layouts. (Requires MSN Explorer.)
+
+</Description><Indent>5</Indent><Order>6</Order><Hidden>0</Hidden><Billboards><BillboardFile>bb_photostory.htm</BillboardFile><BillboardFile>bb_photo_email.htm</BillboardFile></Billboards><InstallBytesRequired>70000000</InstallBytesRequired></Product><Product><FriendlyName>
+
+Picture It! Library
+
+</FriendlyName><PackageType>MSI</PackageType><PackageName>pod.msi</PackageName><InstallCmd>WMURL=16978</InstallCmd><ProductCode>{9F7FC79B-3059-4264-9450-39EB368E3220}</ProductCode><MinVersion>9.000.0730.0</MinVersion><PackageVersion>9.000.1305.0</PackageVersion><PackageUrlPath>http://download.microsoft.com/download/8/9/0/89024674-eb65-4383-8944-944a9d072e8e/</PackageUrlPath><PackageRelativePath>MSN9Components\</PackageRelativePath><downloadSize>13944832</downloadSize><shouldUninstall>1</shouldUninstall><UninstallBeforeInstall>1</UninstallBeforeInstall><Dependencies><ProductCode>{B441AC66-E022-B773-888C-09588C83785F}</ProductCode><ProductCode>MSNClient</ProductCode><ProductCode>{DBA8B9E1-C6FF-4624-9598-73D3B41A0900}</ProductCode></Dependencies><VersionDetection><Type>MSIProductCode</Type></VersionDetection><SubstituteProductCodes><Code><!-- DIS Library -->{9F7FC79B-3059-4264-9450-39EB368E3225}</Code></SubstituteProductCodes><RequiredPermits><SCID>60F7ABE7CBE04528937E936BF29C3483</SCID></RequiredPermits><Description>
+
+Easily find, archive, or import your photos. (Requires MSN Explorer and Picture It! Express.)
+
+</Description><Indent>5</Indent><Order>8</Order><Hidden>0</Hidden><Billboards><BillboardFile>bb_photoplus_02.htm</BillboardFile></Billboards><InstallBytesRequired>50000000</InstallBytesRequired></Product><Product><FriendlyName>
+
+Windows Installer
+
+</FriendlyName><PackageType>INSTMSI</PackageType><PackageName>instmsia.exe</PackageName><ProductCode>{B441AC66-E022-B773-888C-09588C83785F}</ProductCode><MinVersion>2</MinVersion><PackageVersion>2.0.2600.2</PackageVersion><PackageUrlPath>http://download.microsoft.com/download/8/9/0/89024674-eb65-4383-8944-944a9d072e8e/</PackageUrlPath><PackageRelativePath>MSN9Components\</PackageRelativePath><downloadSize>1709272</downloadSize><InstallBytesRequired>5400000</InstallBytesRequired><TimeToInstall>15000</TimeToInstall><InstallCmd>/c:"msiinst /delayrebootq"</InstallCmd><VersionDetection><Type>Module</Type><Name>msi.dll</Name><DefaultToSystemDir>1</DefaultToSystemDir><LocationRegKey>SOFTWARE\Microsoft\Windows\CurrentVersion\Installer</LocationRegKey><LocationRegKeyValue>InstallerLocation</LocationRegKeyValue></VersionDetection><PlatformOverride platform="Win2K"><PackageName>instmsiw.exe</PackageName><downloadSize>1822848</downloadSize><InstallBytesRequired>6300000</InstallBytesRequired></PlatformOverride><Hidden>1</Hidden></Product></root>

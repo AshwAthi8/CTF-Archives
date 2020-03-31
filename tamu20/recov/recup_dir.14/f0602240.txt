@@ -1,0 +1,170 @@
+0:24] [0x010c] [   ]       Init Util module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       Init File Module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       Init MAPI Module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (TRUE) 
+[03/01/20 19:00:24] [0x010c] [   ]       Init Print Module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       Init Registry Module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       Init Service Module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       Init Unattended module 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]          prv_SaveKeyValue 
+[03/01/20 19:00:24] [0x010c] [   ]          { 
+[03/01/20 19:00:24] [0x010c] [   ]          } (TRUE) 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       fxocUpg_Init 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]       } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]       OnInitComponent, ComponentID: 'fax', SourcePath: 'D:\', Component Inf Handle: 0x3ab8640 
+[03/01/20 19:00:24] [0x010c] [   ]       Failed to open fax setup registry, dwReturn = 0x2 
+[03/01/20 19:00:24] [0x010c] [   ]       fxState_DumpSetupState 
+[03/01/20 19:00:24] [0x010c] [   ]       { 
+[03/01/20 19:00:24] [0x010c] [   ]          prv_IsXPOrDotNetUpgrade 
+[03/01/20 19:00:24] [0x010c] [   ]          { 
+[03/01/20 19:00:24] [0x010c] [WRN]             FindFirstFile C:\WINDOWS\system32\FXSAPI.DLL failed (ec: 2) 
+[03/01/20 19:00:24] [0x010c] [   ]          } (FALSE) 
+[03/01/20 19:00:24] [0x010c] [   ]          prv_IsXPOrDotNetUpgrade 
+[03/01/20 19:00:24] [0x010c] [   ]          { 
+[03/01/20 19:00:24] [0x010c] [   ]             Different SKU upgrade, this is not repair 
+[03/01/20 19:00:24] [0x010c] [   ]          } (FALSE) 
+[03/01/20 19:00:24] [0x010c] [   ]          IsCleanInstall: '1' 
+[03/01/20 19:00:24] [0x010c] [   ]          IsStandAlone: '0' 
+[03/01/20 19:00:24] [0x010c] [   ]          IsUpgrade (0 = No, 1 = Win31, 2 = Win9X, 3 = Win2K, 4 = XP/.NET, 5=Repair: '0' 
+[03/01/20 19:00:24] [0x010c] [   ]          IsUnattended: '0' 
+[03/01/20 19:00:24] [0x010c] [   ]          ComponentID: 'fax' 
+[03/01/20 19:00:24] [0x010c] [   ]          Source Path: 'D:\' 
+[03/01/20 19:00:24] [0x010c] [   ]          Unattend File: '' 
+[03/01/20 19:00:24] [0x010c] [   ]          Expected OC Manager Version: 0x50000 
+[03/01/20 19:00:24] [0x010c] [   ]          Current OC Manager Version:  0x50000 
+[03/01/20 19:00:24] [0x010c] [   ]       } 
+[03/01/20 19:00:24] [0x010c] [   ]    } (ERROR_SUCCESS) 
+[03/01/20 19:00:24] [0x010c] [   ]  } 
+[03/01/20 19:00:24] [0x010c] [   ]  FaxOcmSetupProc (fax - fax) 
+[03/01/20 19:00:24] [0x010c] [   ]  { 
+[03/01/20 19:00:24] [0x010c] [   ]    FaxOcmSetup proc called with function 'OC_QUERY_STATE' 
+[03/01/20 19:00:24] [0x010c] [   ]    prv_OnQueryState 
+[03/01/20 19:00:24] [0x010c] [   ]    { 
+[03/01/20 19:00:24] [0x010c] [   ]       HKLM\Software\Microsoft\Fax\Setup does not exist, assume component is not installed 
+[03/01/20 19:00:24] [0x010c][3/1/2020 19:0:24] LogFile Open. [***** Search on FAIL/MessageBox keywords for failures *****].
+[3/1/2020 19:0:24] Initial thread locale=409
+[3/1/2020 19:0:24] returned from France fix with locale 409 
+[3/1/2020 19:0:24] OC_PREINITIALIZE:[iis]   End.  Return=1 (OCFLAG_UNICODE)
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:[iis,(null)] Start.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:3/25/2005 12:00:00 A_______ 6.0.3790.1830: 6.0.3790.1830 (srv03_sp1_rtm.050324-1447): AMD64: C:\WINDOWS\system32\Setup\iis.dll
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:Set UnAttendFlag:OFF (File='')
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:CmdLine=setup -newsetup
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:DebugLevel=3.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:DebugValidateHeap=1.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:GlobalFastLoad=1.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:SetInstallMode=IM_FRESH
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:CRegKey::QueryValue(): SourcePath Not found.  WARNING.  code=0x2
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:Old InetPub='C:\Inetpub'.  Does not exist.  we'll use the default. WARNING.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:NTCurrentBuildNumber=3790
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32781=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32768=C:\WINDOWS\system32\inetsrv
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32769=C:\Inetpub\ftproot
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32770=C:\Inetpub\wwwroot
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32771=C:\Inetpub\iissamples
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32772=C:\Inetpub\scripts
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32773=C:\Inetpub
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32774=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32780=C:
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32778=C:\WINDOWS\Java\TrustLib
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32777=C:\Program Files
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32779=C:\Inetpub\webpub
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32801=UT_NONE
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32800=MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:32802=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33000=IUSR_MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33001=IWAM_MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33002=IUSR_MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33003=IUSR_MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33004=IWAM_MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33005=IUSR_MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:33006=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:34000=\AMD64
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:ProcessSection.[OC_INIT_COMPONENT].Start.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:...ProcessEntry:100=90...
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:34100={}
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:...ProcessEntry:100=90...
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:34101={0}
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:...ProcessEntry:100=90...
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:34102={}
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:...ProcessEntry:100=90...
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:...ProcessEntry:100=5...
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:Calling ProcessSection:PushOldServerAcctRestoreValue:Start.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:ProcessSection.[PushOldServerAcctRestoreValue].Start.
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:...ProcessEntry:100=41...
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:Calling ProcessSection:PushOldServerAcctRestoreValue:End.return=1
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:=======================
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csMachineName=\\MACHINENAME
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csUsersDomain=NT AUTHORITY
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csUsersAccount=SYSTEM
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csWinDir=C:\WINDOWS
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csSysDir=C:\WINDOWS\system32
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csSysDrive=C:
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathNTSrcDir=C:\$WIN_NT$.~LS
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathSource=D:\
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathOldInetsrv=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathInetsrv=C:\WINDOWS\system32\inetsrv
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathInetpub=C:\Inetpub
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathFTPRoot=C:\Inetpub\ftproot
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathWWWRoot=C:\Inetpub\wwwroot
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathWebPub=C:\Inetpub\webpub
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathProgramFiles=C:\Program Files
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathIISSamples=C:\Inetpub\iissamples
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathScripts=C:\Inetpub\scripts
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathASPSamp=C:\Inetpub\ASPSamp
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathAdvWorks=C:\Inetpub\ASPSamp\AdvWorks
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathIASDocs=C:\WINDOWS\system32\inetsrv\Docs
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathOldPWSFiles=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathOldPWSSystemFiles=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:OS=NT
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_eNTOSType=OT_NTW (Workstation)
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPlatform=AMD64
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_dwNumberOfProcessors=1
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:OSVersion=5
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_dwOSBuild=1847752512
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_dwOSServicePack=0x0
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_fTCPIP Exists=1
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_eUpgradeType=UT_NONE
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_eInstallMode=IM_FRESH
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_dwSetupMode=SETUPMODE_FRESH | SETUPMODE_CUSTOM
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_bPleaseDoNotInstallByDefault=0
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_fNTOperationFlags=0x0
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_fNTGuiMode=1
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_fInvokedByNT=1
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_fNtWorkstation=1
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_fUnattended=0
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csUnattendFile=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:m_csPathSrcDir=
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:=======================
+[3/1/2020 19:0:24] OC_INIT_COMPONENT:[iis,(null)]   End.  Return=0 
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_webdav] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_common] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_internetdataconnector] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_inetmgr] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_asp] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_ftp] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_www] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_QUERY_STATE:[iis,iis_serversideincludes] End. OCSELSTATETYPE_ORIGINAL. IM_FRESH. Return=SubcompUseOcManagerDefault
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:[iis,(null)]   End. Return=0
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [iis]		= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [iis_common]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [iis_inetmgr]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [iis_www_parent]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [iis_www]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [iis_ftp]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [IIS_ASP]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [IIS_InternetDataConnector]	= AT_DO_NOTHING. Original=0, Current=0.
+[3/1/2020 19:0:24] OC_WIZARD_CREATED:Action of [IIS_ServerSideINDX(

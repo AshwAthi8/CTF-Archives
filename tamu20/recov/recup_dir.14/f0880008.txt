@@ -1,0 +1,15 @@
+h"
+HKCR,"CLSID\%CLSID_USD%",,,"%DISPLAY_NAME%"
+HKCR,"CLSID\%CLSID_USD%\ProgId",,,"StillImage.VideoCapture.1"
+HKCR,"CLSID\%CLSID_USD%\VersionIndependentProgId",,,"StillImage.VideoCapture.1"
+
+
+
+[Strings]
+CLSID_USD="{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+
+; Localize these strings
+DISPLAY_NAME="WIA Video Snapshot USD"
+
+
+

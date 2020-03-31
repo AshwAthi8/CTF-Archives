@@ -1,0 +1,35 @@
+f server names delimited by semicolons -->
+   <!-- each server name can be represented by regular -->
+   <!-- expressions -->   
+   <ElementType name="ServerNames" dt:type="string" content="textOnly"/>
+   <!-- The thumbprint of a trusted root CA is -->
+   <!-- a hexadecimal string that contains -->
+   <!-- the SHA-1 hash of the certificate. -->
+   <ElementType name="TrustedRootCA" dt:type="bin.hex" content="textOnly"/>
+
+   <ElementType name="ServerValidation" model="closed" content="eltOnly">
+      <element type="DisableUserPromptForServerValidation" minOccurs="0" />
+      <element type="ServerNames" minOccurs="0" />
+      <element type="TrustedRootCA" minOccurs="0" maxOccurs="*" />
+   </ElementType>
+   <ElementType 
+         name="FastReconnect" 
+         dt:type="enumeration" 
+         dt:values="0 1 true false" 
+         content="textOnly"
+   />
+   <ElementType 
+         name="InnerEapOptional" 
+         dt:type="enumeration" 
+         dt:values="0 1 true false" 
+         content="textOnly"
+   />
+   <ElementType name="EapType" content="eltOnly">
+      <element type="ServerValidation" minOccurs="0"/>
+      <element type="FastReconnect" minOccurs="0"/>
+      <element type="InnerEapOptional" minOccurs="0"/>
+      <element type="baseEap:Eap" minOccurs="0" maxOccurs="*" />
+         <extends type="baseEap:EapType"/>
+   </ElementType>
+</Schema>
+

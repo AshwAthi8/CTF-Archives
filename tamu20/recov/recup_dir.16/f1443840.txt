@@ -1,0 +1,19 @@
+ent name="condition">Is At Least</argument>
+                            <argument name="value">3 stars</argument>
+                        </fragment>
+                        <fragment name="Sort by">
+                            <argument name="value">Effective Rating</argument>
+                            <argument name="condition">Descending</argument>
+                        </fragment>
+                    </sourceFilter>
+                </querySet>
+                <filter id="{BC5E21B0-504C-46F6-82BF-FB975C911AD6}" name="Microsoft Auto Playlist Filter -- Limits auto playlists by count, size or duration">
+                    <fragment name="LimitByDuration">
+                        <argument name="Number">1</argument>
+                        <argument name="Format">hours</argument>
+                    </fragment>
+                </filter>
+            </smartPlaylist>
+        </seq>
+    </body>
+</smil>

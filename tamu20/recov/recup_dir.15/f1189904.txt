@@ -1,0 +1,14 @@
+WS\system32\WBEM\vds.mfl
+(Sun Mar 01 19:06:32 2020.389703) : Parsing MOF file: C:\WINDOWS\system32\WBEM\vss.mof
+(Sun Mar 01 19:06:32 2020.389734) : Finished compiling file:C:\WINDOWS\system32\WBEM\vss.mof
+(Sun Mar 01 19:06:32 2020.389734) : Parsing MOF file: C:\WINDOWS\system32\WBEM\vss.mfl
+(Sun Mar 01 19:06:32 2020.389734) : Finished compiling file:C:\WINDOWS\system32\WBEM\vss.mfl
+(Sun Mar 01 19:07:05 2020.422953) : Parsing MOF file: C:\WINDOWS\system32\Wbem\RSoP.mof
+(Sun Mar 01 19:07:05 2020.423015) : Finished compiling file:C:\WINDOWS\system32\Wbem\RSoP.mof
+(Sun Mar 01 19:07:05 2020.423015) : Parsing MOF file: C:\WINDOWS\system32\Wbem\RSoP.mfl
+(Sun Mar 01 19:07:05 2020.423093) : Finished compiling file:C:\WINDOWS\system32\Wbem\RSoP.mfl
+(Sun Mar 01 19:07:05 2020.423109) : Parsing MOF file: C:\WINDOWS\system32\Wbem\SceRsop.mof
+(Sun Mar 01 19:07:05 2020.423109) : Finished compiling file:C:\WINDOWS\system32\Wbem\SceRsop.mof
+(Sun Mar 01 19:07:06 2020.423750) : Parsing MOF file: C:\WINDOWS\system32\wbem\wscenter.mof
+(Sun Mar 01 19:07:06 2020.423750) : Finished compiling file:C:\WINDOWS\system32\wbem\wscenter.mof
+(Sun Mar 01 19:07:06 2020.423750) : Done!

@@ -1,0 +1,583 @@
+var L_RELEASECONTROL_Text = "&nbsp;&nbsp;Release <U>C</U>ontrol";
+var L_HELPEEREJECTRC_Text = "Your request to take control of remote computer was rejected by ";
+var L_HELPEETAKECONTROL_Text = " has stopped control.";
+var L_CONTROL1_Text = "You now are sharing control of ";
+var L_CONTROL2_Text = "'s computer. Click in ";
+var L_CONTROL3_Text = "'s screen to get started.\n\nControl will return to ";
+var L_CONTROL4_Text = " if you press the ESC key, or any key sequence or combination including the ESC key (such as ESC+TAB)";
+var L_ERRRCPERMDENIED1_Text = "Control of remote computer is not allowed.";
+var L_ERRRCERROR_Text = "Request to take control of remote computer failed.";
+var L_64DISABLED_Text = "The person you are using Remote Assistance with has tried to start a voice connection with you. Remote Assistance does not support voice connections in the version of Windows you are using.";
+var L_ERRVOIP1_Text = "A voice connection could not be established. Please try again later.";;
+var L_ERRVOIP2_Text = "The necessary hardware and/or configuration to use a voice connection is not available;'Start Talking' will be disabled for the remainder of this Remote Assistance session.";
+function ShowVoiceHelp()
+{
+var oShell = new ActiveXObject("WScript.Shell");
+var oFSO = new ActiveXObject("Scripting.FileSystemObject");
+var vArgs = new Array(2);
+vArgs[0] = oShell;
+vArgs[1] = oFSO;
+ret=window.showModalDialog("..\\common\\VoiceFirewallmsg.htm",vArgs,"DialogWidth:405px;DialogHeight:168px;Status:no;scroll:no");
+}
+function Helper_SetupControlChannel()
+{
+;
+try
+{
+;
+if(null == g_oSAFRemoteAssistanceHelper.m_oSAFRemoteDesktopChannelMgr)
+{
+g_oSAFRemoteAssistanceHelper.m_oSAFRemoteDesktopChannelMgr = g_oSAFRemoteAssistanceHelper.m_oSAFRemoteDesktopClient.ChannelManager;
+}
+;
+g_oSAFRemoteAssistanceHelper.m_oControlChannel = g_oSAFRemoteAssistanceHelper.m_oSAFRemoteDesktopChannelMgr.OpenDataChannel( "71" );
+var ip;
+var oSetting = new ActiveXObject("rcbdyctl.setting");
+ip = oSetting.GetIPAddress;
+Helper_SendIPAddress(ip);
+g_oSAFRemoteAssistanceHelper.m_oControlChannel.OnChannelDataReady = function()
+{ Helper_ControlChannelDataReadyHandler(); }
+}
+catch(error)
+{
+FatalError( L_ERRFATAL_Text, error );
+}
+;
+return;
+}
+function Helper_ControlChannelDataReadyHandler()
+{
+;
+var ControlData = null;
+try
+{
+ControlData = g_oSAFRemoteAssistanceHelper.m_oControlChannel.ReceiveChannelData();
+}
+catch(error)
+{
+FatalError(L_ERRFATAL_Text, error);
+}
+SoundBeep();
+Helper_ParseControlData ( ControlData );
+;
+return;
+}
+function Helper_ParseControlData ( ControlData )
+{
+;
+var Doc = new ActiveXObject("microsoft.XMLDOM");
+var RCCommand = null;
+var szCommandName = null;
+try
+{
+if( false == Doc.loadXML( ControlData ))
+{
+FatalError ( Doc.parseError.reason );
+}
+RCCommand = Doc.documentElement;
+szCommandName = RCCommand.getAttribute( "NAME" );
+idCtx.minimized = false;
+idCtx.bringToForeground();
+if( szCommandName == "SCREENINFO" )
+{
+g_oSAFRemoteAssistanceHelper.m_UserWidth = RCCommand.getAttribute( "WIDTH" );
+g_oSAFRemoteAssistanceHelper.m_UserHeight = RCCommand.getAttribute( "HEIGHT" );
+g_oSAFRemoteAssistanceHelper.m_UserColorDepth = RCCommand.getAttribute( "COLORDEPTH" );
+if( true == false )
+{
+var szSchemaVersion = null;
+var szControlChannelVersion = null;
+try
+{
+szSchemaVersion = RCCommand.getAttribute( "SCHEMAVERSION" );
+if( szSchemaVersion != "5.1" )
+{
+alert(L_ERRSCHEMAVERSION_Text);
+}
+}
+catch(error)
+{
+alert(L_ERRSCHEMAVERSION_Text);
+}
+try
+{
+szControlChannelVersion = RCCommand.getAttribute( "CONTROLCHANNELVERSION" );
+if( szControlChannelVersion != "5.1" )
+{
+alert(L_ERRCHANNELVERSION_Text);
+}
+}
+catch(error)
+{
+alert(L_ERRSCHEMAVERSION_Text);
+}
+}
+Helper_SendVersionInfo();
+}
+else if( szCommandName == "DISCONNECTRC" )
+{
+g_oSAFRemoteAssistanceHelper.m_bUserDisconnect = true;
+RCDisconnect();
+}
+else if( szCommandName == "FILEXFER" )
+{
+var vArgs = new Array(13);
+vArgs[0] = 1;
+vArgs[1] = g_oSAFRemoteAssistanceHelper.m_oControlChannel;
+vArgs[2] = g_oSAFRemoteAssistanceHelper.m_oSAFRemoteDesktopChannelMgr;
+vArgs[3] = RCCommand.getAttribute( "FILENAME" );
+vArgs[4] = RCCommand.getAttribute( "FILESIZE" );
+vArgs[5] = RCCommand.getAttribute( "CHANNELID" );
+vArgs[6] = g_oSAFRemoteAssistanceHelper.m_oFso;
+vArgs[7] = g_oSAFRemoteAssistanceHelper.m_oRCFileDlg;
+vArgs[8] = g_oSAFRemoteAssistanceHelper.m_oSAFClassFactory;
+vArgs[9] = g_oSAFRemoteAssistanceHelper.m_szUserName;
+vArgs[10] = new ActiveXObject("RACplDlg.RAEventLog");
+vArgs[11] = g_oSAFRemoteAssistanceHelper.m_szHelpeeIP;
+vArgs[12] = g_oSAFRemoteAssistanceHelper.m_szLocalUser;
+var subWin = window.showModelessDialog( "hcp://system/Remote Assistance/Interaction/Common/RCFileXfer.htm", vArgs, "dialogwidth:" + "405" + "px;dialogHeight:" + "179" + "px;status:no;resizable:no;help:no");
+AddOpenSubWin( subWin );
+}
+else if (szCommandName == "ACCEPTRC")
+{
+parent.frames.idFrameTools.idTB.SetVisibility( "btnTakeControl", false);
+parent.frames.idFrameTools.idTB.SetVisibility( "btnReleaseControl", true);
+try
+{
+var oLogger = new ActiveXObject("RACplDlg.RAEventLog");
+var args = new Array(2);
+args[0] = g_oSAFRemoteAssistanceHelper.m_szLocalUser;
+args[1] = g_oSAFRemoteAssistanceHelper.m_szUserName;
+oLogger.LogRemoteAssistanceEvent(0,5,args);
+}
+catch(e)
+{
+}
+parent.frames.idFrameStatus.Helper_UpdateStatus( L_INCONTROL_Text );
+var vArgs = new Array(1);
+vArgs[0] = L_CONTROL1_Text + g_oSAFRemoteAssistanceHelper.m_szUserName + L_CONTROL2_Text + g_oSAFRemoteAssistanceHelper.m_szUserName + L_CONTROL3_Text + g_oSAFRemoteAssistanceHelper.m_szUserName + L_CONTROL4_Text;
+var vRetVal = window.showModelessDialog( "hcp://system/Remote Assistance/Interaction/Common/ErrorMsgs.htm", vArgs, "dialogwidth:470px;dialogHeight:188px;status:no;resizable:no;help:no" );
+AddOpenSubWin( vRetVal );
+g_oSAFRemoteAssistanceHelper.m_bRCEnabled = true;
+}
+else if (szCommandName == "REJECTRC")
+{
+var vArgs = new Array(1);
+vArgs[0] = L_HELPEEREJECTRC_Text + " " + g_oSAFRemoteAssistanceHelper.m_szUserName;
+parent.frames.idFrameTools.idTB.SetState( "btnTakeControl", true );
+parent.frames.idFrameTools.g_bTakeControlDisabled = false;
+parent.frames.idFrameStatus.Helper_UpdateStatus( L_SCREENVIEWONLY_Text );
+var vRetVal = window.showModelessDialog( "hcp://system/Remote Assistance/Interaction/Common/ErrorMsgs.htm", vArgs, "dialogwidth:405px;dialogHeight:165px;status:no;resizable:no;help:no" );
+AddOpenSubWin( vRetVal );
+}
+else if (szCommandName == "TAKECONTROL")
+{
+try
+{
+var oLogger = new ActiveXObject("RACplDlg.RAEventLog");
+var args = new Array(2);
+args[0] = g_oSAFRemoteAssistanceHelper.m_szLocalUser;
+args[1] = g_oSAFRemoteAssistanceHelper.m_szUserName;
+oLogger.LogRemoteAssistanceEvent(0,6,args);
+}
+catch(e)
+{
+}
+var vArgs = new Array(1);
+vArgs[0] = g_oSAFRemoteAssistanceHelper.m_szUserName + L_HELPEETAKECONTROL_Text;
+parent.frames.idFrameTools.idTB.SetVisibility( "btnReleaseControl", false);
+parent.frames.idFrameTools.idTB.SetVisibility( "btnTakeControl", true);
+parent.frames.idFrameTools.idTB.SetState( "btnTakeControl", true );
+parent.frames.idFrameTools.g_bTakeControlDisabled = false;
+g_oSAFRemoteAssistanceHelper.m_bRCEnabled = false;
+parent.frames.idFrameStatus.Helper_UpdateStatus( L_SCREENVIEWONLY_Text );
+var vRetVal = window.showModelessDialog( "hcp://system/Remote Assistance/Interaction/Common/ErrorMsgs.htm", vArgs, "dialogwidth:405px;dialogHeight:165px;status:no;resizable:no;help:no" );
+AddOpenSubWin( vRetVal );
+}
+else if (szCommandName == "ESCRC")
+{
+try
+{
+var oLogger = new ActiveXObject("RACplDlg.RAEventLog");
+var args = new Array(2);
+args[0] = g_oSAFRemoteAssistanceHelper.m_szLocalUser;
+args[1] = g_oSAFRemoteAssistanceHelper.m_szUserName;
+oLogger.LogRemoteAssistanceEvent(0,6,args);
+}
+catch(e)
+{
+}
+var vArgs = new Array(1);
+vArgs[0] = g_oSAFRemoteAssistanceHelper.m_szUserName + L_OR_Text + g_oSAFRemoteAssistanceHelper.m_szLocalUser + L_ESCHIT_Text;
+parent.frames.idFrameTools.idTB.SetVisibility( "btnReleaseControl", false);
+parent.frames.idFrameTools.idTB.SetVisibility( "btnTakeControl", true);
+parent.frames.idFrameTools.idTB.SetState( "btnTakeControl", true );
+parent.frames.idFrameTools.g_bTakeControlDisabled = false;
+g_oSAFRemoteAssistanceHelper.m_bRCEnabled = false;
+parent.frames.idFrameStatus.Helper_UpdateStatus( L_SCREENVIEWONLY_Text );
+var vRetVal = window.showModelessDialog( "hcp://system/Remote Assistance/Interaction/Common/ErrorMsgs.htm", vArgs, "dialogwidth:405px;dialogHeight:165px;status:no;resizable:no;help:no" );
+AddOpenSubWin( vRetVal );
+}
+else if ( szCommandName == "DENIEDRC" )
+{
+var vArgs = new Array(1);
+vArgs[0] = L_ERRRCPERMDENIED1_Text;
+parent.frames.idFrameTools.idTB.SetState( "btnTakeControl", true );
+parent.frames.idFrameTools.g_bTakeControlDisabled = false;
+parent.frames.idFrameStatus.Helper_UpdateStatus( L_SCREENVIEWONLY_Text );
+var vRetVal = window.showModalDialog( "hcp://system/Remote Assistance/Interaction/Common/ErrorMsgs.htm", vArgs, "dialogwidth:405px;dialogHeight:165px;status:no;resizable:no;help:no" );
+}
+else if ( szCommandName == "ERRORRC" )
+{
+var vArgs = new Array(1);
+vArgs[0] = L_ERRRCERROR_Text;
+parent.frames.idFrameTools.idTB.SetState( "btnTakeControl", true );
+parent.frames.idFrameStatus.Helper_UpdateStatus( L_SCREENVIEWONLY_Text );
+var vRetVal = window.showModelessDialog( "hcp://system/Remote Assistance/Interaction/Common/ErrorMsgs.htm", vArgs, "dialogwidth:405px;dialogHeight:165px;status:no;resizable:no;help:no" );
+}
+else if (szCommandName == "PRESTARTYES")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+if (false == g_bVoipConnected)
+{
+try
+{
+Helper_SendControlCommand ( "VOIPPREGO" );
+}
+catch (e)
+{
+}
+}
+else
+{
+try
+{
+g_oSAFRemoteAssistanceHelper.m_oSAFIntercomClient.Disconnect();
+}
+catch (e)
+{
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+g_bStartEnabled = true;
+}
+}
+}
+else if (szCommandName == "VOIPPREGO")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+try
+{
+alert(L_64DISABLED_Text);
+Helper_SendControlCommand( "VOIPQNO" );
+return;
+var vArgs = new Array(1);
+vArgs[0] = L_VOIPSTART_Text;
+var vRetVal = window.showModalDialog( "hcp://system/Remote Assistance/Interaction/Common/VOIPMsgs.htm", vArgs, "dialogwidth:405px;dialogHeight:165px;status:no;resizable:no;help:no" );
+if( 0 == vRetVal)
+{
+try
+{
+try
+{
+var oICFAllowList = g_oSAFRemoteAssistanceHelper.m_oSAFClassFactory.CreateObject_ICFAllowList();
+oICFAllowList.Add();
+}
+catch(error)
+{
+}
+parent.g_StartTalking = 0;
+var bShieldedMode = true;
+bShieldedMode = !(parent.frames.idFrameTools.CanOpenPort("\\pchealth\\helpctr\\binaries\\helpctr.exe", 0));
+if (bShieldedMode)
+{
+parent.g_StartTalking = 1;
+ShowVoiceHelp();
+Helper_SendControlCommand( "VOIPGONO" );
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+g_bStartEnabled = true;
+}
+else
+{
+Helper_SendControlCommand( "VOIPPREGO2" );
+}
+}
+catch (e)
+{
+}
+}
+else
+{
+Helper_SendControlCommand( "VOIPQNO" );
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+g_bStartEnabled = true;
+}
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "VOIPQNO")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+try
+{
+parent.g_StartTalking = 1;
+DisplayMessage( L_ERRVOIP1_Text );
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+g_bStartEnabled = true;
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "VOIPGONO")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+try
+{
+DisplayMessage( L_ERRVOIP1_Text );
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+g_bStartEnabled = true;
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "VOIPGO")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+var szKey = null;
+var szIPPort = null;
+var szTemp = null;
+var szIP = null;
+var szRAIP = null;
+var i = 0;
+var j = 0;
+var bFoundIP = false;
+try
+{
+szKey = RCCommand.getAttribute( "VOIPGOKEY" );
+szTemp = RCCommand.getAttribute( "VOIPIPLIST" );
+while ((szTemp != null) && (i != -1) && (!bFoundIP))
+{
+i = szTemp.indexOf(";");
+if (i != -1)
+szIPPort = szTemp.slice(0,i);
+else
+szIPPort = szTemp;
+j = szIPPort.indexOf(":");
+if (j == -1)
+{
+szIP = szIPPort;
+}
+else
+szIP = szIPPort.slice(0,j);
+szRAIP = g_oSAFRemoteAssistanceHelper.m_szHelpeeIP;
+if (szIP == szRAIP)
+{
+bFoundIP = true;
+}
+if (i != -1)
+{
+szTemp = szTemp.slice(i+1);
+}
+}
+if (!bFoundIP)
+{
+szIPPort = g_oSAFRemoteAssistanceHelper.m_szHelpeeIP;
+}
+g_oSAFRemoteAssistanceHelper.m_oSAFIntercomClient.Connect(szIPPort, szKey);
+}
+catch (e)
+{
+frames.idFrameTools.Helper_onVoiceDisabled();
+}
+}
+else if (szCommandName == "PRESTARTNO")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+try
+{
+g_bStartEnabled = true;
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "PRESTART")
+{
+if (false == g_bVoIPEnabled)
+{
+return;
+}
+try
+{
+frames.idFrameTools.idTB.SetState( "btnVoice", false );
+if (false == g_bStartEnabled )
+{
+Helper_SendControlCommand ( "PRESTARTNO" );
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+}
+else
+{
+Helper_SendControlCommand ( "PRESTARTYES" );
+}
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "DISABLEVOICE")
+{
+try
+{
+if (g_bVoIPEnabled == true)
+{
+DisplayMessage( L_ERRVOIP2_Text );
+g_bVoIPEnabled = false;
+g_stateVoipYou = 2;
+frames.idFrameTools.idTB.SetState( "btnVoice", false );
+}
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "WIZARDGOOD")
+{
+try
+{
+g_stateVoipYou = 1;
+if ( (g_stateVoipYou < 2) && (g_stateVoipMe < 2) )
+{
+g_bVoIPEnabled = true;
+frames.idFrameTools.idTB.SetState( "btnVoice", true );
+}
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "WIZARDBAD")
+{
+try
+{
+g_bVoIPEnabled = false;
+DisplayMessage( L_ERRVOIP2_Text );
+g_stateVoipYou = 2;
+frames.idFrameTools.idTB.SetState( "btnVoice", false );
+}
+catch (error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+}
+else if (szCommandName == "BANDWTOHIGH")
+{
+g_VoipBandwidth = 1;
+g_oSAFRemoteAssistanceHelper.m_oSAFIntercomClient.SamplingRate = 2;
+}
+else if (szCommandName == "BANDWTOLOW")
+{
+g_VoipBandwidth = 0;
+g_oSAFRemoteAssistanceHelper.m_oSAFIntercomClient.SamplingRate = 1;
+}
+}
+catch(error)
+{
+FatalError( L_ERRFATAL_Text, error );
+}
+;
+return;
+}
+function Helper_SendVersionInfo()
+{
+;
+var Doc = null;
+var RCCommand = null;
+try
+{
+Doc = new ActiveXObject("microsoft.XMLDOM");
+RCCommand = Doc.createElement( "RCCOMMAND" );
+RCCommand.setAttribute( "NAME", "HELPERVERSION" );
+RCCommand.setAttribute( "SCHEMAVERSION", "5.1" );
+RCCommand.setAttribute( "CONTROLCHANNELVERSION", "5.1" );
+g_oSAFRemoteAssistanceHelper.m_oControlChannel.SendChannelData( RCCommand.xml );
+}
+catch(error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+;
+}
+function Helper_SendControlCommand( szCommandName )
+{
+;
+var Doc = null;
+var RCCommand = null;
+try
+{
+Doc = new ActiveXObject("microsoft.XMLDOM");
+RCCommand = Doc.createElement( "RCCOMMAND" );
+RCCommand.setAttribute( "NAME", szCommandName );
+g_oSAFRemoteAssistanceHelper.m_oControlChannel.SendChannelData( RCCommand.xml );
+}
+catch(error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+;
+return;
+}
+function Helper_SendIPAddress( szIP )
+{
+;
+var Doc = null;
+var RCCommand = null;
+try
+{
+Doc = new ActiveXObject("microsoft.XMLDOM");
+RCCommand = Doc.createElement( "RCCOMMAND" );
+RCCommand.setAttribute( "NAME", "EXPERTIP" );
+RCCommand.setAttribute( "EXPERTIPDATA", szIP );
+g_oSAFRemoteAssistanceHelper.m_oControlChannel.SendChannelData( RCCommand.xml );
+}
+catch(error)
+{
+FatalError( L_RCCTL_Text, error );
+}
+;
+return;
+}
+function Helper_ResetHelpee()
+{
+;
+Helper_SendControlCommand( "REMOTECTRLEND" );
+;
+return;
+}

@@ -1,0 +1,6 @@
+mgmt must use a high authentication level (i.e. no less than RPC_C_AUTHN_LEVEL_PKT_PRIVACY) when they connect to winmgmt (i.e. in the call to obtain the IWbemServices interface) or SetProxyBlanket on their IWbemServices ptr. If they are local to winmgmt then this is not a concern because their authentication level is as good as RPC_C_AUTHN_LEVEL_PKT_PRIVACY as well as their client request never goes over the wire to get to the winmgmt. 
+If Password and Username are left null, the provider does not care. 
+If the provider determines that the authentication level is too low and a Password or Username has been specified then WBEM_E_ENCRYPTED_CONNECTION_REQUIRED will be returned. 
+The method can return the following values:  
+0 - Success. Reboot required. 
+Other - For integer values other than those listed above, refer to Win32 error code documentation.

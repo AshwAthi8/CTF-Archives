@@ -1,0 +1,740 @@
+SP%=      DISERV_P30_V2_PCI,        PCI\VEN_1133&DEV_E015&SUBSYS_E0151133
+%DISERV_B2_PCI_V2_DISP%=       DISERV_B2_V2_PCI,         PCI\VEN_1133&DEV_E018&SUBSYS_E0181133
+%DISERV_B2F_PCI_V2_DISP%=      DISERV_B2F_V2_PCI,        PCI\VEN_1133&DEV_E01A&SUBSYS_E01A1133
+%DISERV_P8_E1T1_V3_PCI_DISP%=  DISERV_P8_V3_PCI,         PCI\VEN_1133&DEV_E01C&SUBSYS_1C011133
+%DISERV_P24_T1_V3_PCI_DISP%=   DISERV_P24_V3_PCI,        PCI\VEN_1133&DEV_E01C&SUBSYS_1C021133
+%DISERV_P30_E1_V3_PCI_DISP%=   DISERV_P30_V3_PCI,        PCI\VEN_1133&DEV_E01C&SUBSYS_1C031133
+%DISERV_V_P_E1T1_V3_PCI_DISP%= DISERV_V_P_V3_PCI,        PCI\VEN_1133&DEV_E01C&SUBSYS_1C041133
+%DISERV_V_P24_T1_V3_PCI_DISP%= DISERV_V_P24_V3_PCI,      PCI\VEN_1133&DEV_E01C&SUBSYS_1C051133
+%DISERV_V_P30_E1_V3_PCI_DISP%= DISERV_V_P30_V3_PCI,      PCI\VEN_1133&DEV_E01C&SUBSYS_1C061133
+%DISERV_ANALOG_4PORT_DISP%=    DISERV_ANALOG_4PORT_PCI,  PCI\VEN_1133&DEV_E024&SUBSYS_E0241133
+%DISERV_ANALOG_8PORT_DISP%=    DISERV_ANALOG_8PORT_PCI,  PCI\VEN_1133&DEV_E028&SUBSYS_E0281133
+; RAS only driver
+%DISERV_COMBINED_DISP%=        DISERV_RAS_DRIVER,      DivaServerCombined
+; special Diva Server cards for Siemens Cornet-N
+;  %DISERV_B8_V2_PCI_DISP%=       DISERV_B8_V2_PCI,       PCI\VEN_1133&DEV_E013&SUBSYS_00148001
+;  %DISERV_P30_V2_PCI_DISP%=      DISERV_P30_V2_PCI,      PCI\VEN_1133&DEV_E015&SUBSYS_00148001
+;  %DISERV_B2_PCI_V2_DISP%=       DISERV_B2_V2_PCI,       PCI\VEN_1133&DEV_E018&SUBSYS_00148001
+;  %DISERV_P8_E1T1_V3_PCI_DISP%=  DISERV_P8_V3_PCI,       PCI\VEN_1133&DEV_E01C&SUBSYS_1C071133
+;  %DISERV_P24_T1_V3_PCI_DISP%=   DISERV_P24_V3_PCI,      PCI\VEN_1133&DEV_E01C&SUBSYS_1C081133
+;  %DISERV_P30_E1_V3_PCI_DISP%=   DISERV_P30_V3_PCI,      PCI\VEN_1133&DEV_E01C&SUBSYS_1C091133
+;  %DISERV_V_P_E1T1_V3_PCI_DISP%= DISERV_V_P_V3_PCI,      PCI\VEN_1133&DEV_E01C&SUBSYS_1C0A1133
+;  %DISERV_V_P24_T1_V3_PCI_DISP%= DISERV_V_P24_V3_PCI,    PCI\VEN_1133&DEV_E01C&SUBSYS_1C0B1133
+;  %DISERV_V_P30_E1_V3_PCI_DISP%= DISERV_V_P30_V3_PCI,    PCI\VEN_1133&DEV_E01C&SUBSYS_1C0C1133
+
+[ControlFlags]
+ExcludeFromSelect = PCI\VEN_1133&DEV_E013
+ExcludeFromSelect = PCI\VEN_1133&DEV_E015
+ExcludeFromSelect = PCI\VEN_1133&DEV_E018
+ExcludeFromSelect = PCI\VEN_1133&DEV_E01A
+ExcludeFromSelect = PCI\VEN_1133&DEV_E01C
+ExcludeFromSelect = PCI\VEN_1133&DEV_E024
+ExcludeFromSelect = PCI\VEN_1133&DEV_E028
+ExcludeFromSelect = DivaServerCombined
+
+
+;**********************************************
+; Private section used by private Co-Installer
+;**********************************************
+
+[PreInstall]
+  InstallServices = PreInstall.Services
+  StartServices   = DiMaint
+
+[PreInstall.Services]
+  AddService = DiMaint,1,Service.Dimaint
+
+[PostInstall]
+  InstallServices = PostInstall.Services
+  StartServices   = DiCapi
+
+[PostInstall.Services]
+  AddService = DiCapi,1,Service.Dicapi
+
+
+;************************************
+; Install section of RAS only driver
+;************************************
+
+[DISERV_RAS_DRIVER]
+AddReg           = Common.AddReg,RasOnly.AddReg,DISERV_RAS_DRIVER.AddReg
+Characteristics  = 0x09  ; NCF_VIRTUAL | NCF_HIDDEN
+
+[DISERV_RAS_DRIVER.Services]
+AddService = DiwanSrv, 2, Service.DIVASRV, Common.EventLog
+
+[DISERV_RAS_DRIVER.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,0
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_RAS_DRIVER.CoInstallers]
+CopyFiles=NoFiles.cf
+AddReg=CoInstallers.AddReg
+
+
+;**************************************************
+; Install section of Diva Server 4BRI-8M 2.0 (PCI)
+;**************************************************
+
+[DISERV_B8_V2_PCI]
+AddReg           = Common.AddReg,4xBri.AddReg,DISERV_B8_V2_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_B8_V2.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_B8_V2_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_B8_V2_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,53
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_B8_V2_PCI.Hw]
+AddReg=DISERV_B8_V2_PCI.Hw.AddReg
+
+[DISERV_B8_V2_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_B8_V2_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;**********************************************
+; Install section of Diva Server PRI 2.0 (PCI)
+;**********************************************
+
+[DISERV_P30_V2_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_P30_V2_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V2.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_P30_V2_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_P30_V2_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,54
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_P30_V2_PCI.Hw]
+AddReg=DISERV_P30_V2_PCI.Hw.AddReg
+
+[DISERV_P30_V2_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_P30_V2_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;*************************************************
+; Install section of Diva Server BRI-2M 2.0 (PCI)
+;*************************************************
+
+[DISERV_B2_V2_PCI]
+AddReg           = Common.AddReg,1xBri.AddReg,DISERV_B2_V2_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_B2_V2.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_B2_V2_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_B2_V2_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,60
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_B2_V2_PCI.Hw]
+AddReg=DISERV_B2_V2_PCI.Hw.AddReg
+
+[DISERV_B2_V2_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_B2_V2_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;*********************************************
+; Install section of Diva Server BRI-2F (PCI)
+;*********************************************
+
+[DISERV_B2F_V2_PCI]
+AddReg           = Common.AddReg,1xBri.AddReg,DISERV_B2F_V2_PCI.AddReg
+CopyFiles        = Drv.cf,DISERV_B2F_V2.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_B2F_V2_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_B2F_V2_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,61
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_B2F_V2_PCI.Hw]
+AddReg=DISERV_B2F_V2_PCI.Hw.AddReg
+
+[DISERV_B2F_V2_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_B2F_V2_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;****************************************************
+; Install section of Diva Server PRI/E1-30 3.0 (PCI)
+;****************************************************
+
+[DISERV_P30_V3_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_P30_V3_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V3.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_P30_V3_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_P30_V3_PCI.AddReg]
+  HKR,VendorSpecific,CardTypeNum,%REG_DW%,70
+  HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_P30_V3_PCI.Hw]
+AddReg=DISERV_P30_V3_PCI.Hw.AddReg
+
+[DISERV_P30_V3_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_P30_V3_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;****************************************************
+; Install section of Diva Server PRI/T1-24 3.0 (PCI)
+;****************************************************
+
+[DISERV_P24_V3_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_P24_V3_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V3.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_P24_V3_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_P24_V3_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,71
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_P24_V3_PCI.Hw]
+AddReg=DISERV_P24_V3_PCI.Hw.AddReg
+
+[DISERV_P24_V3_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_P24_V3_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;******************************************************
+; Install section of Diva Server PRI/E1/T1-8 3.0 (PCI)
+;******************************************************
+
+[DISERV_P8_V3_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_P8_V3_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V3.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_P8_V3_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_P8_V3_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,72
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_P8_V3_PCI.Hw]
+AddReg=DISERV_P8_V3_PCI.Hw.AddReg
+
+[DISERV_P8_V3_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_P8_V3_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;******************************************************
+; Install section of Diva Server V-PRI/E1/T1 3.0 (PCI)
+;******************************************************
+
+[DISERV_V_P30_V3_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_V_P30_V3_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V3.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_V_P30_V3_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_V_P30_V3_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,73
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_V_P30_V3_PCI.Hw]
+AddReg=DISERV_V_P30_V3_PCI.Hw.AddReg
+
+[DISERV_V_P30_V3_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_V_P30_V3_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;******************************************************
+; Install section of Diva Server V-PRI/T1-24 3.0 (PCI)
+;******************************************************
+
+[DISERV_V_P24_V3_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_V_P24_V3_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V3.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_V_P24_V3_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_V_P24_V3_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,74
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_V_P24_V3_PCI.Hw]
+AddReg=DISERV_V_P24_V3_PCI.Hw.AddReg
+
+[DISERV_V_P24_V3_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_V_P24_V3_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;******************************************************
+; Install section of Diva Server V-PRI/E1/T1 3.0 (PCI)
+;******************************************************
+
+[DISERV_V_P_V3_PCI]
+AddReg           = Common.AddReg,1xPri.AddReg,DISERV_V_P_V3_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_P30_V3.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_V_P_V3_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_V_P_V3_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,75
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_V_P_V3_PCI.Hw]
+AddReg=DISERV_V_P_V3_PCI.Hw.AddReg
+
+[DISERV_V_P_V3_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_V_P_V3_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;***************************************************
+; Install section of Diva Server Analog 4Port (PCI)
+;***************************************************
+
+[DISERV_ANALOG_4PORT_PCI]
+AddReg           = Common.AddReg,4xAnalog.AddReg,DISERV_ANALOG_4PORT_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_ANALOG.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_ANALOG_4PORT_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_ANALOG_4PORT_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,77
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_ANALOG_4PORT_PCI.Hw]
+AddReg=DISERV_ANALOG_4PORT_PCI.Hw.AddReg
+
+[DISERV_ANALOG_4PORT_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_ANALOG_4PORT_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;***************************************************
+; Install section of Diva Server Analog 8Port (PCI)
+;***************************************************
+
+[DISERV_ANALOG_8PORT_PCI]
+AddReg           = Common.AddReg,8xAnalog.AddReg,DISERV_ANALOG_8PORT_PCI.AddReg
+CopyFiles        = Drv.cf,Dsp.cf,DISERV_ANALOG.cf,Appl.cf,Wow64Dll.cf
+Characteristics  = %NCF_PHYSICAL%
+BusType          = %PCI%
+
+[DISERV_ANALOG_8PORT_PCI.Services]
+AddService = DiwanSrv,2,Service.DIVASRV,Common.EventLog
+
+[DISERV_ANALOG_8PORT_PCI.AddReg]
+HKR,VendorSpecific,CardTypeNum,%REG_DW%,78
+HKR,Ndi,Service,0,"DiwanSrv"
+
+[DISERV_ANALOG_8PORT_PCI.Hw]
+AddReg=DISERV_ANALOG_8PORT_PCI.Hw.AddReg
+
+[DISERV_ANALOG_8PORT_PCI.Hw.AddReg]
+HKR,"",LowerFilters,%REG_MSZ%,"NdisTapi"
+
+[DISERV_ANALOG_8PORT_PCI.CoInstallers]
+CopyFiles=CoInst.cf
+AddReg=CoInstallers.AddReg
+
+
+;******************************
+; Install section of all cards
+;******************************
+
+[Common.AddReg]
+HKR,Ndi\Interfaces,UpperRange,%REG_SZ_NCLOB%,"ndiswan"
+
+;private variables
+HKR,VendorSpecific,PrivItemUid,,%PRIVITEMID_CARD%
+HKR,VendorSpecific,InstallDir,,%DRVDIR%
+
+HKR,VendorSpecific,Label,%REG_SZ%,"Diva for Windows 64 bit AMD - Version 7.5 104-9 "
+HKR,VendorSpecific,Logging,%REG_DW_NCLOB%,1
+HKR,VendorSpecific,CallbackPrefix,%REG_SZ_NCLOB%,""
+HKR,VendorSpecific,CheckFCS,%REG_DW_NCLOB%,0x0A
+HKR,VendorSpecific,DisabledServicesMask,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,DiwanFeatures,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,IgnoreCallbackNumber,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,ForceAnalogBcOnCallback,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,NoAnswerTimeout,%REG_DW_NCLOB%,0x14
+HKR,VendorSpecific,NumberChecking,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,NumberCheckingFile,%REG_SZ_NCLOB%,""
+HKR,VendorSpecific,NumberCheckingSubPath,%REG_SZ_NCLOB%,""
+HKR,VendorSpecific,ShortholdMode,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,ShortholdTime,%REG_DW_NCLOB%,0x00
+HKR,VendorSpecific,FileConfiguration,%REG_DW_NCLOB%,1
+
+[RasOnly.AddReg]
+HKR,Ndi\Interfaces,LowerRange,%REG_SZ_NCLOB%,"nolower"
+HKR,"",WanEndpoints,%REG_DW_NCLOB%,1
+HKR,"",IsdnNumDChannels,%REG_DW%,1
+HKR,0,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+
+[1xBri.AddReg]
+HKR,Ndi\Interfaces,LowerRange,%REG_SZ_NCLOB%,"isdn"
+HKR,"",IsdnSwitchTypes,%REG_DW%,%GENERIC_ISDNSWITCHTYPES%
+HKR,"",WanEndpoints,%REG_DW_NCLOB%,2
+HKR,"",IsdnNumDChannels,%REG_DW%,1
+HKR,0,IsdnNumBChannels,%REG_DW%,2
+HKR,0,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,0\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0"
+
+[4xBri.AddReg]
+HKR,Ndi\Interfaces,LowerRange,%REG_SZ_NCLOB%,"isdn"
+HKR,"",IsdnSwitchTypes,%REG_DW%,%GENERIC_ISDNSWITCHTYPES%
+HKR,"",WanEndpoints,%REG_DW_NCLOB%,8
+HKR,"",IsdnNumDChannels,%REG_DW%,4
+HKR,0,IsdnNumBChannels,%REG_DW%,2
+HKR,0,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,0\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0-1"
+HKR,1,IsdnNumBChannels,%REG_DW%,2
+HKR,1,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,1\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0-2"
+HKR,2,IsdnNumBChannels,%REG_DW%,2
+HKR,2,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,2\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0-3"
+HKR,3,IsdnNumBChannels,%REG_DW%,2
+HKR,3,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,3\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0-4"
+
+[1xPri.AddReg]
+HKR,Ndi\Interfaces,LowerRange,%REG_SZ_NCLOB%,"isdn"
+HKR,"",IsdnSwitchTypes,%REG_DW%,%GENERIC_ISDNSWITCHTYPES%
+HKR,"",WanEndpoints,%REG_DW_NCLOB%,30
+HKR,"",IsdnNumDChannels,%REG_DW%,1
+HKR,0,IsdnNumBChannels,%REG_DW%,23
+HKR,0,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,0\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0"
+
+[4xAnalog.AddReg]
+HKR,Ndi\Interfaces,LowerRange,%REG_SZ_NCLOB%,"nolower"
+HKR,"",WanEndpoints,%REG_DW_NCLOB%,4
+HKR,0,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,0\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0"
+
+[8xAnalog.AddReg]
+HKR,Ndi\Interfaces,LowerRange,%REG_SZ_NCLOB%,"nolower"
+HKR,"",WanEndpoints,%REG_DW_NCLOB%,8
+HKR,0,IsdnMultiSubscriberNumbers,%REG_MSZ_NCLOB%,""
+HKR,0\VendorSpecific,CardName,%REG_SZ_NCLOB%,"#0"
+
+
+;*************************************************
+; Install section for service all Diva card driver
+;*************************************************
+
+[Service.DIVASRV]
+DisplayName     = %DIVASRV_DISP%
+ServiceType     = 1   ; SERVICE_KERNEL_DRIVER
+StartType       = 3   ; SERVICE_DEMAND_START
+ErrorControl    = 1   ; SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\%DRVDIR%\diwansrv.sys
+LoadOrderGroup  = Ndis
+Dependencies    = NdisTapi
+Addreg          = Service.DivaSrv.AddReg
+
+[Service.DivaSrv.AddReg]
+HKR,"",TextModeFlags,%REG_DW%,0x0001
+;  HKR,Parameters,Logging,%REG_DW_NCLOB%,0x7fffffff
+
+
+;***********************************
+; Install event logging
+;***********************************
+
+[Common.EventLog]
+AddReg = Common.EventLog.AddReg
+
+[Common.EventLog.AddReg]
+HKR,"",EventMessageFile,%REG_ESZ%,%10%\System32\netevent.dll
+HKR,"",TypesSupported,%REG_DW%,7
+
+
+;************************************
+; Install section for service dimaint
+;************************************
+
+[Service.Dimaint]
+  DisplayName     = %MAINT_DISP%
+  ServiceType     = 1   ; SERVICE_KERNEL_DRIVER
+  StartType       = 0   ; SERVICE_BOOT_START
+  ErrorControl    = 1   ; SERVICE_ERROR_NORMAL
+  ServiceBinary   = %12%\%DRVDIR%\dimaint.sys
+  Addreg          = Service.Dimaint.AddReg
+
+[Service.Dimaint.AddReg]
+  HKR,Parameters,ScreenDebug,%REG_DW_NCLOB%,0
+;  HKR,Parameters,ScreenDebugMask,%REG_DW_NCLOB%,0xfffffff
+  HKR,Parameters,DebugBufferSize,%REG_DW_NCLOB%,250000
+
+
+;************************************
+; Install section for service dicapi
+;************************************
+
+[Service.Dicapi]
+  DisplayName     = %CAPI_DISP%
+  ServiceType     = 1   ; SERVICE_KERNEL_DRIVER
+  StartType       = 2   ; SERVICE_AUTO_START
+  ErrorControl    = 1   ; SERVICE_ERROR_NORMAL
+  ServiceBinary   = %12%\%DRVDIR%\dicapi.sys
+  Dependencies    = Dimaint
+  Addreg          = Service.Dicapi.AddReg
+
+[Service.Dicapi.AddReg]
+  HKR,"",Group,%REG_SZ%,%CAPI20%
+;  HKR,"",TextModeFlags,%REG_DW%,0x0001
+  HKR,Parameters,Logging,%REG_DW_NCLOB%,1
+  HKR,Parameters,ControllerCount,%REG_DW_NCLOB%,0
+  HKR,Parameters,DeviceName,%REG_SZ_NCLOB%,"DiCapi"
+  HKR,Parameters,Manufacturer,%REG_SZ_NCLOB%,%PROVIDER%
+
+
+;**********************************************
+; Common Addreg section for Device Co-Installer
+;**********************************************
+
+[CoInstallers.AddReg]
+HKR,"",CoInstallers32,%REG_MSZ%,"disrvci.dll,CoDeviceInstall"
+HKR,"",EnumPropPages32,%REG_SZ%,"disrvpp.dll,EnumPropPages"
+
+
+;*************************************************
+; File copy section of coinstaller and setup files
+;*************************************************
+
+[CoInst.cf]
+disrvci.dll,,,0x60
+disrvsu.dll,,,0x4
+disrvpp.dll,,,0x60
+
+[NoFiles.cf]
+
+
+;***********************************************
+; File copy section of common application files
+;***********************************************
+
+;Rename capi files
+
+[Appl.cf]
+; * diagnosis utility *
+ditrace.exe,,,0x4
+xlog.exe,,,0x4
+capi2064.dll, diapi264.dll,,0x4
+
+[Wow64Dll.cf]
+; * capi libraries *
+capi2032.dll, diapi232.dll,,0x4
+
+
+;******************************************
+; File copy section of common driver files
+;******************************************
+
+[Drv.cf]
+; * Maint trace utility
+;  dimaint.sys,,,0x1004
+dimaint.sys,,,0x4
+
+; * monolithic wan miniport/protocol driver
+diwansrv.sys,,,0x4
+
+; * CAPI 2.0 driver
+dicapi.sys,,,0x4
+
+
+;*****************************************
+; File copy section of DSP download files
+;*****************************************
+
+[Dsp.cf]
+; * DSP download files (library)
+dspdload.bin,,,0x4
+
+[DISERV_B8_V2.cf]
+te_protm.2q,,,0x4
+ds4bri2.bit,,,0x4
+
+[DISERV_P30_V2.cf]
+te_protm.pm2,,,0x4
+
+[DISERV_B2_V2.cf]
+te_protm.2q,,,0x4
+dsbri2m.bit,,,0x4
+
+[DISERV_B2F_V2.cf]
+te_protm.2q,,,0x4
+dsbri2f.bit,,,0x4
+sdp0.2q0,,,0x4
+sdp1.2q0,,,0x4
+
+[DISERV_P30_V3.cf]
+te_protm.pm3,,,0x4
+dspri331.bit,,,0x4
+
+[DISERV_ANALOG.cf]
+te_protm.am,,,0x4
+dsap8.bit,,,0x4
+  
+
+;**********************************************
+; Delete File section of private drivers files
+;**********************************************
+
+
+;*************************
+; Destination directories
+;*************************
+
+[DestinationDirs]
+DefaultDestDir       = 11
+CoInst.cf            = 11                            ; "Windows\System32"
+NoFiles.cf           = 11                            ; "Windows\System32"
+Appl.cf              = 11                            ; "Windows\System32"
+Wow64Dll.cf          = 10,SysWoW64                   ; "Windows\SysWow64"
+Drv.cf               = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+Dsp.cf               = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+DISERV_B2_V2.cf      = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"  
+DISERV_B2F_V2.cf     = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+DISERV_B8_V2.cf      = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+DISERV_P30_V2.cf     = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+DISERV_P30_V3.cf     = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+DISERV_ANALOG.cf     = 10,System32\Drivers\%DRVDIR%  ; "Windows\System32\Drivers\<private>"
+
+;******************
+; String constants
+;******************
+
+[strings]
+MS= 				"Microsoft"
+PROVIDER=                       "Eicon Networks"
+PRIVITEMID_CARD=                "{2CD6D901-506B-11d1-BF23-00A0242DD63F}"
+DRVDIR=                         "disdn"
+DISERV_B8_V2_PCI_DISP=          "Eicon Diva Server 4BRI-8M 2.0 (PCI)"
+DISERV_P30_V2_PCI_DISP=         "Eicon Diva Server PRI 2.0 (PCI)"
+DISERV_B2_PCI_V2_DISP=          "Eicon Diva Server BRI-2M 2.0 (PCI)"
+DISERV_B2F_PCI_V2_DISP=         "Eicon Diva Server 2FX"
+DISERV_P8_E1T1_V3_PCI_DISP=     "Eicon Diva Server PRI/E1/T1-8"
+DISERV_P24_T1_V3_PCI_DISP=      "Eicon Diva Server PRI/T1-24"
+DISERV_P30_E1_V3_PCI_DISP=      "Eicon Diva Server PRI/E1-30"
+DISERV_V_P_E1T1_V3_PCI_DISP=    "Eicon Diva Server PRI/E1/T1"
+DISERV_V_P24_T1_V3_PCI_DISP=    "Eicon Diva Server V-PRI/T1-24"
+DISERV_V_P30_E1_V3_PCI_DISP=    "Eicon Diva Server V-PRI/E1-30"
+DISERV_ANALOG_4PORT_DISP=       "Eicon Diva Server Analog-4P"
+DISERV_ANALOG_8PORT_DISP=       "Eicon Diva Server Analog-8P"
+DISERV_COMBINED_DISP=           "Eicon Diva Server Combined Adapter"
+
+; friendly server names
+DIVASRV_DISP=                   "Eicon Driver for all Diva Server PnP cards"
+MAINT_DISP=                     "Eicon Maintenance Driver"
+CAPI_DISP=                      "Eicon CAPI 2.0 Driver"
+CAPI20=                         "CAPI20"
+
+  SERVER_DISK_1_LABEL=			  "Diva Server for Windows Setup"
+
+; registry data types
+;     types with NCLOB don't overwrite existing values
+REG_SZ=                         0x00000000
+REG_SZ_NCLOB=                   0x00000002
+REG_MSZ=                        0x00010000
+REG_MSZ_NCLOB=                  0x00010002
+;  REG_MSZ_APPEND=                 0x0001000A
+;  REG_MSZ_DELVAL=                 0x00010006
+REG_ESZ=                        0x00020000
+REG_DW=                         0x00010001
+REG_DW_NCLOB=                   0x00010003
+
+; bus types [ USB isn't existing, fake as Internal (or PCI)? ]
+PCI=                            5
+
+  ; device characteristics
+;  NCF_VIRTUAL=                    0x0001
+NCF_PHYSICAL=                   0x0004
+;  NCF_HIDDEN=                     0x0008
+
+;***************************************************
+; Supported Switch Types for Server cards:
+;  [ISDN_SWITCH_AUTO(0x01)] | ISDN_SWITCH_ATT(0x02
+;  ISDN_SWITCH_NI1(0x04)    | ISDN_SWITCH_NTI(0x08)
+;  ISDN_SWITCH_INS64(0x10)  | ISDN_SWITCH_1TR6(0x20)
+;  ISDN_SWITCH_VN3(0x40)    | ISDN_SWITCH_DSS1(0x80)
+;  ISDN_SWITCH_AUS(0x100)   | ISDN_SWITCH_BEL(0x200)
+;  ISDN_SWITCH_SWE(0x1000)  | ISDN_SWITCH_ITA(0x2000)
+;  ISDN_SWITCH_TWN(0x4000)
+;***************************************************
+  GENERIC_ISDNSWITCHTYPES=  0x73DE
+
+
+;*** end *********************************************************************

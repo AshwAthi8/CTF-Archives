@@ -1,0 +1,13 @@
+3e8-4c51-8354-bb4de9d215d1}' 
+                                    {
+                                        val '' = s '%UPnPDeviceFolderName%'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+    val ImagePath = s '%MODULE%'
+                    val ObjectName = s 'LocalSystem'
+                }
+            }
+        }
+    }
+}

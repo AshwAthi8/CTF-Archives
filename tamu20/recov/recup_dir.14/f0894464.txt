@@ -1,0 +1,88 @@
+o change Windows Firewall settings."
+		dialogHeight="175"
+		CPLPrefixText="When you click OK, no changes will be made to the inbound connection settings for this server."
+		CPLLinkText=""
+		CPLSuffixText=""
+	/>
+	<errorFirewallChanged
+		text="Changes have been made to this server's Windows Firewall settings, either by a user or by a group policy. When you click OK, no changes will be made to inbound connection settings for this server."
+		dialogHeight="245"
+		CPLPrefixText="To allow additional inbound connections to this server, configure "
+		CPLLinkText="Windows Firewall"
+		CPLSuffixText=" in Control Panel.
+
+Important: Before closing this page, ensure that you have downloaded and installed all of the latest critical updates from Windows Update."
+	/>
+	<errorServiceNotRunning
+		text="The Windows Firewall/Internet Connection Sharing (ICS) service, which supports your Windows Firewall settings, is currently stopped. No changes can be made to inbound connection settings for this server. When you click OK, Post-Setup Security Updates will close."
+		dialogHeight="215"
+		CPLPrefixText="To change the status of this service and view the firewall status, open "
+		CPLLinkText="Windows Firewall"
+		CPLSuffixText="  in Control Panel."
+	/>
+	
+	<confirmDialog
+		dialogWidth="410"
+		dialogHeight="170"
+		yesText="Yes"
+		noText="No"
+		yesAccessKey="y"
+		noAccessKey="n"
+		title="Windows Server Post-Setup Security Updates"
+		text="When you close this page, inbound connections to this server will be allowed. Before continuing, ensure that you have downloaded and installed all available security updates. 
+		
+Do you want to close this page?"
+	/>
+	<errorDialog
+		dialogWidth="410"
+		dialogHeight="215"
+		OKText="OK"
+		CancelText="Cancel"
+		title="Windows Server Post-Setup Security Updates"
+	/>
+	
+	<stepList>
+		<step
+			stepID="1"
+			priority="1"
+			visible="1"
+			title="Step 1: Install Critical Security Updates"
+			description="Microsoft is continually updating Windows to help protect your server from viruses and other security threats as they are discovered. While this server is protected, you should download and install all of the latest security updates from Windows Update.&lt;br&gt;&lt;br&gt;Some updates require that Windows be restarted. If Windows is restarted during the update process, you should return to Windows Update to ensure that all critical updates have been installed before continuing with these steps."
+			description_alt=""
+			moreInfo="ms-its:tshootconcepts.chm::/resources_windows_update.htm"
+            moreInfoAccessKey="m"
+            moreInfoText="&lt;u&gt;M&lt;/u&gt;ore Information"
+            moreInfoToolTip="Opens a Help topic that provides information about Windows Update at the Microsoft Web site."
+		>
+			<action
+				title="&lt;u&gt;U&lt;/u&gt;pdate this server"
+				priority="1"
+				actionID="1"
+				visible="1"
+				accessKey="U"
+				actionToolTip="Connects you to the Windows Update Web site, where you can search for the latest critical updates."
+			/>
+		</step>
+		<step
+			stepID="2"
+			priority="2"
+			visible="1"
+			title="Step 2: Configure Automatic Updates"
+			description="The Automatic Updates feature can automatically download the latest security updates on a schedule you specify.  Now that this server has been updated, you can help ensure that it stays up-to-date by configuring Automatic Updates."
+			description_alt="The Automatic Updates feature can automatically download the latest security updates on a schedule you specify. This server is already configured for Automatic Updates."
+			moreInfo="ms-its:wuauhelp.chm"
+            moreInfoAccessKey="o"
+            moreInfoText="M&lt;u&gt;o&lt;/u&gt;re Information"
+            moreInfoToolTip="Opens a Help topic that provides information about Windows Automatic Updates and how it works with Windows Update."
+		>
+			<action
+				title="&lt;u&gt;C&lt;/u&gt;onfigure automatic updating for this server"
+				priority="1"
+				actionID="2"
+				visible="1"
+				accessKey="C"
+				actionToolTip="Opens a properties dialog box that is used to configure automatic updates."
+			/>
+		</step>
+	</stepList>
+</SecOOBE>

@@ -1,0 +1,3 @@
+
+Please check your firmware settings.  You may need to restore your
+NVRAM settings from a backup.

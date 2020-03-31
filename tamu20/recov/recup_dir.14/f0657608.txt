@@ -1,0 +1,4 @@
+n="5.82.0.0-5.82.3790.1830" newVersion="5.82.3790.1830"/>
+      </dependentAssembly>
+   </dependency>
+</assembly>

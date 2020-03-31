@@ -1,0 +1,4 @@
+ dialogHeight="215" OKText="OK" CancelText="Avbryt" title="Säkerhetsuppdateringar"/>
+	
+	<stepList>
+		<step stepID="1" priority="1" visible="1" title="Steg 1: Installera viktiga säkerhetsuppdateringar" description="Microsoft uppdaterar kontinuerligt Windows för att hjälpa till att skydda din server fr
