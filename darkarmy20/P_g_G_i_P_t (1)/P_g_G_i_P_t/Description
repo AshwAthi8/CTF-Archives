@@ -1,0 +1,24 @@
+P_g_G_i_P_t
+===========
+A DarkArmy newbie pulled out some files from an old vulnerable machine 
+that belonged to the great sage "karma".
+
+He grabbed the following info:
+
+PGP Fingerprint: 
+5071 62CE 550A 9B5D
+
+Signature File: 
+a.sig
+
+Find the first part of flag using above info and 10k.tar.zst
+
+
+Password format for the prrotected git1.1.7z archive: 
+
+<(6-digit-number-from-10k.tar.zst)_(first-3-char/num-of-the-public-key)>
+
+Note: 
+Password is free of any angle brackets and parantheses, 
+those are for explaination purpose only.
+Do remember the _ it's in the password.

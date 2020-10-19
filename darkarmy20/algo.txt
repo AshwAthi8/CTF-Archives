@@ -1,0 +1,20 @@
+For the following given pattern:
+  0 : 0x539
+  1 : 0x53b
+  1 : 0x53e
+  2 : 0x546
+  3 : 0x552
+  5 : 0x56b
+  8 : 0x59d
+  13 : 0x613
+  21 : 0x732
+
+for what value of N will you get the given value A considering the analogy (N:A) satisfies the pattern:
+Given A = 0x43b1941fa3149c2ceb0da0bc5c5bff56a797b508becb5fbd058aec845ff0060fdc463393be61850549371b5de1d73836bf646d9d78f86bba3847dd1e0111d18d9d63094154077cc446064310bab1a9b0aa8ffce5f429121fc1bafb72cad608d87cc37c40fd9b5374703f0898695d6185ffd4ecfb457b48a9f6577df27cbfe0605752ba9de8fd2e36bbd96c5237eeba3899add0d504edb2262d467cb6299c787a8536f3caf5c8037c447e23adae31a7878f50bc2cc564c35c850a61bc70e23f565d604245f761452ccde6f53b56a3e8ff9dde120673198b3c274848c75197029b4d756d2f7bd01b22
+
+Flag format:
+  darkCTF{<last 10 digits from the value of N>}
+
+For example:
+  if N = 0123456789153649067
+  then the flag is: darkCTF{9153649067}
